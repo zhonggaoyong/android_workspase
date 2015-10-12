@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/search_recommend_shop_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/sort_buttons_layout" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_below="@id/search_recommend_shop_layout">
+            <LinearLayout android:id="@id/jshop_sort_buttons" android:background="@color/white" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="1.0">
+                <RelativeLayout android:id="@id/jshop_sort_button_comment" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/sort_button_text_color" android:id="@id/jshop_sort_button_comment_1" android:padding="5.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jshop_sort_button_comment" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:layout_gravity="center_vertical" android:background="@color/product_list_tabs_divider" android:layout_width="0.5dip" android:layout_height="23.299988dip" />
+                <RelativeLayout android:id="@id/jshop_sort_button_sale" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/sort_button_text_color" android:id="@id/jshop_sort_button_sale_1" android:padding="5.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jshop_sort_button_sell" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:layout_gravity="center_vertical" android:background="@color/product_list_tabs_divider" android:layout_width="0.5dip" android:layout_height="23.299988dip" />
+                <RelativeLayout android:id="@id/jshop_sort_button_time" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/sort_button_text_color" android:id="@id/jshop_sort_button_time_1" android:padding="5.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jshop_sort_button_time" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:layout_gravity="center_vertical" android:background="@color/product_list_tabs_divider" android:layout_width="0.5dip" android:layout_height="23.299988dip" />
+                <RelativeLayout android:id="@id/jshop_sort_button_price" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/sort_button_text_color" android:id="@id/jshop_sort_button_price_1" android:padding="5.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jshop_sort_button_price" android:layout_centerInParent="true" />
+                    <View android:id="@id/jshop_sort_button_price_arrow" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_toRightOf="@id/jshop_sort_button_price_1" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:id="@id/product_list_tabs_underline" android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            <com.jingdong.common.sample.jshop.TabIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_above="@id/product_list_tabs_underline" app:height="1.5dip" app:selectColor="@color/product_list_tab_underline_selector_color_v38" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

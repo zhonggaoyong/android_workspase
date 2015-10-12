@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_30px">
+                <LinearLayout android:paddingTop="@dimen/pub_margin_or_padding_space_ten" android:paddingBottom="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_fifteen" android:text="@string/devliver_type" />
+                    <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/pub_color_three" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/group_suning_deliver" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="90.0dip" android:layout_height="30.0dip" android:text="苏宁配送" />
+                </LinearLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@id/group_suning_delivery_id" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/group_deliver_info_layout" android:background="@drawable/pub_line_above_white_bg" android:paddingLeft="@dimen/ios_public_space_30px" android:paddingTop="@dimen/ios_public_space_30px" android:paddingRight="@dimen/ios_public_space_30px" android:paddingBottom="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/group_deliver_info_null_prompt_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.08">
+                            <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:gravity="center_vertical" android:id="@id/group_deliver_info_null_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shoppingcart_change_deliver_address" android:singleLine="true" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/group_deliver_info_show_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.08">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_80px">
+                                <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:textColorHint="@color/pub_color_eight" android:id="@id/group_userName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.5" />
+                                <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:textColorHint="@color/pub_color_eight" android:layout_gravity="center" android:id="@id/group_phoneNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.5" />
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_nine" android:textColorHint="@color/pub_color_nine" android:id="@id/group_userAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_10px" android:layout_marginRight="@dimen/ios_public_space_80px" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="@dimen/ios_public_space_30px" android:paddingRight="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_30px">
+                <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_model" />
+                <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_nine" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_paymode_online" android:layout_toRightOf="@id/paymode_prompt" />
+            </LinearLayout>
+            <include layout="@layout/front_group_product_item_layout" />
+            <LinearLayout android:orientation="vertical" android:id="@id/group_ticket_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_30px">
+                <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:gravity="center_vertical" android:background="@color/pub_color_one" android:paddingLeft="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_100px" android:text="发票信息" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/input_bg" android:padding="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发票类型：" />
+                        <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_nine" android:gravity="center_vertical" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="普通发票" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/group_ticket_name_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_20px">
+                        <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shoppingcart_ticket_name" />
+                        <EditText android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_nine" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/group_ticket_name_edit" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/eval_customer" android:maxLines="2" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_nine" android:gravity="center_vertical" android:id="@id/group_ticket_notice_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_20px" android:text="@string/shoppingcart_deliver_suning_ticket_notice" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_30px">
+                <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:gravity="center_vertical" android:background="@drawable/input_bg" android:paddingLeft="@dimen/ios_public_space_30px" android:paddingRight="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="结算信息" />
+                <RelativeLayout android:paddingLeft="@dimen/ios_public_space_30px" android:paddingRight="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应付定金" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_seven" android:gravity="center_vertical" android:id="@id/group_should_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="@dimen/ios_public_space_30px" android:paddingRight="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="运费" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_seven" android:gravity="center_vertical" android:id="@id/group_tv_ship" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/group_bottom_suspended_layout" android:background="@color/pub_color_one" android:paddingLeft="@dimen/ios_public_space_30px" android:paddingTop="@dimen/ios_public_space_10px" android:paddingRight="@dimen/ios_public_space_30px" android:paddingBottom="@dimen/ios_public_space_10px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/group_order_submit_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:id="@id/group_bottom_suspended_price_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:id="@id/group_tv_totalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共计：" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_seven" android:layout_gravity="left" android:id="@id/group_totalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/group_tv_totalPrice" />
+                </LinearLayout>
+                <TextView android:textColor="@color/pub_color_nine" android:id="@id/group_tv_all_ship_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/pub_color_one" android:gravity="center" android:id="@id/group_submit_order_info" android:background="@drawable/submit_order_btn_selector" android:paddingLeft="@dimen/pub_margin_or_padding_space_ten" android:paddingRight="@dimen/pub_margin_or_padding_space_ten" android:layout_width="120.0dip" android:layout_height="@dimen/pub_margin_or_padding_space_forty" android:text="@string/order_commint" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_13px" android:layout_marginBottom="@dimen/android_public_space_13px" android:layout_below="@id/group_order_submit_layout">
+            <CheckBox android:id="@id/group_protocol" android:background="@drawable/check_box_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@null" />
+            <TextView android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_13px" android:text="同意支付定金,支付成功后,定金不可退还" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

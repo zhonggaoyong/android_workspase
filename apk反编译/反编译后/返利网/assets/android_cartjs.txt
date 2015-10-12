@@ -1,0 +1,66 @@
+﻿function getSelectedItemIds(cartIds) {
+	var itemIds = [];
+	if (!cartIds) return itemIds;
+	try {
+		var cartIdValArr = [];
+		var cartIdVal = document.querySelector('input[name="'+ cartIds +'"]').value;
+		if (typeof cartIdVal == 'string' || cartIdVal instanceof String) {
+			cartIdValArr = cartIdVal.split(',');
+		}
+
+		for (var i = 0; i < cartIdValArr.length; i++) {
+			if (!cartIdValArr[i]) continue;
+
+			var cartEl = document.getElementsByClassName('c' + cartIdValArr[i]);
+			if (!cartEl.length) continue;
+
+			var linkEl = cartEl[0].getElementsByTagName('a');
+			for (var j = 0; j < linkEl.length; j++) {
+				var itemId = linkEl[j].getAttribute('data-itemid');
+				if (itemId) {
+					itemIds.push(itemId);
+				}
+			}	
+		}
+	} catch(e) {
+	}
+
+	return itemIds;
+}
+
+function getSelectedItemIdsByExtraInfo() {
+	var itemIds = [];
+	try {
+		var cartIdValArr = [];
+		var extraEl = document.getElementsByClassName('extInfo');
+		if (!extraEl.length)  return itemIds;
+
+		for (var i = 0; i < extraEl.length; i++) {
+			var inputList = extraEl[i].getElementsByTagName('input');
+			for (var j = 0; j < inputList.length; j++) {
+				var itemName = inputList[j].getAttribute('name');
+				if (0 <= itemName.indexOf('itemId') && inputList[j].value) {
+					itemIds.push(inputList[j].value);
+				}
+			}
+		}
+	} catch(e) {
+	}
+
+	return itemIds;
+}
+
+var cartId = 'cartIds';
+var cartIds = getSelectedItemIds(cartId);
+if (!cartIds.length) {
+	cartIds = getSelectedItemIdsByExtraInfo();
+}
+var ret = 'null';
+if (cartIds.length) {
+	ret = cartIds.join('\t');
+}
+if (window.androidInst)
+{
+	window.androidInst.sendToAndroidNew(ret);
+}
+return ret;

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/jshop_main_bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/jshop_m_all_footer_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="center" android:id="@id/jshop_webview_loading" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="180.0dip" layout="@layout/jshop_loading_m" />
+    <include android:id="@id/jshop_main_error_tips" android:background="@color/jshop_main_bgcolor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/jshop_main_error" />
+</FrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tv_fail_image" android:background="@drawable/no_net" android:layout_width="160.0dip" android:layout_height="160.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/conpon_txt_main" android:id="@id/tv_fail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网络未连接" android:lineSpacingExtra="3.0dip" />
+        <ImageView android:id="@id/reConnectLoding" android:background="@drawable/shoppingcart_icon_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="2.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="13.0dip" android:textColor="#ffb6b6b6" android:gravity="center" android:id="@id/tv_fail_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/fail_content_1" android:lineSpacingExtra="3.0dip" />
+    <Button android:textSize="15.0dip" android:textColor="@color/fail_view_refresh_text_color" android:id="@id/refresh" android:background="@drawable/btn_line_violet_bg" android:layout_width="180.0dip" android:layout_height="45.0dip" android:layout_marginTop="50.0dip" android:layout_marginBottom="20.0dip" android:text="重试" />
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+        <Button android:textSize="15.0dip" android:id="@id/fresh" android:layout_width="120.0dip" android:text="刷新" style="@style/submit_red_big_button_style" />
+        <Button android:textSize="15.0dip" android:id="@id/goToSetting" android:layout_width="120.0dip" android:layout_marginLeft="30.0dip" android:text="去设置" style="@style/submit_red_big_button_style" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/possibleResonView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/conpon_txt_main" android:id="@id/resonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="可能原因：" android:lineSpacingExtra="3.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/load_fial_reason_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/conpon_txt_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="2.0dip" android:text="@string/fail_content_1_1" android:lineSpacingExtra="3.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/load_fial_reason_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/conpon_txt_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="2.0dip" android:text="@string/fail_content_1_2" android:lineSpacingExtra="3.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/load_fial_reason_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/conpon_txt_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="2.0dip" android:text="@string/fail_content_1_3" android:lineSpacingExtra="3.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lwt_main_layout" android:background="@color/home_surprise_find_lwt_color" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/lwt_main_top" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/find_lwt_main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="礼物淘" android:layout_alignParentLeft="true" />
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/find_lwt_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="贴心礼物攻略" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/find_lwt_sub_title_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/surprise_arrow_small" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lwt_image_linearview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lwt_main_top">
+        <LinearLayout android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/lwt_left_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/lwt_center_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/lwt_right_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.gome.ecmall.custom.WrapContentLayout android:orientation="horizontal" android:id="@id/lwt_tag_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/lwt_image_linearview" />
+</RelativeLayout>

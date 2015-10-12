@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:paddingTop="15.0dip" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="left|center" android:id="@id/my_giftcard_description_all_layout" android:background="@drawable/jd_bg_border_stroke" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/bind_gift_card_description" android:gravity="center_vertical" android:id="@id/my_giftcard_all_description1" android:paddingLeft="5.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/bind_e_giftcard_declar1" android:lineSpacingMultiplier="1.2" />
+    </RelativeLayout>
+</RelativeLayout>

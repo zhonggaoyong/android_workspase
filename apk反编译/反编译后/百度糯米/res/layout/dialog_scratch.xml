@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/dialog_scratch_close_area" android:layout_width="@dimen/scratch_close_width" android:layout_height="@dimen/scratch_close_height" android:layout_marginTop="50.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true">
+        <View android:layout_gravity="center_horizontal" android:id="@id/dialog_scratch_close" android:background="@drawable/bg_dialog_scratch_close" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/close_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginRight="2.0dip" android:text="@string/quan_close" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/dialog_scratch_area" android:background="@drawable/scratch_dialog_bg" android:layout_width="@dimen/scratch_width" android:layout_height="@dimen/scratch_height" android:layout_marginTop="20.0dip" android:layout_below="@id/dialog_scratch_close_area" android:layout_centerInParent="true">
+        <com.baidu.bainuo.view.ScratchView android:id="@id/dialog_scratch" android:background="@drawable/dialog_scratch_bg" android:layout_width="256.0dip" android:layout_height="244.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="20.0dip" />
+        <ViewStub android:id="@id/viewstub_no_internet" android:layout="@layout/scratch_no_internet" android:layout_width="256.0dip" android:layout_height="244.0dip" android:layout_alignLeft="@id/dialog_scratch" android:layout_alignTop="@id/dialog_scratch" android:layout_alignRight="@id/dialog_scratch" android:layout_alignBottom="@id/dialog_scratch" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/scratch_dialog_text_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/dialog_scratch" android:layout_alignParentBottom="true">
+            <TextView android:textSize="13.0sp" android:textColor="#ff888888" android:id="@id/dialog_scratch_tip" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:lineSpacingExtra="8.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff888888" android:id="@id/call_customer_service" android:background="@drawable/bg_white_button_selector" android:paddingLeft="30.0dip" android:paddingTop="7.0dip" android:paddingRight="30.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_voucher_code_call" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

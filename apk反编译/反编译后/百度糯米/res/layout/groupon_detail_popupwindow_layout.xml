@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingRight="2.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/groupon_detail_popupwindow_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="98.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/share" android:background="@drawable/selector_popupwindow_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0px" android:minHeight="43.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_popupwindow_share" />
+            <TextView android:textColor="#ff22222d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/groupon_detail_share" android:includeFontPadding="false" />
+        </LinearLayout>
+        <View android:background="#ffd6d6d6" android:layout_width="72.0dip" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center" android:id="@id/search" android:background="@drawable/selector_popupwindow_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0px" android:minHeight="43.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_popupwindow_search" />
+            <TextView android:textColor="#ff22222d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/groupon_detail_search" android:includeFontPadding="false" />
+        </LinearLayout>
+        <View android:background="#ffd6d6d6" android:layout_width="72.0dip" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center" android:id="@id/home" android:background="@drawable/selector_popupwindow_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0px" android:minHeight="43.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_popupwindow_home" />
+            <TextView android:textColor="#ff22222d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/groupon_detail_home" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

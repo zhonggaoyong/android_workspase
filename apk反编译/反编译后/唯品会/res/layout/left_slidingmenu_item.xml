@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/menu_list_item" android:background="@drawable/new_leftmenu_list_item_bg" android:paddingLeft="18.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="52.0dip" android:layout_marginRight="@dimen/left_slidingmenu_image_marginright">
+        <ImageView android:id="@id/menu_list_icon" android:visibility="visible" android:layout_width="@dimen/left_slidingmenu_image_size" android:layout_height="@dimen/left_slidingmenu_image_size" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/menu_list_icon_click" android:visibility="invisible" android:layout_width="@dimen/left_slidingmenu_image_size" android:layout_height="@dimen/left_slidingmenu_image_size" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="52.0dip">
+        <TextView android:textSize="17.0dip" android:textColor="@color/white" android:id="@id/menu_list_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/menu_list_icon_new" android:layout_width="wrap_content" android:layout_height="@dimen/left_slidingmenu_image_size" android:src="@drawable/default_icon" android:scaleType="fitEnd" android:layout_toRightOf="@id/menu_list_name" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/app_divider_left_draw_list" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

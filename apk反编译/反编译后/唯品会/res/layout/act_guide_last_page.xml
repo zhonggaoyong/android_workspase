@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/act_guide_last_page_mt" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/advert" android:layout_width="wrap_content" android:layout_height="@dimen/act_guide_last_page_advert_height" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="top|right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/act_guide_recommend" />
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/i_want_install_pannel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/act_guide_last_page_i_want_install_mb">
+            <CheckBox android:layout_gravity="center_vertical" android:id="@id/i_want_install" android:background="@drawable/icon_checkbox_selector" android:layout_width="@dimen/act_guide_last_page_i_want_install_width" android:layout_height="@dimen/act_guide_last_page_i_want_install_height" android:button="@null" />
+            <TextView android:textSize="@dimen/act_guide_last_page_i_want_install_textSize" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="我也要装一个" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

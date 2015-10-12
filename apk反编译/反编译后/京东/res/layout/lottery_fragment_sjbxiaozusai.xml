@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <TextView android:textSize="@dimen/text_size_13sp" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="竞猜冠军球队，赔率为每1元对应的中奖奖金" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView android:id="@id/grid" android:background="@color/activity_bg" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:childDivider="@android:color/transparent" android:numColumns="2" android:layout_weight="1.0" ptr:ptrAnimationStyle="jingdong" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bottom" android:background="#ffffffff" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style2" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/clearButton" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:src="@drawable/lottery_clear_icon" android:scaleType="center" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/game_prompt_text_gray" android:id="@id/tvPrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/worldcup_select" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@drawable/lottery_selector_red_btn_text_color" android:gravity="center" android:id="@id/betButton" android:background="@drawable/lottery_selector_bet_btn_bg" android:layout_width="56.0dip" android:layout_height="34.0dip" android:layout_marginRight="15.0dip" android:text="@string/bet" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

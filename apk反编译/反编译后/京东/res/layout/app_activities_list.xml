@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/activities_title" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/activities_titleBg" android:background="@drawable/common_title_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/title_back" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/common_title_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/activities_titleText" android:layout_width="wrap_content" android:maxWidth="180.0dip" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/common_layout_title" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/activities_title_menu_btn" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/common_more_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include android:id="@id/activities_tabs" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/activities_title" layout="@layout/activities_tab" />
+    <View android:id="@id/activities_tab_gap" android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/activities_tabs" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/app_activities_list_hot" android:background="#fff3f5f7" android:persistentDrawingCache="none" android:alwaysDrawnWithCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/none" android:layout_below="@id/activities_tab_gap" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/app_activities_list_new" android:background="#fff3f5f7" android:persistentDrawingCache="none" android:alwaysDrawnWithCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/none" android:layout_below="@id/activities_tab_gap" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/app_activities_menu_layout" android:background="#73000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/activities_title">
+        <RelativeLayout android:id="@id/app_activities_menu_uplayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <GridView android:gravity="bottom" android:id="@id/app_activities_menu_grid" android:background="#f2ffffff" android:paddingLeft="5.0dip" android:paddingTop="20.0dip" android:paddingRight="5.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="1.0dip" android:verticalSpacing="20.0dip" android:stretchMode="columnWidth" android:columnWidth="30.0dip" android:numColumns="4" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

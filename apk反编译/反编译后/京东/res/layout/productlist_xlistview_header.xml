@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:background="@color/product_list_normalcolor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/xlistview_header_content" android:layout_width="wrap_content" android:layout_height="120.0dip">
+        <ImageView android:id="@id/xlistview_header_arrow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pulldown_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.jingdong.common.ui.JDProgressBar android:id="@id/xlistview_header_progressbar" android:visibility="invisible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/xlistview_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fill_order_layout_10dp" android:layout_toRightOf="@id/xlistview_header_arrow" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/text_color_848689" android:id="@id/xlistview_header_hint_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pull_to_show_phone_share" />
+        </LinearLayout>
+        <ImageView android:id="@id/xlistview_header_hint_imageview" android:background="@drawable/product_xlistview_pulldown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/xlistview_header_text" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/text_color_848689" android:id="@id/xlistview_header_hint_textview_last" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_products" android:layout_toRightOf="@id/xlistview_header_hint_imageview" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

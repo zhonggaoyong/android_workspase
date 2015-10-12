@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/phone_charge_coupon_item_cb" android:background="@drawable/button_j" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.5dip" android:button="@null" />
+    <LinearLayout android:orientation="vertical" android:id="@id/phone_charge_coupon_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.5dip" android:layout_toRightOf="@id/phone_charge_coupon_item_cb">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/phone_charge_coupon_type_tv" android:background="@drawable/lib_phone_charge_coupon_dong_bg" android:layout_width="40.0dip" android:layout_height="18.0dip" android:text="" />
+            <TextView android:textSize="16.5sp" android:textColor="#ff252525" android:ellipsize="end" android:id="@id/phone_charge_coupon_item_money" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="满300减100" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff848689" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用范围：" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff848689" android:ellipsize="end" android:id="@id/phone_charge_coupon_range_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="仅可购手机充值商品（客户端专享券）" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff848689" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有效期至：" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff848689" android:ellipsize="end" android:id="@id/phone_charge_coupon_period_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015/03/30" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_marginTop="16.5dip" android:layout_below="@id/phone_charge_coupon_item_layout" style="@style/lib_phone_charge_split_line_h" />
+</RelativeLayout>

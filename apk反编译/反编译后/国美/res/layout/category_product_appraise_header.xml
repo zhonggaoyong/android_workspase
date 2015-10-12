@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app1="http://schemas.android.com/apk/res/com.gome.eshopnew">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_appraise_hot_word" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffd3cccc" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+        <com.gome.ecmall.custom.WrapContentLayout android:orientation="horizontal" android:id="@id/appraise_hot_word" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/appraise_hot_word_up_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/product_detail_btn_pack_up" />
+    </LinearLayout>
+    <com.gome.ecmall.custom.SlidingTabStrip android:id="@id/appraise_tabs" android:background="@color/main_default_white_text_color" android:layout_width="fill_parent" android:layout_height="55.0dip" app1:pstsIndicatorColor="#ffc70000" app1:pstsUnderlineColor="#ffe1e1e1" app1:pstsIndicatorHeight="4.0dip" app1:pstsUnderlineHeight="1.0dip" app1:pstsTabPaddingLeftRight="10.0dip" app1:pstsShouldExpand="true" />
+</LinearLayout>

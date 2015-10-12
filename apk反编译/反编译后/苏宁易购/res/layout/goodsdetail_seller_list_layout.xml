@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_goodsdetail_seller_shadow" android:background="@color/result_view" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_200px" />
+    <RelativeLayout android:id="@id/product_item_layout" android:background="@color/result_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_goodsdetail_seller_title" android:background="@color/pub_color_twelev" android:paddingLeft="@dimen/android_public_space_20px" android:paddingRight="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:layout_marginTop="16.0dip">
+            <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:gravity="center_vertical" android:id="@id/tv_goodsdetail_seller_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/all_good_store" />
+            <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/pub_color_eighteen" android:gravity="center_vertical" android:id="@id/tv_goodsdetail_seller_count" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/android_public_space_8px" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_goodsdetail_seller_back" android:background="@drawable/btn_closed_bg" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="18.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/goodsdetail_seller_list" android:background="@color/pub_color_one" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@drawable/line" android:dividerHeight="1.0px" android:headerDividersEnabled="true" />
+</LinearLayout>

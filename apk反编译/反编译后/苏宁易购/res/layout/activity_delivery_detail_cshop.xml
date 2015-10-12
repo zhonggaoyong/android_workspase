@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/test" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:id="@id/top_hint_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" android:layout_marginTop="@dimen/ios_public_space_20px" android:text="@string/saler_deliver" />
+    <RelativeLayout android:id="@id/logistic_detail_info_list_header" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_30px">
+        <RelativeLayout android:id="@id/info_textview_layout" android:background="@color/pub_color_one" android:padding="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:gravity="center_vertical" android:id="@id/info_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shipping" android:layout_alignParentLeft="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/logistic_detail_arrive_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logistic_detail_arrive_time_prompt" />
+                <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_nine" android:id="@id/tvExpectedArrivalTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/logistics_detail_product_info_layout" android:background="@drawable/pub_line_above_white_bg" android:padding="@dimen/pub_margin_or_padding_space_fifteen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/info_textview_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/logistics_detail_company_info_layout" android:background="@drawable/input_bg" android:paddingTop="@dimen/ios_public_space_30px" android:paddingBottom="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RelativeLayout android:id="@id/delivery_company_layout" android:paddingLeft="@dimen/ios_public_space_30px" android:paddingRight="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:id="@id/company_delivery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="物流公司：" />
+            <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:id="@id/company_delivery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/company_delivery" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/delivery_number_layout" android:paddingLeft="@dimen/ios_public_space_30px" android:paddingRight="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_10px" android:layout_below="@id/delivery_company_layout">
+            <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:id="@id/number_delivery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快递单号：" />
+            <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:id="@id/number_delivery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/number_delivery" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/delivery_address_layout" android:paddingLeft="@dimen/ios_public_space_30px" android:paddingRight="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_10px" android:layout_below="@id/delivery_number_layout">
+            <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:id="@id/address_delivery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="配送地址：" />
+            <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:id="@id/address_delivery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/address_delivery" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/add_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/dynamic_shop_top_line" style="@style/line2" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_dynamic_item_top_icon" android:background="@drawable/jshop_mark_recommend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/jshop_dynamic_item_activity" android:paddingLeft="@dimen/jshop_concern_list_item_margin_left_right" android:paddingRight="@dimen/jshop_concern_list_item_margin_left_right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/jshop_dynamic_item_title_height">
+                <TextView android:id="@id/jshop_dynamic_item_activity_type_icon" android:layout_width="38.0dip" android:layout_height="18.0dip" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/jshop_dynamic_time_size" android:textColor="@color/jshop_concern_item_conern_number_color" android:gravity="center" android:id="@id/jshop_dynamic_item_activity_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/jshop_dynamic_content_size" android:textColor="@color/jshop_more_product_des_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/jshop_dynamic_item_activity_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jshop_concern_list_item_margin_left_right" android:layout_marginRight="@dimen/jshop_concern_list_item_margin_left_right" android:singleLine="true" android:layout_toLeftOf="@id/jshop_dynamic_item_activity_time" android:layout_toRightOf="@id/jshop_dynamic_item_activity_type_icon" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include android:id="@id/jshop_dynamic_item_product_layout" layout="@layout/jshop_dynamic_item_products" />
+            <FrameLayout android:id="@id/jshop_dynamic_item_product_new_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:id="@id/jshop_dynamic_product_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jshop_dynamic_padding_top_bottom">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_dynamic_item_activity_product_img" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jshop_concern_list_item_margin_left_right" android:layout_toRightOf="@id/jshop_dynamic_item_activity_product_img" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/jshop_concern_item_activity_product_name_size" android:textColor="@color/jshop_one_product_name_color" android:ellipsize="end" android:id="@id/jshop_dynamic_item_activity_product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" />
+                    <TextView android:textSize="@dimen/jshop_concern_item_activity_product_name_size" android:textColor="@color/jshop_detail_text_color" android:id="@id/jshop_dynamic_item_activity_product_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jshop_concern_list_item_recommend_margin_top" android:text="" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_dynamic_special_iv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jshop_dynamic_padding_top_bottom" />
+            <RelativeLayout android:id="@id/jshop_dynamic_more_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jshop_dynamic_padding_top_bottom">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_dynamic_bottom_array" android:background="@drawable/jshop_more_goods_arrow_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/jshop_detail_text_color" android:id="@id/jshop_dynamic_number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/jshop_concern_item_activity_bottom_margin_right" android:text="@string/jshop_dynamic_item_more" android:layout_toLeftOf="@id/jshop_dynamic_bottom_array" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/concern_shop_bottom_line" style="@style/line2" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/jshop_concern_item_conern_number_color" android:gravity="center" android:id="@id/foot_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/jshop_dynamic_end_tip" />
+</LinearLayout>

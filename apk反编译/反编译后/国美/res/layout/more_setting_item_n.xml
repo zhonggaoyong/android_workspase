@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/more_settings_update" android:background="@drawable/more_item_color_bg_selector" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/iv_linetop" android:background="@color/setting_activity_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/mygome_order_icon_nor" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:ellipsize="end" android:gravity="left|center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="检查更新" android:singleLine="true" android:layout_toRightOf="@id/iv_icon" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/tv_sub_title" android:visibility="visible" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/shop_cart_total_num_bg_small" android:layout_toRightOf="@id/tv_title" />
+    <ImageView android:id="@id/iv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/address_jiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/iv_line" android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

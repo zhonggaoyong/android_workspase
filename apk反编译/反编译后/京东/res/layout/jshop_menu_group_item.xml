@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#fff8f9fc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/jshop_m_menu_groupitem_text" android:textColor="@color/jshop_menu_group_text" android:gravity="center_vertical" android:id="@id/jshop_menu_group_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/jshop_m_menu_groupitem_marginleft" android:layout_marginTop="@dimen/jshop_m_menu_groupitem_margintop" android:layout_marginBottom="@dimen/jshop_m_menu_groupitem_marginbottom" android:layout_weight="1.0" />
+    <com.facebook.drawee.view.SimpleDraweeView android:gravity="center_vertical" android:id="@id/jshop_menu_group_arrow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/jshop_m_menu_groupitem_marginright" android:scaleType="centerInside" android:layout_weight="5.0" />
+</LinearLayout>

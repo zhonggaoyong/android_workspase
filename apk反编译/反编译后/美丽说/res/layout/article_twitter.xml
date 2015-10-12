@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <com.meilishuo.app.views.KeepScaleImageView android:layout_gravity="center" android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:scaleType="fitXY" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|right|center" android:id="@id/text_price" android:background="@drawable/show_picture_bg" android:paddingLeft="10.0dip" android:paddingTop="0.0dip" android:paddingRight="10.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/user_pic" android:background="@drawable/pic_shadow_bottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+            <com.meilishuo.app.views.RoundImageView android:id="@id/avatar" android:padding="5.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/round_avatar" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/text_user_name" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/avatar" />
+            <ImageView android:id="@id/daren_img" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="20.0dip" android:layout_toRightOf="@id/text_user_name" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/text_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/avatar" android:layout_below="@id/text_user_name" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/red_heart" android:background="@drawable/show_btn_love_press" android:paddingLeft="37.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.meilishuo.app.views.ArticleTextView android:textSize="15.0sp" android:textColor="#ff80737b" android:id="@id/text_info" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:lineSpacingMultiplier="1.2" />
+</LinearLayout>

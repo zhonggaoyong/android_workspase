@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/guide_bg" android:scaleType="centerCrop" />
+    <com.achievo.vipshop.view.widget.MyParallaxViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RadioGroup android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/pageIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/act_guide_pagerIndicator_mb" />
+    <Button android:textSize="@dimen/act_guide_ok_textSize" android:layout_gravity="bottom|center" android:id="@id/ok" android:visibility="visible" android:layout_width="@dimen/act_guide_ok_width" android:layout_height="@dimen/act_guide_ok_height" android:layout_marginBottom="@dimen/act_guide_ok_mb" android:text="开启VIP之旅" style="@style/btn_line_violet_style" />
+</FrameLayout>

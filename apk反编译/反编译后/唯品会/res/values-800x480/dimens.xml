@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="payment_pay_text_size">13.0dip</dimen>
+    <dimen name="payment_price_text_size">14.0dip</dimen>
+    <dimen name="favor_guide_image_height">250.0dip</dimen>
+    <dimen name="coupon_text_large">12.0sp</dimen>
+    <dimen name="coupon_text_margin">6.0dip</dimen>
+    <dimen name="coupon_text_normal">12.0sp</dimen>
+    <dimen name="coupon_text_xlarge">20.0sp</dimen>
+    <dimen name="favor_guide_image_bmargin">18.0dip</dimen>
+    <dimen name="favor_guide_image_lrmargin">21.0dip</dimen>
+    <dimen name="favor_guide_image_tmargin">13.0dip</dimen>
+    <dimen name="favor_guide_text_size">14.0sp</dimen>
+    <dimen name="favor_guide_tip_bmargin">50.0dip</dimen>
+    <dimen name="favor_tip_text_size">14.0sp</dimen>
+    <dimen name="favourable_text_large">14.0sp</dimen>
+    <dimen name="favourable_text_margin">4.0dip</dimen>
+    <dimen name="favourable_text_normal">12.0sp</dimen>
+    <dimen name="favourable_text_xlarge">18.0sp</dimen>
+    <dimen name="product_list_auto_indent">66.69998dip</dimen>
+    <dimen name="product_list_brand_favo_num_size">13.299988dip</dimen>
+    <dimen name="product_list_brand_title_size">15.099976dip</dimen>
+    <dimen name="product_list_item_aigo_size">12.399994dip</dimen>
+    <dimen name="product_list_item_marginleft">8.899994dip</dimen>
+    <dimen name="product_list_item_marketprice_size">8.899994dip</dimen>
+    <dimen name="product_list_item_vipprice_size">14.199982dip</dimen>
+    <dimen name="setting_password_tip_marginLeft">44.19998dip</dimen>
+    <dimen name="setting_password_tip_marginTop">-5.299988dip</dimen>
+    <dimen name="setting_password_tipbutton_h">27.199982dip</dimen>
+    <dimen name="setting_password_tipbutton_w">84.19998dip</dimen>
+    <dimen name="setting_password_tipicon_h">53.099976dip</dimen>
+    <dimen name="setting_password_tipicon_w">73.099976dip</dimen>
+    <dimen name="splash_activity_img_height">217.0dip</dimen>
+</resources>

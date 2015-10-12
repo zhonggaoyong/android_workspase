@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/passport_ll" android:background="@color/white" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/app_text_new_black" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="安全校验" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/btn_line_third_login_normal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+        <ImageButton android:id="@id/refresh_btn" android:background="@null" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/account_icon_refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/passport_iv" android:background="#ffffffff" android:layout_width="80.0dip" android:layout_height="20.0dip" android:layout_marginRight="11.0dip" android:layout_toLeftOf="@id/refresh_btn" android:layout_centerVertical="true" />
+        <View android:id="@id/diver_line" android:background="@color/divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/passport_iv" />
+        <EditText android:textSize="@dimen/app_textsize_main_new" android:textColor="@color/app_text_new_black" android:textColorHint="@color/app_text_new_gray" android:id="@id/passport_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="11.0dip" android:text="" android:hint="@string/login_passport_hint" android:singleLine="true" android:maxLength="8" android:layout_toLeftOf="@id/diver_line" android:layout_centerVertical="true" android:imeOptions="actionSend" />
+    </RelativeLayout>
+    <View android:background="@color/textarea_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TableRow android:gravity="center" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <Button android:textSize="15.0dip" android:textColor="@color/app_text_blue" android:id="@id/left_button" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_cancel" android:layout_weight="1.0" />
+        <View android:background="@color/textarea_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="15.0dip" android:textColor="@color/app_text_blue" android:id="@id/right_button" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_comfirm" android:layout_weight="1.0" />
+    </TableRow>
+</LinearLayout>

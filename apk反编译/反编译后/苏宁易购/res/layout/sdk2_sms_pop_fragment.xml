@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/sdk_colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/sdk2_bg_top" style="@style/common_hm_vw">
+        <TextView android:textSize="20.0sp" android:textColor="@color/sdk_colorBlack" android:gravity="center" android:id="@id/sdk_protol_title" android:text="@string/sdk_no_sms_tip" android:layout_centerHorizontal="true" style="@style/common_hw_vw" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sdk2_pop_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/sdk_pop_progress" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/sdk2_pop_bottom" android:background="@drawable/sdk2_sms_tip_bottom" android:visibility="visible" style="@style/common_hm_vw">
+        <TextView android:textSize="20.0sp" android:textColor="@color/sdk_color_blue" android:gravity="center_horizontal" android:text="@string/sdk_complete" android:layout_centerInParent="true" style="@style/common_hw_vw" />
+    </RelativeLayout>
+</LinearLayout>

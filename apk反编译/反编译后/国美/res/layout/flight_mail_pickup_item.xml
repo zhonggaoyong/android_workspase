@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/rl_content" android:background="#ffffffff" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:layout_gravity="center_vertical" android:id="@id/rb_select" android:background="@drawable/radio_button_bg_selector" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="false" android:button="@null" android:text="  " />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/tv_selfpickup_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自取点一" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:id="@id/tv_servTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

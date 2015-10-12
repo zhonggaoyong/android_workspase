@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/flight_customer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="登机人" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/flight_customer_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="--" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/order_flight_detail_item_layout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/Silver11" android:id="@id/flight_itinerary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电子客单号" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/Silver11" android:id="@id/flightItinerary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/order_flight_detail_item_layout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/order_flight_detail_item_layout1">
+            <TextView android:textSize="15.0sp" android:textColor="@color/Silver11" android:id="@id/flight_Insuranceno_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保险单号" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/Silver11" android:id="@id/flight_Insuranceno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/order_flight_detail_item_layout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/order_flight_detail_item_layout2">
+            <TextView android:textSize="15.0sp" android:textColor="@color/Silver11" android:id="@id/flight_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机票价格" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/red" android:id="@id/flightPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/order_flight_detail_item_layout4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/order_flight_detail_item_layout3">
+            <TextView android:textSize="15.0sp" android:textColor="@color/Silver11" android:id="@id/flight_oil_priceText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机建费" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/red" android:id="@id/flightOilPrice_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/order_flight_detail_item_layout5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/order_flight_detail_item_layout4">
+            <TextView android:textSize="15.0sp" android:textColor="@color/Silver11" android:id="@id/flight_oil_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机建/燃油费" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/red" android:id="@id/flightOilPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/order_flight_detail_item_layout6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/order_flight_detail_item_layout5">
+            <TextView android:textSize="15.0sp" android:textColor="@color/Silver11" android:id="@id/flight_insurance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保险" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/Silver11" android:id="@id/flightInsurance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="阳光意外交通险   苏宁赠送发斯蒂芬斯蒂芬第三方师傅" android:singleLine="true" android:layout_toLeftOf="@id/flightInsurance_price" android:layout_toRightOf="@id/flight_insurance" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/red" android:id="@id/flightInsurance_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_20px" android:text="20" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/order_flight_detail_item_layout6" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/flight_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="小计" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/red" android:id="@id/flightAccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="--" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

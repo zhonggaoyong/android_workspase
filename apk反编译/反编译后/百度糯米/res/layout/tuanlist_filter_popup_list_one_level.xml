@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bainuo.view.LinearLayoutWithMaxHeight android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/tuanlist_filter_popup_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@id/tuanlist_filter_popup_list" android:background="@drawable/tuanlist_filter_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@color/transparent" android:divider="@color/tuanlist_filter_listitem_divider" android:dividerHeight="1.0px" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/tuanlist_filter_popup_list_mask" android:background="@drawable/tuanlist_filter_mask_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="1.0px" />
+    </FrameLayout>
+    <View android:id="@id/transparent_holder" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</com.baidu.bainuo.view.LinearLayoutWithMaxHeight>

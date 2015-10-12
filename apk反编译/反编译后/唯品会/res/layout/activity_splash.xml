@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:vip="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/contentView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/splash_activity_time_text_size" android:textColor="#ffb3b3b3" android:id="@id/splash_clock_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/splash_activity_time_margintop" android:text="10:00" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/splashAdvImg" android:layout_width="wrap_content" android:layout_height="@dimen/splash_activity_img_height" android:layout_marginTop="@dimen/splash_activity_img_margintop" android:src="@drawable/splash_default_adv" android:layout_below="@id/splash_clock_time" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/splashLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/splash_activity_slik_margintop" android:layout_below="@id/splashAdvImg" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="22.0dip" android:src="@drawable/splash_point" />
+            <com.achievo.vipshop.view.widget.SlideTextView android:id="@id/slider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" vip:textColor="\#808080" vip:maskText="滑动开始抢购" vip:maskTextSize="@dimen/splash_activity_maskTextSize" />
+        </LinearLayout>
+        <Button android:textSize="15.0sp" android:id="@id/noAlert" android:background="@drawable/splash_aler_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/splash_activity_alert_margintop" android:text="忽略提醒" android:layout_below="@id/splashLayout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/voice_center_microphone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_center_microphone" android:layout_centerInParent="true" android:onClick="microphoneClick" android:contentDescription="@null" />
+    <ImageView android:id="@id/voice_center_circle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_center_circle" android:layout_centerInParent="true" android:contentDescription="@null" />
+    <ProgressBar android:id="@id/voice_identify_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/voiceIdentifyLoading" />
+    <include android:id="@id/voice_center_amplitude" layout="@layout/voice_amplitude_layout" />
+</RelativeLayout>

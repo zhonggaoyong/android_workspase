@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/jshop_favbar_height" android:onClick="submenuPickUp">
+        <LinearLayout android:layout_gravity="bottom" android:id="@id/jshop_main_1st_submenu" style="@style/JshopMainSubmenuLayout">
+            <FrameLayout android:id="@id/jshop_mm_sublistlayout_1st" style="@style/JshopMainSubmenuListLayout">
+                <ListView android:id="@id/jshop_mm_sublist_1st" style="@style/JshopMainSubmenuList" />
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="bottom" android:id="@id/jshop_mm_sublist_1st_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jshop_bottombar_list_arrow" android:scaleType="fitCenter" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom|center" android:id="@id/jshop_main_2nd_submenu" style="@style/JshopMainSubmenuLayout">
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/jshop_mm_sublistlayout_2nd" style="@style/JshopMainSubmenuListLayout">
+                <ListView android:id="@id/jshop_mm_sublist_2nd" style="@style/JshopMainSubmenuList" />
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jshop_bottombar_list_arrow" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

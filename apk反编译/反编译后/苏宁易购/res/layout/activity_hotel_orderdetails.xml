@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearlayout" android:background="@drawable/bg_title_new" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffffffff">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:background="@drawable/input_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/hotel_introduction_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <RelativeLayout android:id="@id/hotel_introduction_info_layout_in" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_centerInParent="true">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/hotelName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/hotel_introduction_hotel_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/hotelName">
+                            <RatingBar android:id="@id/star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="0.0" android:isIndicator="true" style="@style/hotel_rating_bar" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/hotel_order_detail_rela2" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/Silver11" android:id="@id/hotelAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="地铁口" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/hotel_order_detail_rela3" android:background="@drawable/input_bg" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/hotel_order_detail_relalayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/hotel_order_detail_roomtype_string" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/Silver11" android:id="@id/roomTypeName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/hotel_order_detail_relalayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/hotel_order_detail_relalayout1">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/hotel_order_detail_roomnum_string" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/Silver11" android:id="@id/roomAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/hotel_order_detail_relalayout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/hotel_order_detail_relalayout2">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/hotel_order_detail_checktime_string" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/checkDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/hotel_order_detail_rela4" android:background="@drawable/input_bg" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <RelativeLayout android:id="@id/hotel_order_detail_pay_rela1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/hotel_order_detail_paymenttype_string" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/paymentTypeStr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/hotel_order_detail_pay_rela2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/hotel_order_detail_pay_rela1">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/Silver11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/hotel_order_detail_dailyavgprice_string" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/red" android:id="@id/dailyAvgPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/hotel_order_detail_rela5" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/guest_title_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="入住人" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="20.0dip" android:layout_toRightOf="@id/guest_title_one" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/guest_name_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/hotel_order_detail_rela6" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/guest_phone_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="联系人" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/hotel_order_detail_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/hotel_order_detail_rela7" android:background="@drawable/input_bg" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/hotel_order_detail_date_rela1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/Silver11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="最早到店" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/Silver11" android:id="@id/arrivalEarlyTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/hotel_order_detail_date_rela2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/hotel_order_detail_date_rela1">
+                    <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="最晚到店" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/Silver11" android:id="@id/arrivalLateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/hotel_order_detail_rela7" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="订单号" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/hotel_order_detail_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/hotel_order_detail_rela8" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="下单时间" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/hotel_order_detail_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/hotel_order_detail_rela9" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="订单状态" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/hotel_order_detail_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/hotel_order_detail_back_rela" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_centerHorizontal="true">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hotel_order_detail_totalprice_string" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hotel_order_detail_douhao_string" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/red" android:id="@id/totalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

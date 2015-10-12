@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_product_prom_dialog_gift_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="45.0dip" android:src="@drawable/product_gift_icon" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:id="@id/tv_product_prom_dialog_gift_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="我是一个大彩电，和哈哈哈和f" android:layout_toLeftOf="@id/tv_product_prom_dialog_gift_num" android:layout_toRightOf="@id/iv_product_prom_dialog_gift_img" android:layout_alignTop="@id/iv_product_prom_dialog_gift_img" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:id="@id/tv_product_prom_dialog_gift_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="赠品：" android:layout_toLeftOf="@id/tv_product_prom_dialog_gift_num_data" />
+    <TextView android:textSize="13.0sp" android:textColor="#ffc70000" android:id="@id/tv_product_prom_dialog_gift_num_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="x1" android:layout_alignParentRight="true" />
+</RelativeLayout>

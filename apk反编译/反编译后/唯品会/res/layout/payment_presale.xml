@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/payment_margin_new" android:paddingRight="@dimen/payment_margin_new" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="7.0dip">
+        <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_black_new_ui" android:layout_gravity="center" android:id="@id/orders_presale_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首单" android:layout_toLeftOf="@id/orders_total" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_black_new_ui" android:id="@id/orders_presale_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

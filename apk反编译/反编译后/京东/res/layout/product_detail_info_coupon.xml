@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/pd_item_enable_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:orientation="horizontal" android:background="@drawable/pd_deliver_h" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/pd_space_width_10" />
+    <RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/pd_space_width_10" android:paddingTop="@dimen/pd_space_width_15" android:paddingRight="@dimen/pd_space_width_10" android:paddingBottom="@dimen/pd_space_width_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/pd_coupon_title" android:text="@string/pd_get_coupon" android:layout_centerVertical="true" style="@style/pd_title_text_style" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pd_coupon_arrow" android:layout_marginLeft="@dimen/pd_space_width_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/pd_arrow_img_style" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pd_coupon_layout" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_toLeftOf="@id/pd_coupon_arrow" android:layout_toRightOf="@id/pd_coupon_title" />
+    </RelativeLayout>
+</LinearLayout>

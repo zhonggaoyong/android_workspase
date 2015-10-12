@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_favbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/jshop_shop_bottom_first" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_favbar_height" android:layout_weight="1.0">
+        <Button android:id="@id/jshop_shop_first_bt" android:background="#00000000" android:clickable="false" android:text="@string/jshop_shop_detail_bt" style="@style/JshopBottomBarBtn" />
+    </LinearLayout>
+    <View android:background="#ffbbbbbb" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/jshop_shop_bottom_second" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_favbar_height" android:layout_weight="1.0">
+        <Button android:id="@id/jshop_shop_second_bt" android:background="#00000000" android:clickable="false" android:text="@string/jshop_shop_hotcate_bt" style="@style/JshopBottomBarBtn" />
+    </LinearLayout>
+    <View android:background="#ffbbbbbb" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/jshop_shop_bottom_im" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_favbar_height" android:layout_weight="1.0">
+        <Button android:id="@id/jshop_shop_im_bt" android:background="#00000000" android:text="@string/jshop_im_online_text" style="@style/JshopBottomBarBtn" />
+    </LinearLayout>
+</LinearLayout>

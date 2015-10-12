@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/app_background" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="#ff111111" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="升级APP前使用支付宝、360帐号等方式登录的用户：" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="1.如您之前购买过团购，请使用当时购买的手机号作为帐号，在密码栏输入任意六位及以上密码，点击登录，即可完成帐号升级并登录；" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="2.如您之前未发生过购买，或手机号已解绑，您可注册新帐号使用或联系客服处理（4006-888-887）。" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

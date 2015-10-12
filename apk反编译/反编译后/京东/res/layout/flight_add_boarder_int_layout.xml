@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/add_board_current_view" android:background="@color/travel_all_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jdtravel="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.jdtravel.ui.TravelTitle android:id="@id/add_boarder_title" android:layout_width="fill_parent" android:layout_height="wrap_content" jdtravel:fdrawableLeft="@drawable/common_title_back_selector" jdtravel:ftextTitle="@string/jdtravel_add_persion_int" jdtravel:ftextRight="@string/jdtravel_add_ok" />
+    <View style="@style/travel_view_splite_h" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0dip" android:textColor="#ff252525" android:gravity="center" android:background="#fff9f5ef" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="请您确保填写信息无误。暂不支持购买儿童票和婴儿票。" />
+            <View style="@style/travel_view_splite_h" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/flight_list_item_selector" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="left|center" android:layout_width="118.0dip" android:layout_height="fill_parent" android:text="乘机人姓" />
+                    <EditText android:textSize="16.0dip" android:textColor="#ff252525" android:textColorHint="#ff999999" android:gravity="left|center" android:id="@id/boarder_last_name" android:background="@null" android:paddingLeft="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="拼音/Last Name" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View style="@style/travel_view_splite_h" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/flight_list_item_selector" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="left|center" android:layout_width="118.0dip" android:layout_height="fill_parent" android:text="乘机人名" />
+                    <EditText android:textSize="16.0dip" android:textColor="#ff252525" android:textColorHint="#ff999999" android:gravity="left|center" android:id="@id/boarder_first_name" android:background="@null" android:paddingLeft="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="拼音/First Name" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View style="@style/travel_view_splite_h" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/flight_list_item_selector" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="left|center" android:layout_width="118.0dip" android:layout_height="fill_parent" android:text="性别" />
+                    <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:gravity="left|center" android:id="@id/boarder_sex" android:background="@null" android:paddingLeft="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/flight_back_arrow_common" />
+                </LinearLayout>
+                <View style="@style/travel_view_splite_h" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/flight_list_item_selector" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="left|center" android:layout_width="118.0dip" android:layout_height="fill_parent" android:text="国籍" />
+                    <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:gravity="left|center" android:id="@id/boarder_country" android:background="@null" android:paddingLeft="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/flight_back_arrow_common" />
+                </LinearLayout>
+                <View style="@style/travel_view_splite_h" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/flight_list_item_selector" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="left|center" android:layout_width="118.0dip" android:layout_height="fill_parent" android:text="出生日期" />
+                    <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:gravity="left|center" android:id="@id/boarder_birthday" android:background="@null" android:paddingLeft="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/flight_back_arrow_common" />
+                </LinearLayout>
+                <View style="@style/travel_view_splite_h" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/flight_list_item_selector" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="left|center" android:layout_width="118.0dip" android:layout_height="fill_parent" android:text="证件类型" />
+                    <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:gravity="left|center" android:id="@id/boarder_id_type" android:background="@null" android:paddingLeft="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/flight_back_arrow_common" />
+                </LinearLayout>
+                <View style="@style/travel_view_splite_h" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/flight_list_item_selector" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="left|center" android:layout_width="118.0dip" android:layout_height="fill_parent" android:text="证件号码" />
+                    <EditText android:textSize="16.0dip" android:textColor="#ff252525" android:gravity="left|center" android:id="@id/boarder_id_number" android:background="@null" android:paddingLeft="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View style="@style/travel_view_splite_h" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/flight_list_item_selector" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="left|center" android:layout_width="118.0dip" android:layout_height="fill_parent" android:text="证件有效期" />
+                    <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:gravity="left|center" android:id="@id/boarder_id_validity" android:background="@null" android:paddingLeft="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/flight_back_arrow_common" />
+                </LinearLayout>
+                <View style="@style/travel_view_splite_h" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/flight_list_item_selector" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="left|center" android:layout_width="118.0dip" android:layout_height="fill_parent" android:text="购买保险" />
+                    <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:gravity="left|center" android:id="@id/boarder_insurance" android:background="@null" android:paddingLeft="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="1份(￥30/份)" android:layout_weight="1.0" />
+                    <ImageView android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/flight_back_arrow_common" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/travel_view_splite_h" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

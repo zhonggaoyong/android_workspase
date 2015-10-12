@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/miaosha_brand_inner_header_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/miaosha_brand_inner_timelayout" android:background="@drawable/miaoshabrand_timebackground" android:layout_width="wrap_content" android:layout_height="23.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/miaosha_brand_inner_timetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/miaosha_brand_inner_timeimage" android:layout_width="70.0dip" android:layout_height="18.0dip" android:layout_marginLeft="1.0dip" android:layout_toRightOf="@id/miaosha_brand_inner_timetext" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

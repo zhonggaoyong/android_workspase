@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/maintabs" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" />
+        <RelativeLayout android:id="@id/titleLayout" android:background="#fffcfcfc" android:layout_width="fill_parent" android:layout_height="@dimen/main_title_height">
+            <com.fanli.android.view.TangFontTextView android:textSize="22.5sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tvTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:singleLine="true" android:layout_centerInParent="true" />
+            <RelativeLayout android:id="@id/search_layout" android:background="@drawable/bg_search_bar_home" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip">
+                <ImageView android:id="@id/iv_search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_search_btn" android:layout_centerVertical="true" />
+                <com.fanli.android.view.TangFontTextView android:gravity="center_vertical" android:id="@id/tv_search" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/home_search_hint" android:layout_toRightOf="@id/iv_search_icon" />
+            </RelativeLayout>
+            <ImageView android:id="@id/btn_setting" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:src="@drawable/btn_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/main_radio_container" android:layout_width="fill_parent" android:layout_height="@dimen/main_tab_height" android:layout_alignParentBottom="true">
+            <View android:background="@color/view_separator_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/main_radio" android:background="@drawable/tab_bg_new" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/main_tab_height" />
+        </LinearLayout>
+    </RelativeLayout>
+</TabHost>

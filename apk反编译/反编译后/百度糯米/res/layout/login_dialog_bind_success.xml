@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/login_dialog_bind_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/login_bind_dialog_head" android:scaleType="centerCrop" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff111111" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="升级成功" />
+    <TextView android:textSize="18.0sp" android:textColor="#ffff4987" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/login_dialog_bind_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="以后可以用以下百度帐号登录糯米" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/login_dialog_bind_user" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" />
+</LinearLayout>

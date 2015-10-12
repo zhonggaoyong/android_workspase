@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ebpay_window_bg" android:layout_width="@dimen/ebpay_dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_title_heigth">
+        <TextView android:textSize="18.0sp" android:textColor="@color/ebpay_white" android:gravity="left|center" android:id="@id/dialog_title" android:background="@color/ebpay_title_bg" android:paddingLeft="@dimen/ebpay_line_margin_10" android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_title_heigth" android:text="@string/ebpay_tip" />
+        <Button android:id="@id/dialog_title_close" android:background="@drawable/ebpay_bg_clear_selector" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/ebpay_window_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/dialog_btns" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebpay_line_margin_15" android:layout_marginRight="@dimen/ebpay_line_margin_15" android:layout_marginBottom="@dimen/ebpay_line_margin_10">
+            <Button android:textSize="18.0sp" android:textColor="@color/ebpay_white" android:id="@id/negative_btn" android:background="@drawable/bd_wallet_neg_btn_bg" android:layout_width="0.0dip" android:layout_height="@dimen/ebpay_bt_height" android:layout_marginRight="7.0dip" android:text="@string/ebpay_not_exit" android:layout_weight="1.0" />
+            <Button android:textSize="18.0sp" android:textColor="@color/ebpay_white" android:id="@id/positive_btn" android:background="@drawable/ebpay_bg_confrim_selector" android:layout_width="0.0dip" android:layout_height="@dimen/ebpay_bt_height" android:layout_marginLeft="7.0dip" android:text="@string/ebpay_exit" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

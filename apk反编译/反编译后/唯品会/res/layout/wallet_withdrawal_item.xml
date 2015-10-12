@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vipnew_header" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/app_text_black_new_ui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提现" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/wallet_list_color" android:id="@id/wallet_withdraw_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0dip" android:textColor="@color/app_text_black_new_ui" android:id="@id/wallet_withdraw_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账户 " />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/app_text_black_new_ui" android:gravity="center_horizontal" android:id="@id/wallet_withdraw_targe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0dip" android:textColor="@color/app_text_default_new_ui" android:id="@id/wallet_withdraw_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@drawable/vipmoney_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/wallet_withdraw_status_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@color/wallet_withdrawal_status_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/withdrawalstatus1_img" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="24.0dip" android:src="@drawable/icon_withdrawals_process_green1" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="14.0dip" android:textColor="@color/app_text_black" android:gravity="center" android:id="@id/withdrawalstatus1_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="提现申请" />
+                <TextView android:textSize="10.0dip" android:textColor="@color/app_text_new_gray" android:gravity="center" android:id="@id/withdrawalstatus1_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/withdrawalstatus2_view1" android:background="@color/wallet_withdrawal_status_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/withdrawalstatus2_img" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="14.0dip" android:textColor="@color/app_text_black" android:gravity="center" android:id="@id/withdrawalstatus2_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="提现受理" />
+                <TextView android:textSize="10.0dip" android:textColor="@color/app_text_new_gray" android:gravity="center" android:id="@id/withdrawalstatus2_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/withdrawalstatus3_view1" android:background="@color/wallet_withdrawal_status_line_gray" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/withdrawalstatus3_img" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="14.0dip" android:textColor="@color/app_text_black" android:gravity="center" android:id="@id/withdrawalstatus3_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="银行处理" />
+                <TextView android:textSize="10.0dip" android:textColor="@color/app_text_new_gray" android:gravity="center" android:id="@id/withdrawalstatus3_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/withdrawalstatus4_view1" android:background="@color/wallet_withdrawal_status_line_gray" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/withdrawalstatus4_img" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="24.0dip" android:src="@drawable/icon_withdrawal_process_gray" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="14.0dip" android:textColor="@color/app_text_black" android:gravity="center" android:id="@id/withdrawalstatus4_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="提现成功" />
+                <TextView android:textSize="10.0dip" android:textColor="@color/app_text_new_gray" android:gravity="center" android:id="@id/withdrawalstatus4_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/btn_vertical_line_1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+</LinearLayout>

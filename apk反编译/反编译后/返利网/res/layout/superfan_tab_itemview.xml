@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fanli.android.view.TangFont2TextView android:textSize="15.0sp" android:textColor="@color/superfan_tab_textcolor" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.fanli.android.view.TangFontTextView android:id="@id/tv_new" android:background="@drawable/icon_new_msg" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_toRightOf="@id/tv_name" android:layout_above="@id/tv_name" />
+    <View android:id="@id/line_bottom" android:background="#ff3cb147" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/gg_buy_item_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_product_image" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="13.0dip" android:textColor="@color/gg_pro_title_color" android:id="@id/item_product_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/gg_price_color" android:id="@id/item_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/gg_board_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="8.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gg_love_btn_click" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <Button android:textSize="@dimen/guang_chanel1_textSize2" android:textColor="@color/gg_love_count" android:id="@id/gg_loved_id" android:background="@color/transparent" android:paddingRight="@dimen/guang_chanel_guangzhubtn_marginRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guangguang_guanzhu" android:drawableLeft="@drawable/guangguang_guanzhu_btn" android:drawablePadding="@dimen/guang_chanel_btntotext" />
+            </LinearLayout>
+            <Button android:textSize="13.0dip" android:textColor="@color/white" android:id="@id/buy_product_btn" android:background="@drawable/gg_buy_button" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加入购物车" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

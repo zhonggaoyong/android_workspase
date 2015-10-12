@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_circle" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_toRightOf="@id/rl_leftcontainer" android:layout_centerVertical="true">
+        <View android:id="@id/view_dark" android:background="@drawable/icon_circle_dark" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_centerInParent="true" />
+        <View android:background="@drawable/icon_circle_white" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_rightcontainer" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_toRightOf="@id/rl_circle">
+        <TextView android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/tv_righttagTitle" android:background="@drawable/chaodian_bg_tab_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:singleLine="true" />
+        <LinearLayout android:background="@drawable/chaodian_bg_tab_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_righttagTitle" android:layout_alignTop="@id/tv_righttagTitle" android:layout_alignBottom="@id/tv_righttagTitle">
+            <ImageView android:id="@id/view_righttabtype" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_leftcontainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip">
+        <LinearLayout android:id="@id/ll_tagtype" android:background="@drawable/chaodian_bg_tab_type_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/tv_lefttagTitle" android:layout_alignBottom="@id/tv_lefttagTitle">
+            <ImageView android:id="@id/view_lefttabtype" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/tv_lefttagTitle" android:background="@drawable/chaodian_bg_tab_content_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toRightOf="@id/ll_tagtype" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

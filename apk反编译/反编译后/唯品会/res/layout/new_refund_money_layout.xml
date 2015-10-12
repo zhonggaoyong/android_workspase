@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/refund_good_money_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff585c64" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/return_good_money_text" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:id="@id/refund_good_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥ 0.00" android:singleLine="true" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/refund_order_fee_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff585c64" android:id="@id/refund_order_fee_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_fee_text" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:id="@id/refund_order_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥ 0.00" android:singleLine="true" android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff98989f" android:id="@id/refund_order_fee_des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0" android:layout_below="@id/refund_order_fee_text" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/refund_fee_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff585c64" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退货运费" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/order_submit_red_big_text" android:textColor="@color/order_black_text" android:id="@id/refund_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥ 0.00" android:singleLine="true" />
+        </LinearLayout>
+        <View android:background="@drawable/cart_dash_driver" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/must_return_money_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ff222222" android:id="@id/must_return_money_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/must_return_money_text" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/order_submit_red_big_text" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/must_return_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥ 0.00" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/order_return_process_content_bg_gray" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/refund_money_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff98989f" android:id="@id/refund_money_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="原路退回" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff98989f" android:id="@id/refund_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥ 0.00" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/refund_surplus_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff98989f" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退至唯品钱包" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff98989f" android:id="@id/refund_surplus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥ 0.00" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/refund_coupon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff98989f" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退回卡券" android:layout_weight="1.0" />
+                <TextView android:textSize="10.0dip" android:textColor="#ffbb9011" android:layout_gravity="center_vertical" android:id="@id/refund_voucher_txt" android:background="@drawable/lable_icon_bg_gold" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="代金券10元" android:singleLine="true" />
+                <TextView android:textSize="11.0dip" android:textColor="#ff472a01" android:id="@id/refund_coupon_txt" android:background="@color/refund_voucher_bg_color" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="优惠券10元" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/refund_vip_coin_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff98989f" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退回唯品币" android:layout_weight="1.0" />
+                <TextView android:textSize="10.0dip" android:textColor="#ffe4007f" android:layout_gravity="center_vertical" android:id="@id/refund_vip_coin" android:background="@drawable/lable_icon_bg_purple" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="唯品币10元" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/refund_back_fee_lines" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/refund_back_fee_layout" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff222222" android:id="@id/refund_back_fee_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/return_back_fee_text" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff98989f" android:id="@id/return_back_fee_des_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/refund_back_fee_text" />
+        <TextView android:textSize="10.0dip" android:textColor="#ffe4007f" android:id="@id/refund_gits_money" android:background="@drawable/lable_icon_bg_purple" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:text="礼品卡10元" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+</LinearLayout>

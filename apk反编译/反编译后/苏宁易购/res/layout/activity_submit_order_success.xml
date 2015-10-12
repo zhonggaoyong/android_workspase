@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/ios_public_space_57px" android:paddingBottom="@dimen/ios_public_space_57px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sucess_card_merge" />
+        <TextView android:textSize="@dimen/pub_textsize_eighteen" android:textColor="@color/pub_color_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_ten" android:text="@string/pay_submit_order_success_prompt" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ios_public_space_30px">
+            <TextView android:textSize="@dimen/pub_textsize_eighteen" android:textColor="@color/pub_color_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_list_no" />
+            <TextView android:textSize="@dimen/pub_textsize_eighteen" android:textColor="@color/pub_color_three" android:id="@id/submit_order_success_ordernum" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ios_public_space_30px">
+            <TextView android:textSize="@dimen/pub_textsize_eighteen" android:textColor="@color/pub_color_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_price_paymode_view" />
+            <TextView android:textSize="@dimen/pub_textsize_eighteen" android:textColor="@color/pub_color_seven" android:id="@id/submit_order_success_shouldpay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ios_public_space_30px">
+            <TextView android:textSize="@dimen/pub_textsize_eighteen" android:textColor="@color/pub_color_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_model" />
+            <TextView android:textSize="@dimen/pub_textsize_eighteen" android:textColor="@color/pub_color_three" android:id="@id/submit_order_success_paymode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/pub_color_nine" android:id="@id/submit_order_success_deliver_pay_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" android:layout_marginTop="@dimen/ios_public_space_30px" android:layout_marginRight="@dimen/ios_public_space_30px" android:text="@string/pay_submitorder_cod_cash_prompt" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" android:layout_marginTop="@dimen/ios_public_space_90px" android:layout_marginRight="@dimen/ios_public_space_30px">
+        <Button android:textSize="@dimen/ios_public_textsize_26pt" android:textColor="@color/pub_color_nine" android:id="@id/go_around" android:background="@drawable/public_bg_btn_white" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_forty" android:layout_marginRight="@dimen/ios_public_space_30px" android:text="@string/pay_go_around_aftersuccess_prompt" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/ios_public_textsize_26pt" android:textColor="@color/pub_color_one" android:id="@id/query_order_button" android:background="@drawable/public_bg_btn_orange" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_forty" android:layout_marginLeft="@dimen/ios_public_space_30px" android:text="@string/pay_query_order_aftersuccess_prompt" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

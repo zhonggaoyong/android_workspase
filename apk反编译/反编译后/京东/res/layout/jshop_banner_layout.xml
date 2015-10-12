@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/jshop_shop_banner_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/jshop_shop_banner" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_img_head_h">
+        <ImageView android:id="@id/jshop_img_head" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_img_head_h" android:src="@drawable/jshop_banner_default" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="horizontal" android:background="#50000000" android:clickable="true" style="@style/JshopBannerName">
+            <LinearLayout android:orientation="horizontal" android:id="@id/jshop_logo_and_name" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:background="#ffc0c0c0" style="@style/JshopBannerLogorect">
+                    <ImageView android:id="@id/jshop_logo_img_nobar" android:background="#ffffffff" android:layout_margin="1.0px" style="@style/JshopBannerLogo" />
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="@dimen/jshop_detail_name_width" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                    <TextView android:textSize="@dimen/jshop_banner_name_size" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="left" android:layout_gravity="left" android:id="@id/jshop_shopname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_marginRight="4.5dip" android:singleLine="true" android:drawableRight="@drawable/jshop_detail_arrow_selector" android:drawablePadding="1.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_jd_shop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/jshop_sellself_icon" />
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_diamond_shop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/jshop_diamond_icon" />
+                        <TextView android:textSize="@dimen/jshop_banner_fav_size" android:textColor="#ffcdcdcd" android:layout_gravity="bottom|left|center" android:id="@id/jshop_favcount_in_fbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.5dip" android:layout_marginRight="8.0dip" android:text="0人关注" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/jshop_main_fav_bt" android:background="@drawable/jshop_favbt_red_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="9.0dip" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/jshop_banner_bottom" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginBottom="1.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/jshop_fav_share_im" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/jshop_btn_all_product" android:layout_weight="1.0" style="@style/JshoBannerBottomBtn">
+                <TextView android:id="@id/jshop_btn_all_product_num" android:text="0" style="@style/JshoBannerBtnCount" />
+                <TextView android:id="@id/jshop_btn_all_product_text" android:text="全部商品" style="@style/JshoBannerBtnContent" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_btn_all_product_line" style="@style/JshopBannerSpliteLine" />
+            <LinearLayout android:orientation="vertical" android:id="@id/jshop_btn_new_product" android:layout_weight="1.0" style="@style/JshoBannerBottomBtn">
+                <TextView android:id="@id/jshop_btn_new_product_num" android:text="0" style="@style/JshoBannerBtnCount" />
+                <TextView android:id="@id/jshop_btn_new_product_text" android:text="上新" style="@style/JshoBannerBtnContent" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_btn_new_product_line" style="@style/JshopBannerSpliteLine" />
+            <LinearLayout android:orientation="vertical" android:id="@id/jshop_btn_promo_product" android:layout_weight="1.0" style="@style/JshoBannerBottomBtn">
+                <TextView android:id="@id/jshop_btn_promo_product_num" android:text="0" style="@style/JshoBannerBtnCount" />
+                <TextView android:id="@id/jshop_btn_promo_product_text" android:text="@string/jshop_promotion_sell" style="@style/JshoBannerBtnContent" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_btn_promo_product_line" style="@style/JshopBannerSpliteLine" />
+            <LinearLayout android:orientation="vertical" android:id="@id/jshop_btn_act_product" android:layout_weight="1.0" style="@style/JshoBannerBottomBtn">
+                <TextView android:id="@id/jshop_btn_act_num" android:text="0" style="@style/JshoBannerBtnCount" />
+                <TextView android:id="@id/jshop_btn_act_text" android:text="@string/jshop_shop_act" style="@style/JshoBannerBtnContent" />
+            </LinearLayout>
+            <Button android:id="@id/jshop_shop_share_bt" android:visibility="gone" android:text="@string/jshop_share_bt" android:singleLine="true" android:drawableTop="@drawable/jshop_share_selector" android:layout_weight="1.0" style="@style/JshopDefaultBottomMenu" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

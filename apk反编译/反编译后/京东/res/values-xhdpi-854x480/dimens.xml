@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="flight_internation_joy_top">200.0px</dimen>
+    <dimen name="regist_inputEdite_padding">10.0dip</dimen>
+</resources>

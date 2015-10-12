@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/android_public_textsize_26pt" android:textColor="@color/pub_color_three" android:gravity="left" android:id="@id/tv_upgrade_title" android:paddingLeft="@dimen/android_public_space_40px" android:paddingTop="@dimen/android_public_space_36px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="更新说明" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/android_public_space_40px" android:layout_marginTop="@dimen/android_public_space_20px" android:layout_marginRight="@dimen/android_public_space_40px" android:layout_marginBottom="@dimen/android_public_space_36px" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/android_public_textsize_22pt" android:textColor="@color/pub_color_three" android:id="@id/tv_upgrade_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/op_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_upgrade_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+            <TextView android:textSize="@dimen/android_public_textsize_26pt" android:textColor="@color/pub_color_four" android:gravity="center" android:id="@id/txt_upgrade_normal" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="@string/act_update_update_confirm" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_upgrade_incremental" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+            <TextView android:textSize="@dimen/android_public_textsize_26pt" android:textColor="@color/pub_color_four" android:gravity="center" android:id="@id/txt_upgrade_incremental" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="@string/act_update_increase_update" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+            <TextView android:textSize="@dimen/android_public_textsize_26pt" android:textColor="@color/pub_color_nine" android:gravity="center" android:id="@id/txt_cancel" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="@string/app_dialog_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

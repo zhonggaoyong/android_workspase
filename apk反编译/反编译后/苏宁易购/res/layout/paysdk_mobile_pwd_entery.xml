@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/paysdk_bg_whole_gray" style="@style/pay_common_hm_vm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/paysdk_card_content" android:layout_margin="@dimen/paysdk_comm_padding_size_2" style="@style/pay_common_hm_vm">
+        <ImageView android:layout_marginTop="@dimen/paysdk_comm_padding_size_1" android:src="@drawable/paysdk_start_mobilepwd" style="@style/pay_common_hw_vw" />
+        <TextView android:textColor="@color/paysdk_color_black50" android:gravity="center" android:layout_marginTop="@dimen/paysdk_comm_padding_size_1" android:text="@string/paysdk_start_mobile_pwd" style="@style/pay_common_hm_vw" />
+        <TextView android:textColor="@color/paysdk_color_tip" android:gravity="center" android:layout_marginTop="@dimen/paysdk_comm_padding_size_1" android:text="@string/paysdk_start_mobile_pwd_info" style="@style/pay_common_hm_vw" />
+        <Button android:id="@id/paysdk_pwd_open_btn" android:layout_marginLeft="@dimen/paysdk_comm_padding_size_2" android:layout_marginTop="@dimen/paysdk_comm_padding_size_2" android:layout_marginRight="@dimen/paysdk_comm_padding_size_2" android:text="@string/paysdk_mobile_pwd_confirm" style="@style/paysdk_base_btn_blue" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:id="@id/order_shop_info_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/pink" android:id="@id/order_shop_info_item_content_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/order_shop_info_item_label" />
+    <ImageView android:id="@id/order_shop_info_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="@dimen/order_margin_space" android:src="@drawable/detail_ico_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d1" android:id="@id/order_shop_info_item_content_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/order_shop_info_arrow" />
+</RelativeLayout>

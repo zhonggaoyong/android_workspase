@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/app_textsize_button" android:textColor="@drawable/favor_tab_check_text_color_selector" android:id="@id/tab_header_btn" android:background="@drawable/favor_tab_bg_selector" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/tab_header_btn_bottom_line" android:background="@color/detail_pink_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignBottom="@id/btn_gifts" android:layout_alignParentBottom="true" />
+</RelativeLayout>

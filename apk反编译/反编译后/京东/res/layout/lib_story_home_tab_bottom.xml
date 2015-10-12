@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bottom_bar" android:layout_width="fill_parent" android:layout_height="57.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:background="@drawable/lib_story_bg_bar_bottom" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tv_home" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_width="@dimen/lib_story_bottom_bar_image_width" android:layout_height="@dimen/lib_story_bottom_bar_image_width" android:src="@drawable/lib_story_icon_home_pressed" />
+            <TextView android:textSize="11.0sp" android:textColor="#fff15353" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_story_selected" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tv_topic" android:duplicateParentState="false" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_width="@dimen/lib_story_bottom_bar_image_width" android:layout_height="@dimen/lib_story_bottom_bar_image_width" android:src="@drawable/lib_story_icon_topic_normal" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff686868" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_story_topic" />
+        </LinearLayout>
+        <View android:duplicateParentState="false" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tv_theme" android:duplicateParentState="false" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_width="@dimen/lib_story_bottom_bar_image_width" android:layout_height="@dimen/lib_story_bottom_bar_image_width" android:src="@drawable/lib_story_icon_shelf_normal" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff686868" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_story_theme" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tv_my" android:duplicateParentState="false" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0">
+            <TextView android:gravity="center" android:id="@id/lib_story_my_red_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="7.0dip" android:layout_marginBottom="-6.0dip" android:text="     " android:drawableRight="@drawable/lib_story_new_message_tip" />
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_width="@dimen/lib_story_bottom_bar_image_width" android:layout_height="@dimen/lib_story_bottom_bar_image_width" android:src="@drawable/lib_story_icon_my_normal" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff686868" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_story_my" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/tv_publish" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/lib_story_edit_publish_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

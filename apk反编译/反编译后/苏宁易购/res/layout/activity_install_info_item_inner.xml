@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/install_item_inner" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/stripbg_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/expectedInstallationTime" android:singleLine="true" android:layout_weight="0.55" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/product_install_date" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.45" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/orderType" android:layout_weight="0.55" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/product_install_order_type" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.45" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/serviceStatus" android:layout_weight="0.55" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/product_install_service_status" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.45" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/installationEngineerName" android:singleLine="true" android:layout_weight="0.55" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/product_install_engineer_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.45" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/installationEngineerTel" android:singleLine="true" android:layout_weight="0.55" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/product_install_engineer_phone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.45" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

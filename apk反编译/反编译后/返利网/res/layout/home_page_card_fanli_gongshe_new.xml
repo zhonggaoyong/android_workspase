@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_upper" android:layout_width="fill_parent" android:layout_height="93.0dip">
+        <ImageView android:id="@id/iv_fanli_gongshe_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <RelativeLayout android:background="@drawable/gongshe_title_bg" android:layout_width="fill_parent" android:layout_height="21.0dip" android:layout_alignParentBottom="true">
+            <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/tv_fanli_gongshe_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/rl_upper">
+        <ImageView android:id="@id/iv_fanli_gongshe_praise" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_toLeftOf="@id/tv_fanli_gongshe_praise" android:layout_centerVertical="true" />
+        <com.fanli.android.view.TangFont2TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/fanli_gongshe_num" android:id="@id/tv_fanli_gongshe_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/view_gongshe_vertical_line" android:layout_centerVertical="true" />
+        <View android:id="@id/view_gongshe_vertical_line" android:background="#ffe5e5e5" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_fanli_gongshe_comment" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="6.0dip" android:layout_toRightOf="@id/view_gongshe_vertical_line" android:layout_alignParentBottom="true" />
+        <com.fanli.android.view.TangFont2TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/fanli_gongshe_num" android:id="@id/tv_fanli_gongshe_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_fanli_gongshe_comment" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/superfan_background" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/line_myfanli" android:background="@drawable/brand_tap_bar_select_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <HorizontalScrollView android:id="@id/hsv_tab" android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_superfan_brand_detail_tabs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="42.0dip" />
+        </HorizontalScrollView>
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/brand_detail_pulltorefresh" android:fadingEdge="none" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:verticalSpacing="10.0dip" android:divider="@null" android:smoothScrollbar="true" />
+    </LinearLayout>
+    <Button android:layout_gravity="bottom|right|center" android:id="@id/btn_to_top" android:background="@drawable/to_top" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" />
+    <include android:id="@id/ll_loading_bar" layout="@layout/progress_bar_line" />
+</FrameLayout>

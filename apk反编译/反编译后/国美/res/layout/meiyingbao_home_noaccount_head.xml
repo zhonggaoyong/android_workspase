@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffeb4646" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#88ffffff" android:id="@id/tv_benifit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="24.0dip" android:text="美盈宝超活期利息" />
+    <TextView android:textSize="60.0sp" android:textColor="#ffffffff" android:id="@id/tv_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="10.0dip" android:text="14" android:layout_below="@id/tv_benifit" />
+    <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="倍" android:layout_toRightOf="@id/tv_times" android:layout_alignBaseline="@id/tv_times" />
+    <TextView android:textSize="14.0sp" android:textColor="#88ffffff" android:id="@id/tv_year_rate_benifit_char" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="20.0dip" android:text="七日年化收益率" android:layout_below="@id/tv_times" />
+    <TextView android:textSize="60.0sp" android:textColor="#ffffffff" android:id="@id/year_rate_benifit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="10.0dip" android:text="6.7811" android:layout_below="@id/tv_year_rate_benifit_char" />
+    <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="%" android:layout_toRightOf="@id/year_rate_benifit" android:layout_alignBaseline="@id/year_rate_benifit" />
+</RelativeLayout>

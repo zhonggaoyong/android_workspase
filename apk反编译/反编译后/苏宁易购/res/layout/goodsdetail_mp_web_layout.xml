@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.suning.mobile.ebuy.goodsdetail.view.MpWebView android:id="@id/goodsDetailWebView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/sv_goods_detail_book_info" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/lsv_goods_detail_book_info" android:background="@color/pub_color_one" android:paddingLeft="@dimen/android_public_space_13px" android:paddingRight="@dimen/android_public_space_13px" android:paddingBottom="@dimen/android_public_space_13px" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </ScrollView>
+    </com.suning.mobile.ebuy.goodsdetail.view.MpWebView>
+</LinearLayout>

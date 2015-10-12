@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/special_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.achievo.vipshop.view.BaseWebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:id="@id/progress_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/progressbar_height" android:max="100" android:progress="0" android:progressDrawable="@drawable/progressbar_drawable" style="?android:attr/progressBarStyleHorizontal" />
+        <include android:id="@id/load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/new_load_fail" />
+    </RelativeLayout>
+</LinearLayout>

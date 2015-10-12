@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/electirc_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_20px" android:layout_marginTop="@dimen/ios_public_space_28px" android:layout_marginRight="@dimen/ios_public_space_20px">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/ios_public_space_88px">
+            <TextView android:textSize="@dimen/pub_textsize_fifteen" android:textColor="@color/pub_color_three" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_name" />
+            <TextView android:textSize="@dimen/pub_textsize_fifteen" android:textColor="@color/pub_color_three" android:layout_gravity="center_vertical" android:id="@id/invoice_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:background="@drawable/line_imaginary" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/invoice_code_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_28px" android:layout_marginTop="@dimen/ios_public_space_28px" android:layout_marginBottom="@dimen/ios_public_space_24px">
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/order_detail_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invoice_code_order" />
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/order_detail_txt_color" android:id="@id/invoice_code" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/invoice_password_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_28px" android:layout_marginBottom="@dimen/ios_public_space_28px" android:layout_below="@id/invoice_code_layout">
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/order_detail_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invoice_password_order" />
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/order_detail_txt_color" android:id="@id/invoice_password" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:background="@color/gray" android:layout_width="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_28px" android:layout_marginTop="@dimen/ios_public_space_28px" android:layout_marginBottom="@dimen/ios_public_space_24px">
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/order_detail_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invoice_num_order" />
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/order_detail_txt_color" android:id="@id/invoice_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13200138500" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_28px" android:layout_marginBottom="@dimen/ios_public_space_28px">
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/order_detail_txt_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invoice_content_order" />
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/order_detail_txt_color" android:id="@id/invoice_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/agreement_layout" android:background="@color/bg_normal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/check_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/lottery_checkbox_slector" android:scaleX="0.8" android:scaleY="0.8" />
+    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/text_gray" android:layout_gravity="center_vertical" android:id="@id/check_agreement_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lottery_arrgement_link_text" android:singleLine="true" />
+</LinearLayout>

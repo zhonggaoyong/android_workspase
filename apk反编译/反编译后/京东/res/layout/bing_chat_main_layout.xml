@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/bing_chat_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bing_main_title" layout="@layout/bing_chat_title_layout" />
+    <TextView android:id="@id/tvQueue" android:background="@color/bing_chat_picviewer_loading_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:background="@color/bing_chat_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/msg_listView" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:transcriptMode="alwaysScroll" android:divider="@null" />
+        <fragment android:name="com.jingdong.common.bing.SubMenuFragment" android:id="@id/frgSubMenu" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/lyFrg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

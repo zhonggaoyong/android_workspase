@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/search_danbao_resultkey" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/search_danbao_resultcount" android:layout_width="wrap_content" android:layout_height="40.0dip" />
+    <ImageView android:background="@drawable/ico_daren" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

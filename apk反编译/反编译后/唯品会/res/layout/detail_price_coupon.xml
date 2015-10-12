@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/dash_driver" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/detail_tb_padding" android:layout_marginBottom="6.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/detail_dark" android:gravity="center" android:layout_gravity="top" android:id="@id/coupon_value" android:background="@drawable/label_icon_bggold" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginRight="@dimen/detail_content_lr_padding" android:minWidth="48.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/detail_gray_dark" android:gravity="left|center" android:layout_gravity="top" android:id="@id/coupon_des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+</LinearLayout>

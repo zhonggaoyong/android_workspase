@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="@string/circle_info_member" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/grey_d4" android:id="@id/circle_member_edit" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/loading_relative" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/members_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:layout_above="@id/edit_layout" />
+        <RelativeLayout android:id="@id/edit_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+            <View android:layout_alignParentTop="true" style="@style/CommunityDividerViewStyle" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink_l2" android:id="@id/set_admin" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/circle_set_admin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink_d7_t80" android:id="@id/delete_member" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/circle_delete_member" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink_l2" android:id="@id/edit" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.meilishuo.app.views.CustomTextView android:layout_gravity="bottom|right|center" android:id="@id/btn_to_top" android:background="@drawable/to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="70.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="onClick" />
+    </RelativeLayout>
+</LinearLayout>

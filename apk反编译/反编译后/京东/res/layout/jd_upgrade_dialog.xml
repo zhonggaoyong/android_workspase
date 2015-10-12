@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/jd_upgrade_dialog_content_padding" android:paddingRight="@dimen/jd_upgrade_dialog_content_padding" android:layout_width="@dimen/jd_upgrade_dialog_content_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="right" android:id="@id/jd_dialog_neg_button" android:background="@drawable/upgrade_dialog_close_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/jd_upgrade_dialog_title_size" android:textColor="@color/c_252525" android:id="@id/jd_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jd_upgrade_dialog_title_margin_left" android:layout_marginRight="@dimen/jd_upgrade_dialog_title_margin_right" />
+    <TextView android:textSize="@dimen/jd_upgrade_dialog_message_text_size" android:textColor="@color/c_F44764" android:id="@id/jd_dialog_second_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jd_upgrade_dialog_second_title_margin_top" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/jd_upgrade_dialog_message_text_size" android:textColor="@color/c_686868" android:id="@id/jd_dialog_message1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jd_upgrade_dialog_message_margin_top" android:lineSpacingExtra="@dimen/jd_upgrade_dialog_message_linespace" />
+            <TextView android:textSize="@dimen/jd_upgrade_dialog_message_text_size" android:textColor="@color/c_848689" android:id="@id/jd_dialog_message2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jd_upgrade_dialog_message_margin_top" android:lineSpacingExtra="@dimen/jd_upgrade_dialog_message_linespace" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="@dimen/jd_upgrade_dialog_button_text_size" android:textColor="@color/c_FFFFFF" android:layout_gravity="center_horizontal" android:id="@id/jd_dialog_pos_button" android:background="@drawable/dialog_upgrade_btbg" android:paddingLeft="@dimen/jd_upgrade_dialog_pos_button_pading_left" android:paddingRight="@dimen/jd_upgrade_dialog_pos_button_pading_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jd_upgrade_dialog_button_margin" android:layout_marginBottom="@dimen/jd_upgrade_dialog_button_margin_bottom" />
+</LinearLayout>

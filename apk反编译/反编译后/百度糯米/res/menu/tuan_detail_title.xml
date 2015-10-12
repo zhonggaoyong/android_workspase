@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bdmenu="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/daren_share_selector" android:id="@id/tuan_detail_share" android:title="@string/tuan_detial_share_tip" android:titleCondensed="share" bdmenu:showAsAction="always" />
+    <item android:icon="@drawable/tuan_detail_collection_elector_no" android:id="@id/tuan_detail_collection_no" android:title="@string/tuan_detial_collection_tip" android:titleCondensed="collection" android:checkable="true" bdmenu:showAsAction="always" />
+</menu>

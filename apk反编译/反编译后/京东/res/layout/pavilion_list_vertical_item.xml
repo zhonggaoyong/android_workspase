@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="149.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pavilion_vertical_item1" android:background="@drawable/pavilion_list_stroke" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pavilion_small_img1" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="107.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/pavilion_text_size_22" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pavilion_tag1" android:layout_width="24.0dip" android:layout_height="15.0dip" android:layout_alignLeft="@id/pavilion_small_img1" android:layout_alignTop="@id/pavilion_small_img1" />
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_below="@id/pavilion_small_img1">
+            <TextView android:textSize="@dimen/pavilion_text_size_30" android:textStyle="bold" android:textColor="#ff252525" android:gravity="center" android:id="@id/pavilion_small_title1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/pavilion_text_size_24" android:textColor="#ff848689" android:gravity="center" android:id="@id/pavilion_pv_copy1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pavilion_small_title1" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/pavilion_vertical_item2" android:background="@drawable/pavilion_list_stroke" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.5dip" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pavilion_small_img2" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="107.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/pavilion_text_size_22" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pavilion_tag2" android:layout_width="24.0dip" android:layout_height="15.0dip" android:layout_alignLeft="@id/pavilion_small_img2" android:layout_alignTop="@id/pavilion_small_img2" />
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_below="@id/pavilion_small_img2">
+            <TextView android:textSize="@dimen/pavilion_text_size_30" android:textStyle="bold" android:textColor="#ff252525" android:gravity="center" android:id="@id/pavilion_small_title2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/pavilion_text_size_24" android:textColor="#ff848689" android:gravity="center" android:id="@id/pavilion_pv_copy2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pavilion_small_title2" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/pavilion_vertical_item3" android:background="@drawable/pavilion_list_stroke" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.5dip" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pavilion_small_img3" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="107.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/pavilion_text_size_22" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pavilion_tag3" android:layout_width="24.0dip" android:layout_height="15.0dip" android:layout_alignLeft="@id/pavilion_small_img3" android:layout_alignTop="@id/pavilion_small_img3" />
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_below="@id/pavilion_small_img3">
+            <TextView android:textSize="@dimen/pavilion_text_size_30" android:textStyle="bold" android:textColor="#ff252525" android:gravity="center" android:id="@id/pavilion_small_title3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/pavilion_text_size_24" android:textColor="#ff848689" android:gravity="center" android:id="@id/pavilion_pv_copy3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pavilion_small_title3" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

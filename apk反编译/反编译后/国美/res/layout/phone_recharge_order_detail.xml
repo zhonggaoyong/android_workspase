@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <ScrollView android:id="@id/phone_recharge_scrollview" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/phone_recharge_order_state_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_recharge_order_num" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/phone_orderNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/tv_chongzhi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_recharge_order_state" android:layout_centerVertical="true" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/phone_recharge_order_state_OK" android:id="@id/phone_orderState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/tv_chongzhi" android:layout_centerVertical="true" />
+                        <Button android:textSize="@dimen/default_text_size" android:id="@id/phone_order_btn_to_pay" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Gome.Button.SolidRed.Style" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="@color/phone_recharge_order_spilt_line" android:layout_width="fill_parent" android:layout_height="0.8000001dip" android:layout_marginLeft="0.8000001dip" android:layout_marginRight="0.8000001dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/to_pay_layout" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+                    <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/to_pay_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/phone_recharge_order_detail_up_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+                    <TextView android:textSize="@dimen/subtitle_text_size" android:textColor="@android:color/black" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_recharge_order_info" />
+                </LinearLayout>
+                <View android:background="#ffcbcbcb" android:layout_width="fill_parent" android:layout_height="0.8000001dip" android:layout_marginLeft="0.8000001dip" />
+                <TableLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+                    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/weak_text_color" android:text="@string/phone_recharge_order_phoneNum" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/phone_recharge_phone_num" />
+                    </TableRow>
+                    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/weak_text_color" android:text="@string/phone_recharge_order_amount" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/phone_recharge_order_amount" />
+                    </TableRow>
+                    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/weak_text_color" android:text="@string/phone_recharge_order_payMethod" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/phone_recharge_order_payMethod" />
+                    </TableRow>
+                    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/weak_text_color" android:text="@string/phone_recharge_order_time" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/phone_recharge_order_time" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/phone_recharge_order_detail_up_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+                    <TextView android:textSize="@dimen/subtitle_text_size" android:textColor="@android:color/black" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goods_list" />
+                </LinearLayout>
+                <View android:background="#ffcbcbcb" android:layout_width="fill_parent" android:layout_height="0.8000001dip" android:layout_marginLeft="0.8000001dip" />
+                <TableLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+                    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/weak_text_color" android:text="@string/phone_recharge_order_productNum" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/phone_recharge_order_productNum" />
+                    </TableRow>
+                    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/weak_text_color" android:text="@string/phone_recharge_order_productName" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/phone_recharge_order_productName" />
+                    </TableRow>
+                    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/weak_text_color" android:text="@string/phone_recharge_order_gomePrice" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/phone_recharge_order_state_OK" android:id="@id/phone_recharge_order_gomePrice" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/mygome_myorder_order_details_order_prom_layout" android:background="@drawable/phone_recharge_order_detail_up_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+                    <TextView android:textSize="@dimen/subtitle_text_size" android:textColor="@android:color/black" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_discount" />
+                </LinearLayout>
+                <View android:background="#ffcbcbcb" android:layout_width="fill_parent" android:layout_height="0.8000001dip" android:layout_marginLeft="0.8000001dip" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+                    <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/phone_recharge_order_detail_activity_title" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="满100减10" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/phone_recharge_layout" android:background="@drawable/phone_recharge_order_detail_up_shape" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+                    <TextView android:textSize="@dimen/subtitle_text_size" android:textColor="@android:color/black" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_order_prom" />
+                </LinearLayout>
+                <View android:background="#ffcbcbcb" android:layout_width="fill_parent" android:layout_height="0.8000001dip" android:layout_marginLeft="0.8000001dip" />
+                <TableLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+                    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="26.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/phone_recharge_order_state_OK" android:id="@id/phone_recharge_favorable" android:text="[满减]" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/phone_recharge_favorable_content" android:text="满500元减5元" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/phone_recharge_order_detail_up_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+                    <TextView android:textSize="@dimen/subtitle_text_size" android:textColor="@android:color/black" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_info" />
+                </LinearLayout>
+                <View android:background="#ffcbcbcb" android:layout_width="fill_parent" android:layout_height="0.8000001dip" android:layout_marginLeft="0.8000001dip" />
+                <TableLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+                    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/weak_text_color" android:text="@string/phone_recharge_order_goods_price" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/phone_recharge_order_productAmount" />
+                    </TableRow>
+                    <TableRow android:gravity="center_vertical" android:id="@id/ll_shopping_goods_order_goods_discount_data" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/weak_text_color" android:text="@string/phone_recharge_promotion_price" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/shopping_goods_order_goods_discount_data" />
+                    </TableRow>
+                    <TableRow android:gravity="center_vertical" android:id="@id/tr_shopping_goods_order_coupon_data" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/weak_text_color" android:text="@string/use_red_ticket" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@android:color/black" android:id="@id/shopping_goods_order_coupon_data" />
+                    </TableRow>
+                    <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/weak_text_color" android:text="@string/phone_recharge_order_price" />
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/phone_recharge_order_state_OK" android:id="@id/phone_recharge_order_price" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

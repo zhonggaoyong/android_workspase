@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/ebpay_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <RelativeLayout android:id="@id/rl_header" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="10.0dip">
+            <com.gome.ecmall.custom.CircleImageView android:id="@id/iv_head" android:background="@drawable/chaodian_default_header" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/iv_head">
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_333333" android:id="@id/tv_uname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dd" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:id="@id/tv_timeCreated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dd" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_photoContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_below="@id/rl_header">
+            <ImageView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <com.gome.ecmall.home.chaodian.view.TagRelativeLayout android:id="@id/rl_tagContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/chaodian_tag" />
+                <include layout="@layout/chaodian_tag" />
+                <include layout="@layout/chaodian_tag" />
+                <include layout="@layout/chaodian_tag" />
+                <include layout="@layout/chaodian_tag" />
+                <include layout="@layout/chaodian_tag" />
+                <include layout="@layout/chaodian_tag" />
+            </com.gome.ecmall.home.chaodian.view.TagRelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_introContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:layout_below="@id/rl_photoContainer">
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:id="@id/tv_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fdadfsssssssssssssssssssssssss" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:id="@id/rl_commentCountContainer" android:background="@drawable/chaodian_btn_selector" android:layout_width="70.0dip" android:layout_height="28.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip" android:layout_below="@id/rl_introContainer" android:layout_alignParentRight="true">
+            <TextView android:id="@id/iv_pinglun" android:background="@drawable/home_show_order_list_comment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" />
+            <TextView android:textColor="@color/color_666666" android:id="@id/btn_commentCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_likeContainer" android:background="@drawable/chaodian_btn_selector" android:layout_width="70.0dip" android:layout_height="28.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/rl_commentCountContainer" android:layout_alignBottom="@id/rl_commentCountContainer">
+            <ImageView android:id="@id/iv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_show_order_list_like_select_icon" />
+            <TextView android:textColor="@color/color_666666" android:gravity="center" android:id="@id/tv_likeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" />
+        </LinearLayout>
+        <View android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_commentCountContainer" />
+        <View android:id="@id/line" android:background="@color/color_e6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="11.0dip" android:layout_below="@id/rl_commentCountContainer" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_commentContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:layout_below="@id/line" />
+    </RelativeLayout>
+</RelativeLayout>

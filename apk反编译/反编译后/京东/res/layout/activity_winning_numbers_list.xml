@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:stuan="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.widget.TempTitle android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" stuan:drawableLeft="@drawable/common_title_back_selector" stuan:textTitle="@string/winning_numbers_board" />
+    <com.handmark.pulltorefresh.library.PullToRefreshLoadMoreListView android:id="@id/winning_numbers_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" ptr:ptrAnimationStyle="jingdong" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout android:id="@id/lottery_wining_number_buy_more" android:background="@drawable/lottery_selector_common_view_bg" android:layout_width="fill_parent" android:layout_height="53.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style" />
+        <TextView android:textSize="@dimen/text_size_activity_title" android:textColor="@color/text_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lottery_continue_buy" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

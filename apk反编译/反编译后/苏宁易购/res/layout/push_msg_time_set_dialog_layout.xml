@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_btn_white_round_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/topPanel" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_44dp">
+        <TextView android:textSize="@dimen/android_public_textsize_15sp" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/alertTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:background="@drawable/category_listview_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:id="@id/middlepanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_18dp" android:layout_marginBottom="@dimen/android_public_space_22dp" android:layout_below="@id/topPanel">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/act_myebuy_color2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/push_msg_start_time" />
+            <com.suning.mobile.ebuy.host.setting.ui.PushMsgWheelView android:id="@id/start_time" android:layout_width="@dimen/android_public_space_48dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_22dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/act_myebuy_color2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/push_msg_end_time" />
+            <com.suning.mobile.ebuy.host.setting.ui.PushMsgWheelView android:id="@id/end_time" android:layout_width="@dimen/android_public_space_48dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_22dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/line_bottom" android:background="@drawable/category_listview_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/middlepanel" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_44dp" android:layout_below="@id/line_bottom">
+        <Button android:textSize="@dimen/android_public_textsize_17sp" android:textColor="@color/cart_product_name" android:id="@id/time_cancel" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/pub_cancel" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/bg_address_divider" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/android_public_textsize_17sp" android:textColor="@color/act_myebuy_color2" android:id="@id/time_confirm" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/pub_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

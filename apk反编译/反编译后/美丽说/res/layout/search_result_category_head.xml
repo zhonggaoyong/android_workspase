@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meilishuo.app.category.views.HeadLineLinearLayout android:orientation="horizontal" android:id="@id/tag_parent" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink" android:gravity="center" android:id="@id/tag_default" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="流行" android:layout_weight="1.0" />
+    <View android:background="@drawable/home_tab_middle_line" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center" android:id="@id/tag_hot" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/search_result_tag_hot" android:layout_weight="1.0" />
+    <View android:background="@drawable/home_tab_middle_line" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center" android:id="@id/tag_new" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/search_result_tag_new" android:layout_weight="1.0" />
+</com.meilishuo.app.category.views.HeadLineLinearLayout>

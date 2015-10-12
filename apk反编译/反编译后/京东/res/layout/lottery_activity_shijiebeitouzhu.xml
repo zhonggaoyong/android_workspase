@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.common.widget.TempTitle android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" stuan:drawableLeft="@drawable/common_title_back_selector" xmlns:stuan="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/clear_bet_list" android:layout_marginLeft="18.0dip" android:text="@string/lottery_clean_bet_list" android:drawableLeft="@drawable/lottery_edit_butn_icon_delete" android:layout_alignParentLeft="true" style="@style/lottery_football_betlist_option_btn" />
+        <TextView android:id="@id/continue_add" android:layout_marginRight="18.0dip" android:text="@string/lottery_add_more_matches" android:drawableLeft="@drawable/lottery_edit_butn_icon_add" android:layout_alignParentRight="true" style="@style/lottery_football_betlist_option_btn" />
+    </RelativeLayout>
+    <ListView android:id="@id/lottery_list" android:background="@color/bg_white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@android:color/white" android:dividerHeight="8.0dip" android:layout_weight="1.0" />
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/beitou" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/textview_show_info" />
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:layout_gravity="right" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tou" style="@style/textview_show_info" />
+            <EditText android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/times" android:background="@drawable/lottery_shape_touzhu_number_input_whitebg" android:layout_width="83.0dip" android:layout_height="27.0dip" android:hint="1" android:maxLines="1" android:inputType="number" />
+            <TextView android:layout_gravity="left" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/bei" style="@style/textview_show_info" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_weight="1.0">
+            <com.jd.lottery.lib.tools.utils.AlwaysMarqueeTextView android:ellipsize="marquee" android:gravity="left" android:id="@id/mybet" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="共1注，共2元" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/textview_show_bonus" />
+            <com.jd.lottery.lib.tools.utils.AlwaysMarqueeTextView android:ellipsize="marquee" android:gravity="left" android:id="@id/bonus" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="奖金范围6.53 ~ 7.19元" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/textview_show_bonus" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center" android:background="@drawable/lottery_add_number_btn" android:layout_width="92.0dip" android:layout_height="33.5dip" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="4.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/confirm" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.jd.lottery.lib.ui.common.AgreePayLottery android:gravity="center" android:layout_gravity="center" android:id="@id/agreement" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
+</LinearLayout>

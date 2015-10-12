@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/superfan_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fanli.android.view.SuperfanPullDownView android:id="@id/pulldownview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/listview" android:paddingBottom="10.0dip" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@null" />
+    </com.fanli.android.view.SuperfanPullDownView>
+    <com.fanli.android.view.SuperfanPullDownView android:id="@id/pulldown_gridview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.fanli.android.view.HeaderGridView android:id="@id/gridview" android:background="@null" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:horizontalSpacing="@dimen/superfan_product_grid_margin" android:verticalSpacing="@dimen/superfan_product_grid_margin" android:numColumns="2" />
+    </com.fanli.android.view.SuperfanPullDownView>
+    <com.fanli.android.view.SuperFanTabView android:id="@id/float_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_pingan" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/pingan_super" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/iv_totop" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/to_top" android:layout_above="@id/iv_pingan" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

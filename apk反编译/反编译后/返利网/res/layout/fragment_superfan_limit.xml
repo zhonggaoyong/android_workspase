@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/superfan_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/pulltorefresh" android:paddingTop="@dimen/superfan_divider_height" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:smoothScrollbar="true" />
+    <include android:id="@id/ll_loading_bar" layout="@layout/progress_bar_line" />
+    <ImageView android:layout_gravity="bottom|right|center" android:id="@id/ivToTop" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/to_top" />
+</FrameLayout>

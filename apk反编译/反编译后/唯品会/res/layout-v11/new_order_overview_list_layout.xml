@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:id="@id/tips" android:background="@color/header_tips_bg_color" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.8">
+                <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/icon_explain_blue_small" android:layout_alignTop="@id/text" />
+                <TextView android:textSize="@dimen/app_textsize_small" android:textColor="#ff585c64" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/multi_waybills" android:layout_toRightOf="@id/icon" />
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:id="@id/divider" android:background="@color/divider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="@dimen/account_order_list_divider_height" />
+                <LinearLayout android:orientation="vertical" android:id="@id/transport_panel" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <TableLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1">
+                        <TableRow android:id="@id/com_row">
+                            <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff585c64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="物流公司" />
+                            <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff222222" android:id="@id/trans_com" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:singleLine="true" />
+                        </TableRow>
+                        <TableRow android:id="@id/tel_row" android:layout_marginTop="10.0dip">
+                            <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff585c64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="物流电话" />
+                            <LinearLayout android:orientation="vertical" android:id="@id/tels_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </TableRow>
+                    </TableLayout>
+                    <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/app_text_red" android:textColorLink="@color/app_text_red" android:autoLink="all" android:id="@id/trans_web" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.5dip" android:layout_marginRight="13.5dip" android:layout_marginBottom="6.0dip" />
+                    <View android:id="@id/dash_divider" android:background="@drawable/dash_driver" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layerType="software" />
+                </LinearLayout>
+                <TableLayout android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1">
+                    <TableRow>
+                        <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff585c64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单编号" />
+                        <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff222222" android:id="@id/orderNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:singleLine="true" />
+                    </TableRow>
+                    <TableRow android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff585c64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下单时间" />
+                        <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff222222" android:id="@id/orderTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:singleLine="true" />
+                    </TableRow>
+                    <TableRow android:id="@id/time_delivery_table" android:visibility="gone" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff585c64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送达时间" />
+                        <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff222222" android:id="@id/time_of_delivery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+                    </TableRow>
+                </TableLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/order_overview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/account_order_list_divider_height" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

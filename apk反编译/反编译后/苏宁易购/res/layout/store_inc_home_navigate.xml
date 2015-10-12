@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_navigate1" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:layout_width="fill_parent" android:layout_height="14.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_navigate2" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

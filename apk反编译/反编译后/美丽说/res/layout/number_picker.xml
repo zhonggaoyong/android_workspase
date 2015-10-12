@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/increment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/np_number_picker_increment_button" />
+    <view android:id="@id/numberpicker_input" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.meilishuo.app.views.picker.NumberPicker$CustomEditText" style="@style/AiWidget.EditText.NumberPickerInputText.Light" />
+    <ImageButton android:id="@id/decrement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/np_number_picker_decrement_button" />
+</merge>

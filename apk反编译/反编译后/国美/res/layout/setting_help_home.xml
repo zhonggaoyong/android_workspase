@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <RelativeLayout android:id="@id/rl_shangchenggonggao" style="@style/mygome_setting_relativelayout">
+            <TextView android:text="商城公告" style="@style/mygome_setting_textview" />
+            <View style="@style/mygome_setting_line" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_guomeimendian" style="@style/mygome_setting_relativelayout">
+            <TextView android:text="国美门店" style="@style/mygome_setting_textview" />
+            <View style="@style/mygome_setting_line" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_shiyongbangzhu" android:layout_marginTop="10.0dip" style="@style/mygome_setting_relativelayout">
+            <TextView android:text="使用帮助" style="@style/mygome_setting_textview" />
+            <View style="@style/mygome_setting_line" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_jishida" style="@style/mygome_setting_relativelayout">
+            <TextView android:text="计时达与限时达" style="@style/mygome_setting_textview" />
+            <View style="@style/mygome_setting_line" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_zitibangzhu" style="@style/mygome_setting_relativelayout">
+            <TextView android:text="自提帮助" style="@style/mygome_setting_textview" />
+            <View style="@style/mygome_setting_line" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_kefudianhua" style="@style/mygome_setting_relativelayout">
+            <TextView android:text="客服电话" style="@style/mygome_setting_textview" />
+            <View style="@style/mygome_setting_line" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

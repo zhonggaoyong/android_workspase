@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/new_sizemenu_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_black" android:gravity="center_vertical" android:id="@id/size_list_tx" android:layout_width="200.0dip" android:layout_height="50.0dip" android:layout_marginLeft="13.0dip" android:text="子菜单测试" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/size_list_gou" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/new_sizelist_select" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

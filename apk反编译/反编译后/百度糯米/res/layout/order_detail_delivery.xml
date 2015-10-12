@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/order_list_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/order_list_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:text="@string/order_delivery_title" />
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:id="@id/delivery_name" style="@style/OrderDetailItemBlack" />
+        <TextView android:id="@id/delivery_phone" android:layout_marginLeft="12.0dip" style="@style/OrderDetailItemBlack" />
+    </LinearLayout>
+    <TextView android:id="@id/delivery_address" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" style="@style/OrderDetailItemGrey" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:text="@string/order_delivery_time" style="@style/OrderDetailItemGrey" />
+        <TextView android:id="@id/delivery_time" style="@style/OrderDetailItemGrey" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/delivery_tips_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:layout_gravity="top" android:text="@string/order_delivery_tips" style="@style/OrderDetailItemGrey" />
+        <TextView android:layout_gravity="top" android:id="@id/delivery_tips" style="@style/OrderDetailItemGrey" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:text="@string/order_delivery_status" style="@style/OrderDetailItemGrey" />
+        <TextView android:textColor="@color/order_list_green" android:id="@id/delivery_status" style="@style/OrderDetailItemGrey" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" layout="@layout/order_detail_devider" />
+    <RelativeLayout android:id="@id/delivery_show" android:background="@drawable/selector_list_row" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:layout_marginLeft="12.0dip" android:text="@string/order_delivery_show" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/OrderDetailItemPink" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/mine_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" layout="@layout/order_detail_devider" />
+    </RelativeLayout>
+</LinearLayout>

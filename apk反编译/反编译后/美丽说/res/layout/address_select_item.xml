@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/item_text" android:background="@drawable/buy_btn_color_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

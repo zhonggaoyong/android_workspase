@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gome.ecmall.core.widget.listview.MyListView android:id="@id/lv_list" android:background="#ffe8e8e8" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:dividerHeight="12.0dip" style="@style/common_listview_listSelector_no_style" />
+    <include android:id="@id/orderlist_empty" android:visibility="gone" layout="@layout/orderlist_no_good" />
+    <include android:id="@id/orderlist_waitting_empty" android:visibility="gone" layout="@layout/orderlist_no_good_waiting" />
+    <LinearLayout android:orientation="vertical" android:id="@id/non_net_rl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/common_not_net_layout" />
+    </LinearLayout>
+</LinearLayout>

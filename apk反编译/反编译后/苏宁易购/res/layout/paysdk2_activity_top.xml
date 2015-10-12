@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" style="@style/pay_common_hm_vw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/paysdk2_bg_top" style="@style/pay_common_hm_vw">
+        <ImageView android:id="@id/sdk2_top_img_left" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_height="@dimen/paysdk_title_hight" android:src="@drawable/paysdk2_close" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/pay_common_hw_vw" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/paysdk2_color_black" android:id="@id/sdk2_top_title" android:layout_centerInParent="true" style="@style/pay_common_hw_vw" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/paysdk_color_blue" android:id="@id/sdk2_top_text_right" android:visibility="gone" android:layout_marginRight="@dimen/paysdk_comm_padding_size_3" android:text="@string/paysdk2_top_right_protocols" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/pay_common_hw_vw" />
+    </RelativeLayout>
+</RelativeLayout>

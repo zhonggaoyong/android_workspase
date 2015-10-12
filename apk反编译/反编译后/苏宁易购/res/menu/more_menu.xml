@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:com.taobao.taobao="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/tab_shopping_cart" android:title="购物车" />
+    <item android:id="@id/tab_myebuy" android:title="我的易购" />
+</menu>

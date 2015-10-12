@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/mine_yellow1" android:gravity="center_vertical" android:id="@id/error_tips" android:background="@drawable/mine_error_tips_bg" android:paddingLeft="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/mine_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:paddingLeft="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="43.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/mine_black4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_add_new_address_name_label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/mine_black1" android:textColorHint="#ffcfcfcf" android:id="@id/name" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="68.0dip" android:layout_marginRight="15.0dip" android:hint="@string/mine_add_new_address_name_hint" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="text" />
+            </RelativeLayout>
+            <View android:background="@color/mine_gray2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="68.0dip" />
+            <RelativeLayout android:paddingLeft="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="43.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/mine_black4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_add_new_address_phone_label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/mine_black1" android:textColorHint="#ffcfcfcf" android:id="@id/phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="68.0dip" android:layout_marginRight="15.0dip" android:hint="@string/mine_add_new_address_phone_hint" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="number" />
+            </RelativeLayout>
+            <View android:background="@color/mine_gray2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="68.0dip" />
+            <RelativeLayout android:paddingLeft="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="43.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/mine_black4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_add_new_address_area_label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="53.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                    <Spinner android:layout_gravity="center_vertical" android:id="@id/province" android:paddingLeft="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Spinner android:layout_gravity="center_vertical" android:id="@id/city" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Spinner android:layout_gravity="center_vertical" android:id="@id/district" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:paddingLeft="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="43.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/mine_black4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/mine_add_new_address_address_label" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/mine_black1" android:textColorHint="#ffcfcfcf" android:gravity="top" android:id="@id/address" android:background="@null" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="68.0dip" android:layout_marginRight="15.0dip" android:hint="@string/mine_add_new_address_address_hint" android:minLines="2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/mine_gray2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="68.0dip" />
+            <RelativeLayout android:paddingLeft="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="43.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/mine_black4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_add_new_address_zipcode_label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/mine_black1" android:textColorHint="#ffcfcfcf" android:id="@id/zipcode" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="68.0dip" android:layout_marginRight="15.0dip" android:hint="@string/mine_add_new_address_zipcode_hint" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="number" />
+            </RelativeLayout>
+            <View android:background="@color/mine_gray2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <View android:background="@color/mine_gray2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:paddingLeft="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="43.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/mine_black4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mine_add_new_address_set_as_default_address" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/set_as_default" android:paddingLeft="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/selector_custom_checkbox" android:minHeight="43.0dip" />
+            </LinearLayout>
+            <View android:background="@color/mine_gray2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

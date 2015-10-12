@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/subject_icon" android:layout_width="100.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_launcher" />
+    <TextView android:id="@id/subject_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="愚公移山" android:layout_toRightOf="@id/subject_icon" />
+    <TextView android:id="@id/subject_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="距离1.1KM" android:layout_alignParentRight="true" />
+    <TextView android:id="@id/subject_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单人票" android:layout_toRightOf="@id/subject_icon" android:layout_below="@id/subject_title" />
+    <TextView android:id="@id/subject_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥80" android:layout_toRightOf="@id/subject_icon" android:layout_alignBottom="@id/subject_icon" />
+    <TextView android:id="@id/subject_old_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥160" android:layout_toRightOf="@id/subject_price" android:layout_alignTop="@id/subject_price" />
+    <TextView android:id="@id/subject_old_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="390" android:layout_alignTop="@id/subject_price" android:layout_alignParentRight="true" />
+    <LinearLayout android:background="@color/city_core_pink" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/subject_icon" />
+</RelativeLayout>

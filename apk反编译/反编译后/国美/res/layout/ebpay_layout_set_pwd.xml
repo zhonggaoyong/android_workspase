@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:gravity="left" android:id="@id/pwd_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:text="@string/ebpay_pwd_set_tip" />
+        <com.baidu.android.pay.view.SixNumberPwdView android:id="@id/pwdInputBox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <RelativeLayout android:id="@id/error_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textColor="@color/ebpay_click_text_color" android:id="@id/forget_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebpay_pwd_forget" android:singleLine="true" android:layout_alignParentRight="true" />
+            <TextView android:textColor="@color/ebpay_red" android:id="@id/error_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="30.0dip" android:text="@string/ebpay_pwd_changed" android:layout_toLeftOf="@id/forget_pwd" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <Button android:enabled="false" android:textColor="@color/ebpay_white" android:id="@id/pwd_done" android:background="@drawable/ebpay_bg_confrim_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_bt_height" android:layout_marginTop="20.0dip" android:text="@string/ebpay_pwd_done" />
+    </LinearLayout>
+</RelativeLayout>

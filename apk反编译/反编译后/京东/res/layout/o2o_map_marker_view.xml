@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/marker_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/o2o_map_gcoding" />
+</RelativeLayout>

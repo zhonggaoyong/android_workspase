@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/notify_layout" android:background="@drawable/icon_filter_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="10.0dip" android:textColor="@color/detail_gray_light2" android:id="@id/text_sku" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="M" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/app_text_white" android:id="@id/text_notify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sku_notify" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/detail_sku_btn_selector" android:ellipsize="end" android:gravity="center" android:id="@id/normal_layout" android:background="@drawable/icon_filter_btn_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+</RelativeLayout>

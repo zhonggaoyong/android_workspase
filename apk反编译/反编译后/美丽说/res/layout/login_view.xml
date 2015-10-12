@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/login_content" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/loginpanel" android:paddingTop="15.0dip" android:paddingBottom="60.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.meilishuo.app.views.DeletableEditText android:textSize="18.0sp" android:textColor="@color/grey_d4" android:textColorHint="@color/grey" android:gravity="center_vertical" android:id="@id/login_username" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="50.0dip" android:hint="@string/login_hint_username" android:singleLine="true" android:textCursorDrawable="@null" />
+                    <View android:layout_marginLeft="10.0dip" style="@style/cutline" />
+                    <com.meilishuo.app.views.DeletableEditText android:textSize="18.0sp" android:textColor="@color/grey_d4" android:textColorHint="@color/grey" android:gravity="center_vertical" android:id="@id/login_pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="50.0dip" android:hint="@string/login_hint_pwd" android:singleLine="true" android:inputType="textPassword" />
+                </LinearLayout>
+                <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_login" android:background="@drawable/btn_pink_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:minHeight="45.0dip" android:text="@string/login_btn_login" android:onClick="onClick" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d4" android:id="@id/btn_forget" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_btn_forgetpwd" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+                    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d5" android:id="@id/btn_register" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_btn_register" android:layout_centerVertical="true" android:onClick="onClick" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_below="@id/loginpanel" android:layout_alignParentBottom="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_alignParentBottom="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:background="#19000000" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_weight="1.0" />
+                        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/login_text_onekeylogin" android:singleLine="true" />
+                        <View android:background="#19000000" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="15.0dip">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ImageView android:id="@id/login_qqzone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_login_qqzone" android:onClick="onClick" />
+                            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/login_by_qq" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ImageView android:id="@id/login_weixin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_login_weixin" android:onClick="onClick" />
+                            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/login_by_weixin" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <include android:id="@id/moretype" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/login_view_moretype" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

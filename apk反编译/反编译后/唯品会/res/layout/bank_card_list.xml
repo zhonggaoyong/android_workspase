@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/card_header" layout="@layout/vipnew_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bank_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <ListView android:id="@id/bind_bank_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparency" android:cacheColorHint="#00000000" android:divider="@android:color/transparent" android:dividerHeight="15.0dip" android:choiceMode="none" android:layout_below="@id/quickText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginTop="-30.0dip" android:src="@drawable/icon_empty_banklist" />
+        <TextView android:textSize="@dimen/app_textsize_title" android:textColor="@color/app_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="暂无绑定银行卡" />
+    </LinearLayout>
+    <include android:id="@id/load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/new_load_fail" />
+</LinearLayout>

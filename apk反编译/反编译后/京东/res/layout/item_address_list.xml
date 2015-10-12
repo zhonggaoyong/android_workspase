@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView android:id="@id/item_address_list" android:background="@color/c_F3F5F7" android:focusableInTouchMode="false" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@color/gray" android:dividerHeight="1.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

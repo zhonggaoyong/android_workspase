@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/gome_popwindow_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@color/weak_text_color" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reserve_add_to_car_success" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_attributes_dialog_product_close" android:background="@drawable/icon_cha" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <View android:layout_gravity="center" android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:textSize="16.0sp" android:textColor="@color/weak_text_color" android:gravity="center" android:id="@id/reserve_cancel_button" android:background="@drawable/more_item_color_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/reserve_order_i_know" android:layout_weight="1.0" />
+                <Button android:textSize="16.0sp" android:textColor="@color/weak_text_color" android:gravity="center" android:id="@id/reserve_order_button" android:background="@drawable/more_item_color_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/reserve_go_shop_cart" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:layout_gravity="center" android:id="@id/v_cut_line" android:background="@color/setting_activity_line_color" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

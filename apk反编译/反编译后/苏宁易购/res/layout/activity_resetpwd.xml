@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/logonLayout" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/util_view_header" />
+    <include layout="@layout/include_reset_password_process" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/logon_verifycode" style="@style/text_logon_register" />
+        <EditText android:textSize="17.0sp" android:textColor="@color/pub_color_nine" android:textColorHint="@color/pub_color_ten" android:layout_gravity="center_vertical" android:id="@id/check_code_input" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:hint="@string/resetpwd_pls_enter_receive_code_new" android:singleLine="true" android:maxLength="10" android:digits="@string/password_input_character" android:layout_weight="1.0" />
+        <com.suning.mobile.ebuy.view.DelImgView android:layout_gravity="center_vertical" android:id="@id/img_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/btn_del_img_bg" />
+        <View android:background="@drawable/return_btn_division" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <com.suning.mobile.ebuy.view.RegetCodeButton android:id="@id/get_phone_check_code_again" style="@style/text_get_code" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <Button android:textSize="20.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_next" android:background="@drawable/add_to_shop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:text="@string/payment_home_next" />
+    </LinearLayout>
+</LinearLayout>

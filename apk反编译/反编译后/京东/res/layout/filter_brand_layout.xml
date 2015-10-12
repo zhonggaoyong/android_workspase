@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/title_margin_view" android:background="@color/filter_page_f3f5f7" android:layout_width="fill_parent" android:layout_height="@dimen/filter_page_space_10" />
+    <View android:id="@id/line1" android:layout_below="@id/title_margin_view" style="@style/filter_line" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/brand_tab_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/filter_brand_tab_height" android:layout_below="@id/line1">
+        <TextView android:textSize="@dimen/filter_value_text_size" android:textColor="@color/filter_brand_no_selected_text_color" android:gravity="center" android:id="@id/sort_by_brand_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sort_by_brand" android:layout_weight="0.5" />
+        <View android:layout_gravity="center_vertical" android:background="@color/filter_brand_vertical_dash_line_color" android:layout_width="0.5dip" android:layout_height="@dimen/filter_page_space_15" />
+        <TextView android:textSize="@dimen/filter_value_text_size" android:textColor="@color/filter_brand_no_selected_text_color" android:gravity="center" android:id="@id/sort_by_alphabet_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sort_by_alphabet" android:layout_weight="0.5" />
+    </LinearLayout>
+    <View android:id="@id/line2" android:layout_below="@id/brand_tab_layout" style="@style/filter_line" />
+    <com.jingdong.app.mall.product.TabIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="1.5dip" android:layout_below="@id/brand_tab_layout" app:width="76.0dip" app:height="1.5dip" app:selectColor="@color/filter_brand_tab_selected_color" />
+    <FrameLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/indicator">
+        <ListView android:layout_gravity="center" android:id="@id/filter_second_brand_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@color/filter_page_d7d7d7" android:dividerHeight="0.5dip" />
+    </FrameLayout>
+</RelativeLayout>

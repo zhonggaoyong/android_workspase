@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:stuan="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.widget.TempTitle android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" stuan:drawableLeft="@drawable/common_title_back_selector" stuan:textTitle="@string/pay_complete_title" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/lottery_success_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="90.0dip" android:layout_marginTop="16.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lottery_smile_icon" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="3.0dip" android:text="@string/order_success" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/order_success_description" />
+        <com.facebook.drawee.view.SimpleDraweeView android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="@dimen/pay_complete_info2_height" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginBottom="@dimen/pay_complete_info1_height">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_number" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/order_number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginBottom="@dimen/pay_complete_info1_height">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_money" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/order_money" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginBottom="@dimen/pay_complete_info2_height">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_pay_type_colon" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/order_pay_type" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="@dimen/pay_complete_info2_height">
+            <TextView android:textSize="@dimen/text_size_tab_title" android:textColor="@drawable/lottery_selector_red_btn_text_color" android:gravity="center" android:id="@id/continue_buy" android:background="@drawable/lottery_selector_bet_btn_bg" android:layout_width="125.0dip" android:layout_height="30.0dip" android:text="@string/lottery_continue_buy" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/text_size_tab_title" android:textColor="@drawable/lottery_selector_red_btn_text_color" android:gravity="center" android:id="@id/order_detail" android:background="@drawable/lottery_selector_bet_btn_bg" android:layout_width="125.0dip" android:layout_height="30.0dip" android:text="@string/order_detail" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pay_complete_margin_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#ff919191" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggest_other_lottery" />
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ffe5292d" android:id="@id/goto_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/goto_main" />
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/lottery_plane_icon" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lottery_plane_line" />
+    </LinearLayout>
+</LinearLayout>

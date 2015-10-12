@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tab_group_area" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <RadioGroup android:orientation="horizontal" android:id="@id/tab_group" android:background="@color/order_list_light_grey" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentTop="true">
+            <View android:layout_gravity="center_vertical" android:id="@id/tab_devider_all" android:background="@color/order_list_mid_grey" android:layout_width="0.0px" android:layout_height="24.0dip" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/order_list_grey" android:ellipsize="marquee" android:gravity="center" android:id="@id/tab_all" android:background="@color/order_list_light_grey" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/order_menu_all" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:id="@id/tab_devider_not_payed" android:background="@color/order_list_mid_grey" android:layout_width="1.0px" android:layout_height="24.0dip" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/order_list_grey" android:ellipsize="marquee" android:gravity="center" android:id="@id/tab_not_payed" android:background="@color/order_list_light_grey" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/order_menu_not_payed" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:id="@id/tab_devider_payed" android:background="@color/order_list_mid_grey" android:layout_width="1.0px" android:layout_height="24.0dip" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/order_list_grey" android:ellipsize="marquee" android:gravity="center" android:id="@id/tab_payed" android:background="@color/order_list_light_grey" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/order_menu_payed" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:id="@id/tab_devider_not_received" android:background="@color/order_list_mid_grey" android:layout_width="1.0px" android:layout_height="24.0dip" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/order_list_grey" android:ellipsize="marquee" android:gravity="center" android:id="@id/tab_not_received" android:background="@color/order_list_light_grey" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/order_menu_not_received" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:id="@id/tab_devider_not_commented" android:background="@color/order_list_mid_grey" android:layout_width="1.0px" android:layout_height="24.0dip" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/order_list_grey" android:ellipsize="marquee" android:gravity="center" android:id="@id/tab_not_commented" android:background="@color/order_list_light_grey" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/order_menu_not_commented" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:id="@id/tab_devider_refund" android:background="@color/order_list_mid_grey" android:layout_width="1.0px" android:layout_height="24.0dip" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/order_list_grey" android:ellipsize="marquee" android:gravity="center" android:id="@id/tab_refund" android:background="@color/order_list_light_grey" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/order_menu_refund" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/tab_all_indicator" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:background="@color/order_list_pink" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/tab_not_payed_indicator" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:background="@color/order_list_pink" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/tab_payed_indicator" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:background="@color/order_list_pink" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/tab_not_received_indicator" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:background="@color/order_list_pink" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/tab_not_commented_indicator" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:background="@color/order_list_pink" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/tab_refund_indicator" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:background="@color/order_list_pink" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:id="@id/auto_scale_test" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_menu_not_payed" android:includeFontPadding="false" />
+    </RelativeLayout>
+    <include android:id="@id/tab_group_area_devider" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+    <FrameLayout android:id="@id/order_list_area" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

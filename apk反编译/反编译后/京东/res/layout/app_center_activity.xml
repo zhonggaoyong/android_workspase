@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:background="#fff3f5f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/common_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/appCenterBanner" android:padding="@dimen/pd_space_width_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <GridView android:id="@id/appCenterGridView" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:numColumns="4" android:layout_below="@id/appCenterBanner" />
+            <RelativeLayout android:id="@id/errorLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_title">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageView1" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="108.0dip" android:layout_marginTop="145.0dip" android:src="@drawable/coffee" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_centerHorizontal="true" android:layout_centerVertical="false" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="请您稍后再试" android:layout_below="@id/textView1" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="抱歉，服务器开小差了" android:layout_below="@id/imageView1" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

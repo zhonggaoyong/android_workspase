@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:id="@id/back" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="20.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/setting_profile_title" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="个人信息" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/right_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/me_ico_camera" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

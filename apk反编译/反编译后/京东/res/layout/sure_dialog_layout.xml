@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/plug_center_sure_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="19.0">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/msg_text" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="31.0">
+        <Button android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ok_btn" android:background="@drawable/plug_center_sure_dialog_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:text="@string/ok" android:layout_weight="1.0" />
+        <Button android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cancel_btn" android:background="@drawable/plug_center_sure_dialog_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

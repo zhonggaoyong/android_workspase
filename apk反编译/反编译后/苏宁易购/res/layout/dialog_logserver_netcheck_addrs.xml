@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_eight" android:gravity="left|center" android:id="@id/btn_cart_server" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="cart.suning.com" />
+        <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <Button android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_eight" android:gravity="left|center" android:id="@id/btn_member_server" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="member.suning.com" />
+        <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <Button android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_eight" android:gravity="left|center" android:id="@id/btn_passport_server" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="passport.suning.com" />
+        <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <Button android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_eight" android:gravity="left|center" android:id="@id/btn_image_server" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="image.suning.cn" />
+    </LinearLayout>
+    <Button android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

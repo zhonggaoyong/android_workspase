@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/selected_label_body" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff595056" android:gravity="center" android:layout_gravity="center" android:id="@id/selected_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选中的标签" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_delete_label" android:layout_width="20.0dip" android:layout_height="25.0dip" android:src="@drawable/circle_icon_delete" android:scaleType="center" />
+</LinearLayout>

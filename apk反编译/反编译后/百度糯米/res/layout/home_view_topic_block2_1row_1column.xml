@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/home_common_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bn="http://schemas.android.com/apk/res-auto">
+    <com.baidu.bainuolib.widget.NetworkThumbView android:id="@id/home_topic_block_imageview" android:layout_width="@dimen/home_topic_block2_icon_width" android:layout_height="@dimen/home_topic_block2_icon_height" android:layout_marginRight="@dimen/home_topic_block_paddingright" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" bn:placeholderEmpty="@drawable/home_placeholder_white" bn:placeholderLoading="@drawable/home_placeholder_white" bn:placeholderError="@drawable/home_placeholder_white" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/home_topic_block_paddingleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_topic_block2_title_margin_top" android:layout_toLeftOf="@id/home_topic_block_imageview" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/home_topic_block_title_size" android:textColor="@color/home_view_topic_title_text_color" android:ellipsize="end" android:id="@id/home_topic_block_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="5" />
+        <TextView android:textSize="@dimen/home_topic_block_subtitle_size" android:textColor="@color/home_view_topic_subtitle_text_cloor" android:ellipsize="end" android:id="@id/home_topic_block_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="6" />
+    </LinearLayout>
+    <View android:id="@id/home_topic_right_split" android:background="#ffd9d9d9" android:visibility="gone" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <View android:id="@id/home_topic_bottom_split" android:background="#ffd9d9d9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

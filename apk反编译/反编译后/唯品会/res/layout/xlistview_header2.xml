@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top|center" android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top|center" android:id="@id/xlistview_header_content" android:background="#00000000" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="@dimen/pull_refresh_listview_text_layout_height">
+        <com.achievo.vipshop.view.RefreshView android:id="@id/refresh_view" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="@dimen/view_margin_top" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/loading_animation" android:background="@drawable/refresh_loading" android:layout_width="@dimen/vip_text_width" android:layout_height="@dimen/vip_text_height" android:layout_marginTop="@dimen/vip_text_animation_margin_top" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/order_gray_text" android:layout_gravity="center_horizontal" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/des_text_margin_top" android:text="@string/refresh_loading_text" android:layout_below="@id/refresh_view" />
+    </RelativeLayout>
+</LinearLayout>

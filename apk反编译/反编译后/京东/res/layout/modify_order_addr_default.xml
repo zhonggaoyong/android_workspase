@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/checkbox_order_receiver_defalut" android:background="@drawable/flight_switch_selector" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginRight="@dimen/fill_order_line_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/fill_order_address_title_size" android:textColor="@color/address_title_color" android:gravity="left" android:id="@id/order_receiver_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/fill_order_address_default" />
+    <TextView android:textSize="@dimen/invoice_text_size_24" android:textColor="@color/address_detail_color" android:gravity="left" android:id="@id/order_receiver_default_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fill_order_address_default_tips" android:layout_toLeftOf="@id/checkbox_order_receiver_defalut" android:layout_below="@id/order_receiver_default" android:layout_alignLeft="@id/order_receiver_default" />
+</merge>

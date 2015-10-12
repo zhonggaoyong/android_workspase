@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header_layout" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/new_text_black" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:text="退款说明" />
+            </LinearLayout>
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/order_black_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="1." android:lineSpacingExtra="5.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/order_black_text" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/return_flow_tips" android:lineSpacingExtra="9.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/order_black_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="2." android:lineSpacingExtra="5.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/order_black_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/return_flow_tips1" android:lineSpacingExtra="9.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/order_black_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="3." android:lineSpacingExtra="5.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/order_black_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/return_flow_tips2" android:lineSpacingExtra="9.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/order_black_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="4." android:lineSpacingExtra="2.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/order_black_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/return_flow_tips3" android:lineSpacingExtra="9.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/order_black_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="5." android:lineSpacingExtra="2.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/order_black_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/return_flow_tips4" android:lineSpacingExtra="9.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/new_text_black" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:text="退货流程" />
+            </LinearLayout>
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="@dimen/order_text_title" android:textColor="@color/app_text_red" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="您" android:drawableTop="@drawable/return_info_icon_left" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+                <View android:id="@id/return_lines" android:background="@drawable/dash_driver_red" android:layout_width="1.0px" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/order_text_title" android:textColor="@color/app_text_red" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="唯品会" android:drawableTop="@drawable/return_info_icon_right" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="350.0dip">
+                <View android:id="@id/return_lines1" android:background="@drawable/dash_driver_red" android:layout_width="1.0px" android:layout_height="40.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                <View android:id="@id/return_lines2" android:background="@color/return_info_content_lines" android:layout_width="1.0px" android:layout_height="@dimen/return_flow_lines_height" android:layout_below="@id/return_lines1" android:layout_centerHorizontal="true" />
+                <View android:id="@id/return_lines3" android:background="@color/return_info_content_lines" android:layout_width="1.0px" android:layout_height="@dimen/return_flow_lines_height" android:layout_below="@id/return_lines2" android:layout_centerHorizontal="true" />
+                <View android:id="@id/return_lines4" android:background="@color/return_info_content_lines" android:layout_width="1.0px" android:layout_height="@dimen/return_flow_lines_height" android:layout_below="@id/return_lines3" android:layout_centerHorizontal="true" />
+                <View android:id="@id/return_lines5" android:background="@color/return_info_content_lines" android:layout_width="1.0px" android:layout_height="@dimen/return_flow_lines_height" android:layout_below="@id/return_lines4" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/setp1" android:background="@drawable/new_return_info_flow_narmal1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/setp2" android:background="@drawable/new_return_info_flow_narmal1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/return_flow_setp_height" android:text="2" android:layout_below="@id/setp1" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/setp3" android:background="@drawable/new_return_info_flow_narmal1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/return_flow_setp_height" android:text="3" android:layout_below="@id/setp2" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/setp4" android:background="@drawable/new_return_info_flow_narmal1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/return_flow_setp_height" android:text="4" android:layout_below="@id/setp3" android:layout_centerHorizontal="true" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="41.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/setp1">
+                    <TextView android:textSize="@dimen/return_flow_size" android:textColor="@color/app_text_new_gray1" android:gravity="left|center" android:id="@id/setp1_left_tips" android:background="@drawable/new_return_info_flow_left_narmal" android:paddingLeft="14.0dip" android:layout_width="@dimen/return_flow_tips_width" android:layout_height="wrap_content" android:text="提交退货申请" />
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/new_return_info_flow_left_narmal" android:layout_width="wrap_content" android:layout_height="41.0dip" android:layout_marginTop="185.0dip" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/setp3">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/setp3_left_tips" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip">
+                        <TextView android:textSize="@dimen/return_flow_size" android:textColor="@color/app_text_new_gray1" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="寄回商品及票据" android:lineSpacingExtra="2.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/return_flow_size_des" android:textColor="@color/app_text_new_gray1" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="签收包裹7天内" android:lineSpacingExtra="2.0dip" />
+                            <ImageView android:layout_gravity="bottom" android:id="@id/setp3_help" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/new_return_info_help" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/setp2_right_tips_layout" android:background="@drawable/new_return_info_flow_right_narmal" android:paddingLeft="28.0dip" android:layout_width="@dimen/return_flow_tips_width" android:layout_height="41.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="100.0dip" android:layout_toRightOf="@id/setp2">
+                    <TextView android:textSize="@dimen/return_flow_size" android:textColor="@color/app_text_new_gray1" android:layout_gravity="left|center" android:id="@id/setp2_right_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="审核退货申请" />
+                    <TextView android:textSize="@dimen/return_flow_size_des" android:textColor="@color/app_text_new_gray1" android:gravity="center" android:id="@id/setp2_right_tips_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="约1小时" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/setp3_right_tips_layout" android:background="@drawable/new_return_info_flow_right_narmal" android:paddingLeft="25.0dip" android:layout_width="@dimen/return_flow_tips_width" android:layout_height="41.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="185.0dip" android:layout_toRightOf="@id/setp3">
+                    <TextView android:textSize="@dimen/return_flow_size" android:textColor="@color/app_text_new_gray1" android:gravity="center" android:id="@id/setp3_right_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接收退货商品" />
+                    <TextView android:textSize="@dimen/return_flow_size_des" android:textColor="@color/app_text_new_gray1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="时间视物流速度而定" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/setp4_right_tips_layout" android:background="@drawable/new_return_info_flow_right_narmal" android:paddingLeft="25.0dip" android:layout_width="@dimen/return_flow_tips_width" android:layout_height="41.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="265.0dip" android:layout_toRightOf="@id/setp4">
+                    <TextView android:textSize="@dimen/return_flow_size" android:textColor="@color/app_text_new_gray1" android:gravity="left|center" android:id="@id/setp4_right_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退货处理中" />
+                    <TextView android:textSize="@dimen/return_flow_size_des" android:textColor="@color/app_text_new_gray1" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="3天" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/return_false_layout" android:background="@drawable/new_return_info_flow_bottom_bg" android:layout_width="114.0dip" android:layout_height="52.0dip" android:layout_marginLeft="19.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/order_return_process_icon_gray_bottom" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/order_gray_text" android:layout_gravity="center" android:id="@id/setp5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="退款成功" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                <TextView android:textSize="13.0dip" android:textColor="@color/return_info_content_normal" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="到账时间视支付方式而定" />
+                <ImageView android:id="@id/setp5_help" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/new_return_info_help" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

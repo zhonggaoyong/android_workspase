@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ebpay_info_dialog_bg" android:layout_width="@dimen/ebpay_dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_title_heigth">
+        <TextView android:textSize="@dimen/ebpay_text_size_25" android:textColor="@color/ebpay_text_normal" android:gravity="left|center" android:id="@id/ebpay_dialog_title" android:paddingLeft="@dimen/ebpay_line_margin_20" android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_title_heigth" android:text="@string/ebpay_bank_phone" />
+        <Button android:id="@id/ebpay_dialog_title_close" android:background="@drawable/ebpay_bg_clear_selector" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ebpay_dialog_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

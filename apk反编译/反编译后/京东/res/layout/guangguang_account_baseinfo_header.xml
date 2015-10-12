@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/guangguang_account_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_imvAccount_left" android:layout_marginRight="@dimen/account_imvAccount_left" android:layout_marginBottom="@dimen/account_imvAccount_bottom" android:layout_alignParentBottom="true">
+        <com.jingdong.common.ui.JDCircleImageView android:id="@id/guangguang_account_photo" android:layout_width="@dimen/account_imvAccount_width" android:layout_height="@dimen/account_imvAccount_height" android:layout_marginRight="@dimen/account_rl_account_left" android:src="@drawable/lib_story_icon_face_default" android:scaleType="centerCrop" android:layout_alignParentLeft="true" app:borderColor="@color/lib_story_bg_favorite" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/guangguang_account_photo" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/account_name_size" android:textColor="@color/white" android:id="@id/guangguang_account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:background="#ffe6e6e6" android:layout_width="1.0dip" android:layout_height="@dimen/account_apart_line_height" android:layout_marginLeft="@dimen/account_apart_line_left" />
+                <TextView android:textSize="@dimen/account_fans_size" android:textColor="@color/white" android:id="@id/guangguang_account_fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/account_fans_left" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/account_description_size" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/guangguang_account_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

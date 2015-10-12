@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/product_list_item" android:background="@drawable/pd_item_enable_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/pack_list_item" android:paddingLeft="@dimen/pd_space_width_10" android:paddingTop="@dimen/pd_space_width_16" android:paddingRight="@dimen/pd_space_width_10" android:paddingBottom="@dimen/pd_space_width_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/product_item_image" android:layout_width="70.0dip" android:layout_height="70.0dip" />
+        <TextView android:textSize="@dimen/pd_txt_size_middle" android:textColor="@color/pd_black_45" android:id="@id/product_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pd_space_width_9" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <View android:background="@drawable/pd_deliver_h" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/pd_space_width_10" />
+</LinearLayout>

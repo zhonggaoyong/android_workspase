@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/grey_l11" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/text" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <com.meilishuo.app.views.CustomTextView android:textSize="20.0sp" android:textColor="@color/grey_d4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/week_daren" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d4" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/week_eng" />
+    </LinearLayout>
+    <View android:background="@color/grey_l11" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/text" android:layout_centerVertical="true" />
+</RelativeLayout>

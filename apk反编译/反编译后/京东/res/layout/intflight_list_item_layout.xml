@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/int_flight_go_layout" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/int_flight_go_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/flight_noti_icon_go_int" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="78.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="115.0dip" android:layout_height="wrap_content">
+                                <TextView android:textSize="18.0dip" android:textColor="#ff252525" android:id="@id/int_flight_go_dep_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="15:20" />
+                                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="4.0dip">
+                                    <TextView android:textSize="10.0dip" android:textColor="#ff999999" android:id="@id/int_flight_go_stop_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="经停" />
+                                    <TextView android:id="@id/textView12" android:background="@drawable/flight_trip_arrow" android:layout_width="wrap_content" android:layout_height="5.0dip" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/int_flight_go_dep_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="115.0dip" android:text="首都国际T3首都国际T3首都国际T3首都国际T3首都国际T3" android:singleLine="true" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="18.0dip" android:textColor="#ff252525" android:id="@id/int_flight_go_arr_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="19:20" />
+                                <TextView android:textSize="8.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/int_flight_go_1day_label" android:background="@drawable/flight_lable_1day" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                            </LinearLayout>
+                            <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/int_flight_go_arr_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="80.0dip" android:text="羽天国际机场" android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="7.0dip">
+                        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/int_flight_go_flight_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="日本航空" />
+                        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/int_flight_go_flight_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="JL022" />
+                        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/int_flight_go_flight_style" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大型" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="11.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="20.0dip" android:textColor="#fff15353" android:id="@id/textView16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" />
+                    <TextView android:textSize="20.0dip" android:textColor="#fff15353" android:id="@id/int_flight_go_flight_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3780" />
+                    <TextView android:textSize="13.0dip" android:textColor="#ff666666" android:id="@id/textView18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="起" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/textView19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="税费" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/textView20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/int_flight_go_flight_tax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="460" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/int_flight_return_layout" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/flight_noti_icon_back_int" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="78.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="115.0dip" android:layout_height="wrap_content">
+                                    <TextView android:textSize="18.0dip" android:textColor="#ff252525" android:id="@id/int_flight_return_dep_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="15:20" />
+                                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="4.0dip">
+                                        <TextView android:textSize="10.0dip" android:textColor="#ff999999" android:id="@id/int_flight_return_stop_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="经停" />
+                                        <TextView android:id="@id/textView42" android:background="@drawable/flight_trip_arrow" android:layout_width="wrap_content" android:layout_height="5.0dip" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/int_flight_return_dep_city" android:layout_width="fill_parent" android:layout_height="0.0dip" android:maxWidth="115.0dip" android:text="首都国际T3首都国际T3首都国际T3首都国际T3首都国际T3" android:singleLine="true" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip">
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textSize="18.0dip" android:textColor="#ff252525" android:id="@id/int_flight_return_arr_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="19:20" />
+                                    <TextView android:textSize="8.0dip" android:textColor="#ff999999" android:gravity="center" android:id="@id/int_flight_return_1day_label" android:background="@drawable/flight_lable_1day" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                                </LinearLayout>
+                                <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/int_flight_return_arr_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="80.0dip" android:text="羽天国际机场" android:singleLine="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="7.0dip">
+                            <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/int_flight_return_flight_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="日本航空" />
+                            <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/int_flight_return_flight_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="JL022" />
+                            <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:id="@id/int_flight_return_flight_style" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大型" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

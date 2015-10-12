@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/layout_head" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/header" android:onClick="onClick" style="@style/mainHeader">
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:id="@id/back_btn" android:text="取消" android:drawableLeft="@null" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ffff7a9a" android:id="@id/submit_btn" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_address_button_save" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="@string/my_address_title" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+            </RelativeLayout>
+            <View style="@style/FirstDividerViewStyle" />
+        </LinearLayout>
+        <ScrollView android:id="@id/content_layout" android:paddingTop="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/FirstDividerViewStyle" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.meilishuo.app.views.CustomEditText android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d4" android:textColorHint="@color/grey" android:id="@id/name" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="@dimen/order_margin_space" android:paddingBottom="@dimen/order_margin_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/my_address_textview_name" android:singleLine="true" android:maxLength="15" android:inputType="textPhonetic" />
+                    <View android:layout_marginLeft="15.0dip" style="@style/SecondDividerViewStyle" />
+                    <com.meilishuo.app.views.CustomEditText android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d4" android:textColorHint="@color/grey" android:id="@id/phone" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="@dimen/order_margin_space" android:paddingBottom="@dimen/order_margin_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/my_address_textview_phone" android:singleLine="true" android:maxLength="20" android:inputType="number" />
+                    <View android:layout_marginLeft="15.0dip" style="@style/SecondDividerViewStyle" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <com.meilishuo.app.views.CustomTextView android:enabled="true" android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d4" android:ellipsize="end" android:id="@id/textview_address_area" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="@dimen/order_margin_space" android:paddingBottom="@dimen/order_margin_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/my_address_textview_area" android:singleLine="true" />
+                            <View android:layout_marginLeft="15.0dip" style="@style/SecondDividerViewStyle" />
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="30.0dip" android:layout_height="fill_parent">
+                            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/circle_info_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                            <View android:layout_alignParentBottom="true" style="@style/SecondDividerViewStyle" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_street_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <com.meilishuo.app.views.CustomTextView android:enabled="true" android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d4" android:textColorHint="@color/grey" android:ellipsize="end" android:id="@id/textview_address_street" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="@dimen/order_margin_space" android:paddingBottom="@dimen/order_margin_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/my_address_textview_street" android:singleLine="true" />
+                            <View android:layout_marginLeft="15.0dip" style="@style/SecondDividerViewStyle" />
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="85.0dip" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/street_arrow" android:background="@drawable/circle_info_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ffff7a9a" android:layout_gravity="center_vertical" android:id="@id/textview_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="请选择" android:layout_toLeftOf="@id/street_arrow" android:layout_centerVertical="true" />
+                            <View android:layout_alignParentBottom="true" style="@style/SecondDividerViewStyle" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <com.meilishuo.app.views.CustomEditText android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d4" android:textColorHint="@color/grey" android:gravity="top|left|center" android:id="@id/detail_address" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="@dimen/order_margin_space" android:paddingBottom="@dimen/order_margin_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/my_address_textview_strict" android:maxLength="140" />
+                </LinearLayout>
+                <View style="@style/FirstDividerViewStyle" />
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:id="@id/relative_is_show_checkBox" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.meilishuo.app.views.CustomTextView android:enabled="true" android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d4" android:ellipsize="end" android:id="@id/defalut_address" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="@dimen/order_margin_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_address_textview_setdefault_address" android:singleLine="true" />
+            <CheckBox android:id="@id/is_open_default_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/setsync_checkbox_style" />
+            <View android:layout_marginTop="@dimen/order_margin_space" android:layout_below="@id/defalut_address" style="@style/FirstDividerViewStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/delete_address" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.meilishuo.app.views.CustomTextView android:enabled="true" android:textSize="@dimen/order_text_standard_size_1" android:textColor="#ffff6666" android:ellipsize="end" android:id="@id/text_delete_address" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="@dimen/order_margin_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_address_textview_delete_address" android:singleLine="true" />
+            <View android:layout_marginTop="@dimen/order_margin_space" android:layout_below="@id/text_delete_address" style="@style/FirstDividerViewStyle" />
+        </RelativeLayout>
+        <com.meilishuo.app.views.CustomTextView android:enabled="true" android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d4" android:ellipsize="end" android:id="@id/default_address_text" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前地址已为默认地址" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

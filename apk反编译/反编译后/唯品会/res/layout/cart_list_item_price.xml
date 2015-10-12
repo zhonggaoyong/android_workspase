@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/cart_nativie_padding" android:paddingRight="@dimen/cart_nativie_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/cart_item_price_ht_view" android:background="@color/app_layout_bg_gray" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+        <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/icon_explain_blue_small" android:scaleType="centerInside" />
+        <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/app_text_black" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/native_cart_price_ht" android:lineSpacingExtra="2.0dip" android:lineSpacingMultiplier="1.0" />
+    </LinearLayout>
+    <View android:id="@id/cart_item_price_driver" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="@dimen/app_textsize_large" android:textColor="@color/app_text_black_new_ui" android:gravity="right|center" android:id="@id/cart_item_price_text" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cart_item_price_pms_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip">
+        <TextView android:textSize="10.0dip" android:textColor="#ffe43494" android:gravity="center" android:background="@drawable/lable_icon_bg_pink" android:layout_width="29.0dip" android:layout_height="14.0dip" android:text="@string/cart_native_pms_text" />
+        <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/app_text_black" android:id="@id/cart_item_price_pms_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/cart_item_price_pms_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

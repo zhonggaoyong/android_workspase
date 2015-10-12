@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="75.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrow" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/rl_shop_logo_and_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+            <RelativeLayout android:id="@id/rl_shop_logo" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/iv_shop_logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="@color/superfan_main_text" android:id="@id/tv_shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/rl_shop_logo" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/superfan_main_text" android:id="@id/tv_shop_extra_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/rl_shop_logo_and_name" />
+        <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:textColor="@color/superfan_grey" android:id="@id/tv_shop_time_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_shop_extra_info" />
+        <View android:id="@id/line_myfanli" android:background="@drawable/line_shop" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/tv_shop_time_range" />
+    </RelativeLayout>
+</LinearLayout>

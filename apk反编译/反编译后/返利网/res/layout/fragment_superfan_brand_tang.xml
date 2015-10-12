@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/superfan_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fanli.android.view.SuperfanPullDownView android:id="@id/pulldownview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/listview" android:paddingBottom="10.0dip" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@null" />
+    </com.fanli.android.view.SuperfanPullDownView>
+    <com.fanli.android.view.SuperfanBrandTabView android:id="@id/float_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/title_height" />
+    <ImageView android:id="@id/iv_totop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/to_top" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/contentDescription" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/nodata" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_story_message_nodata" />
+    <TextView android:textSize="@dimen/lib_story_t_large_size" android:textColor="#ffababab" android:id="@id/tv_nodata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/lib_story_no_message_and_return" />
+</LinearLayout>

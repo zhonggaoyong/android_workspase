@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jdtravel="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.jdtravel.ui.TravelTitle android:id="@id/calendar_title" android:layout_width="fill_parent" android:layout_height="wrap_content" jdtravel:fdrawableLeft="@drawable/common_title_back_selector" jdtravel:ftextTitle="@string/jdtravel_date_select" />
+    <com.jingdong.common.jdtravel.calendar2.CalendarPickerView android:scrollbarStyle="outsideOverlay" android:id="@id/calendar_pickerview" android:background="#ffffffff" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

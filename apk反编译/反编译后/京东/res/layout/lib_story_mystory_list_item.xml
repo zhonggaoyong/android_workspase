@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/lib_story_item_frameLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/list_item" style="@style/lib_story_item_lineraLayout">
+        <LinearLayout android:orientation="horizontal" android:id="@id/story_item" android:paddingLeft="8.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_story_activity_horizontal_margin" android:layout_marginTop="@dimen/lib_story_activity_vertical_margin" android:layout_marginRight="@dimen/lib_story_activity_horizontal_margin" android:layout_marginBottom="@dimen/lib_story_activity_vertical_margin">
+            <TextView android:textSize="@dimen/lib_story_t_middle_size" android:textColor="@color/lib_story_font_4a4a4a" android:id="@id/story_pub_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/lib_story_my_icon_clock" android:drawablePadding="2.0dip" android:layout_weight="1.0" />
+            <Button android:id="@id/story_delete" android:background="@drawable/lib_story_icon_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:id="@id/story_body" android:layout_marginLeft="@dimen/lib_story_activity_horizontal_margin" android:layout_marginRight="@dimen/lib_story_activity_horizontal_margin" android:layout_marginBottom="15.0dip" android:text="dsfkasjfldjaslkdfj" style="@style/lib_story_tv_story_body" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/story_cover_image_view" android:background="@color/lib_story_comment_list_item_default" android:layout_width="fill_parent" android:layout_height="300.0dip" android:scaleType="centerCrop" />
+        <include layout="@layout/lib_story_item_favorite_list" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/story_medal_my" android:visibility="gone" android:layout_marginRight="@dimen/lib_story_margin_medal_my" style="@style/lib_story_img_medal" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/story_medal" android:visibility="gone" android:layout_marginRight="@dimen/lib_story_activity_horizontal_margin" style="@style/lib_story_img_medal" />
+    <TextView android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_below="@id/list_item" />
+</RelativeLayout>

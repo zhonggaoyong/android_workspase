@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/quan_self_service_tip_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/quan_self_service_tip_img" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff111111" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/quan_self_service_tips_title" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff111111" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/quan_self_service_tips_content_1" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff111111" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/quan_self_service_tips_content_2" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="18.0dip">
+        <Button android:textColor="@color/nuomi_color" android:id="@id/quan_self_ser_tip_cancel" android:background="@drawable/bg_white_button_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:text="@string/quan_self_service_tips_cancel" android:layout_weight="1.0" />
+        <Button android:textColor="#ffffffff" android:id="@id/quan_self_ser_tip_ok" android:background="@drawable/bg_red_button_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:text="@string/quan_self_service_tips_ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

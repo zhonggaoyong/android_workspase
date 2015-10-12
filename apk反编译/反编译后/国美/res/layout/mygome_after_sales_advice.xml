@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.gome.eshopnew">
+    <include layout="@layout/vw_titlebar" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_product_return" android:layout_width="fill_parent" android:layout_height="44.0dip" app:titleText="退换货" app:icon="@drawable/mygome_advisor_refund" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_product_return_money" android:layout_width="fill_parent" android:layout_height="44.0dip" app:titleText="退款记录" app:icon="@drawable/mygome_list_refund" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_extend_warranty" android:layout_width="fill_parent" android:layout_height="44.0dip" app:titleText="延保服务" app:icon="@drawable/mygome_advisor_warranty" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_fav_myappointment" android:layout_width="fill_parent" android:layout_height="44.0dip" app:titleText="咨询回复" app:icon="@drawable/mygome_advisor_consult" app:line="false" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

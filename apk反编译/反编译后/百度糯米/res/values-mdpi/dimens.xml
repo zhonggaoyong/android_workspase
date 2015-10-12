@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ebpay_order_padding_top">18.0dip</dimen>
+    <dimen name="ebpay_order_padding_bottom">13.0dip</dimen>
+    <dimen name="ebpay_order_text_pitch">16.0dip</dimen>
+    <dimen name="wallet_fp_button_padding_top">10.0dip</dimen>
+    <dimen name="wallet_fp_face_padding_top">10.0dip</dimen>
+</resources>

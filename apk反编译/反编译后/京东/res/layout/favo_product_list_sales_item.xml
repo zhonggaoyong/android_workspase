@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/favo_product_cuxiao_label_text_size" android:textColor="@color/favo_product_sale_label_color" android:gravity="center" android:id="@id/product_label" android:background="@drawable/background_corners_red_no_line" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginTop="@dimen/favo_product_vertical_margin" android:text="降价" />
+    <TextView android:textSize="@dimen/favo_product_cuxiao_text_size" android:textColor="@color/favo_notify_tip_text_color" android:id="@id/product_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="@dimen/favo_product_vertical_margin" android:text="" android:singleLine="true" android:layout_toRightOf="@id/product_label" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/message_box_body" android:background="@drawable/message_box_dialog_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/pink_l1" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你确认取消订单么" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/ll_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:minWidth="200.0dip">
+        <com.meilishuo.app.views.HighLightTextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/message_text" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消订单后商品将重新加入购物车\n\n如果已完成支付，取消订单后，系统将在7个工作日内自动为您退款" android:lineSpacingExtra="2.0dip" android:lineSpacingMultiplier="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/custom_layout_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:minWidth="200.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/btn_container" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="20.0dip" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/personal_order_item_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="10.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/personal_item_text_size" android:textColor="@color/personal_color_item" android:ellipsize="end" android:id="@id/personal_order_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_below="@id/personal_order_item_icon" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/personal_order_notify_size" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/personal_order_item_notify" android:background="@drawable/personal_icon_order_notify_bg" android:paddingLeft="2.0dip" android:paddingTop="0.0dip" android:paddingRight="2.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8.0dip" android:layout_marginTop="-6.0dip" android:singleLine="true" android:layout_toRightOf="@id/personal_order_item_icon" android:layout_alignTop="@id/personal_order_item_icon" />
+</RelativeLayout>

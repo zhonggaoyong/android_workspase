@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/promote_header" android:background="@drawable/bg_white_button_selector" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/about_update_title" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/promolist_header" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

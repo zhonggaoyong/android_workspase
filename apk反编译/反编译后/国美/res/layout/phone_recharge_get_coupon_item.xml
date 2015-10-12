@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_window" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/ll_content" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/left" android:layout_width="115.0dip" android:layout_height="wrap_content">
+            <ImageView android:id="@id/bg_coupon" android:background="@drawable/bg_phone_coupon_0" android:layout_width="115.0dip" android:layout_height="wrap_content" />
+            <TextView android:textSize="48.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/coupon_amount" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/coupon_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:text="限领5张" android:layout_above="@id/coupon_left" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/coupon_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="剩余9999张" android:layout_alignBottom="@id/bg_coupon" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="-2.0dip" android:layout_toRightOf="@id/left">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textColor="@color/main_default_black_text_color" android:ellipsize="marquee" android:gravity="top" android:id="@id/phone_coupon_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="充200减4元" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" />
+                <TextView android:textSize="@dimen/shopping_cart_order_shop_express" android:textColor="@color/weak_text_color" android:gravity="center_vertical" android:id="@id/phone_coupon_scope" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="适用于：移动、电信、联通、电信、联通、电信、联通" android:layout_below="@id/phone_coupon_title" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/shopping_cart_order_shop_express" android:textColor="@color/weak_text_color" android:gravity="center_vertical" android:id="@id/phone_coupon_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="使用地区：北京、天津、河北" android:layout_below="@id/phone_coupon_scope" android:layout_alignParentLeft="true" />
+                <Button android:textSize="14.0sp" android:id="@id/phone_coupon_get" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginTop="12.0dip" android:text="立即领取" android:layout_below="@id/phone_coupon_area" android:layout_alignParentLeft="true" style="@style/Gome.Button.SolidRed.Style" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/setting_activity_line_color" />
+</LinearLayout>

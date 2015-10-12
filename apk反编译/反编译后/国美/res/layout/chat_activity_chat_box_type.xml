@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_default_white_text_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/lv_chatbox_type" android:scrollbars="none" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/setting_activity_line_color" android:dividerHeight="1.0px" android:layout_below="@id/ll_location" android:headerDividersEnabled="false" style="@style/common_listview_style" />
+</LinearLayout>

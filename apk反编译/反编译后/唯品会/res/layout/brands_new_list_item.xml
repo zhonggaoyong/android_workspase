@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/brand_title" android:visibility="gone" layout="@layout/new_vipbrands_group_item_title" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/brand_content" android:background="@drawable/new_normal_framebg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/brand_title">
+        <FrameLayout android:id="@id/myframeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.achievo.vipshop.view.widget.TransformerImageView android:id="@id/brand_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="center" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/brand_time" android:background="@drawable/new_main_time_bg" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/new_list_time_green_s" />
+            <TextView android:textSize="@dimen/app_textsize_secondary" android:textColor="@color/app_time_text_gray" android:ellipsize="end" android:id="@id/brand_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="剩3小时" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/myframeLayout">
+            <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_black" android:id="@id/brand_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_weight="2.0" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_red" android:id="@id/brand_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/brand_discount_text" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_black" android:id="@id/brand_discount_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="折" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/brand_banner_image" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/transparent" android:scaleType="centerCrop" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/brand_tip" android:background="@drawable/new_main_tip" android:paddingLeft="10.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="35.0dip" android:text="满199减20，上下不封顶" android:singleLine="true" android:layout_alignBottom="@id/brand_content" />
+</RelativeLayout>

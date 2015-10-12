@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:drawableLeft="@drawable/ico_cancel" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+        <View android:background="#ff999999" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送" android:drawableLeft="@drawable/ico_determine" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="@android:drawable/edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <ImageView android:id="@id/pen_pic" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ico_comment_write" />
+        <com.meilishuo.app.views.CustomEditText android:textColor="#ff666666" android:textColorHint="#ff999999" android:gravity="top" android:id="@id/content" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:hint="发表评论" android:layout_toRightOf="@id/pen_pic" android:textCursorDrawable="@null" />
+        <ImageView android:background="@drawable/line_comment_write" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/pen_pic" android:layout_below="@id/content" />
+    </RelativeLayout>
+</LinearLayout>

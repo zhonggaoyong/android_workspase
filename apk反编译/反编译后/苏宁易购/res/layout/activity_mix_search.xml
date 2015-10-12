@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/search_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/search_title_bar" />
+        <include layout="@layout/brand_shop_layout" />
+        <com.suning.mobile.ebuy.search.view.SearchTabView android:id="@id/search_tab_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.suning.mobile.ebuy.utils.subpage.PullUpLoadListView android:id="@id/pull_search_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_title_layout" />
+        <com.suning.mobile.ebuy.search.view.MoreFilterView android:id="@id/search_three_filter_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/search_back_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/back_to_top" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <include layout="@layout/mixsearch_nodata_layout" />
+    </RelativeLayout>
+</LinearLayout>

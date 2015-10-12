@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/favor_guide_image" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginTop="108.0dip" android:src="@drawable/icon_focus_empty" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/favor_guide_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/favor_guide_image">
+        <TextView android:textSize="16.0dip" android:textColor="#ff585c64" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注的品牌暂无上线商品" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/vip_y_1" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="关注品牌后即有开售提醒" />
+        <TextView android:textSize="16.0dip" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/go_to_home" android:layout_width="185.0dip" android:layout_height="39.0dip" android:layout_marginTop="41.0dip" android:text="@string/go_to_home" style="@style/btn_line_violet_style" />
+        <View android:id="@id/driver_line" android:background="@drawable/favor_item_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layerType="software" />
+    </LinearLayout>
+</RelativeLayout>

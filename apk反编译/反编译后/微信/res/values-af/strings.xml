@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Google Play Services-fout</string>
+    <string name="d3r">"'n Program vereis dat Google Play Services geïnstalleer word."</string>
+    <string name="d3s">"'n Program vereis dat Google Play Services opgedateer word."</string>
+    <string name="d3t">"'n Program vereis dat Google Play Services geaktiveer word."</string>
+    <string name="d3u">Versoek deur %1$s</string>
+    <string name="d3v">Kry Google Play-dienste</string>
+    <string name="d3w">Hierdie program sal nie loop sonder Google Play-dienste nie, wat nie op jou foon is nie.</string>
+    <string name="d3x">Hierdie program sal nie loop sonder Google Play-dienste nie, wat nie op jou tablet is nie.</string>
+    <string name="d3y">Kry Google Play-dienste</string>
+    <string name="d3z">Aktiveer Google Play-dienste</string>
+    <string name="d40">Hierdie program sal nie werk tensy jy Google Play-dienste aktiveer nie.</string>
+    <string name="d41">Aktiveer Google Play-dienste</string>
+    <string name="d42">Dateer Google Play-dienste op</string>
+    <string name="d43">Hierdie program sal nie loop nie, tensy jy Google Play-dienste opdateer.</string>
+    <string name="d44">Netwerkfout</string>
+    <string name="d45">"'n Dataverbinding is nodig om aan Google Play-dienste te koppel."</string>
+    <string name="d46">Ongeldige rekening</string>
+    <string name="d47">"Die gespesifiseerde rekening bestaan nie op hierdie toestel nie. Kies asseblief 'n ander rekening."</string>
+    <string name="d48">Onbekende probleem met Google Play-dienste.</string>
+    <string name="d49">Google Play-dienste</string>
+    <string name="d4_">Google Play-dienste, waarop sommige van jou programme staatmaak, werk nie met jou toestel nie. Kontak asseblief die vervaardiger vir bystand.</string>
+    <string name="d4a">Dit lyk of die datum op die toestel verkeerd is. Gaan asseblief die datum op die toestel na.</string>
+    <string name="d4b">Dateer op</string>
+    <string name="d4c">Meld aan</string>
+    <string name="d4d">Meld aan met Google</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/gray_line" android:background="@color/grey_l3" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="10.0dip" />
+    <RelativeLayout android:id="@id/header_parent" android:paddingTop="15.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="@color/grey_d3_1" android:gravity="center_vertical" android:id="@id/main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/second_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/tile_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink" android:gravity="center_horizontal" android:id="@id/more" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/shop_more_text" />
+</LinearLayout>

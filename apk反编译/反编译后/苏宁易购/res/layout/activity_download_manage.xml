@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ebuy_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/util_view_header_game" />
+    <LinearLayout android:gravity="center" android:id="@id/layout_middle" android:background="@drawable/bg_bt_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="right" android:id="@id/middle_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:id="@id/layout_middle_left" android:background="@drawable/bt_download_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="bottom" android:id="@id/download_mission_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/game_download_app" />
+                <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="top" android:id="@id/download_mission_nums" android:background="@drawable/bg_mission_nums" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="5" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/middle_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:id="@id/layout_middle_right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="bottom" android:id="@id/refresh_mission_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/game_update_app" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffff6611" android:gravity="center" android:layout_gravity="top" android:id="@id/refresh_mission_nums" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip" android:text="5" />"
+</LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/vPager" android:background="@color/black" android:persistentDrawingCache="animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:flipInterval="30" android:layout_weight="1.0" />
+</LinearLayout>

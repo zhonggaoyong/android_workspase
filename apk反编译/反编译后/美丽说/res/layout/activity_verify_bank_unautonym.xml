@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/order_bg_goodsinformation" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/fastpay_text_standard_size_2" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_fastpay_bankinfo_banknum_label2" />
+    <com.meilishuo.app.views.DeletableEditText android:textSize="18.0sp" android:textColor="@color/grey_d4" android:textColorHint="@color/grey" android:layout_gravity="center_vertical" android:id="@id/et_recharge_money" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fastpay_padding_space_2" android:hint="@string/pay_verify_bank_hint" android:inputType="number" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Грешка в услугите за Google Play</string>
+    <string name="d3r">Приложение изисква инсталирането на услугите за Google Play.</string>
+    <string name="d3s">Приложение изисква актуализирането на услугите за Google Play.</string>
+    <string name="d3t">Приложение изисква активирането на услугите за Google Play.</string>
+    <string name="d3u">Заявено от %1$s</string>
+    <string name="d3v">Изтегляне на услугите за Google Play</string>
+    <string name="d3w">Това приложение няма да се изпълнява без услугите за Google Play, които липсват в телефона ви.</string>
+    <string name="d3x">Това приложение няма да се изпълнява без услугите за Google Play, които липсват в таблета ви.</string>
+    <string name="d3y">Услуги за Google Play: Изтегл.</string>
+    <string name="d3z">Активиране на услугите за Google Play</string>
+    <string name="d40">Това приложение няма да работи, освен ако не активирате услугите за Google Play.</string>
+    <string name="d41">Услуги за Google Play: Актив.</string>
+    <string name="d42">Актуализиране на услугите за Google Play</string>
+    <string name="d43">Това приложение няма да се изпълнява, освен ако не актуализирате услугите за Google Play.</string>
+    <string name="d44">Грешка в мрежата</string>
+    <string name="d45">За свързване с услугите за Google Play се изисква връзка за данни.</string>
+    <string name="d46">Невалиден профил</string>
+    <string name="d47">Посоченият профил не съществува на това устройство. Моля, изберете друг.</string>
+    <string name="d48">Неизвестен проблем с услугите за Google Play.</string>
+    <string name="d49">Услуги за Google Play</string>
+    <string name="d4_">Услугите за Google Play, на които разчитат някои от приложенията ви, не се поддържат от устройството ви. Моля, свържете се с производителя за помощ.</string>
+    <string name="d4a">Изглежда, че датата на устройството е неправилна. Моля, проверете я.</string>
+    <string name="d4b">Актуализиране</string>
+    <string name="d4c">Вход</string>
+    <string name="d4d">Вход с Google</string>
+</resources>

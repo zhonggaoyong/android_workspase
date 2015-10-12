@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/goodShopFrame" android:layout_width="154.5dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/leftImg" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/leftImg_back" android:background="@drawable/limit_buy_list_image_backgroud2_png" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_alignParentLeft="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/rightImg1" android:layout_width="48.5dip" android:layout_height="48.5dip" android:layout_marginLeft="3.0dip" android:scaleType="fitXY" android:layout_toRightOf="@id/leftImg" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/rightImg1_back" android:background="@drawable/limit_buy_list_image_backgroud2_png" android:layout_width="48.5dip" android:layout_height="48.5dip" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/leftImg" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/rightImg2" android:layout_width="48.5dip" android:layout_height="48.5dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:scaleType="fitXY" android:layout_toRightOf="@id/leftImg" android:layout_below="@id/rightImg1" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/rightImg2_back" android:background="@drawable/limit_buy_list_image_backgroud2_png" android:layout_width="48.5dip" android:layout_height="48.5dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_toRightOf="@id/leftImg" android:layout_below="@id/rightImg1" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0dip" android:textColor="#ff252525" android:id="@id/categoryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="精品" android:includeFontPadding="false" />
+</LinearLayout>

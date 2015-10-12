@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/rly_line" android:background="@color/order_bg_color" android:layout_width="fill_parent" android:layout_height="13.0dip">
+        <ImageView android:id="@id/iv_top" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffc8c7cc" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/iv_bottom" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffc8c7cc" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/head" android:paddingTop="8.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip">
+        <com.fanli.android.view.TangFontTextView android:textStyle="bold" android:textColor="#ff0aa560" android:id="@id/tv_gotime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:singleLine="true" android:layout_alignParentLeft="true" />
+        <com.fanli.android.view.TangFontTextView android:textColor="#ff949494" android:id="@id/tv_tiaozhuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您跳转去了" android:layout_toRightOf="@id/tv_gotime" />
+        <com.fanli.android.view.TangFontTextView android:textColor="#ff0aa560" android:id="@id/tv_shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_toRightOf="@id/tv_tiaozhuan" />
+        <com.fanli.android.view.TangFontTextView android:textColor="#ff949494" android:id="@id/tv_guize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=",跟单规则如下" android:layout_toRightOf="@id/tv_shop_name" />
+    </RelativeLayout>
+    <View android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="19.0dip" android:layout_marginTop="6.0dip" />
+    <RelativeLayout android:id="@id/body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip">
+        <com.fanli.android.view.TangFontTextView android:textColor="#ff636363" android:id="@id/tv_notice_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+    </RelativeLayout>
+</LinearLayout>

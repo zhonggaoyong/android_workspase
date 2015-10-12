@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_top" style="@style/top_rl">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ll_btn_back" style="@style/top_iv_back" />
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <RadioButton android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_now" android:background="@drawable/button_p_left" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" android:button="@null" android:text="正在热映" />
+                <RadioButton android:textSize="16.0sp" android:textColor="@color/font_black" android:gravity="center" android:id="@id/btn_will" android:background="@drawable/button_p_right" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@null" android:text="即将上映" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ff252525" android:gravity="center" android:id="@id/tv_location" android:background="@drawable/bg_laction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.jingdong.common.movie.widget.pullrefresh.PullToRefreshScrollView android:id="@id/mPullToRefreshScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/main_tab_group" android:layout_below="@id/rl_top" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/main_tab_group" android:background="#ff252525" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_alignParentBottom="true">
+        <RadioButton android:textSize="12.0sp" android:textColor="#ff589fe2" android:gravity="center" android:id="@id/movie_tab" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:checked="true" android:button="@null" android:text="影片" android:drawableTop="@drawable/icon_movie_select" android:layout_weight="1.0" />
+        <RadioButton android:textSize="12.0sp" android:textColor="#ff848689" android:gravity="center" android:id="@id/cinema_tab" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:checked="true" android:button="@null" android:text="影院" android:drawableTop="@drawable/icon_cinema_normal" android:layout_weight="1.0" />
+        <RadioButton android:textSize="12.0sp" android:textColor="#ff848689" android:gravity="center" android:id="@id/myOrder_tab" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:button="@null" android:text="我的" android:drawableTop="@drawable/icon_order_list_normal" android:layout_weight="1.0" />
+    </RadioGroup>
+    <com.jingdong.common.movie.widget.LoadingView android:id="@id/wgt_loading_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/main_tab_group" android:layout_below="@id/rl_top" android:layout_centerInParent="true" />
+</RelativeLayout>

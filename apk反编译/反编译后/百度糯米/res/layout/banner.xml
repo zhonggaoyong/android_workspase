@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/banner_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.baidu.bainuo.view.AutoScrollViewPager android:id="@id/banner_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.baidu.bainuo.view.DotView android:layout_gravity="bottom|right|center" android:id="@id/banner_dotview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" />
+    </FrameLayout>
+</LinearLayout>

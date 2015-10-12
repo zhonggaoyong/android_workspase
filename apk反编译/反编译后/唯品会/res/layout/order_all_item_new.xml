@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/list_divider_height" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="@dimen/account_order_list_divider_height" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="16.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/label_icon_global" />
+        <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/order_addtime" />
+        <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:id="@id/order_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/app_textsize_secondary" android:textColor="@color/app_text_white" android:id="@id/order_type" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="11.0dip">
+        <FrameLayout android:gravity="center_vertical" android:layout_width="56.0dip" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TableLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1" android:layout_weight="1.0">
+            <TableRow android:id="@id/order_sn_layout" android:layout_marginBottom="6.0dip">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_sn" />
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:id="@id/order_sn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            </TableRow>
+            <TableRow android:id="@id/price_row" android:layout_marginBottom="6.0dip">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_price" />
+                <TextView android:textSize="@dimen/order_text_main" android:textStyle="bold" android:textColor="@color/order_black_text" android:id="@id/order_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            </TableRow>
+            <TableRow android:id="@id/pay_type_layout" android:visibility="gone" android:layout_marginBottom="6.0dip">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_paytype" android:singleLine="true" />
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:id="@id/order_paytype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_status_title" />
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/app_text_yellow" android:id="@id/order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            </TableRow>
+            <TableRow android:id="@id/saletime_layout" android:visibility="gone" android:layout_marginTop="6.0dip">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_saletime" android:singleLine="true" />
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:id="@id/order_saletime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            </TableRow>
+        </TableLayout>
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_forward_grey" />
+    </LinearLayout>
+    <View android:id="@id/submit_space_line" android:background="@drawable/cart_dash_driver" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:layout_gravity="right" android:id="@id/submit_space_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <Button android:textSize="@dimen/app_textsize_secondary" android:id="@id/pay_for_another_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:minWidth="@dimen/submit_pink_small_button_width" style="@style/submit_black_small_button_style" />
+        <Button android:textSize="@dimen/app_textsize_secondary" android:textColor="@drawable/btn_order_red_color" android:id="@id/pay_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:minWidth="@dimen/submit_pink_small_button_width" style="@style/submit_pink_small_button_style" />
+        <Button android:id="@id/continue_pay_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="@dimen/submit_pink_small_button_width" android:text="@string/continue_pay_text" style="@style/submit_pink_small_button_style" />
+        <Button android:id="@id/reset_purchase_btn" android:visibility="gone" android:layout_marginRight="10.0dip" android:text="@string/rebuy_text" style="@style/submit_pink_small_button_style" />
+        <Button android:id="@id/account_logistics" android:visibility="gone" android:layout_marginRight="10.0dip" android:text="@string/logistics_title" style="@style/submit_black_small_button_style" />
+        <Button android:id="@id/account_order_merge" android:visibility="gone" android:layout_marginRight="10.0dip" android:text="@string/order_merge_title" style="@style/submit_black_small_button_style" />
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <View android:id="@id/bottom_lines" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="@dimen/account_order_list_divider_height" />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/daren_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/porder_change_layout" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/porder_setter_name" android:ellipsize="end" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/porder_select_shop" android:singleLine="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/porder_header_spit" android:layout_width="6.0dip" android:layout_height="12.0dip" android:src="@drawable/icon_arrows_red_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/porder_change_setter" android:ellipsize="end" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/porder_modify_shop" android:singleLine="true" android:layout_toLeftOf="@id/porder_header_spit" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/daren_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/porder_name_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/porder_setter_name" android:ellipsize="end" android:id="@id/porder_shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="right" android:id="@id/porder_shop_tip" android:background="@drawable/tuan_detail_business_tag3" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="4.0dip" android:text="@string/porder_distance" android:singleLine="true" android:layout_toRightOf="@id/porder_shop_name" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/porder_setter_place" android:ellipsize="end" android:id="@id/porder_shop_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="14.0sp" android:textColor="@color/porder_setter_place" android:id="@id/porder_shop_place" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/porder_name_layout" android:lineSpacingExtra="6.0dip" />
+            </RelativeLayout>
+            <View android:background="@color/daren_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="@color/daren_divide" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+            <RelativeLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/porder_setter_name" android:ellipsize="end" android:gravity="right" android:id="@id/porder_select_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/porder_select_date" android:singleLine="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/porder_setter_name" android:ellipsize="end" android:gravity="right" android:id="@id/porder_current_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="8月12号" android:singleLine="true" android:layout_toRightOf="@id/porder_select_date" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/daren_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <HorizontalScrollView android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/porder_date" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+            <View android:background="@color/daren_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="@color/daren_divide" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+            <RelativeLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingTop="9.0dip" android:paddingRight="12.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/submit_info_amount" layout="@layout/pay_submit_info_item" />
+            </RelativeLayout>
+            <View android:background="@color/daren_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/daren_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:background="@color/white" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/porder_order" android:background="@drawable/bg_red_full_button_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/porder_order" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="420.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/grey_l3" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="20.0sp" android:textColor="@color/grey_d3" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_iou_stage_dialog_title" android:layout_centerInParent="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/pink_l2" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/finish" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@id/iou_stage_listView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="#26505056" android:dividerHeight="1.0px" />
+        <View android:background="@drawable/stage_dialog_frame" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

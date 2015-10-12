@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/lib_game_charge_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/lib_game_charge_rg" android:layout_width="fill_parent" android:layout_height="@dimen/lib_game_charge_size40" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <RadioButton android:textSize="@dimen/lib_game_charge_btn_size" android:textColor="@color/lib_game_charge_white" android:gravity="center" android:id="@id/lib_game_charge_qb_rb" android:background="@drawable/lib_game_charge_left_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:checked="true" android:button="@null" android:text="最近订单" android:layout_weight="1.0" />
+        <RadioButton android:textSize="@dimen/lib_game_charge_btn_size" android:textColor="@color/lib_game_charge_dark" android:gravity="center" android:id="@id/lib_game_charge_game_rb" android:background="@drawable/lib_game_charge_right_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="7天前订单" android:layout_weight="1.0" />
+    </RadioGroup>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview_real_order" android:background="@color/lib_game_charge_bg_color" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="10.0dip" ptr:ptrAnimationStyle="flip" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout android:id="@id/listview_real_order1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

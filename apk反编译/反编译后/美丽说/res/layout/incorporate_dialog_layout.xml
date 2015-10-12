@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/my_create_circle_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+            <ImageView android:id="@id/close" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/close" android:layout_alignParentRight="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_circle" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:id="@id/line1" android:layout_marginTop="18.0dip" style="@style/CommunityDividerViewStyle" />
+        <ListView android:id="@id/my_circle" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" />
+        <LinearLayout android:orientation="vertical" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d4" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/circle_empty_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/create" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <View style="@style/CommunityDividerViewStyle" />
+        <ImageView android:id="@id/create_circle" android:background="@drawable/icon_create_circle_aq" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

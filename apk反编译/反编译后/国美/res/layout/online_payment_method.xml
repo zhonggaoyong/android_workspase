@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/address_background_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:textColor="@color/main_default_black_text_color" android:id="@id/shopping_radiobutton" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:checked="true" android:button="@drawable/radio_button_bg_selector" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/shopping_radiobutton" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/online_pay_method_name_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/tishiyu_color" android:id="@id/online_pay_method_dec_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

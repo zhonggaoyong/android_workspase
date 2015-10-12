@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/time_jump_frame_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/goods_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="10.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/time_jump_red_bar" />
+            <TextView android:textColor="#ff959595" android:gravity="center_vertical" android:id="@id/category_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="按服饰商品分类" />
+        </LinearLayout>
+        <com.achievo.vipshop.view.widget.FixedRelativeLayout android:id="@id/screening_grid_view_layout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="200.0dip" android:layout_below="@id/goods_tag" android:layout_centerHorizontal="true">
+            <GridView android:gravity="center" android:id="@id/screening_grid_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:horizontalSpacing="20.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+        </com.achievo.vipshop.view.widget.FixedRelativeLayout>
+        <View android:id="@id/divide_line" android:background="@drawable/time_jump_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/screening_grid_view_layout" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_screenmenu_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/divide_line">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/time_jump_red_bar" />
+            <TextView android:textColor="#ff959595" android:gravity="center_vertical" android:id="@id/time_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="按服饰上新时间" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_screenmenu_section">
+            <Button android:textColor="@color/white" android:id="@id/today_btn" android:background="@drawable/time_jump_bt" android:visibility="gone" android:layout_width="78.0dip" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:text="今日上新" android:layout_weight="1.0" />
+            <Button android:textColor="@color/white" android:id="@id/yesterday_btn" android:background="@drawable/time_jump_bt" android:visibility="gone" android:layout_width="78.0dip" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:text="昨日上新" android:layout_weight="1.0" />
+            <Button android:textColor="@color/white" android:id="@id/finally_btn" android:background="@drawable/time_jump_bt" android:visibility="gone" android:layout_width="78.0dip" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:text="最后机会" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ware_pop_window_closed" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

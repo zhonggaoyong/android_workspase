@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_marginTop="10.0dip" style="@style/FirstDividerViewStyle" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/recommend_tip_head" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/layout_select_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+            <ImageView android:background="@drawable/checkbox_icon_selected" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="3.0dip" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="@color/grey_d3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_result_success" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:id="@id/recomment_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/pink" android:id="@id/textview_see_order_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/see_order_detail" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/FirstDividerViewStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/coupon_layout" android:background="@color/white" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/text_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/recommend_coupon_title_prefix" />
+                <com.meilishuo.app.views.CountdownChronometer android:textSize="17.0sp" android:textColor="@color/pink_d7" android:id="@id/count_down" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/recommend_coupon_title_suffix" />
+            </LinearLayout>
+            <com.meilishuo.app.views.HorizontalListView android:layout_gravity="center_horizontal" android:id="@id/coupons" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/banner_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <View android:layout_gravity="bottom" android:id="@id/line" android:layout_marginTop="15.0dip" style="@style/FirstDividerViewStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/recommend_shop_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <View style="@style/FirstDividerViewStyle" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="left" android:id="@id/recommend_shop_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" />
+        <View style="@style/FirstDividerViewStyle" />
+        <com.meilishuo.app.views.ExpandedListView android:id="@id/recommend_shop_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View style="@style/FirstDividerViewStyle" />
+    </LinearLayout>
+    <View android:layout_marginTop="10.0dip" style="@style/FirstDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="left" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recommend_buy_tip" />
+</LinearLayout>

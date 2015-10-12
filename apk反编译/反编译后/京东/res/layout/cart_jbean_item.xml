@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/cart_single_product_yb_but_textsize" android:textColor="@color/shopping_cart_change_product" android:gravity="center" android:id="@id/cart_jbean_attend" android:background="@drawable/cart_yb_gift_delete_btn_selector" android:paddingLeft="@dimen/cart_jbean_attend_padding_left" android:paddingTop="3.0dip" android:paddingRight="@dimen/cart_jbean_attend_padding_left" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/cart_color_252525" android:id="@id/cart_jbean_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:singleLine="true" android:layout_toLeftOf="@id/cart_jbean_attend" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

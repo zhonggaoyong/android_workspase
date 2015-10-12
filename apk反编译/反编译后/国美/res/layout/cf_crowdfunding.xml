@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mydef="http://schemas.android.com/apk/res/com.gome.eshopnew">
+    <include android:id="@id/title_layout" layout="@layout/vw_titlebar" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mygome_fav_tab" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/title_layout">
+        <com.gome.ecmall.home.mygome.custom.TabStyle android:id="@id/tab_supportproduct" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" mydef:selected="true" mydef:fullLength="false" mydef:text="支持的项目" />
+        <com.gome.ecmall.home.mygome.custom.TabStyle android:id="@id/tab_attentionproduct" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" mydef:selected="false" mydef:fullLength="false" mydef:text="关注的项目" />
+    </LinearLayout>
+    <View android:id="@id/fav_line1" android:background="@color/mygome_fav_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/mygome_fav_tab" />
+    <android.support.v4.view.ViewPager android:id="@id/mygome_crowdfunding_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fav_line1" />
+</RelativeLayout>

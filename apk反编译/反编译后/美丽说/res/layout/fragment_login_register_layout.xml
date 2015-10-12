@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff2efef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_back" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.widget.HomeTabView android:id="@id/home_tab" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:defaultColor="@color/grey_d3" app:selectColor="@color/pink" app:lineColor="@color/pink" app:animation="true" app:tabTextSize="16.0sp" app:gapWidth="50.0dip" app:lineBeyond="5.0dip" />
+    </RelativeLayout>
+    <com.meilishuo.app.views.MyViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_below="@id/header" />
+</RelativeLayout>

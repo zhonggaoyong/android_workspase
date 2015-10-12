@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/coupon_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include android:id="@id/favo_list_title" layout="@layout/jshop_title" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/coupon_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <include layout="@layout/coupon_take_success_item" />
+    </LinearLayout>
+    <ListView android:id="@id/coupon_grid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:listSelector="@drawable/none" android:numColumns="2" android:divider="@drawable/none" android:dividerHeight="10.0dip" android:layout_below="@id/coupon_title" />
+</RelativeLayout>

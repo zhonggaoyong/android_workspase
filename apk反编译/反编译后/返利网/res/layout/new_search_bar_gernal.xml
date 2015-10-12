@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_shop_search_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_nine_dot_nine_shop_search_return" android:visibility="gone" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/nine_dot_nine_return" android:scaleType="centerInside" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="4.0dip">
+        <RelativeLayout android:id="@id/rl_shop_search_bar" android:background="@drawable/search_bar_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/rl_shop_search">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:textSize="15.0sp" android:textColor="#ffb8b8b8" android:gravity="center_vertical" android:id="@id/et_input" android:background="@null" android:paddingLeft="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:hint="@string/home_search_shop_hint_new" android:singleLine="true" android:layout_weight="1.0" />
+                <Button android:id="@id/btn_clear" android:background="@drawable/edittext_clear_button" android:visibility="gone" android:layout_width="@dimen/height_bar_filter_tiny" android:layout_height="@dimen/height_bar_filter_tiny" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_shop_search_bar_nine_dot_nine" android:background="@drawable/nine_dot_nine_shop_search_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_toLeftOf="@id/rl_shop_search">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:textSize="15.0sp" android:gravity="center_vertical" android:id="@id/et_input_nine_dot_nine" android:background="@null" android:paddingLeft="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:hint="@string/home_search_shop_hint_new" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <Button android:id="@id/btn_nine_dot_nine_shop_search_clear" android:background="@drawable/nine_dot_nine_shop_search_clear" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_shop_search" android:layout_width="@dimen/height_bar_filter" android:layout_height="@dimen/height_bar_filter" android:layout_marginLeft="@dimen/global_padding" android:layout_marginRight="@dimen/global_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/btn_enter" android:background="@drawable/search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

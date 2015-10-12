@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="20.0dip" android:textColor="@color/app_text_new_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="选择有效时间" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.achievo.vipshop.view.wheelview.wheel.MyWheelView android:id="@id/month_wheel" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="150.0dip" android:layout_weight="1.0" />
+        <com.achievo.vipshop.view.wheelview.wheel.MyWheelView android:id="@id/year_wheel" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="150.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0dip" android:textColor="@color/app_text_blue" android:gravity="center" android:id="@id/num_cancel_btn" android:background="@drawable/payment_bg_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="取消" android:layout_weight="1.0" />
+        <View android:background="@color/divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="16.0dip" android:textColor="@color/app_text_blue" android:gravity="center" android:id="@id/num_ok_btn" android:background="@drawable/payment_bg_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

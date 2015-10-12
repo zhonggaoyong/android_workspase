@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_nine_dot_nine_brand_product_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_nine_dot_nine_brand_product_main_image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/product_bottom_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rl_nine_dot_nine_brand_product_brief" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+                <com.fanli.android.view.TangFontTextView android:textSize="17.0sp" android:id="@id/tv_nine_dot_nine_brand_product_discount_and_brief" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.2折 [支持专柜验货]初秋文艺复古半身长裙" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/line_nine_dot_nine_brand_product" android:background="@drawable/line_details" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="14.0dip">
+                <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tv_nine_dot_nine_brand_product_price_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <com.fanli.android.view.TangFontTextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tv_nine_dot_nine_brand_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="19.1" android:layout_toRightOf="@id/tv_nine_dot_nine_brand_product_price_prefix" android:layout_centerVertical="true" />
+                <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/nine_dot_nine_brand_product_price_color" android:gravity="center_vertical" android:id="@id/tv_nine_dot_nine_brand_product_price_hint" android:background="@drawable/nine_dot_nine_price_hint_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="付￥99-返￥79.9" android:layout_toRightOf="@id/tv_nine_dot_nine_brand_product_price" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

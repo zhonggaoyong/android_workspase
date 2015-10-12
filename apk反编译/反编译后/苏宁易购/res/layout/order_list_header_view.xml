@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/list_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_20px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/orderid_layout" android:paddingLeft="@dimen/android_public_space_21px" android:paddingRight="@dimen/android_public_space_21px" android:visibility="visible" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_7px" android:layout_marginBottom="@dimen/android_public_space_7px">
+            <TextView android:textSize="@dimen/pub_textsize_sixteen" android:textColor="#ff797979" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_txt_num" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/pub_textsize_sixteen" android:textColor="#ff010101" android:gravity="right" android:id="@id/order_id_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:background="@drawable/category_listview_divider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/android_public_space_21px" android:paddingRight="@dimen/android_public_space_21px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_7px" android:layout_marginBottom="@dimen/android_public_space_7px">
+            <TextView android:textSize="@dimen/pub_textsize_sixteen" android:textColor="#ff797979" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/pub_textsize_sixteen" android:textColor="#ff010101" android:gravity="right" android:id="@id/order_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:background="@drawable/category_listview_divider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/android_public_space_21px" android:paddingRight="@dimen/android_public_space_21px" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_7px" android:layout_marginBottom="@dimen/android_public_space_7px">
+            <TextView android:textSize="@dimen/pub_textsize_sixteen" android:textColor="#ff797979" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_txt_status" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/pub_textsize_sixteen" android:textColor="#ff010101" android:gravity="right" android:id="@id/order_status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.suning.mobile.ebuy.chat.util.CustomerServiceView android:id="@id/customer_service_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_20px" android:layout_marginBottom="@dimen/android_public_space_13px" />
+</LinearLayout>

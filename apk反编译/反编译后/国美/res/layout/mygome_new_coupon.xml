@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/mygome_coupon_home" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mydef="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/common_top_layout" layout="@layout/common_title_layout" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mygome_mycoupon_select_ll" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/common_top_layout">
+        <com.gome.ecmall.home.mygome.custom.TabStyle android:id="@id/tab_unused" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" mydef:selected="true" mydef:fullLength="false" mydef:text="可用" />
+        <com.gome.ecmall.home.mygome.custom.TabStyle android:id="@id/tab_history" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" mydef:selected="false" mydef:fullLength="false" mydef:text="历史" />
+    </LinearLayout>
+    <View android:id="@id/line1" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/mygome_mycoupon_select_ll" />
+    <android.support.v4.view.ViewPager android:id="@id/mygome_mycoupon_viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/mygome_mycoupon_mytextview" android:layout_below="@id/line1" />
+    <View android:id="@id/line" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/mygome_mycoupon_mytextview" />
+    <View android:id="@id/mygome_mycoupon_mytextview" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/mygome_activate_coupon_rl" android:background="#1acccccc" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_use_help" android:background="@drawable/mygome_gray_white_selector" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/mygome_coupon_help" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/mygome_mycoupon_rule" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:text="使用帮助" />
+        </LinearLayout>
+        <View android:layout_gravity="center_horizontal" android:id="@id/vertical_line" android:background="#ffcccccc" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_active_coupon" android:background="@drawable/mygome_gray_white_selector" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/mygome_coupon_active" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:text="激活优惠券" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

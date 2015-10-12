@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_dialog_title" android:textColor="@color/dilaog_title_text_color" android:id="@id/fragment_number_picker_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_margin_left" android:layout_marginTop="@dimen/dialog_title_margin_top" android:layout_marginBottom="@dimen/dialog_title_margin_bottom" android:text="@string/random" />
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_dialog_title_style" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/random_list_hight">
+        <ListView android:layout_gravity="center_vertical" android:id="@id/random_list" android:background="@color/bg_normal" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/lottery_list_selector" android:drawSelectorOnTop="false" android:divider="@drawable/lottery_divider" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/lottery_duplex_list_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffe3e3e3" android:layout_width="fill_parent" android:layout_height="42.0dip">
+            <TextView android:textColor="#ff333333" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="都不满意？点击重选按钮重新选择" android:layout_weight="1.0" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/random_reset_btn" android:background="@drawable/lottery_reset_btn_selector" android:paddingLeft="20.0dip" android:paddingTop="6.0dip" android:paddingRight="20.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="重选" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/lottery_sound_line_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff333333" android:id="@id/random_message" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_option_area_height">
+        <TextView android:id="@id/fragment_dialog_cancle" android:text="@string/cancle" style="@style/dialog_action_btn_style" />
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+        <TextView android:id="@id/fragment_dialog_ok" android:text="@string/add_to_cart" style="@style/dialog_action_btn_style" />
+    </LinearLayout>
+</LinearLayout>

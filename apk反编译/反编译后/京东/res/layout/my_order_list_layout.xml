@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <EditText android:textSize="13.0dip" android:textColor="@color/search_my_order_text_dark_grey" android:gravity="center_horizontal" android:id="@id/et_search" android:background="@drawable/white_bg_round_corner_shape" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="搜索商品名称" android:layout_below="@id/common_title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/et_search">
+        <com.jingdong.app.mall.utils.ui.LoadingView android:id="@id/ldvRealOrder" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview_real_order" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" />
+        </com.jingdong.app.mall.utils.ui.LoadingView>
+        <TextView android:textSize="20.0sp" android:textColor="#ff848689" android:layout_gravity="center_horizontal" android:id="@id/emptyView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="112.0dip" android:text="您还没有相关订单" android:drawableTop="@drawable/order_list_no_data" android:drawablePadding="43.0dip" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_inner" android:paddingLeft="@dimen/header_footer_left_right_padding" android:paddingTop="@dimen/header_footer_top_bottom_padding" android:paddingRight="@dimen/header_footer_left_right_padding" android:paddingBottom="@dimen/header_footer_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/pull_to_refresh_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.jingdong.common.ui.JDProgressBar android:layout_gravity="center" android:id="@id/pull_to_refresh_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="?android:attr/progressBarStyleSmall" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ff878787" android:id="@id/pull_to_refresh_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff9e9e9e" android:id="@id/pull_to_refresh_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </FrameLayout>
+</merge>

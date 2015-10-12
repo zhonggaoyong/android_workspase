@@ -1,0 +1,80 @@
+.class final Lcom/jingdong/common/login/b;
+.super Ljava/lang/Object;
+.source "LoginUserBase.java"
+
+# interfaces
+.implements Ljd/wjlogin_sdk/a/a/f;
+
+
+# instance fields
+.field final synthetic a:Lcom/jingdong/common/frame/IMyActivity;
+
+.field final synthetic b:Ljava/lang/Runnable;
+
+
+# direct methods
+.method constructor <init>(Lcom/jingdong/common/frame/IMyActivity;Ljava/lang/Runnable;)V
+    .locals 0
+
+    .prologue
+    .line 264
+    iput-object p1, p0, Lcom/jingdong/common/login/b;->a:Lcom/jingdong/common/frame/IMyActivity;
+
+    iput-object p2, p0, Lcom/jingdong/common/login/b;->b:Ljava/lang/Runnable;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 2
+
+    .prologue
+    .line 268
+    iget-object v0, p0, Lcom/jingdong/common/login/b;->a:Lcom/jingdong/common/frame/IMyActivity;
+
+    invoke-static {v0}, Lcom/jingdong/common/login/LoginUserBase;->saveInfoAfterLogin(Lcom/jingdong/common/frame/IMyActivity;)V
+
+    .line 270
+    iget-object v0, p0, Lcom/jingdong/common/login/b;->b:Ljava/lang/Runnable;
+
+    if-eqz v0, :cond_0
+
+    .line 271
+    iget-object v0, p0, Lcom/jingdong/common/login/b;->a:Lcom/jingdong/common/frame/IMyActivity;
+
+    iget-object v1, p0, Lcom/jingdong/common/login/b;->b:Ljava/lang/Runnable;
+
+    invoke-interface {v0, v1}, Lcom/jingdong/common/frame/IMyActivity;->post(Ljava/lang/Runnable;)V
+
+    .line 273
+    :cond_0
+    return-void
+.end method
+
+.method public final a(Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 277
+    return-void
+.end method
+
+.method public final a(Ljd/wjlogin_sdk/model/c;Ljd/wjlogin_sdk/model/d;Ljd/wjlogin_sdk/model/f;)V
+    .locals 0
+
+    .prologue
+    .line 287
+    return-void
+.end method
+
+.method public final a(Ljd/wjlogin_sdk/model/c;Ljd/wjlogin_sdk/model/f;)V
+    .locals 0
+
+    .prologue
+    .line 282
+    return-void
+.end method

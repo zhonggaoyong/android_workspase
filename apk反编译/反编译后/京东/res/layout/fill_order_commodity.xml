@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/commodity_root_view" android:background="@color/fill_order_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fill_order_commodity_title" layout="@layout/title" />
+    <LinearLayout android:id="@id/fill_order_commodity_list_layout" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/commodity_list_no_stock_layout" android:layout_below="@id/fill_order_commodity_title">
+        <ListView android:id="@id/fill_order_commodity_list" android:background="@drawable/android_layout_bg_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/commodity_list_no_stock_layout" android:background="@color/fill_order_coupon_bottombar_bg" android:paddingTop="@dimen/product_detail_size_margintop" android:paddingBottom="@dimen/product_detail_size_margintop" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/fill_order_dialog_btn_text" android:textColor="@color/fill_open_password_text_color" android:id="@id/change_addr_button" android:background="@drawable/fill_order_button_cancel_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fill_order_marginleft" android:layout_marginRight="@dimen/fill_order_marginleft" android:text="@string/change_addr_button_str" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/fill_order_dialog_btn_text" android:textColor="@color/fill_order_dialog_ok_text_color" android:id="@id/remove_to_cart_button" android:background="@drawable/fill_order_button_ok_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fill_order_marginleft" android:text="@string/fill_order_retract_cart" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

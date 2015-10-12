@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootview" android:background="@color/newshishicai_bg_has_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jd.lottery.lib.ui.common.widget.FullSizeGridView android:id="@id/playtype_selecter_gridview" android:background="@color/newshishicai_bg" android:padding="10.0dip" android:horizontalSpacing="6.0dip" android:verticalSpacing="10.0dip" android:numColumns="3" style="@style/select_ball_gridview_style" />
+</FrameLayout>

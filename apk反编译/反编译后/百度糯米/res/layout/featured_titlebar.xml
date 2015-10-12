@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/featured_titlebar_home" android:padding="12.0dip" android:clickable="true" android:layout_width="@dimen/home_title_right_icon_width" android:layout_height="fill_parent" android:src="@drawable/actionbar_home_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/abc_action_bar_title_text_size" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/featured" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <include android:layout_width="@dimen/home_title_shoppingcart_container_width" android:layout_height="fill_parent" android:layout_toLeftOf="@id/featured_titlebar_scanner" layout="@layout/shoppingcart_actionbar_container" />
+    <ImageView android:id="@id/featured_titlebar_scanner" android:padding="12.0dip" android:clickable="true" android:layout_width="@dimen/home_title_right_icon_width" android:layout_height="fill_parent" android:src="@drawable/home_saoyisao_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

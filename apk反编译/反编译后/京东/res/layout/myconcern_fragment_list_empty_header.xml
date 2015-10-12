@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_empty_view" android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="89.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/joy_icon" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff686868" android:id="@id/iv_tip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="33.0dip" android:text="@string/my_concern_tip_empty" android:layout_toRightOf="@id/iv_empty" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff848689" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/my_concern_tip_more" android:layout_below="@id/iv_tip1" android:layout_alignLeft="@id/iv_tip1" />
+    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

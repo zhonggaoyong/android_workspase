@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header_layout" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+    <ListView android:id="@id/problem_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/transparent" android:divider="@color/divider" android:dividerHeight="1.0px" />
+</LinearLayout>

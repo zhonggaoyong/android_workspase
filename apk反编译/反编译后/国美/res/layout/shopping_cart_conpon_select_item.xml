@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shopping_cart_select_red_coupon_itme_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@id/shopping_blueticket_radiobutton_img" android:background="@drawable/radio_button_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+        <ImageView android:id="@id/line" android:background="@drawable/line_xuxian_duan_coupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+        <RelativeLayout android:id="@id/shopping_coupon_ticket_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="15.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/price_text_color" android:id="@id/shopping_goods_order_conpon_ticket_amount_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fdweedw" />
+            <TextView android:textColor="@color/hint_text_color" android:id="@id/shopping_goods_order_conpon_ticket_date_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/shopping_goods_order_conpon_ticket_amount_data" android:layout_alignLeft="@id/shopping_goods_order_conpon_ticket_amount_data" android:lineSpacingExtra="3.0dip" />
+            <TextView android:textColor="@color/main_default_black_text_color" android:id="@id/shopping_goods_order_conpon_ticket_desc_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="edwwed" android:layout_below="@id/shopping_goods_order_conpon_ticket_date_data" android:layout_alignLeft="@id/shopping_goods_order_conpon_ticket_date_data" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/hint_text_color" android:id="@id/shopping_coupon_ticket_not_use" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

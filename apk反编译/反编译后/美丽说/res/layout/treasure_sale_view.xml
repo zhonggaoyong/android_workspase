@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.treasure.view.LimitRelativeLayout android:id="@id/info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d1" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="品牌区" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textStyle="italic" android:textColor="@color/pink_l2" android:id="@id/english_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="brands" android:layout_toRightOf="@id/name" android:layout_alignBottom="@id/name" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d3" android:id="@id/word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="时尚大牌" android:singleLine="true" android:layout_alignBottom="@id/name" android:layout_alignParentRight="true" />
+    </com.meilishuo.app.treasure.view.LimitRelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/banners" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="18.0dip">
+        <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/second" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_weight="248.0">
+            <com.meilishuo.app.views.KeepScaleImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="@color/grey_d1" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_centerHorizontal="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d5" android:id="@id/wording" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+            <com.meilishuo.app.treasure.view.TreasureChronometer android:id="@id/timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/wording" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/right_second" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="368.0">
+            <LinearLayout android:layout_gravity="center" android:id="@id/group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip">
+                <FrameLayout android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:layout_weight="1.0">
+                    <com.meilishuo.app.views.KeepScaleImageView android:layout_gravity="center" android:id="@id/qiang_img" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.meilishuo.app.views.KeepScaleImageView android:layout_gravity="center" android:id="@id/group_img" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/other" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="center" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:layout_weight="1.0">
+                    <com.meilishuo.app.views.KeepScaleImageView android:id="@id/cq_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.meilishuo.app.views.KeepScaleImageView android:id="@id/fl_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

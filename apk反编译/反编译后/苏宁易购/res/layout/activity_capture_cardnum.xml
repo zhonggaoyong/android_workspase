@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/scan_view" android:background="@color/viewfinder_mask" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:layout_gravity="center" android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.suning.mobile.ebuy.barcode.view.MembershipCardViewfinderView android:id="@id/viewfinder_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:id="@id/scan_cancel_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_20px" android:layout_marginTop="@dimen/android_public_space_20px" android:src="@drawable/scan_cardno_back_button" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/scan_flash_lamp" android:background="@drawable/scan_back_button" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_20px" android:layout_marginRight="@dimen/android_public_space_20px" android:src="@drawable/led_lamp_close" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/viewfinder_image_layout" android:background="@color/pub_color_two" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/viewfinder_image" android:background="@color/pub_color_two" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

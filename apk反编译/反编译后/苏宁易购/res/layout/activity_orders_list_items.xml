@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/order_shop_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_18px">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/order_title" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_fifteen" android:id="@id/order_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单号：" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff909090" android:id="@id/order_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="@dimen/storeline_height" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layorders" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

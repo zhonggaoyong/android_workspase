@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/promotion_show_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_five">
+        <TextView android:textSize="@dimen/pub_margin_or_padding_space_twelev" android:textColor="@color/pub_color_one" android:gravity="center" android:id="@id/promotion_show_left_prompt_img" android:background="@drawable/promotion" android:padding="@dimen/pub_margin_or_padding_space_five" android:layout_width="@dimen/pub_margin_or_padding_space_twenty_six" android:layout_height="@dimen/pub_margin_or_padding_space_twenty_six" android:text="@string/shoppingcart_promotion_img_text_prompt" />
+        <TextView android:textSize="@dimen/pub_textsize_sixteen" android:textColor="@color/pub_color_four" android:layout_gravity="center_vertical" android:id="@id/promotion_info_content" android:paddingLeft="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

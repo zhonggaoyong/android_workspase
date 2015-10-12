@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wallet_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vipnew_list_header" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/cart_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.achievo.vipshop.view.ScrollWebView android:id="@id/subject_web" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <WebView android:id="@id/subject_web_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error_layout" android:background="@color/reds" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/new_load_fail" />
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/time_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/cart_jiesuan" />
+        </RelativeLayout>
+        <ViewStub android:id="@id/not_bag_stub" android:layout="@layout/cart_webview_not_bag" android:inflatedId="@id/not_bag_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/header_bottom" layout="@layout/vipnew_header_bottom" />
+    </FrameLayout>
+</LinearLayout>

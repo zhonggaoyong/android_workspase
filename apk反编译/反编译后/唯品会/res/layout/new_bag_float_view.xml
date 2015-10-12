@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/float_layout" android:background="@drawable/bg_float" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/float_mine_layout" android:background="@drawable/bag_bg_selector" android:layout_width="49.0dip" android:layout_height="42.0dip">
+        <ImageView android:id="@id/float_mine" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/icon_float_user_normal" android:layout_centerInParent="true" />
+        <TextView android:id="@id/float_mine_point" android:background="@drawable/bg_redpoint_small" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/app_textsize_price_symbol" android:textColor="@color/app_text_white" android:gravity="center" android:id="@id/float_mine_num" android:background="@drawable/bg_shoppingcar_small" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/float_line_one" android:background="#1affffff" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/float_collect_layout" android:background="@drawable/bag_bg_selector" android:layout_width="49.0dip" android:layout_height="42.0dip">
+        <ImageView android:id="@id/float_collect" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/icon_float_collect_normal" android:layout_centerInParent="true" />
+        <TextView android:id="@id/float_collect_point" android:background="@drawable/bg_redpoint_small" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/float_line_two" android:background="#1affffff" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/float_bag_layout" android:background="@drawable/bag_bg_selector" android:layout_width="49.0dip" android:layout_height="42.0dip">
+        <ImageView android:id="@id/float_bag" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/icon_float_shoppingcar_normal" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/app_textsize_price_symbol" android:textColor="@color/app_text_white" android:gravity="center" android:id="@id/float_num" android:background="@drawable/bg_shoppingcar_small" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_white" android:id="@id/float_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_toRightOf="@id/float_bag" android:layout_centerVertical="true" />
+        <View android:id="@id/cart_red_point" android:background="@drawable/bg_redpoint_small" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="7.0dip" android:layout_toRightOf="@id/float_bag" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>

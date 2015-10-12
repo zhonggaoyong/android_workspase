@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="#ff111111" android:gravity="center" android:id="@id/taocan_name" android:background="#fff5f7fa" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="@string/app_name" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

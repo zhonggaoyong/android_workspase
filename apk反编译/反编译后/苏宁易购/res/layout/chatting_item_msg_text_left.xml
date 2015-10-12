@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/iv_userhead" android:background="@drawable/chat_saler_icon" android:clickable="true" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" />
+    <FrameLayout android:id="@id/chat_left_layout" android:background="@drawable/chat_saler_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="40.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="left|center" android:autoLink="phone|web|email" android:id="@id/tv_chatcontent" android:background="#00000000" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="50.0dip" android:lineSpacingExtra="2.0dip" />
+        <ImageView android:id="@id/chat_picture" android:visibility="gone" android:clickable="true" android:layout_width="100.0dip" android:layout_height="150.0dip" android:src="@drawable/icon_info" />
+    </FrameLayout>
+</LinearLayout>

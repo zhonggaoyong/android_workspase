@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.common.ui.JDScrollView android:id="@id/product_scrollview" android:background="#fff1f1f5" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.jingdong.app.mall.product.detail.view.PDTopImageView android:id="@id/detail_topimg_layout" android:layout_width="fill_parent" android:layout_height="@dimen/pd_image_viewpager_height" />
+        <com.jingdong.app.mall.product.detail.view.PDInformationView android:id="@id/detail_infomation_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.jingdong.app.mall.product.detail.view.ProductDetailEbookView android:id="@id/detail_author_layout" android:background="@drawable/pd_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.jingdong.app.mall.product.detail.view.ProductDetailEbookView android:id="@id/detail_publish_layout" android:background="@drawable/pd_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.jingdong.app.mall.product.detail.view.PDCouponView android:id="@id/detail_coupon_layout" android:background="@drawable/pd_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.jingdong.app.mall.product.detail.view.PDPromotionView android:id="@id/pd_promotion_layout" android:background="@drawable/pd_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.jingdong.app.mall.product.detail.view.PDStyleInputView android:id="@id/pd_style_input_layout" android:background="@drawable/pd_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.jingdong.app.mall.product.detail.view.PDServiceView android:id="@id/pd_service_layout" android:background="@drawable/pd_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.jingdong.app.mall.product.detail.view.PDCommonView android:id="@id/product_detail_gift_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.jingdong.app.mall.product.detail.view.PDCommonView android:id="@id/product_detail_4g_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.jingdong.app.mall.product.detail.view.PDLocStoreView android:id="@id/product_loc_layout1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pd_space_width_10" />
+        <com.jingdong.app.mall.product.detail.view.PDCommentView android:id="@id/product_detail_comment_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pd_space_width_10" />
+        <com.jingdong.app.mall.product.detail.view.PDShopImView android:id="@id/pd_shopim_layout" android:background="@drawable/pd_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pd_space_width_10" />
+        <com.jingdong.app.mall.product.detail.view.PDCommonView android:id="@id/product_detail_accessory_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pd_space_width_10" />
+        <com.jingdong.app.mall.product.detail.view.PDRecommendView android:id="@id/product_detail_recommend_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pd_space_width_10" />
+        <LinearLayout android:orientation="vertical" android:id="@id/product_pull_up_show_detail" android:background="@drawable/pd_content" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="@dimen/pd_space_width_10">
+            <View style="@style/pd_divider_style" />
+            <LinearLayout android:gravity="center" android:background="@color/white" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pd_arrow__refresh_up" />
+                <TextView android:textSize="@dimen/pd_txt_size_large" android:textColor="@color/pd_black_68" android:id="@id/txt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pd_space_width_5" android:text="@string/pd_pull_up_show_detail" />
+            </LinearLayout>
+            <View style="@style/pd_divider_style" />
+        </LinearLayout>
+    </LinearLayout>
+</com.jingdong.common.ui.JDScrollView>

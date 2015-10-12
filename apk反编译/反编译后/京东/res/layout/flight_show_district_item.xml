@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/jdtravel_district_item_rl" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jdtravel_district_item_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/flight_back_arrow_common" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:id="@id/jdtravel_district_item_tv" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height" android:layout_marginLeft="20.0dip" android:layout_toLeftOf="@id/jdtravel_district_item_iv" android:layout_centerVertical="true" />
+    <View android:layout_alignParentBottom="true" style="@style/travel_view_splite_h" />
+</RelativeLayout>

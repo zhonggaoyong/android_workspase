@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0eff7" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/detail_black" android:gravity="left|center" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/detail_lr_padding" android:paddingRight="@dimen/detail_lr_padding" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/recommend_goods" />
+    <LinearLayout android:orientation="vertical" android:id="@id/goods_items_parent" android:paddingLeft="@dimen/detail_lr_padding" android:paddingRight="@dimen/detail_lr_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

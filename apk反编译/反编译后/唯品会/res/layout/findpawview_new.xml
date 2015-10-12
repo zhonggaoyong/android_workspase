@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/vip_cart_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/relativeLayout" android:layout_width="fill_parent" style="@style/title_bar_bg_style"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/btn_back" android:visibility="gone" android:scaleType="centerInside" style="@style/app_title_left_button_style" />
+        <ImageView android:id="@id/btn_back1" android:visibility="gone" android:scaleType="centerInside" style="@style/app_title_left1_button_style" />
+        <TextView android:textSize="@dimen/app_title_size" android:textColor="@color/app_text_new_black" android:layout_gravity="center" android:id="@id/orderTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </FrameLayout>
+    <include android:id="@id/vipnew_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" layout="@layout/vipnew_list_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0dip" android:textColor="#ff585c64" android:id="@id/txt_tipphone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" android:text="邮箱账号请在电脑上找回密码" />
+            <include android:id="@id/verifyphone" layout="@layout/verifyphone" />
+            <include android:id="@id/reset_view" android:visibility="gone" layout="@layout/reset_password" />
+            <Button android:textSize="16.0dip" android:id="@id/opt_button" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:text="@string/button_comfirm" style="@style/submit_red_big_button_style" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/vip_y_1" android:gravity="left" android:id="@id/to_register_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="8.0dip" android:singleLine="true" />
+            <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/linear_login" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff98989f" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已有账号？" />
+                <TextView android:textSize="12.0dip" android:textColor="#ffe4007f" android:gravity="center" android:id="@id/to_login" android:background="@drawable/btn_line_third_normal" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="52.0dip" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="登录" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0dip" android:textColor="#ffe32818" android:gravity="left|center" android:id="@id/verify_error_tips" android:background="@color/error_tips_bg_color" android:paddingLeft="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="23.0dip" android:drawableLeft="@drawable/icon_failure_least" android:drawablePadding="6.0dip" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header_id" layout="@layout/vipnew_header" />
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/bandImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/favorView" android:background="@drawable/introduce_icon_background" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginBottom="18.0dip" android:layout_alignBottom="@id/bandImage" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/favo_icon" android:background="@drawable/itemlist_icon_heart_select" android:layout_width="18.0dip" android:layout_height="16.0dip" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/favo_text" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="已收藏" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <View android:background="@color/red" android:layout_width="3.0dip" android:layout_height="18.0dip" />
+                    <TextView android:textSize="18.0dip" android:textColor="#ffaaaaaa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="品牌故事" />
+                </LinearLayout>
+                <TextView android:textSize="16.0dip" android:textColor="#ff595959" android:id="@id/brandIntro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:text="" android:lineSpacingExtra="2.0dip" />
+                <FrameLayout android:id="@id/insurance_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            </LinearLayout>
+            <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/brandImageShowView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" />
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="13.0dip">
+                        <View android:background="@color/red" android:layout_width="3.0dip" android:layout_height="18.0dip" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ffaaaaaa" android:id="@id/brandShowName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="品牌橱窗" />
+                    </LinearLayout>
+                    <com.achievo.vipshop.view.MyGridView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/imageGridview" android:background="@android:color/transparent" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="20.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="2" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:layout_centerHorizontal="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

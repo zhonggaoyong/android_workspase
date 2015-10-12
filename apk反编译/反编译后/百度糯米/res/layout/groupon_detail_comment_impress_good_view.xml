@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="13.0sp" android:textColor="#ff88888d" android:gravity="center" android:id="@id/groupon_detail_comment_impress_good" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_impress_item_txt" android:includeFontPadding="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

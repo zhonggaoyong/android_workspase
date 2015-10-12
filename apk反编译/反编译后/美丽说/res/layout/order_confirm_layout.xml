@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <RelativeLayout android:id="@id/header" android:onClick="onClick" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="@string/order_confirm_textview_title" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_bottom" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View style="@style/FirstDividerViewStyle" />
+        <RelativeLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/sure_btn" android:background="@color/pink_d2" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/order_confirm_button_submit" android:singleLine="true" android:layout_alignParentRight="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/sure_btn" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_total_price" />
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/pink" android:id="@id/textview_order_totalprice" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_0" android:textColor="@color/grey_d5" android:layout_gravity="right" android:id="@id/textview_order_couponmsg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.meilishuo.app.doota.order.view.OrderTipsView android:id="@id/order_confirm_global_tips" android:background="@color/yellow_d3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header" app:isCloseable="true" />
+    <ScrollView android:id="@id/container_layout" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_bottom" android:layout_below="@id/order_confirm_global_tips">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/order_head_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_order_goods_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_app_promotion" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip">
+                <View style="@style/FirstDividerViewStyle" />
+                <com.meilishuo.app.doota.order.view.OrderShopItemView android:id="@id/order_app_coupon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_margin_space" app:label="@string/order_shop_info_text_app_coupon" />
+                <com.meilishuo.app.doota.order.view.OrderShopItemView android:id="@id/order_price_cut_down" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_margin_space" app:isShowArrow="false" />
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_app_coin" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:id="@id/order_app_coin_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/pink" android:id="@id/order_app_coin_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/order_app_coin_label" android:layout_centerVertical="true" />
+                    <CheckBox android:id="@id/order_confirm_use_coin_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/setsync_checkbox_style" />
+                </RelativeLayout>
+                <View style="@style/FirstDividerViewStyle" />
+            </LinearLayout>
+            <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:layout_gravity="center_horizontal" android:id="@id/order_app_order_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/network_error_refresh_layout" android:background="@color/grey_l1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff6c6369" android:layout_gravity="center_horizontal" android:id="@id/loading_retry_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/network_retry_title2" android:layout_centerInParent="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ffccc2c9" android:id="@id/loading_retry_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/text_refound_reload" android:layout_below="@id/loading_retry_title" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/neterror_default_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/btn_reload" android:scaleType="center" android:layout_above="@id/loading_retry_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

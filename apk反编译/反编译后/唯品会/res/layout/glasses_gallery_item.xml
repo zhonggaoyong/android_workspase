@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/glasses_item_parent" android:background="#ff000000" android:layout_width="64.0dip" android:layout_height="106.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/glasses_selected" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/glasses_select_top" android:background="#ff282533" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/glasses_select_bottom" android:background="#ffff008e" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/index_gallery_item_image" android:background="@drawable/glasses_default_icon" android:layout_width="@dimen/glass_gallery_img_w" android:layout_height="@dimen/glass_gallery_img_h" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/index_gallery_item_add_cart_image" android:background="@drawable/glasses_add_carted" android:visibility="gone" android:layout_width="@dimen/glass_gallery_add_cart_img_w" android:layout_height="@dimen/glass_gallery_add_cart_img_h" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/index_gallery_item_tip_parent" android:visibility="gone" android:layout_width="@dimen/glass_gallery_img_w" android:layout_height="@dimen/glass_gallery_img_h" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/index_gallery_item_tip" android:background="@drawable/glasses_tip_bg" android:layout_width="@dimen/glass_gallery_tip_w" android:layout_height="@dimen/glass_gallery_tip_h" android:scaleType="centerCrop" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@id/index_gallery_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

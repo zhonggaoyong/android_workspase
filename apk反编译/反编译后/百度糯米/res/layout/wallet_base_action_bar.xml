@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" style="@style/wallet_titlebar_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/title_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:contentDescription="@string/ebpay_img" style="@style/wallet_titlebar_back_btn" />
+    <RelativeLayout android:id="@id/titlebar_right_imgzone2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/titlebar_right_imgzone2_img" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:gravity="center" android:id="@id/titlebar_right_imgzone2_notify" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" style="@style/wallet_titlebar_right_text" />
+    </RelativeLayout>
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/title_text_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="8" android:singleLine="true" android:layout_centerInParent="true" style="@style/wallet_titlebar_title" />
+</RelativeLayout>

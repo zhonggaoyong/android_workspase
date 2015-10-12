@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sdk_btn_height">42.0dip</dimen>
+    <dimen name="paysdk_btn_height">42.0dip</dimen>
+    <dimen name="comm_padding_size_1">5.0dip</dimen>
+    <dimen name="comm_padding_size_2">10.0dip</dimen>
+    <dimen name="comm_padding_size_3">15.0dip</dimen>
+    <dimen name="paysdk_comm_padding_size_1">5.0dip</dimen>
+    <dimen name="paysdk_comm_padding_size_2">10.0dip</dimen>
+    <dimen name="paysdk_comm_padding_size_3">15.0dip</dimen>
+</resources>

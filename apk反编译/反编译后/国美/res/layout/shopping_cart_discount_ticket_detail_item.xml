@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_ticket" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.gome.eshopnew">
+    <com.gome.ecmall.custom.PreLineTextView android:textSize="14.0sp" android:id="@id/goods_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fdweedw" app:plTextColor="@color/hint_text_color" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/goods_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ddd" android:layout_below="@id/goods_title" android:layout_alignLeft="@id/goods_title" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/goods_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="edwwed" android:layout_below="@id/goods_amount" android:layout_alignLeft="@id/goods_amount" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/goods_counp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ddd" android:layout_below="@id/goods_discount" android:layout_alignLeft="@id/goods_title" />
+</RelativeLayout>

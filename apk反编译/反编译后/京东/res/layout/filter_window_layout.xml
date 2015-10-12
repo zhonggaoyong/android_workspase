@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jdtravel="http://schemas.android.com/apk/res-auto">
+    <View style="@style/travel_view_splite_h" />
+    <RelativeLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/jdtravel_tite_height">
+        <Button android:textSize="16.0dip" android:textColor="#fff15353" android:layout_gravity="center_vertical" android:id="@id/filter_ok_btn" android:background="@drawable/flight_right_button_background_selector" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginRight="15.0dip" android:text="确定" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <Button android:textSize="16.0dip" android:textColor="#ff252525" android:layout_gravity="center_vertical" android:id="@id/filter_cancel_btn" android:background="@drawable/flight_right_button_background_selector" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginLeft="15.0dip" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:enabled="false" android:textSize="14.0dip" android:textColor="#ffbbbbbb" android:gravity="center" android:id="@id/filter_reset_btn" android:background="@drawable/flight_filter_reset_selector" android:layout_width="113.0dip" android:layout_height="31.0dip" android:text="清空筛选条件" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View style="@style/travel_view_splite_h" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <Button android:textSize="15.0sp" android:gravity="center" android:id="@id/filter_radio_airport" android:background="@drawable/flight_filter_btn_normal" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="起飞机场" android:layout_centerInParent="true" />
+            <Button android:textSize="15.0sp" android:gravity="center" android:id="@id/filter_radio_deptime" android:background="@drawable/flight_filter_btn_normal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="起飞时间" android:layout_centerInParent="true" />
+            <Button android:textSize="15.0sp" android:gravity="center" android:id="@id/filter_radio_planestyle" android:background="@drawable/flight_filter_btn_normal" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="选择机型" android:layout_centerInParent="true" />
+            <Button android:textSize="15.0sp" android:gravity="center" android:id="@id/filter_radio_airline" android:background="@drawable/flight_filter_btn_normal" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="航空公司" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <ScrollView android:background="#ffffffff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.jingdong.common.jdtravel.ui.NoScrollListView android:id="@id/filter_airport_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" />
+                <com.jingdong.common.jdtravel.ui.NoScrollListView android:id="@id/filter_airline_list" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" />
+                <com.jingdong.common.jdtravel.ui.NoScrollListView android:id="@id/filter_deptime_list" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" />
+                <com.jingdong.common.jdtravel.ui.NoScrollListView android:id="@id/filter_planestyle_list" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

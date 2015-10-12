@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/chat_item_type_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/chat_text_date_style" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/chat_item_type_margin">
+        <com.gome.ecmall.home.im.widget.ImageViewCircle android:id="@id/iv_userhead" android:layout_width="@dimen/size_avatar" android:layout_height="@dimen/size_avatar" android:layout_marginLeft="@dimen/margin_chat_activity" android:src="@drawable/mygome_default_logo" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/row_recv_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_chat_content" android:layout_toRightOf="@id/iv_userhead">
+            <TextView android:id="@id/tv_userid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/iv_sendPicture" android:layout_alignParentTop="true" style="@style/chat_text_name_style" />
+            <ImageView android:id="@id/iv_sendPicture" android:background="@drawable/chatfrom_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_below="@id/tv_userid" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/row_recv_pic" android:layout_centerVertical="true">
+            <ProgressBar android:id="@id/progressBar" android:visibility="visible" style="@style/chat_loading_small" />
+            <TextView android:textColor="@color/textview_black" android:id="@id/percentage" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="top|center" android:orientation="vertical" android:layout_width="90.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.app.mall.utils.ui.JDImageView android:id="@id/cart_imageurl" android:background="@drawable/shopping_cart_product_icon_bg" android:padding="1.0px" android:layout_width="@dimen/pd_recommend_width" android:layout_height="@dimen/pd_recommend_height" android:scaleType="fitCenter" />
+    <com.jingdong.common.ui.CustomTextViewNoEnter android:textSize="15.0sp" android:textColor="@color/cart_color_252525" android:ellipsize="end" android:id="@id/cart_recomand_gallery_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="2" android:layout_below="@id/cart_imageurl" android:layout_alignLeft="@id/cart_imageurl" android:layout_alignRight="@id/cart_imageurl" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/cart_color_252525" android:ellipsize="end" android:id="@id/cart_recomand_gallery_jdPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/cart_recomand_gallery_item_name" android:layout_alignLeft="@id/cart_imageurl" android:layout_alignRight="@id/cart_recomand_gallery_item_name" />
+</RelativeLayout>

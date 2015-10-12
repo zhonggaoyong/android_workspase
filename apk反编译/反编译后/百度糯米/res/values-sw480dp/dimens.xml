@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="groupon_list_item_lable_top_margin">-4.0dip</dimen>
+    <dimen name="guide_indicator_bottom">40.0dip</dimen>
+    <dimen name="guide_enter_bottom">10.0dip</dimen>
+    <dimen name="ratepop_width">384.0dip</dimen>
+</resources>

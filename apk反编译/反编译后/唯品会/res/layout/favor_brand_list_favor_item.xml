@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="#ff222222" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/logo_tv" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginLeft="15.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/recommend_favor_ll" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/recommend_favor_iv" android:background="@null" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/icon_focusadd_normal" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/vip_red" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/recommend_favor_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/un_favor_label" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

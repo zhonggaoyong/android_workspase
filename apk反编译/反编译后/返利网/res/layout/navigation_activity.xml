@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/nav_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.fanli.android.view.TangFontTextView android:textSize="17.0sp" android:textColor="@color/navigation_tab_textcolor" android:gravity="center" android:layout_gravity="center" android:id="@id/fanli_business_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="返利业务" />
+            <com.fanli.android.view.TangFontTextView android:id="@id/tvLine1" android:background="@color/line_selector_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.fanli.android.view.TangFontTextView android:textSize="17.0sp" android:textColor="@color/navigation_tab_textcolor" android:gravity="center" android:id="@id/all_shops_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="品牌/商城" />
+            <com.fanli.android.view.TangFontTextView android:id="@id/tvLine2" android:background="@color/line_selector_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.common.ui.JDProgressBar android:id="@id/common_empty_view_loading_pb" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+    <LinearLayout android:id="@id/common_empty_view_emptyview" android:visibility="gone" style="@style/CommonEmptyViewStyle">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/common_empty_view_imageview" android:contentDescription="@string/app_name" style="@style/CommonEmptyViewImageViewStyle" />
+        <TextView android:id="@id/common_empty_view_top_tv" style="@style/CommonEmptyViewTopTextViewStyle" />
+        <TextView android:id="@id/common_empty_view_bottom_tv" style="@style/CommonEmptyViewBottomTextViewStyle" />
+        <ImageButton android:id="@id/common_empty_view_bottom_refresh_btn" android:visibility="gone" android:contentDescription="@string/app_name" style="@style/CommonEmptyViewBottomRefreshBtnStyle" />
+    </LinearLayout>
+</RelativeLayout>

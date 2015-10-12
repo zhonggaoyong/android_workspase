@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/lib_game_charge_text_size14" android:textColor="@color/lib_game_charge_black" android:gravity="center_vertical" android:id="@id/lib_game_charge_game_item_tv" android:background="@color/lib_game_charge_white" android:paddingLeft="@dimen/lib_game_charge_margin" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:singleLine="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/lib_game_charge_game_item_line_down" android:visibility="gone" android:layout_marginLeft="@dimen/lib_game_charge_margin" style="@style/lib_phone_charge_line_h" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/lib_game_charge_game_item_last_line" android:visibility="gone" style="@style/lib_phone_charge_line_h" />
+</LinearLayout>

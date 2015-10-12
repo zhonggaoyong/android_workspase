@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/order_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header_layout" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/order_info" layout="@layout/order_detail_order_info" />
+                <include android:id="@id/receive_info" layout="@layout/receive_info" />
+                <include android:id="@id/order_logistics" layout="@layout/order_detail_overview_layout" />
+                <include android:id="@id/product_info" layout="@layout/order_detail_product_info" />
+                <include android:id="@id/price_info" layout="@layout/price_info" />
+                <include android:id="@id/service_info" layout="@layout/service_info" />
+                <View android:id="@id/order_list_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="67.0dip" android:layout_marginTop="15.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <include android:layout_gravity="bottom" android:id="@id/foot_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/order_detail_button_layout" />
+        <include android:id="@id/loadFailView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/new_load_fail" />
+    </FrameLayout>
+</LinearLayout>

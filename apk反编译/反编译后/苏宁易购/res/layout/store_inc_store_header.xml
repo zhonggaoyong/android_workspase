@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/serviceheader" android:background="@drawable/bg_title_new" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_back" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/store_back" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/android_public_text_size_34px" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:gravity="center" android:id="@id/btn_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:scrollHorizontally="true" android:singleLine="true" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/btn_right" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

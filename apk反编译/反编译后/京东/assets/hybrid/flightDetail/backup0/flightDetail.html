@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+	<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<meta name="format-detection" content="telephone=no"/>
+
+	<title>等待支付</title>
+
+	<link href="css/njd.mobile.css" type="text/css" rel="stylesheet" />
+
+	<link href="css/njd.ticket.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+
+
+<body>
+
+<div id= "ticketBody" class="ticket-wrapper hide">
+
+	<section>
+
+		<div class="container nomt">
+
+			<span class="color25 size28 h-spacing block">订单号: <span id="orderCode"></span></span>
+
+		</div>
+
+	</section>
+
+
+
+	<section id="refund_page" class="hide">
+
+		<div class="container pb5">
+
+			<p class="b-b mb2"><span class="size30 color25 h-spacing">退票纪录</span></p>
+
+			<p id="refundHis" class="refund-wrapper">
+
+
+
+			</p>
+
+		</div>
+
+	</section>
+
+
+
+	<section id="ticketListBeans">
+
+
+
+	</section>
+
+	<section>
+
+		<div id="passengerContiner" class="container pb5">
+
+
+
+		</div>
+
+	</section>
+
+
+
+	<section>
+
+		<section>
+
+			<div class="container pb5">
+
+				<p class="b-b mb2"><span class="size30 color25 h-spacing">其他信息</span></p>
+
+				<p class="pt3 contact-wrapper b-b pb5">
+
+					<span class="size30 color66 left">联系人</span>
+
+					<span id="contactorContiner" class="size26 color25 right" style="line-height:2rem;"></span>
+
+				</p>
+
+				<p id="dispatchContiner" class="pt3 apply-wrapper pb5">
+
+
+
+				</p>
+
+			</div>
+
+		</section>
+
+
+
+		<section id="refundRule" class="hide">
+
+			<div class="container h-spacing relative">
+
+				<span class="size30 color25">退改签规定</span><i class="ico-gt"></i>
+
+			</div>
+
+		</section>
+
+
+
+		<section>
+
+			<div class="container ptb">
+
+				<p class="pt3 endorse-wrapper">
+
+					<span class="size30 color66">总金额<em id="totalOrderMoney" class="pull-right txt-red"></em></span>
+
+				</p>
+
+				<p class="pt3 endorse-wrapper">
+
+					<span class="size30 color66">-优惠<em id="totalDiscountMoney"  class="pull-right txt-red"></em></span>
+
+				</p>
+
+				<p class="pt3 endorse-wrapper pb3">
+
+					<span class="size30 color66">-余额<em id="balanceMoney" class="pull-right txt-red"></em></span>
+
+				</p>
+
+				<p class="pt3 endorse-wrapper txt-r b-t">
+
+					<span class="size30 color25">实付款：<em id="payOrderMoney" class="txt-red size40"></em></span>
+
+				</p>
+
+				<p class="pt3 endorse-wrapper txt-r">
+
+					<span class="size22 color84">下单时间：<em id="placeOrderDate"></em></span>
+
+				</p>
+
+			</div>
+
+		</section>
+
+	</section>
+
+	<section id="paySucPage" class="hide">
+
+		<div class="h-spacing"></div>
+
+		<div class="fixed">
+
+			<div class="txt-r">
+
+				<button id="refundBtn" class="btn btn-detail"><span class="btn_text">退票/改签</span></button>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section id="unPayedPage" class="hide">
+        <div class="h-spacing"></div>
+		<div class="fixed">
+		<div class="txt-r">
+
+			<button id="cancelOrder" class="btn btn-detail mr3"><span class="btn_text">取消订单</span></button>
+
+			<button id="payBtn" class="btn btn_pay"><span class="btn_text">去支付</span></button>
+
+		</div>
+		</div>
+	</section>
+
+</div>
+
+
+
+</body>
+
+<script src="js/hybrid.js" type="text/javascript" ></script>
+
+<script type="text/javascript" >
+
+//国际
+
+//退款成功
+
+//var initData= '{"code":"0", "message":"响应成功", "result":{"orderViewFlightInfoList":[{"OrderViewFlightInfoMO":{"depcityName":"北京","arrcityName":"首尔","flightDate":"2016-01-13","odFlightTime":"1时55分","airIntlSegmentInfoMOList":[{"AirIntlSegmentInfoMO":{"id":50305,"orderId":9701397536,"airplaneNumber":"336","journeyNumber":0,"flightNumber":0,"departure":"PEK","arrival":"ICN","depCityCode":"","arrCityCode":"","depCityName":"北京","arrCityName":"首尔","takeOffTime":"1730","arriveTime":"2025","isStop":0,"seatCode":"Q","airCode":"OZ","airWay":"韩亚航空","airCarrierFlight":"OZ","airCarrierCor":"韩亚航空","depairDrome":"首都机场（中国）","arrairDrome":"首尔仁川机场","terminal":"3","plane":"321","odFlightTime":"1:55","flightTime":"1小时55分","baggagePieces":-1,"baggageWeight":"20.0","baggageWeightU":"K"}}]}}],"orderViewPassengerInfoList":[{"OrderViewPassengerInfoMO":{"id":3187781,"orderId":9701397536,"flightId":2264953,"ticketType":"ADT","passengerName":"null.null","papersType":"PSP","papersNumber":"121****2","birthDate":"1985-02-15 08:00:00.0 CST","birthDateStr":"1985-02-15","cinsuranceCodeList":[""],"cinsuranceCodeBackList":[""],"safe":1,"sex":"male","identityVaildDate":"2017-09-04","nationality":"CN","nationalityCn":"中国大陆","surName":"WU","givenName":"CHUAN","certificateCountry":"CN","certificateCountryCn":"中国大陆","insuranceCnt":1}}],"contactInfo":{"creatorCn":"刘军","creatorPhone":"152****9187"},"orderBaseInfo":{"orderCode":9701397536,"orderMoney":1426,"paymentMethod":"2","placeOrderDateTime":"2015-07-08","orderStatus":5,"isSafe":1,"modifiedDate":"2015-07-08","modifiedTime":"03:16:03"},"provisionResult":{"endorseRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"换开：允许，收取手续费300人民币。","type":""}}],"noshowRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"无限制。","type":""}}],"refundRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"允许，收取手续费500人民币。","type":""}}]},"dispatchInfo":{"name":"刘军军","deliveryType":3,"mobile":"131****2222","telephone":"13122222222","province":"河南","city":"焦作市","district":"山阳区","address":"萨克的交罚款的设计费","printDate":"2016-01-13 17:30:00.0 CST","insurInvoice":0,"usuaId":0},"orderViewPriceInfo":{"adultPrice":900,"adultTaxation":496,"childPrice":0,"childTaxation":0,"adultNum":1,"childNum":0,"adultPriceTotal":0,"childPriceTotal":0,"insurancePrice":30,"insuranceTotalNum":1,"insuranceTotalPrice":0,"total":0},"orderViewBackTicketInfoList":[""],"orderDetailPaymentInfoMO":{"totalOrderMoney":1426,"totalDiscountMoney":0,"balanceMoney":1426,"payOrderMoney":0},"result":"true","degradeFlag":false}}';
+
+
+
+//完成成功
+
+//var initData= '{"code":"0", "message":"响应成功", "result":{"orderViewFlightInfoList":[{"OrderViewFlightInfoMO":{"depcityName":"北京","arrcityName":"香港","flightDate":"2015-08-31","odFlightTime":"3时50分","airIntlSegmentInfoMOList":[{"AirIntlSegmentInfoMO":{"id":49797,"orderId":9653873852,"airplaneNumber":"313","journeyNumber":0,"flightNumber":0,"departure":"PEK","arrival":"HKG","depCityCode":"","arrCityCode":"","depCityName":"北京","arrCityName":"香港","takeOffTime":"2000","arriveTime":"2350","isStop":0,"seatCode":"W","airCode":"HX","airWay":"香港航空","airCarrierFlight":"HX","airCarrierCor":"香港航空","depairDrome":"首都机场（中国）","arrairDrome":"香港国际机场","terminal":"T2","arrTerminal":"1","plane":"333","odFlightTime":"3:50","flightTime":"3小时50分","baggagePieces":-1,"baggageWeight":"20.0","baggageWeightU":"K"}}]}}],"orderViewPassengerInfoList":[{"OrderViewPassengerInfoMO":[{"id":3173524,"orderId":9653873852,"flightId":2256407,"ticketType":"ADT","passengerName":"null.null","papersType":"PSP","papersNumber":"qwq****2","issueCode":"851-92933309990","birthDate":"1985-02-15 08:00:00.0 CST","birthDateStr":"1985-02-15","cinsuranceCodeList":[{"string":"JD05415070300611256"}],"cinsuranceCodeBackList":[{"string":"JD05415070300611256"}],"safe":1,"sex":"male","identityVaildDate":"2017-09-04","nationality":"CN","nationalityCn":"中国大陆","surName":"WU","givenName":"CHUAN","certificateCountry":"CN","certificateCountryCn":"中国大陆","insuranceCnt":1},{"id":3173525,"orderId":9653873852,"flightId":2256407,"ticketType":"CHD","passengerName":"null.null","papersType":"TW2","papersNumber":"123*********e","issueCode":"851-92966009980","birthDate":"2007-05-17 08:00:00.0 CST","birthDateStr":"2007-05-17","cinsuranceCodeList":[{"string":"JD05415070300611257"}],"cinsuranceCodeBackList":[{"string":"JD05415070300611257"}],"safe":1,"sex":"female","identityVaildDate":"2018-09-20","nationality":"MO","nationalityCn":"中国澳门","surName":"LIU","givenName":"JUN","certificateCountry":"CN","certificateCountryCn":"中国大陆","insuranceCnt":1}]}],"contactInfo":{"creatorCn":"戴宏玮","creatorPhone":"189****8812"},"orderBaseInfo":{"orderCode":9653873852,"orderMoney":1440,"paymentMethod":"2","placeOrderDateTime":"2015-07-03","orderStatus":3,"isSafe":1,"modifiedDate":"2015-07-03","modifiedTime":"05:50:14"},"provisionResult":{"endorseRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"允许，收取手续费500人民币。","type":""}}],"noshowRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"收取手续费500人民币。","type":""}}],"refundRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"全部未使用：允许，收取手续费700人民币。部分使用：不允许。","type":""}}]},"dispatchInfo":{"name":"刘军","deliveryType":3,"mobile":"152****9187","telephone":"","province":"北京","city":"大兴区","district":"五环至六环之间","address":"荣华中路朝林广场A座15层","printDate":"2015-08-31 20:00:00.0 CST","insurInvoice":0,"usuaId":0},"orderViewPriceInfo":{"adultPrice":585,"adultTaxation":150,"childPrice":585,"childTaxation":60,"adultNum":1,"childNum":1,"adultPriceTotal":0,"childPriceTotal":0,"insurancePrice":30,"insuranceTotalNum":2,"insuranceTotalPrice":0,"total":0},"orderViewBackTicketInfoList":[{"OrderViewBackTicketInfoMO":[{"orderViewPassengerInfoMO":{"id":3173524,"orderId":9653873852,"flightId":2256407,"ticketType":"ADT","passengerName":"null.null","papersType":"PSP","papersNumber":"qwq****2","issueCode":"851-92933309990","birthDate":"1985-02-15 22:00:00.0 CST","birthDateStr":"1985-02-15","cinsuranceCodeList":[{"string":"JD05415070300611256"}],"cinsuranceCodeBackList":[{"string":"JD05415070300611256"}],"safe":1,"sex":"male","identityVaildDate":"2017-09-04","nationality":"CN","nationalityCn":"中国大陆","surName":"WU","givenName":"CHUAN","certificateCountry":"CN","certificateCountryCn":"中国大陆","insuranceCnt":1},"ticketNo":"851-9293330999","clientsumcharge":735,"cinsuranceCodeBackList":[{"string":"JD05415070300611256"}],"airIntlSegmentInfoList":[{"AirIntlSegmentInfoMO":{"id":49797,"orderId":9653873852,"airplaneNumber":"313","journeyNumber":0,"flightNumber":0,"departure":"PEK","arrival":"HKG","depCityCode":"","arrCityCode":"","depCityName":"北京","arrCityName":"香港","takeOffTime":"2000","arriveTime":"2350","isStop":0,"seatCode":"W","airCode":"HX","airWay":"香港航空","airCarrierFlight":"HX","airCarrierCor":"香港航空","depairDrome":"首都机场（中国）","arrairDrome":"香港国际机场","terminal":"T2","arrTerminal":"1","plane":"333","odFlightTime":"3:50","flightTime":"3小时50分","baggagePieces":-1,"baggageWeight":"20.0","baggageWeightU":"K"}}]},{"orderViewPassengerInfoMO":{"id":3173525,"orderId":9653873852,"flightId":2256407,"ticketType":"CHD","passengerName":"null.null","papersType":"TW2","papersNumber":"123*********e","issueCode":"851-92966009980","birthDate":"2007-05-17 22:00:00.0 CST","birthDateStr":"2007-05-17","cinsuranceCodeList":[{"string":"JD05415070300611257"}],"cinsuranceCodeBackList":[{"string":"JD05415070300611257"}],"safe":1,"sex":"female","identityVaildDate":"2018-09-20","nationality":"MO","nationalityCn":"中国澳门","surName":"LIU","givenName":"JUN","certificateCountry":"CN","certificateCountryCn":"中国大陆","insuranceCnt":1},"ticketNo":"851-9296600998","clientsumcharge":645,"cinsuranceCodeBackList":[{"string":"JD05415070300611257"}],"airIntlSegmentInfoList":[{"AirIntlSegmentInfoMO":{"id":49797,"orderId":9653873852,"airplaneNumber":"313","journeyNumber":0,"flightNumber":0,"departure":"PEK","arrival":"HKG","depCityCode":"","arrCityCode":"","depCityName":"北京","arrCityName":"香港","takeOffTime":"2000","arriveTime":"2350","isStop":0,"seatCode":"W","airCode":"HX","airWay":"香港航空","airCarrierFlight":"HX","airCarrierCor":"香港航空","depairDrome":"首都机场（中国）","arrairDrome":"香港国际机场","terminal":"T2","arrTerminal":"1","plane":"333","odFlightTime":"3:50","flightTime":"3小时50分","baggagePieces":-1,"baggageWeight":"20.0","baggageWeightU":"K"}}]}]}],"orderDetailPaymentInfoMO":{"totalOrderMoney":1440,"totalDiscountMoney":0,"balanceMoney":1440,"payOrderMoney":0},"result":"true","degradeFlag":false}}';
+
+
+
+//等待付款
+
+//var initData= '{"code":"0", "message":"响应成功", "result":{"orderViewFlightInfoList":[{"OrderViewFlightInfoMO":[{"depcityName":"北京","arrcityName":"吉隆坡","flightDate":"2015-10-01","odFlightTime":"21时45分","airIntlSegmentInfoMOList":[{"AirIntlSegmentInfoMO":[{"id":50453,"orderId":9706283354,"airplaneNumber":"8172","journeyNumber":0,"flightNumber":0,"departure":"PEK","arrival":"FOC","depCityCode":"","arrCityCode":"","depCityName":"北京","arrCityName":"福州","takeOffTime":"1745","arriveTime":"2035","isStop":0,"seatCode":"S","airCode":"MF","airWay":"厦门航空","airCarrierFlight":"MF","airCarrierCor":"厦门航空","depairDrome":"首都机场（中国）","arrairDrome":"长乐机场","terminal":"T2","plane":"757","odFlightTime":"21:45","flightTime":"2小时50分","baggagePieces":-1,"baggageWeight":"20.0","baggageWeightU":"K"},{"id":50454,"orderId":9706283354,"airplaneNumber":"857","journeyNumber":0,"flightNumber":1,"departure":"FOC","arrival":"KUL","depCityCode":"","arrCityCode":"","depCityName":"福州","arrCityName":"吉隆坡","takeOffTime":"1115","arriveTime":"1530","isStop":0,"seatCode":"H","airCode":"MF","airWay":"厦门航空","airCarrierFlight":"MF","airCarrierCor":"厦门航空","depairDrome":"长乐机场","arrairDrome":"吉隆坡国际机场","arrTerminal":"M","plane":"738","odFlightTime":"21:45","flightTime":"4小时15分","baggagePieces":-1,"baggageWeight":"20.0","baggageWeightU":"K"}]}]},{"depcityName":"吉隆坡","arrcityName":"北京","flightDate":"2015-10-03","odFlightTime":"9时00分","airIntlSegmentInfoMOList":[{"AirIntlSegmentInfoMO":[{"id":50455,"orderId":9706283354,"airplaneNumber":"848","journeyNumber":1,"flightNumber":0,"departure":"KUL","arrival":"XMN","depCityCode":"","arrCityCode":"","depCityName":"吉隆坡","arrCityName":"厦门","takeOffTime":"0845","arriveTime":"1245","isStop":0,"seatCode":"S","airCode":"MF","airWay":"厦门航空","airCarrierFlight":"MF","airCarrierCor":"厦门航空","depairDrome":"吉隆坡国际机场","arrairDrome":"高崎机场","terminal":"M","arrTerminal":"T3","plane":"738","odFlightTime":"9:00","flightTime":"4小时","baggagePieces":-1,"baggageWeight":"20.0","baggageWeightU":"K"},{"id":50456,"orderId":9706283354,"airplaneNumber":"8105","journeyNumber":1,"flightNumber":1,"departure":"XMN","arrival":"PEK","depCityCode":"","arrCityCode":"","depCityName":"厦门","arrCityName":"北京","takeOffTime":"1500","arriveTime":"1745","isStop":0,"seatCode":"S","airCode":"MF","airWay":"厦门航空","airCarrierFlight":"MF","airCarrierCor":"厦门航空","depairDrome":"高崎机场","arrairDrome":"首都机场（中国）","terminal":"T3","arrTerminal":"T2","plane":"787","odFlightTime":"9:00","flightTime":"2小时45分","baggagePieces":-1,"baggageWeight":"20.0","baggageWeightU":"K"}]}]}]}],"orderViewPassengerInfoList":[{"OrderViewPassengerInfoMO":{"id":3189708,"orderId":9706283354,"flightId":2267261,"ticketType":"ADT","passengerName":"null.null","papersType":"PSP","papersNumber":"121****2","birthDate":"1985-02-15 08:00:00.0 CST","birthDateStr":"1985-02-15","cinsuranceCodeList":[""],"cinsuranceCodeBackList":[""],"safe":1,"sex":"female","identityVaildDate":"2017-09-04","nationality":"CN","nationalityCn":"中国大陆","surName":"WU","givenName":"CHUAN","certificateCountry":"CN","certificateCountryCn":"中国大陆","insuranceCnt":4}}],"contactInfo":{"creatorCn":"机票测试","creatorPhone":"158****0697"},"orderBaseInfo":{"orderCode":9706283354,"orderMoney":3154,"paymentMethod":"1","placeOrderDateTime":"2015-07-09","orderStatus":1,"isSafe":1,"modifiedDate":"2015-07-09","modifiedTime":"01:31:32"},"provisionResult":{"endorseRules":[{"com.jd.airplane.domain.intl.IntelRule":[{"rule":"去程不允许。回程允许。","type":"去程："},{"rule":"去程不允许。回程允许。","type":"回程："}]}],"noshowRules":[{"com.jd.airplane.domain.intl.IntelRule":[{"rule":"收取手续费300人民币或等值货币。","type":"去程："},{"rule":"收取手续费300人民币或等值货币。","type":"回程："}]}],"refundRules":[{"com.jd.airplane.domain.intl.IntelRule":[{"rule":"起飞前：全部未使用客票，自愿退票允许，收取手续费500人民币或等值货币。起飞后：部分使用客票，自愿退票不允许。","type":"去程："},{"rule":"起飞前：全部未使用客票，自愿退票允许，收取手续费500人民币或等值货币。起飞后：部分使用客票，自愿退票不允许。","type":"回程："}]}],"maxStay":"1月。","minStay":"无限制"},"dispatchInfo":{"name":"刘军军","deliveryType":3,"mobile":"131****2222","telephone":"13122222222","province":"河南","city":"焦作市","district":"山阳区","address":"萨克的交罚款的设计费","printDate":"2015-10-01 17:45:00.0 CST","insurInvoice":0,"usuaId":0},"orderViewPriceInfo":{"adultPrice":1882,"adultTaxation":1152,"childPrice":0,"childTaxation":0,"adultNum":1,"childNum":0,"adultPriceTotal":0,"childPriceTotal":0,"insurancePrice":30,"insuranceTotalNum":4,"insuranceTotalPrice":0,"total":0},"orderViewBackTicketInfoList":[""],"orderDetailPaymentInfoMO":{"totalOrderMoney":3154,"totalDiscountMoney":0,"balanceMoney":0,"payOrderMoney":3154},"result":"true","degradeFlag":false}}';
+
+
+
+//var initData= '{"code":"0","message":"响应成功","result":{"orderInfo":{"orderFlag":"0","placeOrderTime":"15:04:24","contactEmail":"liujun6@jd.com","orderCode":9701397536,"modifiedTime":"15:16:03","venderId":"89364","orderStatus":5,"modifiedDate":"2015-07-08","balanceMoney":{"cent":142600,"currency":"CNY"},"placeOrderDate":"2015-07-08","userId":"jipiaojd","conctactMobile":"15201099187","orderMoney":0,"isSafe":1,"paymentMethod":"0","conctactName":"刘军"},"paymentInfo":{"payOrderMoney":0,"balanceMoney":0,"totalDiscountMoney":0,"totalOrderMoney":0},"dispatchInfo":{"address":"萨克的交罚款的设计费","deliveryType":3,"name":"刘军军","district":"山阳区","telephone":"13122222222","dispatchId":2389013,"city":"焦作市","mobile":"131****2222"},"ticketRegulations":[{"ticketRegulation":{"ticketBack":{"refundRules":[{"rule":"允许，收取手续费500人民币。","type":""}],"endorseRules":[{"rule":"换开：允许，收取手续费300人民币。","type":""}],"noshowRules":[{"rule":"无限制。","type":""}]},"ticketChange":"","depcityName":"北京","tripType":0,"arrcityName":"首尔","ticketTurn":""}}],"ticketListBeans":[{"TicketListBean":{"arrDate":"2016-01-13","insurancePrice":30,"arrairdrome":"首尔仁川机场","oiltax":496,"passengerNum":"12121212","depairdrome":"首都机场（中国）","buildFee":0,"papersType":"PSP","ticketStatus":6,"tripType":0,"id":3187781,"airWay":"韩亚航空","price":1396,"arriveTime":"2025","depcityName":"北京","flightDate":"2016-01-13","passengerName":"CHUAN.WU","ticketPrice":1396,"arrcityName":"首尔","takeOffTime":"1730","airplaneNumber":"OZ336"}}]}}';
+
+//国内
+
+//var initData = '{"code":"0", "message":"响应成功", "result":{"orderInfo":{"orderCode":9702410813,"venderId":"59776","userId":"jipiaojd","orderMoney":1621,"paymentMethod":"1","placeOrderDate":"2015-07-08","placeOrderTime":"18:05:56","orderStatus":1,"isSafe":1,"modifiedDate":"2015-07-08","modifiedTime":"18:06:04","conctactName":"机票测试","conctactMobile":"15850590697","contactEmail":"app-jipaio@jd.com","orderFlag":"0","onlineMoney":{"cent":162100,"currency":"CNY"}},"ticketListBeans":[{"TicketListBean":[{"id":3188339,"depcityName":"南京","arrcityName":"大连","flightDate":"2015-09-17","takeOffTime":"1035","arrDate":"2015-09-17","arriveTime":"1210","depairdrome":"禄口机场","arrairdrome":"周水子机场","airWay":"深圳航空","airplaneNumber":"ZH9677","passengerName":"机票测试","price":980,"ticketStatus":1,"passengerNum":"320911198712016633","ticketPrice":980,"buildFee":50,"oiltax":0,"insurancePrice":20},{"id":3188340,"depcityName":"大连","arrcityName":"南京","flightDate":"2015-09-19","takeOffTime":"0700","arrDate":"2015-09-19","arriveTime":"0840","depairdrome":"周水子机场","arrairdrome":"禄口机场","airWay":"海南航空","airplaneNumber":"HU7273","passengerName":"机票测试","price":601,"ticketStatus":1,"passengerNum":"320911198712016633","ticketPrice":601,"buildFee":50,"oiltax":0,"insurancePrice":20}]}],"dispatchInfo":{"dispatchId":2390202,"deliveryType":3,"name":"测试版","mobile":"158****0697","city":"南京","district":"江宁区","address":"江宁河定桥"},"ticketRegulations":[{"ticketRegulation":[{"tripType":0,"depcityName":"南京","arrcityName":"大连","ticketBack":"取消座位时间计算手续费;按照当前舱位票面价收取退票费;起飞前2.0小时（含）以外收取当前舱位票面价的10.0%退票费,起飞前2.0小时以内及起飞后收取当前舱位票面价的20.0%退票费;","ticketTurn":"可以改签;","ticketChange":"按照当前舱位票面价收取变更费;起飞前2.0小时（含）以外免收改期费,起飞前2.0小时以内及起飞后收取当前舱位票面价的10.0%改期费;"},{"tripType":1,"depcityName":"大连","arrcityName":"南京","ticketBack":"取消座位时间计算手续费;按照当前舱位票面价收取退票费;起飞前2.0小时（含）以外收取当前舱位票面价的20.0%退票费,起飞前2.0小时以内及起飞后收取当前舱位票面价的30.0%退票费;","ticketTurn":"不能改签;","ticketChange":"按照当前舱位票面价收取变更费;起飞前2.0小时（含）以外收取当前舱位票面价的10.0%改期费,起飞前2.0小时以内及起飞后收取当前舱位票面价的20.0%改期费;"}]}],"paymentInfo":{"totalOrderMoney":1621,"totalDiscountMoney":0,"balanceMoney":0,"payOrderMoney":1621}}}';
+
+//var initData = '{"code":"0", "message":"响应成功", "result":{"orderInfo":{"orderCode":9703245956,"venderId":"59776","userId":"jipiaojd","orderMoney":860,"paymentMethod":"1","placeOrderDate":"2015-07-08","placeOrderTime":"20:36:35","orderStatus":1,"isSafe":1,"modifiedDate":"2015-07-08","modifiedTime":"20:36:42","conctactName":"xu","conctactMobile":"15850590697","contactEmail":"693878082@qq.com","orderFlag":"0","onlineMoney":{"cent":86000,"currency":"CNY"}},"ticketListBeans":[{"TicketListBean":{"id":3188731,"depcityName":"上海","arrcityName":"福州","flightDate":"2015-09-02","takeOffTime":"0955","arrDate":"2015-09-02","arriveTime":"1120","depairdrome":"虹桥机场","arrairdrome":"长乐机场","airWay":"厦门航空","airplaneNumber":"MF8574","passengerName":"机票测试","price":840,"ticketStatus":1,"passengerNum":"320911198712016633","ticketPrice":840,"buildFee":50,"oiltax":0,"insurancePrice":20}}],"dispatchInfo":{"dispatchId":2390235,"deliveryType":1,"name":"xu","mobile":"158****0697"},"ticketRegulations":[{"ticketRegulation":{"tripType":0,"depcityName":"上海","arrcityName":"福州","ticketBack":"取消座位时间计算手续费;按照对应舱位等级全价收取退票费;起飞前2.0小时（含）以外收取Y舱全价票的5.0%退票费,起飞前2.0小时以内及起飞后收取Y舱全价票的10.0%退票费;","ticketTurn":"可以改签;","ticketChange":"按照对应舱位等级全价收取变更费;统一起飞前/后收取Y舱全价票的5.0%改期费;≤3次，免费变更；＞3次，收取对应舱位等级全票价（F/J/Y）5%变更费"}}],"paymentInfo":{"totalOrderMoney":860,"totalDiscountMoney":0,"balanceMoney":0,"payOrderMoney":860}}}';
+
+var ticketInfo = (function(){
+
+	function hiddenObj(i){
+
+		getObjById(i).style.display = "none";
+
+	}
+
+
+
+	function showObj(i){
+
+		getObjById(i).style.display = "block";
+
+	}
+
+	
+
+	function hiddenObj(i){
+
+		getObjById(i).style.display = "none";
+
+	}
+
+
+
+	function isEmpty(val){
+
+		if(val == null || typeof val == 'undefined'){
+
+			return true;
+
+		}
+
+		return false;
+
+	}
+
+
+
+	function transNull(val){
+
+		if(val == null || typeof val == 'undefined'){
+
+			return "";
+
+		}
+
+		return val;
+
+	}
+
+
+
+	function replaceIHTML(i,n){
+
+		replaceObjIHTML(getObjById(i), transNull(n));
+
+	}
+
+
+
+	function replaceObjIHTML(o,n){
+
+		o.innerHTML = n;
+
+	}
+
+
+
+	function getObjById(i){
+
+		return document.getElementById(i);
+
+	}
+
+
+
+	//国际/国内订单
+
+	function getOrderContry(){
+
+		if(!isEmpty(initParam) && !isEmpty(initParam.type) && parseInt(initParam.type) == 2){
+
+			return 2;
+
+		}
+
+		return 1;
+
+	}
+
+	var refundNum = 0;
+
+	var ticketAllNum = 0;
+
+	var _initData,_orderInfo,_ticketListBeans,_dispatchInfo,_paymentInfo,contryType,intlOrderDetailMO,orderID,orderPrice,orderFlag;
+
+	var pNum = 0;
+
+	var refundRuleStr = "";
+
+	var bagRuleStr = "";
+
+	this.show = function(d){
+
+    // 隐藏相关view，解决支付完再次刷新有按钮显示的bug
+    hiddenObj("refund_page");
+    hiddenObj("ticketBody");
+    hiddenObj("refund_page");
+    hiddenObj("paySucPage");
+    hiddenObj("unPayedPage");
+    hiddenObj("refundRule");
+
+		//查询失败则返回对象
+
+		if(isEmpty(d)){
+
+			return this;
+
+		}
+
+		d = d.replace(/\r/g,"\\r").replace(/\n/g,"\\n");
+
+	
+
+		_initData = eval('(' + d + ')');
+
+
+
+		contryType =  getOrderContry();
+
+
+
+		if(contryType == 1){
+
+			/**国内**/
+
+
+
+			//订单详情信息
+
+			var _OrderViewBean = _initData.result;
+
+
+
+			//订单信息
+
+			_orderInfo = _OrderViewBean.orderInfo;
+
+			//清单信息列表
+
+			_ticketListBeans = _OrderViewBean.ticketListBeans;
+
+			//行程单信息
+
+			_dispatchInfo = _OrderViewBean.dispatchInfo;
+
+
+
+			_paymentInfo = _OrderViewBean.paymentInfo;
+
+
+
+try{			
+
+			_showOrderNo(_orderInfo.orderCode);
+
+}catch(e){}
+
+try{
+
+			_showTicketInfo();
+
+}catch(e){}
+
+try{
+
+			_showPaymentInfo(_paymentInfo);
+
+}catch(e){}
+
+try{
+
+			_showDispathInfo(_dispatchInfo);
+
+}catch(e){}
+
+try{
+
+			_showBasicInfo();
+
+}catch(e){}
+
+		}else{
+
+			/**国际**/
+
+
+
+			//订单详情信息
+
+			intlOrderDetailMO = _initData.result;
+
+
+
+			//订单信息
+
+			var orderViewFlightInfoList = intlOrderDetailMO.orderViewFlightInfoList;
+
+			//清单信息列表
+
+			var orderViewPassengerInfoList = intlOrderDetailMO.orderViewPassengerInfoList;
+
+			//联系人信息
+
+			var contactInfo = intlOrderDetailMO.contactInfo;
+
+
+
+			var orderBaseInfo = intlOrderDetailMO.orderBaseInfo;
+
+
+
+			var provisionResult = intlOrderDetailMO.provisionResult;
+
+
+
+			var dispatchInfo = intlOrderDetailMO.dispatchInfo;
+
+
+
+			var orderViewPriceInfo = intlOrderDetailMO.orderViewPriceInfo;
+
+
+
+			var orderViewBackTicketInfoList = intlOrderDetailMO.orderViewBackTicketInfoList;
+
+
+
+			var _paymentInfo = intlOrderDetailMO.orderDetailPaymentInfoMO
+
+			
+
+try{
+
+			_showOrderNo(orderBaseInfo.orderCode);
+
+}catch(e){}
+
+try{
+
+			showIntTicketInfo(orderViewFlightInfoList);
+
+}catch(e){}
+
+try{
+
+			_showIntPassengerInfo(orderViewPassengerInfoList);
+
+}catch(e){}
+
+try{
+
+			showIntContactInfo(contactInfo);
+
+}catch(e){}
+
+try{
+
+			showIntRefundHis(orderViewBackTicketInfoList);
+
+}catch(e){}
+
+try{
+
+			_showDispathInfo(dispatchInfo);
+
+}catch(e){}
+
+try{
+
+			_showPaymentInfo(_paymentInfo);
+
+}catch(e){}
+
+try{
+
+			showIntBasicInfo(orderBaseInfo);
+
+}catch(e){}
+
+		}
+
+		return this;
+
+	};
+
+
+
+	var _showDispathInfo = function(dispatchInfo){
+
+		var  getMed = ["","不要行程单","机场自取","免费邮寄","快递到付",""];
+
+		var dispatchHtml = '<span class="size30 color66">报销凭证</span>'+
+
+			'<span class="size30 color25">报销凭证配送地址<em class="pull-right">'+getMed[dispatchInfo.deliveryType]+'</em></span>';
+
+			if(!isEmpty(dispatchInfo) && (dispatchInfo.deliveryType == 3 || dispatchInfo.deliveryType == 4)){
+
+				dispatchHtml += '<span class="size26 color99"><em class="name">'+transNull(dispatchInfo.name)+'</em>'+transNull(dispatchInfo.mobile)+'</span>'+
+
+						'<span class="size26 color99">'+transNull(dispatchInfo.province)+transNull(dispatchInfo.city)+transNull(dispatchInfo.district)+transNull(dispatchInfo.address)+'</span>';
+
+			}
+
+		getObjById("dispatchContiner").innerHTML = dispatchHtml;
+
+	}
+
+
+
+	var showIntRefundHis = function(backList){
+
+		if(!isEmpty(backList)){
+
+			var refundHis = getObjById("refundHis");
+
+			var backHtml = "";
+
+			for(var i in backList){
+
+				var backTicketMO  = backList[i].OrderViewBackTicketInfoMO;
+
+				if(isEmpty(backTicketMO)){
+
+					continue;
+
+				}
+
+				backTicketMO = transArray(backTicketMO);
+
+				for(var k in backTicketMO){
+
+					var backTicket = backTicketMO[k];
+
+					var passenger = backTicket.orderViewPassengerInfoMO;
+
+					var segments = backTicket.airIntlSegmentInfoList;
+
+					refundNum++;
+
+					var cinsuranceCodes = backTicket.cinsuranceCodeBackList;
+
+					backHtml +=     '<span class="size30 color66 h-spacing mb2" style="padding:0;">退票乘客<em class="pull-right color23">'+transNull(passenger.surName) + '/' + transNull(passenger.givenName) + '</em></span>'+
+
+									'<span class="size30 color23 b-t pt3">退票详情</span>'+
+
+									'<span class="size30 color66">票号<em class="pull-right color23">'+transNull(passenger.issueCode)+'</em></span>'+
+
+									'<p class="pt3 contact-wrapper pb5">'+
+
+										'<span class="size30 color66 left">航班</span>'+
+
+										'<span class="size26 color25 right">';
+
+										if(!isEmpty(segments)){
+
+											for(var j = 0;j < segments.length;j++){
+
+												var segMO = segments[j].AirIntlSegmentInfoMO;
+
+												segMO = transArray(segMO);
+
+												for(var m in segMO){
+
+													var seg = segMO[m];
+
+													if(m != 0){
+
+														backHtml += '<br>';
+
+													}
+
+
+
+													backHtml += transNull(seg.airCode)+transNull(seg.airplaneNumber);
+
+												}
+
+											}
+
+										}
+
+										backHtml += '</span>'+
+
+									'</p>';
+
+
+
+						backHtml += '<p class="pt3 contact-wrapper '+((i == (backList.length - 1) && k == (backTicketMO.length - 1)) ? '' : 'b-b')+' pb5">'+
+
+										'<span class="size30 color66 left">保单号</span>'+
+
+										'<span class="size26 color25 right">';
+
+										if(!isEmpty(cinsuranceCodes)){
+
+											for(var j = 0;j < cinsuranceCodes.length;j++){
+
+												var cinsuranceCode = cinsuranceCodes[j].string;
+
+												if(j != 0){
+
+													backHtml += '<br>';
+
+												}
+
+
+
+												backHtml += transNull(cinsuranceCode);
+
+											}
+
+										}
+
+										backHtml += '</span>'+
+
+									'</p>';
+
+
+
+				}
+
+
+
+			}
+
+			refundHis.innerHTML = backHtml;
+
+		}
+
+	}
+
+
+
+	// 控制票号是否显示，当订单出票后显示票号
+
+	function controlTicketNoShow(status){
+
+		var ticketNoSPs=document.getElementsByName("ticketNoSP");
+
+		if(status != 3 && !isEmpty(ticketNoSPs) && ticketNoSPs.length > 0){
+
+			for(var i=0;i<ticketNoSPs.length;i++){
+
+				ticketNoSPs[i].style.display="none";
+
+			}
+
+		}
+
+	}
+
+
+
+	var showIntBasicInfo = function(basicInfo){
+
+		//下单时间
+		getObjById("placeOrderDate").innerHTML=transNull(basicInfo.placeOrderDateTime);
+
+
+
+		//订单详情
+
+		showTitle(basicInfo.orderStatus);
+
+
+
+		//布局控制
+
+		var controlCode = basicInfo.orderStatus;
+
+		controlTicketNoShow(controlCode);
+
+		if(basicInfo.orderStatus == 1 && basicInfo.paymentMethod == 1){
+
+			controlCode = 111;
+
+		}
+
+		controlLayout(controlCode);
+
+		orderFlag = 1;
+
+	}
+
+	var showIntContactInfo = function(contactInfo){
+
+		//联系人信息
+
+		var contactorContiner = getObjById("contactorContiner");
+
+		var contactorHtml = transNull(contactInfo.contactName || contactInfo.creatorCn)+'<br>'+transNull(contactInfo.contactPhone  || contactInfo.creatorPhone)+'<br>'+transNull(contactInfo.contactEmail);
+
+		contactorContiner.innerHTML = contactorHtml;
+
+	}
+
+
+
+
+
+	var _showIntPassengerInfo = function(passengers){
+
+		if(typeof passengers != 'undefined' && passengers.length > 0){
+
+			var passengerContiner = getObjById("passengerContiner");
+
+			var _buildPassengerHtml = '<p class="b-b"><span class="size30 color25 h-spacing">乘机人信息</span></p>';
+
+			for(var i in passengers){
+
+					var passengerMo = passengers[i].OrderViewPassengerInfoMO;
+
+
+
+					passengerMo = transArray(passengerMo);
+
+
+
+					for(var j in passengerMo){
+ticketAllNum++;
+						
+
+						var passenger = passengerMo[j];
+
+							_buildPassengerHtml += '<p class="pt3 info-wrapper '+( ( i == (passengers.length - 1) && j ==  (passengerMo.length - 1) ) ? '':'b-b')+' pb5">'+
+
+														'<span class="size30 color99"><em class="color23 name">'+transNull(passenger.surName) + '/' + transNull(passenger.givenName) + '</em>'+(passenger.ticketType == "CHD" ? "儿童" : "成人") + '</span>'+
+
+														'<span class="size26 color99"><em>'+getCertType(passenger.papersType)+':</em> '+transNull(passenger.papersNumber) + '</span>'+
+
+														'<span class="size26 color99" name="ticketNoSP"><em>票&nbsp;&nbsp;&nbsp;号:</em> '+transNull(passenger.issueCode) + '</span>'+
+
+														'<span class="size26 color99"><em>保&nbsp;&nbsp;&nbsp;险:</em> '+transNull(passenger.insuranceCnt) + '份</span>'+
+
+													'</p>';
+
+					}
+
+			}
+
+			passengerContiner.innerHTML = _buildPassengerHtml;
+
+		}
+
+	}
+
+
+
+
+
+
+
+	function getCertType(certKey){
+
+		certKey = certKey.toUpperCase();
+
+		if(certKey == 'PSP'){
+
+			return "护照";
+
+		}else if(certKey == 'HKM'){
+
+			return "港澳通行证";
+
+		}else if(certKey == 'TWM'){
+
+			return "台湾通行证";
+
+		}else if(certKey == 'TW2'){
+
+			return "台胞证";
+
+		} else if(certKey == 'TW1'){
+
+			return "回乡证";
+
+		} else if(certKey == 'IDC'){
+
+			return "身份证";
+
+		} else if(certKey == 'SEA'){
+
+			return "国际海员证";
+
+		}
+
+		return "其他";
+
+	}
+
+
+
+
+
+	var showIntTicketInfo = function(flightInfo){
+
+		var ticketContiner = getObjById("ticketListBeans");
+
+		var ticketHtml = "";
+
+		if(flightInfo != null && flightInfo.length > 0){
+
+			for(var i in flightInfo){
+
+				var orderViewFlightInfoMO = flightInfo[i].OrderViewFlightInfoMO;
+
+				ticketHtml += _buildIntTicketHtml(orderViewFlightInfoMO);
+
+			}
+
+		}
+
+		ticketContiner.innerHTML = ticketHtml;
+
+	}
+
+
+
+	var _buildIntTicketHtml = function(ticketBeans){
+
+			var ticketAllHtml = "";
+
+			ticketBeans = transArray(ticketBeans);
+
+			for(var k in ticketBeans){
+
+				var ticketBean = ticketBeans[k];
+
+				var isStop =false;
+
+				var journeyNumber = "";
+
+				var segHtml = '<p class="pt3 con-wrapper">';
+
+						for(var i in ticketBean.airIntlSegmentInfoMOList){
+
+							var segMO = ticketBean.airIntlSegmentInfoMOList[i].AirIntlSegmentInfoMO;
+
+							segMO = transArray(segMO);
+
+							for(var kk in segMO){
+
+								var seg = segMO[kk];
+
+
+
+								//行李规定
+
+								if(seg.baggagePieces > 0 || seg.baggageWeight > 0){
+
+									pNum++;
+
+									bagRuleStr += '\\n第'+ pNum + '程  '+seg.depCityName+' - ' + seg.arrCityName+":"+(seg.baggagePieces > 0 ? seg.baggagePieces : seg.baggageWeight) + (isEmpty(seg.baggageWeightU) || seg.baggageWeightU == "" ? '件' : seg.baggageWeightU);
+
+								}
+
+								
+
+								segHtml += '<span class="size28 color66 pb2">'+transNull(seg.airWay) + ' '+transNull(seg.airCode)+transNull(seg.airplaneNumber)+'  '+transNull(seg.plane) + '</span>' +
+
+								'<span class="size26 color24"><em class="time">'+splitTime(seg.takeOffTime)+'</em>'+transNull(seg.depairDrome)+transNull(seg.terminal)+'<br><em class="time">'+splitTime(seg.arriveTime)+'</em>'+transNull(seg.arrairDrome)+transNull(seg.arrTerminal)+'</span>' +
+
+								'<span class="size22 color99">飞行时长：约'+seg.flightTime+' </span>';
+
+
+
+								if(seg.isStop == 1){
+
+									isStop = true;
+
+								}
+
+								journeyNumber = seg.journeyNumber;
+
+								
+								var jj = parseInt(kk) + 1;
+								if(jj < segMO.length){
+									var nextSeg = segMO[jj];
+
+									segHtml += '<span class="ptb size24 color66 relative"><span class="star">中转城市：'+transNull(nextSeg.depCityName)+'<em class="ml pr3">停留约'+caculateTime(seg.arrDate,seg.arriveTime,nextSeg.flightDate,nextSeg.takeOffTime)+'</em></span><i class="ico-line"></i></span>';
+
+								}
+
+							}
+
+						}
+
+						segHtml +='</p>';
+
+						var ticketHtml = '<section>' +
+
+						'<div class="container ptb">' +
+
+							'<p class="pb3 color25"><i class="'+(journeyNumber == 11 ? "" : "")+'"></i><span class="size30 ">'+_showCNDate(ticketBean.flightDate)+'</span><span class="size30 ml2">'+showWeek(ticketBean.flightDate)+'</span></p>' +
+
+							'<p class="pb5 b-b"><span class="size32 color25 bold">'+transNull(ticketBean.depcityName)+'－'+transNull(ticketBean.arrcityName)+'</span>'+(isStop == true ? '<i class="ico-stop">经停</i>' : '')+'</p>';
+
+
+
+							
+
+							ticketHtml += segHtml;
+
+						ticketHtml += '</div>' +
+
+										'</section>';
+
+
+
+				ticketAllHtml += ticketHtml;
+
+			}
+
+
+
+			return ticketAllHtml;
+
+	}
+
+
+
+	var _showPaymentInfo = function(payInfo){
+
+		buildMoney("totalOrderMoney",payInfo.totalOrderMoney);
+
+		buildMoney("totalDiscountMoney",payInfo.totalDiscountMoney);
+
+		buildMoney("balanceMoney",payInfo.balanceMoney);
+
+		buildMoney("payOrderMoney",payInfo.payOrderMoney);
+
+		orderPrice = payInfo.payOrderMoney;
+
+	};
+
+
+
+	function buildMoney(key,val){
+
+		if(isEmpty(val)){
+
+			return false;
+
+		}
+
+		replaceIHTML(key,"¥"+val.toFixed(2));
+
+	}
+
+
+
+	var _showBasicInfo = function(){
+
+		orderFlag = _orderInfo.orderFlag;
+		if(orderFlag == "0"){
+             orderFlag = "1"
+		}else if(orderFlag == "1"){
+		    orderFlag = "0"
+		}
+
+		//联系人信息
+
+		var contactorContiner = getObjById("contactorContiner");
+
+		var contactorHtml = transNull(_orderInfo.conctactName)+'<br>'+transNull(_orderInfo.conctactMobile)+'<br>'+transNull(_orderInfo.contactEmail);
+
+		contactorContiner.innerHTML = contactorHtml;
+
+
+
+		//下单时间
+
+		getObjById("placeOrderDate").innerHTML=transNull(_orderInfo.placeOrderDate) + ' ' +transNull(_orderInfo.placeOrderTime);
+
+
+
+		//订单详情
+
+		showTitle(_orderInfo.orderStatus);
+
+
+
+		//布局控制
+
+		var controlCode = _orderInfo.orderStatus;
+
+		controlTicketNoShow(controlCode);
+
+		if(_orderInfo.orderStatus == 1 && _orderInfo.paymentMethod == 1){
+
+			controlCode = 111;
+
+		}
+
+
+		controlLayout(controlCode);
+
+	};
+
+
+
+	function showTitle(orderStatus){
+
+		try{
+
+			var title = ["待提交","等待支付","出票中","出票成功","出票失败","退款成功","订单取消","订单取消"];
+
+			if(orderStatus > 7){
+
+				orderStatus = 7;
+
+			}
+
+			clientExecute(function(){
+
+				//alert("suc");
+
+			},function(){
+
+				//alert("error");
+
+			},"showTitle",'[{"title": "'+title[orderStatus]+'"}]');
+
+		}catch(e){
+
+
+
+		}
+
+	}
+
+
+
+
+
+	function controlLayout(status){
+		if(status == 111){//待支付
+			showObj("unPayedPage");//显示支付按钮
+		}else if(refundNum < ticketAllNum && status == 3){//出票成功
+			showObj("paySucPage");//显示退票按钮
+		}
+		
+		//含有退款记录显示退款记录
+		if(refundNum > 0){
+			showObj("refund_page");
+		}
+
+		
+
+		if(status != 6 && status != 7){
+
+			showObj("refundRule");
+
+		}
+
+	}
+
+
+
+	var _showOrderNo = function(val){
+
+		orderID = val;
+		replaceIHTML("orderCode",val);
+
+	}
+
+
+
+
+
+
+	var _showTicketInfo = function(){
+
+		var ticketContiner = getObjById("ticketListBeans");
+
+		var passengerContiner = getObjById("passengerContiner");
+
+		var refundHis = getObjById("refundHis");
+
+		var ticketHtml = "";
+
+		var passengerHtml = '<p class="b-b"><span class="size30 color25 h-spacing">乘机人信息</span></p>';
+
+		var backHtml = "";
+
+
+
+		if(_ticketListBeans != null && _ticketListBeans.length > 0){
+
+			for(var i in _ticketListBeans){
+
+				var ticketListBean = _ticketListBeans[i].TicketListBean;
+
+				ticketHtml += _buildTicketHtml(ticketListBean);
+
+				passengerHtml += _buildPassengerHtml(ticketListBean);
+
+				backHtml += _buildBackHtml(ticketListBean);
+
+			}
+
+		}
+
+		ticketContiner.innerHTML = ticketHtml;
+
+		passengerContiner.innerHTML = passengerHtml;
+
+
+
+		refundHis.innerHTML = backHtml;
+
+	}
+
+
+
+	var _buildBackHtml = function(ticketBeans){
+
+
+
+			ticketBeans = transArray(ticketBeans);
+
+			var backHtml = "";
+
+
+
+			for(var i in ticketBeans){
+
+
+
+				var ticketBean = ticketBeans[i];
+
+
+
+				if(ticketBean.ticketStatus == 4){
+
+					refundNum++;
+
+					backHtml += '<span class="size30 color66 h-spacing mb2" style="padding:0;">退票乘客<em class="pull-right color23">'+transNull(ticketBean.passengerName)+'</em></span>'+
+
+								'<span class="size30 color23 b-t pt3">退票详情</span>'+
+
+								'<span class="size30 color66">票号<em class="pull-right color23">'+transNull(ticketBean.ticketNo)+'</em></span>'+
+
+								'<p class="pt3 contact-wrapper '+((i == (ticketBeans.length - 1)) ? '' : 'b-b')+' pb5">'+
+
+									'<span class="size30 color66 left">航班</span>'+
+
+									'<span class="size26 color25 right">' + transNull(ticketBean.airplaneNumber) + '</span>'+
+
+								'</p>';
+
+			
+				}
+
+			}
+
+
+
+		return backHtml;
+
+	}
+
+
+
+
+
+	function transArray(obj){
+
+		if(obj instanceof Array){
+
+			return obj;
+
+		}else{
+
+			var ary = new Array();
+
+			ary.push(obj);
+
+			return ary;
+
+		}
+
+	}
+
+
+    var goFlag = 0;
+    var backFlag = 0;
+	var _buildTicketHtml = function(ticketBeans){
+
+			ticketBeans = transArray(ticketBeans);
+
+			var ticketHtml = "";
+
+			for(var i in ticketBeans){
+
+					var ticketBean = ticketBeans[i];
+
+					ticketAllNum++;
+
+					if(ticketBean.tripType == 1){
+					    if(backFlag > 0){
+					        continue;
+					    }
+					    backFlag++;
+					}else{
+					    if(goFlag > 0){
+					        continue;
+					    }
+					    goFlag++;
+					}
+
+					ticketHtml += '<section>' +
+
+							'<div class="container ptb">' +
+
+									'<p class="pb3 color25"><i class="'+(ticketBean.tripType == 11 ? "ico-back" : ticketBean.tripType == 10 ? "ico-go" : "")+'"></i><span class="size30">'+_showCNDate(ticketBean.flightDate)+'</span><span class="size30 ml2">'+showWeek(ticketBean.flightDate)+'</span></p>' +
+
+									'<p class="pb5 b-b"><span class="size32 color25 bold">'+transNull(ticketBean.depcityName)+'－'+transNull(ticketBean.arrcityName)+'</span></p>' +
+
+									'<p class="pt3 con-wrapper">' +
+
+										'<span class="size28 color66 pb2">'+transNull(ticketBean.airWay) + ' '+transNull(ticketBean.airplaneNumber)+'</span>' +
+
+										'<span class="size26 color24"><em class="time">'+splitTime(ticketBean.takeOffTime)+'</em>'+transNull(ticketBean.depairdrome)+'<br><em class="time">'+splitTime(ticketBean.arriveTime)+'</em>'+transNull(ticketBean.arrairdrome)+'</span>' +
+
+										'<span class="size22 color99">飞行时长：约'+caculateTime(ticketBean.flightDate,ticketBean.takeOffTime,ticketBean.arrDate,ticketBean.arriveTime)+' </span>' +
+
+									'</p>' +
+
+								'</div>' +
+
+							'</section>';
+
+			}
+
+			return ticketHtml;
+
+	}
+
+
+
+	var _buildPassengerHtml = function(ticketBeans){
+
+		ticketBeans = transArray(ticketBeans);
+
+		var passengerHtml = '';
+
+		for(var i in ticketBeans){
+
+			var ticketBean = ticketBeans[i];
+
+			if((isEmpty(ticketBean.ticketNo) || ticketBean.ticketNo == "") && ticketBean.tripType == 0){
+
+			    passengerHtml += '<p class="pt3 info-wrapper '+( (i == (ticketBeans.length - 1) ) ? '' : 'b-b')+' pb5">'+
+
+									'<span class="size30 color99"><em class="color23 name">'+transNull(ticketBean.passengerName) + '</em></span>'+
+
+									'<span class="size26 color99"><em>'+getCertType(ticketBean.papersType)+':</em> '+transNull(ticketBean.passengerNum) + '</span>'+
+
+									'<span class="size26 color99" name="ticketNoSP"><em>票&nbsp;&nbsp;&nbsp;号:</em> '+transNull(ticketBean.ticketNo) + '</span>'
+
+							'</p>';
+			}
+
+			if(ticketBean.ticketNo){
+			     passengerHtml += '<p class="pt3 info-wrapper '+( (i == (ticketBeans.length - 1) ) ? '' : 'b-b')+' pb5">'+
+
+									'<span class="size30 color99"><em class="color23 name">'+transNull(ticketBean.passengerName) + '</em></span>'+
+
+									'<span class="size26 color99"><em>'+getCertType(ticketBean.papersType)+':</em> '+transNull(ticketBean.passengerNum) + '</span>'+
+
+									'<span class="size26 color99" name="ticketNoSP"><em>票&nbsp;&nbsp;&nbsp;号:</em> '+transNull(ticketBean.ticketNo) + '</span>'
+
+							'</p>';
+			}
+		}
+		return passengerHtml;
+
+	}
+
+
+
+	//转换日期为中文
+
+	function _showCNDate(ENDate){
+
+		if(isEmpty(ENDate)){
+
+			return '';
+
+		}
+
+		var dateSp = ENDate.split(/[-]/);
+
+
+
+		if(dateSp.length == 3){
+
+			return dateSp[0] + '年' + dateSp[1] + '月' + dateSp[2] + '日';
+
+		}
+
+
+
+		return '';
+
+	}
+
+
+
+
+
+	function splitTime(time){
+
+		if(!isEmpty(time)){
+
+			if(time.length == 4){
+
+				return time.substring(0,2) +":" +time.substring(2);
+
+			}else if(time.length == 5){
+
+				return time;
+
+			}
+
+		}
+
+		return "";
+
+	}
+
+
+
+	function caculateTime(flightDate,takeOffTime,arrDate,arriveTime){
+
+		if(isEmpty(flightDate) || isEmpty(takeOffTime) ||isEmpty(arrDate) ||isEmpty(arriveTime)){
+
+			return '';
+
+		}
+
+
+
+		var date1=new Date(flightDate.replace(/\-/g,'/') + " " + splitTime(takeOffTime) +":00");  //开始时间
+
+
+
+		var date2=new Date(arrDate.replace(/\-/g,'/') + " " + splitTime(arriveTime)+":00");    //结束时间
+
+		var date3=date2.getTime()-date1.getTime()  //时间差的毫秒数
+
+
+
+		var days=Math.floor(date3/(24*3600*1000))
+
+
+
+		//计算出小时数
+
+		var leave1=date3%(24*3600*1000)    //计算天数后剩余的毫秒数
+
+		var hours=Math.floor(leave1/(3600*1000))
+
+		//计算相差分钟数
+
+		var leave2=leave1%(3600*1000)        //计算小时数后剩余的毫秒数
+
+		var minutes=Math.floor(leave2/(60*1000))
+
+
+
+		return (hours + days*24) + "时" + minutes + "分";
+
+
+
+	}
+
+
+
+	function showWeek(ENDate){
+
+		if(isEmpty(ENDate)){
+
+			return '';
+
+		}
+
+		var t=new Date(ENDate.replace(/\-/g,'/'));
+
+
+
+		var weekday=new Array(7);
+
+		weekday[0]="星期日";
+
+		weekday[1]="星期一";
+
+		weekday[2]="星期二";
+
+		weekday[3]="星期三";
+
+		weekday[4]="星期四";
+
+		weekday[5]="星期五";
+
+		weekday[6]="星期六";
+
+
+
+		return weekday[t.getDay()];
+
+	}
+
+
+
+	/** 绑定事件 **/
+
+	//退改签规定
+
+	getObjById("refundRule").onclick = function(){
+
+		var med = "showRefundRuleDialog";
+
+		var param;
+
+		var defaultMsg = "退改签规定以航空公司最新公布为准，详情请致电4006115718";
+
+		if(contryType == 1){
+
+			var provisionResultStr = "";//退改签信息,包括 签转规定、改期规定和退票规定, 行程标志：0、去程，1、回程
+
+            var ticketTurnStr = "";//改签规定
+
+            var ticketChangeStr = "";//改期规定
+
+            var ticketBackStr = "";//退票规定
+
+
+
+            var ticketRegulations = transArray(_initData.result.ticketRegulations);
+
+            for (var i = 0; i < ticketRegulations.length; i++) {
+
+				if(isEmpty(ticketRegulations[i])){
+
+					continue;
+
+				}
+
+                var ticketRegulation = transArray(ticketRegulations[i].ticketRegulation);
+                var backFlag = false;
+                if(ticketRegulation.length > 1){
+                	backFlag = true;
+
+                }
+
+				for(var kk in ticketRegulation){
+
+					var regulation = ticketRegulation[kk];
+
+					   if (regulation.tripType == 0) {
+					   		var goStr = "";
+					   		if(backFlag){
+					   			goStr  = "去程: ";
+					   		}
+
+							if(!isEmpty(regulation.ticketTurn) && regulation.ticketTurn != ""){
+								ticketTurnStr += goStr + transNull(regulation.ticketTurn) + " ";
+							}
+							
+							if(!isEmpty(regulation.ticketChange) && regulation.ticketChange != ""){
+								ticketChangeStr += goStr + transNull(regulation.ticketChange) + " ";
+							}
+
+							if(!isEmpty(regulation.ticketBack) && regulation.ticketBack != ""){
+								ticketBackStr += goStr + transNull(regulation.ticketBack) + " ";
+							}
+							
+						} else {
+					   		var backStr = "";
+					   		if(backFlag){
+					   			backStr  = "返程: ";
+					   		}
+
+							if(!isEmpty(regulation.ticketTurn) && regulation.ticketTurn != ""){
+								ticketTurnStr += backStr + transNull(regulation.ticketTurn) + " ";
+							}
+							
+							if(!isEmpty(regulation.ticketChange) && regulation.ticketChange != ""){
+								ticketChangeStr += backStr + transNull(regulation.ticketChange) + " ";
+							}
+
+							if(!isEmpty(regulation.ticketBack) && regulation.ticketBack != ""){
+								ticketBackStr += backStr + transNull(regulation.ticketBack) + " ";
+							}
+						}
+
+				}
+
+            }
+
+			if(ticketTurnStr == "" && ticketChangeStr == "" && ticketBackStr == ""){
+				provisionResultStr = defaultMsg;
+			}else{
+				if(ticketTurnStr != ""){
+					ticketTurnStr = "改签规定: " + ticketTurnStr;
+					provisionResultStr += "\\n" + ticketTurnStr;
+				}
+				
+				if(ticketChangeStr != ""){
+					ticketChangeStr = "改期规定: " + ticketChangeStr;
+					provisionResultStr += "\\n" + ticketChangeStr;
+				}
+				
+				if(ticketBackStr != ""){
+					ticketBackStr = "退票规定: " + ticketBackStr;
+					provisionResultStr += "\\n" + ticketBackStr;
+				}
+				
+				provisionResultStr = provisionResultStr.substring(2) + "\\n退改签规定以航空公司最新公布为准";
+			}
+
+			med = "showRefundRuleDialog";
+			param = '[{"title": "退改签规定","content":"'+provisionResultStr+'"}]';
+		}else if(contryType == 2){
+
+			refundRuleStr = "";
+
+			var e = "";
+
+			var r = "";
+
+			var n = "";
+
+			var provisionResults = transArray(intlOrderDetailMO.provisionResult);
+
+			if(!isEmpty(provisionResults)){
+
+				for(var i in provisionResults){
+
+					var provisionResult = provisionResults[i];
+
+					if(isEmpty(provisionResult)){
+
+						continue;
+
+					}
+
+					var endorseRules = provisionResult.endorseRules;
+
+					var noshowRules = provisionResult.noshowRules;
+
+					var refundRules = provisionResult.refundRules;
+
+					if(!isEmpty(endorseRules)){
+
+						endorseRules = transArray(endorseRules);
+
+						for(var j in endorseRules){
+
+							var endorseRule = endorseRules[j];
+
+							var rules = transArray(endorseRule["com.jd.airplane.domain.intl.IntelRule"]);
+
+							for(var kk in rules){
+
+								var rule = rules[kk];
+
+								if(!isEmpty(rule.rule) && rule.rule != ""){
+									e += transNull(rule.type) + " " + transNull(rule.rule);
+								}
+								
+
+							}
+
+						}
+
+					}
+
+					if(!isEmpty(noshowRules)){
+
+						noshowRules = transArray(noshowRules);
+
+						for(var j in noshowRules){
+
+							var noshowRule = noshowRules[j];
+
+							var rules = transArray(noshowRule["com.jd.airplane.domain.intl.IntelRule"]);
+
+							for(var kk in rules){
+
+								var rule = rules[kk];
+
+								if(!isEmpty(rule.rule) && rule.rule != ""){
+									n += transNull(rule.type) + " " + transNull(rule.rule);
+								}
+							}
+
+						}
+
+					}
+
+					if(!isEmpty(refundRules)){
+
+						refundRules = transArray(refundRules);
+
+						for(var j in refundRules){
+
+							var refundRule = refundRules[j];
+
+							var rules = transArray(refundRule["com.jd.airplane.domain.intl.IntelRule"]);
+
+							for(var kk in rules){
+
+								var rule = rules[kk];
+
+								if(!isEmpty(rule.rule) && rule.rule != ""){
+									r += transNull(rule.type) + " " + transNull(rule.rule);
+								}
+								
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+			
+
+			if(e == "" && r == "" && n == ""){
+				refundRuleStr = defaultMsg;
+			}else{
+				if(e != ""){
+					e = "更改规定: " + e;
+					refundRuleStr += "\\n" + e;
+				}
+				
+				if(n != ""){
+					n = "误机规定: " + n;
+					refundRuleStr+= "\\n" + n;
+				}
+				
+				if(r != ""){
+					r = "退票规定: " + r;
+					refundRuleStr += "\\n" + r;
+				}
+				
+				refundRuleStr = refundRuleStr.substring(2) + "\\n退改签规定以航空公司最新公布为准";
+			}
+
+			
+
+			med = "showIntRefundRuleDialog";
+
+			param = '[{"AllContent":[{"title": "退改签规定","content":"'+refundRuleStr+'"}'+(bagRuleStr != "" ? ',{"title": "行李规定","content":"'+(bagRuleStr.length > 3 ? bagRuleStr.substring(2) : bagRuleStr)+'"}' : '')+']}]';
+
+		}
+
+
+//alert(param);
+		clientExecute(function(){
+
+			//alert("suc");
+
+		},function(){
+
+			//alert("error");
+
+		},med,param);
+
+	}
+
+
+
+	// 取消订单按钮
+
+	getObjById("cancelOrder").onclick = function(){
+
+		//{"code":"0", "message":"响应成功", "result":{"orderCode":"9730788465"}}
+		clientExecute(function(res){
+
+			var jo = eval('('+res+')');
+
+			
+
+			if(jo.code && jo.code == 0){
+
+				hiddenObj("unPayedPage");
+				hiddenObj("refundRule");
+
+				showTitle(6);
+
+			}else{
+
+				//alert("取消订单失败！");
+
+			}	
+
+			
+
+		},function(res){
+
+			var jo = eval('('+res+')');
+
+			
+
+			if(jo.code && jo.code == 0){
+
+				hiddenObj("unPayedPage");
+				hiddenObj("refundRule");
+
+				showTitle(6);
+
+			}else{
+
+				//alert("取消订单失败！");
+
+			}	
+
+		},"cancelOrder",'[{"orderID": '+orderID+'}]');
+
+	}
+
+
+
+	// 退票改签按钮
+
+	getObjById("refundBtn").onclick = function(){
+
+		clientExecute(function(){
+
+			//alert("suc");
+
+		},function(){
+
+			//alert("error");
+
+            //由于服务端代码逻辑问题，需给客户端传递相反的标志位
+		},"refundOrder",'[{"orderFlag": '+orderFlag+'}]');
+
+	}
+
+
+
+	// 支付按钮--订单id和价格
+
+	getObjById("payBtn").onclick = function(){
+
+		clientExecute(function(){
+
+			//alert("suc");
+
+		},function(){
+
+			//alert("error");
+
+		},"payOrder",'[{"orderID": '+orderID+',"price":'+orderPrice+'}]');
+
+	}
+
+
+
+	return this;
+
+})();
+
+
+
+//初始化函数
+
+function init(d){
+
+	ticketInfo.show(d);
+
+	document.getElementById("ticketBody").style.display = "block";
+
+}
+// 退票部分
+//var sfsdfdsf = '{    "code": "0",    "message": "响应成功",    "result": {        "orderViewFlightInfoList": [            {                "OrderViewFlightInfoMO": {                    "depcityName": "广州",                    "arrcityName": "香港",                    "flightDate": "2015-10-29",                    "odFlightTime": "1时05分",                    "airIntlSegmentInfoMOList": [                        {                            "AirIntlSegmentInfoMO": {                                "id": 52210,                                "orderId": 9738237779,                                "airplaneNumber": "783",                                "journeyNumber": 0,                                "flightNumber": 0,                                "departure": "CAN",                                "arrival": "HKG",                                "depCityCode": "",                                "arrCityCode": "",                                "depCityName": "广州",                                "arrCityName": "香港",                                "flightDate": "2015-10-29",                                "arrDate": "2015-10-29",                                "takeOffTime": "0950",                                "arriveTime": "1055",                                "isStop": 0,                                "seatCode": "Y",                                "airCode": "KA",                                "airWay": "港龙航空",                                "airCarrierFlight": "KA",                                "airCarrierCor": "港龙航空",                                "depairDrome": "白云机场",                                "arrairDrome": "香港国际机场",                                "terminal": "",                                "arrTerminal": "1",                                "plane": "333",                                "odFlightTime": "1:05",                                "flightTime": "1小时5分",                                "baggagePieces": 0,                                "baggageWeight": "20",                                "baggageWeightU": "K"                            }                        }                    ]                }            }        ],        "orderViewPassengerInfoList": [            {                "OrderViewPassengerInfoMO": [                    {                        "id": 3208352,                        "orderId": 9738237779,                        "flightId": 2278745,                        "ticketType": "ADT",                        "passengerName": "null.null",                        "papersType": "HKM",                        "papersNumber": "t68*8",                        "issueCode": "160-93815648560",                        "birthDate": "2015-07-15 17:40:41.0 CST",                        "birthDateStr": "2015-07-15",                        "cinsuranceCodeList": [                            {                                "string": "JD05415071500621025"                            }                        ],                        "cinsuranceCodeBackList": [                            {                                "string": "JD05415071500621025"                            }                        ],                        "safe": 1,                        "sex": "female",                        "identityVaildDate": "2015-07-15",                        "nationality": "FR",                        "nationalityCn": "法国",                        "surName": "LEI",                        "givenName": "XUEPEI",                        "certificateCountry": "FR",                        "certificateCountryCn": "法国",                        "insuranceCnt": 1                    },                    {                        "id": 3232367,                        "orderId": 9781554480,                        "flightId": 2294566,                        "ticketType": "ADT",                        "passengerName": "null.null",                        "papersType": "PSP",                        "papersNumber": "y58***6",                        "issueCode": "160-9dddddd",                        "birthDate": "2015-07-24 16:02:00.0 CST",                        "birthDateStr": "2015-07-24",                        "cinsuranceCodeList": [                            ""                        ],                        "cinsuranceCodeBackList": [                            ""                        ],                        "safe": 1,                        "sex": "Female",                        "identityVaildDate": "2017-07-21",                        "nationality": "US",                        "nationalityCn": "美国",                        "surName": "ZUO",                        "givenName": "QIONG",                        "certificateCountry": "US",                        "certificateCountryCn": "美国",                        "insuranceCnt": 1                    }                ]            }        ],        "contactInfo": {            "creatorCn": "雷学沛测试订单",            "creatorPhone": "187****1227",            "contactEmail": "6********@qq.com"        },        "orderBaseInfo": {            "orderCode": 9738237779,            "orderMoney": 1240,            "paymentMethod": "1",            "placeOrderDateTime": "2015-07-15 17:40:41",            "orderStatus": 3,            "isSafe": 1,            "modifiedDate": "2015-07-15",            "modifiedTime": "18:05:16"        },        "provisionResult": {            "endorseRules": [                {                    "com.jd.airplane.domain.intl.IntelRule": {                        "rule": "允许。 ",                        "type": ""                    }                }            ],            "noshowRules": [                {                    "com.jd.airplane.domain.intl.IntelRule": {                        "rule": "退票，起飞前，误机收取手续费0.00美元，即取消/退票费0.00美元加上误机费0.00美元。 起飞后，误机收取手续费0.00美元，即取消/退票费0.00美元加上误机费0.00美元。 更改，误机收取手续费0.00美元，即路线变更费0.00美元加上误机费0.00美元，或者收取手续费0.00美元，即重新订座费0.00美元加上误机费0.00美元。",                        "type": ""                    }                }            ],            "refundRules": [                {                    "com.jd.airplane.domain.intl.IntelRule": {                        "rule": "允许。",                        "type": ""                    }                }            ]        },        "dispatchInfo": {            "name": "雷学沛测试订单",            "deliveryType": 1,            "mobile": "187****1227",            "postcode": "",            "counterInfoId": 0,            "printDate": "2015-10-29 09:50:00.0 CST",            "insurInvoice": 0,            "usuaId": 0        },        "orderViewPriceInfo": {            "adultPrice": 1080,            "adultTaxation": 130,            "childPrice": 0,            "childTaxation": 0,            "adultNum": 1,            "childNum": 0,            "adultPriceTotal": 0,            "childPriceTotal": 0,            "insurancePrice": 30,            "insuranceTotalNum": 1,            "insuranceTotalPrice": 0,            "total": 0        },        "orderViewBackTicketInfoList": [            {                "OrderViewBackTicketInfoMO": {                    "orderViewPassengerInfoMO": {                        "id": 3208352,                        "orderId": 9738237779,                        "flightId": 2278745,                        "ticketType": "ADT",                        "passengerName": "null.null",                        "papersType": "HKM",                        "papersNumber": "t68*8",                        "issueCode": "160-93815648560",                        "birthDate": "2015-07-16 07:40:41.0 CST",                        "birthDateStr": "2015-07-15",                        "cinsuranceCodeList": [                            {                                "string": "JD05415071500621025"                            }                        ],                        "cinsuranceCodeBackList": [                            {                                "string": "JD05415071500621025"                            }                        ],                        "safe": 1,                        "sex": "female",                        "identityVaildDate": "2015-07-15",                        "nationality": "FR",                        "nationalityCn": "法国",                        "surName": "LEI",                        "givenName": "XUEPEI",                        "certificateCountry": "FR",                        "certificateCountryCn": "法国",                        "insuranceCnt": 1                    },                    "ticketNo": "160-9381564856",                    "clientsumcharge": 1210,                    "cinsuranceCodeBackList": [                        {                            "string": "JD05415071500621025"                        }                    ],                    "airIntlSegmentInfoList": [                        {                            "AirIntlSegmentInfoMO": {                                "id": 52210,                                "orderId": 9738237779,                                "airplaneNumber": "783",                                "journeyNumber": 0,                                "flightNumber": 0,                                "departure": "CAN",                                "arrival": "HKG",                                "depCityCode": "",                                "arrCityCode": "",                                "depCityName": "广州",                                "arrCityName": "香港",                                "flightDate": "2015-10-29",                                "arrDate": "2015-10-29",                                "takeOffTime": "0950",                                "arriveTime": "1055",                                "isStop": 0,                                "seatCode": "Y",                                "airCode": "KA",                                "airWay": "港龙航空",                                "airCarrierFlight": "KA",                                "airCarrierCor": "港龙航空",                                "depairDrome": "白云机场",                                "arrairDrome": "香港国际机场",                                "terminal": "",                                "arrTerminal": "1",                                "plane": "333",                                "odFlightTime": "1:05",                                "flightTime": "1小时5分",                                "baggagePieces": 0,                                "baggageWeight": "20",                                "baggageWeightU": "K"                            }                        }                    ]                }            }        ],        "orderDetailPaymentInfoMO": {            "totalOrderMoney": 1240,            "totalDiscountMoney": 0,            "balanceMoney": 0,            "payOrderMoney": 1240        },        "result": "true",        "degradeFlag": false    }}';
+//  往返未支付
+//var sfsdfdsf = '{"code":"0", "message":"响应成功", "result":{"orderViewFlightInfoList":[{"OrderViewFlightInfoMO":[{"depcityName":"上海","arrcityName":"巴黎","flightDate":"2015-10-13","odFlightTime":"12时35分","airIntlSegmentInfoMOList":[{"AirIntlSegmentInfoMO":{"id":53956,"orderId":9781696213,"airplaneNumber":"569","journeyNumber":0,"flightNumber":0,"departure":"PVG","arrival":"CDG","depCityCode":"","arrCityCode":"","depCityName":"上海","arrCityName":"巴黎","flightDate":"2015-10-13","arrDate":"2015-10-13","takeOffTime":"1230","arriveTime":"1905","isStop":0,"seatCode":"H","airCode":"MU","airWay":"东方航空","airCarrierFlight":"MU","airCarrierCor":"东方航空","depairDrome":"浦东机场","arrairDrome":"巴黎戴高乐机场","terminal":"T1","arrTerminal":"2E","plane":"33H","odFlightTime":"12:35","flightTime":"12小时35分","baggagePieces":2,"baggageWeight":"","baggageWeightU":""}}]},{"depcityName":"巴黎","arrcityName":"上海","flightDate":"2015-10-15","odFlightTime":"11时35分","airIntlSegmentInfoMOList":[{"AirIntlSegmentInfoMO":{"id":53957,"orderId":9781696213,"airplaneNumber":"554","journeyNumber":1,"flightNumber":0,"departure":"CDG","arrival":"PVG","depCityCode":"","arrCityCode":"","depCityName":"巴黎","arrCityName":"上海","flightDate":"2015-10-15","arrDate":"2015-10-16","takeOffTime":"1325","arriveTime":"0700","isStop":0,"seatCode":"H","airCode":"MU","airWay":"东方航空","airCarrierFlight":"MU","airCarrierCor":"东方航空","depairDrome":"巴黎戴高乐机场","arrairDrome":"浦东机场","terminal":"2E","arrTerminal":"T1","plane":"33H","odFlightTime":"11:35","flightTime":"11小时35分","baggagePieces":2,"baggageWeight":"","baggageWeightU":""}}]}]}],"orderViewPassengerInfoList":[{"OrderViewPassengerInfoMO":[{"id":3232786,"orderId":9781696213,"flightId":2294568,"ticketType":"ADT","passengerName":"null.null","papersType":"PSP","papersNumber":"y58***6","birthDate":"2015-07-24 16:58:31.0 CST","birthDateStr":"2015-07-24","cinsuranceCodeList":[""],"cinsuranceCodeBackList":[""],"safe":1,"sex":"Female","identityVaildDate":"2017-07-21","nationality":"US","nationalityCn":"美国","surName":"ZUO","givenName":"QIONG","certificateCountry":"US","certificateCountryCn":"美国","insuranceCnt":2},{"id":3232787,"orderId":9781696213,"flightId":2294568,"ticketType":"ADT","passengerName":"null.null","papersType":"PSP","papersNumber":"l56****5","birthDate":"2015-07-24 16:58:31.0 CST","birthDateStr":"2015-07-24","cinsuranceCodeList":[""],"cinsuranceCodeBackList":[""],"safe":1,"sex":"female","identityVaildDate":"2023-06-21","nationality":"CN","nationalityCn":"中国大陆","surName":"LI","givenName":"MOUMOU","certificateCountry":"CN","certificateCountryCn":"中国大陆","insuranceCnt":2}]}],"contactInfo":{"creatorCn":"测试","creatorPhone":"158****8389","contactEmail":"g*****@163.com"},"orderBaseInfo":{"orderCode":9781696213,"orderMoney":31354,"paymentMethod":"1","placeOrderDateTime":"2015-07-24 16:58:31","orderStatus":1,"isSafe":1,"modifiedDate":"2015-07-24","modifiedTime":"16:58:37"},"provisionResult":{"endorseRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"允许。","type":""}}],"noshowRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"无限制。","type":""}}],"refundRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"起飞前：允许，收取手续费500人民币。起飞后：允许，收取手续费500人民币。","type":""}}],"maxStay":"12 个月。","minStay":"无限制"},"dispatchInfo":{"name":"测试","deliveryType":1,"mobile":"158****8389","postcode":"","counterInfoId":0,"printDate":"2015-10-13 12:30:00.0 CST","insurInvoice":0,"usuaId":0},"orderViewPriceInfo":{"adultPrice":12711,"adultTaxation":2906,"childPrice":0,"childTaxation":0,"adultNum":2,"childNum":0,"adultPriceTotal":0,"childPriceTotal":0,"insurancePrice":30,"insuranceTotalNum":4,"insuranceTotalPrice":0,"total":0},"orderViewBackTicketInfoList":[""],"orderDetailPaymentInfoMO":{"totalOrderMoney":31354,"totalDiscountMoney":0,"balanceMoney":0,"payOrderMoney":31354},"result":"true","degradeFlag":false}}';
+// 往返已支付
+//var sfsdfdsf = '{"code":"0", "message":"响应成功", "result":{"orderViewFlightInfoList":[{"OrderViewFlightInfoMO":{"depcityName":"南京","arrcityName":"巴黎","flightDate":"2015-10-08","odFlightTime":"30时10分","airIntlSegmentInfoMOList":[{"AirIntlSegmentInfoMO":[{"id":55025,"orderId":9808641074,"airplaneNumber":"811","journeyNumber":0,"flightNumber":0,"departure":"NKG","arrival":"HKG","depCityCode":"","arrCityCode":"","depCityName":"南京","arrCityName":"香港","flightDate":"2015-10-08","arrDate":"2015-10-08","takeOffTime":"1410","arriveTime":"1640","isStop":0,"seatCode":"S","airCode":"KA","airWay":"港龙航空","airCarrierFlight":"KA","airCarrierCor":"港龙航空","depairDrome":"禄口机场","arrairDrome":"香港国际机场","terminal":"","arrTerminal":"1","plane":"333","odFlightTime":"30:10","flightTime":"2小时30分","baggagePieces":1,"baggageWeight":"0","baggageWeightU":""},{"id":55026,"orderId":9808641074,"airplaneNumber":"070","journeyNumber":0,"flightNumber":1,"departure":"HKG","arrival":"HEL","depCityCode":"","arrCityCode":"","depCityName":"香港","arrCityName":"赫尔辛基","flightDate":"2015-10-09","arrDate":"2015-10-09","takeOffTime":"0025","arriveTime":"0610","isStop":0,"seatCode":"P","airCode":"AY","airWay":"芬兰航空","airCarrierFlight":"AY","airCarrierCor":"芬兰航空","depairDrome":"香港国际机场","arrairDrome":"赫尔辛基凡塔阿机场","terminal":"1","arrTerminal":"2","plane":"343","odFlightTime":"30:10","flightTime":"10小时45分","baggagePieces":1,"baggageWeight":"0","baggageWeightU":""},{"id":55027,"orderId":9808641074,"airplaneNumber":"875","journeyNumber":0,"flightNumber":2,"departure":"HEL","arrival":"CDG","depCityCode":"","arrCityCode":"","depCityName":"赫尔辛基","arrCityName":"巴黎","flightDate":"2015-10-09","arrDate":"2015-10-09","takeOffTime":"1215","arriveTime":"1420","isStop":0,"seatCode":"P","airCode":"AY","airWay":"芬兰航空","airCarrierFlight":"AY","airCarrierCor":"芬兰航空","depairDrome":"赫尔辛基凡塔阿机场","arrairDrome":"巴黎戴高乐机场","terminal":"2","arrTerminal":"2D","plane":"320","odFlightTime":"30:10","flightTime":"3小时5分","baggagePieces":1,"baggageWeight":"0","baggageWeightU":""}]}]}}],"orderViewPassengerInfoList":[{"OrderViewPassengerInfoMO":[{"id":3248313,"orderId":9808641074,"flightId":2304355,"ticketType":"ADT","passengerName":"null.null","papersType":"PSP","papersNumber":"A39***2","birthDate":"2015-07-30 16:10:55.0 CST","birthDateStr":"2015-07-30","cinsuranceCodeList":[""],"cinsuranceCodeBackList":[""],"safe":1,"sex":"male","identityVaildDate":"2017-07-30","nationality":"CN","nationalityCn":"中国大陆","surName":"WANG","givenName":"NING","certificateCountry":"CN","certificateCountryCn":"中国大陆","insuranceCnt":3},{"id":3248314,"orderId":9808641074,"flightId":2304355,"ticketType":"ADT","passengerName":"null.null","papersType":"PSP","papersNumber":"A39**1","birthDate":"2015-07-30 16:10:55.0 CST","birthDateStr":"2015-07-30","cinsuranceCodeList":[""],"cinsuranceCodeBackList":[""],"safe":1,"sex":"male","identityVaildDate":"2015-07-30","nationality":"JP","nationalityCn":"日本","surName":"LIN","givenName":"MENG","certificateCountry":"JP","certificateCountryCn":"日本","insuranceCnt":3},{"id":3248315,"orderId":9808641074,"flightId":2304355,"ticketType":"ADT","passengerName":"null.null","papersType":"PSP","papersNumber":"D38***1","birthDate":"2015-07-30 16:10:55.0 CST","birthDateStr":"2015-07-30","cinsuranceCodeList":[""],"cinsuranceCodeBackList":[""],"safe":1,"sex":"female","identityVaildDate":"2015-11-30","nationality":"CN","nationalityCn":"中国大陆","surName":"LI","givenName":"DAN","certificateCountry":"CN","certificateCountryCn":"中国大陆","insuranceCnt":3}]}],"contactInfo":{"creatorCn":"测试","creatorPhone":"158****6097","contactEmail":"j****@qq.con"},"orderBaseInfo":{"orderCode":9808641074,"orderMoney":24039,"paymentMethod":"1","placeOrderDateTime":"2015-07-30 16:10:55","orderStatus":1,"isSafe":1,"modifiedDate":"2015-07-30","modifiedTime":"16:11:05"},"provisionResult":{"endorseRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"允许。","type":""}}],"noshowRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"退票：收取手续费2000人民币。更改：收取手续费2000人民币。","type":""}}],"refundRules":[{"com.jd.airplane.domain.intl.IntelRule":{"rule":"允许，收取手续费1000人民币。","type":""}}]},"dispatchInfo":{"name":"测试","deliveryType":1,"mobile":"158****6097","postcode":"","counterInfoId":0,"printDate":"2015-10-08 14:10:00.0 CST","insurInvoice":0,"usuaId":0},"orderViewPriceInfo":{"adultPrice":6396,"adultTaxation":1527,"childPrice":0,"childTaxation":0,"adultNum":3,"childNum":0,"adultPriceTotal":0,"childPriceTotal":0,"insurancePrice":30,"insuranceTotalNum":9,"insuranceTotalPrice":0,"total":0},"orderViewBackTicketInfoList":[""],"orderDetailPaymentInfoMO":{"totalOrderMoney":24039,"totalDiscountMoney":0,"balanceMoney":0,"payOrderMoney":24039},"result":"true","degradeFlag":false}}';
+//init(sfsdfdsf);
+
+
+
+</script>
+
+</html>
+
+
+
+<script type="text/javascript" defer>
+
+
+
+try{
+
+    clientExecute(function(){
+
+	}, function(){
+
+	
+
+	}, "webFinished", "[]");
+
+}catch(e){}
+
+
+
+</script>
+

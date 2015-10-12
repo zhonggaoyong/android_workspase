@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/layout_head" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/header" android:onClick="onClick" style="@style/mainHeader">
+            <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/grey_d4" android:id="@id/button_add_new" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_address" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.meilishuo.app.views.CustomTextView android:gravity="center" android:id="@id/title" android:text="收货地址" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        </RelativeLayout>
+        <View style="@style/borderline2" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/addresswrap" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:id="@id/listview_address" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0px" android:footerDividersEnabled="false" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_address" android:background="@color/white" android:paddingTop="@dimen/empty_page_margin_top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.meilishuo.app.views.CustomTextView android:text="@string/address_empty_tips1" android:drawableTop="@drawable/shop_no_address_image" style="@style/EmptyDataFirstTextStyle" />
+                    <com.meilishuo.app.views.CustomTextView android:text="@string/address_empty_tips2" style="@style/EmptyDataSecondTextStyle" />
+                </LinearLayout>
+            </FrameLayout>
+        </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+        <com.meilishuo.app.views.CustomTextView android:id="@id/to_top" android:background="@drawable/to_top_icon" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="58.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

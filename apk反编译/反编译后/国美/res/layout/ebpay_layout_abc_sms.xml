@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@color/ebpay_translucence_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/ebpay_white" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <include layout="@layout/ebpay_view_title_bar" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/ebpay_text_normal" android:id="@id/tip_top_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/ebpay_valid_code_sent" />
+        <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/message_vcode_area" android:background="@drawable/ebpay_edit_text_view_bg" android:paddingLeft="@dimen/ebpay_line_margin_10" android:paddingRight="@dimen/ebpay_line_margin_10" android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_white_line_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/ebpay_line_margin_10" android:layout_marginRight="10.0dip">
+                    <TextView android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/ebpay_text_333333" android:gravity="left|center" android:id="@id/ebpay_vcode_tip" android:layout_width="@dimen/ebpay_fast_max_width" android:layout_height="wrap_content" android:text="@string/ebpay_input_sms_code" android:singleLine="true" />
+                    <EditText android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/ebpay_black" android:id="@id/ebpay_message_vcode_id" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/ebpay_input_sms_code" android:singleLine="true" android:maxLength="6" android:layout_weight="1.0" android:inputType="number" style="@style/EditCommonStyle" />
+                    <TextView android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/ebpay_click_text_color" android:id="@id/ebpay_get_vcode_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebpay_get_sms_code" android:singleLine="true" />
+                </LinearLayout>
+                <Button android:textSize="@dimen/ebpay_text_size_18" android:textColor="@color/ebpay_white" android:id="@id/next_btn" android:background="@drawable/ebpay_bg_confrim_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_bt_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/ebpay_line_margin_10" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/ebpay_line_margin_10" android:text="@string/ebpay_submit_pay" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/ebpay_click_text_color" android:layout_gravity="right" android:id="@id/tip_bottom_right" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/ebpay_get_sms_error" android:onClick="onTipBottomRightClick" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

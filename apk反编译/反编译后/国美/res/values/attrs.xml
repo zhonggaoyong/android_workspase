@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="numberPickerStyle" format="reference" />
+    <attr name="simpleRightViewMinHeight" format="integer" />
+    <attr name="simpleTitleCharMax" format="integer" />
+    <attr name="simpleTitleText" format="string" />
+    <attr name="simpleTitleTextColor" format="color" />
+    <attr name="simpleTitleTextSize" format="integer" />
+    <attr name="dividerColor" format="color" />
+    <attr name="dayBackground" format="reference" />
+    <attr name="dayTextColor" format="color" />
+    <attr name="titleTextColor" format="color" />
+    <attr name="border_width" format="dimension" />
+    <attr name="border_color" format="color" />
+    <attr name="border_overlay" format="boolean" />
+    <attr name="gifMoviewViewStyle" format="reference" />
+    <attr name="gif" format="reference" />
+    <attr name="paused" format="boolean" />
+    <attr name="titleText" format="string" />
+    <attr name="icon" format="reference" />
+    <attr name="arrow" format="boolean" />
+    <attr name="line" format="boolean" />
+    <attr name="content" format="string" />
+    <attr name="radious" format="integer" />
+    <attr name="drawPath" format="boolean" />
+    <attr name="solidColor" format="reference|color" />
+    <attr name="selectionDivider" format="reference" />
+    <attr name="selectionDividerHeight" format="dimension" />
+    <attr name="selectionDividersDistance" format="dimension" />
+    <attr name="internalMinHeight" format="dimension" />
+    <attr name="internalMaxHeight" format="dimension" />
+    <attr name="internalMinWidth" format="dimension" />
+    <attr name="internalMaxWidth" format="dimension" />
+    <attr name="internalLayout" format="reference" />
+    <attr name="virtualButtonPressedDrawable" format="reference" />
+    <attr name="pstsSelectTextColor" format="color" />
+    <attr name="pstsNormalTextColor" format="color" />
+    <attr name="pstsIndicatorColor" format="color" />
+    <attr name="pstsUnderlineColor" format="color" />
+    <attr name="pstsDividerColor" format="color" />
+    <attr name="pstsIndicatorHeight" format="dimension" />
+    <attr name="pstsUnderlineHeight" format="dimension" />
+    <attr name="pstsDividerPadding" format="dimension" />
+    <attr name="pstsTabPaddingLeftRight" format="dimension" />
+    <attr name="pstsScrollOffset" format="dimension" />
+    <attr name="pstsTabBackground" format="reference" />
+    <attr name="pstsShouldExpand" format="boolean" />
+    <attr name="pstsTextAllCaps" format="boolean" />
+    <attr name="input">
+        <enum name="字母" value="2" />
+        <enum name="数字" value="1" />
+        <enum name="符号" value="3" />
+    </attr>
+    <attr name="maxLength" format="integer" />
+    <attr name="psTextColor" format="color" />
+    <attr name="psChooseTextColor" format="color" />
+    <attr name="psTextSize" format="dimension" />
+    <attr name="psBackground" format="reference" />
+    <attr name="plTextColor" format="reference|color" />
+    <attr name="plLine" format="integer" />
+    <attr name="adapterViewBackground" format="reference|color" />
+    <attr name="headerBackground" format="reference|color" />
+    <attr name="headerTextColor" format="color" />
+    <attr name="mode">
+        <flag name="both" value="0x00000003" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+    </attr>
+    <attr name="ptrRefreshableViewBackground" format="reference|color" />
+    <attr name="ptrHeaderBackground" format="reference|color" />
+    <attr name="ptrHeaderTextColor" format="reference|color" />
+    <attr name="ptrHeaderSubTextColor" format="reference|color" />
+    <attr name="ptrMode">
+        <flag name="both" value="0x00000003" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+        <flag name="disabled" value="0x00000000" />
+        <flag name="manualOnly" value="0x00000004" />
+        <flag name="pullFromEnd" value="0x00000002" />
+        <flag name="pullFromStart" value="0x00000001" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean" />
+    <attr name="ptrDrawable" format="reference" />
+    <attr name="ptrDrawableStart" format="reference" />
+    <attr name="ptrDrawableEnd" format="reference" />
+    <attr name="ptrOverScroll" format="reference|boolean" />
+    <attr name="ptrHeaderTextAppearance" format="reference" />
+    <attr name="ptrSubHeaderTextAppearance" format="reference" />
+    <attr name="ptrAnimationStyle">
+        <flag name="custom" value="0x00000002" />
+        <flag name="flip" value="0x00000001" />
+        <flag name="rotate" value="0x00000000" />
+    </attr>
+    <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+    <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+    <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+    <attr name="ptrAdapterViewBackground" format="reference|color" />
+    <attr name="ptrDrawableTop" format="reference" />
+    <attr name="ptrDrawableBottom" format="reference" />
+    <attr name="isstepone" format="boolean" />
+    <attr name="steponetv" format="string" />
+    <attr name="steptwotv" format="string" />
+    <attr name="thumb" format="reference" />
+    <attr name="track" format="reference" />
+    <attr name="textOn" format="string" />
+    <attr name="textOff" format="string" />
+    <attr name="thumbTextPadding" format="dimension" />
+    <attr name="switchTextAppearance" format="reference" />
+    <attr name="switchMinWidth" format="dimension" />
+    <attr name="switchPadding" format="dimension" />
+    <attr name="switchStyle" format="reference" />
+    <attr name="selected" format="boolean" />
+    <attr name="fullLength" format="boolean" />
+    <attr name="text" format="string" />
+    <attr name="textColor" format="reference|color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="textStyle">
+        <flag name="bold" value="0x00000001" />
+        <flag name="italic" value="0x00000002" />
+        <flag name="normal" value="0x00000000" />
+    </attr>
+    <attr name="typeface">
+        <enum name="normal" value="0" />
+        <enum name="monospace" value="3" />
+        <enum name="sans" value="1" />
+        <enum name="serif" value="2" />
+    </attr>
+    <attr name="textColorHighlight" format="reference|color" />
+    <attr name="textColorHint" format="reference|color" />
+    <attr name="textColorLink" format="reference|color" />
+    <attr name="textAllCaps" format="boolean" />
+    <attr name="state_selectable" format="boolean" />
+    <attr name="state_current_month" format="boolean" />
+    <attr name="state_today" format="boolean" />
+    <attr name="state_range_first" format="boolean" />
+    <attr name="state_range_middle" format="boolean" />
+    <attr name="state_range_last" format="boolean" />
+    <attr name="state_highlighted" format="boolean" />
+    <attr name="normalColor" format="reference" />
+    <attr name="selectColor" format="reference" />
+    <attr name="indicatorSize" format="dimension" />
+    <attr name="indicatorSpacing" format="dimension" />
+    <attr name="disable_check_matchbuy" format="boolean" />
+    <attr name="simpleEditText" format="string" />
+    <attr name="simpleEditTextSize" format="integer" />
+    <attr name="simpleEditTextColor" format="color" />
+    <attr name="simpleEditHintText" format="string" />
+    <attr name="simpleEditHintTextColor" format="color" />
+    <attr name="buttonText" format="string" />
+    <attr name="buttonTextSize" format="integer" />
+    <attr name="buttonTextColor" format="color" />
+    <attr name="simpleValueText" format="string" />
+    <attr name="simpleValueTextSize" format="integer" />
+    <attr name="simpleValueTextColor" format="color" />
+    <attr name="stepsReference" format="reference" />
+</resources>

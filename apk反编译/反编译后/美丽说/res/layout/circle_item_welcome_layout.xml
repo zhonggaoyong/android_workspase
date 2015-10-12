@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/circle_welcome_bg" android:paddingLeft="23.0dip" android:paddingRight="23.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="13.0dip">
+        <ImageView android:id="@id/circle_icon" android:layout_width="106.0dip" android:layout_height="106.0dip" android:layout_marginTop="33.0dip" android:src="@drawable/default_avatar_round" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="20.0sp" android:textColor="#ff333333" android:id="@id/circle_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:singleLine="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff666666" android:id="@id/circle_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:singleLine="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/circle_des" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:maxLines="4" android:lineSpacingMultiplier="1.2" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="#ffff7a9a" android:gravity="center" android:id="@id/circle_sell_tips" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:minHeight="30.0dip" android:text="@string/circle_sell_tips" android:singleLine="true" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+</FrameLayout>

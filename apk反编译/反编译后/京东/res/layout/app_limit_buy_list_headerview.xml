@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/transfer" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="93.5dip" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/limitbuy_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="110.0dip" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_countdown" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

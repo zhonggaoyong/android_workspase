@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="17.0dip" android:layout_below="@id/common_top_layout">
+        <EditText android:textSize="15.0sp" android:textColor="@color/main_default_black_text_color" android:gravity="top" android:id="@id/comment_reply_edittext" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="textMultiLine" />
+    </LinearLayout>
+</RelativeLayout>

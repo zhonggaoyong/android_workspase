@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bottom_linear" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/middle_relay" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.suning.mobile.ebuy.goodsdetail.ui.evaluate.OldCustomGallery android:layout_gravity="center" android:id="@id/big_gallery" android:paddingTop="@dimen/pub_margin_or_padding_space_thirty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="1.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/top_linear" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:background="@color/white" android:padding="@dimen/pub_margin_or_padding_space_two" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_thirty">
+            <ImageView android:id="@id/gallery_ind_0" android:layout_width="@dimen/pub_margin_or_padding_space_ten" android:layout_height="@dimen/pub_margin_or_padding_space_ten" android:src="@drawable/detail_yuandian2_img" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_1" android:layout_width="@dimen/pub_margin_or_padding_space_ten" android:layout_height="@dimen/pub_margin_or_padding_space_ten" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/detail_yuandian_img" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_2" android:layout_width="@dimen/pub_margin_or_padding_space_ten" android:layout_height="@dimen/pub_margin_or_padding_space_ten" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/detail_yuandian_img" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_3" android:layout_width="@dimen/pub_margin_or_padding_space_ten" android:layout_height="@dimen/pub_margin_or_padding_space_ten" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/detail_yuandian_img" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_4" android:layout_width="@dimen/pub_margin_or_padding_space_ten" android:layout_height="@dimen/pub_margin_or_padding_space_ten" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/detail_yuandian_img" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_5" android:layout_width="@dimen/pub_margin_or_padding_space_ten" android:layout_height="@dimen/pub_margin_or_padding_space_ten" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/detail_yuandian_img" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_6" android:layout_width="@dimen/pub_margin_or_padding_space_ten" android:layout_height="@dimen/pub_margin_or_padding_space_ten" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/detail_yuandian_img" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_7" android:layout_width="@dimen/pub_margin_or_padding_space_ten" android:layout_height="@dimen/pub_margin_or_padding_space_ten" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/detail_yuandian_img" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_8" android:layout_width="@dimen/pub_margin_or_padding_space_ten" android:layout_height="@dimen/pub_margin_or_padding_space_ten" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/detail_yuandian_img" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_9" android:layout_width="@dimen/pub_margin_or_padding_space_ten" android:layout_height="@dimen/pub_margin_or_padding_space_ten" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/detail_yuandian_img" android:scaleType="fitXY" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

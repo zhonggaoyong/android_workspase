@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="huahuaurl">
+        <item>huahuaapi</item>
+        <item>hualab</item>
+    </string-array>
+    <string-array name="pushurl">
+        <item>pushuserapi</item>
+        <item>pushlab</item>
+    </string-array>
+    <string-array name="moburl">
+        <item>mobapi</item>
+        <item>apilab</item>
+        <item>mobapi.lab1</item>
+        <item>mobapi.lab2</item>
+        <item>mobapi.lab3</item>
+        <item>mobapi.lab4</item>
+        <item>mobapi.lab5</item>
+        <item>mobapi.lab6</item>
+        <item>mobapi.lab7.qalab</item>
+        <item>mobapi.lab8.qalab</item>
+        <item>mobapi.lab9.qalab</item>
+        <item>mobapi.devlab1</item>
+        <item>mobapi.devlab2</item>
+        <item>mobapi.devlab3</item>
+        <item>mobapi.devlab4</item>
+        <item>mobapi.devlab5</item>
+        <item>snakemob.xjdev</item>
+        <item>mobapi.pmlab1</item>
+        <item>mobapi.pmlab2</item>
+        <item>mobapi.pmlab3</item>
+        <item>mobapi.pmlab4</item>
+        <item>mobapi.pmlab5</item>
+    </string-array>
+    <string-array name="dootaurl">
+        <item>doota</item>
+        <item>dootalab</item>
+        <item>doota.lab1</item>
+        <item>doota.lab2</item>
+        <item>doota.lab3</item>
+        <item>doota.lab4</item>
+        <item>doota.lab5</item>
+        <item>doota.lab6</item>
+        <item>doota.lab7.qalab</item>
+        <item>doota.lab8.qalab</item>
+        <item>doota.lab9.qalab</item>
+        <item>doota.devlab1</item>
+        <item>doota.devlab2</item>
+        <item>doota.devlab3</item>
+        <item>doota.devlab4</item>
+        <item>doota.devlab5</item>
+        <item>snakedoota.xjdev</item>
+        <item>doota.pmlab1</item>
+        <item>doota.pmlab2</item>
+        <item>doota.pmlab3</item>
+        <item>doota.pmlab4</item>
+        <item>doota.pmlab5</item>
+        <item>doota-back</item>
+        <item>doota.hailongchen.rdlab</item>
+    </string-array>
+    <string-array name="accounturl">
+        <item>account</item>
+        <item>accountlab</item>
+        <item>account.lab1</item>
+        <item>account.lab2</item>
+        <item>account.lab3</item>
+        <item>account.lab4</item>
+        <item>account.lab5</item>
+        <item>account.lab6</item>
+        <item>account.lab7.qalab</item>
+        <item>account.lab8.qalab</item>
+        <item>account.lab9.qalab</item>
+        <item>account.devlab1</item>
+        <item>account.devlab2</item>
+        <item>account.devlab3</item>
+        <item>account.devlab4</item>
+        <item>account.devlab5</item>
+        <item>account.pmlab1</item>
+        <item>account.pmlab2</item>
+        <item>account.pmlab3</item>
+        <item>account.pmlab4</item>
+        <item>account.pmlab5</item>
+    </string-array>
+    <string-array name="imurl">
+        <item>im</item>
+        <item>imlab</item>
+        <item>imdev</item>
+        <item>im.devlab5</item>
+        <item>im.devlab6</item>
+    </string-array>
+    <string-array name="fastPayUrl">
+        <item>mpay</item>
+        <item>test.mpay</item>
+        <item>qa.mpay</item>
+        <item>qa.mpay2</item>
+        <item>qa.mpay3.qalab</item>
+        <item>mpay-back</item>
+    </string-array>
+    <string-array name="wapurl">
+        <item>zhifu</item>
+        <item>zhifu.newlab</item>
+        <item>zhifu.bizfe</item>
+        <item>zhifu.devlab1</item>
+        <item>zhifu.devlab3</item>
+        <item>zhifu.lab1</item>
+        <item>zhifu.lab2</item>
+        <item>zhifu.lab3</item>
+        <item>zhifu.lab4</item>
+        <item>zhifu.lab5</item>
+        <item>zhifu.lab6</item>
+        <item>zhifu.lab7.qalab</item>
+        <item>zhifu.lab8.qalab</item>
+        <item>zhifu.lab9.qalab</item>
+        <item>zhifu-back</item>
+    </string-array>
+    <string-array name="openmallapi">
+        <item>openmallapi</item>
+        <item>openmalllab</item>
+    </string-array>
+    <string-array name="filter_name">
+        <item>原图</item>
+        <item>SnowWhite</item>
+        <item>Belle</item>
+        <item>Cinderella</item>
+        <item>Arendelle</item>
+        <item>Tiana</item>
+        <item>Jasmine</item>
+        <item>MuLan</item>
+    </string-array>
+    <array name="filter_img">
+        <item>@drawable/filter_normal</item>
+        <item>@drawable/filter_beauty</item>
+        <item>@drawable/filter_warm</item>
+        <item>@drawable/filter_sweety</item>
+        <item>@drawable/filter_japan</item>
+        <item>@drawable/filter_inkwell</item>
+        <item>@drawable/filter_jasmine</item>
+        <item>@drawable/filter_mulan</item>
+    </array>
+    <string-array name="filter_class">
+        <item>com.mlsimage.filter.MLSFilter</item>
+        <item>com.mlsimage.filter.MLSBeautyFilter</item>
+        <item>com.mlsimage.filter.MLSWarmFilter</item>
+        <item>com.mlsimage.filter.MLSSweetyFilter</item>
+        <item>com.mlsimage.filter.MLSJapanFilter</item>
+        <item>com.mlsimage.filter.MLSMonochromeFilter</item>
+        <item>com.mlsimage.filter.MLSEarlybirdFilter</item>
+        <item>com.mlsimage.filter.MLSAmaroFilter</item>
+    </string-array>
+    <string-array name="select_sort_key">
+        <item>hot</item>
+        <item>new</item>
+        <item>boom</item>
+    </string-array>
+    <array name="vip_channels" />
+    <string-array name="qatest">
+        <item>yingpeng.qalab</item>
+        <item>linbai.qalab</item>
+        <item>yunyunli.qalab</item>
+        <item>huanzeng.qalab</item>
+        <item>yanchen.qalab</item>
+        <item>yananli.qalab</item>
+        <item>yaoshi.qalab</item>
+    </string-array>
+</resources>

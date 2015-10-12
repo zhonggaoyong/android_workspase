@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:scrollbarSize="3.0dip" android:scrollbarThumbVertical="@color/lib_game_charge_dialog_scrollbarThumbVertical" android:gravity="center" android:id="@id/lib_game_charge_dialog_listview" android:paddingBottom="29.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="237.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="1.5dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/dialog_close" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/lib_game_charge_dialog_icon_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

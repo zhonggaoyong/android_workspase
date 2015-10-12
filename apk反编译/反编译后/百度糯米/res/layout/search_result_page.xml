@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bainuo.view.RelativeLayoutWithTouchIntercept android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_result_filter_chooser_margin" android:layout_width="fill_parent" android:layout_height="@dimen/tuanlist_filter_bar_height" />
+    <FrameLayout android:id="@id/search_result_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_result_filter_chooser_margin" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/search_result_hint_layout" android:background="#fffff5df" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_result_filter_chooser_margin" android:layout_alignWithParentIfMissing="true">
+        <ImageView android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:id="@id/search_result_hint_high_exact_layout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/search_result_hint_high_exact_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/search_result_hint_high_exact" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/search_result_hint_low_exact_layout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/search_result_hint_low_exact_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/search_result_hint_low_exact" />
+            <HorizontalScrollView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/search_result_hint_low_exact_words_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+            </HorizontalScrollView>
+            <ImageView android:id="@id/search_result_hint_low_exact_hide" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/delete" android:scaleType="centerInside" />
+        </LinearLayout>
+        <ImageView android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <com.baidu.bainuo.tuanlist.filter.FilterChooser android:id="@id/search_result_filter_chooser" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</com.baidu.bainuo.view.RelativeLayoutWithTouchIntercept>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:nuomi="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/submit_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/submit_commit_area_devider" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/submit_cartinfo_area" android:background="@color/paycart_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/pay_submitcart_devider" />
+                <LinearLayout android:orientation="vertical" android:id="@id/submit_cartinfo_item_area" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/paycart_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit_cart_price_total" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/paycart_black" android:id="@id/submit_cartinfo_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit_cart_price_total" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/pay_submitcart_devider" />
+            </LinearLayout>
+            <include android:id="@id/submit_property_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/pay_submitcart_area_property" />
+            <RelativeLayout android:id="@id/submit_phone_area" android:background="@drawable/selector_list_row" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_marginTop="10.0dip">
+                <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" layout="@layout/pay_submitcart_devider" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/paycart_black" android:id="@id/submit_phone_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/submit_phone" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/paycart_black" android:id="@id/submit_phone_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toRightOf="@id/submit_phone_title" android:layout_centerVertical="true" />
+                <View android:id="@id/submit_phone_right_space" android:layout_width="12.0dip" android:layout_height="1.0dip" android:layout_alignParentRight="true" />
+                <ImageView android:id="@id/submit_phone_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_toLeftOf="@id/submit_phone_right_space" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/paycart_black" android:id="@id/submit_phone_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/submit_phone_change" android:includeFontPadding="false" android:layout_toLeftOf="@id/submit_phone_arrow" android:layout_centerVertical="true" />
+                <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" layout="@layout/pay_submitcart_devider" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/pay_insurance_area" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/insurance_icon" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/order_list_item_status_font_color" android:layout_gravity="center_vertical" android:id="@id/pay_insurance_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:includeFontPadding="false" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/order_list_item_status_font_color" android:layout_gravity="center_vertical" android:id="@id/pay_insurance_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/submit_commit_area_devider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/submit_commit_area" layout="@layout/pay_submitcart_devider" />
+    <RelativeLayout android:id="@id/submit_commit_area" android:background="@color/paycart_grey_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="13.0sp" android:textColor="@color/paycart_black" android:id="@id/submit_commit_area_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit_cart_commit_total" android:includeFontPadding="false" android:layout_alignBaseline="@id/submit_commit_area_price" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/order_list_pink" android:id="@id/submit_commit_area_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toRightOf="@id/submit_commit_area_title" />
+        </RelativeLayout>
+        <Button android:textSize="16.0sp" android:textColor="@color/paycart_white" android:id="@id/submit_commit_area_btn" android:background="@drawable/submit_cart_confirm_selector" android:layout_width="94.0dip" android:layout_height="49.0dip" android:text="@string/submit_commit_btn" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/submit_bottom_stub" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

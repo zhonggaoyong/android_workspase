@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <com.baidu.mapapi.map.MapView android:id="@id/bmapsView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

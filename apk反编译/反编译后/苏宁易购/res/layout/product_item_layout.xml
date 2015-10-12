@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/layout_diverd" android:background="@drawable/divider_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/pub_margin_or_padding_space_five" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_five" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/product_detail_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/logistics_detail_product_img_layout" android:background="@drawable/goods_bg" android:padding="@dimen/pub_margin_or_padding_space_two" android:layout_width="@dimen/pub_margin_or_padding_space_eighty" android:layout_height="@dimen/pub_margin_or_padding_space_eighty">
+            <ImageView android:id="@id/logistics_detail_product_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_background_small" android:scaleType="fitXY" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:id="@id/logistics_detail_product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" android:layout_marginTop="@dimen/ios_public_space_6px" android:layout_toRightOf="@id/logistics_detail_product_img_layout" />
+    </RelativeLayout>
+</LinearLayout>

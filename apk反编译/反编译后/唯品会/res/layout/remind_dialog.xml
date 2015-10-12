@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="280.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="49.0dip" android:src="@drawable/sku_notify_bg_image" android:scaleType="fitCenter" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/image" android:layout_width="151.0dip" android:layout_height="190.0dip" android:layout_marginBottom="7.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:id="@id/remind_goods_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip" android:text="商品描述" />
+        <TextView android:textSize="17.0dip" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/remind_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip" android:text="@string/sku_notify_pop_title" />
+        <View android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TableRow android:gravity="center" android:id="@id/multi_button" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <Button android:textSize="16.0dip" android:textColor="#ff585c64" android:id="@id/cancel_btn" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sku_notify_pop_cancel" android:layout_weight="1.0" />
+            <View android:background="#ffbfbfbf" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <Button android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ffe4007f" android:id="@id/ok_btn" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sku_notify_pop_add" android:layout_weight="1.0" />
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>

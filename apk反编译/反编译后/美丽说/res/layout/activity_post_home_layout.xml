@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <RelativeLayout android:id="@id/home_header" style="@style/mainHeader">
+        <com.meilishuo.app.views.SlidebarView android:id="@id/sidebar" android:layout_centerVertical="true" style="@style/SlideBarTtyle" />
+        <com.meilishuo.app.home.view.HomeTabViewWithTip android:id="@id/home_tab" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:defaultColor="@color/grey_d3" app:selectColor="@color/pink" app:lineColor="@color/pink" app:animation="true" app:tabTextSize="16.0sp" app:lineBeyond="5.0dip" app:lineWidth="@dimen/home_tab_line_width" />
+        <com.meilishuo.app.views.GoShoppingcartView android:id="@id/to_shoppingcart_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.NewMessageTipView android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/to_shoppingcart_btn" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/camera" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/camera" android:layout_toLeftOf="@id/to_shoppingcart_btn" android:layout_centerVertical="true" android:onClick="onClick" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/page_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-1.0dip" android:layout_below="@id/home_header" />
+</RelativeLayout>

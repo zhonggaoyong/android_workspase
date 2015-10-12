@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title" />
+    <View android:id="@id/item_line_top" android:visibility="gone" android:layout_marginTop="10.0dip" style="@style/line1" />
+    <ListView android:id="@id/my_order_all_corner_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#ffcccccc" android:dividerHeight="1.0dip" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+    <View android:id="@id/item_line_bottom" android:visibility="gone" style="@style/line1" />
+    <ListView android:id="@id/my_order_all_list" android:padding="14.0dip" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@color/transparent" android:dividerHeight="14.0dip" />
+    <TextView android:gravity="center" android:id="@id/no_order" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

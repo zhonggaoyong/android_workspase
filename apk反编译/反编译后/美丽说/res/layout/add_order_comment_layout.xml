@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/mls_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+            <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+            <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="@string/order_add_comment_title" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_head">
+        <include layout="@layout/networkerror_default_layout" />
+    </FrameLayout>
+    <ScrollView android:id="@id/scrollbar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_head">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip">
+            <View style="@style/FirstDividerViewStyle" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d4_t65" android:layout_gravity="center_horizontal" android:id="@id/ctime" android:background="@drawable/order_add_comment_insure_bg" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_goods_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.meilishuo.app.views.CustomTextView android:layout_gravity="center_horizontal" android:id="@id/btn_submit" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:text="@string/order_add_comment_submit" style="@style/BtnPinkStyle" />
+            </LinearLayout>
+            <View android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" style="@style/FirstDividerViewStyle" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

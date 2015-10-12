@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/util_view_header" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:text="@string/pls_choose_one_bind_phone" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="@string/merge_bind_phone_tip" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/public_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebuy_phone" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/public_text_color" android:id="@id/tv_phone_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="13012344321" android:layout_weight="1.0" />
+        <ImageView android:id="@id/btn_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_radio_card" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/public_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/merge_card_phone" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/public_text_color" android:id="@id/tv_phone_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="13012344321" android:layout_weight="1.0" />
+        <ImageView android:id="@id/btn_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_radio_card" />
+    </LinearLayout>
+    <Button android:textSize="20.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_confirm" android:background="@drawable/add_to_shop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="18.0dip" android:text="@string/btn_ok" />
+</LinearLayout>

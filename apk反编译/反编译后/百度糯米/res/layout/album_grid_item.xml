@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.bainuo.album.ThumbnailImageView android:id="@id/img_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_launcher" android:scaleType="fitXY" />
+    <CheckBox android:layout_gravity="right" android:id="@id/check_thumbnail" android:background="@drawable/album_grid_cb" android:focusable="false" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="6.0dip" android:button="@null" />
+</FrameLayout>

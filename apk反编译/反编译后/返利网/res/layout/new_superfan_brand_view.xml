@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip">
+        <ImageView android:id="@id/iv_new_brand_display" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/tv_already_buy" android:background="@drawable/super_buy_bg" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+        <ImageView android:id="@id/iv_new_brand_new" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_below="@id/iv_new_brand_display" />
+        <RelativeLayout android:id="@id/rl_new_brand_bottom_container" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/rlrlrl" android:layout_width="74.0dip" android:layout_height="50.0dip">
+                <ImageView android:id="@id/iv_new_brand_logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_new_brand_bottom" android:background="@drawable/bg_round_corner_rightbottom" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_toRightOf="@id/rlrlrl" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/iv_new_fanli_range_prefix" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/superfan_prefix" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <com.fanli.android.view.TangFont2TextView android:textSize="14.0sp" android:textColor="@color/superfan_brand_red" android:id="@id/tv_new_fanli_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_new_fanli_range_prefix" android:layout_centerVertical="true" />
+                <com.fanli.android.view.TangFont2TextView android:textColor="@color/superfan_brand_red" android:id="@id/tv_new_fanli_range_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_new_fanli_range" android:layout_centerVertical="true" />
+                <com.fanli.android.view.TangFontTextView android:textSize="11.0sp" android:textColor="@color/superfan_brand_red" android:id="@id/tv_new_brand_discount_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <com.fanli.android.view.TangFont2TextView android:textSize="11.0sp" android:textColor="@color/superfan_brand_red" android:id="@id/tv_new_brand_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_toLeftOf="@id/tv_new_brand_discount_suffix" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_new_brand_bottom_upper" android:background="@color/semi_transparent_black" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_toRightOf="@id/rlrlrl" android:layout_above="@id/rl_new_brand_bottom">
+                <com.fanli.android.view.TangFontTextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/tv_new_brand_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

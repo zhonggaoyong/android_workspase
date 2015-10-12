@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_nostory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_story_my_nostory" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_other_nostory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_story_my_other_nostory" />
+    <Button android:textSize="@dimen/lib_story_t_high_size" android:textColor="@color/lib_story_font_white" android:gravity="center" android:id="@id/btn_go" android:background="@drawable/lib_story_btn_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+</LinearLayout>

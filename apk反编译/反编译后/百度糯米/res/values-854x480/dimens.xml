@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="refund_title_text_size">14.0sp</dimen>
+    <dimen name="refund_time_text_size">13.0sp</dimen>
+</resources>

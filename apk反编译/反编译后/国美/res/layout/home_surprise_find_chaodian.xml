@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/chaodian_main_layout" android:background="@color/home_surprise_find_chaodian_color" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/chaodian_main_top" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/find_chaodian_main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/find_chaodian_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/surprise_arrow_small" android:drawablePadding="5.0dip" android:layout_alignParentLeft="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/cahodian_image_linearview" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/chaodian_main_top">
+        <RelativeLayout android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/home_order_show_comment_user_icon" android:background="@drawable/home_surprise_order_show_head_circle_bg" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="2.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/home_chaodian_user_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/home_order_show_comment_user_icon">
+                <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:id="@id/home_chaodian_user_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:lines="1" />
+                <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:id="@id/home_chaodian_public_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="1.0dip" android:lines="1" android:layout_below="@id/home_chaodian_user_name_text" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/home_chaodian_user_layout">
+                <RelativeLayout android:id="@id/home_find_chaodian_comment_and_like_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:gravity="center_vertical" android:id="@id/home_find_like_num" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:drawableLeft="@drawable/home_surprise_find_chaodian_like_icon" android:drawablePadding="8.0dip" android:layout_alignParentBottom="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:gravity="center_vertical" android:id="@id/home_find_comment_num" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="0" android:drawableLeft="@drawable/home_surprise_find_chaodian_comment_icon" android:drawablePadding="8.0dip" android:layout_toRightOf="@id/home_find_like_num" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <com.gome.ecmall.custom.LineTextViewCustom android:textSize="12.0sp" android:textColor="#ff333333" android:id="@id/home_surprise_find_chaodian_desc_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="40.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/chaodian_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

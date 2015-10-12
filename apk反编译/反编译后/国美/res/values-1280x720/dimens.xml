@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="about_text_size">18.0sp</dimen>
+    <dimen name="bar_code_message_bottom">90.0dip</dimen>
+    <dimen name="category_first_class_item_height">110.0dip</dimen>
+    <dimen name="coupon_cost_marginRight">24.0dip</dimen>
+    <dimen name="default_text_size">16.0sp</dimen>
+    <dimen name="dialog_checkbox_minheight">30.0dip</dimen>
+    <dimen name="dialog_checkbox_padding">30.0dip</dimen>
+    <dimen name="dialog_radiobutton_padding">30.0dip</dimen>
+    <dimen name="header_title_text_size">22.0sp</dimen>
+    <dimen name="homepage_entries_height">315.0dip</dimen>
+    <dimen name="hot_promotion_item_height">450.0dip</dimen>
+    <dimen name="hot_promotion_item_img_height">280.0dip</dimen>
+    <dimen name="limitbuy_header_default_height">175.0dip</dimen>
+    <dimen name="limitbuy_header_refresh_height">70.0dip</dimen>
+    <dimen name="limitbuy_image_padding">11.0dip</dimen>
+    <dimen name="limitbuy_info_padding_left">10.0dip</dimen>
+    <dimen name="limitbuy_info_padding_right">10.0dip</dimen>
+    <dimen name="limitbuy_progress_bar_width">85.0dip</dimen>
+    <dimen name="subtitle_text_size">18.0sp</dimen>
+    <dimen name="tab_padding_left_right">55.0dip</dimen>
+    <dimen name="homepage_image_margin_top">12.0dip</dimen>
+</resources>

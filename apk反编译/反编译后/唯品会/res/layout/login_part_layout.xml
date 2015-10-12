@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/app_textsize_small" android:textColor="#ffe32818" android:id="@id/login_error_tips" android:background="@null" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="6.0dip" android:text="" android:drawableLeft="@drawable/icon_failure_least" android:drawablePadding="6.0dip" android:layout_alignParentTop="true" />
+    <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/pule_black" android:id="@id/normal_tips" android:background="@null" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="8.0dip" android:text="" android:drawablePadding="15.0dip" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/login_error_tips">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/app_text_black_new_ui" android:gravity="center" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" android:text="账号" />
+                    <EditText android:textSize="16.0dip" android:textColor="@color/app_text_new_black" android:textColorHint="@color/app_text_edittext_gray" android:id="@id/username" android:background="@null" android:paddingLeft="9.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="" android:hint="@string/login_username_hint" android:singleLine="true" android:maxLength="35" android:layout_weight="1.0" android:imeOptions="actionNext" />
+                    <ImageView android:id="@id/username_del" android:padding="5.0dip" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/new_ic_edit_clear" />
+                </LinearLayout>
+                <View android:background="@drawable/favor_item_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/app_text_black_new_ui" android:gravity="center" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" android:text="密码" />
+                    <EditText android:textSize="16.0dip" android:textColor="@color/app_text_new_black" android:textColorHint="@color/app_text_edittext_gray" android:id="@id/password" android:background="@null" android:paddingLeft="9.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:text="" android:hint="@string/login_password_hint" android:singleLine="true" android:maxLength="25" android:layout_weight="1.0" android:inputType="textPassword" android:imeOptions="actionSend" android:imeActionLabel="登录" />
+                    <ImageView android:id="@id/password_del" android:padding="5.0dip" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/new_ic_edit_clear" />
+                    <ImageView android:id="@id/password_vis" android:padding="5.0dip" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/pw_visible" />
+                </LinearLayout>
+                <View android:background="@drawable/favor_item_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <Button android:id="@id/login" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/start_string1" style="@style/submit_red_big_button_style_for_login" />
+            <RelativeLayout android:gravity="center_vertical" android:paddingLeft="1.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/auto" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/auto_image" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/new_cb_checked" />
+                    <TextView android:textSize="@dimen/app_textsize_main_new" android:textColor="@color/app_text_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/login_autologin_info" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/app_textsize_small" android:textColor="#ff98989f" android:id="@id/btn_findpassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/forget_password" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="34.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff98989f" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="还没有账号?" android:drawablePadding="8.0dip" />
+                <TextView android:textSize="@dimen/app_textsize_main_new" android:textColor="@color/vip_red" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_regist" android:background="@drawable/btn_line_third_normal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:text="手机注册" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/pay_head" layout="@layout/vipnew_header" />
+    <include android:id="@id/layout_error_tips" android:visibility="gone" layout="@layout/payment_fail_tips" />
+    <include android:id="@id/layout_error" layout="@layout/payment_fail" />
+    <include android:id="@id/layout_error_by_pay" layout="@layout/payment_fail_by_pay" />
+</LinearLayout>

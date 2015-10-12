@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.MyGridView android:id="@id/evaluate_grid" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:listSelector="@color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="3" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_0" android:textColor="@color/grey_d3" android:ellipsize="end" android:gravity="center" android:id="@id/item_text" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </RelativeLayout>
+</LinearLayout>

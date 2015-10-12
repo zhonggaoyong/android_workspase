@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_default_white_text_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_home_top_main" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/iv_home_gome_night_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_top_bg_new" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/home_top_logo_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/iv_home_top_logo" android:visibility="visible" android:layout_width="52.0dip" android:layout_height="wrap_content" android:src="@drawable/logo" />
+            <com.gome.ecmall.custom.GifMovieView android:id="@id/gif_gome_night" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/home_top_logo_layout" android:layout_centerVertical="true" android:alpha="0.9">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/home_homepage_top_search_layout" android:background="@drawable/category_product_question_search_frame" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                    <Button android:id="@id/home_homepage_btn_search_category" android:background="@drawable/home_search_category_bg_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:textColorHint="@color/hint_text_color" android:gravity="left|center" android:id="@id/et_home_top_search" android:background="@android:color/transparent" android:paddingLeft="6.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginRight="20.0dip" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionSearch" />
+                </LinearLayout>
+                <TextView android:id="@id/voice_top_search_imageView" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:drawableRight="@drawable/voice_top_microphone" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="voiceSearchClick" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_home_top_bar_search" android:visibility="visible" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/home_barcode_scan_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.gome.ecmall.home.product.detail.layout.DetailContainerView android:id="@id/home_container_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gome.ecmall.custom.AutoHideXScrollView android:id="@id/home_scroll_view" android:background="@android:color/transparent" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <LinearLayout android:orientation="vertical" android:id="@id/home_product_linear_view" android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.gome.ecmall.home.product.detail.layout.DetailContainerView>
+</LinearLayout>

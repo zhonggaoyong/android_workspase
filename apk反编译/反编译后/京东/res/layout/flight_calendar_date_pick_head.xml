@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/flight_splitline_h" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/top_tab_item_normal" android:layout_width="fill_parent" android:layout_height="@dimen/calendar_header_hight">
+        <TextView android:textSize="@dimen/calendar_text_size" android:textColor="@color/calendar_color_month_red" android:id="@id/tv_cal_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="label年" />
+        <TextView android:textSize="@dimen/calendar_text_size" android:textColor="@color/calendar_color_month_red" android:id="@id/tv_cal_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="label月" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="20.0dip">
+        <TextView android:textColor="#ff898989" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="日" android:layout_weight="1.0" />
+        <TextView android:textColor="#ff898989" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="一" android:layout_weight="1.0" />
+        <TextView android:textColor="#ff898989" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="二" android:layout_weight="1.0" />
+        <TextView android:textColor="#ff898989" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="三" android:layout_weight="1.0" />
+        <TextView android:textColor="#ff898989" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="四" android:layout_weight="1.0" />
+        <TextView android:textColor="#ff898989" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="五" android:layout_weight="1.0" />
+        <TextView android:textColor="#ff898989" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="六" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@drawable/flight_splitline_h" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ware_list_item_img" android:layout_width="48.0dip" android:layout_height="60.0dip" />
+    <TextView android:textSize="@dimen/app_textsize_price" android:textColor="@color/pule_black" android:ellipsize="end" android:id="@id/ware_list_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/ware_list_item_img" />
+    <TextView android:textSize="@dimen/app_textsize_price" android:textColor="@color/app_text_price_secondary" android:ellipsize="end" android:id="@id/ware_list_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" android:layout_below="@id/ware_list_item_name" android:layout_alignLeft="@id/ware_list_item_name" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/ware_list_item_price" android:layout_alignLeft="@id/ware_list_item_price">
+        <TextView android:textSize="@dimen/app_textsize_price" android:textColor="@color/app_text_price_secondary" android:ellipsize="end" android:id="@id/ware_list_item_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/app_textsize_price" android:textColor="@color/vip_red" android:ellipsize="end" android:id="@id/ware_list_item_sku" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

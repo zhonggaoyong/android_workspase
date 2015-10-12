@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="@dimen/tuanlist_topic_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_centerInParent="true">
+        <RadioButton android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tuanlist_topic_left" android:background="@drawable/tuanlist_filter_topic_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="true" android:button="@null" android:text="全部" android:maxLines="1" android:layout_weight="1.0" style="@style/CategoryListTopicText" />
+        <RadioButton android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tuanlist_topic_middle" android:background="@drawable/tuanlist_filter_topic_middle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" android:text="活动1" android:maxLines="1" android:layout_weight="1.0" style="@style/CategoryListTopicText" />
+        <RadioButton android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tuanlist_topic_right" android:background="@drawable/tuanlist_filter_topic_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" android:text="活动2" android:maxLines="1" android:layout_weight="1.0" style="@style/CategoryListTopicText" />
+    </RadioGroup>
+</RelativeLayout>

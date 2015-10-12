@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jshop_concern_list_item_margin_left_right" android:layout_marginBottom="@dimen/jshop_concern_list_item_margin_left_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/jshop_coupons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/jshop_concern_item_first_coupon" android:background="@drawable/jshop_focus_coupon_blue_selector" android:layout_marginLeft="@dimen/jshop_concern_list_item_margin_left_right" style="@style/JshopConcernCouponItem">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/jshop_dynamic_coupon_name_size" android:textColor="@color/jshop_dynamic_dong_coupon_title_color" android:ellipsize="end" android:gravity="bottom" android:id="@id/jshop_concern_item_coupon_title_1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="优惠券" android:singleLine="true" android:layout_weight="2.0" />
+                <TextView android:textColor="@color/jshop_dynamic_dong_coupon_title_color" android:gravity="center_vertical" android:id="@id/jshop_concern_item_coupon_content_1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="" android:layout_weight="3.0" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_coupon_taken_01" android:background="@drawable/jshop_focus_coupon_grey_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/jshop_concern_item_second_coupon" android:background="@drawable/jshop_focus_coupon_blue_selector" android:layout_marginLeft="@dimen/jshop_concern_list_item_margin_left_right" style="@style/JshopConcernCouponItem">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/jshop_dynamic_coupon_name_size" android:textColor="@color/jshop_dynamic_dong_coupon_title_color" android:gravity="bottom" android:id="@id/jshop_concern_item_coupon_title_2" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="优惠券" android:layout_weight="2.0" />
+                <TextView android:textColor="@color/jshop_dynamic_dong_coupon_title_color" android:gravity="center_vertical" android:id="@id/jshop_concern_item_coupon_content_2" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="" android:layout_weight="3.0" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_coupon_taken_02" android:background="@drawable/jshop_focus_coupon_grey_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/jshop_more_coupon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/jshop_concern_item_coupon_height" android:layout_marginLeft="@dimen/jshop_concern_list_item_margin_left_right">
+            <Button android:textSize="@dimen/jshop_more_coupon_bt_text_size" android:textColor="#ff787878" android:id="@id/jshop_more_coupon_bt" android:background="#00000000" android:layout_width="@dimen/jshop_more_coupon_bt_width" android:layout_height="fill_parent" android:text="更多" android:drawableRight="@drawable/jshop_more_arrow" android:drawablePadding="0.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.jingdong.app.mall.utils.ui.view.bjhome.HomeViewPager android:id="@id/more_coupons_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_concern_item_coupon_height" />
+</LinearLayout>

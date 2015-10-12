@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="280.0dip" android:layout_height="126.0dip" android:src="@drawable/bonus_sellwin_password_pic" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/icon_success_least_small" />
+            <TextView android:textSize="22.0dip" android:textColor="@color/app_text_black_new_ui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/native_cart_bonus_use_success_title" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/app_text_black" android:gravity="center" android:id="@id/bonus_use_success_content" android:paddingLeft="21.0dip" android:paddingRight="21.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_marginBottom="60.0dip" android:lineSpacingExtra="2.0dip" android:lineSpacingMultiplier="1.0" />
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/app_textsize_button" android:textColor="@color/app_text_black" android:id="@id/cart_bonus_left_button" android:background="@drawable/button_bg_selector" android:layout_width="0.0dip" android:layout_height="54.0dip" android:text="@string/native_cart_bonus_dialog_left_bt" android:layout_weight="0.5" />
+            <View android:background="@color/divider" android:layout_width="0.5dip" android:layout_height="54.0dip" />
+            <Button android:textSize="@dimen/app_textsize_button" android:textColor="@color/app_text_black" android:id="@id/cart_bonus_right_button" android:background="@drawable/button_bg_selector" android:layout_width="0.0dip" android:layout_height="54.0dip" android:text="@string/native_cart_bonus_dialog_right_bt" android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

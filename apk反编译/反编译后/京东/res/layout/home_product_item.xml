@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/home_product_item_layout" android:background="@drawable/home_product_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/home_product_item_img" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/home_product_item_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ff6e6e6e" android:ellipsize="end" android:id="@id/home_product_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="9.0dip" android:lines="2" android:includeFontPadding="false" />
+        <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:background="@color/new_home_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="17.0dip" android:textColor="#fff15353" android:id="@id/home_product_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yangjiao" android:includeFontPadding="false" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@id/home_product_item_similar" android:background="@drawable/home_product_item_similar_selector" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recommend_item_similar" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/home_product_item_layout1" android:background="@drawable/home_product_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/home_product_item_img1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/home_product_item_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ff6e6e6e" android:ellipsize="end" android:id="@id/home_product_item_name1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="9.0dip" android:lines="2" android:includeFontPadding="false" />
+        <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:background="@color/new_home_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="17.0dip" android:textColor="#fff15353" android:id="@id/home_product_item_price1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yangjiao" android:includeFontPadding="false" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:id="@id/home_product_item_similar1" android:background="@drawable/home_product_item_similar_selector" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recommend_item_similar" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

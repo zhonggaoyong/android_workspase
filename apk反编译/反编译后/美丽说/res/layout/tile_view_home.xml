@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.KeepScaleImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.meilishuo.app.views.KeepScaleImageView android:id="@id/img_layer" android:background="@drawable/water_img_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/img_sold_out" android:background="@color/black_t30" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sold_out" android:scaleType="centerInside" android:layout_alignTop="@id/img" android:layout_alignBottom="@id/img" android:layout_centerHorizontal="true" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d1" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/buying_point" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" android:layout_below="@id/img" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/info" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="2" android:layout_below="@id/buying_point" android:lineSpacingMultiplier="1.2" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/price_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_below="@id/info">
+        <ImageView android:id="@id/ico_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/poster_ico_money" />
+        <TextView android:id="@id/price" style="@style/PhotoWallPriceTextStyle" />
+        <ImageView android:id="@id/iv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/goods_ico_like" />
+        <TextView android:id="@id/like" style="@style/PhotoWallLiKeTextStyle" />
+        <ImageView android:id="@id/iv_comment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/ico_comment_dress" />
+        <TextView android:id="@id/comment" android:visibility="gone" style="@style/PhotoWallLiKeTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/icon_lay" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

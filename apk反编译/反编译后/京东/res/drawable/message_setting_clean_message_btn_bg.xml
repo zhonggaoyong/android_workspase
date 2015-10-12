@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/message_setting_clean_message_btn_bg" />
+            <corners android:radius="2.0dip" />
+            <stroke android:width="1.0px" android:color="#fff94141" />
+        </shape>
+    </item>
+    <item android:bottom="1.0px">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffed4343" />
+            <corners android:radius="2.0dip" />
+        </shape>
+    </item>
+</layer-list>

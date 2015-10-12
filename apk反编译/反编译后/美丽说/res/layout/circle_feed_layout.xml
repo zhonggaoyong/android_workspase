@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <RelativeLayout android:id="@id/header" android:background="@color/white" android:onClick="onClick" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/circle_feed_title" android:maxWidth="155.0dip" android:singleLine="true" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <ImageView android:id="@id/circle_info" android:paddingLeft="7.0dip" android:paddingTop="13.0dip" android:paddingRight="13.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/talk_group" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/headerTextStyle" />
+        <ImageView android:id="@id/circle_share" android:paddingLeft="13.0dip" android:paddingTop="13.0dip" android:paddingRight="6.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/talk_share" android:layout_toLeftOf="@id/circle_info" android:layout_centerVertical="true" android:onClick="onClick" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <FrameLayout android:background="@color/grey_l3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/feed_refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.meilishuo.app.views.waterfall.MeilishuoWaterFallView android:id="@id/circle_feed_photo" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+                <include android:id="@id/tag_lay_placeholder" layout="@layout/home_tab_bar_layout" />
+                <com.meilishuo.app.views.CustomPageLoading android:id="@id/loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:id="@id/circle_chat_enter" android:background="@color/white_t95" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:background="@drawable/home_ico_post_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一起群聊" />
+    </LinearLayout>
+    <ImageView android:id="@id/btn_to_top" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/to_top_icon" android:layout_above="@id/circle_chat_enter" android:layout_alignParentRight="true" />
+</RelativeLayout>

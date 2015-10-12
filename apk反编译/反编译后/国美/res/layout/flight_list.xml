@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_layout" layout="@layout/vw_titlebar" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_white" android:ellipsize="marquee" android:gravity="center" android:id="@id/tv_leave_flight" android:background="@color/flight_common_orange_bg" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/top_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rl_title" android:background="@drawable/bg_flight_title" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_leave_flight">
+        <RelativeLayout android:id="@id/rl_last" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_last" android:background="@drawable/ic_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/tv_lastday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="前一天" android:layout_toRightOf="@id/iv_last" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/tv_lastprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/tv_lastday" android:layout_alignLeft="@id/tv_lastday" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_grey" android:ellipsize="marquee" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="2014/10/23 周五" android:singleLine="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_grey" android:id="@id/tv_todayprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/tv_date" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_next" android:background="@drawable/ic_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/tv_nextday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="后一天" android:layout_toLeftOf="@id/iv_next" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/tv_nextprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/tv_nextday" android:layout_alignRight="@id/tv_nextday" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_menu" android:layout_below="@id/rl_title">
+        <ExpandableListView android:id="@id/flight_list" android:background="@android:color/transparent" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_menu" android:background="@color/flight_common_black_bg" android:paddingLeft="20.0dip" android:paddingTop="8.0dip" android:paddingRight="20.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/flight_list_sift_text_selector" android:gravity="center" android:id="@id/tv_sift" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/flight_citylist_sift" android:drawableTop="@drawable/flight_list_sift_selector" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/flight_list_sift_text_selector" android:gravity="center" android:id="@id/tv_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/flight_list_time" android:drawableTop="@drawable/flight_list_sift_time_selector" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/flight_list_sift_text_selector" android:gravity="center" android:id="@id/tv_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/flight_list_price_low" android:drawableTop="@drawable/flight_list_sift_price_selector" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

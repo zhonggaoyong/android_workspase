@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/order_detail_info_item_title" android:text="@string/default_text" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/OrderDetailItemGreyTitle" />
+    <TextView android:gravity="right" android:id="@id/order_detail_info_item_value" android:text="@string/default_number" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/OrderDetailItemGreyValue" />
+</RelativeLayout>

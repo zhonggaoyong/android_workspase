@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip">
+        <ImageView android:id="@id/new_register_mobile_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shouji" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.gome.ecmall.business.login.layout.ClearEditText android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:textColorHint="@color/hint_text_color" android:id="@id/new_register_mobile_edit" android:background="@drawable/login_input_bg_selector" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="请输入手机号码" android:singleLine="true" android:maxLength="11" android:layout_toRightOf="@id/new_register_mobile_icon" android:inputType="number" />
+    </RelativeLayout>
+    <Button android:enabled="false" android:layout_gravity="center_horizontal" android:id="@id/new_register_get_code_button" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/reserve_get_phone_check_code" style="@style/Gome.Button.SolidRed.Style" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="45.0dip">
+        <CheckBox android:id="@id/new_register_agree_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:checked="true" style="@style/checkbox_custom_style_register" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="我已阅读并同意" android:singleLine="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff0066cc" android:gravity="center" android:id="@id/new_register_agree_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_agree" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

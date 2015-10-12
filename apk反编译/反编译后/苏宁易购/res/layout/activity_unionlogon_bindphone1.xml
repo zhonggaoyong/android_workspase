@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/register_layout" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/util_view_header" />
+    <include layout="@layout/include_unionlogon_topimgs_views" />
+    <LinearLayout style="@style/ETcontainer_logon_register_pub_style">
+        <TextView android:text="@string/register_phonenumber" style="@style/text_logon_register" />
+        <EditText android:id="@id/phone" android:hint="@string/phone_number_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="phone" style="@style/edittext_logon_register_pub_style" />
+        <com.suning.mobile.ebuy.view.DelImgView android:layout_gravity="center_vertical" android:id="@id/img_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_del_img_bg" />
+    </LinearLayout>
+    <Button android:id="@id/btn_next" android:layout_marginTop="30.0dip" android:text="@string/payment_home_next" style="@style/btn_logon_register_pub_style" />
+    <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="14.0dip" android:text="@string/unionlogon_bindphone_hint" />
+</LinearLayout>

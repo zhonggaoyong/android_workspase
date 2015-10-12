@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="12.0dip" android:textColor="@color/pd_gray_red" android:gravity="center" android:id="@id/txt_1" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:lines="1" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/pd_gray_red" android:gravity="center" android:id="@id/txt_2" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+    <View android:id="@id/commentlist_fragment_tab_line" android:background="@drawable/comment_indicator_redline" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

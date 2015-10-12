@@ -1,0 +1,26 @@
+{"filters": [
+    {
+        keyword: "1",
+        value: null,
+        fieldName: "mobnf",
+        fieldNameDesc: "Æ·ÅÆ",
+        sort: 1233232229,
+        analysised: false,
+        multiSel: false,
+        values: [
+            {
+                value: "",
+                valueDesc: "",
+                valueCode: "00JN",
+                checked: false,
+                valueDescSpell: "",
+                valueDescSpellHead: "",
+                valueDescSpellHeadTure: "",
+                colorRGB: null,
+                sort: "",
+                clickSum: 0,
+                url: null
+            }
+        ]
+    }
+]}

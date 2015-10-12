@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/layout_bottom" android:background="@color/white" android:padding="@dimen/android_public_space_14dp" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_68dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_add_address" android:background="@drawable/bg_btn_yellow_new_vi" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_40dp" android:text="+ 添加新地址" />"
+</LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/layout_bottom" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ListView android:id="@id/order_listview" android:background="@color/white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/pub_color_six" android:dividerHeight="1.0px" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_nodata_add" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="#ff808080" android:id="@id/txt_address_nodata_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_address_list" android:drawableTop="@drawable/wait_shop_eva_empty" android:drawablePadding="20.0dip" />
+            <Button android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_nodata_add" android:background="@drawable/bg_btn_yellow_new_vi" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="14.0dip" android:text="+ 添加新地址" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

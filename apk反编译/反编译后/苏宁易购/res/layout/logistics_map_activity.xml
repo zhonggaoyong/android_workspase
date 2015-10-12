@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_gray_yellow" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.mapapi.map.MapView android:id="@id/bmapView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/tab_height">
+        <RelativeLayout android:id="@id/btn_now" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/pub_textsize_fifteen" android:textColor="@color/pub_color_nine" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="包裹位置" android:drawableLeft="@drawable/logisticsmap_now_logo" android:drawablePadding="15.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/divider_horizontal" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/pub_margin_or_padding_space_ten" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_ten" />
+        <RelativeLayout android:id="@id/btn_customer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/pub_textsize_fifteen" android:textColor="@color/pub_color_nine" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="收货地址" android:drawableLeft="@drawable/logisticsmap_customer_logo" android:drawablePadding="15.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

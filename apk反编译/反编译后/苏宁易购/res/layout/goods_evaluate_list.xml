@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/order_detail_layout" android:background="@color/pub_color_twelev" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/empty_image_view" android:background="@drawable/wait_shop_eva_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_fifteen" android:id="@id/empty_hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="还没有人发表评价" />
+    </LinearLayout>
+    <com.suning.mobile.ebuy.utils.subpage.PullUpLoadListView android:id="@id/goodsDetailInfoList" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dividerHeight="0.0dip" />
+</LinearLayout>

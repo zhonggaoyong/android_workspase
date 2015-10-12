@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bainuo.dayrecommend.DeleteScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/deleteBaseLayout" android:layout_width="640.0dip" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:id="@id/deleteLayout1" android:background="#ffff0000" android:layout_width="66.0dip" android:layout_height="100.0dip">
+            <View android:id="@id/deleteCentry" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/day_recommend_unlike1" android:layout_above="@id/deleteCentry" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/day_recommend_unlike2" android:layout_below="@id/deleteCentry" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <include android:id="@id/deleteLayout2" android:layout_width="100.0dip" android:layout_height="wrap_content" layout="@layout/groupon_view_list_item" />
+    </RelativeLayout>
+</com.baidu.bainuo.dayrecommend.DeleteScrollView>

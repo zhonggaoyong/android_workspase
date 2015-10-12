@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/pd_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/pd_divider_style" />
+    <RelativeLayout android:id="@id/pd_good_comment_layout" android:paddingBottom="@dimen/pd_space_width_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pd_space_width_10" android:layout_marginTop="@dimen/pd_space_width_15" android:layout_marginRight="@dimen/pd_space_width_10">
+        <TextView android:id="@id/pd_comment_title" android:text="@string/pd_discuss" style="@style/pd_title_text_style" />
+        <TextView android:textSize="@dimen/pd_txt_size_small" android:textColor="#ffbfbfbf" android:id="@id/pd_comment_none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/pd_space_width_9" android:text="@string/pd_no_comment" android:layout_toRightOf="@id/pd_comment_title" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_marginLeft="@dimen/pd_space_width_12" android:layout_alignParentRight="true" style="@style/pd_arrow_img_style" />
+        <TextView android:id="@id/pd_comment_goodper" android:layout_marginTop="@dimen/pd_space_width_5" android:layout_marginRight="@dimen/pd_space_width_10" android:layout_below="@id/pd_comment_title" style="@style/pd_content_text_style" />
+        <TextView android:textSize="@dimen/pd_txt_size_small" android:textColor="@color/pd_gray" android:id="@id/pd_comment_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_toRightOf="@id/pd_comment_goodper" android:layout_alignTop="@id/pd_comment_goodper" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pd_comment_list_layout" android:background="@drawable/pd_item_enable_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/pd_bad_comment_layout" android:background="@drawable/pd_item_enable_bg" android:paddingLeft="@dimen/pd_space_width_10" android:paddingBottom="@dimen/pd_space_width_15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/pd_bad_comment_divider" android:layout_marginBottom="@dimen/pd_space_width_15" style="@style/pd_divider_style" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pd_bad_comment_arrow" android:layout_marginLeft="@dimen/pd_space_width_12" android:layout_alignParentRight="true" style="@style/pd_arrow_img_style" />
+        <TextView android:textSize="@dimen/pd_txt_size_middle" android:textColor="#ff666666" android:ellipsize="middle" android:id="@id/pd_bad_comment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:drawableLeft="@drawable/pd_bad_comment" android:drawablePadding="@dimen/pd_space_width_9" android:layout_toLeftOf="@id/pd_bad_comment_arrow" android:layout_below="@id/pd_bad_comment_divider" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <View android:layout_marginLeft="@dimen/pd_space_width_10" style="@style/pd_divider_style" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/pd_btn_height" android:layout_marginLeft="@dimen/pd_space_width_5" android:layout_marginTop="@dimen/pd_space_width_15" android:layout_marginRight="@dimen/pd_space_width_5" android:layout_marginBottom="@dimen/pd_space_width_15">
+        <TextView android:textSize="@dimen/pd_txt_size_middle" android:textColor="@color/pd_gray" android:gravity="center" android:id="@id/pd_comment_left_btn" android:background="@drawable/pd_btn1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/pd_space_width_5" android:layout_marginRight="@dimen/pd_space_width_5" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/pd_txt_size_middle" android:textColor="@color/pd_gray" android:gravity="center" android:id="@id/pd_comment_right_btn" android:background="@drawable/pd_btn1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/pd_space_width_5" android:layout_marginRight="@dimen/pd_space_width_5" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View style="@style/pd_divider_style" />
+</LinearLayout>

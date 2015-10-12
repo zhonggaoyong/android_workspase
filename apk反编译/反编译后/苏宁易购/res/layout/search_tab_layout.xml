@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="@dimen/pub_textsize_seventeen" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/mix_default_tv" android:background="@drawable/search_tab_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sort_default" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/pub_textsize_seventeen" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/mix_sales_tv" android:background="@drawable/search_tab_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sort_by_sales" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mix_price_tv" android:background="@drawable/search_tab_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/pub_textsize_seventeen" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_price_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_price" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/search_price_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/search_price_up" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/pub_textsize_seventeen" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/mix_comment_tv" android:background="@drawable/search_tab_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sort_by_grade" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

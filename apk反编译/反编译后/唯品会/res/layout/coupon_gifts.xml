@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top" android:layout_width="fill_parent" android:layout_height="@dimen/vipnew_header_height" layout="@layout/header_layout" />
+    <LinearLayout android:layout_gravity="center" android:id="@id/ll_gift" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top">
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/app_textsize_button" android:textColor="#ff000000" android:id="@id/btn_coupon" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="@dimen/coupon_button_height" android:text="优惠券" />
+            <View android:id="@id/coupon_buttom_line" android:background="@color/coupon_gift_pink_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignBottom="@id/btn_coupon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/app_textsize_button" android:textColor="#ff000000" android:id="@id/btn_gifts" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="@dimen/coupon_button_height" android:text="礼品卡" />
+            <View android:id="@id/gift_buttom_line" android:background="@color/coupon_gift_pink_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignBottom="@id/btn_gifts" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/viewspecater" android:background="@color/button_bg_select" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/ll_gift" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:background="#fff3f4f5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/viewspecater" android:layout_centerHorizontal="true">
+        <include android:id="@id/inc_gifts" android:visibility="gone" layout="@layout/new_gift" />
+        <include android:id="@id/inc_coupon" android:visibility="gone" layout="@layout/new_coupon" />
+    </LinearLayout>
+</RelativeLayout>

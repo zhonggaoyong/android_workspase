@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bottom" android:background="@color/text_color_white" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <HorizontalScrollView android:id="@id/scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/ok_button">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/selected_image_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/body" android:background="@color/text_color_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom">
+        <GridView android:id="@id/grid_view" android:background="@color/text_color_black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="0.0dip" android:listSelector="@null" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:numColumns="3" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

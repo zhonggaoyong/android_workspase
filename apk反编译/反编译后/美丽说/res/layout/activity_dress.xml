@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/parent" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <include layout="@layout/dress_item" />
+    <com.meilishuo.app.views.GradientRelativeLayout android:id="@id/header" android:background="@drawable/pic_shadow_top" style="@style/mainHeader">
+        <com.meilishuo.app.views.GradientTextView android:textColor="@color/white" android:id="@id/btn_back" android:drawableLeft="@drawable/ico_return_white" android:drawablePadding="0.0dip" android:layout_centerVertical="true" app:startColor="@color/white" app:endColor="@color/grey_d5" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.GoShoppingcartView android:id="@id/to_shoppingcart_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:imageResouce="@drawable/toolbar_ico_shoppingcar_white" app:textBackground="@drawable/home_bg_shoppingcar_tips_trans" app:startColor="@color/white" app:endColor="@color/grey_d5" />
+        <com.meilishuo.app.views.GradientImageView android:id="@id/btn_share" android:paddingRight="15.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/goods_ico_share_white" android:layout_toLeftOf="@id/to_shoppingcart_btn" android:layout_centerVertical="true" app:startColor="@color/white" app:endColor="@color/grey_d5" />
+    </com.meilishuo.app.views.GradientRelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/iv_addlike_anim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pic_like_animation" />
+</FrameLayout>

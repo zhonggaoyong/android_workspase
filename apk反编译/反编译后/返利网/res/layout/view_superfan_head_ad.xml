@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/two_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="36.0">
+        <RelativeLayout android:id="@id/two_area0" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="72.0dip" android:layout_weight="17.0">
+            <ImageView android:id="@id/iv_two0" android:layout_width="70.0dip" android:layout_height="72.0dip" android:layout_marginRight="8.0dip" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+            <ImageView android:id="@id/iv_two_icon0" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/contentDescription" />
+            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/info_layout_two0" android:layout_width="wrap_content" android:layout_height="62.0dip" android:layout_toRightOf="@id/iv_two0" android:layout_centerVertical="true">
+                <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:textColor="#ff40494d" android:id="@id/tv_two_title0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_two_subtitle0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#ffdddddd" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/two_area1" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="19.0">
+            <ImageView android:id="@id/iv_two1" android:layout_width="60.0dip" android:layout_height="72.0dip" android:layout_marginRight="8.0dip" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+            <ImageView android:id="@id/iv_two_icon1" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/contentDescription" />
+            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/info_layout_two1" android:layout_width="wrap_content" android:layout_height="62.0dip" android:layout_marginRight="16.0dip" android:layout_toRightOf="@id/iv_two1" android:layout_centerVertical="true">
+                <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:textColor="#ff40494d" android:id="@id/tv_two_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_two_subtitle1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/divider_two_bottom" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="72.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/three_area" android:layout_width="fill_parent" android:layout_height="124.0dip" android:weightSum="36.0">
+        <RelativeLayout android:id="@id/three_area0" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="13.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/info_layout_three0" android:layout_width="wrap_content" android:layout_height="62.0dip" android:layout_centerHorizontal="true">
+                <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:textColor="#ff40494d" android:id="@id/tv_three_title0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_three_subtitle0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_three0" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/info_layout_three0" android:layout_centerHorizontal="true" android:contentDescription="@string/contentDescription" />
+            <ImageView android:id="@id/iv_three_icon0" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/contentDescription" />
+        </RelativeLayout>
+        <View android:background="#ffe6e6e6" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="23.0">
+            <RelativeLayout android:id="@id/three_area1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="62.0dip">
+                <ImageView android:id="@id/iv_three_icon1" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/contentDescription" />
+                <ImageView android:id="@id/iv_three1" android:layout_width="80.0dip" android:layout_height="62.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+                <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/info_layout_three1" android:paddingLeft="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/iv_three1" android:layout_centerHorizontal="true">
+                    <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:textColor="#ff40494d" android:id="@id/tv_three_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_three_subtitle1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/three_area2" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="62.0dip">
+                <ImageView android:id="@id/iv_three_icon2" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/contentDescription" />
+                <ImageView android:id="@id/iv_three2" android:layout_width="80.0dip" android:layout_height="62.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+                <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/info_layout_three2" android:paddingLeft="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/iv_three2" android:layout_centerHorizontal="true">
+                    <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:textColor="#ff40494d" android:id="@id/tv_three_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_three_subtitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider_top" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:id="@id/divider_three_bottom" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="124.0dip" />
+</FrameLayout>

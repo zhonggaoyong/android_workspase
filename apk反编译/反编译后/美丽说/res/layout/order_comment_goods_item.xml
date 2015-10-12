@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_goods" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <ImageView android:id="@id/order_goods_pic" android:background="@drawable/order_goods_bg" android:padding="1.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/goods_right_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/orders_ico_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/goods_right_arrow" android:layout_toRightOf="@id/order_goods_pic" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d5" android:gravity="center" android:id="@id/refund_btn" android:background="@drawable/refund_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/order_refund_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:ellipsize="end" android:id="@id/order_goods_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:maxLines="2" android:layout_toLeftOf="@id/refund_btn" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_confirm_textview_count" />
+                        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:ellipsize="end" android:id="@id/order_goods_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_confirm_textview_price" />
+                        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:ellipsize="end" android:id="@id/order_goods_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/layout_right" android:layout_alignParentBottom="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:id="@id/size_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:ellipsize="end" android:id="@id/order_goods_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:id="@id/color_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:ellipsize="end" android:id="@id/order_goods_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.meilishuo.app.views.CustomTextView android:textColor="@color/grey_d4_t65" android:layout_gravity="center_horizontal" android:id="@id/first_time" android:background="@drawable/order_add_comment_insure_bg" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_synthesize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/synthesize_score" />
+        <com.meilishuo.app.doota.order.view.SynthesisEvaluateView android:id="@id/synthesize_evaluate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#b2ff6699" android:id="@id/synthesize_star_statue" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/baby_feature_isshow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:layout_gravity="top" android:id="@id/textview_synthesize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/shop_baby_feature" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.MyGridView android:id="@id/babyFeatureGrid" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:listSelector="@color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="3" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:id="@id/reply_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+    <View android:id="@id/first_reply_line" android:visibility="gone" android:layout_marginTop="10.0dip" style="@style/borderline2" />
+    <com.meilishuo.app.views.CustomTextView android:textColor="@color/grey_d4_t65" android:layout_gravity="center_horizontal" android:id="@id/after_time" android:background="@drawable/order_add_comment_insure_bg" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="10.0dip">
+        <View android:id="@id/edittext_border" android:background="@drawable/order_word_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" />
+        <com.meilishuo.app.views.CustomEditText android:textSize="13.0sp" android:textColor="@color/grey_d3" android:textColorHint="#ffccc2c9" android:gravity="top" android:id="@id/comment_message" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:hint="@string/order_comment_hint" android:maxLength="500" />
+    </FrameLayout>
+</LinearLayout>

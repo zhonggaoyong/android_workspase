@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/re_load_data_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/pub_color_nine" android:layout_gravity="center" android:id="@id/re_load_data" android:background="@drawable/public_bg_btn_white" android:layout_width="@dimen/ios_public_space_161px" android:layout_height="@dimen/ios_public_space_75px" android:layout_margin="10.0dip" android:text="@string/comp_list_retry_text" />
+</LinearLayout>

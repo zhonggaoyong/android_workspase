@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/vip_label" android:background="@drawable/groupon_detail_promo_vip_label_left_bg" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="16.0dip" />
+    <TextView android:textSize="9.0sp" android:textColor="#ffff4683" android:gravity="center" android:id="@id/promo_name" android:background="@drawable/groupon_detail_promo_vip_label_right_bg" android:paddingLeft="1.5dip" android:paddingRight="2.5dip" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginLeft="-1.0dip" />
+</LinearLayout>

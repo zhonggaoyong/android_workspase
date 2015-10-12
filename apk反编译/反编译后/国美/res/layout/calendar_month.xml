@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gome.ecmall.custom.calendar.view.MonthView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="4.0dip" />
+    <com.gome.ecmall.custom.calendar.view.CalendarGridView android:id="@id/calendar_grid" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/calendar_week" />
+        <include layout="@layout/calendar_week" />
+        <include layout="@layout/calendar_week" />
+        <include layout="@layout/calendar_week" />
+        <include layout="@layout/calendar_week" />
+        <include layout="@layout/calendar_week" />
+    </com.gome.ecmall.custom.calendar.view.CalendarGridView>
+</com.gome.ecmall.custom.calendar.view.MonthView>

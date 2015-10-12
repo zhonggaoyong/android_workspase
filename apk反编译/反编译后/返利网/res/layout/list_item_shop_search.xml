@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_list_item_bg_ics" android:padding="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/height_avatar_thumb"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/thumb" android:padding="@dimen/global_padding_tiny" android:layout_width="@dimen/width_list_item_shop" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/info" android:padding="@dimen/global_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_grey_dark" android:gravity="center_vertical" android:id="@id/shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="#ff36a80c" android:id="@id/fanli" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/check" android:layout_width="@dimen/height_list_item_tiny" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_right_full" android:scaleType="centerInside" />
+</LinearLayout>

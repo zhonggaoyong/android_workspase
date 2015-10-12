@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/selectedMode" android:background="#ffffffff" android:paddingLeft="@dimen/lib_story_margin_vertical_10" android:paddingRight="@dimen/lib_story_margin_vertical_10" android:layout_width="fill_parent" android:layout_height="50.0dip" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/buyedGroup" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <CheckBox android:id="@id/buyed" android:text="@string/lib_story_img_select_buyed" style="@style/lib_story_checkbox" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/shoppingCarGroup" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+        <CheckBox android:id="@id/shoppingCar" android:text="@string/lib_story_img_select_shopping" style="@style/lib_story_checkbox" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/collectedGroup" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+        <CheckBox android:id="@id/collected" android:text="@string/lib_story_img_select_collected" style="@style/lib_story_checkbox" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/browsedGroup" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+        <CheckBox android:id="@id/browsed" android:text="@string/lib_story_img_select_browsed" style="@style/lib_story_checkbox" />
+    </LinearLayout>
+</LinearLayout>

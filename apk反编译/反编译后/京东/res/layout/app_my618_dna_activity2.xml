@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/app_my618_activity_bg_red" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.common.widget.TempTitle android:id="@id/my_dna_title" android:layout_width="fill_parent" android:layout_height="wrap_content" title:bg="@color/transparent" title:drawableLeft="@drawable/common_title_back_selector_white" title:textTitle="@string/pg_my_jd_title" title:textTitleColor="@color/white" title:textRight="@string/pd_share" title:textRightColor="@color/white" xmlns:title="http://schemas.android.com/apk/res-auto" />
+    <com.jingdong.common.widget.JDFlipPageLayout android:id="@id/flipLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/my_dna_title">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/fragment_container_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/fragment_container_2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </com.jingdong.common.widget.JDFlipPageLayout>
+</RelativeLayout>

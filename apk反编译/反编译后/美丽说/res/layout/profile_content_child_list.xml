@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head" layout="@layout/profile_title" />
+    <com.meilishuo.app.widget.pulltorefresh.RefreshView android:layout_gravity="top" android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/head">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:divider="@null" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/no_goods_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/empty_icon" android:background="@drawable/show_ico_goods_empty_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/empty_page_margin_top" />
+                <com.meilishuo.app.views.CustomTextView android:text="@string/text_goodsshow_no_content" style="@style/EmptyDataFirstTextStyle" />
+                <com.meilishuo.app.views.CustomTextView android:id="@id/btn_to_shopping" android:visibility="gone" android:clickable="true" android:text="@string/go_see" android:onClick="onClick" style="@style/EmptyDataButtonTextStyle" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/empty_layout" android:background="@color/white" android:paddingTop="@dimen/empty_page_margin_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.meilishuo.app.views.CustomTextView android:id="@id/empty_textView" android:layout_centerHorizontal="true" style="@style/EmptyDataFirstTextStyle" />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+    <com.meilishuo.app.views.CustomTextView android:id="@id/to_top" android:background="@drawable/to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/iv_addlike_anim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pic_like_animation" android:layout_centerInParent="true" />
+</RelativeLayout>

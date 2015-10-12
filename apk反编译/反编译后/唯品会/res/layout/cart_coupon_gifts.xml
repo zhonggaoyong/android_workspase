@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top" android:layout_width="fill_parent" android:layout_height="@dimen/vipnew_header_height" layout="@layout/header_layout" />
+    <LinearLayout android:layout_gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top">
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:id="@id/btn_coupon" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="优惠券" />
+            <View android:id="@id/coupon_buttom_line" android:background="@color/vip_pink" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignBottom="@id/btn_coupon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:id="@id/btn_gifts" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="礼品卡" android:layout_weight="1.0" />
+            <View android:id="@id/gifts_buttom_line" android:background="@color/vip_pink" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignBottom="@id/btn_gifts" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/viewspecater" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/ll_gift" />
+    <FrameLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

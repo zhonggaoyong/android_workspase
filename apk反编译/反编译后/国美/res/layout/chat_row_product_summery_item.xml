@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlt_product_container" android:background="@drawable/more_item_color_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_product_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/product_list_grid_item_icon_bg" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/right_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="13.0dip" android:layout_toRightOf="@id/iv_product_img" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/textview_black" android:ellipsize="end" android:id="@id/tv_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="罗技（Logitech）910-003600 G300游戏鼠标 大玩家专用版本不退换哈哈哈哈哈哈哈哈哈哈哈" android:maxLines="2" android:minLines="2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:lineSpacingExtra="3.0dip" />
+        <RelativeLayout android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <Button android:textSize="14.0sp" android:gravity="center" android:id="@id/btn_send_url" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="发送链接" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="sendPruductUrl" style="@style/Gome.Button.SolidRed.Style" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/price_text_color" android:id="@id/tv_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="测试" android:singleLine="true" android:layout_toLeftOf="@id/btn_send_url" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/setting_activity_line_color" android:layout_alignParentBottom="true" />
+</RelativeLayout>

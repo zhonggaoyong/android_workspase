@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/flight_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_eight" android:id="@id/tv_head1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="北京-南京" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_nine" android:id="@id/tv_head2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="(单程)" android:layout_toRightOf="@id/tv_head1" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/tv_head2" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:gravity="center" android:layout_gravity="right" android:id="@id/tv_head3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="1922-11-11" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/flight_liner" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/flight_header">
+        <RelativeLayout android:id="@id/btn_date" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_four" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="时 间" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/sort_by_time_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/flight_track_top" android:layout_toRightOf="@id/tv_time" android:layout_centerVertical="true" />
+            <View android:id="@id/view_line_1" android:background="@color/pub_color_four" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:background="@color/pub_color_six" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <RelativeLayout android:id="@id/btn_flight" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_nine" android:id="@id/tv_flight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="航空公司" android:layout_centerInParent="true" />
+            <View android:id="@id/view_line_2" android:background="@color/pub_color_four" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:background="@color/pub_color_six" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <RelativeLayout android:id="@id/btn_price" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_nine" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="价格" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/sort_by_price_flight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/flight_track_top" android:layout_toRightOf="@id/tv_price" android:layout_centerVertical="true" />
+            <View android:id="@id/view_line_3" android:background="@color/pub_color_four" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ExpandableListView android:id="@id/flight_expandableListView" android:background="@color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:cacheColorHint="@color/transparent" android:groupIndicator="@null" android:childIndicator="@color/transparent" android:childDivider="@color/transparent" android:divider="@drawable/divide_line_input" android:dividerHeight="1.0px" android:layout_above="@id/flight_liner_date" android:layout_below="@id/flight_liner" />
+    <LinearLayout android:gravity="center" android:id="@id/flight_liner_date" android:background="@drawable/flight_list_bottom_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:id="@id/btn_yesterday" android:background="@drawable/btn_flight_unpress" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_left" />
+                <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="前一天" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textColor="@color/black" android:id="@id/btn_today" android:background="@drawable/btn_flight_unpress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="航空公司" android:layout_weight="2.0" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:id="@id/btn_tomorow" android:background="@drawable/btn_flight_unpress" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="后一天" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/empty_favorite" android:background="@drawable/normal_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="暂无机票" />
+</RelativeLayout>

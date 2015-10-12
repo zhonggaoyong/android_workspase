@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/img_logo" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="58.0dip" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/img_realshot" android:layout_width="95.0dip" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_marginRight="0.0dip" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/desire_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="40.0dip" android:scaleType="centerCrop" android:layout_alignBottom="@id/img" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/tip_img" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="10.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d5" android:id="@id/tip_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pull_danbao" android:ems="1" android:layout_toRightOf="@id/tip_img" android:layout_centerVertical="true" />
+</RelativeLayout>

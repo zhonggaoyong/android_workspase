@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/browser_root" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/layout_suer_bt" android:background="@color/pub_color_one" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_73px" android:layout_alignParentBottom="true">
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/suer_bt" android:background="@drawable/search_complete" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/android_public_space_21px" android:layout_marginTop="@dimen/android_public_space_8px" android:layout_marginRight="@dimen/android_public_space_21px" android:layout_marginBottom="@dimen/android_public_space_8px" android:text="@string/act_barcode_history_clear_all" />
+    </LinearLayout>
+    <ListView android:id="@id/browser_history_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@drawable/category_listview_divider" android:dividerHeight="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_above="@id/layout_suer_bt" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_browser_time" android:background="@drawable/timeline_normal" android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="2015.04.21" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/foot_nodata_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/text_no_history" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/act_search_no_foot_data" android:drawableTop="@drawable/shopping_cart__loadfail" android:drawablePadding="10.0dip" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_eighteen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="偶遇总有无限惊喜，一起" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_one" android:gravity="center" android:id="@id/foot_look_around" android:background="@drawable/search_complete" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="去逛逛" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

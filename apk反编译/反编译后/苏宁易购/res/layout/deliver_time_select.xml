@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/deliver_type_suning_layout" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:id="@id/btn_time_cancel" android:padding="@dimen/pub_margin_or_padding_space_ten" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_dialog_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_twenty_one" android:id="@id/btn_time_confirm" android:padding="@dimen/pub_margin_or_padding_space_ten" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_dialog_confirm" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.suning.mobile.ebuy.shopcart.settlement.view.WheelView android:layout_gravity="center_vertical" android:id="@id/select_year" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.suning.mobile.ebuy.shopcart.settlement.view.WheelView android:layout_gravity="center_vertical" android:id="@id/select_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

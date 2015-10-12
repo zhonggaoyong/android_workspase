@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/arrow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/map_hear" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/store_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="中关村国美电器鼎好点" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/hint_text_color" android:id="@id/store_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="010-88888888" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/hint_text_color" android:id="@id/store_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="北京市海淀区中关村大街3号" android:lineSpacingExtra="4.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center" android:id="@id/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/common_right_arrow_bg_selector" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/crazy_guess_product_list" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/crazy_guess_divide_line" android:layout_alignParentTop="true" style="@style/line2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/guess_taste" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/crazy_guess_divide_line">
+        <com.jingdong.app.mall.personel.view.PersonalItemTitle android:background="@drawable/personal_view_pressed_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" title:personalTitleIcon="@drawable/personal_icon_recommend" title:personalTitle="@string/personal_recommend" title:personalArrowVisible="false" xmlns:title="http://schemas.android.com/apk/res-auto" />
+        <RelativeLayout android:id="@id/product_list_item" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:minHeight="104.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/arrow_rightt" android:visibility="gone" android:clickable="true" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/android_list_idex" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/arrow_left" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="1.0dip" android:src="@drawable/android_list_idex_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.jingdong.common.ui.JDGallery android:gravity="left" android:id="@id/personel_recomand_gallery" android:drawingCacheQuality="high" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="5.0dip" android:spacing="@dimen/cart_recommend_gallsry_space" android:layout_toLeftOf="@id/arrow_rightt" android:layout_toRightOf="@id/arrow_left" android:unselectedAlpha="1.0" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/personel_recomand_gallery_content" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="76.0dip">
+            <TextView android:id="@id/personel_recomand_gallery_item_name" android:paddingLeft="@dimen/home_pg_crazy_content_padding_10" android:paddingRight="@dimen/home_pg_crazy_content_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip" android:maxLines="3" android:layout_alignParentTop="true" />
+            <TextView android:textSize="24.0dip" android:textColor="#ffcc0000" android:id="@id/personel_recomand_gallery_jdPrice" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/personel_recomand_gallery_item_name" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

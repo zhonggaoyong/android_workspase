@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/tuan_detial_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.bainuo.view.MyScrollView android:id="@id/scroll_content_tuan" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/llParentNew" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tuan_detail_basic_info_layout" />
+            <ViewStub android:id="@id/comment_layout" android:layout="@layout/comment_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <include layout="@layout/notice_seller_menu_consumer_layout" />
+            <ViewStub android:id="@id/tuan_detail_comment_detail" android:layout="@layout/tuan_detail_comment_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tuan_detail_gap_height" android:layout_marginBottom="@dimen/tuan_detail_gap_height" />
+            <ViewStub android:id="@id/hotsell_recomment_layout" android:layout="@layout/hotsell_recomment_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/sellertel_moreinfo_layout" android:layout="@layout/sellertel_moreinfo_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:layout_width="fill_parent" android:layout_height="5.0dip" />
+            <include android:layout_width="fill_parent" android:layout_height="30.0dip" layout="@layout/loading_more" />
+            <ViewStub android:id="@id/no_network_layout" android:layout="@layout/no_network" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.baidu.bainuo.view.MyScrollView>
+    <ViewStub android:id="@id/tuan_float_buy_layout" android:layout="@layout/tuan_detail_buy" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

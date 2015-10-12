@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/category_product_appraise_image_layout" android:background="@drawable/category_product_list_grid_bg2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/category_product_appraise_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.6dip" android:contentDescription="@null" />
+</LinearLayout>

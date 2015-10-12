@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#a0000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/jshop_share_widget_bg" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_share_title_height">
+            <TextView android:textSize="@dimen/jshop_share_title_textsize" android:textColor="#ffd8444d" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/jshop_share_title_toleft" android:text="@string/jshop_share_to" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/jshop_tab_activeline" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/jshop_share_qrcode" android:background="@drawable/jshop_shareitem_selector" style="@style/JshopShareItem">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/share_qrcode_icon" android:src="@drawable/jshop_share_icon_qrcode" style="@style/JshopShareItemImage" />
+            <TextView android:text="@string/jshop_share_qrcode" style="@style/JshopShareItemText" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/jshop_splitline" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/jshop_share_more" android:background="@drawable/jshop_shareitem_bottom_selector" style="@style/JshopShareItem">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/share_more_icon" android:src="@drawable/jshop_share_icon_more" style="@style/JshopShareItemImage" />
+            <TextView android:id="@id/share_name" android:text="@string/jshop_share_more" style="@style/JshopShareItemText" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

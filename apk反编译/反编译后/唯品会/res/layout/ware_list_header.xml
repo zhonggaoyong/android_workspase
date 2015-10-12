@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/warehouse_header_text" android:gravity="center_vertical" android:id="@id/tx_alipay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择你要的收货地址，送货更快哦" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#fff3f4f5" android:layout_width="fill_parent" android:layout_height="25.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/warehouse_header_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/header_group" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="你的位置" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mylinear" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/warehouse_header_text" android:layout_gravity="center_vertical" android:id="@id/new_brand_name_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ProgressBar android:layout_gravity="center" android:id="@id/pb_myProgressBar" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/new_progressbar_anim" android:indeterminateDuration="200" android:indeterminateBehavior="repeat" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/app_textsize_button" android:textColor="@color/app_text_white" android:layout_gravity="right|center" android:id="@id/radio" android:background="@drawable/ware_esure_bg" android:paddingLeft="14.0dip" android:paddingTop="5.0dip" android:paddingRight="14.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="32.0dip" android:layout_marginRight="12.0dip" android:text="确定" />
+            <ImageView android:textSize="@dimen/app_textsize_button" android:textColor="@color/app_text_white" android:layout_gravity="right|center" android:id="@id/gou" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_selected_normal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

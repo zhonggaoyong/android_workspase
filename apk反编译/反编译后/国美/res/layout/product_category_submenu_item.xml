@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/category_sub_menu_title_view" android:paddingLeft="8.0dip" android:paddingTop="11.0dip" android:paddingRight="8.0dip" android:paddingBottom="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/category_sub_menu_left_layout" android:background="@drawable/category_sub_menu_btn_selector" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/category_sub_menu_left_view" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:contentDescription="@null" />
+            <com.gome.ecmall.home.product.category.layout.LineTextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/category_sub_menu_left_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="7.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/category_sub_menu_center_layout" android:background="@drawable/category_sub_menu_btn_selector" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/category_sub_menu_center_view" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:contentDescription="@null" />
+            <com.gome.ecmall.home.product.category.layout.LineTextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/category_sub_menu_center_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="7.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/category_sub_menu_right_layout" android:background="@drawable/category_sub_menu_btn_selector" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/category_sub_menu_right_view" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:contentDescription="@null" />
+            <com.gome.ecmall.home.product.category.layout.LineTextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/category_sub_menu_right_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="7.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

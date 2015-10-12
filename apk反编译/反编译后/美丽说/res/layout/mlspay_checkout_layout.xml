@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="@string/pay_checkout_title" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/pay_checkout_wrapper_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="58.0dip">
+            <com.meilishuo.app.doota.pay.view.MLSPaySelectorView android:orientation="vertical" android:id="@id/pay_checkout_selector" android:layoutAnimation="@anim/layout_animation_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <RelativeLayout android:id="@id/bottom_layout" android:background="@drawable/home_bg_toolbar" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+            <com.meilishuo.app.views.CustomTextView android:id="@id/pay_bottom_btn_pay" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="@string/pay_checkout_bottom_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/BtnRedStyle" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toLeftOf="@id/btn_ok" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:id="@id/pay_bottom_remain_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_checkout_bottom_remain_label" android:singleLine="true" />
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/pink" android:id="@id/pay_bottom_remain_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/pay_bottom_total_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_0" android:textColor="@color/grey_d5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_checkout_bottom_total_label" android:singleLine="true" />
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_0" android:textColor="@color/grey_d5" android:id="@id/pay_bottom_total_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

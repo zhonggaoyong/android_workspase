@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:text="@string/profile_help" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <com.meilishuo.app.views.OptionsItemView android:id="@id/newmore_idea" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" app:optionContentColor="@color/pink_t80" app:optionTitle="@string/setting_feedback_title" app:optionArray="@drawable/circle_info_arrow" app:optionTitleSize="14" />
+        <View android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" style="@style/borderline_slide" />
+        <com.meilishuo.app.views.OptionsItemView android:id="@id/newmore_help" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" app:optionContentColor="@color/pink_t80" app:optionTitle="@string/help_center" app:optionArray="@drawable/circle_info_arrow" app:optionTitleSize="14" />
+        <View android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" style="@style/borderline_slide" />
+        <com.meilishuo.app.views.OptionsItemView android:id="@id/newmore_phone" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" app:optionContentColor="@color/pink_t80" app:optionTitle="@string/service" app:optionArray="@drawable/circle_info_arrow" app:optionTitleSize="14" />
+    </LinearLayout>
+</LinearLayout>

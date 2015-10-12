@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/new_titlebottom" android:layout_width="fill_parent" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress" android:background="@color/red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" style="@android:style/Widget.ProgressBar.Horizontal" />
+</RelativeLayout>

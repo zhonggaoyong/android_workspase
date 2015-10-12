@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/new_personal_tab_center_pressed" android:padding="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img" android:layout_width="69.0dip" android:layout_height="69.0dip" android:layout_marginRight="11.0dip" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/app_text_black" android:id="@id/bucketname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_toRightOf="@id/img" />
+    <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/app_text_black" android:id="@id/bucket_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/img" android:layout_below="@id/bucketname" />
+    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/new_arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

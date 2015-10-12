@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/gap" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:id="@id/info_header" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <ImageView android:id="@id/img_addr" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/default_avatar_round" android:layout_centerVertical="true" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/info_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/img_addr" android:layout_centerVertical="true">
+            <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/circle_info_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="@color/grey_d1" android:ellipsize="end" android:id="@id/addr_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/arrow" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d3" android:id="@id/info_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/addr_text" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.meilishuo.app.post.home.view.LabelFeedView android:id="@id/post_img_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="5.0dip" />
+</LinearLayout>

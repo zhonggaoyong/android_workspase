@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/new_text_black" android:gravity="center_vertical" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/return_info_flow" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/return_info_flow_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/flow_icon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <View android:id="@id/circle_left_line1" android:background="#ffe8e8e8" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/order_icon_progressbar_circle_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/order_icon_progressbar_circle_gray" />
+                <View android:id="@id/circle_right_line1" android:background="#ffe8e8e8" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <View android:id="@id/circle_left_line2" android:background="#ffe8e8e8" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/order_icon_progressbar_circle_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/order_icon_progressbar_circle_gray" />
+                <View android:id="@id/circle_right_line2" android:background="#ffe8e8e8" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.9">
+                <View android:id="@id/circle_left_line3" android:background="#ffe8e8e8" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/order_icon_progressbar_circle_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/order_icon_progressbar_circle_gray" />
+                <View android:id="@id/circle_right_line3" android:background="#ffe8e8e8" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <View android:id="@id/circle_left_line4" android:background="#ffe8e8e8" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/order_icon_progressbar_circle_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/order_icon_progressbar_circle_gray" />
+                <View android:id="@id/circle_right_line4" android:background="#ffe8e8e8" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/flow_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="20.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/return_flow_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="申请退货" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/return_flow_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="审核通过" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.9">
+                <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/return_flow_text_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="寄回退货商品" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/return_flow_text_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已发起退款" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/return_info_flow_des" />
+    <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/app_textsize_normal" android:id="@id/return_submit" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/return_info_button_height" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="撤消退货申请" style="@style/submit_black_middle_button_style" />
+        <Button android:textSize="@dimen/app_textsize_normal" android:id="@id/edit_return_logistics" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/return_info_button_height" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="填写退货物流" style="@style/submit_red_middle_button_style" />
+        <Button android:textSize="@dimen/app_textsize_normal" android:id="@id/check_return_logistics" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/return_info_button_height" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="查看退货物流" style="@style/submit_black_middle_button_style" />
+    </LinearLayout>
+</LinearLayout>

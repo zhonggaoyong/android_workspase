@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.jd.lib.story.ui.XListView android:id="@id/listView" style="@style/lib_story_listview" />
+        <include layout="@layout/lib_story_item_net_error" />
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/lib_story_t_high_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_hint" android:background="#aa000000" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lib_story_height_top_hint" />
+</FrameLayout>

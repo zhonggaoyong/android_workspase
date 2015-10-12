@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:stepsIndicatorView="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/mygome_draw_cash_top_bar" layout="@layout/vw_titlebar" />
+    <ScrollView android:id="@id/mygome_draw_cash_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/mygome_draw_cash_top_bar" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mygome_draw_cash_balance_layout" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="20.0dip" android:layout_alignParentTop="true">
+                <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mygome_draw_cash_balance_title" />
+                <TextView android:textSize="21.0sp" android:textColor="#ff3aa11a" android:gravity="center_vertical" android:id="@id/mygome_draw_cash_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+            </LinearLayout>
+            <View android:id="@id/mygome_draw_cash_divide_line" android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/mygome_draw_cash_balance_layout" />
+            <com.gome.ecmall.home.mygome.custom.StepsIndicatorView android:id="@id/mygome_draw_cash_steps_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/mygome_draw_cash_divide_line" stepsIndicatorView:stepsReference="@array/mygome_draw_cash_steps" />
+            <FrameLayout android:id="@id/mygome_draw_cash_steps_fragment" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mygome_draw_cash_steps_indicator" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jdtravel="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.jdtravel.ui.TravelTitle android:id="@id/deliver_title" android:layout_width="fill_parent" android:layout_height="wrap_content" jdtravel:fdrawableLeft="@drawable/common_title_back_selector" jdtravel:ftextTitle="@string/jdtravel_delivery_info" jdtravel:ftextRight="@string/jdtravel_add_ok" />
+    <ScrollView android:background="#ffebebeb" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/checkbox_ll" android:background="@color/white" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0dip" android:textColor="@color/black" android:id="@id/check_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/add_boarder_margin_left" android:text="@string/jdtravel_check_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/jdtravel_check_cb" android:layout_marginRight="10.0dip" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/JdTravelCheckBox" />
+            </RelativeLayout>
+            <View style="@style/travel_view_splite_h" />
+            <include android:id="@id/free_layout" layout="@layout/flight_delivery_free" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

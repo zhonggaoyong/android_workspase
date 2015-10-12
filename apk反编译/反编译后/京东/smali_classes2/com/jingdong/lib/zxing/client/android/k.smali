@@ -1,0 +1,45 @@
+.class final Lcom/jingdong/lib/zxing/client/android/k;
+.super Ljava/lang/Object;
+.source "CaptureActivity.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final synthetic a:Lcom/jingdong/lib/zxing/client/android/i;
+
+
+# direct methods
+.method constructor <init>(Lcom/jingdong/lib/zxing/client/android/i;)V
+    .locals 0
+
+    .prologue
+    .line 643
+    iput-object p1, p0, Lcom/jingdong/lib/zxing/client/android/k;->a:Lcom/jingdong/lib/zxing/client/android/i;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    .prologue
+    .line 646
+    iget-object v0, p0, Lcom/jingdong/lib/zxing/client/android/k;->a:Lcom/jingdong/lib/zxing/client/android/i;
+
+    iget-object v0, v0, Lcom/jingdong/lib/zxing/client/android/i;->a:Lcom/jingdong/lib/zxing/client/android/CaptureActivity;
+
+    invoke-static {v0}, Lcom/jingdong/lib/zxing/client/android/CaptureActivity;->e(Lcom/jingdong/lib/zxing/client/android/CaptureActivity;)Landroid/app/ProgressDialog;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
+
+    .line 647
+    return-void
+.end method

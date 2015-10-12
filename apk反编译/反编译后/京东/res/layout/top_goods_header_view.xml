@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/header_menu_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tab_group" android:background="@color/top_goods_tab_bg" android:layout_width="fill_parent" android:layout_height="@dimen/top_goods_tab_height">
+                <RadioButton android:textSize="@dimen/top_goods_tab_text_size" android:textColor="@color/top_goods_tab_text_color_selector" android:gravity="center" android:id="@id/tab_1" android:background="@color/top_goods_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:layout_weight="1.0" />
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/top_goods_tab_dividing" android:layout_weight="0.0" />
+                <RadioButton android:textSize="@dimen/top_goods_tab_text_size" android:textColor="@color/top_goods_tab_text_color_selector" android:gravity="center" android:id="@id/tab_2" android:background="@color/top_goods_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@null" android:layout_weight="1.0" />
+            </RadioGroup>
+            <FrameLayout android:id="@id/tab_tip_layout" android:background="@color/top_goods_tab_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/tab_1_tip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/top_goods_tab_selected_tip" android:layout_weight="1.0" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/tab_2_tip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/top_goods_tab_selected_tip" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:layout_gravity="bottom" android:background="@color/top_goods_tab_shadow" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/subtype_container" android:background="@color/top_goods_subtype_bg" android:layout_width="fill_parent" android:layout_height="@dimen/top_goods_subtype_height">
+                <include layout="@layout/top_goods_subtype_layout" />
+            </LinearLayout>
+            <View android:id="@id/header_place_holder" android:background="@color/top_goods_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.jingdong.app.mall.top.CommonEmptyView android:id="@id/loading_ware_list_empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" custom:topText="@string/top_goods_network_error_tip_1" custom:bottomText="@string/top_goods_network_error_tip2" custom:showProgressBar="false" custom:showRefreshBtn="false" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.jingdong.app.mall.top.CommonEmptyView android:layout_gravity="center" android:id="@id/loading_tab_empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:topText="@string/top_goods_network_error_tip_1" custom:bottomText="@string/top_goods_network_error_tip3" custom:showProgressBar="true" custom:showRefreshBtn="false" />
+    </FrameLayout>
+</LinearLayout>

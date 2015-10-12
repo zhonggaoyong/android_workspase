@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="180.0dip">
+        <LinearLayout android:paddingRight="150.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+            <TextView android:background="#ffeac8db" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/tips_ll" android:background="@color/app_body_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_above="@id/pull_to_refresh_header_content" android:layout_centerHorizontal="true">
+            <ImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_header_info2" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/app_body_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/tips_ll" android:layout_centerHorizontal="true">
+            <ImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_header_info1" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/pull_to_refresh_header_content" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="@dimen/pull_refresh_listview_text_layout_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/app_textsize_price" android:textColor="@color/pull_refresh_listview_text_color" android:gravity="center" android:id="@id/pull_to_refresh_header_hint_textview" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/pull_to_refresh_header_hint_normal" android:layout_centerInParent="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/app_xlistview_text" android:id="@id/pull_to_refresh_last_update_time_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pull_to_refresh_header_last_time" android:layout_below="@id/pull_to_refresh_header_hint_textview" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/app_xlistview_text" android:id="@id/pull_to_refresh_header_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/pull_to_refresh_last_update_time_text" android:layout_below="@id/pull_to_refresh_header_hint_textview" />
+            <ImageView android:id="@id/pull_to_refresh_header_arrow" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/pull_to_refresh_header_hint_textview" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+            <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@id/pull_to_refresh_header_progressbar" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="11.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/new_progressbar_anim" android:indeterminateDuration="200" android:indeterminateBehavior="repeat" android:layout_toLeftOf="@id/pull_to_refresh_header_hint_textview" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

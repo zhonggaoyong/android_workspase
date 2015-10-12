@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/lottery_flight_butn_check_select" />
+    <item android:drawable="@drawable/lottery_flight_butn_check_unselect" />
+</selector>

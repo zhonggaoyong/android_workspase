@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_20px">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="@dimen/pub_margin_or_padding_space_sixteen" android:paddingRight="@dimen/pub_margin_or_padding_space_sixteen" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_eight" android:gravity="left|center" android:id="@id/order_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_twelev" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_twelev" android:text="" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_nine" android:gravity="right|center" android:id="@id/pay_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" />
+        </LinearLayout>
+        <TextView android:background="@drawable/category_listview_divider" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/pub_margin_or_padding_space_sixteen" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/phone_recharge_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_16px">
+                <TextView android:textSize="@dimen/android_public_textsize_22pt" android:textColor="@color/pub_color_eight" android:id="@id/num_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/pub_color_nine" android:id="@id/phone_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_16px" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:background="@drawable/category_listview_divider" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="@dimen/pub_margin_or_padding_space_sixteen" android:paddingRight="@dimen/pub_margin_or_padding_space_sixteen" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/android_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:gravity="left|center" android:id="@id/should_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_ten" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_ten" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_nine" android:gravity="right|center" android:id="@id/exchange_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

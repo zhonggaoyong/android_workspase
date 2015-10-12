@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="payment_pay_text_size">16.0dip</dimen>
+    <dimen name="payment_price_text_size">16.0dip</dimen>
+    <dimen name="favor_guide_image_height">350.0dip</dimen>
+    <dimen name="splash_activity_img_height">525.0dip</dimen>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bainuo.QRCode.fragment.QRCodeDialog android:orientation="vertical" android:background="@drawable/qrdialog_corners_bg" android:scrollbars="none" android:layout_width="@dimen/qr_dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.bainuo.QRCode.fragment.RoundNetworkImageView android:layout_gravity="top|center" android:id="@id/qr_image" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="center" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="114.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="21.0dip" android:textColor="#ff111111" android:id="@id/qr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <View android:id="@id/qr_middle_divider" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:id="@id/qr_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="18.0dip">
+        <Button android:textSize="16.0dip" android:textColor="#ffff4978" android:id="@id/qr_button_left" android:background="@drawable/bg_white_button_selector" android:layout_width="115.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.5dip" />
+        <Button android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/qr_button_right" android:background="@drawable/bg_red_button_selector" android:layout_width="115.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.5dip" />
+    </LinearLayout>
+</com.baidu.bainuo.QRCode.fragment.QRCodeDialog>

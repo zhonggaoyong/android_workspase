@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/actionbar_compat_background" android:paddingRight="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/search_bar_bg" android:layout_width="0.0dip" android:layout_height="@dimen/height_bar_filter" android:layout_weight="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:textSize="15.0sp" android:textColor="#ff636363" android:textColorHint="#ffb8b8b8" android:gravity="center_vertical" android:id="@id/et_input" android:background="@null" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:hint="@string/home_search_hint" android:singleLine="true" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_clear" android:background="@drawable/edittext_clear_button" android:visibility="gone" android:layout_width="@dimen/height_bar_filter_tiny" android:layout_height="@dimen/height_bar_filter_tiny" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="@dimen/height_bar_filter" android:layout_height="@dimen/height_bar_filter" android:layout_marginLeft="@dimen/global_padding" android:layout_marginRight="@dimen/global_padding">
+        <ImageView android:id="@id/btn_enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_iv_search" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

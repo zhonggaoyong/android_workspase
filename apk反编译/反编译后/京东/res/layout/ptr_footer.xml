@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loading_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight">
+        <com.jingdong.common.ui.JDProgressBar android:layout_gravity="center_vertical" android:layout_width="@dimen/progressbar_size_small" android:layout_height="@dimen/progressbar_size_small" />
+        <TextView android:id="@id/loading_msg" android:paddingLeft="6.0dip" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="@string/load_more_loading" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/footer_retry_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/load_more_error" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/footer_reach_end_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/load_more_reach_end" />
+</FrameLayout>

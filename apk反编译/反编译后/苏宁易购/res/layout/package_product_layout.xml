@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingBottom="@dimen/ios_public_space_28px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_28px" />
+    <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:paddingLeft="@dimen/ios_public_space_28px" android:paddingTop="@dimen/ios_public_space_28px" android:paddingBottom="@dimen/ios_public_space_28px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/package_product_title" />
+    <HorizontalScrollView android:id="@id/packageScrollView" android:paddingLeft="@dimen/ios_public_space_28px" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/package_product_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</LinearLayout>

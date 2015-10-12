@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/detail_gray_light" android:layout_gravity="center" android:id="@id/txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:drawableRight="@drawable/itemdetail_pull_up" android:drawablePadding="3.0dip" android:layout_centerInParent="true" />
+    <View android:background="@color/indicator_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/detail_lr_padding" android:layout_toLeftOf="@id/txt" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <View android:background="@color/indicator_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginRight="@dimen/detail_lr_padding" android:layout_toRightOf="@id/txt" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</merge>

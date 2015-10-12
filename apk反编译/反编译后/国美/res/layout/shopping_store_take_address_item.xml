@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/promotion_title" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textColor="@color/main_default_black_text_color" android:id="@id/shopping_store_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="国美中关村科贸商城" />
+        <TextView android:textColor="@color/hint_text_color" android:id="@id/shopping_store_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="010-82535123" />
+        <TextView android:textColor="@color/hint_text_color" android:id="@id/shopping_store_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="海淀区中关村南大街32号" />
+    </LinearLayout>
+</RelativeLayout>

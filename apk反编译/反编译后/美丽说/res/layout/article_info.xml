@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_back" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.GoShoppingcartView android:id="@id/to_shoppingcart_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/share" android:clickable="true" android:src="@drawable/goods_ico_share" android:layout_toLeftOf="@id/to_shoppingcart_btn" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TitleBtn" />
+        <ImageView android:id="@id/article_delete" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/goods_ico_delete" android:layout_toLeftOf="@id/share" android:layout_centerVertical="true" android:onClick="onClick" />
+    </RelativeLayout>
+    <com.meilishuo.app.views.CustomTextView android:textColor="@color/grey_d3" android:layout_gravity="center_horizontal" android:id="@id/no_content" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_share_order" />
+    <LinearLayout android:orientation="vertical" android:id="@id/loadingview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ListView android:id="@id/list_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_addlike_anim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pic_like_animation" />
+        </FrameLayout>
+        <RelativeLayout android:background="@drawable/order_bg_goodsinformation" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textColor="@color/white" android:id="@id/btn_send" android:background="@drawable/dress_replay_btn_bg" android:paddingLeft="15.0dip" android:paddingTop="9.0dip" android:paddingRight="15.0dip" android:paddingBottom="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reply" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.meilishuo.app.views.DeletableEditText android:textSize="16.0sp" android:textColor="@color/grey_d3" android:textColorHint="@color/grey" android:id="@id/btn_reply" android:background="@drawable/edit_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:hint="@string/dress_comment_add_hint" android:layout_toLeftOf="@id/btn_send" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

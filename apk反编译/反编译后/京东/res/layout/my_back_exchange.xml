@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/personal_back_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <View android:id="@id/personal_top_divider" style="@style/line1" />
+        <ListView android:id="@id/back_exchange_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/gray" android:dividerHeight="1.0dip" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+        <View android:id="@id/personel_footer_devider" style="@style/line1" />
+    </LinearLayout>
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/back_no_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/no_data" />
+</LinearLayout>

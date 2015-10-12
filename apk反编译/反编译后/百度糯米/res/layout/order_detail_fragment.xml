@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bainuo.view.ptr.impl.PullToRefreshAnyView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/cart_pay_layout" android:background="@drawable/tuan_detail_item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+            <include android:id="@id/order_detail_menu_devider_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" layout="@layout/order_detail_devider" />
+            <Button android:textSize="16.0sp" android:textColor="@color/order_list_white" android:id="@id/order_detail_cart_pay" android:background="@drawable/common_btn_red_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/order_btn_pay" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cart_pay_layout">
+            <LinearLayout android:orientation="vertical" android:id="@id/bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+                <LinearLayout android:orientation="vertical" android:id="@id/order_detail_goods" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/order_detail_goods_info" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/quan_detail_goods_info" />
+                    <include android:id="@id/order_detail_goods_info1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/quan_detail_goods_info" />
+                    <include android:id="@id/order_detail_goods_info2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/quan_detail_goods_info" />
+                    <RelativeLayout android:gravity="center_horizontal" android:id="@id/detail_shopping_cart_show_more" android:background="@drawable/tuan_detail_item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/order_list_dark_black" android:gravity="center" android:id="@id/show_more_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看全部" android:layout_centerInParent="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/icon_arrows_gray_down" android:layout_toRightOf="@id/show_more_tv" android:layout_centerVertical="true" />
+                        <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" layout="@layout/order_detail_devider" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/cart_total_info" android:background="@drawable/tuan_detail_item_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/order_list_mid_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/order_detail_cart_total_info" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="@string/order_detail_shopping_cart_info" />
+                    </LinearLayout>
+                </LinearLayout>
+                <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+                <LinearLayout android:orientation="vertical" android:id="@id/protectionNew" android:background="@drawable/tuan_detail_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TableLayout android:id="@id/protectionTableNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*" android:shrinkColumns="*" />
+                </LinearLayout>
+                <include android:id="@id/order_detail_protection_devider_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+                <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <include android:id="@id/order_detail_comment_devider_top" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+                <include android:id="@id/order_detail_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/order_detail_comment" />
+                <include android:id="@id/order_detail_comment_devider_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="10.0dip" layout="@layout/order_detail_devider" />
+                <include android:id="@id/order_detail_quan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" layout="@layout/order_detail_quan" />
+                <LinearLayout android:orientation="vertical" android:id="@id/quan_creating_area" android:background="@drawable/tuan_detail_item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/quan_list_devider" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/order_list_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_quan_title" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/quan_list_devider" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/order_list_black" android:gravity="center_vertical" android:id="@id/creating_quan_msg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip" />
+                    <include android:id="@id/creating_quan_devider_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+                </LinearLayout>
+                <View android:id="@id/quan_creating_area_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <include android:id="@id/order_detail_delivery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" layout="@layout/order_detail_delivery" />
+                <include android:id="@id/order_detail_notice_devider_top" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+                <include android:id="@id/order_detail_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tuan_detail_notice" />
+                <include android:id="@id/order_detail_notice_devider_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="10.0dip" layout="@layout/order_detail_devider" />
+                <include android:id="@id/order_detail_menu_devider_top" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+                <include android:id="@id/order_detail_menu_info" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tuan_detail_menu_info" />
+                <include android:id="@id/order_detail_menu_devider_bottom" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="10.0dip" layout="@layout/order_detail_devider" />
+                <include android:id="@id/order_detail_order_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" layout="@layout/order_detail_order_info" />
+                <Button android:textSize="16.0sp" android:textColor="@color/order_list_pink" android:layout_gravity="center_horizontal" android:id="@id/order_detail_refund" android:background="@drawable/common_btn_white_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip" android:text="@string/order_btn_refund" />
+                <include android:id="@id/order_detail_refund_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" layout="@layout/order_quancheck_layout" />
+                <include android:id="@id/order_detail_insurance_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" layout="@layout/order_detail_insurance_info" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</com.baidu.bainuo.view.ptr.impl.PullToRefreshAnyView>

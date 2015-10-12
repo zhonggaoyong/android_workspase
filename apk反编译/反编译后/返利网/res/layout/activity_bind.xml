@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/login_line_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_input" android:background="@drawable/login_2_lines_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="14.0dip">
+                <EditText android:textSize="16.0sp" android:textColor="#ff333333" android:textColorHint="#ff999999" android:id="@id/email" android:background="@null" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="" android:hint="@string/binding_edittext_hint_email" android:singleLine="true" android:layout_weight="1.0" />
+                <View android:background="@drawable/login_line_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <EditText android:textSize="16.0sp" android:textColor="#ff333333" android:textColorHint="#ff999999" android:id="@id/pwd" android:background="@null" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="" android:hint="@string/binding_edittext_hint_pwd" android:singleLine="true" android:layout_weight="1.0" android:inputType="textPassword" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_input_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="14.0dip">
+                <com.fanli.android.view.TangFontTextView android:textSize="17.0sp" android:textColor="#ff333333" android:layout_gravity="center_horizontal" android:id="@id/bind_hint_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/binding_show_msg" />
+                <EditText android:textSize="16.0sp" android:textColor="#ff333333" android:textColorHint="#ff999999" android:id="@id/email_only" android:background="@drawable/login_1_line_bg" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="18.0dip" android:text="" android:hint="@string/binding_edittext_hint_email" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/btn_login" android:background="@drawable/selector_login_button_4" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="14.0dip" android:text="@string/binding_btn_label" />
+    </LinearLayout>
+</ScrollView>

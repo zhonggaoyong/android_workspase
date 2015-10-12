@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/od_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <RelativeLayout android:id="@id/orderDetail_emptyViewParent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/common_top_layout">
+        <ScrollView android:id="@id/od_sv" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/od_body" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/activity_order_detail_status" />
+                <include layout="@layout/activity_order_detail_consignee" />
+                <include layout="@layout/activity_order_detail_goods" />
+                <include layout="@layout/activity_order_detail_pay" />
+                <include layout="@layout/activity_order_detail_distribution" />
+                <include layout="@layout/activity_order_detail_store" />
+                <include layout="@layout/activity_order_detail_invoice" />
+                <include layout="@layout/activity_order_detail_money" />
+                <include layout="@layout/activity_order_detail_orderinfo" />
+                <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/activity_order_detail_footer_temp" />
+            </LinearLayout>
+        </ScrollView>
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/activity_order_detail_footer" />
+    </RelativeLayout>
+</RelativeLayout>

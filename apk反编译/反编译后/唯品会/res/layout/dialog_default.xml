@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/new_update_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="300.0dip" android:minWidth="250.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/dialog_title_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="fill_horizontal|center" android:orientation="vertical" android:id="@id/dialog_content_main" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0sp" android:layout_marginRight="10.0sp" />
+    </LinearLayout>
+    <View android:background="@color/red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/dialog_positive_button" android:background="@drawable/submit_white_button" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+        <Button android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/dialog_middle_button" android:background="@drawable/submit_white_button" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+        <ImageView android:visibility="gone" android:layout_width="0.5dip" android:layout_height="fill_parent" android:src="@color/btn_vertical_line" />
+        <Button android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/dialog_negative_button" android:background="@drawable/submit_white_button" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

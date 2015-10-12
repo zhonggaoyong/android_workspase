@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/shake_promotion_bg" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="bottom|center" android:background="@drawable/shake_promotion_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageSwitcher android:id="@id/switcher_ernie" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/shake_promotion_word_shaked" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_light" android:background="@drawable/shake_promotion_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center_horizontal" android:background="@drawable/shake_promotion_foot" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewSwitcher android:id="@id/switcher_result" android:layout_width="@dimen/result_page_width" android:layout_height="@dimen/result_page_height" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/tv_active_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/shake_foot_marginBottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/shake_rule_textSize" android:textColor="@color/shake_dark_gray" android:gravity="center" android:id="@id/tv_shake_rule" android:background="@color/shake_rule_bg" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="更多规则" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

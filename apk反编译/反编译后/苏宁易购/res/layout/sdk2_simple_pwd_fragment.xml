@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/common_hm_vw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/comm_padding_size_3" style="@style/common_hm_vw">
+        <TextView android:textSize="25.0sp" android:textColor="@color/sdk_color_little_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/sdk2_pay_money" android:layout_marginTop="@dimen/comm_padding_size_2" android:layout_marginBottom="@dimen/comm_padding_size_2" style="@style/common_hm_vw" />
+        <TextView android:textColor="@color/sdk2_color_green" android:layout_gravity="center_horizontal" android:id="@id/sdk2_installment_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/comm_padding_size_2" android:text="@string/sdk2_installment_payment" />
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_marginLeft="@dimen/comm_padding_size_3" android:layout_marginRight="@dimen/comm_padding_size_3" style="@style/common_hm_vw">
+            <com.suning.mobile.paysdk.view.SecurityPasswordEditText android:gravity="center_vertical" android:id="@id/skd2_pwd_simple_edit" android:visibility="gone" style="@style/common_hm_vm" />
+            <include android:id="@id/skd2_pwd_dense_edit" android:visibility="gone" layout="@layout/sdk2_dense_pwd_widget" />
+            <include android:layout_gravity="center_horizontal" android:id="@id/sdk2_pwd_free_edit" android:visibility="gone" layout="@layout/sdk2_small_pwd_widget" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/sdk_pay_change_layout" android:background="@drawable/sdk2_pay_bank_gb" android:layout_height="40.0dip" android:weightSum="1.0" style="@style/common_hm_vm">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/comm_padding_size_3" android:layout_weight="1.0">
+            <TextView android:textColor="@color/sdk_color_little_gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/sdk2_pay_channel_name" android:singleLine="true" style="@style/common_hw_vw" />
+            <TextView android:textColor="@color/sdk2_color_black" android:id="@id/sdk2_broken_protol" android:visibility="gone" android:text="@string/sdk2_borkenmoney_protol" style="@style/common_hw_vw" />
+        </LinearLayout>
+        <TextView android:textColor="@color/sdk2_color_green" android:gravity="center_vertical" android:id="@id/sdk2_change_channel_tv" android:layout_marginRight="@dimen/comm_padding_size_3" android:text="@string/sdk2_pay_change_str" style="@style/common_hw_vw" />
+    </LinearLayout>
+    <Button android:enabled="false" android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/sdk2_color_black" android:gravity="center" android:id="@id/sdk2_confirm_btn" android:background="@drawable/sdk2_bg_bottom" android:text="@string/sdk2_confirm_pay" style="@style/common_hm_vw" />
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/flight_fly_detail_top2" android:background="@drawable/flight_detail_repeat_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/detail_date_layout2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/detail_type2" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/int_flight_noti_icon_back" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_normal_black_color" android:id="@id/detail_date2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2014年1月27日  周一" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/detail_airline_flightno2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="@dimen/flight_list_dis_text_size" android:textColor="@color/text_normal_gray_color" android:gravity="left|center" android:id="@id/detail_airwaysCn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="东方航空" />
+            <TextView android:textSize="@dimen/flight_list_dis_text_size" android:textColor="@color/text_normal_gray_color" android:gravity="left|center" android:id="@id/detail_flightNo2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="MU563" />
+            <TextView android:textSize="@dimen/flight_list_dis_text_size" android:textColor="@color/text_normal_gray_color" android:gravity="left|center" android:id="@id/detail_planeStyle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="330" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/int_flight_detail_default_top2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="13.0dip">
+            <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/flight_icon2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/flight_plain_image" />
+                <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/stop_place2" android:background="@drawable/flight_icon_passing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="经停" />
+                <TextView android:textSize="10.0dip" android:textColor="#ff999999" android:id="@id/spend_time2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="2.0dip" android:text="约2时10分" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/from2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/flight_icon2">
+                <TextView android:textSize="15.0dip" android:textColor="#ff252525" android:gravity="right|center" android:id="@id/detail_depcity2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="北京" />
+                <TextView android:textSize="27.0dip" android:textStyle="bold" android:textColor="#ff252525" android:gravity="right|center" android:id="@id/detail_deptime2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="06:35" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/text_normal_gray_color" android:ellipsize="end" android:gravity="right|center" android:id="@id/detail_depAirdrome2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:text="首都机场T3" android:lines="1" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/arrival2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/flight_icon2">
+                <TextView android:textSize="15.0dip" android:textColor="#ff252525" android:gravity="left|center" android:id="@id/detail_arrcity2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="上海" />
+                <TextView android:textSize="27.0dip" android:textStyle="bold" android:textColor="#ff252525" android:gravity="left|center" android:id="@id/detail_arrtime2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="08:45" android:singleLine="true" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/text_normal_gray_color" android:ellipsize="end" android:gravity="left|center" android:id="@id/detail_arrAirdrome2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:text="虹桥机场T2" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/int_flight_detail_more_top2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:id="@id/line_sp_h2" android:background="@drawable/flight_order_splitline_h" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/price_rule_layout2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="#ff252525" android:gravity="center" android:id="@id/classNoCn2" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="经济仓" />
+                <TextView android:textSize="13.0dip" android:textColor="#ff252525" android:gravity="center" android:id="@id/adt_persion2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="成人票" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="#ff252525" android:gravity="center" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="总价" />
+                <TextView android:textSize="13.0dip" android:textColor="#fff15353" android:gravity="center" android:id="@id/count_adt_price2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="￥550" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+            <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34.0dip">
+                <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="机票价" />
+                <TextView android:textSize="12.0dip" android:textColor="#fff15353" android:gravity="center" android:id="@id/detail_price2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="￥550" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:gravity="center" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="税费" />
+                <TextView android:textSize="12.0dip" android:textColor="#fff15353" android:gravity="center" android:id="@id/detail_tax2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="￥170" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="2.0dip">
+                <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:gravity="left|center" android:id="@id/detail_quan_info2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返券" />
+                <TextView android:textSize="12.0dip" android:textColor="#fff15353" android:gravity="left|center" android:id="@id/detail_fanquan2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥20" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/help_info2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flight_question_icon" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="0.0dip" android:layout_height="10.0dip" />
+        <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:id="@id/fan_rule_layout2" android:paddingLeft="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="8.0dip">
+            <TextView android:gravity="left|center" android:id="@id/detail_quan_rule_info2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jdtravel_fanquan_rule" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/rule_info2" android:paddingBottom="9.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip">
+                    <LinearLayout android:gravity="left|center" android:layout_gravity="left|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13.0dip" android:textColor="#ff252525" android:gravity="center" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="儿童票" />
+                        <TextView android:textSize="13.0dip" android:textColor="#fff15353" android:gravity="center" android:id="@id/cdt_detail_price2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="￥530" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ticket_information2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="42.0dip">
+                            <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/flight_icon_info" />
+                            <TextView android:textSize="13.0dip" android:textColor="#ff252525" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="购票须知" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="签转规定：" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="left|center" android:id="@id/ticket_turn2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="无" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="改期规定：" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="left|center" android:id="@id/ticket_change2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="无" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退票规定：" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ff999999" android:gravity="left|center" android:id="@id/ticket_back2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="无" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/detail_TgqRule2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:id="@id/tgq_info2" android:paddingLeft="20.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jdtravel_detail_zktgq_info" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/tgq_info_arrow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flight_bar_open_arrowdown" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

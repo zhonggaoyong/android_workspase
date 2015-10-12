@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.7" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cart_up" android:scaleType="fitXY" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/cart_bottom" android:scaleType="fitXY" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

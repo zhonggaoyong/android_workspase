@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/shopping_cart_footer_pan" />
+    <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footer_bar">
+        <ListView android:id="@id/list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:overScrollMode="never" />
+    </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+    <com.meilishuo.app.views.CustomPageLoading android:id="@id/progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

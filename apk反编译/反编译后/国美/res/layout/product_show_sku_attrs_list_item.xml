@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:ellipsize="end" android:id="@id/product_show_sku_attrs_list_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="8.0dip" android:maxWidth="100.0dip" android:text="dfsdf" android:singleLine="true" />
+    <com.gome.ecmall.custom.WrapContentLayout android:orientation="horizontal" android:id="@id/product_show_sku_attrs_list_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/product_show_sku_attrs_list_item_label" android:layout_centerVertical="true" />
+    <TextView android:id="@id/product_show_sku_attrs_list_item_image" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

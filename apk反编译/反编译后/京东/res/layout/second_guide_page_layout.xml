@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_joy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_page_joy" android:scaleType="centerInside" android:layout_alignTop="@id/iv_shopping_cart" android:layout_centerHorizontal="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_shopping_cart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

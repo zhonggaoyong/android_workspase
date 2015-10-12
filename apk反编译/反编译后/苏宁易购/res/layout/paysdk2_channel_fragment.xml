@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="@style/pay_common_hm_vw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/sdk2_channel_listView" android:divider="@drawable/paysdk2_list_divider_" android:headerDividersEnabled="false" android:footerDividersEnabled="false" style="@style/pay_common_hm_vm" />
+</FrameLayout>

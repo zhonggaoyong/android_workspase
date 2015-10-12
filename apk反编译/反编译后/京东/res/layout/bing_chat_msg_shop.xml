@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.common.bing.LeftMessageView android:paddingRight="25.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/shop_msg_layout" android:background="@drawable/bing_receive_msg_red_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="1.0" android:minWidth="@dimen/bing_chat_ballon_min_width">
+        <RelativeLayout android:background="@drawable/bing_jshop_bk" android:layout_width="227.0dip" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="9.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/jshop_list_item_whole" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bing_shop_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                    <View android:layout_gravity="center_vertical" android:background="#ffe0e0e0" android:layout_width="28.0dip" android:layout_height="1.0px" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/bing_jshop_item_logo" android:layout_width="100.0dip" android:layout_height="30.0dip" android:src="@drawable/jshop_logo_default" />
+                    <View android:layout_gravity="center_vertical" android:background="#ffe0e0e0" android:layout_width="28.0dip" android:layout_height="1.0px" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/jshop_list_item_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_below="@id/bing_shop_logo" android:layout_centerVertical="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/bing_jshop_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jshop_sign_icon_shop" />
+                        <TextView android:textSize="15.0dip" android:textColor="#ff252525" android:id="@id/bing_shop_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="蓝莓儿外贸服装店" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/bing_jshop_score_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
+                        <RatingBar android:layout_gravity="bottom" android:id="@id/jshop_list_item_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="4.0" android:stepSize="1.0" android:isIndicator="true" style="@style/JshopRatingBar" />
+                        <TextView android:textSize="13.0dip" android:textColor="#ff252525" android:id="@id/bing_shop_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/bing_overall" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/jshop_list_icons" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_weight="3.0">
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_list_item_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/jshop_list_item_new" />
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_list_item_quan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jshop_list_item_quan" />
+                    </LinearLayout>
+                    <TextView android:textSize="13.0dip" android:textColor="#ff848689" android:id="@id/jshop_list_item_favorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:text="2.5万人关注" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.jingdong.common.bing.LeftMessageView>

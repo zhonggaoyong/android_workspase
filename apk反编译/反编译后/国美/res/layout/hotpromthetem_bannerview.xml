@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_rule" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/biner_image_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/hotprom_thetem_banner_icon" android:background="@drawable/banner_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:color="@color/vip_red" />
+    <item android:color="@color/app_text_price_secondary_new_ui" />
+</selector>

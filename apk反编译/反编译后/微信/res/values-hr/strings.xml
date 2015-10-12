@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Pogreška Usluga za Google Play</string>
+    <string name="d3r">Aplikacija zahtijeva instaliranje Usluga za Google Play.</string>
+    <string name="d3s">Aplikacija zahtijeva ažuriranje Usluga za Google Play.</string>
+    <string name="d3t">Aplikacija zahtijeva da Usluge za Google Play budu omogućene.</string>
+    <string name="d3u">Zahtijeva aplikacija %1$s</string>
+    <string name="d3v">Preuzmi usluge za Google Play</string>
+    <string name="d3w">Ova aplikacija neće funkcionirati bez usluga za Google Play, koje nisu instalirane na vašem telefonu.</string>
+    <string name="d3x">Ova aplikacija neće funkcionirati bez usluga za Google Play, koje nisu instalirane na vašem tabletnom računalu.</string>
+    <string name="d3y">Preuzmi usluge za Google Play</string>
+    <string name="d3z">Omogući usluge za Google Play</string>
+    <string name="d40">Ova aplikacija neće raditi ako ne omogućite usluge za Google Play.</string>
+    <string name="d41">Omogući usluge za Google Play</string>
+    <string name="d42">Ažuriraj usluge za Google Play</string>
+    <string name="d43">Ova se aplikacija neće pokrenuti ako ne ažurirate usluge za Google Play.</string>
+    <string name="d44">Mrežna pogreška</string>
+    <string name="d45">Potrebna je podatkovna veza za povezivanje s uslugama Google Play.</string>
+    <string name="d46">Nevažeći račun</string>
+    <string name="d47">Navedeni račun ne postoji na ovom uređaju. Odaberite neki drugi račun.</string>
+    <string name="d48">Nepoznata poteškoća s uslugama za Google Play.</string>
+    <string name="d49">Usluge za Google Play</string>
+    <string name="d4_">Usluge za Google Play, koje su potrebne za funkcioniranje nekih vaših aplikacija, nisu podržane na vašem uređaju. Pomoć potražite od proizvođača.</string>
+    <string name="d4a">Čini se da datum na uređaju nije točan. Provjerite datum na uređaju.</string>
+    <string name="d4b">Ažuriranje</string>
+    <string name="d4c">Prijava</string>
+    <string name="d4d">Prijava uslugom Google</string>
+</resources>

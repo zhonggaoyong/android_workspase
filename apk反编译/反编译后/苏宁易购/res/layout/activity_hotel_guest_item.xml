@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/Silver11" android:id="@id/guestNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="入住人1 " />
+    <TextView android:textSize="16.0sp" android:textColor="@color/Silver11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hotel_order_detail_douhao_string" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/Silver11" android:id="@id/guestName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="玉林" />
+</LinearLayout>

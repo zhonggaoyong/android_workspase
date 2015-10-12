@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/collect_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/collect_msg_layout" android:background="#75000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="24.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/collect_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="收藏有礼" android:singleLine="true" />
+        </LinearLayout>
+        <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:background="#ecffffff" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/collect_button">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/brand_logo" android:layout_width="80.0dip" android:layout_height="40.0dip" fresco:placeholderImage="@drawable/new_mz_img_df" fresco:placeholderImageScaleType="fitCenter" fresco:actualImageScaleType="fitCenter" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                    <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@color/black" android:ellipsize="end" android:id="@id/brandName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/favorNumView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip">
+                        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/icon_user_normal" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                        <TextView android:textSize="10.0dip" android:textColor="@color/detail_gray_light" android:layout_gravity="center_vertical" android:id="@id/favorNumText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="3241人已关注" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/collect_button" android:background="@drawable/shape_vip_red_frame" android:visibility="visible" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <View android:id="@id/collect_button_image" android:background="@drawable/new_collect_icon" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="15.0dip" android:minWidth="17.0dip" />
+                <View android:id="@id/collect_button_gou_image" android:background="@drawable/icon_btn_success" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="15.0dip" android:minWidth="17.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/choose_icon" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/icon_darkchoose_normal" />
+                    <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/vip_red" android:id="@id/collect_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收藏" android:layout_centerInParent="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

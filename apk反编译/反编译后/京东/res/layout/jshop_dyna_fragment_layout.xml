@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/jshop_dynamic_fragment_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.common.ui.JDDrawerLayout android:id="@id/layout_fav" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/back" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/common_title_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jshop_tab_group" android:layout_width="wrap_content" android:layout_height="@dimen/top_goods_tab_height" android:layout_centerInParent="true">
+                    <RadioButton android:textSize="@dimen/favo_tab_text_size" android:textColor="@color/favo_tab_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/tab_mine" android:background="@drawable/favo_left_tab_selector" android:layout_width="wrap_content" android:layout_height="30.0dip" android:checked="false" android:button="@null" android:text="@string/jshop_tab_mine" android:singleLine="true" android:layout_weight="1.0" />
+                    <RadioButton android:textSize="@dimen/favo_tab_text_size" android:textColor="@color/favo_tab_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/tab_trace" android:background="@drawable/favo_mid_tab_selector" android:layout_width="wrap_content" android:layout_height="30.0dip" android:button="@null" android:text="@string/jshop_tab_trace" android:singleLine="true" android:layout_weight="1.0" />
+                    <RadioButton android:textSize="@dimen/favo_tab_text_size" android:textColor="@color/favo_tab_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/tab_new_shop" android:background="@drawable/favo_right_tab_selector" android:layout_width="wrap_content" android:layout_height="30.0dip" android:button="@null" android:text="@string/jshop_tab_new_shop" android:singleLine="true" android:layout_weight="1.0" />
+                </RadioGroup>
+            </RelativeLayout>
+            <View android:id="@id/split_line_h" android:visibility="gone" style="@style/line6" />
+            <LinearLayout android:orientation="vertical" android:id="@id/jshop_tab_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="right" android:id="@id/product_list_filter_menu" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.jingdong.common.ui.JDDrawerLayout>
+</LinearLayout>

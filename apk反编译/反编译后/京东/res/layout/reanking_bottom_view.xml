@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/cata_line_1" android:background="#88000000" android:layout_width="fill_parent" android:layout_height="36.5dip">
+        <com.jingdong.common.ranking.view.CatalogView android:id="@id/catalog_1" android:background="@drawable/reanking_bottom_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="#ff000000" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <com.jingdong.common.ranking.view.CatalogView android:id="@id/catalog_2" android:background="@drawable/reanking_bottom_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="#ff000000" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <com.jingdong.common.ranking.view.CatalogView android:id="@id/catalog_3" android:background="@drawable/reanking_bottom_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="#ff000000" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <com.jingdong.common.ranking.view.CatalogView android:id="@id/catalog_4" android:background="@drawable/reanking_bottom_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/cata_line_2" android:background="#88000000" android:layout_width="fill_parent" android:layout_height="36.5dip">
+        <com.jingdong.common.ranking.view.CatalogView android:id="@id/catalog_5" android:background="@drawable/reanking_bottom_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="#ff000000" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <com.jingdong.common.ranking.view.CatalogView android:id="@id/catalog_6" android:background="@drawable/reanking_bottom_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="#ff000000" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <com.jingdong.common.ranking.view.CatalogView android:id="@id/catalog_7" android:background="@drawable/reanking_bottom_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="#ff000000" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <com.jingdong.common.ranking.view.CatalogView android:id="@id/catalog_8" android:background="@drawable/reanking_bottom_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

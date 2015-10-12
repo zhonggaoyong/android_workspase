@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/item_active" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_active_pic" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:scaleType="fitXY" android:layout_weight="2.3" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginTop="13.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="13.0dip" android:layout_weight="2.7">
+            <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_active_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/pub_color_eighteen" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_active_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingMultiplier="1.1" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_below="@id/item_active" />
+</RelativeLayout>

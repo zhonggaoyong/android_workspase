@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="top" android:id="@id/cats_selection_title" layout="@layout/title" />
+    <FrameLayout android:background="@color/color_shopping_category_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cats_selection_title">
+        <RelativeLayout android:id="@id/cats_selection_content_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/cats_selection_submit_btn" android:background="@drawable/category_selection_submit_btn_bg" android:visibility="visible" android:layout_width="@dimen/color_buy_category_submit_btn_width" android:layout_height="@dimen/color_buy_category_submit_btn_height" android:layout_marginTop="@dimen/color_buy_category_submit_margin_top" android:layout_marginBottom="@dimen/color_buy_category_submit_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cats_selection_submit_btn">
+                <GridView android:id="@id/cats_selection_gridveiw" android:background="@drawable/category_selection_gridview_bg" android:paddingLeft="4.0dip" android:paddingTop="12.0dip" android:paddingRight="4.0dip" android:paddingBottom="12.0dip" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="12.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:numColumns="3" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/cats_selection_empty" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.jingdong.common.ui.JDProgressBar android:id="@id/cats_selection_loading" android:visibility="visible" android:layout_centerInParent="true" style="@style/progress_loading" />
+            <include android:id="@id/cats_selection_loading_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading_error_tips" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

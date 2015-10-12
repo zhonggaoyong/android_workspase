@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/favor_brand_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="28.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/app_text_black" android:gravity="bottom" android:layout_gravity="center_vertical" android:id="@id/title_txt" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/favor_brands_header_tip" android:singleLine="true" />
+</LinearLayout>

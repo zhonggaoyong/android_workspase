@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/coupons_switcher_keyong" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/coupons_keyong_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lottery_keyongcoupons" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/coupons_keyong_number" android:background="@drawable/lottery_shape_circle_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" style="@style/line_vertical_style" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/coupons_switcher_bukeyong" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/coupons_bukeyong_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lottery_bukeyongcoupons" android:layout_weight="3.0" />
+            <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/coupons_bukeyong_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style" />
+    <ListView android:id="@id/fragment_payment_method_coupon_list" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_marginTop="10.0dip" android:divider="@null" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff848689" android:gravity="center_vertical" android:id="@id/wraning_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:text="@string/lottery_coupons_outof" android:singleLine="true" />
+</LinearLayout>

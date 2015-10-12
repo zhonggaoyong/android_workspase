@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/goods_send_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/goods_image" android:layout_width="71.0dip" android:layout_height="71.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/android_public_space_7px" android:layout_marginRight="@dimen/android_public_space_7px" android:layout_marginBottom="@dimen/android_public_space_7px" android:src="@drawable/default_background_band_edge_small" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_106px" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_three" android:ellipsize="end" android:gravity="center" android:id="@id/product_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/product_bt" android:background="#ffff9900" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="3.0dip" android:text="@string/send_goods_link" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

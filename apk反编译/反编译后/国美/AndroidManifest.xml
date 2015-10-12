@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="51" android:versionName="4.1.4" platformBuildVersionName="5.1.1-1819727" platformBuildVersionCode="22" package="com.gome.eshopnew"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:name="com.gome.ecmall.core.app.GlobalApplication" android:allowBackup="true" android:hardwareAccelerated="true">
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.gome.ecmall.home.LaunchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="gomeeshop" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/base_scheme" android:host="@string/home_LaunchActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/activity_anim_exit_theme" android:label="@string/app_name" android:name="com.gome.ecmall.home.GomeEMallActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/base_scheme" android:host="@string/home_GomeEMallActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.baidu.appsearchlib.NASLib">
+            <intent-filter>
+                <data android:scheme="appsearch0004" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.gome.ecmall.home.HomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/activity_translucent" android:name="com.gome.ecmall.home.more.HomeFloorLeadActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.gome.ecmall.home.search.NewSearchActivity" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.gome.ecmall.home.search.NewSearchExtActivity" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.gome.ecmall.home.ShoppingCartNewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.gome.ecmall.home.MoreActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.KeFuActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.ServerActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.HelpActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.StoreHelpActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.UseHelpActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.gome.ecmall.home.more.UseCourseActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.AboutActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.UseHelpDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.AnnouncementListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.AnnouncementDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.ProductBrowseHistoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.CityListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.GomeStoreListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.NearStoreListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.NearStoreMapActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.NearStoreMapWallActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.more.FeedbackActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.shake.ShakeHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.shake.ShakeRulesActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductAppraiseListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductQuestionListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.PublishProductQuestionActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductSummaryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductPhotoViewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductIntroductionActivity" android:screenOrientation="sensor" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ShoppingCartOrderActivity" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ShoppingCartOrderConsInfoActivity" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ShoppingCartOrderNewConsInfoActivity" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ShoppingCartPaymentActivity" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ShoppingCartShippingMethodActivity" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.yunneng.ShoppingCartShippingActivity" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.yunneng.ShoppingCartGoodsActivity" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ShoppingCartInvoiceInfoActivity" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ShoppingCartCouponActivity" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.checkstand.ui.ShoppingCartOrderSuccessManagerActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.checkstand.ui.ShoppingCartOrderSuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.checkstand.ui.ShoppingCartOrderPaySuccessActivity" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ShoppingCartNewPaymentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ShoppingStoreTakeAddressActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyGomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/base_scheme" android:host="@string/home_MyGomeActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyOrderActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyFavoriteActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyAppointmentActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MygomeMypresentActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyMsgActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.order.UIOrderDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyAddressActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.AddressEditOrAddActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyExchangeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyOneExchangeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.coupon.ActivateCouponActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyOrderListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyOrderListCaiActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.HistoryOrderActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.ExtendedWarrantyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.adapter.CollectPointDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.coupon.CouponNewListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyReturnListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyReturnDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyReturnSearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.MyReturnAddressActivity" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.RefundActivity" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.AdvisoryReplyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.gome.ecmall.home.mygome.account.TakePhotoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.account.MyAcountActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.AfterSalesAdviceActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.setting.SettingHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.setting.HelpHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.WaittingCommentListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.accountsecurity.VerifyMobileActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/base_scheme" android:host="@string/mygome_VerifyMobileActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.groupbuy.NewGroupBuyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.groupbuy.NewGroupBuySearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.groupbuy.NewGroupBuyDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.hotproms.HotPromotions2Activity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.hotproms.PromtionActivitiesActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.bestgome.BestGomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.bestgome.BestGomeDescDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.barcode.CaptureActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.barcode.CaptureCoupActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.barcode.BarcodeInputStreamActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.barcode.BarcodeScanReusltListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.hotproms.PreSellActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.barcode.BarcodeScanResultHistoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.limitbuy.NewLimitbuyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.limitbuy.LimitBuySummaryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.limitbuy.LimitbuyEsotericaActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.hotproms.FocusLimitActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.limitbuy.LimitConfirmActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.BelowPriceActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ArriNoticeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.hotproms.HotPromTheTemActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.hotproms.HotPromotionsRuleActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.phonerecharge.PhoneRechargeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.phonerecharge.PhoneUploadContactActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.phonerecharge.PhoneVoiceRechargeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.phonerecharge.PhoneRechargeOrderConfirmActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.phonerecharge.PhoneRechargeOrderSubmitSuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.phonerecharge.PhoneRechargeOrderPaySuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.phonerecharge.PhoneRechargeHelpActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.phonerecharge.PhoneRechargeCouponActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.phonerecharge.CouponListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.phonerecharge.CouponSelectActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.phonerecharge.PhoneRechargeOrderDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:label="@string/app_name" android:name="com.unionpay.uppay.PayActivity" android:excludeFromRecents="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.accountsecurity.AccountSecurityActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.account.MyBalanceActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.account.DrawCashApplicationActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.GoodsAppraiseActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.coupon.GetCouponActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductFilterActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductFilterBrandActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.coupon.PointsForBlueCouponActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.wap.sales.WapSalesActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.TrackListShowActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.groupbuy.GroupLimitInvoiceInfoActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.wap.sales.WapLotteryActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.wap.sales.WapLotteryOrderSubmitSuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.wap.sales.WapLotteryOrderPaySuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.MovieHomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.AdActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.FilmDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.FilmPhotoListActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.FilmPhotoViewActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.MyFavoriteFilmActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.OrderDetailsActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.OrderCommitActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.OrderPayActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.OrderPaySuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.CouponSelectActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.CinemaDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.SeatChooseActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.CityListActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.CinemaChooseActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.OrderListActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.CinemaLocationMapActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.movie.ui.RouteMapShowActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.FlightHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.CityListActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.FlightListActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.FlightSiftActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.CalendarSingleActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.CalendarDoubleActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.CalendarPriceActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.OrderCommitActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.FlightMailTypeActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.FlightInsuranceActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.OrderDetailsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.PassengerListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.PassengerAddOrEditActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.OrderListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.OrderPayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.flight.ui.OrderPaySuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.crowdfunding.ui.PackageListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.crowdfunding.ui.CrowdFundingDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.crowdfunding.ui.CrowdFundingDetailsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.crowdfunding.ui.OrderCommitActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.crowdfunding.ui.OrderPayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.crowdfunding.ui.OrderPaySuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.crowdfunding.ui.MyCrowdFundingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.share.WeiboShareActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_translucent" android:name="com.gome.ecmall.home.share.ShareLeadActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.shop.ShopHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.shop.ShopMessageActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.shop.ShopProductsActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_translucent" android:name="com.gome.ecmall.home.barcode.pay.BarcodePayActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/activity_translucent" android:name="com.gome.ecmall.home.barcode.pay.BarcodePaySuccessActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_translucent" android:name="com.gome.ecmall.home.barcode.login.BarcodeLoginActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_translucent" android:name="com.gome.ecmall.wap.sales.WapBonusActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_translucent" android:name="com.gome.ecmall.home.category.NewProductPhotoViewActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.O2oCityActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.O2oStoreActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <service android:name="com.gome.ecmall.core.util.push.PushService" android:process=":message" />
+        <receiver android:name="com.gome.ecmall.core.util.push.PushBroadCastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":GomeLocation">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="2a3ea533c6c4689aa48d31eb42b66753" />
+        <activity android:name="com.alipay.sdk.app.H5PayActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:name="com.alipay.sdk.auth.AuthActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.gome.ecmall.shopping.AliPayTransparentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <service android:name="com.baidu.android.pay.BfbSdkRemoteService" />
+        <service android:name="com.gome.ecmall.wap.sales.FirstPublicServer" android:process=":message" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.baidu.android.account.ui.WebViewActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.baidu.android.account.ui.SampleLoginActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.baidu.android.account.ui.DynamicLoginActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.baidu.sapi2.utils.LoginProtectAcitivity" android:screenOrientation="portrait" android:windowContentOverlay="@null" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/EbpayThemeActivityWelcome" android:name="com.baidu.android.pay.ui.WelcomeActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.PayResultActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.PwdCheckActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateVisible" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.PwdSetActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateVisible" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.PwdConfirmActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateVisible" />
+        <activity android:theme="@style/EbpayThemeActivitTranslucent" android:name="com.baidu.android.pay.ui.PwdPayActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateVisible" />
+        <activity android:theme="@style/EbpayThemeActivitTranslucent" android:name="com.baidu.android.pay.ui.PwdPaySmsActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.WebViewActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.BindFirstActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.BindSecondActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.BindSecondCreditAcitvity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.BindSecondCredit2Activity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.BindThirdActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.SelectBindCardActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.LoginActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.PassNormalizeActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/EbpayThemeActivit" android:name="com.baidu.android.pay.ui.OrderHomeActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.gome.eshopnew.wxapi.WXPayEntryActivity" android:exported="true" android:launchMode="singleTop" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.limitbuy.LimitbuyMultitimeListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.limitbuy.LimitbuyMultitimeListAdvActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.limitbuy.LimitbuyMultitimeDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.appspecial.SpecialHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/bottomDialog" android:name="com.gome.eshopnew.wxapi.WXEntryActivity" android:exported="true" android:launchMode="singleTop" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.subscribebuy.SubscribeBuyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.subscribebuy.SubscribeBuyRuleActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/bottomDialog" android:name="com.gome.ecmall.home.category.ReserveOrderDialogActivity" />
+        <activity android:theme="@style/bottomDialog" android:name="com.gome.ecmall.home.category.ReserveSuccessDialogActivity" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.o2o.O2OStoreChannelBindActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/bottomDialog" android:name="com.gome.ecmall.home.category.ReserveAddToCarDialogActivity" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ticket.ElectronicTicketActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ticket.ElectronicTicketRuleActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ticket.DiscountTicketActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ticket.DiscountTicketDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.DiscountCouponOrderDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.ticket.DiscountCouponActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.AppRecommendActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.instalments.InstalPayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.PinganPayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.pay.BaiduPayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductFilterChoiceActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductFilterDivisionActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductFilterCategoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductYanbaoChoiceActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.lockpattern.LockPatternActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.lockpattern.ComparePatternActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.setting.PatternSettingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.home.MeiyingbaoHomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.setting.SettingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.setting.AccountSecurityActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.identify.CertificationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.identify.BankListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.transation.ChooseBankCardActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.identify.CardManageListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.transation.CashActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.transation.TradeListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.transation.TradeDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.transation.DealStateActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.transation.RechargeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.transation.RechargeConfirmActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.transation.MeiyingbaoHelpActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.meiyingbao.transation.CardDetailsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.limitbuy.LimitOrderActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.groupbuy.GroupOrderActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.voice.activity.VoiceSearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.orders.WaittingPaymentOrderListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.orders.MaterialOrderListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.orders.PhoneRechargeOrderListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.mygome.orders.OrderListRecycleActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.category.ProductAppraiseListHasImageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.o2o.O2OStoreChannelBindInsideActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.product.detail.ui.ProductDetailMainActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.product.category.ui.ProductCategoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.product.detail.ui.activity.ProductDetailServiceRuleActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.hotproms.WeiPinHuiActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.crowdfunding.ui.GomeFinaceHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100271288" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.homepage.ui.HomePageMainActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.shopping.shenma.ShenMaActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.gome.ecmall.shopping.presentgift.OrderDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.gome.ecmall.shopping.presentgift.PresentGiftActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.im.ui.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.im.ui.ChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.im.ui.ShowBigImage" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.im.ui.ChatAllHistoryActivity" android:screenOrientation="portrait" />
+        <receiver android:name="com.easemob.chat.StartServiceReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="EASEMOB_APPKEY" android:value="gome#kftest" />
+        <meta-data android:name="EASEMOB_API_URL" android:value="service.kf.gome.cn" />
+        <meta-data android:name="EASEMOB_CHAT_ADDRESS" android:value="im.kf.gome.cn" />
+        <service android:name="com.easemob.chat.EMChatService" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.im.ui.ChatSettingsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.im.ui.ChatHelpInfoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.im.ui.ChatBoxTypeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.im.ui.ServiceGuestBookActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/login_anim_theme" android:name="com.gome.ecmall.home.im.photoselector.MultiImageSelectorActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.im.photoselector.MultiImagePreviewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.gome.ecmall.home.mygome.coupon.CouponNewHistoryActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.surprise.ui.SurpriseMainActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_translucent" android:name="com.gome.ecmall.home.surprise.ui.HomeOrderShowBigPhotoViewActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.surprise.ui.HomeOrderShowDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.surprise.ui.activity.HomeOrderCommentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.chaodian.ui.ChaoDianHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.home.limitbuy.NewLimitBuyDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/login_anim_theme" android:label="@string/login_user_login" android:name="com.gome.ecmall.business.login.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden">
+            <intent-filter>
+                <action android:name="com.gome.ecmall.ACTION_LOGIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/base_scheme" android:host="@string/home_LoginActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.business.login.ui.activity.ActivateAccountActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.business.login.ui.activity.LoginAgreeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.business.login.ui.activity.NewRegisterActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/activity_anim_theme" android:label="@string/login_user_register" android:name="com.gome.ecmall.business.login.ui.activity.RegisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.business.login.ui.activity.RetrievePasswordStep2Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.business.login.ui.activity.RetrievePasswordStep3Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity android:theme="@style/activity_anim_theme" android:name="com.gome.ecmall.business.login.ui.activity.StoreMemberLoginActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.gome.ecmall.business.login.ui.activity.ThirdLoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+    </application>
+</manifest>

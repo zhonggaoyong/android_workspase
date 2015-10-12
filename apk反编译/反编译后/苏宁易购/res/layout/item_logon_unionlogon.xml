@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/union_logon_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/regsiter_phone_soon" />
+    <TextView android:textSize="@dimen/ios_public_textsize_22pt" android:textColor="@color/pub_color_nine" android:id="@id/union_logon_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_18px" />
+</LinearLayout>

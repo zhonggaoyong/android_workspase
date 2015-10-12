@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.KeepScaleImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.meilishuo.app.views.CustomTextView android:gravity="center" android:id="@id/info" android:layout_marginTop="8.0dip" android:maxLines="1" android:layout_below="@id/img" style="@style/PhotoWallCommentTextStyle" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/price_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/info">
+        <ImageView android:id="@id/ico_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/poster_ico_money" />
+        <TextView android:id="@id/price" style="@style/PhotoWallPriceTextStyle" />
+        <ImageView android:id="@id/iv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/goods_ico_like" />
+        <TextView android:id="@id/like" style="@style/PhotoWallLiKeTextStyle" />
+        <ImageView android:id="@id/iv_comment" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="1.0px" android:src="@drawable/icon_zhuanfa" />
+        <TextView android:id="@id/comment" android:visibility="visible" style="@style/PhotoWallLiKeTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/icon_lay" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <View android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_below="@id/price_lay" />
+</RelativeLayout>

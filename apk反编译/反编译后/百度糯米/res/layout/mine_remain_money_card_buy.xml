@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/page_recharge_card" android:background="@color/mine_white" android:paddingTop="8.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.baidu.bainuo.mine.view.ExpandableHeightGridView android:id="@id/recharge_card_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:stretchMode="columnWidth" android:numColumns="3" />
+        <Button android:textColor="@color/selector_delete_color" android:id="@id/buy_now" android:background="@drawable/selector_red_button" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:text="@string/mine_buy_now" android:layout_below="@id/recharge_card_container" />
+    </RelativeLayout>
+    <View android:background="@color/mine_gray10" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/mine_gray5" android:gravity="center_vertical" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:text="@string/mine_remain_money_add_value_card_buy_tips" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/mine_gray5" android:gravity="center_vertical" android:id="@id/tips" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+</LinearLayout>

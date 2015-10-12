@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/customerservicemsg_setting_title_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/customerservicemsg_setting_back" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客服消息设置" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <View style="@style/borderline" />
+    <LinearLayout android:orientation="vertical" android:id="@id/loadingview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+        <View style="@style/borderline" />
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="客服消息推送" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/customerservicemsg_remind_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/setsync_checkbox_style" />
+            <View android:layout_marginLeft="15.0dip" android:layout_alignParentBottom="true" style="@style/cutline" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="订单消息推送" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/customerservice_ordermsg_remind_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/setsync_checkbox_style" />
+            <View android:layout_marginLeft="15.0dip" android:layout_alignParentBottom="true" style="@style/cutline" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="公告消息推送" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/customerservice_announcemsg_remind_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/setsync_checkbox_style" />
+        </RelativeLayout>
+        <View style="@style/borderline" />
+        <View android:layout_marginTop="10.0dip" style="@style/borderline" />
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="消息振动提示" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/customerservice_vibration_remind_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/setsync_checkbox_style" />
+        </RelativeLayout>
+        <View style="@style/borderline" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loading_lay" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomPageLoading android:layout_gravity="center" android:id="@id/pb" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="@color/grey" android:gravity="center" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" />
+    </LinearLayout>
+    <View android:id="@id/footer_divider_line" style="@style/FirstDividerViewStyle" />
+</LinearLayout>

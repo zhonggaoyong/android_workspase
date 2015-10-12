@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top" android:layout_width="fill_parent" android:layout_height="@dimen/vipnew_header_height" layout="@layout/header_layout" />
+    <LinearLayout android:layout_gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top">
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:id="@id/btn_coupon" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="优惠券" />
+            <View android:id="@id/coupon_buttom_line" android:background="@color/vip_pink" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignBottom="@id/btn_coupon" />
+        </RelativeLayout>
+        <View android:background="@color/divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:id="@id/btn_gifts" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="礼品卡" android:layout_weight="1.0" />
+            <View android:id="@id/gifts_buttom_line" android:background="@color/vip_pink" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignBottom="@id/btn_gifts" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_favour" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/black" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="激活码" />
+            <EditText android:textSize="@dimen/app_textsize_main" android:textColorHint="@color/app_text_new_gray" android:gravity="center_vertical" android:id="@id/activate_code" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="14.0dip" android:paddingRight="8.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="48.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_del" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/new_ic_edit_clear" />
+        </LinearLayout>
+        <TextView android:id="@id/avtivate_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/coupon_activate_tip" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+            <Button android:textSize="@dimen/app_textsize_button" android:id="@id/submit_button" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="2.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="激活" style="@style/btn_violet_style" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

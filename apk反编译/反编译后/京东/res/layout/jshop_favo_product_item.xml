@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/jshop_concern_list_item_margin_left_right" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/jshop_favo_item_product_rl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/jshop_favo_item_product_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/jshop_favo_product_item_text_size" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/jshop_favo_item_product_price" android:background="@drawable/jshop_favo_product_item_price_bg" android:paddingLeft="6.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="24.0dip" android:text="" android:shadowRadius="1.0" android:layout_alignRight="@id/jshop_favo_item_product_iv" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

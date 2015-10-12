@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/vip_cart_bg" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@color/vip_cart_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/payment_uppercontent_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/payment_success_uppercontent_normal" />
+            <include android:id="@id/payment_uppercontent_presale" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" layout="@layout/payment_success_uppercontent_presale" />
+            <include android:id="@id/payment_safe_tips" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" layout="@layout/payment_success_safe_tip" />
+            <include android:id="@id/uppercontent_normal_delivery_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" layout="@layout/payment_success_delivery" />
+            <LinearLayout android:orientation="vertical" android:id="@id/payment_button_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@drawable/vipmoney_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="20.0dip">
+                    <Button android:textSize="14.0dip" android:id="@id/payment_shop" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginRight="40.0dip" android:text="@string/payment_shop_again" android:layout_weight="1.0" style="@style/btn_line_grey" />
+                    <Button android:textSize="14.0dip" android:id="@id/payment_next" android:layout_width="0.0dip" android:layout_height="36.0dip" android:text="@string/payment_checkorder" android:layout_weight="1.0" style="@style/btn_line_grey" />
+                </LinearLayout>
+            </LinearLayout>
+            <include android:id="@id/payment_setting_password_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/new_payment_setting_password_2" />
+            <LinearLayout android:orientation="vertical" android:id="@id/adv_layout" android:background="@color/vip_cart_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="3.0px" />
+                <FrameLayout android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.achievo.vipshop.view.ViewFlow android:layout_gravity="top" android:id="@id/adViewPager" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+                    <RadioGroup android:gravity="center" android:layout_gravity="bottom|right|center" android:orientation="horizontal" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/adv_marginRight_size" android:layout_marginBottom="@dimen/adv_marginBottom_size" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

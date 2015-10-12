@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.app.mall.utils.ui.JDResizeRelativeLayout android:id="@id/filter_price_footer_resize_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/filter_second_page_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@color/filter_page_d7d7d7" android:dividerHeight="0.5dip" />
+</com.jingdong.app.mall.utils.ui.JDResizeRelativeLayout>

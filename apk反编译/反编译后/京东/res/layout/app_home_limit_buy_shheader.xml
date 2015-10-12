@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlHomeLimitBySHHeader" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#fff15353" android:id="@id/tv_limit_buy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/home_miaosha" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/layout_limit_buy_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_limit_buy" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@id/app_limit_buy_header_more" android:background="@drawable/home_topic_tag_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/home_miaosha_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/personel_arrow_right" android:layout_toRightOf="@id/app_limit_buy_header_more" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

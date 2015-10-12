@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lib_story_bonus_lv" android:layout_width="220.0dip" android:layout_height="200.0dip" android:layout_alignParentLeft="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/lib_story_bonus_big_iv" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="15.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/lib_story_bonus_big" android:layout_alignParentBottom="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/lib_story_bonus_middle_iv" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="67.0dip" android:layout_marginBottom="96.0dip" android:src="@drawable/lib_story_bonus_middle" android:layout_alignParentBottom="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/lib_story_bonus_small_iv" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="150.0dip" android:layout_marginBottom="120.0dip" android:src="@drawable/lib_story_bonus_small" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

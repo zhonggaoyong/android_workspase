@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mygome_title_layout" android:background="#ffeb4646" android:layout_width="fill_parent" android:layout_height="255.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mygome_home_setting" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="14.0dip" android:src="@drawable/mygome_setting" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llt_mygome_chat_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginRight="18.0dip" android:layout_toLeftOf="@id/mygome_home_setting" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rl_user_no" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="142.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/main_default_white_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="你还没有登录哦~" />
+        <Button android:textSize="14.0sp" android:textColor="@color/main_default_white_text_color" android:id="@id/btn_login_mygome" android:background="@drawable/rectedge_selector" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="120.0dip" android:layout_height="34.0dip" android:layout_marginTop="14.0dip" android:text="马上登录/注册" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_user_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="142.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip">
+        <ImageView android:id="@id/mygome_logo" android:background="@drawable/circle_bg" android:paddingLeft="3.0dip" android:paddingTop="3.0dip" android:paddingRight="3.0dip" android:paddingBottom="3.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="56.0dip" android:src="@drawable/mygome_default_logo" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/main_default_white_text_color" android:ellipsize="end" android:id="@id/mygome_login_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="66.0dip" android:text="" android:maxEms="10" android:singleLine="true" android:layout_toRightOf="@id/mygome_logo" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/mygome_login_name" android:layout_alignLeft="@id/mygome_login_name">
+            <ImageView android:id="@id/mygome_rank_logo" android:layout_width="72.0dip" android:layout_height="20.0dip" android:src="@drawable/mygome_rank_icon1" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_member_activity" android:background="@drawable/mygome_activity_bg_normal" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/iv_member_activity" android:layout_width="22.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="4.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/tv_member_activity_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:text="" android:maxLength="6" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_arraw" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text=">" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/point_mode" android:background="@color/mygome_user_top_bg" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_bottom">
+        <RelativeLayout android:id="@id/my_gome_account_balance_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="10.0">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/mygome_balance_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_default_half_white_color" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mygome_shop_able" android:singleLine="true" android:layout_below="@id/mygome_balance_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/mygome_clock_points_rl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/price_text_color" android:id="@id/mygome_clock_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_default_half_white_color" android:id="@id/mygome_clock_text_mess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/mygome_shop_clock" android:layout_below="@id/mygome_clock_text" android:layout_centerHorizontal="true" />
+            <ImageView android:background="@color/color_mygome_line_bg" android:layout_width="1.0px" android:layout_height="30.0dip" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/mygome_gome_points_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="10.0">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/mygome_points_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_default_half_white_color" android:id="@id/mygome_points_text_mess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/mygome_can_integrals" android:layout_below="@id/mygome_points_text" android:layout_centerHorizontal="true" />
+            <ImageView android:background="@color/color_mygome_line_bg" android:layout_width="1.0px" android:layout_height="30.0dip" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/mygome_mycoupon_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="10.0">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/mygome_shop_points_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_default_half_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/mygome_me_coupon" android:singleLine="true" android:layout_below="@id/mygome_shop_points_text" android:layout_centerHorizontal="true" />
+            <ImageView android:background="@color/color_mygome_line_bg" android:layout_width="1.0px" android:layout_height="30.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom" android:background="#ffffffff" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/ll_payment_waitting_list" style="@style/mygome_head_item">
+            <ImageView android:id="@id/iv_daizhifu" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/mygome_head_daizhifu" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/tv_daizhifu_number" android:layout_toRightOf="@id/iv_daizhifu" style="@style/mygome_cicle_number" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="待支付" android:layout_below="@id/iv_daizhifu" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ll_delivery_waitting_list" style="@style/mygome_head_item">
+            <ImageView android:id="@id/iv_daifahuo" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/mygome_head_daifahuo" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/tv_daifahuo_number" android:layout_toRightOf="@id/iv_daifahuo" style="@style/mygome_cicle_number" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="待发货" android:layout_below="@id/iv_daifahuo" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ll_receive_waitting_list" style="@style/mygome_head_item">
+            <ImageView android:id="@id/iv_daishouhuo" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/mygome_head_daishouhuo" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/tv_daishouhuo_number" android:layout_toRightOf="@id/iv_daishouhuo" style="@style/mygome_cicle_number" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="待收货" android:layout_below="@id/iv_daishouhuo" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ll_comment_waitting_list" style="@style/mygome_head_item">
+            <ImageView android:id="@id/iv_daipingjia" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/mygome_head_daipingjia" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/tv_daipingjia_number" android:layout_toRightOf="@id/iv_daipingjia" style="@style/mygome_cicle_number" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="待评价" android:layout_below="@id/iv_daipingjia" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

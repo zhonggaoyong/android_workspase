@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider_line_view" android:background="@drawable/category_listview_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/product_info_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/product_icon_more_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/product_icon_layout" android:background="@drawable/goods_bg" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="80.0dip">
+                <ImageView android:id="@id/product_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_background_small" android:scaleType="fitXY" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/product_protection_icon" android:background="@drawable/sun_package" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="35.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/product_other_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/public_text_color" android:ellipsize="end" android:id="@id/product_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|right|center" android:id="@id/rechange_order_btn_view" android:background="@drawable/btn_buy_now" android:paddingLeft="@dimen/ios_public_space_19px" android:paddingTop="@dimen/ios_public_space_10px" android:paddingRight="@dimen/ios_public_space_19px" android:paddingBottom="@dimen/ios_public_space_10px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="修改订单" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

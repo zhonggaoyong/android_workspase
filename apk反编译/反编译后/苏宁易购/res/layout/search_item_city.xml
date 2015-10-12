@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/pub_color_sixteen" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/search_tab_color" android:gravity="center_vertical" android:id="@id/search_city_name" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/icon_img_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/contact_way_pressed" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

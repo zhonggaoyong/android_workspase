@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/vip_cart_bg" android:layout_width="fill_parent" android:layout_height="@dimen/cart_nativie_padding" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cart_list_item_bonus_use_layout" android:background="@drawable/vip_edit_text_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip">
+        <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@color/app_text_black_new_ui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/bonus_text" />
+        <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@color/app_text_edittext_gray" android:id="@id/bonus_use_tip_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cart_list_item_bonus_used_layout" android:paddingLeft="@dimen/cart_nativie_padding" android:paddingRight="@dimen/cart_nativie_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@color/app_text_black_new_ui" android:id="@id/bonus_used_title_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/use_bonus" android:layout_weight="1.0" />
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/icon_forward_grey" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/cart_list_item_bonus_list_layout" android:paddingLeft="@dimen/cart_nativie_padding" android:paddingRight="@dimen/cart_nativie_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="13.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/cart_list_item_bonus_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

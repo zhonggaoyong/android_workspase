@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:padding="@dimen/pub_margin_or_padding_space_six" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/pub_margin_or_padding_space_seven" android:src="@drawable/icon_info" />
+    <Button android:textSize="@dimen/pub_textsize_twenty" android:textColor="@color/pub_color_one" android:id="@id/operation" android:background="@drawable/public_bg_btn_orange" android:paddingLeft="@dimen/pub_margin_or_padding_space_ten" android:paddingRight="@dimen/pub_margin_or_padding_space_ten" android:layout_width="wrap_content" android:layout_height="@dimen/ios_public_space_90px" android:text="@string/download_pause" android:layout_alignParentRight="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/pub_margin_or_padding_space_seven" android:layout_toLeftOf="@id/operation" android:layout_toRightOf="@id/imageView" android:layout_alignBottom="@id/imageView">
+        <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_5px" android:progress="0" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+        <RelativeLayout android:paddingBottom="@dimen/pub_margin_or_padding_space_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/progress">
+            <TextView android:id="@id/fileName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" style="@style/NotificationTitle" />
+            <TextView android:id="@id/rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/NotificationTitle" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

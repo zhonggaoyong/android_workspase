@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dialog_list_item_rela" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginBottom="@dimen/ios_public_space_20px">
+        <TextView android:textSize="@dimen/android_public_textsize_22pt" android:id="@id/dialog_list_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:text="wanghui" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/dialog_list_item_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_40px" android:checked="true" android:button="@color/transparent" android:drawableLeft="@drawable/check_select_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

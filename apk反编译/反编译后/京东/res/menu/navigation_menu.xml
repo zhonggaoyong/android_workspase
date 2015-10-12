@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/navigation_home_selector" android:id="@id/menu_home" android:showAsAction="always" />
+    <item android:icon="@drawable/navigation_catagory_selector" android:id="@id/menu_category" android:showAsAction="always" />
+    <item android:icon="@drawable/navigation_car_selector" android:id="@id/menu_car" android:showAsAction="always" />
+    <item android:id="@id/menu_faxian" android:title="@string/navigation_faxian" android:showAsAction="never" />
+    <item android:id="@id/menu_personal" android:title="@string/navigation_myjd" android:showAsAction="never" />
+</menu>

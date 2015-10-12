@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/submit_info_sel_title_area" android:background="@color/order_list_white" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/submit_info_sel_close" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="64.0dip" android:src="@drawable/submit_info_close_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/submit_info_sel_close" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/order_list_mid_black" android:id="@id/submit_info_sel_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <LinearLayout android:gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/submit_info_sel_title" android:layout_alignParentLeft="true">
+                <TextView android:textSize="14.0sp" android:textColor="@color/order_list_mid_black" android:id="@id/submit_info_sel_price_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit_info_dlg_price" android:singleLine="true" android:includeFontPadding="false" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/order_list_pink" android:id="@id/submit_info_sel_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:includeFontPadding="false" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/order_list_grey" android:gravity="left" android:id="@id/submit_info_sel_delivery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:singleLine="false" android:includeFontPadding="false" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/pay_submit_dark_devider" />
+    <ScrollView android:orientation="vertical" android:id="@id/submit_info_sel_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/order_list_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/submit_info_amount" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" layout="@layout/pay_submit_info_item" />
+            <LinearLayout android:orientation="vertical" android:id="@id/submit_info_options_area" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/pay_submit_dark_devider" />
+    <FrameLayout android:background="@color/order_list_white" android:paddingLeft="13.0dip" android:paddingTop="8.0dip" android:paddingRight="13.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:textColor="@color/order_list_white" android:id="@id/submit_info_sel_ok" android:background="@drawable/common_btn_red_selector" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/submit_login_ok" android:includeFontPadding="false" />
+    </FrameLayout>
+</LinearLayout>

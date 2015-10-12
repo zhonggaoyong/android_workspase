@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@id/brand_content" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/brand_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/ll_brand_special" android:background="@color/black_90" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignBottom="@id/brand_image">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_pms_special" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="13.0dip" android:textColor="@color/app_text_white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/brand_tip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="25.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_brand" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/brand_image">
+        <LinearLayout android:id="@id/ll_brand_discount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/vip_red" android:id="@id/brand_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/black" android:id="@id/brand_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="时尚初夏清爽女装系列专场" android:singleLine="true" android:layout_weight="2.0" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/brand_time" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_clock_gray" />
+            <TextView android:textSize="@dimen/app_textsize_secondary" android:textColor="@color/app_text_price_secondary" android:ellipsize="end" android:id="@id/brand_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="剩3时" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

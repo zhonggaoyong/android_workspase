@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_webview_layout" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/control_MENU" android:background="@drawable/main_navigation_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageView_back" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_web_back" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageView_next" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:src="@drawable/icon_web_go" android:layout_toRightOf="@id/imageView_back" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageView_fresh" android:paddingLeft="25.0dip" android:paddingTop="5.0dip" android:paddingRight="25.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_fresh" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/app_webview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/control_MENU">
+        <include android:id="@id/app_webview_title" layout="@layout/webview_title" />
+        <RelativeLayout android:id="@id/progressImage_normal_layout" android:layout_width="fill_parent" android:layout_height="@dimen/webview_progressbar_actual_height" android:layout_below="@id/app_webview_title" />
+        <RelativeLayout android:id="@id/webview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progressImage_normal_layout">
+            <WebView android:scrollbarStyle="outsideOverlay" android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/progressImage_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/webview_progressbar_margin" android:layout_marginBottom="@dimen/webview_progressbar_margin" android:layout_above="@id/webview_layout" android:layout_below="@id/app_webview_title" />
+        <TextView android:textSize="15.0dip" android:textColor="#ffe4393c" android:gravity="center" android:id="@id/like_btn" android:background="@drawable/jd_like_btn_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginBottom="5.0dip" android:drawableLeft="@drawable/icon_like_normal" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vipnew_list_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/app_text_black" android:id="@id/bankname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/app_text_black" android:id="@id/banknumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="10.0dip" android:text="" android:layout_below="@id/bankname" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/vip_red" android:id="@id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="" android:layout_alignTop="@id/banknumber" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/mobileLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/app_text_new_black" android:id="@id/mobileText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/qpay_form_mobile" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="16.0dip" android:textColor="@color/app_text_new_black" android:textColorHint="@color/app_text_new_gray" android:id="@id/mobileEdit" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="60.0dip" android:hint="@string/qpay_form_mobile_tips" android:singleLine="true" android:layout_toRightOf="@id/mobileText" />
+                <ImageView android:id="@id/mobile_notice" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_explain_large" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/mobileDel" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="50.0dip" android:src="@drawable/new_ic_edit_clear" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <Button android:textSize="16.0dip" android:gravity="center" android:id="@id/next" android:layout_width="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="@string/qpay_form_next" style="@style/submit_red_big_button_ex_style" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

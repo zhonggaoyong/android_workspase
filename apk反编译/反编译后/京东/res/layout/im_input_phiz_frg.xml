@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/im_chat_input_panel_bg" android:layout_width="fill_parent" android:layout_height="@dimen/im_input_phiz_tool_page_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/vp" android:background="#00000000" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="@dimen/im_input_panel_phiz_grid_height" android:flipInterval="30" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/im_input_panel_phiz_indicator_height">
+        <com.jingdong.app.mall.chat.view.IconPageIndicator android:layout_gravity="center_vertical" android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.jingdong.app.mall.chat.view.HorizontalListView android:id="@id/hlv" android:background="@drawable/im_input_phiz_bottom_bar" android:layout_width="fill_parent" android:layout_height="@dimen/im_input_panel_phiz_tab_height" />
+</LinearLayout>

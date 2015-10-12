@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="90" android:versionName="3.3.6" package="com.suning.mobile.ebuy" platformBuildVersionCode="14" platformBuildVersionName="4.0.2-238991"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:name="com.suning.mobile.ebuy.SuningEBuyApplication" android:allowBackup="false" android:hardwareAccelerated="false">
+        <meta-data android:name="ENV_SERVICE" android:value="prd" />
+        <meta-data android:name="ENV_CLIENT" android:value="release" />
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="33nwEaGGDTRRcrGxT83q9qMP" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.payment.payselect.ui.BGSelectPayModeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.evaluate.ui.SelectEvaAndReviewProductActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.myorder.ui.MyOrderComfirmReceptActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.myorder.ui.MyOrderListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent.Courier" android:name="com.suning.mobile.ebuy.order.logistics.ui.CourierPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/MyDialogStyleBottom" android:name="com.suning.mobile.ebuy.order.logistics.ui.CourierShareActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.myorder.ui.MyQuerySDMListAcitivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.myorder.ui.MyPhonePayHistoryActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.myorder.ui.MyWaitPayOrdersListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.myorder.ui.MyElectircInvoiceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".chat.ui.ChatLeaveMsgOfflineActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.userfeedback.ui.UserFeedbackManageActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.appstore.game.ui.AppDownloadManagerActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.appstore.game.ui.DownloadMissionActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.appstore.game.ui.GameUpdateActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.ebuy.myebuy.entrance.ui.MyEBuyActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.entrance.ui.FloorsDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.entrance.ui.AftersalesServiceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.camera.CropImageActivity" android:screenOrientation="portrait" android:hardwareAccelerated="false" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.entrance.ui.MemberInformationActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.entrance.ui.ModifyNickNameActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.cpacps.ui.GetRedPackActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.goodsdetail.ui.BrowseHistoryActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.goodsdetail.ui.productsale.GoodsDetailPcInfoActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.cpacps.ui.CipherSubmitSuccessActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.myebuy.cpacps.ui.QueryRewardActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.cpacps.ui.InviteFriendActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/trans_style" android:name=".wxapi.WXEntryActivity" android:exported="true" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.favorite.ui.FavoriteActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.myticket.ui.MyebuyTicketActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.myticket.ui.TicketDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".myebuy.consultation.ui.ConsultationActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.order.evaluate.ui.GoodsEvaluateActivitys" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.order.evaluate.ui.GoodsEvaluateSuccessActivitys" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.evaluate.ui.AdditionalEvaluateActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.order.evaluate.ui.ShopsEvaluateActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.evaluate.ui.NewWaitEvaluateListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.myorder.ui.MyOrderDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.myorder.ui.MyReserveOrderDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.myorder.ui.MyReserveOrderListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.myorder.ui.MyStoreOrderListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.myorder.ui.MyStoreOrderDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.returnmanager.ui.QueryReturnedGoodsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.returnmanager.ui.ReturnDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.returnmanager.ui.ReturnDeliveryActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.returnmanager.ui.ApplyReturnGoodsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.returnmanager.ui.SelectReturnProductActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".myebuy.myintegral.ui.IntegralBalanceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.myepay.ui.YfbActivateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.myepay.ui.YfbBalanceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.cpacps.ui.FaceInviteActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".promotion.lianban.ui.NewAdvertisingManagerActivity" android:screenOrientation="portrait" android:hardwareAccelerated="false" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".host.webview.WebViewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".host.webview.UploadPicActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".msgcenter.ui.NoticeListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".msgcenter.ui.NoticeDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.host.version.ui.VersionUpdateActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".search.ui.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".search.ui.SearchFilterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".search.ui.VoiceSearchActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".search.ui.MixSearchActivitys" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".search.ui.ShopListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.barcode.ui.CaptureActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.barcode.ui.MemberCardNumCaptureActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.category.ui.CategoryActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.goodsdetail.ui.CargoDetailActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="suningebuy" android:host="detailactivity" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent" android:name=".goodsdetail.ui.PptvProductListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".goodsdetail.ui.productsale.GoodsDetailWhatFreePayActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".goodsdetail.ui.productsale.GoodsDetailTStoreTestActrivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".goodsdetail.ui.mpsale.MpSaleActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".goodsdetail.ui.ProductOneBasicInfoActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".goodsdetail.ui.evaluate.EvaluatePagerViewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".goodsdetail.ui.evaluate.ThreeTabViewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".goodsdetail.ui.evaluate.ConsultActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.goodsdetail.ui.productsale.GoodsDetailNearStoreListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.goodsdetail.ui.productsale.GoodsDetailNearSampleListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyDialogStyleBottom" android:name=".host.share.ShareActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyDialogStyleBottom" android:name=".host.share.BarCodeShareActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.NoTitle.init" android:name=".host.initial.InitialActivty" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="suning" android:host="m.suning.com" android:pathPrefix="/index" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent" android:name=".host.guide.ui.GuideActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.TranslucentPubTwelev" android:name=".host.tabhost.SuningTabActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".goodsdetail.ui.DetailImageSwitcherActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".goodsdetail.ui.evaluate.SharedImageSwitcherActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".goodsdetail.ui.mpsale.MpImageSwitcherActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".goodsdetail.ui.evaluate.SharedPictureShowSwitcherActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.resetpwd.ui.ResetPwdStep1Activity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.resetpwd.ui.ResetPwdStep2Activity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.resetpwd.ui.ResetPwdStep3Activity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.register.ui.Register1Activity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.register.ui.Register2Activity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.login.ui.BarcodeLoginActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.login.ui.LogonActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.register.ui.RuleWebActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.merge.ui.CardSelectActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.merge.ui.MergeAccoutActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.merge.ui.MergeCardSucess" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.merge.ui.MergeRegisterActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.merge.ui.VerifyStoreCardPhoneActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.merge.ui.ElectronicCardActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.merge.ui.PhoneSelectActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.merge.ui.BindPhoneMailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.mergetwo.ui.BindCardActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.mergetwo.ui.CheckCardPhoneActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.mergetwo.ui.MergeAndRegisterActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.mergetwo.ui.MergeCardAndAccountActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".login.mergetwo.ui.MergeCardSucessActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.logistics.ui.LogisticsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.order.logistics.ui.MyLogisticsDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.host.setting.ui.SuningFamilyActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.TranslucentArea" android:name="com.suning.mobile.ebuy.myebuy.area.ui.AreaActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.TranslucentArea" android:name="com.suning.mobile.ebuy.myebuy.area.ui.CityActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.TranslucentArea" android:name="com.suning.mobile.ebuy.myebuy.area.ui.DistrictActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.TranslucentArea" android:name="com.suning.mobile.ebuy.myebuy.area.ui.DistrictNewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.shopcart.information.ui.ShoppingCartActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.shopcart.settlement.ui.UseCouponActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.payment.payselect.ui.EppWapPayActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.payment.payselect.ui.SelectPayModeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.payment.payselect.ui.Cart4Activity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.addressmanager.ui.AddressBaseActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.addressmanager.ui.manager.AddressManagerActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.addressmanager.ui.AddressModifyActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.addressmanager.ui.EditReceivingAddressActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.addressmanager.ui.manager.ReceiveAddrListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.addressmanager.ui.manager.ReceiveAddrEditActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.payment.payselect.ui.SubmitOrderSuccessActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.host.setting.ui.SettingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.host.setting.ui.AboutActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".shopcart.settlement.ui.GoodsTransportAddressInfoActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.shopcart.groupsettle.ui.GroupSettleActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".shopcart.submit.ui.ConfirmOrderInfoActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".shopcart.submit.ui.SelectDeliveryInfoActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".shopcart.submit.ui.UseDiscountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".shopcart.submit.ui.AddDiscountActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".shopcart.settlement.ui.DiscountCouponAddActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".shopcart.settlement.ui.ElectronicInvoiceNoticeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.suning.mobile.ebuy.barcode.ui.ScanCodeHistoryActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".promotion.goodslist.ui.NewGoodsListActivity" android:screenOrientation="portrait" android:hardwareAccelerated="false" />
+        <activity android:theme="@style/Theme.UPPay" android:label="@string/app_name" android:name="com.unionpay.uppay.PayActivity" android:excludeFromRecents="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".store.home.ui.StoreHomeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".store.stores.ui.StoreListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".store.active.ui.ActiveListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".store.active.ui.ActiveDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".store.stores.ui.StoreMapActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".store.detail.ui.StoreDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".store.detail.ui.NearStoreDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".store.detail.ui.StoreAddressInfoActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.appstore.game.ui.AppStoreWebViewActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".memunit.signin.ui.SigninMainActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/signruleTheme" android:name=".memunit.signin.ui.SigninRuleActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.unionpay.upomp.bypay.activity.SplashActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="hanxin_303310048990001_1_1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.unionpay.upomp.bypay.activity.PayMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.unionpay.upomp.bypay.activity.PayUserCreditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.unionpay.upomp.bypay.activity.PayUserDebitActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.unionpay.upomp.bypay.activity.PayResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.unionpay.upomp.bypay.activity.PayResultLoseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.unionpay.upomp.bypay.activity.SupportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".chat.ui.ChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".memunit.memunion.ui.IntegralGamesActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".memunit.shake.ui.ShakeGameActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".store.sound.ui.SoundListenActivity" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".store.sound.ui.SoundRuleDetailActivity" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".store.sound.ui.SoundStoreSignActivity" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.memunit.shake.ui.SoundShakeActivity" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".store.sound.ui.SoundGuideActivity" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".store.sound.ui.SoundSignNotLoginActivity" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".host.webview.MyAppointActivity" />
+        <activity android:theme="@style/Theme.PrepareCashierActivity" android:name="com.suning.mobile.paysdk.ui.CashierPrepareActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Style_Channel" android:name="com.suning.mobile.paysdk.ui.activity.CashierChannelActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing" />
+        <activity android:name="com.suning.mobile.paysdk.ui.QPayFirstActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.ui.BankListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.ui.SMSCheckActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.ui.QPayProtocolActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.ui.PaySuccessActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.ui.EppActivateActivity" android:screenOrientation="portrait" />
+        <receiver android:name="com.suning.mobile.paysdk.core.net.util.NetChangeReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/PaySDK.Theme.PrepareCashierActivity" android:name="com.suning.mobile.paysdk.pay.cashierpay.CashierPrepareActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/PayStyle_Channel" android:name="com.suning.mobile.paysdk.pay.virtual_ticket.use_coupon.ui.VirtualTicketSelectActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing" />
+        <activity android:theme="@style/PaySDK.Theme.PrepareCashierActivity" android:name="com.suning.mobile.paysdk.pay.virtual_ticket.restitution.ui.VirtualTicketRestitutionActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing" />
+        <activity android:theme="@style/PayStyle_Channel" android:name="com.suning.mobile.paysdk.pay.cashierpay.CashierChannelActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing" />
+        <activity android:name="com.suning.mobile.paysdk.pay.qpayfirst.QPayFirstActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.pay.qpayfirst.BankListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.pay.cashierpay.SMSCheckActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.pay.qpayfirst.QPayProtocolActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.pay.qpayfirst.PaySuccessActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.pay.activation.EppActivateActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.pay.wapview.WapViewActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.mobile.paysdk.pay.password.MobilePayPwdActivity" android:screenOrientation="portrait" />
+        <receiver android:name="com.suning.mobile.paysdk.pay.common.net.util.NetChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".host.initial.InitialService" android:enabled="true" />
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote" />
+        <receiver android:name=".host.push.main.AlarmReceiver" />
+        <receiver android:name=".host.push.main.NetChangeReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".appstore.app.ui.PackageReceive" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".appstore.app.ui.DownloadService" />
+        <service android:name="com.infograce.sound.SNSoundCodeServiceV00001" android:exported="false">
+            <intent-filter>
+                <action android:name="com.infograce.sound.SNSoundCodeService" />
+            </intent-filter>
+        </service>
+        <service android:name=".chat.ui.ChatService" />
+        <service android:name=".chat.ui.ChatYunxinService" />
+        <service android:name=".host.version.view.NotificationProgressService" />
+        <meta-data android:name="DREAMVOC_APPID" android:value="6" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".home.homefloor.ui.HomeFloorActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".promotion.pagefloor.ui.PageFloorActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".chat.ui.ChannelForChatOnlineActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name=".chat.ui.ChatOrderListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" android:exported="false" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.tencent.tauth.AuthActivity" android:exported="false" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100880748" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.suning.dl.ebuy.dynamicload.SuningDLProxyActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.dl.ebuy.dynamicload.SuningDLProxySingleTaskActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:name="com.suning.dl.ebuy.dynamicload.SuningDLProxyFragmentActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.login.unionlogon.ui.UnionLogonBindPhoneActivity1" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.login.unionlogon.ui.UnionLogonBindPhoneActivity2" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.login.unionlogon.ui.UnionLogonBindEbuyAccountActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.login.unionlogon.ui.UnionLogonBindSuccessActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.host.tabhost.LaunchShowActictiy" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.found.ui.DiscoverMainActivity" android:screenOrientation="portrait" />
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="suningappstore" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.logserver.OperSelectActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.logserver.NetCheckActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Translucent" android:name="com.suning.mobile.ebuy.myebuy.logserver.LogServerActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <service android:name="com.suning.mobile.ebuy.myebuy.logserver.LogService" android:enabled="true" />
+        <receiver android:name="com.suning.mobile.ebuy.host.push.main.CityChangedReciver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.suning.mobile.ebuy.CITY_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.suning.mobile.ebuy.login.login.accountmanager.AccountService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/account_authenticator" />
+        </service>
+    </application>
+</manifest>

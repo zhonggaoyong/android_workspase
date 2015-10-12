@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/loading_error_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@id/loading_error_image" android:background="@drawable/app_network_off_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/home_no_network_reload_button_margin_top" />
+        <TextView android:textSize="@dimen/home_no_network_hint_comment_size" android:textColor="@color/home_no_network_hint" android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/loading_error_tips_1" />
+        <TextView android:textSize="@dimen/home_no_network_hint_comment_size" android:textColor="@color/home_no_network_hint" android:layout_gravity="center_horizontal" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/home_no_network_reload_button_margin_top" android:text="@string/loading_error_tips_2" android:lineSpacingExtra="5.0dip" />
+        <Button android:textSize="@dimen/home_no_network_reload_button_size" android:layout_gravity="center_horizontal" android:id="@id/loading_error_but" android:layout_width="145.0dip" android:text="@string/loading_error_again" style="@style/common_button" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.common.bing.LeftMessageView android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/promotion_msg_layout" android:background="@drawable/bing_receive_msg_red_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/bing_chat_ballon_min_width">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/bing_jshop_item_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    </LinearLayout>
+</com.jingdong.common.bing.LeftMessageView>

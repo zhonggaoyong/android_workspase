@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="@string/circle_set_notice" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <ListView android:id="@id/notice_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:listSelector="#00000000" />
+    <View android:layout_width="fill_parent" android:layout_height="15.0dip" />
+</LinearLayout>

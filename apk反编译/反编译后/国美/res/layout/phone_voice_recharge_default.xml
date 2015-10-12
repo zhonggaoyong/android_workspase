@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/phone_voice_charge_deep_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_charge_voice_default_test" />
+    <TextView android:textSize="22.0sp" android:textColor="@color/phone_voice_charge_deep_gray" android:ellipsize="middle" android:id="@id/tv_name_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:singleLine="true" />
+    <TextView android:textSize="22.0sp" android:textColor="@color/phone_voice_charge_deep_gray" android:ellipsize="middle" android:id="@id/tv_name_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:singleLine="true" />
+    <TextView android:textSize="22.0sp" android:textColor="@color/phone_voice_charge_deep_gray" android:ellipsize="middle" android:id="@id/tv_name_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:singleLine="true" />
+    <TextView android:textSize="22.0sp" android:textColor="@color/phone_voice_charge_deep_gray" android:ellipsize="middle" android:id="@id/tv_name_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:singleLine="true" />
+</LinearLayout>

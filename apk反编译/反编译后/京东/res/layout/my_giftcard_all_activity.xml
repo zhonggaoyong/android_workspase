@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/select_giftcard_all_jdcard" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="51.0dip" android:weightSum="100.0">
+        <RelativeLayout android:gravity="center" android:id="@id/select_giftcard_all_ecard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="50.0">
+            <LinearLayout android:gravity="center" android:id="@id/my_giftcard_e_card_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/fill_order_coupon_name_text" android:textColor="@color/color_f15353" android:gravity="center" android:id="@id/select_giftcard_ecard_all_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_giftcard_e_li_pin" />
+            </LinearLayout>
+            <View android:id="@id/select_giftcard_ecard_all_line" android:background="@color/color_f15353" android:visibility="visible" android:layout_width="95.0dip" android:layout_height="2.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/select_giftcard_all_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="50.0">
+            <LinearLayout android:gravity="center" android:id="@id/my_giftcard_card_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/fill_order_coupon_name_text" android:textColor="@color/fill_order_virtual_text_color" android:gravity="center" android:id="@id/select_giftcard_card_all_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_giftcard_li_pin" />
+            </LinearLayout>
+            <View android:id="@id/select_giftcard_card_all_line" android:background="@color/color_f15353" android:visibility="gone" android:layout_width="95.0dip" android:layout_height="2.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:layout_gravity="center_horizontal" android:id="@id/my_giftcard_all_list" android:background="@drawable/none" android:visibility="visible" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@drawable/none" android:cacheColorHint="@drawable/none" android:divider="@null" />
+    <include android:id="@id/loading_error_tips_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/select_giftcard_all_jdcard" layout="@layout/jd_common_state_page_01" />
+</LinearLayout>

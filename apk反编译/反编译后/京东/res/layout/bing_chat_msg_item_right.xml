@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="20.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/time_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageButton android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="@dimen/bing_chat_time_stamp_height" android:src="@drawable/bing_chat_time_stamp_left" android:scaleType="fitEnd" />
+        <TextView android:textSize="@dimen/bing_chat_stamp_font" android:textColor="@color/bing_chat_time" android:gravity="center_vertical" android:id="@id/time_tv" android:background="@drawable/bing_chat_time_stamp_mid" android:paddingLeft="8.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/bing_chat_time_stamp_height" />
+        <ImageButton android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="@dimen/bing_chat_time_stamp_height" android:src="@drawable/bing_chat_time_stamp_right" android:scaleType="fitStart" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/send_acount_icon" android:focusable="true" android:clickable="true" android:layout_width="@dimen/bing_user_img_view_width" android:layout_height="@dimen/bing_user_img_view_height" android:layout_marginRight="10.0dip" android:src="@drawable/bing_chat_user_head" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/send_acount_icon" android:layout_alignTop="@id/send_acount_icon" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+        <ViewAnimator android:layout_gravity="center_vertical" android:id="@id/va" android:padding="10.0dip" android:layout_width="54.0dip" android:layout_height="48.0dip">
+            <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/send_msg_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bing_chat_msg_fail" />
+        </ViewAnimator>
+        <LinearLayout android:textColor="@color/bing_chat_color_hei" android:gravity="center_horizontal" android:background="@drawable/bing_send_msg_bg_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:minWidth="@dimen/bing_chat_ballon_min_width" android:minHeight="45.0dip">
+            <TextView android:gravity="center_vertical" android:autoLink="phone" android:layout_gravity="center" android:id="@id/send_msg_tv" android:paddingLeft="15.0dip" android:paddingTop="12.0dip" android:paddingRight="13.0dip" android:paddingBottom="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dip" style="@style/bing_chat_send_b5_font" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

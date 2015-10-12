@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jd.lib.story.ui.view.ResizeLayout android:id="@id/rootView" android:background="@color/lib_story_comment_list_item_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerView" android:layout_width="fill_parent" android:layout_height="@dimen/lib_story_height_top_bar">
+        <include layout="@layout/lib_story_item_top_bar" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/headerView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.jd.lib.story.ui.XListView android:id="@id/listView" android:background="@color/lib_story_comment_list_item_default" android:layout_marginLeft="@dimen/lib_story_activity_horizontal_margin" style="@style/lib_story_listview" />
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <com.jd.lib.story.ui.EmojiViewPanel android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/emojiPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/lib_story_item_net_error" />
+</com.jd.lib.story.ui.view.ResizeLayout>

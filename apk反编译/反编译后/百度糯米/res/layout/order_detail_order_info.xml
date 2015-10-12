@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/order_list_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/order_list_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:text="@string/order_info_title" />
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+    <include android:id="@id/order_info_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/order_detail_order_info_item" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:id="@id/order_info_time_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/OrderDetailItemGrey" />
+        <TextView android:id="@id/order_info_time_hour" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/OrderDetailItemGrey" />
+        <TextView android:id="@id/order_info_time_day" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/order_info_time_hour" android:layout_centerVertical="true" style="@style/OrderDetailItemGrey" />
+    </RelativeLayout>
+    <include android:id="@id/order_info_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/order_detail_order_info_item" />
+    <include android:id="@id/order_info_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/order_detail_order_info_item" />
+    <include android:id="@id/order_info_price_delivery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/order_detail_order_info_item" />
+    <include android:id="@id/order_info_price_all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/order_detail_order_info_item" />
+    <include android:id="@id/order_info_pay_discount_total" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/order_detail_order_info_item" />
+    <include android:id="@id/order_info_pay_discount_vip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/order_detail_order_info_item" />
+    <include android:id="@id/order_info_pay_voucher" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/order_detail_order_info_item" />
+    <include android:id="@id/order_info_pay_redpacket" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/order_detail_order_info_item" />
+    <include android:id="@id/order_info_pay_balance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/order_detail_order_info_item" />
+    <include android:id="@id/order_info_pay_other" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/order_detail_order_info_item" />
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" layout="@layout/order_detail_devider" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/order_list_mid_dark_black" android:gravity="right|center" android:id="@id/total_pay_money" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+    <include android:id="@id/total_pay_money_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+</LinearLayout>

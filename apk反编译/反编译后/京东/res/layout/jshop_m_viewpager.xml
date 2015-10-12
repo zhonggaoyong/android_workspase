@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/jshop_m_viewpager" style="@style/JshopALLTemplate"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+    <android.support.v4.view.ViewPager android:id="@id/viewpager_lbt" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_m_vp_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" />
+    <HorizontalScrollView android:layout_gravity="bottom|center" android:id="@id/jshop_dotdot_hsView_lbt" android:background="#00000000" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="@dimen/jshop_dotdot_line_height" android:layout_marginBottom="19.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/jshop_dotdot_linear_lbt" android:layout_width="wrap_content" android:layout_height="@dimen/jshop_dotdot_line_height" />
+    </HorizontalScrollView>
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+</FrameLayout>

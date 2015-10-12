@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/pub_color_fifteen" android:gravity="center_vertical" android:id="@id/history_keyword" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_forty" android:singleLine="true" />
+    <TextView android:textSize="@dimen/pub_textsize_sixteen" android:textColor="@color/pub_color_nine" android:gravity="center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_forty_five" android:singleLine="true" />
+</LinearLayout>

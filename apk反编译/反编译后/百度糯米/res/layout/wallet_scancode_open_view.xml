@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.BdActionBar android:id="@id/bdactionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bdactionbar">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/bd_wallet_text_gray_color" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/show_code_help_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/show_code_help_tips" />
+            <ImageView android:layout_gravity="center" android:id="@id/scan_code_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/wallet_scancode_img_tiaoma" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/protocol_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <CheckBox android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/ebpay_black" android:id="@id/ebpay_protocol" android:clickable="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="2.0dip" android:checked="true" android:button="@drawable/ebpay_bg_checkbox_for_corner_coupon" />
+                <TextView android:textSize="@dimen/ebpay_text_size_15" android:id="@id/ebpay_protocol_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/scan_code_protocol" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/ebpay_text_size_18" android:textColor="@color/ebpay_white" android:id="@id/next_btn" android:background="@drawable/wallet_base_btn" android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_bt_height" android:layout_marginTop="@dimen/ebpay_line_margin_20" android:layout_marginBottom="@dimen/ebpay_line_margin_10" android:text="@string/open_scancode_btn_tips" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

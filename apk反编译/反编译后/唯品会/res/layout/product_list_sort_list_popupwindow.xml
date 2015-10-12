@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/sort_view_popup_arraw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="90.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/recommendSort" android:background="#e6ffffff" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:background="@drawable/icon_sort_normal" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="9.0dip" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/red" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐排序" />
+    </LinearLayout>
+    <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/priceLow2High" android:background="#e6ffffff" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:background="@drawable/icon_sort_up" android:layout_width="18.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="9.0dip" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/app_text_black" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格从低到高" />
+    </LinearLayout>
+    <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/priceHigh2Low" android:background="#e6ffffff" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:background="@drawable/icon_sort_down" android:layout_width="18.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="9.0dip" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/app_text_black" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格从高到低" />
+    </LinearLayout>
+    <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dicountLow2High" android:background="#e6ffffff" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:background="@drawable/icon_sort_up" android:layout_width="18.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="9.0dip" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/app_text_black" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="折扣从低到高" />
+    </LinearLayout>
+    <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/discountHigh2Low" android:background="#e6ffffff" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:background="@drawable/icon_sort_down" android:layout_width="18.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="9.0dip" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/app_text_black" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="折扣从高到低" />
+    </LinearLayout>
+    <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:id="@id/maskView" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="308.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/c_686868" android:gravity="center" android:id="@id/edit_product_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="17.0dip" android:text="修改购买数量" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+        <ImageButton android:id="@id/edit_product_num_reduce" android:background="@drawable/dialog_edit_reduce_selector" android:layout_width="55.0dip" android:layout_height="42.0dip" />
+        <EditText android:textSize="17.0sp" android:textColor="@color/cart_product_name" android:gravity="center" android:id="@id/edit_product__et_num" android:background="@drawable/edit_dialog_product_num_edit" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="54.0dip" android:layout_height="42.0dip" android:minWidth="37.0dip" android:singleLine="true" android:selectAllOnFocus="true" android:maxLength="4" android:inputType="number" />
+        <ImageButton android:id="@id/edit_product_num_add" android:background="@drawable/dialog_edit_add_selector" android:layout_width="55.0dip" android:layout_height="42.0dip" />
+    </LinearLayout>
+    <View android:background="@drawable/jd_dialog_common_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="57.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="13.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@color/c_686868" android:id="@id/edit_product_cancle" android:background="@drawable/button_d" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginRight="8.0dip" android:text="取消" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:textColor="@color/button_a_font_color" android:id="@id/edit_product_ok" android:background="@drawable/button_a" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

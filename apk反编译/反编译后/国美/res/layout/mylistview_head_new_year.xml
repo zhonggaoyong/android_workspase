@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pull_to_refresh_header" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="90.0dip">
+        <RelativeLayout android:background="#ffe9f3f5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="90.0dip">
+            <ImageView android:id="@id/left_cloud" android:background="@drawable/refresh_left_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="120.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/right_cloud" android:background="@drawable/refresh_bottom_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="120.0dip" android:layout_marginTop="40.0dip" android:layout_toRightOf="@id/left_cloud" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/bottom_cloud" android:background="@drawable/refresh_right_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/head_arrowImageView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="90.0dip" />
+            <ImageView android:background="@drawable/refresh_buildings" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="90.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

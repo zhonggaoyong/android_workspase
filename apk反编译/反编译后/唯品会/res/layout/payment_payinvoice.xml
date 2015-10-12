@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/invoice_parent_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/invoice_title" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="@dimen/payment_margin_new" android:layout_marginRight="@dimen/payment_margin_new">
+                <ImageView android:layout_gravity="center" android:id="@id/invoice_check" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/icon_checkbox_selector" />
+                <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_new_black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="开具发票" />
+            </LinearLayout>
+            <TextView android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/invoice_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_margin_new" android:layout_marginRight="@dimen/payment_margin_new">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_black_new_ui" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="类型" />
+                    <LinearLayout android:gravity="center" android:id="@id/invoice_person_layout" android:layout_width="wrap_content" android:layout_height="52.0dip" android:layout_marginLeft="15.0dip">
+                        <ImageView android:id="@id/invoice_person" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/radio_select_selector" />
+                        <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_black_new_ui" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="个人" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/invoice_com_layout" android:layout_width="wrap_content" android:layout_height="52.0dip" android:layout_marginLeft="32.0dip">
+                        <ImageView android:id="@id/invoice_com" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/radio_select_selector" />
+                        <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_black_new_ui" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="公司" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="52.0dip">
+                    <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_black_new_ui" android:id="@id/invoice_taitou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抬头" android:layout_centerVertical="true" />
+                    <EditText android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_black_new_ui" android:textColorHint="@color/app_text_edittext_gray" android:id="@id/invocie_edittext" android:background="@null" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/payment_margin_new" android:hint="请输入发票抬头" android:layout_toRightOf="@id/invoice_taitou" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

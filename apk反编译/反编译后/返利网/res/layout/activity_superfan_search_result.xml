@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/ivBack" android:padding="@dimen/title_icon_padding" android:layout_width="@dimen/title_icon_height" android:layout_height="@dimen/title_icon_height" android:layout_marginLeft="8.0dip" android:src="@drawable/icon_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+        <LinearLayout android:gravity="center" android:id="@id/et_search" android:background="@drawable/bg_round_corner_search_gray" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="30.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_toRightOf="@id/ivBack" android:layout_centerVertical="true">
+            <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ffafafaf" android:id="@id/tv_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sf_search_hint" android:singleLine="true" android:drawableLeft="@drawable/search_icon_2" android:drawablePadding="8.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/line" android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/title_area" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/line">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/nav_layout" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:baselineAligned="false" android:weightSum="7.0">
+            <RelativeLayout android:id="@id/area_sort_brand" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="#ff40494d" android:id="@id/txt_sort_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sfsearch_sort_default" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_sort_arrow" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_arrow_down" android:layout_toRightOf="@id/txt_sort_area" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+            </RelativeLayout>
+            <View android:background="#ffdfdfdf" android:layout_width="0.5dip" android:layout_height="wrap_content" />
+            <RelativeLayout android:id="@id/area_all_brand" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="#ff40494d" android:id="@id/txt_all_brand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sfsearch_all_brands" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_brand_arrow" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_arrow_down" android:layout_toRightOf="@id/txt_all_brand" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+            </RelativeLayout>
+            <View android:background="#ffdfdfdf" android:layout_width="0.5dip" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_switch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_sf_switch_list" android:layout_weight="1.0" android:contentDescription="@string/contentDescription" />
+        </LinearLayout>
+        <View android:id="@id/line2" android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/nav_layout" />
+        <FrameLayout android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/line2">
+            <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ff40494d" android:layout_gravity="center_horizontal" android:id="@id/tv_superfan_search_no_result" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/no_search_result" />
+            <com.fanli.android.view.SuperfanPullDownView android:id="@id/list_pulldownview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:id="@id/list" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:transcriptMode="disabled" android:cacheColorHint="#00000000" android:divider="@null" android:smoothScrollbar="true" />
+            </com.fanli.android.view.SuperfanPullDownView>
+            <com.fanli.android.view.SuperfanPullDownView android:id="@id/grid_pulldownview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <GridView android:id="@id/grid" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:horizontalSpacing="9.0dip" android:verticalSpacing="13.0dip" android:numColumns="2" />
+            </com.fanli.android.view.SuperfanPullDownView>
+            <FrameLayout android:id="@id/search_condition_list_area" android:background="#73000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:id="@id/search_condition_list" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/selector_list_item_bg" android:transcriptMode="disabled" android:cacheColorHint="@android:color/transparent" android:divider="#ffe5e5e5" android:dividerHeight="0.5dip" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/order_id_card_upload" android:background="@drawable/fill_order_list_item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff252525" android:gravity="left|center" android:id="@id/order_detail_id_card_title" android:background="@drawable/pd_item_enable_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="实名认证" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/order_detail_id_card_upload_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/order_detail_id_card_warning" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/idcard_reupload_icon" />
+            <TextView android:textSize="14.0sp" android:textColor="#fff15353" android:gravity="right|center" android:id="@id/order_detail_id_card_upload" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginRight="12.0dip" android:text="上传" android:drawableRight="@drawable/button_k" android:drawablePadding="4.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:layout_marginLeft="12.0dip" style="@style/order_detail_line" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff848689" android:ellipsize="end" android:gravity="left|center" android:id="@id/order_detail_id_card_content" android:paddingLeft="12.0dip" android:paddingTop="15.0dip" android:paddingRight="12.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="5.0dip" />
+    <View style="@style/order_detail_line" />
+</LinearLayout>

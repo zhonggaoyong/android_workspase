@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/common_title_layout" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/activate_account_auth_user_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.gome.ecmall.business.login.layout.ClearEditText android:textSize="16.0dip" android:textColorHint="@color/hint_text_color" android:id="@id/activate_account_mobile_editText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:hint="@string/login_register_phonenum" android:layout_weight="1.0" android:inputType="phone" style="@style/gome.NewEditText.style" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="bottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:minHeight="46.0dip">
+                <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:minHeight="45.0dip" android:layout_toLeftOf="@id/activate_account_get_mobile_auth_code_button" android:layout_alignParentLeft="true">
+                    <com.gome.ecmall.business.login.layout.ClearEditText android:textSize="16.0dip" android:textColorHint="@color/hint_text_color" android:id="@id/activate_account_mobile_check_code_editText" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="2.0dip" android:hint="@string/input_check_code" android:maxLength="6" android:inputType="phone" style="@style/gome.NewEditText.style" />
+                </LinearLayout>
+                <Button android:textSize="14.0sp" android:id="@id/activate_account_get_mobile_auth_code_button" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginRight="20.0dip" android:text="@string/get_check_code" android:layout_alignParentRight="true" style="@style/Gome.Button.SolidRed.Style" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0dip" android:textColor="@color/hint_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="25.0dip" android:text="@string/check_code_declare" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/activate_account_resister_successful_layout" android:background="@drawable/common_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/more_item_single_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="100.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/common_green_textcolor" android:gravity="center_vertical" android:id="@id/activate_account_success_auth_ok_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:drawableLeft="@drawable/order_success_duigou" android:drawablePadding="5.0dip" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:id="@id/activate_account_success_account_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="@string/account_name" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:id="@id/activate_account_success_phone_number_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:text="@string/login_mobel" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/hint_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:text="@string/login_gome_user_mobile" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

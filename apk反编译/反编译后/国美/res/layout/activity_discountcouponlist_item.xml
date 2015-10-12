@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_discountcoupon_text" android:background="@drawable/discountcoupon_text" android:layout_width="62.0dip" android:layout_height="108.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="14.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_container" android:background="@drawable/discountcoupon_bg" android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="14.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/rl_discountcoupondes" android:background="#fffdbda9" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.5dip" android:layout_marginBottom="0.5dip" android:layout_weight="3.0">
+            <TextView android:textSize="27.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#fff07357" android:layout_gravity="center" android:id="@id/tv_salePoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#fff07357" android:layout_gravity="center" android:id="@id/tv_saleAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ffcc593e" android:gravity="center" android:id="@id/tv_exchange" android:background="@drawable/bg_discountcoupon_selector" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="兑换" />
+            <View android:background="#fffed4c7" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/tv_exchange" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffcc593e" android:gravity="center" android:id="@id/tv_buy" android:background="@drawable/bg_discountcoupon_selector" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="购买" android:layout_below="@id/tv_exchange" android:layout_alignLeft="@id/tv_exchange" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

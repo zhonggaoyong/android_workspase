@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:gravity="center_horizontal" android:id="@id/delivery_type_line" android:background="@color/address_line_h" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/fill_order_address_devision_line" android:layout_marginTop="10.0dip" android:contentDescription="@string/none" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/delivery_type_gallery_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fill_order_commitlist_margin">
+        <Gallery android:gravity="left" android:layout_gravity="left" android:id="@id/delivery_type_gallery" android:drawingCacheQuality="high" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:spacing="10.0dip" android:unselectedAlpha="1.0" />
+    </LinearLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@id/delivery_type_raidoGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fill_order_commitlist_margin" />
+    <TextView android:textColor="@color/fill_order_delivery_message_color" android:id="@id/tv_payment_notice_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fill_order_address_item_paddingtop" android:text="@string/pay_notice" />
+    <TextView android:textColor="@color/fill_order_delivery_message_color" android:id="@id/tv_payment_notice_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fill_order_address_item_paddingtop" android:text="@string/pay_notice" />
+</LinearLayout>

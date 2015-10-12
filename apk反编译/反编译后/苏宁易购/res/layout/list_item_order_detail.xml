@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/intercept_line" android:background="@drawable/line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/storeline_height" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/detail_relayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip">
+        <FrameLayout android:id="@id/product_img_frame" android:background="@drawable/goods_bg" android:padding="1.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@id/detail_goods_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_backgroud" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/evaBtnLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/btn_evaluate" android:background="@drawable/pub_btn_grey_bg" android:layout_width="@dimen/pub_margin_or_padding_space_seventy" android:layout_height="wrap_content" android:text="评价" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/product_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="13.0dip" android:layout_toLeftOf="@id/evaBtnLayout" android:layout_toRightOf="@id/product_img_frame" android:layout_centerVertical="true">
+            <com.suning.mobile.ebuy.view.AutoLineTextView android:id="@id/detail_goods_desc" android:layout_width="fill_parent" android:layout_height="35.0dip" android:lines="2" suning:marginRight="190" suning:textColor="@color/pub_color_fifteen" suning:textSize="13sp"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:suning="http://www.suningEbuy.com/" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff909090" android:id="@id/cluster_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff909090" android:id="@id/supplier_name_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

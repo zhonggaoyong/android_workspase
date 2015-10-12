@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mls="http://schemas.android.com/apk/res-auto">
+    <com.meilishuo.app.shop.view.SearchResultCanScrollView android:id="@id/scrollview" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/header" layout="@layout/shop_new_header" />
+        <com.meilishuo.app.widget.HomeTabView android:id="@id/tab_lay" android:background="@drawable/order_bg_goodsinformation" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/shop_sort_label_height" android:layout_marginTop="-2.0dip" mls:defaultColor="@color/grey_d4" mls:selectColor="@color/pink" mls:lineColor="@color/pink" mls:animation="true" mls:tabTextSize="14.0dip" mls:customResId="@drawable/ico_sort_default" mls:customIndex="3" />
+        <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/listview" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" />
+        </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+    </com.meilishuo.app.shop.view.SearchResultCanScrollView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/center_nogoods" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_search_result_icon" android:scaleType="center" />
+        <com.meilishuo.app.views.CustomTextView android:text="@string/no_goods_find" style="@style/EmptyDataFirstTextStyle" />
+    </LinearLayout>
+    <com.meilishuo.app.views.CustomPageLoading android:layout_gravity="center" android:id="@id/progressbar_pink" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.meilishuo.app.views.CustomTextView android:layout_gravity="bottom|right|center" android:id="@id/to_top" android:background="@drawable/to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" />
+</FrameLayout>

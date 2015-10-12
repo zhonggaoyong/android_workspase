@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/circle_root" android:background="@color/white" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_name" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CircleHeadLayout android:layout_gravity="center_vertical" android:id="@id/quanzhu_icon" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginRight="5.0dip" app:mix="true" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/text_info_body" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d1" android:ellipsize="end" android:id="@id/circle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d5" android:ellipsize="end" android:id="@id/circle_share_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.meilishuo.app.herprofile.view.FourCloverViewGroup android:id="@id/circle_pic_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/title_name" app:onebig_threelittle_type="true" app:interval="3">
+        <ImageView android:id="@id/pic_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/pic_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/pic_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/pic_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    </com.meilishuo.app.herprofile.view.FourCloverViewGroup>
+    <RelativeLayout android:id="@id/create_circle_body" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/icon_circle_create" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

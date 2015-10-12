@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/personal_bg_color_silver" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.common.widget.TempTitle android:id="@id/feedback_titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" title:drawableLeft="@drawable/common_title_back_selector" title:textTitle="@string/menu_feedback" title:textRight="@string/feedback_submit" xmlns:title="http://schemas.android.com/apk/res-auto" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.jingdong.app.mall.personel.view.PersonalItemTitle android:id="@id/feedback_type_view" android:layout_width="fill_parent" android:layout_height="wrap_content" title:personalTitle="@string/feedback_type" title:personalMessageTextColor="@color/personal_color_title" xmlns:title="http://schemas.android.com/apk/res-auto" />
+            <View style="@style/line2" />
+            <View android:layout_marginTop="@dimen/personal_item_margin" style="@style/line2" />
+            <EditText android:textSize="@dimen/personal_feedback_edit_text" android:textColorHint="@color/personal_hint_color" android:gravity="top" android:id="@id/feedback_content" android:background="@color/white" android:padding="@dimen/personal_root_margin" android:layout_width="fill_parent" android:layout_height="98.0dip" android:hint="请输入产品意见，我们将不断优化体验" android:maxLength="100" />
+            <TextView android:textSize="@dimen/personal_feedback_edit_text" android:textColor="@color/personal_color_gray" android:gravity="right|center" android:id="@id/feedback_content_count" android:background="@color/white" android:paddingTop="6.0dip" android:paddingRight="@dimen/personal_root_margin" android:paddingBottom="@dimen/personal_root_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View style="@style/line2" />
+            <View android:layout_marginTop="@dimen/personal_item_margin" style="@style/line2" />
+            <EditText android:textSize="@dimen/personal_feedback_edit_text" android:textColorHint="@color/personal_hint_color" android:id="@id/feedback_contact_content" android:background="@color/white" android:padding="@dimen/personal_root_margin" android:layout_width="fill_parent" android:layout_height="49.0dip" android:hint="请输入您的手机号/邮箱等(选填)" android:singleLine="true" android:maxLength="50" />
+            <View style="@style/line2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

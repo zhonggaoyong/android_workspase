@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="top" android:id="@id/delivery_header" layout="@layout/header_layout" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/listView" android:fadingEdge="vertical" android:fadingEdgeLength="3.0dip" android:layoutAnimation="@anim/layout_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@null" android:divider="@color/transparency" android:choiceMode="none" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+        <LinearLayout android:orientation="vertical" android:id="@id/faush_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="82.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/no_order_pic" android:layout_width="160.0dip" android:layout_height="160.0dip" android:src="@drawable/icon_record_empty" android:scaleType="fitEnd" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff585c64" android:gravity="center_horizontal" android:id="@id/nodata_tips" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/nodata_tips2" android:paddingTop="13.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include android:id="@id/loadFailView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/new_load_fail" />
+    </FrameLayout>
+</LinearLayout>

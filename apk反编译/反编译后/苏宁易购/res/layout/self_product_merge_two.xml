@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pub_color_one" android:paddingTop="@dimen/pub_margin_or_padding_space_ten" android:paddingBottom="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ios_public_textsize_22pt" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/reserve_send_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" android:text="预计送达时间" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/merge_two_rili" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/ios_public_textsize_22pt" android:textColor="@color/add_cart_disabled_text_color" android:gravity="center" android:id="@id/tv_quick_send" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最快时间送达" />
+        <TextView android:textSize="@dimen/ios_public_textsize_22pt" android:textColor="@color/add_cart_disabled_text_color" android:gravity="center" android:id="@id/tv_quick_send_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014-05-06" />
+    </LinearLayout>
+    <ImageView android:id="@id/merge_two_rili" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_30px" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

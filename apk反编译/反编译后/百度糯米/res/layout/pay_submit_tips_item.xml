@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@color/order_list_white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:nuomi="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/submit_tips_discount_icon_local" android:layout_width="fill_parent" android:layout_height="14.0dip" android:src="@drawable/submit_discount" android:scaleType="fitXY" />
+    <com.baidu.bainuo.pay.CustomizableNetworkThumbView android:id="@id/submit_tips_discount_icon_url" android:layout_width="fill_parent" android:layout_height="14.0dip" android:scaleType="fitXY" nuomi:emptyResourceId="@drawable/bg_blank" nuomi:loadingResourceId="@drawable/bg_blank" nuomi:errorResourceId="@drawable/bg_blank" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/refund_progress_money_item_name" android:layout_width="wrap_content" android:layout_height="43.0dip" android:layout_marginLeft="12.0dip" android:text="总价:" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffff4978" android:gravity="center" android:id="@id/_in" android:layout_width="wrap_content" android:layout_height="43.0dip" android:text="¥" android:layout_toRightOf="@id/refund_progress_money_item_name" />
+    <TextView android:textSize="18.0sp" android:textColor="#ffff4978" android:gravity="center" android:id="@id/refund_progress_money_item_count" android:layout_width="wrap_content" android:layout_height="43.0dip" android:text="87" android:layout_toRightOf="@id/_in" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/refund_progress_money_item_expire" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="（已过期）" android:layout_toRightOf="@id/refund_progress_money_item_count" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/refund_progress_money_item_desc" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refund_progress_hongbao_back" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/divider" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/refund_progress_money_item_count" />
+</RelativeLayout>

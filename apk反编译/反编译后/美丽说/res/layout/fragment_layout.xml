@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:text="@string/circle_list" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

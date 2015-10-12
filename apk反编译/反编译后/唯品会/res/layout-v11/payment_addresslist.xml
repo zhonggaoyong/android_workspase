@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/address_default_layout" android:background="@drawable/new_personal_tab_center_pressed" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_black_new_ui" android:gravity="center_vertical" android:id="@id/text_default_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_margin_new" android:text="@string/text_must_address" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/payment_margin_new" android:src="@drawable/icon_forward_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/address_expandPanel" android:background="@color/payment_addresslist_default_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/address_select_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_margin_new" android:layout_marginTop="@dimen/payment_margin_new" android:layout_marginRight="@dimen/payment_margin_new" android:layout_marginBottom="5.0dip">
+                    <RelativeLayout android:orientation="vertical" android:id="@id/address_select_sub_layout" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                        <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/white" android:id="@id/text_select_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <TextView android:textSize="@dimen/payment_normal_text" android:textColor="@color/white" android:id="@id/text_select_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_toRightOf="@id/text_select_name" />
+                        <TextView android:textSize="@dimen/payment_normal_text" android:textColor="@color/white" android:ellipsize="end" android:id="@id/text_select_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:maxLines="2" android:layout_below="@id/text_select_name" android:lineSpacingExtra="3.0dip" />
+                        <TextView android:textSize="@dimen/payment_normal_text" android:textColor="@color/white" android:id="@id/text_select_transport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_below="@id/text_select_address" />
+                        <TextView android:textSize="@dimen/payment_small_text" android:textColor="@color/payment_addresslist_default_otheraddress_text" android:id="@id/text_cod_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/address_cod_status_text" android:layout_below="@id/text_select_transport" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/address_pull_more" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/address_select_sub_layout" android:layout_alignParentRight="true">
+                        <TextView android:textSize="@dimen/payment_small_text" android:textColor="@color/payment_addresslist_default_otheraddress_text" android:layout_gravity="center_vertical" android:id="@id/text_modify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他地址" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/image_modify" android:background="@drawable/icon_open_small_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:id="@id/address_divider" android:background="@drawable/dash_driver" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layerType="software" />
+            <com.achievo.vipshop.view.widget.NoScrollListView android:id="@id/addressListView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/payment_bg_selector" android:cacheColorHint="@null" android:divider="@null" android:dividerHeight="0.0px" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

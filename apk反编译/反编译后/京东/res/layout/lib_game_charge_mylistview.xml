@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.common.ui.JDListView android:id="@id/account_list" android:background="@drawable/lib_game_charge_input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/lib_game_charge_transparent" android:cacheColorHint="@color/lib_game_charge_transparent" />
+</RelativeLayout>

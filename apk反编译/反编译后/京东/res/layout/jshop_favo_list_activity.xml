@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.common.ui.JDDrawerLayout android:id="@id/layout_fav" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/favo_content" android:background="@color/favo_filter_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/product_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:minHeight="?android:listPreferredItemHeight" android:overScrollMode="never" />
+        <ListView android:id="@id/shop_list" android:background="@color/jshop_dynamic_shop_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:minHeight="?android:listPreferredItemHeight" android:overScrollMode="never" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/home_to_top" android:background="@drawable/home_to_top_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/jshop_concern_list_item_recommend_margin_top" android:layout_marginBottom="@dimen/jshop_concern_list_operation_height" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/favo_list_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/favo_list_title" layout="@layout/favolist_title" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/product_operation_layout" android:background="@drawable/favo_op_background" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <RelativeLayout android:id="@id/sort_time_view" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/favo_product_operation_text_size" android:textColor="@color/favo_operation_text_color" android:id="@id/sort_time_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/favo_edge_margin" android:text="@string/favo_sort_time_default" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <RelativeLayout android:gravity="center_horizontal" android:id="@id/sort_depreciate_view" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/favo_product_operation_text_size" android:textColor="@color/favo_operation_text_color" android:id="@id/sort_depreciate_text" android:padding="3.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favo_sort_depreciate_text" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <RelativeLayout android:gravity="center_horizontal" android:id="@id/sort_promotion_view" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/favo_product_operation_text_size" android:textColor="@color/favo_operation_text_color" android:id="@id/sort_promotion_text" android:padding="3.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favo_sort_promotion_text" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <RelativeLayout android:id="@id/sort_button_filter" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/favo_product_operation_text_size" android:textColor="@color/favo_operation_text_color" android:id="@id/sort_button_filter_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_filter" android:layout_centerVertical="true" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:id="@id/sort_button_filter_icon" android:background="@drawable/filter_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/favo_edge_margin" android:layout_marginRight="@dimen/favo_edge_margin" android:layout_toRightOf="@id/sort_button_filter_text" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/shop_operation_layout" android:background="@drawable/favo_op_background" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <RelativeLayout android:id="@id/shop_sort_default_view" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/favo_product_operation_text_size" android:textColor="@color/favo_operation_text_color" android:id="@id/shop_sort_default_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/favo_edge_margin" android:text="@string/shop_default" android:layout_centerVertical="true" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/shop_sort_default_icon" android:background="@drawable/jshop_concern_array_down_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/shop_sort_default_text" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <RelativeLayout android:id="@id/shop_sort_promotion_view" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/favo_product_operation_text_size" android:textColor="@color/favo_operation_text_color" android:id="@id/shop_sort_promotion_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_promotion" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <RelativeLayout android:id="@id/shop_sort_coupon_view" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/favo_product_operation_text_size" android:textColor="@color/favo_operation_text_color" android:id="@id/shop_sort_coupon_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_coupon" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <RelativeLayout android:id="@id/shop_sort_filter_view" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/favo_product_operation_text_size" android:textColor="@color/favo_operation_text_color" android:id="@id/shop_sort_filter_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_filter" android:layout_centerVertical="true" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/shop_sort_filter_icon" android:background="@drawable/filter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/favo_edge_margin" android:layout_marginRight="@dimen/favo_edge_margin" android:layout_toRightOf="@id/shop_sort_filter_text" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/favo_empty" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/favo_list_top_layout">
+            <View android:id="@id/favo_empty_divider" android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/favo_empty_divider">
+                <include android:id="@id/favo_empty_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="-58.0dip" android:layout_weight="1.0" layout="@layout/jd_common_state_page_03" />
+            </LinearLayout>
+            <include android:id="@id/favo_guess_like_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/favo_guess_like" />
+        </RelativeLayout>
+        <ViewStub android:id="@id/favo_search_ol_stub" android:layout="@layout/favo_search_ol_layout" android:inflatedId="@id/favo_search_ol" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/jshop_title_height" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="right" android:id="@id/product_list_filter_menu" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.jingdong.common.ui.JDDrawerLayout>

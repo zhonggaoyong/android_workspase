@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff22222d" android:gravity="center" android:id="@id/groupon_t10_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff88888d" android:gravity="center" android:id="@id/groupon_t10_more" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/groupon_top_more" android:drawableRight="@drawable/icon_arrows_gray_right" android:drawablePadding="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:background="@color/poi_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

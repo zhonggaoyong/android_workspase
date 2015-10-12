@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/comment_list_head_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffcccccc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <RatingBar android:id="@id/comment_list_ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:numStars="5" android:isIndicator="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/comment_list_header_ratingbar" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffff9000" android:id="@id/comment_list_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/comment_list_ratingbar" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff888888" android:id="@id/comment_list_person" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/comment_list_person_num" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/comment_list_impress_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/comment_list_impress_view0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" layout="@layout/comment_list_impress_view" />
+            <include android:id="@id/comment_list_impress_view1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" layout="@layout/comment_list_impress_view" />
+            <include android:id="@id/comment_list_impress_view2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" layout="@layout/comment_list_impress_view" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/comment_list_impress_expand" android:paddingTop="12.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/comment_list_arrow_down" android:contentDescription="@string/app_name" />
+            <TextView android:id="@id/comment_list_impress_margin" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/comment_list_head_margin" android:background="#ffeeeeee" android:clickable="false" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

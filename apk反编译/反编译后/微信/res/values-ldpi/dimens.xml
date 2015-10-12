@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gh">45.0dip</dimen>
+    <dimen name="gi">45.0dip</dimen>
+    <dimen name="gj">24.0dip</dimen>
+    <dimen name="gk">6.0dip</dimen>
+    <dimen name="gl">5.0dip</dimen>
+    <dimen name="gm">180.0dip</dimen>
+    <dimen name="lq">32.0dip</dimen>
+    <dimen name="lr">6.0dip</dimen>
+    <dimen name="ls">40.0dip</dimen>
+    <dimen name="lt">30.0dip</dimen>
+    <dimen name="lu">36.0dip</dimen>
+</resources>

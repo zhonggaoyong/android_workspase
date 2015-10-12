@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ff999999" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="多" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="到" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="“" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="的" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="   ”" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="看" />
+    </LinearLayout>
+</LinearLayout>

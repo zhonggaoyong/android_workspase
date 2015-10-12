@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider_top" android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="0.5500001dip" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/rl_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/divider_top">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_avatar" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/lib_story_icon_face_default" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff848689" android:gravity="center_vertical" android:id="@id/tv_pub_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/tv_pub_time" android:layout_toRightOf="@id/iv_avatar" android:layout_centerVertical="true">
+            <TextView android:textSize="13.0sp" android:textColor="#ff252525" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/user_level_icon_0" android:drawablePadding="6.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/v_divider" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_top" />
+    <RelativeLayout android:id="@id/rl_comment_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/v_divider">
+        <RatingBar android:id="@id/rb_score" android:layout_width="wrap_content" android:layout_height="@dimen/pd_rattingbar_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:progressDrawable="@drawable/coo_ratingbar_small" android:numStars="5" android:isIndicator="true" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/rb_score">
+            <TextView android:textSize="13.0sp" android:textColor="#ff252525" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:lineSpacingMultiplier="1.0" />
+            <HorizontalScrollView android:id="@id/sv_images" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_images_container" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_other_attribute_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/ll_content" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffb5b5b5" android:ellipsize="end" android:gravity="center" android:id="@id/tv_buy_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="2013-12-21 21:21:21" android:singleLine="true" android:layout_below="@id/ll_other_attribute_container" android:lineSpacingMultiplier="1.0" />
+    </RelativeLayout>
+    <View android:id="@id/comment_divider_line" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_comment_detail" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/comment_divider_line">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_comment_useful" android:background="@drawable/button_f_01" android:layout_width="0.0dip" android:layout_height="34.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/commentlist_useful_img" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="9.0dip" android:src="@drawable/commentlist_like" android:scaleType="fitCenter" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffbfbfbf" android:gravity="center" android:id="@id/tv_comment_useful_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="7.0dip" android:text="()" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/ll_comment_reply" android:background="@drawable/button_f_01" android:layout_width="0.0dip" android:layout_height="34.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="9.0dip" android:src="@drawable/commentlist_reply" android:scaleType="fitCenter" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffbfbfbf" android:gravity="center" android:id="@id/tv_comment_reply_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="7.0dip" android:text="()" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/ll_bottom_buttons" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/line_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentBottom="true" />
+    <com.fanli.android.view.TangFontTextView android:textSize="15.0sp" android:textColor="@color/common_text_color" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:text="title:" android:singleLine="true" android:layout_centerVertical="true" />
+    <com.fanli.android.view.TangFontTextView android:textSize="11.0sp" android:textColor="@color/common_text_color" android:gravity="center" android:id="@id/tv_sub" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="17.0dip" android:text="suggestion" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

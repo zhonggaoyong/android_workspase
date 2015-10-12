@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bdmenu="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/daren_share_selector" android:id="@id/quan_detail_share" android:title="@string/quan_detial_share_tip" android:titleCondensed="share" bdmenu:showAsAction="always" />
+</menu>

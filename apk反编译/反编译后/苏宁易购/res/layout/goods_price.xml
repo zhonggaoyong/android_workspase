@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/appStore_bottom_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/c_shop_price_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/zhi_jiang_jia_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/quick_buy_top_padding">
+            <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_seven" android:id="@id/zhi_jiang_jia_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/yuan_jia_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/quick_buy_top_padding" android:layout_marginLeft="20.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/yuan_jia_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_goodsdetial_table_type" android:background="@color/pub_color_seven" android:paddingLeft="@dimen/android_public_space_7px" android:paddingRight="@dimen/android_public_space_7px" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_46px" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="" />
+        <ImageView android:gravity="center_vertical" android:id="@id/iv_goodsdetial_table_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_13px" android:src="@drawable/goodsdetail_reservation_phone" />
+        <TextView android:gravity="right|center" android:id="@id/hwg_price_tag_text" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/act_goods_detail_price_hwg_tag" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_nine" android:gravity="center_vertical" android:id="@id/zero_prompt_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/price_is_zero_prompt" />
+</LinearLayout>

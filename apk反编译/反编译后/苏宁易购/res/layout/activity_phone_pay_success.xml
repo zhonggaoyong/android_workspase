@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:progressBarStyle="@android:style/Widget.ProgressBar.Horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/search_filter_progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:indeterminateOnly="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/white">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                    <ImageView android:id="@id/phone_pay_success_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/phone_pay_success_logo_bg" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="20.0dip">
+                    <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/phone_pay_success_order_detail" android:background="@drawable/btn_modify_address_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="查看订单" android:layout_weight="1.0" />
+                    <Button android:textSize="18.0sp" android:textColor="@android:color/black" android:id="@id/phone_pay_success_go_home" android:background="@drawable/btn_yellow_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="继续充值" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

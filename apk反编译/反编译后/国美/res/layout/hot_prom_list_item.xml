@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/hot_promotion_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/product_image" android:layout_width="wrap_content" android:layout_height="140.0dip" android:layout_margin="2.0dip" android:src="@drawable/product_list_grid_item_icon_bg" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/hot_prom_tag_image" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/product_blue_coupon" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/lint_layout" android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_below="@id/product_image" />
+    <RelativeLayout android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lint_layout">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/price_info" android:background="@color/hot_prom_price_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="55.0dip">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/hot_prom_price_text_color" android:id="@id/price_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/order_amount" android:layout_alignBaseline="@id/price" />
+                <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/hot_prom_price_text_color" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2033.00" android:singleLine="true" android:layout_toRightOf="@id/price_mark" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/hot_prom_price_text_color" android:id="@id/price_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/price" android:layout_alignBaseline="@id/price" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/layout_save" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="@color/weak_text_color" android:id="@id/hot_prom_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/hot_prom_save" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/weak_text_color" android:id="@id/hot_prom_save_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/image_line" android:background="#ffc5bfbf" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/price_info" />
+        <com.gome.ecmall.custom.PreLineTextView android:textSize="16.0sp" android:textColor="@color/weak_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/product_describe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:minHeight="45.0dip" android:maxLines="2" android:layout_below="@id/image_line" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/navigation_fragment" />
+    <FrameLayout android:orientation="horizontal" android:id="@id/navigation_fragment" android:layout_width="fill_parent" android:layout_height="@dimen/main_navigation_bottom_height" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/splash_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

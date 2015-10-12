@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/jd_tip_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/base_ui_jd_tip_page_text1_size" android:textColor="@color/c_BFBFBF" android:gravity="center" android:id="@id/jd_tip_tv1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_ui_jd_tip_page_text_margin_top" android:singleLine="true" />
+    <TextView android:textSize="@dimen/base_ui_jd_tip_page_text2_size" android:textColor="@color/c_BFBFBF" android:gravity="center" android:id="@id/jd_tip_tv2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_ui_jd_tip_page_text_margin_top" android:singleLine="true" />
+    <TextView android:textSize="@dimen/base_ui_jd_tip_page_text2_size" android:textColor="@color/c_BFBFBF" android:gravity="center" android:id="@id/jd_tip_tv3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <Button android:textSize="@dimen/base_ui_jd_tip_page_button_text_size" android:textColor="@color/c_686868" android:id="@id/jd_tip_button" android:background="@drawable/button_d_01" android:paddingLeft="@dimen/base_ui_jd_tip_page_button_paddingLeft" android:paddingTop="@dimen/base_ui_jd_tip_page_button_paddingTop" android:paddingRight="@dimen/base_ui_jd_tip_page_button_paddingRight" android:paddingBottom="@dimen/base_ui_jd_tip_page_button_paddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_ui_jd_tip_page_button_margin_top" />
+</LinearLayout>

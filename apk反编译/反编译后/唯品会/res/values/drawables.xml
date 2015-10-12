@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="bg_verify_code_down">#ffd9d9d9</item>
+    <item type="drawable" name="bg_verify_code_up">#ffffffff</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="transparent">#00000000</item>
+    <item type="drawable" name="vip_red">#ffe4007f</item>
+    <item type="drawable" name="vip_red_disable">#ffbfbfbf</item>
+    <item type="drawable" name="vip_red_press">#fff49bcd</item>
+</resources>

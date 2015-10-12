@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_server_data" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@null" />
+</LinearLayout>

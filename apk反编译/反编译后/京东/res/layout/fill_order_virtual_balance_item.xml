@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/fill_order_virtual_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/fill_order_virtual_layout" android:layout_width="fill_parent" android:layout_height="@dimen/fill_order_layout_jdbean_layout_height">
+        <TextView android:textSize="@dimen/invoice_text_size_30" android:textColor="@color/fill_order_delivery_normal" android:gravity="left" android:id="@id/fill_order_virtual_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fill_order_marginleft" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/invoice_text_size_24" android:textColor="@color/color_252525" android:id="@id/fill_order_content" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fill_order_text_space_margin" android:layout_toLeftOf="@id/checkbox_fill_order_virtual_index" android:layout_toRightOf="@id/fill_order_virtual_name" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/checkbox_fill_order_virtual_index" android:background="@drawable/new_fill_order_ellipse_button_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fill_order_text_space_margin" android:layout_marginRight="@dimen/fill_order_marginleft" android:button="@drawable/none" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/fill_order_line" android:visibility="visible" android:layout_marginLeft="@dimen/fill_order_marginleft" style="@style/fill_order_devide_line" />
+</LinearLayout>

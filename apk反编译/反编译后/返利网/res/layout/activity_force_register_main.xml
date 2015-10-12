@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#fff6f6f6" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:src="@drawable/force_register_fanli" android:contentDescription="@string/contentDescription" />
+        <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="23.0dip" />
+        <EditText android:textSize="16.0sp" android:textColor="#ff4d494c" android:textColorHint="#ffcccccc" android:gravity="center_vertical" android:id="@id/edv_phone" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" android:hint="@string/force_register_phone_hint" android:singleLine="true" android:inputType="phone" />
+        <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/force_register_phone_tips" android:singleLine="true" />
+        <Button android:textSize="20.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_confirm" android:background="@drawable/login_button" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="15.0dip" android:text="@string/force_register_txt" />
+        <TextView android:textColor="#ff6bc676" android:layout_gravity="top|right|center" android:id="@id/tv_login" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="150.0dip" android:layout_marginTop="10.0dip" android:text="@string/force_login_txt" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffb5b5b5" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/force_login_contact1" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff6bc676" android:layout_gravity="bottom|center" android:id="@id/tv_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip" android:text="@string/force_login_contact2" android:singleLine="true" />
+    </LinearLayout>
+</ScrollView>

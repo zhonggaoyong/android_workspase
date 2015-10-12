@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/outdate_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_hearder_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <RelativeLayout android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="@dimen/app_textsize_price" android:textColor="#ff222222" android:id="@id/content" android:paddingLeft="@dimen/app_textsize_main" android:paddingTop="5.0dip" android:paddingRight="@dimen/app_textsize_main" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="历史优惠券" />
+        <TextView android:textSize="@dimen/app_textsize_price" android:textColor="@color/app_text_new_blue" android:id="@id/help" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="@dimen/app_textsize_main" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="帮助" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

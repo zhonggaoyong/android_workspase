@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugins versionName="1.0">
+
+<!--    <plugin name="InitPlugin" action="initPlugin" async="false"
+        needInit="true"
+        value="com.jingdong.common.hybrid.plugin.InitPlugin"/>-->
+
+    <plugin name="FlightDetailHttpPlugin" action="flightDetailHttpPlugin" async="false"
+        callbackId="init"
+        needInit="true" value="com.jingdong.common.hybrid.plugin.jdtravel.FlightDetailHttpPlugin"/>
+
+    <plugin name="ShowRefundRuleDialogPlugin" action="showRefundRuleDialog" async="false"
+        needInit="false" value="com.jingdong.common.hybrid.plugin.jdtravel.ShowRefundRuleDialogPlugin" />
+
+    <plugin name="ShowIntRefundRuleDialogPlugin" action="showIntRefundRuleDialog" async="false"
+        needInit="false" value="com.jingdong.common.hybrid.plugin.jdtravel.ShowIntRefundRuleDialogPlugin" />
+
+    <plugin name="RefundOrderPlugin" action="refundOrder" async="false"
+        needInit="false" value="com.jingdong.common.hybrid.plugin.jdtravel.RefundOrderPlugin"/>
+
+    <plugin name="CancelOrderPlugin" action="cancelOrder" async="false"
+        needInit="false" value="com.jingdong.common.hybrid.plugin.jdtravel.CancelOrderPlugin"/>
+
+    <plugin name="PayOrderPlugin" action="payOrder" async="false"
+        needInit="false" value="com.jingdong.common.hybrid.plugin.jdtravel.PayOrderPlugin"/>
+
+    <plugin name="HybridTitlePlugin" action="showTitle" async="false"
+        needInit="false" value="com.jingdong.common.hybrid.plugin.HybridTitlePlugin"/>
+
+    <plugin name="CoreHybrid" action="webFinished" async="false"
+        needInit="false" value="com.jingdong.common.hybrid.plugin.CoreHybrid" />
+
+</plugins>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/wallet_text_tip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="1  " />
+                <TextView android:textSize="@dimen/wallet_text_tip" android:textColor="@color/black" android:id="@id/txt_withdraw_desc1" android:paddingLeft="5.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_withdraw_desc1" android:lineSpacingExtra="7.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/wallet_text_tip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="2  " />
+                <TextView android:textSize="@dimen/wallet_text_tip" android:textColor="@color/black" android:id="@id/txt_withdraw_desc2" android:background="@color/white" android:paddingLeft="5.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_withdraw_desc2" android:lineSpacingExtra="7.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/wallet_text_tip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="3  " />
+                <TextView android:textSize="@dimen/wallet_text_tip" android:textColor="@color/black" android:id="@id/txt_withdraw_desc3" android:background="@color/white" android:paddingLeft="5.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_withdraw_desc3" android:lineSpacingExtra="7.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/wallet_text_tip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="4  " />
+                <TextView android:textSize="@dimen/wallet_text_tip" android:textColor="@color/black" android:id="@id/txt_withdraw_desc4" android:background="@color/white" android:paddingLeft="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_withdraw_desc4" android:lineSpacingExtra="7.0dip" />
+            </LinearLayout>
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <Button android:textSize="@dimen/app_textsize_button" android:id="@id/btn_start_withdraw" android:layout_width="fill_parent" android:layout_height="@dimen/submit_pink_big_button_height" android:layout_marginLeft="9.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="12.0dip" android:text="@string/btn_start_withdraw" style="@style/btn_violet_style" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

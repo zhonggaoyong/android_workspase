@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lottery_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.common.widget.TempTitle android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" stuan:drawableLeft="@drawable/common_title_back_selector" stuan:drawableRight="@drawable/common_title_info_selector" xmlns:stuan="http://schemas.android.com/apk/res-auto" />
+    <include layout="@layout/lottery_number_picker_head" />
+    <android.support.v4.view.ViewPager android:id="@id/ball_selector_panel_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <android.support.v4.view.PagerTabStrip android:layout_gravity="top" android:id="@id/ball_selector_panel_pager_title" android:background="@drawable/lottery_tab_cursor_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </android.support.v4.view.ViewPager>
+    <include layout="@layout/lottery_number_picker_bottom" />
+</LinearLayout>

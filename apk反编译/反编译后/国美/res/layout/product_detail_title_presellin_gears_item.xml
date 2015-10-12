@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_presellin_gears_vertical_line" android:background="#ffe6e6e6" android:visibility="visible" android:layout_width="0.6dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/v_presellin_gears_line" android:background="#ffe6e6e6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:layout_gravity="center" android:id="@id/tv_presellin_gears_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="满20人" />
+        <TextView android:layout_gravity="center" android:id="@id/tv_presellin_gears_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:text="￥900.00" android:layout_below="@id/tv_presellin_gears_describe" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_presellin_gears_jiantou" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <View android:background="#ffe6e6e6" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/product_detail_triangle" />
+        <View android:background="#ffe6e6e6" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ffe6e6e6" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/lottery_shape_rectangle_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/TopLeftLinearLayout" android:background="@color/table_title_bg" android:layout_width="90.0dip" android:layout_height="fill_parent">
+                <TextView android:gravity="center" android:id="@id/titleInfo" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="意甲\n001\n23:50截止" android:layout_weight="4.0" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageIfShowDetail" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+            <com.jd.lottery.lib.ui.lotteryhall.jingcaizuqiu.hunheguoguan.widget.SelectMatch android:gravity="center" android:id="@id/SelectMatch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/BelowTableLayout" android:background="@color/table_colum0_zero_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.jd.lottery.lib.ui.lotteryhall.jingcaizuqiu.hunheguoguan.widget.RateOfTouzhu android:id="@id/detail_rateOfTouzhu" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_marginLeft="@dimen/zucai_shengpingfu_detail_spliteline_margin" android:layout_marginRight="@dimen/zucai_shengpingfu_detail_spliteline_margin" style="@style/line_horizontal_style" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/detail_paiming" android:layout_width="fill_parent" android:layout_height="@dimen/zucai_shengpingfu_detail_height" android:layout_marginTop="0.0dip">
+                <TextView android:layout_width="105.0dip" android:layout_height="fill_parent" android:text="@string/jingcai_paiming" style="@style/detail_text_info" />
+                <TextView android:id="@id/paiming_host" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/lottery_nouse" android:layout_weight="1.0" style="@style/detail_text_info" />
+                <TextView android:id="@id/paiming_guest" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/lottery_nouse" android:layout_weight="1.0" style="@style/detail_text_info" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_marginLeft="@dimen/zucai_shengpingfu_detail_spliteline_margin" android:layout_marginRight="@dimen/zucai_shengpingfu_detail_spliteline_margin" style="@style/line_horizontal_style" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/zucai_shengpingfu_detail_height" android:layout_marginTop="0.0dip">
+                <TextView android:layout_width="105.0dip" android:layout_height="fill_parent" android:text="@string/jingcai_lishijiaofeng" style="@style/detail_text_info" />
+                <TextView android:id="@id/lishijiaofeng_victory" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/lottery_nouse" android:layout_weight="1.0" style="@style/detail_text_info" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+</LinearLayout>

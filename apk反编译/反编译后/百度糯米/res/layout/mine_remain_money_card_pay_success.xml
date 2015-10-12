@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/mine_gray2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/mine_white" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/remain_paydone_success_icon" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:textColor="@color/mine_black2" android:gravity="left" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/mine_gray5" android:gravity="left" android:id="@id/addition" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mine_remain_money_add_value_buy_check_and_send" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/mine_black1" android:gravity="center" android:id="@id/balance_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/mine_pink" android:gravity="center" android:id="@id/balance" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/mine_gray2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:textColor="@color/mine_pink1" android:id="@id/go_home" android:background="@drawable/selector_login_button" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginRight="12.0dip" android:text="@string/mine_go_home" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:textColor="@color/mine_white" android:id="@id/custom_func" android:background="@drawable/selector_red_button" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/mine_pink1" android:id="@id/add_value_suc_continue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/mine_remain_money_add_value_success_continue" />
+</LinearLayout>

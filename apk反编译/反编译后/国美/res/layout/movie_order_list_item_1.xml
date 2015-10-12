@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/more_item_last_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <RelativeLayout android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:gravity="top" android:id="@id/tv_movie_product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="空调" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/price_text_color" android:id="@id/tv_order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未付款" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0dip" android:textColor="@color/main_default_black_text_color" android:id="@id/tv_movie_cinema_room" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="北京金影城-5号厅" android:lineSpacingExtra="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/llt_order_type_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textColor="@color/main_default_black_text_color" android:id="@id/tv_film_foretell_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="放映时间" android:lineSpacingExtra="5.0dip" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/main_default_black_text_color" android:id="@id/tv_ticket_and_seat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2(1排2)" android:lineSpacingExtra="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llt_order_type_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textColor="@color/main_default_black_text_color" android:id="@id/tv_effective_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/movie_ticket_effective_date" android:lineSpacingExtra="5.0dip" />
+        </LinearLayout>
+        <ImageView android:background="@drawable/up_bottom_no_transparent" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="6.0dip" />
+        <RelativeLayout android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_order_option" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="去支付" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Gome.Button.SolidRed.Style" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/main_default_black_text_color" android:id="@id/tv_order_price_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单金额：" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/price_text_color" android:id="@id/tv_order_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dddd" android:layout_toRightOf="@id/tv_order_price_label" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/price_text_color" android:id="@id/tv_product_quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="dddd" android:layout_toLeftOf="@id/btn_order_option" android:layout_toRightOf="@id/tv_order_price" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

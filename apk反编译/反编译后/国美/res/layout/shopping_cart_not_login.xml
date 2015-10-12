@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/shopping_cart_no_good_not_login_rl" android:background="#ffffffff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/hint_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即登录，同步电脑和手机购物车中的商品" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="12.0sp" android:id="@id/shopping_cart_not_login_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:drawableRight="@drawable/shop_car_jiantou" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

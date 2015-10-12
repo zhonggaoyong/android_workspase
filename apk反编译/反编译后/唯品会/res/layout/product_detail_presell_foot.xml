@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/detail_lr_padding" android:paddingRight="@dimen/detail_lr_padding" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center" android:id="@id/detail_pre_pay_money" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="2.0dip" />
+    <Button android:textSize="16.0sp" android:textColor="@color/detail_submit_button_text_color_selector" android:layout_gravity="center_vertical" android:id="@id/buy_now" android:layout_width="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/presell_product_add_cart" android:layout_centerVertical="true" style="@style/submit_red_big_button_style" />
+</LinearLayout>

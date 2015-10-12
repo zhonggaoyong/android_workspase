@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/red" android:id="@id/gw_host_tv" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:text="@string/host_set_string" />
+        <EditText android:id="@id/gw_host_et" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+        <TextView android:textColor="@color/red" android:id="@id/m_host_tv" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:text="@string/mhost_set_string" />
+        <EditText android:id="@id/m_host_et" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+        <TextView android:textColor="@color/red" android:id="@id/msg_host_tv" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:text="@string/msghost_set_string" />
+        <EditText android:id="@id/msg_host_et" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+        <TextView android:textColor="@color/red" android:id="@id/pai_host_tv" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:text="@string/paihost_set_string" />
+        <EditText android:id="@id/pai_host_et" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+        <TextView android:textColor="@color/red" android:id="@id/plug_host_tv" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:text="@string/plug_host" />
+        <EditText android:id="@id/plug_host_et" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+        <CheckBox android:textColor="@color/red" android:id="@id/is_test_mode" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:button="@drawable/login_remember" android:text="@string/testmode_set_string" />
+        <CheckBox android:textColor="@color/red" android:id="@id/is_dns" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:button="@drawable/login_remember" android:text="使用域名请求" />
+    </LinearLayout>
+</ScrollView>

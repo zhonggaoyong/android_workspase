@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/view_gap" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <View android:id="@id/top_line" android:background="#26595056" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/layout_select_default" android:layout_width="35.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/imageview_address_select_pre" android:background="@drawable/checkbox_icon_unselected" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="35.0dip" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <View android:id="@id/select_line" android:background="#26595056" android:layout_width="15.0dip" android:layout_height="1.0dip" />
+                    <View android:background="#26595056" android:layout_width="20.0dip" android:layout_height="1.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="15.0dip" android:layout_height="fill_parent">
+                    <View android:id="@id/bottom_line_left" android:background="#26595056" android:layout_width="15.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <RelativeLayout android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:layout_centerVertical="true">
+                            <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_2" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/textview_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                            <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="#ff666666" android:id="@id/textview_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/textview_name" android:layout_centerVertical="true" />
+                            <ImageView android:id="@id/imageview_select_text" android:background="@drawable/ico_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/textview_phone" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="#ff999999" android:id="@id/textview_address_Area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:lineSpacingExtra="2.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:id="@id/bottom_line_right" android:background="#26595056" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+                    <RelativeLayout android:id="@id/textview_address_edit" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <View android:background="@color/grey_l8" android:layout_width="1.0dip" android:layout_height="40.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/orderpage_ico_edit" android:layout_centerInParent="true" />
+                        <View android:background="#26595056" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/address_arrow" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow" android:background="@drawable/circle_info_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/address_red_ball" android:background="@drawable/me_bg_bubble_small_new" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+                        <View android:background="#26595056" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

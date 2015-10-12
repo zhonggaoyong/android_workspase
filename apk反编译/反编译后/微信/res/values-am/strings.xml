@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">የGoogle Play አገልግሎቶች ስህተት</string>
+    <string name="d3r">አንድ መተግበሪያ የGoogle Play አገልግሎቶች እንዲጫኑ ይፈልጋል።</string>
+    <string name="d3s">አንድ መተግበሪያ የGoogle Play አገልግሎቶች እንዲዘምኑ ይፈልጋል።</string>
+    <string name="d3t">አንድ መተግበሪያ የGoogle Play አገልግሎቶች እንዲነቁ ይፈልጋል።</string>
+    <string name="d3u">በ%1$s የተጠየቀ</string>
+    <string name="d3v">Google Play አገልግሎቶችን አግኝ</string>
+    <string name="d3w">ይህ መተግበሪያ ያለ Google Play አገልግሎቶች አይሰራም፣ እነሱ ደግሞ ስልክዎ ላይ የሉም።</string>
+    <string name="d3x">ይህ መተግበሪያ ያለ Google Play አገልግሎቶች አይሰራም፣ እነሱ ደግሞ ጡባዊዎ ላይ የሉም።</string>
+    <string name="d3y">Google Play አገልግሎቶችን አግኝ</string>
+    <string name="d3z">Google Play አገልግሎቶችን አንቃ</string>
+    <string name="d40">Google Play አገልግሎቶችን እስካላነቁ ድረስ ይህ መተግበሪያ አይሰራም።</string>
+    <string name="d41">Google Play አገልግሎቶችን አንቃ</string>
+    <string name="d42">Google Play አገልግሎቶችን ያዘምኑ</string>
+    <string name="d43">Google Play አገልግሎቶችን እስኪያዘምኑ ድረስ ይህ መተግበሪያ አይሰራም።</string>
+    <string name="d44">የአውታረ መረብ ስህተት</string>
+    <string name="d45">ከGoogle Play አገልግሎቶች ጋር ለመገናኘት የውሂብ ግንኙነት ያስፈልጋል።</string>
+    <string name="d46">ልክ ያልሆነ መለያ</string>
+    <string name="d47">የተገለጸው መለያ በዚህ መሣሪያ ላይ የለም። እባክው የተለየ መለያ ይምረጡ።</string>
+    <string name="d48">በGoogle Play አገልግሎቶች ላይ ያልታወቀ ችግር።</string>
+    <string name="d49">Google Play አገልግሎቶች</string>
+    <string name="d4_">የGoogle Play አገልግሎቶች፣ አንዳንድ መተግበሪያዎችዎ በእሱ ላይ ጥገኛ የሆኑት፣ በመሣሪያዎ አይደገፍም። እባክዎ ለእርዳታ አምራቹን ያግኙ።</string>
+    <string name="d4a">በመሣሪያው ላይ ያለው ቀን ትክክል አይመስልም። እባክዎ በመሣሪያው ላይ ያለውን ቀን ያረጋግጡ።</string>
+    <string name="d4b">ያዘምኑ</string>
+    <string name="d4c">ግባ</string>
+    <string name="d4d">በGoogle ይግቡ</string>
+</resources>

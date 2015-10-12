@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_eight" android:layout_gravity="center_horizontal" android:id="@id/flight_pay_success_desc" android:background="@drawable/flight_order_success_prompt" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="付款成功！出票成功后会以短信方式通知！" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="15.0dip" android:layout_centerInParent="true">
+            <Button android:textSize="20.0sp" android:textColor="@color/pub_color_nine" android:id="@id/flight_pay_success_btn_shopping" android:background="@drawable/tab_base_bg" android:padding="5.0dip" android:layout_width="100.0dip" android:layout_height="50.0dip" android:text="去逛逛" android:layout_weight="1.0" />
+            <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/flight_pay_success_btn_order" android:background="@drawable/add_to_shop" android:padding="5.0dip" android:layout_width="100.0dip" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:text="查看这笔订单" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Google Play szolgáltatások – hiba</string>
+    <string name="d3r">Egy alkalmazás Google Play-szolgáltatások telepítését kéri.</string>
+    <string name="d3s">Egy alkalmazás Google Play-szolgáltatások frissítését kéri.</string>
+    <string name="d3t">Egy alkalmazás Google Play-szolgáltatások engedélyezését kéri.</string>
+    <string name="d3u">A(z) %1$s kérésére</string>
+    <string name="d3v">Play Szolgáltatások telepítése</string>
+    <string name="d3w">Az alkalmazás működéséhez a Google Play Szolgáltatások szükségesek, ezek nincsenek telepítve a telefonon.</string>
+    <string name="d3x">Az alkalmazás működéséhez a Google Play Szolgáltatások szükségesek, ezek nincsenek telepítve a táblagépen.</string>
+    <string name="d3y">Play Szolgáltatások telepítése</string>
+    <string name="d3z">Google Play Szolgáltatások aktiválása</string>
+    <string name="d40">Az alkalmazás csak akkor fog működni, ha engedélyezi a Google Play Szolgáltatásokat.</string>
+    <string name="d41">Play Szolgáltatások aktiválása</string>
+    <string name="d42">Play Szolgáltatások frissítése</string>
+    <string name="d43">Az alkalmazás csak akkor fog működni, ha frissíti a Google Play Szolgáltatásokat.</string>
+    <string name="d44">Hálózati hiba</string>
+    <string name="d45">A Google Play Szolgáltatásokhoz történő kapcsolódáshoz adatkapcsolat szükséges.</string>
+    <string name="d46">Érvénytelen fiók</string>
+    <string name="d47">A megadott fiók nem létezik ezen az eszközön. Kérjük, válasszon másik fiókot.</string>
+    <string name="d48">Ismeretlen hiba a Google Play Szolgáltatásokban.</string>
+    <string name="d49">Google Play Szolgáltatások</string>
+    <string name="d4_">A Google Play Szolgáltatásokat, amelyre egyes alkalmazások támaszkodnak, nem támogatja az eszköz. Segítségért forduljon az eszköz gyártójához.</string>
+    <string name="d4a">Az eszközön beállított dátum helytelen. Kérjük, ellenőrizze azt.</string>
+    <string name="d4b">Frissítés</string>
+    <string name="d4c">Belépés</string>
+    <string name="d4d">Google-bejelentkezés</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" style="@style/title_bar_bg_style"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_back_btn_selector" android:scaleType="centerInside" android:layout_centerVertical="true" style="@style/app_title_left_button_style" />
+        <TextView android:textSize="@dimen/app_title_size" android:textColor="@color/app_title_dark" android:gravity="center" android:id="@id/vipheader_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退货流程" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/return_info_flow_layout" />
+    </ScrollView>
+</LinearLayout>

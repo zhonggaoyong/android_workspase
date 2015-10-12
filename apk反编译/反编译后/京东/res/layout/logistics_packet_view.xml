@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="58.0dip" android:layout_height="59.0dip" android:src="@drawable/logistics_packet_current_addr_normal" />
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/packet_iv" android:layout_width="39.0dip" android:layout_height="39.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="5.0dip" app:roundAsCircle="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

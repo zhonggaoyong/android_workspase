@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/vip_cart_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="44.0dip" layout="@layout/vipnew_list_header" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <View android:id="@id/menu_lines" android:background="@color/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+            <LinearLayout android:gravity="center" android:id="@id/modifyView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/change_password_item_height">
+                <TextView android:textSize="@dimen/account_type_item_text_size" android:textColor="@color/new_text_black" android:id="@id/modifyText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="修改登录密码" android:layout_weight="1.0" />
+                <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_forward_grey" />
+            </LinearLayout>
+            <View android:id="@id/divider" android:background="@color/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+            <LinearLayout android:gravity="center" android:id="@id/realnameAuthLayout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                <TextView android:textSize="@dimen/account_type_item_text_size" android:textColor="@color/personal_text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="实名认证" android:layout_weight="1.0" />
+                <TextView android:gravity="center_vertical" android:id="@id/realnameAuthText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:text="未认证" />
+            </LinearLayout>
+            <View android:background="@color/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dip" android:textColor="#ffe3281b" android:gravity="left|center" android:id="@id/txtErrInfo" android:background="#fffffada" android:paddingLeft="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" android:text="第三方平台的账号无法直接修改登录密码" android:drawableLeft="@drawable/icon_failure_least" android:drawablePadding="6.0dip" />
+    </RelativeLayout>
+</LinearLayout>

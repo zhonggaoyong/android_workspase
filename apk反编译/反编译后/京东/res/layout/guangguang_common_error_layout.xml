@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/guangguang_errorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/y_03" />
+        <TextView android:textSize="@dimen/base_ui_jd_tip_page_text1_size" android:textColor="@color/c_BFBFBF" android:id="@id/guangguang_textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/server_distracted" android:singleLine="true" />
+        <TextView android:textSize="@dimen/base_ui_jd_tip_page_text2_size" android:textColor="@color/c_BFBFBF" android:id="@id/guangguang_textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/retry_later" android:singleLine="true" />
+        <Button android:textSize="@dimen/base_ui_jd_tip_page_button_text_size" android:textColor="@color/c_686868" android:id="@id/guangguang_btn_retry_load" android:background="@drawable/button_d_01" android:paddingLeft="@dimen/base_ui_jd_tip_page_button_paddingLeft" android:paddingTop="@dimen/base_ui_jd_tip_page_button_paddingTop" android:paddingRight="@dimen/base_ui_jd_tip_page_button_paddingRight" android:paddingBottom="@dimen/base_ui_jd_tip_page_button_paddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/retry_load" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</FrameLayout>

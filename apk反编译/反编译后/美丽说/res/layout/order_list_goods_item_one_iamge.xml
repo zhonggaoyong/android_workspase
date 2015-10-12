@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/order_list_image_refund_state_layout" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:ellipsize="end" android:id="@id/order_list_goods_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:lines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/order_goods_divider" android:layout_marginTop="15.0dip" style="@style/FirstDividerViewStyle" />
+    <View android:id="@id/bottom_gap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/voucher_container" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/mine_gray1" android:id="@id/voucher_invalid_label" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mine_voucher_invalid" />
+    <LinearLayout android:id="@id/voucher_main_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/voucher_left_bg" android:background="@drawable/submit_voucher_picking_left_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/voucher_money_area" android:paddingLeft="12.5dip" android:layout_width="79.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="25.0sp" android:textColor="@color/mine_pink" android:gravity="left" android:id="@id/voucher_money" android:paddingLeft="12.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mine_voucher_money" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/voucher_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="4.0dip" android:layout_toRightOf="@id/voucher_money_area" android:layout_above="@id/voucher_deadline" android:layout_alignParentTop="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/mine_pink" android:id="@id/voucher_deadline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip" android:layout_alignLeft="@id/voucher_condition" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/voucher_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_voucher_picking" />
+    </LinearLayout>
+</LinearLayout>

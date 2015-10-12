@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_dialog_title" android:textColor="@color/dilaog_title_text_color" android:id="@id/fragment_alert_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_title_margin_top" android:layout_marginBottom="@dimen/dialog_title_margin_bottom" android:text="@string/lottery_match_filter" android:singleLine="true" />
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_dialog_title_style" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/footballFilterRadioGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="32.0dip">
+        <TextView android:id="@id/footballFilterRadioButtonAll" android:background="@drawable/lottery_selector_football_select_all" android:text="@string/jingcai_select_all" style="@style/lottery_football_matchs_filter_radiobutton" />
+        <TextView android:id="@id/footballFilterRadioButtonInvert" android:background="@drawable/lottery_selector_football_select_invert" android:text="@string/jingcai_select_invert" style="@style/lottery_football_matchs_filter_radiobutton" />
+        <TextView android:id="@id/footballFilterRadioButtonBig5" android:background="@drawable/lottery_selector_football_select_big5" android:text="@string/jingcai_select_big5" style="@style/lottery_football_matchs_filter_radiobutton" />
+    </LinearLayout>
+    <com.jd.lottery.lib.ui.lotteryhall.jingcaizuqiu.hunheguoguan.widget.MatchSelectorPanel android:id="@id/lottery_match_filter_selector_panel" android:layout_width="fill_parent" android:layout_height="122.0dip" android:layout_marginLeft="32.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="32.0dip" />
+    <TextView android:textSize="@dimen/text_size_13sp" android:textColor="@color/text_gray_light_m" android:gravity="center" android:id="@id/fragment_alert_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="34.0dip" android:layout_marginBottom="8.0dip" />
+    <include layout="@layout/lottery_dialog_bottom_btton_view" />
+</LinearLayout>

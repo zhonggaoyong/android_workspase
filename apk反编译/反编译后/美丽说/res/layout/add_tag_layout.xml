@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/mainHeader">
+        <ImageView android:id="@id/btn_back" android:clickable="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/backBtnWithoutWords" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="@string/img_filter_addtag_title" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <com.meilishuo.app.views.CustomTextView android:textColor="@color/pink" android:id="@id/btn_ok" android:text="@string/img_filter_addtag_finish" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopOkBtn" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/loadingwrap" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <LinearLayout android:layout_gravity="center_vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/pink" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="*" />
+                    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d5" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:text="@string/img_filter_name_tip" />
+                    <com.meilishuo.app.views.CustomEditText android:textSize="16.0sp" android:textColor="@color/grey_d3" android:textColorHint="#ffcccccc" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/add_tag_goods_des" android:background="@null" android:paddingTop="15.0dip" android:paddingRight="13.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/img_filter_addtag_hint_des" android:singleLine="true" android:imeOptions="actionDone" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/first_edit" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d5" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/img_filter_addtag_hint_price" />
+                        <com.meilishuo.app.views.CustomEditText android:textSize="16.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/add_tag_goods_price" android:background="@null" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:nextFocusDown="@id/circle_goods_repertory" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:inputType="numberDecimal" />
+                    </LinearLayout>
+                    <View style="@style/FirstDividerViewStyle" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d5" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/img_filter_addtag_hint_count" />
+                        <com.meilishuo.app.views.CustomEditText android:textSize="16.0sp" android:textColor="@color/grey_d3" android:textColorHint="#ffccc2c9" android:gravity="center_vertical" android:id="@id/add_tag_goods_repertory" android:background="@null" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:inputType="number" android:imeOptions="actionDone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/base_lay" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d5" android:gravity="center" android:id="@id/create_sku" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/img_filter_addtag_create_sku" android:drawableLeft="@drawable/addtag_icon_add" android:drawablePadding="10.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/deliver_layout" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/img_filter_addtag_deliver" android:layout_centerVertical="true" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d5" android:gravity="center" android:id="@id/deliver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_toLeftOf="@id/arr" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/arr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/circle_info_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/add_tag_pic_layout" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/img_filter_addtag_pic_tips_subtitle" />
+                </LinearLayout>
+                <com.meilishuo.app.photo.PhotoChooseView android:layout_gravity="left" android:id="@id/add_tag_goods_picchoose" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="8.0dip" android:verticalSpacing="8.0dip" android:stretchMode="columnWidth" android:numColumns="4" android:divider="@null" android:dividerHeight="0.0px" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

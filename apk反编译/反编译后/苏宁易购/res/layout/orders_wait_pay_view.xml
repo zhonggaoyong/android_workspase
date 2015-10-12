@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/order_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.suning.mobile.ebuy.order.myorder.subpage.PullUploadListViewOrder android:id="@id/order_wait_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

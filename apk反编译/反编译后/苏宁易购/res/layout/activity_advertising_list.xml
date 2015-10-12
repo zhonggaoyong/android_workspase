@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mian_page" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/list_fl" android:background="@color/pub_color_twelev" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.suning.mobile.ebuy.promotion.lianban.view.StickyListView android:id="@id/product_foot_list" android:background="@color/pub_color_twelev" android:paddingBottom="8.0dip" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:divider="@color/item_divider" android:dividerHeight="0.0dip" android:headerDividersEnabled="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/mark_ll" android:background="@color/pub_color_twelev" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/mark_name_logo" android:background="#fff35824" android:layout_width="6.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="#fff35824" android:gravity="center_vertical" android:id="@id/mark_name_tv" android:paddingLeft="11.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:id="@id/mark_image_iv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/net_error_layout" />
+    <include layout="@layout/home_inc_nodata" />
+</LinearLayout>

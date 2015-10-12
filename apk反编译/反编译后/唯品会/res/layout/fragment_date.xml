@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="生日设置" />
+        <View android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <DatePicker android:layout_gravity="center" android:id="@id/date_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <View android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <Button android:textSize="16.0dip" android:textColor="#ff037aff" android:gravity="center" android:id="@id/cancelButton" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+        <View android:background="#ffc8c7cc" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff037aff" android:gravity="center" android:id="@id/okButton" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

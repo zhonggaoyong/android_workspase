@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerbar" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/main_title_bar_height">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_back" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.SlidebarView android:id="@id/sidebar" android:visibility="gone" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/SlideBarTtyle" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="@color/grey_d4" android:id="@id/btn_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/close" android:layout_toRightOf="@id/btn_back" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.GoShoppingcartView android:id="@id/to_shoppingcart_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.NewMessageTipView android:id="@id/msgtips" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/to_shoppingcart_btn" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_share" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/goods_ico_share" android:layout_toLeftOf="@id/msgtips" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.AdjustableTextView android:ellipsize="end" android:id="@id/title" android:maxWidth="160.0dip" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <ProgressBar android:id="@id/web_progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" android:progressDrawable="@drawable/progress_horizontal_bg" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+    <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.meilishuo.app.activity.XfiveWebView android:id="@id/web" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include layout="@layout/networkerror_default_layout" />
+        </RelativeLayout>
+    </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/line_horizontal_style" />
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/cd_product_item_image" android:layout_marginLeft="@dimen/coo_activity_horizonal_pading" android:layout_marginTop="@dimen/coo_view_margin" android:layout_marginBottom="@dimen/coo_view_margin" android:scaleType="centerCrop" style="@style/coo_product_img_style" />
+    <TextView android:textColor="@color/black" android:ellipsize="end" android:gravity="top" android:id="@id/cd_product_item_text" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="@dimen/coo_activity_horizonal_pading" android:minHeight="36.0dip" android:maxLines="2" android:layout_toRightOf="@id/cd_product_item_image" android:layout_alignTop="@id/cd_product_item_image" />
+    <TextView android:id="@id/comment_list_item_btn_recomment" android:layout_marginRight="@dimen/coo_activity_horizonal_pading" android:text="@string/coo_evaluate_Evaluate" android:layout_alignBottom="@id/cd_product_item_image" android:layout_alignParentRight="true" style="@style/coo_btn_style" />
+    <View android:layout_below="@id/cd_product_item_image" style="@style/line_horizontal_style" />
+</RelativeLayout>

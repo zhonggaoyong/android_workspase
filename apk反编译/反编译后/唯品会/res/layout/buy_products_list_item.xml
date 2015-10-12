@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ff2c2c2c" android:id="@id/product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="箱包专场女款米色背提包" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <TextView android:textColor="#ff2c2c2c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单价: ¥" />
+        <TextView android:textColor="#ff2c2c2c" android:id="@id/vip_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="218" />
+        <TextView android:textColor="#ff2c2c2c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="尺码:" />
+        <TextView android:textColor="#ff2c2c2c" android:id="@id/sku_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="M" />
+        <TextView android:textColor="#ff2c2c2c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="数量:" />
+        <TextView android:textColor="#ff2c2c2c" android:id="@id/num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+    </LinearLayout>
+</LinearLayout>

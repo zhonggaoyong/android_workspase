@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/cart_recommend_item_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include layout="@layout/cart_vertical_item_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/cart_recommend_item_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include layout="@layout/cart_vertical_item_layout" />
+    </RelativeLayout>
+</LinearLayout>

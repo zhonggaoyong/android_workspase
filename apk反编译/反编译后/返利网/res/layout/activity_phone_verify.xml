@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/backgroud" android:padding="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_grey_dark" android:layout_gravity="left" android:id="@id/phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_padding" android:layout_marginTop="@dimen/global_page_padding" android:text="手机号：%1$s" />
+    <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_small2" android:textColor="@color/text_color_grey_light" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_padding" android:layout_marginTop="@dimen/global_padding" android:text="为了您的账户安全，请进行手机验证" />
+    <Button android:id="@id/get_verify_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_page_padding" android:text="获取验证码" style="@style/BtnBigOrangeP" />
+    <EditText android:id="@id/edit_verify_code" android:background="@drawable/selector_list_item_bg_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_page_padding" android:hint="输入验证码" android:inputType="number" />
+    <Button android:id="@id/confirm_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_page_padding" android:text="确定" style="@style/BtnBigOrangeP" />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.app.mall.utils.ui.JDResizeLayout android:orientation="vertical" android:id="@id/coo_evaluate_detail_main" android:background="@color/coo_actity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.widget.TempTitle android:id="@id/coo_evaluate_detail_title" android:layout_width="fill_parent" android:layout_height="wrap_content" title:drawableLeft="@drawable/common_title_back_selector" title:drawableRight="@drawable/evaluate_detail_share_selector" title:textTitle="@string/coo_evaluate_detail" xmlns:title="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.handmark.pulltorefresh.library.PullToRefreshLoadMoreScrollView android:id="@id/coo_evaluate_detail_scrollview" android:background="#fff0f2f5" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:saveEnabled="false" style="@style/coo_line" />
+                <LinearLayout android:orientation="vertical" android:id="@id/coo_evaluate_detail_user_layout" android:paddingLeft="@dimen/coo_view_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:gravity="center_vertical" android:id="@id/coo_evaluate_detail_user_innner_layout" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                        <com.jingdong.common.ui.JDCircleImageView android:id="@id/coo_evaluate_detail_user_face" android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@drawable/personal_icon_default_avatar" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:borderWidth="1.0dip" app:borderColor="#ffffffff" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff252525" android:ellipsize="end" android:id="@id/coo_evaluate_detail_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coo_view_margin" android:text="" android:singleLine="true" android:maxLength="18" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/coo_evaluate_detail_user_face" android:layout_centerVertical="true" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:id="@id/coo_evaluate_detail_pub_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/coo_view_margin" android:text="2014-03-09 12:34" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View android:saveEnabled="false" style="@style/coo_line" />
+                    <RatingBar android:id="@id/coo_evaluate_detail_grade_star" android:layout_width="wrap_content" android:layout_height="11.0dip" android:layout_marginTop="@dimen/coo_view_margin" android:progressDrawable="@drawable/coo_ratingbar_small" android:numStars="5" android:isIndicator="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff252525" android:id="@id/coo_evaluate_detail_cotent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="@dimen/coo_view_margin" android:layout_marginBottom="6.0dip" android:lineSpacingMultiplier="1.2" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/coo_evaluate_detail_comment_layout" android:background="#fff0f2f5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:saveEnabled="false" style="@style/coo_line" />
+                    <View android:saveEnabled="false" android:layout_marginTop="@dimen/coo_view_margin" style="@style/coo_line" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/coo_evaluate_detail_list" android:background="#ffffffff" android:paddingLeft="@dimen/coo_view_margin" android:paddingRight="@dimen/coo_view_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="11.0sp" android:textColor="#ff848689" android:gravity="bottom|center" android:layout_gravity="center_horizontal" android:id="@id/coo_evaluate_detail_reply_like" android:background="@drawable/coo_evaluate_like_unchecked" android:paddingBottom="6.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="10.0dip" android:text="10" />
+                <View android:saveEnabled="false" android:layout_marginTop="20.0dip" style="@style/coo_line" />
+                <LinearLayout android:orientation="vertical" android:id="@id/coo_evaluate_detail_reply_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="@dimen/coo_view_margin" />
+                    <View android:saveEnabled="false" style="@style/coo_line" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff252525" android:id="@id/coo_evaluate_detail_reply_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coo_view_margin" android:text="@string/coo_reply_header" android:layout_centerVertical="true" />
+                        <TextView android:textSize="15.0sp" android:textColor="#ff848689" android:id="@id/coo_evaluate_detail_reply_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(0)" android:layout_toRightOf="@id/coo_evaluate_detail_reply_header" android:layout_centerVertical="true" />
+                        <View android:id="@id/coo_evaluate_detail_reply_line" android:background="@drawable/lib_story_arrow_line" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="7.799988dip" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <com.jingdong.common.ui.JDListView android:layout_gravity="center_vertical" android:id="@id/coo_evaluate_detail_reply_listview" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coo_view_margin" android:listSelector="#ffffffff" android:drawSelectorOnTop="false" android:divider="#ffe0e0e0" android:dividerHeight="1.0px" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:saveEnabled="false" android:layout_marginLeft="@dimen/coo_view_margin" style="@style/coo_line" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <com.jingdong.common.ui.JDProgressBar android:layout_width="@dimen/progressbar_size_small" android:layout_height="@dimen/progressbar_size_small" />
+                            <TextView android:id="@id/loading_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/load_more_loading" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:saveEnabled="false" style="@style/coo_line" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshLoadMoreScrollView>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/coo_evaluate_detail_fastscroll" android:padding="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/home_to_top_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/coo_evaluate_detail_bottom_bar" android:background="#ffeaedf1" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <View android:saveEnabled="false" android:layout_alignParentTop="true" style="@style/coo_line" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/coo_evaluate_detail_bt_submit" android:background="@drawable/coo_btn_red_bg" android:layout_width="50.0dip" android:layout_height="34.0dip" android:layout_marginRight="@dimen/coo_view_margin" android:text="@string/coo_reply_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="13.0sp" android:textColor="#ff252525" android:textColorHint="#ffbfbfbf" android:gravity="left|center" android:id="@id/coo_evaluate_detail_et_reply" android:background="@drawable/coo_evaluate_edit_background" android:paddingLeft="@dimen/coo_view_margin" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="@dimen/coo_view_margin" android:layout_marginRight="@dimen/coo_view_margin" android:hint="@string/coo_reply_hint" android:layout_toLeftOf="@id/coo_evaluate_detail_bt_submit" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.jingdong.app.mall.utils.ui.JDResizeLayout>

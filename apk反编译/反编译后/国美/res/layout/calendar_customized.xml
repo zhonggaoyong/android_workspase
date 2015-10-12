@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gome.ecmall.custom.calendar.view.CalendarPickerView android:scrollbarStyle="outsideOverlay" android:id="@id/dialog_customized" android:background="@color/flight_text_white" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:dividerColor="@android:color/transparent" app:dayBackground="@color/flight_text_white" app:dayTextColor="@drawable/calendar_date_selector" app:titleTextColor="@color/flight_text_black" />
+</RelativeLayout>

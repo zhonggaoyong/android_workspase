@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/refund_progress_quan_name" android:layout_width="wrap_content" android:layout_height="43.0dip" android:layout_marginLeft="12.0dip" android:text="消费码: " android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/refund_progress_quan_num" android:layout_width="wrap_content" android:layout_height="43.0dip" android:text="1234 5678 8654" android:singleLine="true" android:layout_toRightOf="@id/refund_progress_quan_name" android:layout_alignParentTop="true" />
+    <View android:id="@id/divider" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/refund_progress_quan_name" android:layout_alignLeft="@id/refund_progress_quan_name" />
+</RelativeLayout>

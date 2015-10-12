@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/jshop_list_item_whole" android:background="@color/favo_filter_bg_color" android:layout_width="fill_parent" android:layout_height="114.0dip">
+        <RelativeLayout android:id="@id/jshop_list_item_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/favo_edge_margin">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_list_item_logo" android:background="@drawable/jshop_list_item_logo" android:padding="1.0px" android:layout_width="108.0dip" android:layout_height="36.0dip" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/favo_shop_jd_self_operated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/favo_shop_jd_self_operated" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/jshop_list_item_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/favo_shop_info_left_margin" android:layout_marginBottom="@dimen/favo_shop_common_top_margin" android:layout_toRightOf="@id/jshop_list_item_left" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/favo_notify_set_text_color" android:id="@id/jshop_list_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/favo_shop_score_top_margin" android:text="蓝莓儿外贸服装店" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/favo_shop_score_top_margin">
+                <RatingBar android:id="@id/jshop_list_item_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:numStars="5" android:rating="4.0" android:stepSize="1.0" android:isIndicator="true" style="@style/favoRatingBar" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/favo_notify_tip_text_color" android:id="@id/jshop_list_item_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="9.4分" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/favo_shop_score_top_margin">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_list_item_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/favo_shop_new" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_list_item_quan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/favo_shop_quan" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/favo_product_no_stock_text_color" android:id="@id/jshop_list_item_favorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/favo_shop_score_top_margin" android:text="2.5万人关注" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/favo_notify_dividing_bg_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/favo_edge_margin" android:layout_alignParentBottom="true" />"
+</RelativeLayout>

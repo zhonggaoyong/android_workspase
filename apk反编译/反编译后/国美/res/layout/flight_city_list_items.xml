@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_grey" android:layout_gravity="left" android:id="@id/catalog" android:background="@color/flight_common_grey_bg" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/content" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:ellipsize="start" android:gravity="center" android:id="@id/title_first" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:maxLength="4" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:gravity="center" android:id="@id/title_second" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:maxLength="4" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:gravity="center" android:id="@id/title_third" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:maxLength="4" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

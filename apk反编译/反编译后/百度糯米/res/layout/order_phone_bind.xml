@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/order_bind_phone_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/order_phone_verify" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+        <View android:background="@color/order_bind_phone_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ImageView android:id="@id/order_phone_verify_curr_number_clear" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" style="@style/OrderBindPhoneClearStyle" />
+            <EditText android:id="@id/order_phone_verify_curr_number" android:hint="@string/order_phone_input_curr" android:layout_toLeftOf="@id/order_phone_verify_curr_number_clear" android:layout_alignParentLeft="true" style="@style/OrderNumberInputStyle" />
+        </RelativeLayout>
+        <View android:background="@color/order_bind_phone_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="9.0dip" />
+        <TextView android:id="@id/order_phone_verify_erroinfo" style="@style/OrderErrInfoStyle" />
+        <Button android:id="@id/order_phone_verify_curr_submit" android:layout_marginTop="9.0dip" android:text="@string/order_phone_verify" style="@style/OrderBindPhoneSubmitStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/order_phone_new" android:background="@color/order_bind_phone_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="9.0dip">
+            <View android:id="@id/_order_line_1" style="@style/OrderBindPhoneDividerLineStyle" />
+            <ImageView android:id="@id/pay_change_number_clear_number" android:layout_below="@id/_order_line_1" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" style="@style/OrderBindPhoneClearStyle" />
+            <EditText android:id="@id/pay_change_number_number" android:layout_height="43.0dip" android:hint="@string/order_phone_new_phone" android:layout_toLeftOf="@id/pay_change_number_clear_number" android:layout_below="@id/_order_line_1" style="@style/OrderNumberInputStyle" />
+            <View android:id="@id/_order_line_2" android:layout_below="@id/pay_change_number_number" style="@style/OrderBindPhoneDividerLineStyle" />
+            <Button android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pay_change_number_send_secode" android:background="@drawable/bg_red_button_selector" android:layout_width="100.0dip" android:layout_height="26.0dip" android:layout_marginTop="8.5dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.5dip" android:text="@string/order_phone_send_secode" android:layout_below="@id/pay_change_number_number" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/pay_change_number_clear_secode" android:layout_toLeftOf="@id/pay_change_number_send_secode" android:layout_below="@id/pay_change_number_number" android:contentDescription="@string/app_name" style="@style/OrderBindPhoneClearStyle" />
+            <EditText android:id="@id/pay_change_number_secode" android:layout_width="wrap_content" android:hint="@string/order_phone_input_secode" android:layout_toLeftOf="@id/pay_change_number_clear_secode" android:layout_below="@id/pay_change_number_number" android:layout_alignParentLeft="true" style="@style/OrderNumberInputStyle" />
+            <View android:id="@id/_order_line_3" android:layout_below="@id/pay_change_number_secode" style="@style/OrderBindPhoneDividerLineStyle" />
+        </RelativeLayout>
+        <TextView android:id="@id/pay_change_number_secode_error" style="@style/OrderErrInfoStyle" />
+        <Button android:id="@id/pay_change_number_submit" android:layout_marginTop="9.0dip" android:text="@string/order_phone_submit" style="@style/OrderBindPhoneSubmitStyle" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="15.0dip" android:text="@string/order_phone_spe" android:singleLine="false" android:includeFontPadding="false" android:lineSpacingExtra="7.0dip" />
+    </LinearLayout>
+</RelativeLayout>

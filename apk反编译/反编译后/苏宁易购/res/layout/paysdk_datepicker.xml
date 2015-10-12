@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/year_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <Button android:id="@id/year_plus" android:background="@drawable/paysdk_numberpicker_up_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:textColor="@color/paysdk2_color_black" android:gravity="center" android:id="@id/year_display" android:background="@drawable/paysdk_numberpicker_input" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <Button android:id="@id/year_minus" android:background="@drawable/paysdk_numberpicker_down_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/month_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <Button android:id="@id/month_plus" android:background="@drawable/paysdk_numberpicker_up_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:textColor="@color/paysdk2_color_black" android:gravity="center" android:id="@id/month_display" android:background="@drawable/paysdk_numberpicker_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="number" />
+        <Button android:id="@id/month_minus" android:background="@drawable/paysdk_numberpicker_down_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/date_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <Button android:id="@id/date_plus" android:background="@drawable/paysdk_numberpicker_up_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:textColor="@color/paysdk2_color_black" android:gravity="center" android:id="@id/date_display" android:background="@drawable/paysdk_numberpicker_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:inputType="number" />
+        <Button android:id="@id/date_minus" android:background="@drawable/paysdk_numberpicker_down_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

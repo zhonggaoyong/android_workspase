@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_tab_title" android:textColor="@color/lottery_selector_chuan" android:gravity="center" android:id="@id/lottery_match_chuan_item_textview" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

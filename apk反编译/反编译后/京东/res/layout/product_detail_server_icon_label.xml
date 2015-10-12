@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/pd_space_width_12" android:paddingBottom="@dimen/pd_space_width_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_1" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="@dimen/pd_space_width_5" />
+        <TextView android:textSize="@dimen/pd_txt_size_large" android:textColor="@color/pd_black_25" android:id="@id/txt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/pd_txt_size_middle" android:textColor="@color/pd_gray" android:id="@id/txt_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pd_space_width_5" />
+</LinearLayout>

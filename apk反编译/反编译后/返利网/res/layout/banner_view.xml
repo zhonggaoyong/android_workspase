@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_banner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <com.fanli.android.view.TangFontTextView android:id="@id/tv_url" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <com.fanli.android.view.TangFontTextView android:id="@id/tv_pic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+</LinearLayout>

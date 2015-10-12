@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/travel_all_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jdtravel="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.jdtravel.ui.TravelTitle android:id="@id/select_counter_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" jdtravel:fdrawableLeft="@drawable/common_title_back_selector" jdtravel:ftextTitle="@string/jdtravel_counter_address" />
+    <ListView android:id="@id/counter_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/select_counter_title" />
+</RelativeLayout>

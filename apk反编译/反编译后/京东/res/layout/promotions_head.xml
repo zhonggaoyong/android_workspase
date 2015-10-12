@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/slidescreen_sales_bg" android:layout_width="@dimen/home_shopping_image_width" android:layout_height="@dimen/home_shopping_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.app.mall.utils.ui.JDImageView android:layout_gravity="top" android:id="@id/category_list_imageurl" android:layout_width="90.0dip" android:layout_height="90.0dip" android:scaleType="fitCenter" />
+    <RelativeLayout android:id="@id/hot_sales_layout" android:background="@drawable/home_shopping_price_bj" android:paddingTop="2.0dip" android:layout_width="90.0dip" android:layout_height="21.0dip" android:layout_marginBottom="@dimen/home_shopping_price_marginbottom" android:layout_below="@id/category_list_imageurl">
+        <TextView android:textSize="@dimen/home_promotion_price_size" android:textColor="@color/home_sales_produce_price" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/product_price_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="2.0dip" android:text="¥" android:singleLine="true" />
+        <TextView android:textSize="@dimen/home_promotion_price_size" android:textColor="@color/home_sales_produce_price" android:gravity="center_vertical" android:layout_gravity="left" android:id="@id/category_list_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/product_price_symbol" android:layout_alignBottom="@id/product_price_symbol" />
+    </RelativeLayout>
+</RelativeLayout>

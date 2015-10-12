@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/delete_sku" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/addtag_icon_delete" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/img_filter_addtag_hint_price" />
+            <com.meilishuo.app.views.CustomEditText android:textSize="15.0sp" android:textColor="@color/grey_d3" android:textColorHint="#ffccc2c9" android:gravity="center_vertical" android:id="@id/sku_price" android:background="@null" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="numberDecimal" android:imeOptions="actionNext" />
+        </LinearLayout>
+        <View android:layout_marginLeft="15.0dip" style="@style/SecondDividerViewStyle" />
+        <LinearLayout android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/img_filter_addtag_hint_count" />
+            <com.meilishuo.app.views.CustomEditText android:textSize="15.0sp" android:textColor="@color/grey_d3" android:textColorHint="#ffccc2c9" android:gravity="center_vertical" android:id="@id/sku_count" android:background="@null" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="number" android:imeOptions="actionNext" />
+        </LinearLayout>
+        <View android:layout_marginLeft="15.0dip" style="@style/SecondDividerViewStyle" />
+        <LinearLayout android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/img_filter_addtag_hint_sdes" />
+            <com.meilishuo.app.views.CustomEditText android:textSize="15.0sp" android:textColor="@color/grey_d3" android:textColorHint="#ffcccccc" android:gravity="center_vertical" android:id="@id/sku_des" android:background="@null" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/img_filter_guige_hint" android:singleLine="true" android:imeOptions="actionDone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

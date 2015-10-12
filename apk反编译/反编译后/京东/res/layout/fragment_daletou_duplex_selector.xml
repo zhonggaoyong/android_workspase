@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView style="@style/li_tag_red_style" />
+            <TextView android:textSize="@dimen/text_size_select_ball_panel_title" android:ellipsize="marquee" android:id="@id/dlt_duplex_qiandan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <com.jd.lottery.lib.ui.lotteryhall.shuzicai.selectpanel.BallSelectorPanel android:id="@id/dlt_duplex_qiandan_panel" style="@style/ball_selector_panel" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView style="@style/li_tag_red_style" />
+            <TextView android:textSize="@dimen/text_size_select_ball_panel_title" android:ellipsize="marquee" android:id="@id/dlt_duplex_qiantuo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <com.jd.lottery.lib.ui.lotteryhall.shuzicai.selectpanel.BallSelectorPanel android:id="@id/dlt_duplex_qiantuo_panel" style="@style/ball_selector_panel" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView style="@style/li_tag_blue_style" />
+            <TextView android:textSize="@dimen/text_size_select_ball_panel_title" android:ellipsize="marquee" android:id="@id/dlt_duplex_houdan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <com.jd.lottery.lib.ui.lotteryhall.shuzicai.selectpanel.BallSelectorPanel android:id="@id/dlt_duplex_houdan_panel" style="@style/ball_selector_panel" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView style="@style/li_tag_blue_style" />
+            <TextView android:textSize="@dimen/text_size_select_ball_panel_title" android:ellipsize="marquee" android:id="@id/dlt_duplex_houtuo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <com.jd.lottery.lib.ui.lotteryhall.shuzicai.selectpanel.BallSelectorPanel android:id="@id/dlt_duplex_houtuo_panel" style="@style/ball_selector_panel" />
+    </LinearLayout>
+</ScrollView>

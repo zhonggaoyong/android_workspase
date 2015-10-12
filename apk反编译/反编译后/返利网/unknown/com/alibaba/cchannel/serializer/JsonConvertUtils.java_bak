@@ -1,0 +1,194 @@
+package com.alibaba.cchannel.serializer;
+
+import com.alibaba.cloud.channel.data.schema.ListSchema;
+import com.alibaba.cloud.channel.data.schema.MapSchema;
+import com.alibaba.cloud.channel.data.schema.PrimitiveSchema;
+import com.alibaba.cloud.channel.data.schema.Schema;
+import com.alibaba.cloud.channel.data.schema.SchemaField;
+import com.alibaba.cloud.channel.data.schema.SetSchema;
+import com.alibaba.cloud.channel.data.schema.StructSchema;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.Iterator;
+
+import thrfit.org.apache.thrift.TException;
+import thrfit.org.apache.thrift.protocol.TMap;
+import thrfit.org.apache.thrift.protocol.TProtocol;
+import thrfit.org.apache.thrift.protocol.TSet;
+import thrfit.org.apache.thrift.protocol.TType;
+
+/**
+ *
+ * Created by xiaosong on 14-10-17.
+ */
+
+public class JsonConvertUtils {
+
+
+    public static void convertTo(String jsonStr, TProtocol outProtocol, Schema schema) throws TException, JSONException {
+
+        if (schema instanceof PrimitiveSchema) {
+            convertToPrimitive(jsonStr, outProtocol, (PrimitiveSchema) schema);
+        } else if (schema instanceof StructSchema) {
+            convertToStruct(new JSONObject(jsonStr), outProtocol, (StructSchema) schema);
+        } else if (schema instanceof ListSchema) {
+            convertToList(new JSONArray(jsonStr), outProtocol, (ListSchema) schema);
+        } else if (schema instanceof SetSchema) {
+            convertToSet(new JSONArray(jsonStr), outProtocol, (SetSchema) schema);
+        } else if (schema instanceof MapSchema) {
+            convertToMap(new JSONObject(jsonStr), outProtocol, (MapSchema) schema);
+        } else {
+            throw new IllegalStateException("unsupported convert schema:" + schema);
+        }
+
+    }
+
+    private static void convertTo(Object input, TProtocol outProtocol, Schema schema) throws TException, JSONException {
+
+        if (schema instanceof PrimitiveSchema) {
+            convertToPrimitive(input, outProtocol, (PrimitiveSchema) schema);
+        } else if (schema instanceof StructSchema) {
+            convertToStruct(input, outProtocol, (StructSchema) schema);
+        } else if (schema instanceof ListSchema) {
+            convertToList(input, outProtocol, (ListSchema) schema);
+        } else if (schema instanceof SetSchema) {
+            convertToSet(input, outProtocol, (SetSchema) schema);
+        } else if (schema instanceof MapSchema) {
+            convertToMap(input, outProtocol, (MapSchema) schema);
+        } else {
+            throw new IllegalStateException("unsupported convert schema:" + schema);
+        }
+
+    }
+
+    private static void convertToMap(Object input, TProtocol outProtocol, MapSchema schema) throws TException, JSONException {
+        if (!(input instanceof JSONObject)) {
+            return;
+        }
+        JSONObject jsonObject = (JSONObject) input;
+        TMap tMap = new TMap(schema.keySchema.type(), schema.valueSchema.type(), jsonObject.length());
+        outProtocol.writeMapBegin(tMap);
+        Iterator it = jsonObject.keys();
+        while (it.hasNext()) {
+            String key = (String) it.next();
+            convertTo(key, outProtocol, schema.keySchema);
+            convertTo(jsonObject.get(key), outProtocol, schema.valueSchema);
+        }
+        outProtocol.writeMapEnd();
+    }
+
+    private static void convertToSet(Object input, TProtocol outProtocol, SetSchema schema) throws TException, JSONException {
+        if (!(input instanceof JSONArray)) {
+            return;
+        }
+        JSONArray jsonArray = (JSONArray) input;
+        TSet inSet = new TSet(schema.elemSchema.type(), jsonArray.length());
+        outProtocol.writeSetBegin(inSet);
+        for (int i = 0; i < inSet.size; ++i) {
+            convertTo(jsonArray.get(i), outProtocol, schema.elemSchema);
+        }
+        outProtocol.writeSetEnd();
+    }
+
+    private static void convertToList(Object input, TProtocol outProtocol, ListSchema schema) throws TException, JSONException {
+        if (!(input instanceof JSONArray)) {
+            return;
+        }
+        JSONArray jsonArray = (JSONArray) input;
+        TSet inSet = new TSet(schema.elemSchema.type(), jsonArray.length());
+        outProtocol.writeSetBegin(inSet);
+        for (int i = 0; i < inSet.size; ++i) {
+            convertTo(jsonArray.get(i), outProtocol, schema.elemSchema);
+        }
+        outProtocol.writeSetEnd();
+    }
+
+
+    private static void convertToStruct(Object input, TProtocol outProtocol, StructSchema schema) throws TException, JSONException {
+        if (!(input instanceof JSONObject)) {
+            return;
+        }
+        JSONObject jsonObject = (JSONObject) input;
+        outProtocol.writeStructBegin(schema.struct);
+        for (SchemaField schemaField : schema.fields) {
+            Object object = jsonObject.opt(schemaField.tField.name);
+            if (object == null) {
+                continue;
+            }
+            outProtocol.writeFieldBegin(schemaField.tField);
+            convertTo(object, outProtocol, schemaField.schema);
+            outProtocol.writeFieldEnd();
+        }
+
+        outProtocol.writeFieldStop();
+        outProtocol.writeStructEnd();
+    }
+
+    private static void convertToPrimitive(Object input, TProtocol outProtocol, PrimitiveSchema schema) throws TException {
+        if (input == null) {
+            return;
+        }
+        switch (schema.type()) {
+            case TType.BOOL:
+                if (input instanceof Boolean) {
+                    outProtocol.writeBool((Boolean) input);
+                    break;
+                }
+                String boolStr = input.toString();
+                outProtocol.writeBool("true".equalsIgnoreCase(boolStr) || "1".equalsIgnoreCase(boolStr) || "y".equalsIgnoreCase(boolStr));
+                break;
+            case TType.BYTE:
+                if (input instanceof Byte) {
+                    outProtocol.writeByte((Byte) input);
+                    break;
+                }
+                outProtocol.writeByte(Byte.valueOf(input.toString()));
+                break;
+            case TType.DOUBLE:
+                if (input instanceof Double) {
+                    outProtocol.writeDouble((Double) input);
+                    break;
+                }
+                outProtocol.writeDouble(Double.valueOf(input.toString()));
+                break;
+            case TType.I16:
+                if (input instanceof Short) {
+                    outProtocol.writeI16((Short) input);
+                    break;
+                }
+                if (input instanceof Integer) {
+                    int i = (Integer) input;
+                    outProtocol.writeI16((short) i);
+                    break;
+                }
+                outProtocol.writeI16(Short.valueOf(input.toString()));
+                break;
+            case TType.I32:
+                if (input instanceof Integer) {
+                    outProtocol.writeI32((Integer) input);
+                    break;
+                }
+                outProtocol.writeI32(Integer.valueOf(input.toString()));
+                break;
+            case TType.I64:
+                if (input instanceof Long) {
+                    outProtocol.writeI64((Long) input);
+                    break;
+                }
+                outProtocol.writeI64(Long.valueOf(input.toString()));
+                break;
+            case TType.STRING:
+                if (input instanceof String) {
+                    outProtocol.writeString((String) input);
+                    break;
+                }
+                outProtocol.writeString(input.toString());
+                break;
+            default:
+                throw new IllegalStateException("schema.type():" + schema.type());
+        }
+    }
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c_F8F8F8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fill_order_title" layout="@layout/title" />
+    <ScrollView android:id="@id/regist_scroller" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fill_order_title">
+        <LinearLayout android:orientation="vertical" android:background="@color/color_f3f5f7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/oreder_complete_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@id/order_complete_no_data_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:src="@drawable/order_complete_no_data_image" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/c_252525" android:layout_gravity="center_horizontal" android:id="@id/oreder_complete_no_data_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/c_848689" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/oreder_complete_no_data_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" />
+                <View android:layout_width="fill_parent" android:layout_height="28.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/submit_info" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/submit_info_notify" android:background="@color/c_FFFFFF" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/submit_info_notify_imageView" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/order_info" android:scaleType="fitXY" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/fill_order_delivery_dark" android:id="@id/submit_info_notify_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/submit_info_notify_imageView" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/order_complete_info_list_linearLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/submit_info_notify">
+                    <com.jingdong.common.ui.JDListView android:id="@id/order_complete_info_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/c_F8F8F8" android:dividerHeight="10.0dip" />
+                    <View android:background="@color/c_F8F8F8" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/submit_complete_order_info_single" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/order_no_rl" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <com.facebook.drawee.view.SimpleDraweeView android:gravity="center_horizontal" android:id="@id/order_header_line" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="@color/address_line_h" android:contentDescription="@string/none" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/fill_order_delivery_normal" android:id="@id/order_no" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fill_order_current_order_id" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/fill_order_virtual_text_color" android:id="@id/order_no_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="111" android:layout_toRightOf="@id/order_no" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/pay_money_rl" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/order_no_rl">
+                        <com.facebook.drawee.view.SimpleDraweeView android:gravity="center_horizontal" android:id="@id/pay_money_line" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="@color/address_line_h" android:contentDescription="@string/none" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/fill_order_delivery_normal" android:id="@id/pay_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/fill_order_current_order_menoy" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_f15353" android:id="@id/pay_money_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="￥4999.00" android:layout_toRightOf="@id/pay_money" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/pay_way_rl" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/pay_money_rl">
+                        <com.facebook.drawee.view.SimpleDraweeView android:gravity="center_horizontal" android:id="@id/pay_way_line" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="@color/address_line_h" android:contentDescription="@string/none" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/fill_order_delivery_normal" android:id="@id/pay_way" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/fill_order_current_order_paytype" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/fill_order_virtual_text_color" android:id="@id/pay_way_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="111" android:layout_toRightOf="@id/pay_way" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/submit_completed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_below="@id/pay_way_rl">
+                        <com.facebook.drawee.view.SimpleDraweeView android:gravity="center_horizontal" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="@color/fill_order_delivery_split_line" android:contentDescription="@string/none" />
+                        <Button android:textSize="15.0sp" android:textColor="@color/common_title_right_textview_color" android:id="@id/submit_completed_btn" android:background="@drawable/button_b" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="70.0dip" android:layout_marginRight="70.0dip" android:text="@string/completed" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <com.facebook.drawee.view.SimpleDraweeView android:gravity="center_horizontal" android:id="@id/submit_info_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="@color/fill_order_delivery_split_line" android:layout_below="@id/submit_completed" android:contentDescription="@string/none" />
+                    <View android:background="@color/c_F8F8F8" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/submit_info_split_line" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textColor="#ff15b815" android:id="@id/complete_no_register_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/submit_info" />
+            <RelativeLayout android:id="@id/submit_msg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                <View android:id="@id/pay_msg_content_line" android:background="@drawable/pd_deliver_h" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/fill_order_delivery_dark" android:id="@id/pay_msg_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/pay_msg_content_line" android:lineSpacingExtra="3.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/complete_layout_1" android:background="@color/color_f3f5f7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/skip_layout_long_top_line" android:background="@drawable/pd_deliver_h" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/fill_order_delivery_normal" android:layout_gravity="top" android:id="@id/txt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/fill_order_submit_sucess_continue" />
+                <LinearLayout android:orientation="vertical" android:id="@id/skip_layout" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/txt_1">
+                    <com.jingdong.common.ui.JDGridView android:id="@id/skip_list_gridview" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginRight="27.0dip" android:listSelector="@drawable/promotion_product_item_background" android:horizontalSpacing="16.599976dip" android:verticalSpacing="16.599976dip" android:stretchMode="columnWidth" android:numColumns="3" />
+                </LinearLayout>
+                <View android:id="@id/skip_layout_long_bottom_line" android:background="@drawable/pd_deliver_h" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/fill_order_complete_carousel_layout" android:background="@color/address_list_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

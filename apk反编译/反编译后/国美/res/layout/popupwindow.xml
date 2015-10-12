@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textColor="#ff2592c8" android:gravity="center_vertical" android:id="@id/share_title" android:layout_width="wrap_content" android:layout_height="65.0dip" android:layout_marginLeft="15.0dip" android:text="好东西要和大家分享" />
+        <LinearLayout android:orientation="vertical" android:id="@id/share_line" android:background="#ff2592c8" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/share_title" />
+        <ListView android:id="@id/shareList" android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@null" android:divider="#ff4b4b4b" android:dividerHeight="1.0dip" android:layout_below="@id/share_line" />
+    </RelativeLayout>
+</RelativeLayout>

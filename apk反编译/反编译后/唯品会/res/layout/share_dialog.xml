@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/dialog_invoice_show" android:background="@drawable/msg_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/invoice_top" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_info_details" />
+            <TextView android:textSize="24.0dip" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="晒单分享" />
+        </LinearLayout>
+        <LinearLayout android:background="@drawable/list_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+            <RadioGroup android:orientation="horizontal" android:id="@id/shareGroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/camera" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_1" android:layout_weight="0.5" />
+                <RadioButton android:id="@id/photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_2" android:layout_weight="0.5" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:background="@drawable/list_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="6.0dip" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+            <Button android:textColor="@color/white" android:id="@id/finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/button_comfirm" />
+            <Button android:textColor="@color/black" android:id="@id/cancel" android:background="@drawable/submit_white_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/button_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

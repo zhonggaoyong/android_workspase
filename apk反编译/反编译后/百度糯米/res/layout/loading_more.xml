@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/loadingMoreNew" android:layout_width="fill_parent" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_width="15.0dip" android:layout_height="15.0dip" style="?android:attr/progressBarStyleSmall" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tuan_detail_loading_more_tips" />
+</LinearLayout>

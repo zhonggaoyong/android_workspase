@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/grey_l5" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.meilishuo.app.photo.CropImageViewTouch android:id="@id/photocrop_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.meilishuo.app.views.CustomTextView android:textColor="@color/white" android:gravity="center" android:id="@id/bottom_shade" android:background="#e5101010" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="背景干净•拍摄图片清晰•商品主体突出" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/bottom_lay" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/button_crop" android:background="@drawable/imagefilter_btn_bg_finish" android:clickable="true" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="选取" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/button_cancel" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/show_ico_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" />
+    </RelativeLayout>
+</LinearLayout>

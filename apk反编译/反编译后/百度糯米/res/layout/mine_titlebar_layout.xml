@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/abc_action_bar_title_text_size" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <include android:layout_width="@dimen/home_title_shoppingcart_container_width" android:layout_height="fill_parent" android:layout_toLeftOf="@id/notify_center_container" layout="@layout/shoppingcart_actionbar_container" />
+    <include android:id="@id/notify_center_container" android:layout_width="@dimen/home_title_right_icon_width" android:layout_height="fill_parent" android:layout_alignParentRight="true" layout="@layout/mine_main_notify_center" />
+</RelativeLayout>

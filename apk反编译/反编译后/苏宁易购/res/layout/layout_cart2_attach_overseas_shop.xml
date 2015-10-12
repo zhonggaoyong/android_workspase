@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_one" android:paddingLeft="@dimen/ios_public_space_26px" android:paddingRight="@dimen/ios_public_space_26px" android:paddingBottom="@dimen/ios_public_space_26px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="@dimen/android_public_text_size_26px" android:textColorHint="@color/pub_color_ten" android:ellipsize="end" android:id="@id/et_cart2_oshop" android:background="@drawable/search_edit_bg" android:paddingLeft="@dimen/ios_public_space_26px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/shoppingcart_order_remark" android:singleLine="true" android:maxLength="85" />
+    <View android:id="@id/v_divider" android:background="@drawable/line_imaginary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/ios_public_space_26px" />
+    <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/add_cart_disabled_text_color" android:id="@id/tv_install_prompt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_26px" android:text="@string/shoppingcart_order_install_prompt" />
+</LinearLayout>

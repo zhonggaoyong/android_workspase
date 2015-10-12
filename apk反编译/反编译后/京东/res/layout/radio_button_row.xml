@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/radio_item_row" android:paddingBottom="@dimen/invoice_margin_15dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/receipt_radio_button" android:background="@drawable/button_i" android:clickable="false" android:longClickable="false" android:layout_width="23.0dip" android:layout_height="23.0dip" android:button="@null" />
+    <TextView android:textSize="@dimen/invoice_text_size_30" android:textColor="@color/c_686868" android:gravity="left|center" android:id="@id/receipt_radio_content" android:paddingLeft="@dimen/invoice_margin_10dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="明细" android:singleLine="true" />
+</LinearLayout>

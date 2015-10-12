@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/sound_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:android_custom="http://schemas.android.com/apk/res/com.suning.mobile.ebuy">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/sound_head" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <TextView android:textSize="@dimen/android_public_textsize_26pt" android:textColor="@color/pub_color_one" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="80.0dip" android:layout_marginRight="80.0dip" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_four" android:gravity="center" android:id="@id/btn_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/sound_activity_detail" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:gravity="center" android:id="@id/btn_back" android:paddingLeft="@dimen/android_public_space_20px" android:paddingRight="@dimen/android_public_space_10px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/store_home_header_back" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.suning.mobile.ebuy.aroundstore.sound.view.WaveView android:id="@id/wave_button" android:layout_width="500.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <com.suning.mobile.ebuy.aroundstore.sound.view.CircleProgressBar android:id="@id/sound_progress" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_centerInParent="true" android_custom:roundWidth="10.0dip" />
+        <ToggleButton android:id="@id/sound_listen" android:background="@drawable/sound_button_shenbo_default" android:layout_width="130.0dip" android:layout_height="130.0dip" android:textOn="" android:textOff="" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

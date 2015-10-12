@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_66px">
+        <LinearLayout android:orientation="vertical" android:id="@id/line_buttom" android:background="@color/recharge_account_color_select" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" android:layout_alignParentBottom="true">
+            <View android:id="@id/line_selected" android:background="@color/myappoint_line_selected" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/line_buttom">
+            <Button android:textSize="@dimen/pub_textsize_nineteen" android:textColor="@color/search_tap_text_selected" android:id="@id/btn_appoint_product" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品预约" android:layout_weight="1.0" />
+            <View android:background="@drawable/my_appoint_line_center" android:layout_width="@dimen/pub_margin_or_padding_space_one" android:layout_height="fill_parent" android:layout_marginTop="@dimen/pub_margin_or_padding_space_twenty" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_twenty" />
+            <Button android:textSize="@dimen/pub_textsize_nineteen" android:textColor="@color/address_manager_address" android:id="@id/btn_appoint_vbuy" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="V购预约" android:layout_weight="1.0" />
+            <View android:background="@drawable/my_appoint_line_center" android:layout_width="@dimen/pub_margin_or_padding_space_one" android:layout_height="fill_parent" android:layout_marginTop="@dimen/pub_margin_or_padding_space_twenty" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_twenty" />
+            <Button android:textSize="@dimen/pub_textsize_nineteen" android:textColor="@color/address_manager_address" android:id="@id/btn_appoint_store" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="门店预约" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

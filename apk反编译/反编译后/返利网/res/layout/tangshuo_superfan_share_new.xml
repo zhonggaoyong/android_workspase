@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:layout_weight="11.0">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_tangshuo_superfan_share_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="57.0dip">
+                <com.fanli.android.view.TangFontTextView android:textSize="17.0sp" android:textColor="@color/superfan_share_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tangshuo_superfan_share" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_tangshuo_share_container1" android:layout_width="fill_parent" android:layout_height="76.0dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_tangshuo_share_container2" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="34.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rl_tangshuo_superfan_share_cancel" android:background="@drawable/shape_tangshuo_superfan_share_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip">
+            <com.fanli.android.view.TangFontTextView android:textSize="17.0sp" android:textColor="@color/superfan_share_cancel" android:id="@id/tv_tangshuo_superfan_share_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/superfan_share_cancel" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

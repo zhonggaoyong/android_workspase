@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/hotsellTopLineNew" android:background="@color/tuan_detial_line_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/tuan_detail_gap_height" />
+    <include android:id="@id/tuan_detail_hotsell_list" layout="@layout/tuan_detail_hotsell_list" />
+    <View android:id="@id/hotsellBottomLineNew" android:background="@color/tuan_detial_line_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="@dimen/tuan_detail_gap_height" />
+    <View android:id="@id/recommentTopLineNew" android:background="@color/tuan_detial_line_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/tuan_detail_gap_height" />
+    <include android:id="@id/tuan_detail_recommen_list" layout="@layout/tuan_detail_recommen_list" />
+    <View android:id="@id/recommentBottomLineNew" android:background="@color/tuan_detial_line_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="@dimen/tuan_detail_gap_height" />
+</LinearLayout>

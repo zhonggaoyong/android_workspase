@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainlayout" android:background="@drawable/cut_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/count_down_view" android:background="@drawable/cutting_time_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cutting_count_down_view_margintop" android:layout_marginRight="16.0dip" android:text="00:00.00" android:drawableLeft="@drawable/count_down_icon" android:drawablePadding="6.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/top_align_lay" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/cutting_top_align_lay_height" android:layout_below="@id/count_down_view" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_align_lay">
+        <RelativeLayout android:id="@id/whole_tree_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.7">
+            <View android:id="@id/center_pos" android:layout_width="1.0px" android:layout_height="1.0px" android:layout_centerInParent="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/tree_root_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cutting_trunk_bottom_margin" android:src="@drawable/tree_root" android:layout_below="@id/center_pos" android:layout_centerHorizontal="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/tree_head_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cutting_head_bottom_margin" android:src="@drawable/tree_head_0" android:layout_above="@id/tree_root_view" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:gravity="center_horizontal" android:id="@id/cutting_title_view" android:background="@drawable/cutting_title" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.jingdong.app.mall.cutevent.CuttingView android:id="@id/innerView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/cutting_bingo_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/cutting_bingo_view" />
+    <include android:id="@id/cutting_start_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/cutting_start_view" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cutting_guide_img" android:background="@drawable/cut_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:id="@id/cutting_failed_layout" android:background="#41000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/tip_bg" android:background="@drawable/cutting_tip_bg" android:layout_width="250.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/cut_filed_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="25.0dip" android:text="111111111111111111" android:lineSpacingExtra="2.0dip" />
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/cut_left_ok" android:background="@drawable/button_red_round" android:paddingLeft="28.0dip" android:paddingTop="10.0dip" android:paddingRight="28.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/kan_a_kan_left_cut_view" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/lottery_bet_content_title" android:layout_marginLeft="20.0dip" android:layout_marginBottom="12.0dip" android:text="@string/lottery_bet_content" style="@style/lottery_order_detail_bet_info_title" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style" />
+            <com.jd.lottery.lib.ui.common.widget.FullSizeListView android:layout_gravity="center_vertical" android:id="@id/lottery_bet_content_title_list" android:background="@color/bg_normal" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:drawSelectorOnTop="false" android:divider="@drawable/lottery_divider" />
+            <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+    </LinearLayout>
+</LinearLayout>

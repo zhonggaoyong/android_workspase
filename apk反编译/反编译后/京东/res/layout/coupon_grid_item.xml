@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/coupon_item" android:background="@drawable/coupon_item_small_dong_bg" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="88.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/coupon_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="4.0dip">
+                <TextView android:textSize="23.0sp" android:textColor="#ff60bbf5" android:ellipsize="end" android:id="@id/coupon_rmb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:singleLine="true" />
+                <TextView android:textSize="38.0sp" android:textStyle="normal" android:textColor="#ff60bbf5" android:ellipsize="end" android:id="@id/coupon_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="200" android:maxLines="2" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ff60bbf5" android:ellipsize="end" android:gravity="center" android:id="@id/coupon_quota" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="-9.0dip" android:text="满3000元可用" android:singleLine="true" android:layout_below="@id/coupon_value" />
+            <TextView android:textSize="22.0sp" android:textColor="#ff60c4a2" android:id="@id/coupon_free_shipping" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:text="可抵扣运费" android:layout_above="@id/coupon_quota" android:layout_alignLeft="@id/coupon_quota" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/c_252525" android:ellipsize="end" android:id="@id/coupon_shopname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="4.0dip" android:text="ONLY JShop" android:singleLine="true" android:layout_alignParentBottom="true" />
+            <View android:id="@id/coupon_next" android:background="@drawable/coupon_dong_next" android:layout_width="10.0dip" android:layout_height="14.0dip" android:layout_marginRight="@dimen/coupon_next_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/coupon_taken" android:background="@drawable/coupon_item_ylq_dong_min" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

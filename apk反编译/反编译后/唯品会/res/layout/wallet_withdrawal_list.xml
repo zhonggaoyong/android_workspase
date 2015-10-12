@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="top" layout="@layout/header_layout" />
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/listView" android:visibility="gone" android:fadingEdge="vertical" android:fadingEdgeLength="3.0dip" android:layoutAnimation="@anim/layout_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@null" android:divider="@color/transparency" android:dividerHeight="15.0dip" android:choiceMode="none" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/nodata_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_record_empty" android:layout_above="@id/nodata_txt" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/app_text_black" android:id="@id/nodata_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="暂无提现记录" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

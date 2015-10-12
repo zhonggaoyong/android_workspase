@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/limitbuy_item_parent_rl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/main_default_white_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/product_littlepicture_pic_iv" android:background="@drawable/product_list_grid_item_icon_bg" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginLeft="@dimen/limitbuy_image_padding" android:layout_marginTop="@dimen/limitbuy_image_padding" android:layout_marginRight="@dimen/limitbuy_image_padding" android:layout_marginBottom="@dimen/limitbuy_image_padding" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textColor="@color/main_default_opacity_white_text_color" android:id="@id/product_littlepicture_info_tv" android:background="@color/limitbuy_soon_start" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="即将开抢" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/category_productlist_list_item_arrow" android:background="@drawable/common_right_arrow_bg_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/item_right_main" android:paddingRight="@dimen/limitbuy_image_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/category_productlist_list_item_arrow" android:layout_toRightOf="@id/product_littlepicture_pic_iv">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+                <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/weak_text_color" android:id="@id/limitnumtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limitbuy_remainnum2" />
+                    <TextView android:textColor="@color/weak_text_color" android:id="@id/limitnumtextdata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00件" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:background="#ffd2d2d2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@id/limitbuy_state_probar" android:layout_width="@dimen/limitbuy_progress_bar_width" android:layout_height="6.0dip" android:progress="0" android:progressDrawable="@drawable/myprogressbarstyle" style="?android:attr/progressBarStyleHorizontal" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/product_show_book_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.gome.ecmall.custom.PreLineTextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/tv_groupbuy_product_type_littlepicture_name" android:background="@android:color/transparent" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="【十八号店通用】成龙国际影城电影" android:lines="2" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:gravity="bottom|left|center" android:id="@id/limit_buy_has_price_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="@color/price_text_color" android:id="@id/limit_buy_limit_price_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" />
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/price_text_color" android:id="@id/limit_buy_limit_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" />
+                    <TextView android:textStyle="bold" android:textColor="@color/price_text_color" android:id="@id/limit_buy_limit_price_float" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=".00" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/product_sku_check_color" android:id="@id/limit_buy_gome_discount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/product_sku_check_color" android:id="@id/limit_buy_gome_discount_tv_dan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="折" />
+                </LinearLayout>
+                <TextView android:textStyle="bold" android:textColor="@color/price_text_color" android:id="@id/limit_buy_has_no_price_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/hint_text_color" android:id="@id/limit_buy_gome_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥00.00" />
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/product_shop_type" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_dianpu" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

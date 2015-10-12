@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_order_shop_name" android:background="@drawable/good_shop_name_middle_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/main_default_black_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/textview_id" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:minHeight="40.0dip" android:singleLine="true" />
+        <ImageView android:id="@id/iv_open_close" android:background="@drawable/category_arrow_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/common_round_line_color" android:layout_width="1.0px" android:layout_height="40.0dip" android:layout_marginRight="10.0px" android:layout_toLeftOf="@id/iv_open_close" />
+    </RelativeLayout>
+    <com.gome.ecmall.custom.DisScrollListView android:id="@id/mygome_myorder_order_details_main_suite_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/line" style="@style/more_section_listview_style" />
+    <include android:id="@id/mygmeview" layout="@layout/mygome_myorder_order_details_shop_goods_list_footview" />
+</LinearLayout>

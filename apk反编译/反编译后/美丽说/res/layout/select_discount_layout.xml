@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d5" android:id="@id/discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="折扣" />
+    <com.meilishuo.app.post.home.view.AutoLineFeedLayout android:id="@id/select_discount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" app:verticalSpacing="10.0dip" app:horizontalSpacing="16.0dip" />
+</LinearLayout>

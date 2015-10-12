@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_home_page_superfan_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_centerVertical="true" />
+    <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/title_color" android:id="@id/tv_home_page_superfan_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/iv_home_page_superfan_title" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_home_page_superfan_arrow" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/towrods" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_home_page_superfan_new_hint" android:background="@drawable/icon_new_msg" android:visibility="invisible" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="4.0dip" android:layout_toLeftOf="@id/iv_home_page_superfan_arrow" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_home_page_type" android:visibility="invisible" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="4.0dip" android:layout_toLeftOf="@id/iv_home_page_superfan_arrow" android:layout_centerVertical="true" />
+</RelativeLayout>

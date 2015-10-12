@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_home_page_superfan_card_bottom_product_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.fanli.android.view.TangFont2TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/superfan_type0_title" android:id="@id/tv_home_page_superfan_bottom_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_home_page_superfan_bottom_buyer_num_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/tv_home_page_superfan_bottom_name" />
+        <com.fanli.android.view.TangFontTextView android:textSize="10.0sp" android:textColor="@color/fanli_gongshe_name" android:id="@id/tv_home_page_superfan_bottom_buyer_num_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="20.0dip" android:layout_toRightOf="@id/ll_home_page_superfan_bottom_buyer_num_container" android:layout_below="@id/tv_home_page_superfan_bottom_name" />
+    </RelativeLayout>
+</FrameLayout>

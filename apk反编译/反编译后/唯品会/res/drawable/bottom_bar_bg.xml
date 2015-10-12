@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/top_bar_divider_color" />
+    <item android:drawable="@color/white" android:top="1.0px" />
+</layer-list>

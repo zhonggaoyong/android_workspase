@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_prom_dialog_top" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_prom_dialog_top">
+        <RelativeLayout android:id="@id/rl_body" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_prom_dialog_product_img" android:background="@drawable/product_list_item_icon_bg" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/tv_prom_dialog_product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:maxLines="2" android:layout_toLeftOf="@id/iv_promotion_close" android:layout_toRightOf="@id/iv_prom_dialog_product_img" android:layout_alignTop="@id/iv_prom_dialog_product_img" android:lineSpacingExtra="3.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/tv_prom_dialog_product_name_store" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="出色的粉红色的合肥多喝水粉红色的花范德萨恢复活动顺丰华盛顿花范德萨恢复活动顺丰华盛顿" android:maxLines="2" android:layout_centerInParent="true" android:lineSpacingExtra="3.0dip" />
+            <ImageView android:id="@id/iv_promotion_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_cha" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:id="@id/v_line" android:background="@color/shopping_cart_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/rl_body" />
+        <ScrollView android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/v_line">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_prom_dialog_proms" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

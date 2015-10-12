@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/edt_title" />
+                <EditText android:textSize="@dimen/app_textsize_main" android:textColor="@color/vip_y" android:textColorHint="@color/vip_y_1" android:gravity="left|center" android:id="@id/edt_title" android:background="#fff1f1f1" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="49.0dip" android:hint="请输入标题" android:maxLength="20" />
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/edt_title" />
+                <View android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" android:layout_below="@id/edt_title" />
+                <EditText android:textSize="@dimen/app_textsize_main" android:textColor="@color/vip_y" android:textColorHint="@color/vip_y_1" android:gravity="top|left|center" android:id="@id/edt_content" android:background="#fff1f1f1" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="130.0dip" android:hint="请输入留言内容" android:maxLength="200" android:layout_below="@id/divider" android:lineSpacingExtra="4.0dip" />
+                <View android:id="@id/content_divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/edt_content" />
+                <TextView android:textSize="12.0dip" android:id="@id/edt_datetime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/content_divider" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

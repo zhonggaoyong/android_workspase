@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/top_goods_subtype_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textSize="@dimen/top_goods_subtype_item_text_size" android:textColor="@color/top_goods_subtype_item_text_color_selector" android:ellipsize="end" android:gravity="center" android:id="@id/subtype_button" android:background="@drawable/top_goods_subtype_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:checked="false" android:button="@null" android:singleLine="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/subtype_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/top_goos_subtype_new" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

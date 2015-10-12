@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/placeholder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/item_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="35.0dip">
+        <com.meilishuo.app.views.CustomPageLoading android:id="@id/loading_progress" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff777777" android:id="@id/loading_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/im_history_loading" />
+    </LinearLayout>
+</LinearLayout>

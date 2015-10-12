@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_more_dynamic_bg" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/unlock_fanli_cry" android:scaleType="fitXY" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                <TextView android:id="@id/tv_unlock_fanli_switch_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/unlock_fanli_close_hint" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/line_myfanli" android:background="@drawable/brand_tap_bar_select_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/rl_left_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.fanli.android.view.TangFontTextView android:textSize="15.0sp" android:textColor="#ff07a455" android:id="@id/tv_left_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unlock_fanli_close" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:layout_gravity="center_vertical" android:id="@id/line_myfanli_vertical" android:background="@drawable/dialog_vertical_split" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/rl_right_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.fanli.android.view.TangFontTextView android:textSize="15.0sp" android:textColor="#ff07a455" android:id="@id/tv_right_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unlock_fanli_cancel" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

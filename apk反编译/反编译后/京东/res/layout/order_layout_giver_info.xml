@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/order_giver_info_layout" android:background="@drawable/fill_order_list_item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <TextView android:textSize="17.0sp" android:textColor="#ff252525" android:ellipsize="end" android:gravity="left|center" android:id="@id/textview_giver_name_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:singleLine="true" android:drawableLeft="@drawable/giver_name_icon" android:drawablePadding="6.0dip" />
+    <TextView android:textSize="17.0sp" android:textColor="#ff252525" android:gravity="center_vertical" android:id="@id/textview_giver_mobile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:singleLine="true" android:drawableLeft="@drawable/receiver_mobile_icon" android:drawablePadding="6.0dip" android:layout_toRightOf="@id/textview_giver_name_content" />
+    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/textview_giver_name_content" />
+</RelativeLayout>

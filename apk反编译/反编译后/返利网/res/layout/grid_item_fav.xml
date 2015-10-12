@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/selector_list_item_fav" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="@dimen/global_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/thumb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentTop="true" />
+        <com.fanli.android.view.TangFontTextView android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_padding" android:singleLine="true" android:layout_below="@id/thumb" style="@style/TextListBody2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+            <com.fanli.android.view.TangFontTextView android:ellipsize="end" android:id="@id/price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="TextView" android:singleLine="true" android:layout_weight="1.0" style="@style/TextListPriceLittle" />
+            <RelativeLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.fanli.android.view.TangFontTextView android:ellipsize="middle" android:id="@id/fanli" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" style="@style/TextListFanliFav" />
+                <com.fanli.android.view.TangFontTextView android:ellipsize="middle" android:id="@id/price_reduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/ico_reduce" android:layout_centerVertical="true" style="@style/TextPriceReduce" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/mark_new_price_reduce" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fav_mark_new_price_reduce" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/mark_sold_out" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fav_mark_sold_out" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

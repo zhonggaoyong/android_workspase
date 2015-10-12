@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/product_list_item" android:paddingLeft="14.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="17.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivBargain" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/order_presale_pay_state_payed" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/lyProcess" android:layout_width="15.0dip" android:layout_height="25.0dip" android:layout_below="@id/ivBargain">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivProcess" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/order_presale_pay_prcess_red2gray" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivBalance" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/order_presale_pay_state_payed" android:layout_below="@id/lyProcess" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-3.0dip" android:layout_toRightOf="@id/ivBargain" android:layout_alignBottom="@id/ivBargain">
+            <TextView android:textSize="17.0sp" android:id="@id/tvBargain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定金：￥99" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="17.0sp" android:id="@id/tvBargainState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="待付款" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-3.0dip" android:layout_toRightOf="@id/ivBalance" android:layout_alignBottom="@id/ivBalance">
+            <TextView android:textSize="17.0sp" android:id="@id/tvBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="尾款：￥99" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="17.0sp" android:id="@id/tvBalanceState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="待付款" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/vBottomDiv" android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="12.0dip" />
+</LinearLayout>

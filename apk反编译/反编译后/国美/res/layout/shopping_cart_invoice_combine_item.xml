@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/shopping_details_relative" android:layout_width="fill_parent" android:layout_height="@dimen/shopping_cart_order_list_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/main_default_black_text_color" android:id="@id/shopping_goods_order_general_invoice_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/shopping_cart_order_select_list_item_size" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:id="@id/shopping_goods_" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/shopping_cart_order_list_height" android:text="电商类商品" android:layout_centerVertical="true" />
+    <Button android:textSize="@dimen/shopping_cart_order_select_list_item_size" android:textColor="@color/weak_text_color" android:id="@id/shopping_details_button" android:background="@drawable/common_spinner_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/shopping_goods_order_general_invoice_details" android:layout_toRightOf="@id/shopping_goods_" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

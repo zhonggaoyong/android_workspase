@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/fill_order_dialog_background_corners" android:paddingLeft="12.0dip" android:paddingTop="25.0dip" android:paddingRight="12.0dip" android:paddingBottom="15.0dip" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/fill_order_dredge_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verify_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/verify_image" android:layout_width="92.5dip" android:layout_height="37.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+            <EditText android:textSize="16.0sp" android:textColorHint="@color/verification_code_edit_hint" android:id="@id/verify_input" android:background="@drawable/verification_input_edit_bg" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginRight="10.0dip" android:hint="@string/verify_info" android:layout_toLeftOf="@id/verify_image" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/verification_code_status_tip" android:id="@id/verify_status_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" />
+        <View android:id="@id/fill_order_bottom_line" android:visibility="visible" android:layout_height="@dimen/fill_order_line" style="@style/fill_order_line" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginTop="15.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@color/fill_order_dialog_text_color" android:id="@id/verify_dialog_cancel" android:background="@drawable/fill_order_dialog_button_cancel_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginRight="10.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/verify_dialog_ok" android:background="@drawable/fill_order_dialog_button_ok_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:text="@string/verify_commit" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

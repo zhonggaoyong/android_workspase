@@ -1,0 +1,1 @@
+function remove() {var ids = ['J_popupwrap','smartAd'];for(var i in ids) {try {var element = document.getElementById(ids[i]);element.parentNode.removeChild(element);if(sid){clearInterval(sid)}} catch(e) {}}} var sid = setInterval(remove, 1000); 

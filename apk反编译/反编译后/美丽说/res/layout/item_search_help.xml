@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:id="@id/search_text" android:paddingLeft="25.0dip" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.meilishuo.app.doota.order.view.RightToLeftLinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/Right_to_left_style" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:paddingTop="0.0dip" app:paddingBottom="0.0dip" app:horizontalSpacing="8.0dip" />
+    </LinearLayout>
+    <View android:background="#ffd9d6d7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+</LinearLayout>

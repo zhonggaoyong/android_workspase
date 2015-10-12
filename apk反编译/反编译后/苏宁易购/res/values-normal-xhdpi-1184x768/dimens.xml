@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_searchbar_margintop">147.0dip</dimen>
+    <dimen name="product_list_two_image_height">179.0dip</dimen>
+    <dimen name="product_list_two_layout_height">241.0dip</dimen>
+    <dimen name="product_list_three_image_height">116.0dip</dimen>
+</resources>

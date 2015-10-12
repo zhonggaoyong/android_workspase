@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/android_public_space_20px" android:paddingRight="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_btn_white_round_corner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_eight" android:gravity="center" android:id="@id/btn_male" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="男" />
+        <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <Button android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_eight" android:gravity="center" android:id="@id/btn_female" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="女" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_10px" />
+    <Button android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_eight" android:gravity="center" android:id="@id/btn_select_sex_cancel" android:background="@drawable/bg_btn_white_round_corner" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="取消" />
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_10px" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/selector_list_row" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/lineTop" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffff4978" android:gravity="center_vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip" android:text="@string/groupon_detail_top_10_entrance" android:drawableRight="@drawable/icon_arrows_gray_right" />
+    <include layout="@layout/groupon_detail_divide" />
+</LinearLayout>

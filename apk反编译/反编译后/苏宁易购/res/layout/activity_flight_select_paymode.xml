@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/select_pay_mode_main_view" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/includetitle" android:visibility="gone" layout="@layout/util_view_header" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/stripbg_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/black" android:gravity="left" android:id="@id/flight_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="订单总价：" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/red" android:gravity="center" android:id="@id/flight_price_tv_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="1620.00" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:text="请选择支付方式" />
+    <RelativeLayout android:id="@id/flight_paymode_relative_yfb" android:background="@drawable/input_bg" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="25.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="@color/pub_color_eight" android:id="@id/tv_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yifubao_pay" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_nine" android:id="@id/flight_yfb_textview_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/yifubao_pay_detail" android:layout_below="@id/tv_1" />
+        <ImageView android:id="@id/flight_yfb_image_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/flight_paymode_relative_quickpay" android:background="@drawable/input_bg" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="25.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textColor="@color/pub_color_eight" android:id="@id/tv_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/union_pay" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_nine" android:id="@id/flight_quickpay_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/union_pay_detail" android:layout_below="@id/tv_1" />
+        <ImageView android:id="@id/flight_quickpay_image_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

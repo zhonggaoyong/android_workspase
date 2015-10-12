@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_dialog_title" android:textColor="@color/dilaog_title_text_color" android:id="@id/fragment_alert_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_margin_left" android:layout_marginTop="@dimen/dialog_title_margin_top" android:layout_marginBottom="@dimen/dialog_title_margin_bottom" android:text="@string/random" />
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_dialog_title_style" />
+    <TextView android:textSize="@dimen/text_size_dialog_title" android:textColor="@color/text_gray" android:gravity="center" android:id="@id/fragment_alert_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="34.0dip" android:layout_marginBottom="31.0dip" />
+    <include layout="@layout/lottery_dialog_bottom_btton_view" />
+</LinearLayout>

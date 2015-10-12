@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="title_container" />
+    <item type="id" name="title_text" />
+    <item type="id" name="dialog_discard_confirm" />
+    <item type="id" name="dialog_moderator" />
+    <item type="id" name="dialog_wave" />
+    <item type="id" name="blocks_ruler" />
+    <item type="id" name="blocks_now" />
+    <item type="id" name="actionbar_compat" />
+    <item type="id" name="actionbar_compat_container" />
+    <item type="id" name="actionbar_compat_logo" />
+    <item type="id" name="actionbar_compat_text" />
+    <item type="id" name="menu_refresh_progress" />
+    <item type="id" name="auto_focus" />
+    <item type="id" name="decode" />
+    <item type="id" name="decode_failed" />
+    <item type="id" name="decode_succeeded" />
+    <item type="id" name="encode_failed" />
+    <item type="id" name="encode_succeeded" />
+    <item type="id" name="launch_product_query" />
+    <item type="id" name="quit" />
+    <item type="id" name="restart_preview" />
+    <item type="id" name="return_scan_result" />
+    <item type="id" name="search_book_contents_failed" />
+    <item type="id" name="search_book_contents_succeeded" />
+    <item type="id" name="gridview" />
+    <item type="id" name="scrollview" />
+    <item type="id" name="about_version_code">false</item>
+    <item type="id" name="split">false</item>
+    <item type="id" name="viewpager" />
+    <item type="id" name="viewpager_indicator" />
+    <item type="id" name="iv_brand_display" />
+    <item type="id" name="rl_brand_details" />
+    <item type="id" name="iv_brand_logo" />
+    <item type="id" name="tv_prefix" />
+    <item type="id" name="tv_suffix" />
+    <item type="id" name="tv_range_or_discount" />
+    <item type="id" name="line_separator" />
+    <item type="id" name="tv_product_detail" />
+    <item type="id" name="tv_discount" />
+    <item type="id" name="rl_product_detail" />
+    <item type="id" name="iv_product_display" />
+    <item type="id" name="rl_product_price" />
+    <item type="id" name="tv_current_price" />
+    <item type="id" name="tv_symbol" />
+    <item type="id" name="tv_original_price" />
+    <item type="id" name="tv_rebate_after_buying" />
+    <item type="id" name="tv_rebate_hint" />
+    <item type="id" name="gv_superfan_category_item" />
+    <item type="id" name="ll_loading_bar" />
+    <item type="id" name="iv_brand_new" />
+    <item type="id" name="rl_superfan_brand_detail_tabs" />
+    <item type="id" name="rg_superfan_brand_detail_tabs" />
+    <item type="id" name="sv_superfan_brand_detail" />
+    <item type="id" name="iv_brand_detail_display" />
+    <item type="id" name="iv_brand_detail_logo" />
+    <item type="id" name="rl_vertical_split" />
+    <item type="id" name="tv_superfan_brand_prefix" />
+    <item type="id" name="tv_superfan_fanli_range" />
+    <item type="id" name="tv_superfan_hot_zone" />
+    <item type="id" name="ll_superfan_products" />
+    <item type="id" name="tv_superfan_discount" />
+    <item type="id" name="ll_superfan_shops_recommended_dynamic" />
+    <item type="id" name="iv_brands_you_may_interest_in" />
+    <item type="id" name="tv_brands_you_may_interest_in" />
+    <item type="id" name="ll_coupon_dynamic" />
+    <item type="id" name="iv_tmall" />
+    <item type="id" name="rl_five_yuan" />
+    <item type="id" name="rl_ten_yuan" />
+    <item type="id" name="rl_twenty_yuan" />
+    <item type="id" name="pull_to_refresh_scrollview" />
+    <item type="id" name="ll_superfan_brands_recommended_dynamic" />
+    <item type="id" name="rl_superfan_brands_recommended" />
+    <item type="id" name="rl_coupon_name" />
+    <item type="id" name="tv_coupon_name" />
+    <item type="id" name="rl_coupon_condition" />
+    <item type="id" name="tv_coupon_condition" />
+    <item type="id" name="ll_coupon" />
+    <item type="id" name="rl_product_brief" />
+    <item type="id" name="tv_product_discount" />
+    <item type="id" name="tv_product_brief" />
+    <item type="id" name="tv_product_price_prefix" />
+    <item type="id" name="tv_product_price" />
+    <item type="id" name="tv_fanli_in_sell_value" />
+    <item type="id" name="tv_fanli_in_sell_hint" />
+    <item type="id" name="tv_product_original_price" />
+    <item type="id" name="iv_product_main_image" />
+    <item type="id" name="lv_superfan_category_item" />
+    <item type="id" name="rl_brand_display" />
+    <item type="id" name="tv_brand_intro" />
+    <item type="id" name="rl_coupon_one" />
+    <item type="id" name="rl_coupon_two" />
+    <item type="id" name="rl_coupon_three" />
+    <item type="id" name="tv_product_discount_and_brief" />
+    <item type="id" name="rl_brand_detail_logo" />
+    <item type="id" name="rl_brand_logo" />
+    <item type="id" name="hsv_tab" />
+    <item type="id" name="iv_arrow" />
+    <item type="id" name="rl_shop_logo_and_name" />
+    <item type="id" name="tv_shop_name" />
+    <item type="id" name="iv_shop_logo" />
+    <item type="id" name="tv_shop_extra_info" />
+    <item type="id" name="tv_shop_time_range" />
+    <item type="id" name="rl_shop_logo" />
+    <item type="id" name="iv_superfan_title" />
+    <item type="id" name="ll_brand_container" />
+    <item type="id" name="rl_brand_bottom" />
+    <item type="id" name="rl_top_tab" />
+    <item type="id" name="tv_floor_name" />
+    <item type="id" name="iv_cursor" />
+    <item type="id" name="ll_superfan_brand_detail_tabs" />
+    <item type="id" name="btn_to_top" />
+    <item type="id" name="ll_main" />
+    <item type="id" name="tv_brand_detail_title" />
+    <item type="id" name="tv_prouct_hint" />
+    <item type="id" name="line_myfanli" />
+    <item type="id" name="layout_myorder" />
+    <item type="id" name="my_order_layout" />
+    <item type="id" name="tv_info_myorder" />
+    <item type="id" name="line_myorder" />
+    <item type="id" name="tv_superfan_hint" />
+    <item type="id" name="tv_left_button" />
+    <item type="id" name="tv_right_button" />
+    <item type="id" name="tv_bottom_button" />
+    <item type="id" name="rl_brand_intro_detail" />
+    <item type="id" name="brand_detail_pulltorefresh" />
+    <item type="id" name="line_myfanli_vertical" />
+    <item type="id" name="rl_left_button" />
+    <item type="id" name="rl_right_button" />
+    <item type="id" name="rl_bottom_button" />
+    <item type="id" name="tv_superfan_presell_hint" />
+    <item type="id" name="tv_superfan_soldout_hint" />
+    <item type="id" name="iv_superfan_logo" />
+    <item type="id" name="tv_brand_hint" />
+    <item type="id" name="ll_brand_intro_detail" />
+    <item type="id" name="iv_nine_dot_nine_return" />
+    <item type="id" name="tv_nine_dot_nine_title" />
+    <item type="id" name="btn_nine_dot_nine_icon" />
+    <item type="id" name="iv_nine_dot_nine_mine" />
+    <item type="id" name="tv_nine_dot_nine_login" />
+    <item type="id" name="ll_nine_dot_nine_title_middle" />
+    <item type="id" name="rl_nine_dot_nine_title" />
+    <item type="id" name="iv_nine_dot_nine_login_return" />
+    <item type="id" name="iv_btn_switch_gender" />
+    <item type="id" name="btn_nine_dot_nine_go_tmall" />
+    <item type="id" name="nine_dot_nine_split" />
+    <item type="id" name="iv_nine_dot_nine_common_return" />
+    <item type="id" name="tv_nine_dot_nine_common" />
+    <item type="id" name="rl_nine_dot_nine_common" />
+    <item type="id" name="iv_nine_dot_nine_refresh" />
+    <item type="id" name="tv_nine_dot_nine_common_web" />
+    <item type="id" name="iv_nine_dot_nine_common_web_return" />
+    <item type="id" name="rl_nine_dot_nine_common_web_title" />
+    <item type="id" name="rl_nine_dot_nine_refollow" />
+    <item type="id" name="iv_nine_dot_nine_refollow_return" />
+    <item type="id" name="tv_nine_dot_nine_refollow_title" />
+    <item type="id" name="btn_nine_dot_nine_refollow" />
+    <item type="id" name="iv_nine_dot_nine_more" />
+    <item type="id" name="rl_nine_dot_nine_conversation_header" />
+    <item type="id" name="iv_nine_dot_nine_conversation_return" />
+    <item type="id" name="tv_nine_dot_nine_conversation_title" />
+    <item type="id" name="rl_umeng_fb_conversation_header_inside" />
+    <item type="id" name="iv_nine_dot_nine_brand_pic" />
+    <item type="id" name="tv_pay_in_tmall" />
+    <item type="id" name="tv_fanli_pay_you" />
+    <item type="id" name="tv_only_need" />
+    <item type="id" name="rl_nine_dot_nine_hint" />
+    <item type="id" name="tv_money_paid_in_tmall" />
+    <item type="id" name="rl_nine_dot_nine_price" />
+    <item type="id" name="tv_money_paid_by_fanli" />
+    <item type="id" name="tv_money_paid_at_last" />
+    <item type="id" name="rl_nine_dot_nine_search_bar" />
+    <item type="id" name="rl_nine_dot_nine_search_box" />
+    <item type="id" name="tv_nine_dot_nine_search_hint" />
+    <item type="id" name="iv_nine_dot_nine_search" />
+    <item type="id" name="iv_nine_dot_nine_shop_search_return" />
+    <item type="id" name="rl_shop_search_bar" />
+    <item type="id" name="rl_shop_search" />
+    <item type="id" name="ll_shop_search_container" />
+    <item type="id" name="btn_nine_dot_nine_shop_search_clear" />
+    <item type="id" name="rl_shop_search_bar_nine_dot_nine" />
+    <item type="id" name="et_input_nine_dot_nine" />
+    <item type="id" name="iv_nine_dot_nine_brand_product_main_image" />
+    <item type="id" name="rl_nine_dot_nine_brand_product_brief" />
+    <item type="id" name="tv_nine_dot_nine_brand_product_discount_and_brief" />
+    <item type="id" name="line_nine_dot_nine_brand_product" />
+    <item type="id" name="tv_nine_dot_nine_brand_product_price_prefix" />
+    <item type="id" name="tv_nine_dot_nine_brand_product_price" />
+    <item type="id" name="tv_nine_dot_nine_brand_product_price_hint" />
+    <item type="id" name="pghv_nine_dot_nine_brand_product" />
+    <item type="id" name="nine_dot_nine_brand_product_loading_bar" />
+    <item type="id" name="ll_nine_dot_nine_brand_product_view" />
+    <item type="id" name="rl_nine_dot_nine_main_title" />
+    <item type="id" name="view_gallery_pager_line" />
+    <item type="id" name="tv_brand_prouct_hint" />
+    <item type="id" name="iv_float_view" />
+    <item type="id" name="btn_close_play_with_fanli" />
+    <item type="id" name="tv_what_is_fanli" />
+    <item type="id" name="tv_fanli_is" />
+    <item type="id" name="tv_get_fanli_by" />
+    <item type="id" name="tv_how_to_get_fanli" />
+    <item type="id" name="ll_play_with_fanli_hint_container" />
+    <item type="id" name="tv_fanli_quesetion" />
+    <item type="id" name="tv_fanli_answer" />
+    <item type="id" name="tv_discover_title" />
+    <item type="id" name="line_seperator" />
+    <item type="id" name="ll_discover_outer_container" />
+    <item type="id" name="ll_discover_inner_container" />
+    <item type="id" name="rl_discover_item_content" />
+    <item type="id" name="view_vertical_separator" />
+    <item type="id" name="line_seperator_top" />
+    <item type="id" name="line_seperator_bottom" />
+    <item type="id" name="line_seperator_inner" />
+    <item type="id" name="view_discover_bottom_line" />
+    <item type="id" name="iv_discover_icon" />
+    <item type="id" name="tv_discover_entry_name" />
+    <item type="id" name="iv_discover_new_icon" />
+    <item type="id" name="btn_setting" />
+    <item type="id" name="iv_main_page_exit_hint" />
+    <item type="id" name="tv_main_page_exit_hint" />
+    <item type="id" name="tv_exit_confirm" />
+    <item type="id" name="tv_exit_cancel" />
+    <item type="id" name="ll_top_padding" />
+    <item type="id" name="main_radio_container" />
+    <item type="id" name="tv_warm_hint" />
+    <item type="id" name="tv_hint_content" />
+    <item type="id" name="tv_i_know" />
+    <item type="id" name="rl_play_with_fanli_background" />
+    <item type="id" name="tv_unlock_fanli_time" />
+    <item type="id" name="tv_unlock_fanli_date" />
+    <item type="id" name="iv_unlock_fanli_logo" />
+    <item type="id" name="iv_unlock_fanli_main" />
+    <item type="id" name="tv_unlock_fanli_week" />
+    <item type="id" name="rl_unlock_fanli_main" />
+    <item type="id" name="tv_unlock_fanli_hint" />
+    <item type="id" name="rl_unlock_fanli_intro" />
+    <item type="id" name="tv_unlock_fanli_slide_to_check" />
+    <item type="id" name="iv_unlock_fanli_slider" />
+    <item type="id" name="iv_unlock_fanli_left_pic" />
+    <item type="id" name="iv_unlock_fanli_right_pic" />
+    <item type="id" name="tv_unlock_fanli_left_hint" />
+    <item type="id" name="tv_unlock_fanli_right_hint" />
+    <item type="id" name="rl_unlock_fanli_title" />
+    <item type="id" name="iv_unlock_fanli_title_return" />
+    <item type="id" name="tv_unlock_fanli_title" />
+    <item type="id" name="rl_unlock_fanli_new_feature" />
+    <item type="id" name="tv_unlock_fanli_lock_hint1" />
+    <item type="id" name="tv_unlock_fanli_lock_hint2" />
+    <item type="id" name="cb_unlock_fanli_new_feature" />
+    <item type="id" name="btn_unlock_fanli_start" />
+    <item type="id" name="rl_unlock_fanli_new_feature_hint" />
+    <item type="id" name="btn_unlock_fanli_subscribe_close" />
+    <item type="id" name="rl_unlock_fanli_subscribe" />
+    <item type="id" name="btn_unlock_fanli_subscribe_open" />
+    <item type="id" name="rl_unlock_fanli_amount" />
+    <item type="id" name="rl_unlock_fanli_setting" />
+    <item type="id" name="tv_unlock_fanli_data_hint" />
+    <item type="id" name="btn_unlock_fanli_click_and_confirm" />
+    <item type="id" name="tv_unlock_fanli_lock_hint3" />
+    <item type="id" name="tv_your_unlock_fanli_hint" />
+    <item type="id" name="tv_your_unlock_fanli_total" />
+    <item type="id" name="tv_your_unlock_fanli_today" />
+    <item type="id" name="rl_your_unlock_fanli_today" />
+    <item type="id" name="rl_your_unlock_fanli_total" />
+    <item type="id" name="tv_your_unlock_fanli_today_hint" />
+    <item type="id" name="tv_your_unlock_fanli_setting" />
+    <item type="id" name="rl_unlock_fanli_switch" />
+    <item type="id" name="tv_unlock_fanli_function_switch" />
+    <item type="id" name="rg_screen_lock_switch" />
+    <item type="id" name="rb_open_screen_lock" />
+    <item type="id" name="rg_close_lock_switch" />
+    <item type="id" name="rb_close_screen_lock" />
+    <item type="id" name="tv_unlock_fanli_flow_save_hint" />
+    <item type="id" name="rl_unlock_fanli_setting_switch" />
+    <item type="id" name="rl_unlock_fanli_radio_group" />
+    <item type="id" name="tv_your_unlock_fanli_total_hint" />
+    <item type="id" name="rg_flow_save_switch" />
+    <item type="id" name="rb_open_flow_save" />
+    <item type="id" name="rb_close_flow_save" />
+    <item type="id" name="iv_app_image" />
+    <item type="id" name="tv_app_name" />
+    <item type="id" name="tv_app_hot" />
+    <item type="id" name="view_app_separator" />
+    <item type="id" name="tv_app_comment" />
+    <item type="id" name="tv_app_size" />
+    <item type="id" name="rb_app_comment" />
+    <item type="id" name="btn_app_download" />
+    <item type="id" name="tv_app_download_reward_hint" />
+    <item type="id" name="tv_app_safe" />
+    <item type="id" name="tv_app_free" />
+    <item type="id" name="tv_app_no_ad" />
+    <item type="id" name="tv_app_fanli" />
+    <item type="id" name="gy_app_intro_images" />
+    <item type="id" name="tv_app_brief_intro" />
+    <item type="id" name="ll_app_brief_intro_container" />
+    <item type="id" name="tv_app_intro_brief" />
+    <item type="id" name="btn_download_app_now" />
+    <item type="id" name="sv_app_intro" />
+    <item type="id" name="hsv_app_intro_images" />
+    <item type="id" name="ll_app_images_container" />
+    <item type="id" name="rl_price_and_fanli" />
+    <item type="id" name="line_unlock_fanli" />
+    <item type="id" name="tv_unlock_fanli_product_intro" />
+    <item type="id" name="tv_unlock_fanli_price" />
+    <item type="id" name="iv_unlock_fanli_hint" />
+    <item type="id" name="tv_unlock_fanli_amount_hint" />
+    <item type="id" name="rl_unlock_fanli_time_hint" />
+    <item type="id" name="iv_unlock_fanli_left_cart" />
+    <item type="id" name="iv_unlock_fanli_left_download" />
+    <item type="id" name="iv_unlock_fanli_hint_right" />
+    <item type="id" name="tv_unlock_fanli_hint_right" />
+    <item type="id" name="rl_unlock_fanli_hint_left" />
+    <item type="id" name="rl_unlock_fanli_hint_right" />
+    <item type="id" name="rl_unlock_fanli_app_intro_upper" />
+    <item type="id" name="line_unlock_fanli_1" />
+    <item type="id" name="line_unlock_fanli_2" />
+    <item type="id" name="line_unlock_fanli_3" />
+    <item type="id" name="line_unlock_fanli_4" />
+    <item type="id" name="tv_app_download_reward_hint1" />
+    <item type="id" name="tv_app_download_reward_hint2" />
+    <item type="id" name="line_unlock_fanli_setting1" />
+    <item type="id" name="line_unlock_fanli_setting2" />
+    <item type="id" name="tv_unlock_nine_dot_nine_price" />
+    <item type="id" name="tv_unlock_nine_dot_nine_name" />
+    <item type="id" name="nine_dot_nine_product_intro" />
+    <item type="id" name="vp_unlock_fanli_display_content" />
+    <item type="id" name="rl_unlock_fanli_main_container" />
+    <item type="id" name="iv_unlock_fanli_to_left" />
+    <item type="id" name="iv_unlock_fanli_to_right" />
+    <item type="id" name="iv_unlock_fanli_free_shipment" />
+    <item type="id" name="ll_unlock_fanli_superfan_intro" />
+    <item type="id" name="unlock" />
+    <item type="id" name="rl_unlock_fanli_center" />
+    <item type="id" name="rl_unlock_fanli_logo" />
+    <item type="id" name="tv_logo_inro" />
+    <item type="id" name="iv_unlock_fanli_logo_pic" />
+    <item type="id" name="rl_app_intro_bottom" />
+    <item type="id" name="rl_unlock_fanli_flow_save" />
+    <item type="id" name="tv_unlock_fanli_time_hint" />
+    <item type="id" name="tv_unlock_fanli_price_prefix" />
+    <item type="id" name="iv_screen_lock_circle" />
+    <item type="id" name="sv_screen_lock_user_guide" />
+    <item type="id" name="tv_screen_lock_guide_title" />
+    <item type="id" name="tv_screen_lock_guide_subtitle" />
+    <item type="id" name="iv_screen_lock_user_num_hint" />
+    <item type="id" name="sb_slide_to_get_fanli" />
+    <item type="id" name="ll_user_num_container" />
+    <item type="id" name="ll_screen_lock_app_intro_tag1_container" />
+    <item type="id" name="iv_screen_lock_user_guide_background" />
+    <item type="id" name="vp_new_superfan" />
+    <item type="id" name="iv_unlock_image" />
+    <item type="id" name="iv_left_unlocked" />
+    <item type="id" name="iv_right_unlocked" />
+    <item type="id" name="rl_unlock_bar_container" />
+    <item type="id" name="tv_fanli_amount_due_to_activate" />
+    <item type="id" name="tv_activate_immediately" />
+    <item type="id" name="rl_unlock_main_page" />
+    <item type="id" name="ll_download_reward_steps_container" />
+    <item type="id" name="iv_unlock_page_background" />
+    <item type="id" name="vp_unlock_fanli_app" />
+    <item type="id" name="rl_unlock_fanli_upper" />
+    <item type="id" name="selected_view" />
+    <item type="id" name="tv_home_page_superfan_title" />
+    <item type="id" name="iv_home_page_superfan_color" />
+    <item type="id" name="iv_home_page_superfan_title" />
+    <item type="id" name="iv_home_page_superfan_arrow" />
+    <item type="id" name="tv_home_page_superfan_upper_name" />
+    <item type="id" name="tv_home_page_superfan_upper_price" />
+    <item type="id" name="iv_home_page_superfan_fanli_icon" />
+    <item type="id" name="tv_home_page_superfan_bottom_name" />
+    <item type="id" name="ll_home_page_superfan_bottom_buyer_num_container" />
+    <item type="id" name="iv_home_page_superfan_card_bottom_product_pic" />
+    <item type="id" name="iv_home_page_superfan_card_upper_product_pic" />
+    <item type="id" name="tv_home_page_superfan_fanli_amount" />
+    <item type="id" name="tv_home_page_superfan_bottom_buyer_num_hint" />
+    <item type="id" name="tv_home_page_superfan_new_hint" />
+    <item type="id" name="iv_home_page_superfan_left_pic" />
+    <item type="id" name="ll_home_page_card_container" />
+    <item type="id" name="iv_home_page_type" />
+    <item type="id" name="biv_mall_logo" />
+    <item type="id" name="tv_mall_percentage" />
+    <item type="id" name="biv_worth_buy_product" />
+    <item type="id" name="tv_worth_buy_name" />
+    <item type="id" name="ll_worth_buy_price" />
+    <item type="id" name="tv_worth_buy_price" />
+    <item type="id" name="tv_worth_buy_old_price" />
+    <item type="id" name="iv_fanli_gongshe_pic" />
+    <item type="id" name="rl_fanli_gongshe_info" />
+    <item type="id" name="tv_fanli_gongshe_name" />
+    <item type="id" name="rl_fanli_gongshe_praise_and_comment" />
+    <item type="id" name="iv_fanli_gongshe_praise" />
+    <item type="id" name="tv_fanli_gongshe_praise" />
+    <item type="id" name="tv_fanli_gongshe_comment" />
+    <item type="id" name="iv_fanli_gongshe_comment" />
+    <item type="id" name="iv_brand_mall_pic" />
+    <item type="id" name="ll_home_page_gongshe_container" />
+    <item type="id" name="biv_dot_nine_item" />
+    <item type="id" name="tv_home_page_dot_nine_price" />
+    <item type="id" name="tv_home_page_dot_nine_old_price" />
+    <item type="id" name="iv_unlock_fanli_h5" />
+    <item type="id" name="tv_fanli_gongshe_pic_intro" />
+    <item type="id" name="view_gongshe_vertical_line" />
+    <item type="id" name="view_worth_buy_line" />
+    <item type="id" name="tv_home_page_dot_nine_price_prefix" />
+    <item type="id" name="rl_tangshuo_superfan_bottom_button" />
+    <item type="id" name="tv_tangshuo_bottom_button" />
+    <item type="id" name="tv_superfan_order_follow_hint" />
+    <item type="id" name="iv_superfan_garantee_hint" />
+    <item type="id" name="tv_tangshuo_superfan_presell_bottom_button" />
+    <item type="id" name="tv_tangshuo_alarm_hint_upper" />
+    <item type="id" name="tv_tangshuo_alarm_hint_bottom" />
+    <item type="id" name="tv_superfan_presell_hint_upper" />
+    <item type="id" name="tv_superfan_presell_hint_bottom" />
+    <item type="id" name="tv_tangshuo_superfan_share_cancel" />
+    <item type="id" name="iv_superfan_category_return" />
+    <item type="id" name="ll_superfan_category_layout" />
+    <item type="id" name="tv_superfan_category" />
+    <item type="id" name="tv_superfan_brands" />
+    <item type="id" name="tv_superfan_category_line1" />
+    <item type="id" name="tv_superfan_category_line2" />
+    <item type="id" name="vp_superfan_category" />
+    <item type="id" name="rl_superfan_category_search" />
+    <item type="id" name="iv_share2weixin" />
+    <item type="id" name="iv_share2weixin_timeline" />
+    <item type="id" name="iv_share2sina_weibo" />
+    <item type="id" name="iv_share2tencent_weibo" />
+    <item type="id" name="iv_share2qq_zone" />
+    <item type="id" name="ll_superfan_category_container" />
+    <item type="id" name="lv_superfan_category" />
+    <item type="id" name="tv_worth_buy_mall_name" />
+    <item type="id" name="tv_worth_buy_price_hint" />
+    <item type="id" name="tv_worth_buy_product_intro" />
+    <item type="id" name="tv_worth_buy_time_hint" />
+    <item type="id" name="iv_share2_button" />
+    <item type="id" name="tv_share2_title" />
+    <item type="id" name="ll_tangshuo_share_container1" />
+    <item type="id" name="ll_tangshuo_share_container2" />
+    <item type="id" name="tv_alert_dialog_title" />
+    <item type="id" name="ll_share_container1" />
+    <item type="id" name="ll_share_container2" />
+    <item type="id" name="rl_tangshuo_superfan_share_cancel" />
+    <item type="id" name="tv_superfan_search_no_result" />
+    <item type="id" name="rl_more_feedback" />
+    <item type="id" name="rl_more_fqa" />
+    <item type="id" name="layout_dynamic" />
+    <item type="id" name="iv_more_feedback" />
+    <item type="id" name="tv_more_feedback" />
+    <item type="id" name="iv_more_arrow" />
+    <item type="id" name="rl_more_clear_cache" />
+    <item type="id" name="iv_more_fqa" />
+    <item type="id" name="tv_more_fqa" />
+    <item type="id" name="rl_more_message_setting" />
+    <item type="id" name="rl_more_update_check" />
+    <item type="id" name="iv_more_about_fanli" />
+    <item type="id" name="tv_more_about_fanli" />
+    <item type="id" name="rl_more_about_fanli" />
+    <item type="id" name="iv_more_clear_cache" />
+    <item type="id" name="tv_more_clear_cache" />
+    <item type="id" name="iv_more_update_check" />
+    <item type="id" name="tv_more_update_check" />
+    <item type="id" name="iv_more_message_setting" />
+    <item type="id" name="tv_more_message_setting" />
+    <item type="id" name="tv_dialog_title" />
+    <item type="id" name="ll_dynamic_outer_container" />
+    <item type="id" name="iv_login_delete" />
+    <item type="id" name="iv_login_display_psw" />
+    <item type="id" name="ll_login_union" />
+    <item type="id" name="tab_btn_mail_cursor" />
+    <item type="id" name="tab_btn_phone_cursor" />
+    <item type="id" name="ll_register_union" />
+    <item type="id" name="tv_register_phone_num" />
+    <item type="id" name="tv_register_get_verify_code_again" />
+    <item type="id" name="tv_retrieve_psw_by_view_time_hint" />
+    <item type="id" name="rl_reset_psw_by_mail" />
+    <item type="id" name="rl_reset_psw_by_phone" />
+    <item type="id" name="rl_register_mail" />
+    <item type="id" name="rl_register_phone" />
+    <item type="id" name="iv_money_icon" />
+    <item type="id" name="tv_today_money_amount" />
+    <item type="id" name="iv_fanli_detail" />
+    <item type="id" name="tv_week_fanli" />
+    <item type="id" name="tv_history_fanli" />
+    <item type="id" name="iv_show_unlock_demo" />
+    <item type="id" name="rl_unlock_fanli_feedback" />
+    <item type="id" name="sv_container" />
+    <item type="id" name="sv_save_flow" />
+    <item type="id" name="sv_unlock_fanli" />
+    <item type="id" name="ll_unlock_sv_container" />
+    <item type="id" name="ll_save_flow_sv_container" />
+    <item type="id" name="tv_unlock_fanli_switch_hint" />
+    <item type="id" name="unlock_fanli_close_view" />
+    <item type="id" name="phone_number">false</item>
+    <item type="id" name="verify_code_input">false</item>
+    <item type="id" name="submit_verify_code_btn">false</item>
+    <item type="id" name="submit_redo_btn">false</item>
+    <item type="id" name="content">false</item>
+    <item type="id" name="about_top_logo">false</item>
+    <item type="id" name="about_top_title">false</item>
+    <item type="id" name="version">false</item>
+    <item type="id" name="about_detail">false</item>
+    <item type="id" name="listview">false</item>
+    <item type="id" name="l_section1">false</item>
+    <item type="id" name="list_view">false</item>
+    <item type="id" name="ok_button">false</item>
+    <item type="id" name="selected_image_layout">false</item>
+    <item type="id" name="body">false</item>
+    <item type="id" name="grid_view">false</item>
+    <item type="id" name="ll_input">false</item>
+    <item type="id" name="email">false</item>
+    <item type="id" name="pwd">false</item>
+    <item type="id" name="ll_input_email">false</item>
+    <item type="id" name="bind_hint_msg">false</item>
+    <item type="id" name="email_only">false</item>
+    <item type="id" name="btn_login">false</item>
+    <item type="id" name="login_username">false</item>
+    <item type="id" name="password_area">false</item>
+    <item type="id" name="login_password">false</item>
+    <item type="id" name="verify_code">false</item>
+    <item type="id" name="edv_vc">false</item>
+    <item type="id" name="tv_resend">false</item>
+    <item type="id" name="forget_password_txt">false</item>
+    <item type="id" name="tv_reg">false</item>
+    <item type="id" name="edv_phone">false</item>
+    <item type="id" name="tv_force_register_phone_num_hint">false</item>
+    <item type="id" name="tv_force_register_phone_num_hint1">false</item>
+    <item type="id" name="tv_force_register_phone_num_hint2">false</item>
+    <item type="id" name="tv_force_register_phone_num">false</item>
+    <item type="id" name="old_pcpw">false</item>
+    <item type="id" name="btn_confirm">false</item>
+    <item type="id" name="tv_login">false</item>
+    <item type="id" name="set_phone">false</item>
+    <item type="id" name="header">false</item>
+    <item type="id" name="search_view">false</item>
+    <item type="id" name="line_divider">false</item>
+    <item type="id" name="all">false</item>
+    <item type="id" name="tv_all">false</item>
+    <item type="id" name="line_selector_all">false</item>
+    <item type="id" name="my_fav">false</item>
+    <item type="id" name="tv_fav">false</item>
+    <item type="id" name="line_selector_fav">false</item>
+    <item type="id" name="btn_all">false</item>
+    <item type="id" name="camera_preview">false</item>
+    <item type="id" name="button_capture">false</item>
+    <item type="id" name="preview_view">false</item>
+    <item type="id" name="title_area">false</item>
+    <item type="id" name="ivBack">false</item>
+    <item type="id" name="ivFlash">false</item>
+    <item type="id" name="ivImg">false</item>
+    <item type="id" name="viewfinder_view">false</item>
+    <item type="id" name="relativeLayout1">false</item>
+    <item type="id" name="iv_up">false</item>
+    <item type="id" name="iv_bottom">false</item>
+    <item type="id" name="main">false</item>
+    <item type="id" name="root_container">false</item>
+    <item type="id" name="home_root">false</item>
+    <item type="id" name="tv_comment_hint">false</item>
+    <item type="id" name="tv_comment_content">false</item>
+    <item type="id" name="tv_comment_contact">false</item>
+    <item type="id" name="btnCommit">false</item>
+    <item type="id" name="webkit">false</item>
+    <item type="id" name="sub_panel">false</item>
+    <item type="id" name="btn_reset">false</item>
+    <item type="id" name="tv_contact">false</item>
+    <item type="id" name="img_logo">false</item>
+    <item type="id" name="line1">false</item>
+    <item type="id" name="line2">false</item>
+    <item type="id" name="center_area">false</item>
+    <item type="id" name="pwd_area">false</item>
+    <item type="id" name="line3">false</item>
+    <item type="id" name="ev_input_password_first_time">false</item>
+    <item type="id" name="line4">false</item>
+    <item type="id" name="ev_input_password_second_time">false</item>
+    <item type="id" name="line5">false</item>
+    <item type="id" name="tv_force_register_set_psw_hint">false</item>
+    <item type="id" name="tv_agree_contract">false</item>
+    <item type="id" name="help_list">false</item>
+    <item type="id" name="fl_container">false</item>
+    <item type="id" name="lly_bottom">false</item>
+    <item type="id" name="rg_tab">false</item>
+    <item type="id" name="rb_home">false</item>
+    <item type="id" name="rb_order">false</item>
+    <item type="id" name="rb_fav">false</item>
+    <item type="id" name="rb_acc">false</item>
+    <item type="id" name="item_pic">false</item>
+    <item type="id" name="tv_title">false</item>
+    <item type="id" name="tv_price">false</item>
+    <item type="id" name="btn_fanli">false</item>
+    <item type="id" name="btn_order">false</item>
+    <item type="id" name="panel_frame">false</item>
+    <item type="id" name="contentList">false</item>
+    <item type="id" name="option_update_list">false</item>
+    <item type="id" name="option_feed_call_list">false</item>
+    <item type="id" name="option_other_list">false</item>
+    <item type="id" name="btn_logout">false</item>
+    <item type="id" name="login_main">false</item>
+    <item type="id" name="verify_code_line">false</item>
+    <item type="id" name="verify_img">false</item>
+    <item type="id" name="taobao_login">false</item>
+    <item type="id" name="qq_login">false</item>
+    <item type="id" name="sina_login">false</item>
+    <item type="id" name="main_container">false</item>
+    <item type="id" name="scrollView1">false</item>
+    <item type="id" name="gridlist">false</item>
+    <item type="id" name="listLoadingBar">false</item>
+    <item type="id" name="emptyView">false</item>
+    <item type="id" name="linearLayout1">false</item>
+    <item type="id" name="tv_tab_hot">false</item>
+    <item type="id" name="tv_tab_tg">false</item>
+    <item type="id" name="tv_tab_tra">false</item>
+    <item type="id" name="iv_bottom_line">false</item>
+    <item type="id" name="iv_bottom_line2">false</item>
+    <item type="id" name="iv_bottom_line3">false</item>
+    <item type="id" name="pager">false</item>
+    <item type="id" name="layout_update">false</item>
+    <item type="id" name="iv_update">false</item>
+    <item type="id" name="tv_update">false</item>
+    <item type="id" name="triangle_update">false</item>
+    <item type="id" name="line_update">false</item>
+    <item type="id" name="layout_feedback">false</item>
+    <item type="id" name="iv_feedback">false</item>
+    <item type="id" name="tv_feedback">false</item>
+    <item type="id" name="triangle_feedback">false</item>
+    <item type="id" name="line_feedback">false</item>
+    <item type="id" name="layout_help">false</item>
+    <item type="id" name="iv_help">false</item>
+    <item type="id" name="tv_help">false</item>
+    <item type="id" name="triangle_help">false</item>
+    <item type="id" name="line_help">false</item>
+    <item type="id" name="layout_msgsetting">false</item>
+    <item type="id" name="iv_msgsetting">false</item>
+    <item type="id" name="tv_msgsetting">false</item>
+    <item type="id" name="triangle_msgsetting">false</item>
+    <item type="id" name="layout_clearcache">false</item>
+    <item type="id" name="iv_cache">false</item>
+    <item type="id" name="tv_cache">false</item>
+    <item type="id" name="triangle_cache">false</item>
+    <item type="id" name="line_cache">false</item>
+    <item type="id" name="layout_about">false</item>
+    <item type="id" name="iv_about">false</item>
+    <item type="id" name="tv_about">false</item>
+    <item type="id" name="triangle_about">false</item>
+    <item type="id" name="lly_time">false</item>
+    <item type="id" name="lv_msg_setting">false</item>
+    <item type="id" name="option_icon">false</item>
+    <item type="id" name="nick">false</item>
+    <item type="id" name="tv_info">false</item>
+    <item type="id" name="root">false</item>
+    <item type="id" name="list_container">false</item>
+    <item type="id" name="my_list">false</item>
+    <item type="id" name="progressBar">false</item>
+    <item type="id" name="container">false</item>
+    <item type="id" name="btn_search">false</item>
+    <item type="id" name="et_search">false</item>
+    <item type="id" name="ivClear">false</item>
+    <item type="id" name="pulldownview">false</item>
+    <item type="id" name="gv_list">false</item>
+    <item type="id" name="reg_phone">false</item>
+    <item type="id" name="btn_get_verify_code">false</item>
+    <item type="id" name="reg_verify_code">false</item>
+    <item type="id" name="forget_password">false</item>
+    <item type="id" name="set_password">false</item>
+    <item type="id" name="get_verify_code">false</item>
+    <item type="id" name="edit_verify_code">false</item>
+    <item type="id" name="confirm_btn">false</item>
+    <item type="id" name="pb">false</item>
+    <item type="id" name="goshop_content">false</item>
+    <item type="id" name="iv_close">false</item>
+    <item type="id" name="lv_has_fanli_area">false</item>
+    <item type="id" name="lv_has_fanli">false</item>
+    <item type="id" name="no_fanli_area">false</item>
+    <item type="id" name="warn_fanli_area">false</item>
+    <item type="id" name="goshop_copy_title">false</item>
+    <item type="id" name="arrowArea">false</item>
+    <item type="id" name="iv_description">false</item>
+    <item type="id" name="tab_btn">false</item>
+    <item type="id" name="tab_btn_mail">false</item>
+    <item type="id" name="tab_btn_phone">false</item>
+    <item type="id" name="phone_reg_area">false</item>
+    <item type="id" name="btn_confirm_phone">false</item>
+    <item type="id" name="mail_reg_area">false</item>
+    <item type="id" name="reg_email">false</item>
+    <item type="id" name="reg_username">false</item>
+    <item type="id" name="reg_password">false</item>
+    <item type="id" name="btn_confirm_mail">false</item>
+    <item type="id" name="warn_link">false</item>
+    <item type="id" name="union_login_area">false</item>
+    <item type="id" name="wechat_login">false</item>
+    <item type="id" name="view_upper">false</item>
+    <item type="id" name="ll_register_tab">false</item>
+    <item type="id" name="view_bottom">false</item>
+    <item type="id" name="fl_switch">false</item>
+    <item type="id" name="register_warn">false</item>
+    <item type="id" name="mail_address">false</item>
+    <item type="id" name="go_to_mail">false</item>
+    <item type="id" name="resend_area">false</item>
+    <item type="id" name="resend_mail_txt">false</item>
+    <item type="id" name="count_sencond">false</item>
+    <item type="id" name="edit_code">false</item>
+    <item type="id" name="send_code">false</item>
+    <item type="id" name="retrieve_pwd_mail">false</item>
+    <item type="id" name="next_step">false</item>
+    <item type="id" name="set_pwd">false</item>
+    <item type="id" name="confirm_pwd">false</item>
+    <item type="id" name="btn_modify">false</item>
+    <item type="id" name="button1">false</item>
+    <item type="id" name="result">false</item>
+    <item type="id" name="qrcode_bitmap">false</item>
+    <item type="id" name="button_back">false</item>
+    <item type="id" name="textview_title">false</item>
+    <item type="id" name="search_head">false</item>
+    <item type="id" name="list_search">false</item>
+    <item type="id" name="tv_empty">false</item>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="menu">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="splash_area">false</item>
+    <item type="id" name="splash_img">false</item>
+    <item type="id" name="line">false</item>
+    <item type="id" name="iv_totop">false</item>
+    <item type="id" name="tv_search">false</item>
+    <item type="id" name="nav_layout">false</item>
+    <item type="id" name="area_sort_brand">false</item>
+    <item type="id" name="txt_sort_area">false</item>
+    <item type="id" name="iv_sort_arrow">false</item>
+    <item type="id" name="area_all_brand">false</item>
+    <item type="id" name="txt_all_brand">false</item>
+    <item type="id" name="iv_brand_arrow">false</item>
+    <item type="id" name="iv_switch">false</item>
+    <item type="id" name="list_pulldownview">false</item>
+    <item type="id" name="list">false</item>
+    <item type="id" name="grid_pulldownview">false</item>
+    <item type="id" name="grid">false</item>
+    <item type="id" name="search_condition_list_area">false</item>
+    <item type="id" name="search_condition_list">false</item>
+    <item type="id" name="search_bar_area_mark">false</item>
+    <item type="id" name="search_bar_area">false</item>
+    <item type="id" name="et_input">false</item>
+    <item type="id" name="shopping_cart">false</item>
+    <item type="id" name="shopping_fav">false</item>
+    <item type="id" name="shopping_logistic">false</item>
+    <item type="id" name="select_list">false</item>
+    <item type="id" name="lly_context">false</item>
+    <item type="id" name="lv_tab">false</item>
+    <item type="id" name="gv_hotkey">false</item>
+    <item type="id" name="bt_goto_taobao">false</item>
+    <item type="id" name="bt_goto_gwc">false</item>
+    <item type="id" name="bt_goto_scj">false</item>
+    <item type="id" name="bt_goto_mldq">false</item>
+    <item type="id" name="LoadingBar">false</item>
+    <item type="id" name="list_area">false</item>
+    <item type="id" name="hide">false</item>
+    <item type="id" name="home_dash">false</item>
+    <item type="id" name="jhs">false</item>
+    <item type="id" name="iv_jhs">false</item>
+    <item type="id" name="tttj">false</item>
+    <item type="id" name="iv_tttj">false</item>
+    <item type="id" name="zxth">false</item>
+    <item type="id" name="iv_zxth">false</item>
+    <item type="id" name="yht">false</item>
+    <item type="id" name="iv_yht">false</item>
+    <item type="id" name="tmtm">false</item>
+    <item type="id" name="iv_tmtm">false</item>
+    <item type="id" name="fanli_money">false</item>
+    <item type="id" name="phone_fee_submit">false</item>
+    <item type="id" name="cash_submit">false</item>
+    <item type="id" name="expire_tip">false</item>
+    <item type="id" name="fanli_record_title_id">false</item>
+    <item type="id" name="lly_fl_guide">false</item>
+    <item type="id" name="iv_guide_help">false</item>
+    <item type="id" name="all_view">false</item>
+    <item type="id" name="hot_bank_list">false</item>
+    <item type="id" name="suggest_list">false</item>
+    <item type="id" name="confirm_account">false</item>
+    <item type="id" name="confirm_money">false</item>
+    <item type="id" name="confirm_fee">false</item>
+    <item type="id" name="confirm_final">false</item>
+    <item type="id" name="tr_remark">false</item>
+    <item type="id" name="confirm_remark">false</item>
+    <item type="id" name="cash_return_msg">false</item>
+    <item type="id" name="passcode_area">false</item>
+    <item type="id" name="passcode_edit">false</item>
+    <item type="id" name="passcode_btn">false</item>
+    <item type="id" name="money">false</item>
+    <item type="id" name="fee">false</item>
+    <item type="id" name="finalMoney">false</item>
+    <item type="id" name="account">false</item>
+    <item type="id" name="imageView1">false</item>
+    <item type="id" name="cash_return_sucess">false</item>
+    <item type="id" name="cash_return">false</item>
+    <item type="id" name="lly_jfb_info">false</item>
+    <item type="id" name="jfb_info">false</item>
+    <item type="id" name="jfb_info2">false</item>
+    <item type="id" name="parentPanel">false</item>
+    <item type="id" name="topPanel">false</item>
+    <item type="id" name="title_template">false</item>
+    <item type="id" name="alertTitle">false</item>
+    <item type="id" name="titleDivider">false</item>
+    <item type="id" name="contentPanel">false</item>
+    <item type="id" name="scrollView">false</item>
+    <item type="id" name="message">false</item>
+    <item type="id" name="customPanel">false</item>
+    <item type="id" name="buttonPanel">false</item>
+    <item type="id" name="leftSpacer">false</item>
+    <item type="id" name="button3">false</item>
+    <item type="id" name="button2">false</item>
+    <item type="id" name="rightSpacer">false</item>
+    <item type="id" name="message_extra">false</item>
+    <item type="id" name="buttonLayout">false</item>
+    <item type="id" name="download_icon">false</item>
+    <item type="id" name="download_name">false</item>
+    <item type="id" name="update_notification_progresstext">false</item>
+    <item type="id" name="update_notification_progressblock">false</item>
+    <item type="id" name="update_notification_progressbar">false</item>
+    <item type="id" name="lly_banner">false</item>
+    <item type="id" name="rly_banner">false</item>
+    <item type="id" name="bannerback">false</item>
+    <item type="id" name="banner_pager">false</item>
+    <item type="id" name="lly_indicator">false</item>
+    <item type="id" name="banner_header">false</item>
+    <item type="id" name="bannerForground">false</item>
+    <item type="id" name="iv_banner">false</item>
+    <item type="id" name="tv_url">false</item>
+    <item type="id" name="tv_pic">false</item>
+    <item type="id" name="search">false</item>
+    <item type="id" name="btn_reg">false</item>
+    <item type="id" name="btn_clear">false</item>
+    <item type="id" name="btn_enter">false</item>
+    <item type="id" name="btn_voice">false</item>
+    <item type="id" name="filter_btn">false</item>
+    <item type="id" name="com_taobao_tae_sdk_progress_dialog_body">false</item>
+    <item type="id" name="com_taobao_tae_sdk_progress_dialog_message">false</item>
+    <item type="id" name="com_taobao_tae_sdk_web_view_title_bar">false</item>
+    <item type="id" name="com_taobao_tae_sdk_web_view_title_bar_back_button">false</item>
+    <item type="id" name="com_taobao_tae_sdk_web_view_title_bar_title">false</item>
+    <item type="id" name="toast_textview">false</item>
+    <item type="id" name="dialog_title_msg">false</item>
+    <item type="id" name="button_ok_dialog">false</item>
+    <item type="id" name="button_cancel_dialog">false</item>
+    <item type="id" name="download_msg">false</item>
+    <item type="id" name="currentPos">false</item>
+    <item type="id" name="progressbar1">false</item>
+    <item type="id" name="textView1">false</item>
+    <item type="id" name="product1">false</item>
+    <item type="id" name="iv_product1">false</item>
+    <item type="id" name="tv_name_product1">false</item>
+    <item type="id" name="tv_price_product1">false</item>
+    <item type="id" name="iv_fan_product1">false</item>
+    <item type="id" name="tv_fan_product1">false</item>
+    <item type="id" name="product2">false</item>
+    <item type="id" name="iv_product2">false</item>
+    <item type="id" name="tv_name_product2">false</item>
+    <item type="id" name="tv_price_product2">false</item>
+    <item type="id" name="iv_fan_product2">false</item>
+    <item type="id" name="tv_fan_product2">false</item>
+    <item type="id" name="empty_instruction">false</item>
+    <item type="id" name="iconLayout">false</item>
+    <item type="id" name="entry_icon">false</item>
+    <item type="id" name="entry_name">false</item>
+    <item type="id" name="entrRoot">false</item>
+    <item type="id" name="iv_icon">false</item>
+    <item type="id" name="tv_item">false</item>
+    <item type="id" name="tv_subtitle">false</item>
+    <item type="id" name="urlLayout">false</item>
+    <item type="id" name="iv_url">false</item>
+    <item type="id" name="fancyCoverFlow">false</item>
+    <item type="id" name="button">false</item>
+    <item type="id" name="price">false</item>
+    <item type="id" name="min">false</item>
+    <item type="id" name="max">false</item>
+    <item type="id" name="discoverLayout">false</item>
+    <item type="id" name="iv">false</item>
+    <item type="id" name="imageView2">false</item>
+    <item type="id" name="lly_jump_rec_head">false</item>
+    <item type="id" name="iv_head_info">false</item>
+    <item type="id" name="rly_tips">false</item>
+    <item type="id" name="logined_area">false</item>
+    <item type="id" name="icon_area">false</item>
+    <item type="id" name="icon_avatar">false</item>
+    <item type="id" name="icon_grade">false</item>
+    <item type="id" name="name_txt">false</item>
+    <item type="id" name="money_txt_area">false</item>
+    <item type="id" name="money_txt_float_pre">false</item>
+    <item type="id" name="money_txt_float">false</item>
+    <item type="id" name="money_txt_float_suff">false</item>
+    <item type="id" name="nologin_area">false</item>
+    <item type="id" name="login_area">false</item>
+    <item type="id" name="account_grid_view">false</item>
+    <item type="id" name="pulldown_gridview">false</item>
+    <item type="id" name="float_view">false</item>
+    <item type="id" name="iv_pingan">false</item>
+    <item type="id" name="pulltorefresh">false</item>
+    <item type="id" name="ivToTop">false</item>
+    <item type="id" name="letterIndexbar">false</item>
+    <item type="id" name="tvIndexLetter">false</item>
+    <item type="id" name="tvBack">false</item>
+    <item type="id" name="taobao_nav">false</item>
+    <item type="id" name="btn_popular">false</item>
+    <item type="id" name="tvLine1">false</item>
+    <item type="id" name="btn_count">false</item>
+    <item type="id" name="tvLine2">false</item>
+    <item type="id" name="btn_credit">false</item>
+    <item type="id" name="tvLine3">false</item>
+    <item type="id" name="btn_price">false</item>
+    <item type="id" name="iv_price">false</item>
+    <item type="id" name="tvLine4">false</item>
+    <item type="id" name="pull_refresh_list">false</item>
+    <item type="id" name="image">false</item>
+    <item type="id" name="tvSubTitle">false</item>
+    <item type="id" name="tvNew">false</item>
+    <item type="id" name="tvName">false</item>
+    <item type="id" name="image_view">false</item>
+    <item type="id" name="toggle_button">false</item>
+    <item type="id" name="thumb">false</item>
+    <item type="id" name="fanli">false</item>
+    <item type="id" name="price_reduce">false</item>
+    <item type="id" name="mark_new_price_reduce">false</item>
+    <item type="id" name="mark_sold_out">false</item>
+    <item type="id" name="content1">false</item>
+    <item type="id" name="thumb1">false</item>
+    <item type="id" name="new1">false</item>
+    <item type="id" name="title1">false</item>
+    <item type="id" name="price1">false</item>
+    <item type="id" name="oldprice1">false</item>
+    <item type="id" name="baoyou">false</item>
+    <item type="id" name="info">false</item>
+    <item type="id" name="popular">false</item>
+    <item type="id" name="background">false</item>
+    <item type="id" name="pull_to_refresh_header">false</item>
+    <item type="id" name="pull_to_refresh_progress">false</item>
+    <item type="id" name="pull_to_refresh_image">false</item>
+    <item type="id" name="pull_to_refresh_text">false</item>
+    <item type="id" name="pull_to_refresh_updated_at">false</item>
+    <item type="id" name="root_layout">false</item>
+    <item type="id" name="scroll_layout">false</item>
+    <item type="id" name="bg_root">false</item>
+    <item type="id" name="bannerView">false</item>
+    <item type="id" name="lvMain">false</item>
+    <item type="id" name="rl_upper">false</item>
+    <item type="id" name="rl_worth_buy_upper">false</item>
+    <item type="id" name="tv_txt1">false</item>
+    <item type="id" name="tv_txt2">false</item>
+    <item type="id" name="iv_img1">false</item>
+    <item type="id" name="itemsEmptyListView">false</item>
+    <item type="id" name="footer_panel">false</item>
+    <item type="id" name="tv_recommend">false</item>
+    <item type="id" name="product_layout">false</item>
+    <item type="id" name="fuckyou">false</item>
+    <item type="id" name="iv_product">false</item>
+    <item type="id" name="ll_name">false</item>
+    <item type="id" name="tv_product_name">false</item>
+    <item type="id" name="grid_price_view">false</item>
+    <item type="id" name="iv_shop_icon">false</item>
+    <item type="id" name="iv_clock">false</item>
+    <item type="id" name="iv_yiyuangou">false</item>
+    <item type="id" name="iv_switch_cursor">false</item>
+    <item type="id" name="ll_switch">false</item>
+    <item type="id" name="create_time">false</item>
+    <item type="id" name="money_count">false</item>
+    <item type="id" name="status">false</item>
+    <item type="id" name="time_area">false</item>
+    <item type="id" name="time">false</item>
+    <item type="id" name="reason_area">false</item>
+    <item type="id" name="reason">false</item>
+    <item type="id" name="fb_or_money">false</item>
+    <item type="id" name="type">false</item>
+    <item type="id" name="note">false</item>
+    <item type="id" name="account_item_img">false</item>
+    <item type="id" name="account_item_txt">false</item>
+    <item type="id" name="account_item_num">false</item>
+    <item type="id" name="account_item_img_go">false</item>
+    <item type="id" name="album_cover">false</item>
+    <item type="id" name="album_name">false</item>
+    <item type="id" name="album_num">false</item>
+    <item type="id" name="avatar">false</item>
+    <item type="id" name="locale">false</item>
+    <item type="id" name="date">false</item>
+    <item type="id" name="desp">false</item>
+    <item type="id" name="vendor">false</item>
+    <item type="id" name="vendorinfo">false</item>
+    <item type="id" name="extra_panel">false</item>
+    <item type="id" name="curprice">false</item>
+    <item type="id" name="del">false</item>
+    <item type="id" name="ignore">false</item>
+    <item type="id" name="lable">false</item>
+    <item type="id" name="select_group_indicator">false</item>
+    <item type="id" name="check">false</item>
+    <item type="id" name="rly_line">false</item>
+    <item type="id" name="iv_top">false</item>
+    <item type="id" name="head">false</item>
+    <item type="id" name="tv_gotime">false</item>
+    <item type="id" name="tv_tiaozhuan">false</item>
+    <item type="id" name="tv_guize">false</item>
+    <item type="id" name="tv_notice_content">false</item>
+    <item type="id" name="checkedText">false</item>
+    <item type="id" name="price_picker">false</item>
+    <item type="id" name="seek">false</item>
+    <item type="id" name="vendorName">false</item>
+    <item type="id" name="img">false</item>
+    <item type="id" name="fanliinfo">false</item>
+    <item type="id" name="orderData">false</item>
+    <item type="id" name="tv_orderId">false</item>
+    <item type="id" name="rly_img">false</item>
+    <item type="id" name="num">false</item>
+    <item type="id" name="wxfl_info">false</item>
+    <item type="id" name="tv_check_info">false</item>
+    <item type="id" name="btn_check">false</item>
+    <item type="id" name="lv_products">false</item>
+    <item type="id" name="iv_tktj">false</item>
+    <item type="id" name="vendorname">false</item>
+    <item type="id" name="iv_channel">false</item>
+    <item type="id" name="iv_super">false</item>
+    <item type="id" name="text">false</item>
+    <item type="id" name="owner">false</item>
+    <item type="id" name="repu">false</item>
+    <item type="id" name="count">false</item>
+    <item type="id" name="tv_fanli">false</item>
+    <item type="id" name="shop_name">false</item>
+    <item type="id" name="arrow">false</item>
+    <item type="id" name="text_title">false</item>
+    <item type="id" name="text_content">false</item>
+    <item type="id" name="area">false</item>
+    <item type="id" name="content_txt">false</item>
+    <item type="id" name="has_fanli_txt">false</item>
+    <item type="id" name="popular1">false</item>
+    <item type="id" name="urlcatcah1">false</item>
+    <item type="id" name="newcatcah1">false</item>
+    <item type="id" name="content2">false</item>
+    <item type="id" name="thumb2">false</item>
+    <item type="id" name="new2">false</item>
+    <item type="id" name="title2">false</item>
+    <item type="id" name="price2">false</item>
+    <item type="id" name="popular2">false</item>
+    <item type="id" name="oldprice2">false</item>
+    <item type="id" name="urlcatcah2">false</item>
+    <item type="id" name="newcatcah2">false</item>
+    <item type="id" name="sub_contain">false</item>
+    <item type="id" name="clear">false</item>
+    <item type="id" name="catalog">false</item>
+    <item type="id" name="foot">false</item>
+    <item type="id" name="rectangleProgressBar">false</item>
+    <item type="id" name="ask_for_more">false</item>
+    <item type="id" name="ivTotop">false</item>
+    <item type="id" name="maintabs">false</item>
+    <item type="id" name="titleLayout">false</item>
+    <item type="id" name="tvTitle">false</item>
+    <item type="id" name="search_layout">false</item>
+    <item type="id" name="iv_search_icon">false</item>
+    <item type="id" name="main_radio">false</item>
+    <item type="id" name="iv_fav">false</item>
+    <item type="id" name="iv_shop">false</item>
+    <item type="id" name="indicator_layout">false</item>
+    <item type="id" name="viewpager_hot">false</item>
+    <item type="id" name="iv_empty">false</item>
+    <item type="id" name="iv_myorder">false</item>
+    <item type="id" name="tv_myorder">false</item>
+    <item type="id" name="triangle_myorder">false</item>
+    <item type="id" name="scrollView2">false</item>
+    <item type="id" name="toggleButton1">false</item>
+    <item type="id" name="fanli_business_btn">false</item>
+    <item type="id" name="all_shops_btn">false</item>
+    <item type="id" name="tvBottom">false</item>
+    <item type="id" name="ths_item_pai_img">false</item>
+    <item type="id" name="shop_icon">false</item>
+    <item type="id" name="iv_showpwd">false</item>
+    <item type="id" name="pwd_selector">false</item>
+    <item type="id" name="imageView3">false</item>
+    <item type="id" name="tv_jhm">false</item>
+    <item type="id" name="iv_logo">false</item>
+    <item type="id" name="rly_search">false</item>
+    <item type="id" name="iv_new_brand_display">false</item>
+    <item type="id" name="tv_already_buy">false</item>
+    <item type="id" name="iv_new_brand_new">false</item>
+    <item type="id" name="rl_new_brand_bottom_container">false</item>
+    <item type="id" name="rlrlrl">false</item>
+    <item type="id" name="iv_new_brand_logo">false</item>
+    <item type="id" name="rl_new_brand_bottom">false</item>
+    <item type="id" name="iv_new_fanli_range_prefix">false</item>
+    <item type="id" name="tv_new_fanli_range">false</item>
+    <item type="id" name="tv_new_fanli_range_suffix">false</item>
+    <item type="id" name="tv_new_brand_discount_suffix">false</item>
+    <item type="id" name="tv_new_brand_discount">false</item>
+    <item type="id" name="rl_new_brand_bottom_upper">false</item>
+    <item type="id" name="tv_new_brand_intro">false</item>
+    <item type="id" name="txt">false</item>
+    <item type="id" name="tvNomore">false</item>
+    <item type="id" name="notification_background">false</item>
+    <item type="id" name="notification_layout">false</item>
+    <item type="id" name="notification_icon">false</item>
+    <item type="id" name="notification_title">false</item>
+    <item type="id" name="notification_name">false</item>
+    <item type="id" name="pulldown_ad">false</item>
+    <item type="id" name="tv_msg">false</item>
+    <item type="id" name="tv_remember">false</item>
+    <item type="id" name="tv_not_save_temp">false</item>
+    <item type="id" name="tv_never">false</item>
+    <item type="id" name="close">false</item>
+    <item type="id" name="back_view">false</item>
+    <item type="id" name="goshop_content_sub">false</item>
+    <item type="id" name="tips1">false</item>
+    <item type="id" name="logo_area">false</item>
+    <item type="id" name="logo">false</item>
+    <item type="id" name="txt_logo">false</item>
+    <item type="id" name="mall_area">false</item>
+    <item type="id" name="iv_animation">false</item>
+    <item type="id" name="tv_animation">false</item>
+    <item type="id" name="sf_area">false</item>
+    <item type="id" name="sf_area1">false</item>
+    <item type="id" name="iv_fake_animate1">false</item>
+    <item type="id" name="sf_item1">false</item>
+    <item type="id" name="sf_txt1_pre">false</item>
+    <item type="id" name="sf_txt1">false</item>
+    <item type="id" name="sf_txt3">false</item>
+    <item type="id" name="sf_area2">false</item>
+    <item type="id" name="iv_fake_animate2">false</item>
+    <item type="id" name="sf_item2">false</item>
+    <item type="id" name="sf_txt2_pre">false</item>
+    <item type="id" name="sf_txt2">false</item>
+    <item type="id" name="sf_img3">false</item>
+    <item type="id" name="iv_default">false</item>
+    <item type="id" name="iv_pro_img">false</item>
+    <item type="id" name="fl_inner">false</item>
+    <item type="id" name="pull_to_refresh_sub_text">false</item>
+    <item type="id" name="tv_sub">false</item>
+    <item type="id" name="select_dialog_listview">false</item>
+    <item type="id" name="iv_single">false</item>
+    <item type="id" name="iv_left">false</item>
+    <item type="id" name="iv_right">false</item>
+    <item type="id" name="update_bar_content">false</item>
+    <item type="id" name="iv_content">false</item>
+    <item type="id" name="pb_loading">false</item>
+    <item type="id" name="ly_title">false</item>
+    <item type="id" name="tv_title1">false</item>
+    <item type="id" name="tv_title2">false</item>
+    <item type="id" name="slidingmenumain">false</item>
+    <item type="id" name="tv_shopname">false</item>
+    <item type="id" name="tv_value">false</item>
+    <item type="id" name="shopinfo">false</item>
+    <item type="id" name="tv_describe">false</item>
+    <item type="id" name="tv_service">false</item>
+    <item type="id" name="tv_speed">false</item>
+    <item type="id" name="iv_bg">false</item>
+    <item type="id" name="lly_top_info">false</item>
+    <item type="id" name="tv_native_url">false</item>
+    <item type="id" name="tv_type">false</item>
+    <item type="id" name="tv_web_url">false</item>
+    <item type="id" name="tv_web_url_type">false</item>
+    <item type="id" name="tv_name">false</item>
+    <item type="id" name="home_title_layout">false</item>
+    <item type="id" name="pd">false</item>
+    <item type="id" name="tv_fanliRange">false</item>
+    <item type="id" name="line_bottom">false</item>
+    <item type="id" name="cats_layout">false</item>
+    <item type="id" name="group_root">false</item>
+    <item type="id" name="hs_group_title">false</item>
+    <item type="id" name="ll_group_title">false</item>
+    <item type="id" name="pingan_view">false</item>
+    <item type="id" name="adview">false</item>
+    <item type="id" name="tabview">false</item>
+    <item type="id" name="iv_ad">false</item>
+    <item type="id" name="roundLayout">false</item>
+    <item type="id" name="iv_layout">false</item>
+    <item type="id" name="hint_area">false</item>
+    <item type="id" name="tv_hint">false</item>
+    <item type="id" name="iv_qcode_hint">false</item>
+    <item type="id" name="tv_alreadybuy">false</item>
+    <item type="id" name="tv_remind">false</item>
+    <item type="id" name="contentLayout">false</item>
+    <item type="id" name="product_info">false</item>
+    <item type="id" name="tv_share">false</item>
+    <item type="id" name="content_divider">false</item>
+    <item type="id" name="viewstub_shop_detail">false</item>
+    <item type="id" name="divider2">false</item>
+    <item type="id" name="ll_shop_logo">false</item>
+    <item type="id" name="iv_shop_detail_indicator">false</item>
+    <item type="id" name="divider">false</item>
+    <item type="id" name="price_view">false</item>
+    <item type="id" name="pop_gridview">false</item>
+    <item type="id" name="tv_ok">false</item>
+    <item type="id" name="tv_reset">false</item>
+    <item type="id" name="place_layout">false</item>
+    <item type="id" name="rl_product">false</item>
+    <item type="id" name="iv_remind">false</item>
+    <item type="id" name="tv_left">false</item>
+    <item type="id" name="right_layout">false</item>
+    <item type="id" name="tv_right">false</item>
+    <item type="id" name="progress_layout">false</item>
+    <item type="id" name="progressBar1">false</item>
+    <item type="id" name="tv_progress1">false</item>
+    <item type="id" name="countdown_layout">false</item>
+    <item type="id" name="tv_time0">false</item>
+    <item type="id" name="tv_time1">false</item>
+    <item type="id" name="tv_time_divider1">false</item>
+    <item type="id" name="tv_time2">false</item>
+    <item type="id" name="tv_time3">false</item>
+    <item type="id" name="tv_time_divider2">false</item>
+    <item type="id" name="tv_time4">false</item>
+    <item type="id" name="tv_time5">false</item>
+    <item type="id" name="tv_new">false</item>
+    <item type="id" name="tab_layout">false</item>
+    <item type="id" name="switch_">false</item>
+    <item type="id" name="filter">false</item>
+    <item type="id" name="tv_filter">false</item>
+    <item type="id" name="tv_tips">false</item>
+    <item type="id" name="qgLayout">false</item>
+    <item type="id" name="tv_qianggou">false</item>
+    <item type="id" name="yglayout">false</item>
+    <item type="id" name="superfan_tab_view_shade">false</item>
+    <item type="id" name="tab_label">false</item>
+    <item type="id" name="iv_tab">false</item>
+    <item type="id" name="tv_tab">false</item>
+    <item type="id" name="tae_sdk_login_qr_title_bar">false</item>
+    <item type="id" name="tae_sdk_login_qr_text_taobao">false</item>
+    <item type="id" name="tae_sdk_qr_login_button_close">false</item>
+    <item type="id" name="tae_sdk_login_qr_side_bar">false</item>
+    <item type="id" name="tae_sdk_login_qr_button_scan">false</item>
+    <item type="id" name="tae_sdk_login_qr_button_password">false</item>
+    <item type="id" name="tae_sdk_login_qr_web_view">false</item>
+    <item type="id" name="lly_title">false</item>
+    <item type="id" name="timePicker1">false</item>
+    <item type="id" name="timePicker2">false</item>
+    <item type="id" name="textView2">false</item>
+    <item type="id" name="lly_con">false</item>
+    <item type="id" name="hour">false</item>
+    <item type="id" name="mins">false</item>
+    <item type="id" name="hour_end">false</item>
+    <item type="id" name="mins_end">false</item>
+    <item type="id" name="btn_datetime_sure">false</item>
+    <item type="id" name="btn_datetime_cancel">false</item>
+    <item type="id" name="lyTitleBar">false</item>
+    <item type="id" name="title_bg">false</item>
+    <item type="id" name="tv_close_browser">false</item>
+    <item type="id" name="iv_title">false</item>
+    <item type="id" name="home_search">false</item>
+    <item type="id" name="search_text">false</item>
+    <item type="id" name="toast_progressbar">false</item>
+    <item type="id" name="umeng_common_progress_text">false</item>
+    <item type="id" name="umeng_common_notification_controller">false</item>
+    <item type="id" name="umeng_common_rich_notification_continue">false</item>
+    <item type="id" name="umeng_common_rich_notification_cancel">false</item>
+    <item type="id" name="umeng_common_notification">false</item>
+    <item type="id" name="umeng_common_title">false</item>
+    <item type="id" name="umeng_common_progress_bar">false</item>
+    <item type="id" name="umeng_fb_bar_header">false</item>
+    <item type="id" name="iv_umeng_fb_back">false</item>
+    <item type="id" name="umeng_fb_contact_header">false</item>
+    <item type="id" name="umeng_fb_back">false</item>
+    <item type="id" name="umeng_fb_save">false</item>
+    <item type="id" name="umeng_fb_contact_info">false</item>
+    <item type="id" name="umeng_fb_contact_update_at">false</item>
+    <item type="id" name="umeng_fb_conversation_header">false</item>
+    <item type="id" name="umeng_fb_conversation_contact_entry">false</item>
+    <item type="id" name="tv_con_info">false</item>
+    <item type="id" name="umeng_fb_conversation_list_wrapper">false</item>
+    <item type="id" name="rly_welcome">false</item>
+    <item type="id" name="tv_welcome">false</item>
+    <item type="id" name="umeng_fb_reply_list">false</item>
+    <item type="id" name="umeng_fb_reply_content_wrapper">false</item>
+    <item type="id" name="umeng_fb_send">false</item>
+    <item type="id" name="umeng_fb_reply_content">false</item>
+    <item type="id" name="umeng_fb_conversation_umeng_logo">false</item>
+    <item type="id" name="umeng_fb_list_reply_header">false</item>
+    <item type="id" name="umeng_fb_reply_date">false</item>
+    <item type="id" name="umeng_socialize_funcation_area">false</item>
+    <item type="id" name="umeng_socialize_comment_bt">false</item>
+    <item type="id" name="umeng_socialize_action_comment_im">false</item>
+    <item type="id" name="umeng_socialize_action_comment_tv">false</item>
+    <item type="id" name="umeng_socialize_like_bt">false</item>
+    <item type="id" name="umeng_socialize_like_bt_show">false</item>
+    <item type="id" name="umeng_socialize_like_icon">false</item>
+    <item type="id" name="umeng_socialize_action_like_tv">false</item>
+    <item type="id" name="umeng_socialize_like_bt_progress">false</item>
+    <item type="id" name="umeng_socialize_share_bt">false</item>
+    <item type="id" name="umeng_socialize_action_share_im">false</item>
+    <item type="id" name="umeng_socialize_action_share_tv">false</item>
+    <item type="id" name="umeng_socialize_user_center_bt">false</item>
+    <item type="id" name="umeng_socialize_action_user_center_im">false</item>
+    <item type="id" name="umeng_socialize_action_user_center_tv">false</item>
+    <item type="id" name="umeng_socialize_action_pv_im">false</item>
+    <item type="id" name="umeng_socialize_action_pv_tv">false</item>
+    <item type="id" name="section">false</item>
+    <item type="id" name="umeng_socialize_avatar_imv">false</item>
+    <item type="id" name="umeng_socialize_text_view">false</item>
+    <item type="id" name="umeng_socialize_line_serach">false</item>
+    <item type="id" name="listView">false</item>
+    <item type="id" name="slideBar">false</item>
+    <item type="id" name="umeng_socialize_progress">false</item>
+    <item type="id" name="umeng_socialize_tipinfo">false</item>
+    <item type="id" name="umeng_socialize_alert_body">false</item>
+    <item type="id" name="umeng_socialize_alert_footer">false</item>
+    <item type="id" name="umeng_socialize_alert_button">false</item>
+    <item type="id" name="umeng_socialize_bind_qzone">false</item>
+    <item type="id" name="umeng_socialize_bind_tel">false</item>
+    <item type="id" name="umeng_socialize_bind_sina">false</item>
+    <item type="id" name="umeng_socialize_bind_renren">false</item>
+    <item type="id" name="umeng_socialize_bind_douban">false</item>
+    <item type="id" name="umeng_socialize_bind_no_tip">false</item>
+    <item type="id" name="umeng_socialize_bind_cancel">false</item>
+    <item type="id" name="umeng_socialize_comment_item">false</item>
+    <item type="id" name="umeng_socialize_comment_item_profile_gp">false</item>
+    <item type="id" name="umeng_socialize_comment_avatar">false</item>
+    <item type="id" name="umeng_socialize_comment_item_name">false</item>
+    <item type="id" name="umeng_socialize_comment_item_content">false</item>
+    <item type="id" name="umeng_socialize_comment_item_time">false</item>
+    <item type="id" name="umeng_socialize_comment_item_has_location">false</item>
+    <item type="id" name="umeng_socialize_map">false</item>
+    <item type="id" name="umeng_socialize_map_invisable">false</item>
+    <item type="id" name="umeng_socialize_info">false</item>
+    <item type="id" name="umeng_socialize_comment_more_root">false</item>
+    <item type="id" name="umeng_socialize_content">false</item>
+    <item type="id" name="umeng_socialize_text">false</item>
+    <item type="id" name="umeng_socialize_pb">false</item>
+    <item type="id" name="umeng_socialize_line_edit">false</item>
+    <item type="id" name="umeng_socialize_comment_write">false</item>
+    <item type="id" name="umeng_socialize_comment_list">false</item>
+    <item type="id" name="umeng_socialize_comment_list_progress">false</item>
+    <item type="id" name="umeng_socialize_title">false</item>
+    <item type="id" name="umeng_xp_ScrollView">false</item>
+    <item type="id" name="umeng_socialize_first_area_title">false</item>
+    <item type="id" name="umeng_socialize_first_area">false</item>
+    <item type="id" name="umeng_socialize_second_area_title">false</item>
+    <item type="id" name="umeng_socialize_second_area">false</item>
+    <item type="id" name="umeng_socialize_full_alert_dialog_item_icon">false</item>
+    <item type="id" name="umeng_socialize_full_alert_dialog_item_text">false</item>
+    <item type="id" name="umeng_socialize_full_alert_dialog_item_status">false</item>
+    <item type="id" name="umeng_socialize_full_alert_dialog_divider">false</item>
+    <item type="id" name="umeng_socialize_titlebar">false</item>
+    <item type="id" name="umeng_socialize_follow">false</item>
+    <item type="id" name="umeng_socialize_follow_check">false</item>
+    <item type="id" name="webView">false</item>
+    <item type="id" name="progress_bar_parent">false</item>
+    <item type="id" name="umeng_socialize_post_comment_titlebar">false</item>
+    <item type="id" name="umeng_socialize_post_comment_bottom_area">false</item>
+    <item type="id" name="umeng_socialize_post_comment_fetch_img">false</item>
+    <item type="id" name="umeng_socialize_post_comment_location">false</item>
+    <item type="id" name="umeng_socialize_post_comment_previewImg">false</item>
+    <item type="id" name="umeng_socialize_location_ic">false</item>
+    <item type="id" name="umeng_socialize_location_progressbar">false</item>
+    <item type="id" name="umeng_socialize_post_ws_area">false</item>
+    <item type="id" name="umeng_socialize_post_comment_edittext">false</item>
+    <item type="id" name="umeng_socialize_post_cws_ic">false</item>
+    <item type="id" name="umeng_socialize_post_cws_selected">false</item>
+    <item type="id" name="umeng_socialize_share_root">false</item>
+    <item type="id" name="umeng_socialize_share_titlebar">false</item>
+    <item type="id" name="umeng_socialize_share_bottom_area">false</item>
+    <item type="id" name="umeng_socialize_post_fetch_image">false</item>
+    <item type="id" name="umeng_socialize_follow_layout">false</item>
+    <item type="id" name="umeng_socialize_share_location">false</item>
+    <item type="id" name="umeng_socialize_share_at">false</item>
+    <item type="id" name="umeng_socialize_share_previewImg">false</item>
+    <item type="id" name="umeng_socialize_share_previewImg_remove">false</item>
+    <item type="id" name="umeng_socialize_share_previewImg_progressbar">false</item>
+    <item type="id" name="umeng_socialize_share_edittext">false</item>
+    <item type="id" name="umeng_socialize_share_word_num">false</item>
+    <item type="id" name="umeng_socialize_shareboard_image">false</item>
+    <item type="id" name="umeng_socialize_shareboard_pltform_name">false</item>
+    <item type="id" name="umeng_socialize_spinner_img">false</item>
+    <item type="id" name="umeng_socialize_spinner_txt">false</item>
+    <item type="id" name="umeng_socialize_title_bar_leftBt">false</item>
+    <item type="id" name="umeng_socialize_title_bar_middleTv">false</item>
+    <item type="id" name="umeng_socialize_title_bar_middle_tab">false</item>
+    <item type="id" name="umeng_socialize_title_middle_left">false</item>
+    <item type="id" name="umeng_socialize_title_middle_right">false</item>
+    <item type="id" name="umeng_socialize_title_bar_rightBt">false</item>
+    <item type="id" name="umeng_socialize_title_bar_rightBt_progress">false</item>
+    <item type="id" name="umeng_socialize_load_error">false</item>
+    <item type="id" name="umeng_socialize_ucenter_info">false</item>
+    <item type="id" name="umeng_socialize_ic">false</item>
+    <item type="id" name="umeng_socialize_title_tv">false</item>
+    <item type="id" name="umeng_socialize_loginNm">false</item>
+    <item type="id" name="umeng_socialize_login_switch">false</item>
+    <item type="id" name="umeng_socialize_loginButton">false</item>
+    <item type="id" name="umeng_socialize_loginAddr">false</item>
+    <item type="id" name="umeng_socialize_share_area">false</item>
+    <item type="id" name="umeng_socialize_share_tv">false</item>
+    <item type="id" name="umeng_socialize_share_config_area">false</item>
+    <item type="id" name="umeng_socialize_icon">false</item>
+    <item type="id" name="umeng_socialize_msg">false</item>
+    <item type="id" name="umeng_socialize_toggle">false</item>
+    <item type="id" name="umeng_socialize_divider">false</item>
+    <item type="id" name="tv_unlock_fanli_hint_left">false</item>
+    <item type="id" name="unlock_mask">false</item>
+    <item type="id" name="mask_unlockbar">false</item>
+    <item type="id" name="icon_left">false</item>
+    <item type="id" name="icon_center">false</item>
+    <item type="id" name="icon_right">false</item>
+    <item type="id" name="mark_view">false</item>
+    <item type="id" name="right_tv_mask">false</item>
+    <item type="id" name="right_tv_mask_yuan">false</item>
+    <item type="id" name="left_tv_mask">false</item>
+    <item type="id" name="left_tv_mask_yuan">false</item>
+    <item type="id" name="iv_tips">false</item>
+    <item type="id" name="iv_finger">false</item>
+    <item type="id" name="btn_cancel">false</item>
+    <item type="id" name="fb_money_area">false</item>
+    <item type="id" name="fb_money">false</item>
+    <item type="id" name="id_area">false</item>
+    <item type="id" name="id_edit">false</item>
+    <item type="id" name="tab_btn_alipay">false</item>
+    <item type="id" name="tab_btn_bank">false</item>
+    <item type="id" name="alipay_area">false</item>
+    <item type="id" name="alipay_account">false</item>
+    <item type="id" name="alipay_pwd">false</item>
+    <item type="id" name="bank_area">false</item>
+    <item type="id" name="bank_name_area_3">false</item>
+    <item type="id" name="bank_name_show3">false</item>
+    <item type="id" name="bank_trunk_area">false</item>
+    <item type="id" name="bank_trunk3">false</item>
+    <item type="id" name="trunk_line">false</item>
+    <item type="id" name="bank_card_id_3">false</item>
+    <item type="id" name="bank_name_3">false</item>
+    <item type="id" name="category_title_area">false</item>
+    <item type="id" name="category_icon">false</item>
+    <item type="id" name="category_title">false</item>
+    <item type="id" name="alipa_edit">false</item>
+    <item type="id" name="bottom_bar">false</item>
+    <item type="id" name="iv_back">false</item>
+    <item type="id" name="iv_refresh">false</item>
+    <item type="id" name="warn_hot_area">false</item>
+    <item type="id" name="warn_area">false</item>
+    <item type="id" name="iv_fanli">false</item>
+    <item type="id" name="tv_price_pre">false</item>
+    <item type="id" name="shopname">false</item>
+    <item type="id" name="shopicon">false</item>
+    <item type="id" name="flip_layout">false</item>
+    <item type="id" name="bg_view">false</item>
+    <item type="id" name="tv_sub_title">false</item>
+    <item type="id" name="mark">false</item>
+    <item type="id" name="bg_view_back">false</item>
+    <item type="id" name="tv_title_back">false</item>
+    <item type="id" name="iv_channel_back">false</item>
+    <item type="id" name="top_line">false</item>
+    <item type="id" name="banner1">false</item>
+    <item type="id" name="banner_grid">false</item>
+    <item type="id" name="banner_txt">false</item>
+    <item type="id" name="notification_image">false</item>
+    <item type="id" name="notification_time">false</item>
+    <item type="id" name="notification_text">false</item>
+    <item type="id" name="main_left_fragment">false</item>
+    <item type="id" name="area_banner">false</item>
+    <item type="id" name="iv_area_banner">false</item>
+    <item type="id" name="rest_area">false</item>
+    <item type="id" name="iv_rest_day">false</item>
+    <item type="id" name="iv_show_description_down">false</item>
+    <item type="id" name="area_description">false</item>
+    <item type="id" name="tv_description">false</item>
+    <item type="id" name="iv_show_description_up">false</item>
+    <item type="id" name="header_info_area">false</item>
+    <item type="id" name="area_brand_title">false</item>
+    <item type="id" name="tv_brand_vision">false</item>
+    <item type="id" name="tv_brand_fanli_pre">false</item>
+    <item type="id" name="tv_brand_fanli">false</item>
+    <item type="id" name="tv_brand_fanli_suff">false</item>
+    <item type="id" name="tv_brand_discount_pre">false</item>
+    <item type="id" name="tv_brand_discount">false</item>
+    <item type="id" name="tv_brand_discount_suff">false</item>
+    <item type="id" name="icon_logo">false</item>
+    <item type="id" name="ad_area">false</item>
+    <item type="id" name="tv_ad">false</item>
+    <item type="id" name="tv_cuiniu_real">false</item>
+    <item type="id" name="tv_cuiniu_pingan">false</item>
+    <item type="id" name="rly_cat">false</item>
+    <item type="id" name="cat_pager">false</item>
+    <item type="id" name="two_area">false</item>
+    <item type="id" name="two_area0">false</item>
+    <item type="id" name="iv_two0">false</item>
+    <item type="id" name="iv_two_icon0">false</item>
+    <item type="id" name="info_layout_two0">false</item>
+    <item type="id" name="tv_two_title0">false</item>
+    <item type="id" name="tv_two_subtitle0">false</item>
+    <item type="id" name="two_area1">false</item>
+    <item type="id" name="iv_two1">false</item>
+    <item type="id" name="iv_two_icon1">false</item>
+    <item type="id" name="info_layout_two1">false</item>
+    <item type="id" name="tv_two_title1">false</item>
+    <item type="id" name="tv_two_subtitle1">false</item>
+    <item type="id" name="divider_two_bottom">false</item>
+    <item type="id" name="three_area">false</item>
+    <item type="id" name="three_area0">false</item>
+    <item type="id" name="info_layout_three0">false</item>
+    <item type="id" name="tv_three_title0">false</item>
+    <item type="id" name="tv_three_subtitle0">false</item>
+    <item type="id" name="iv_three0">false</item>
+    <item type="id" name="iv_three_icon0">false</item>
+    <item type="id" name="three_area1">false</item>
+    <item type="id" name="iv_three_icon1">false</item>
+    <item type="id" name="iv_three1">false</item>
+    <item type="id" name="info_layout_three1">false</item>
+    <item type="id" name="tv_three_title1">false</item>
+    <item type="id" name="tv_three_subtitle1">false</item>
+    <item type="id" name="three_area2">false</item>
+    <item type="id" name="iv_three_icon2">false</item>
+    <item type="id" name="iv_three2">false</item>
+    <item type="id" name="info_layout_three2">false</item>
+    <item type="id" name="tv_three_title2">false</item>
+    <item type="id" name="tv_three_subtitle2">false</item>
+    <item type="id" name="divider_top">false</item>
+    <item type="id" name="divider_three_bottom">false</item>
+    <item type="id" name="product_detail_info">false</item>
+    <item type="id" name="tv_like">false</item>
+    <item type="id" name="titlelayout_inner">false</item>
+    <item type="id" name="tv_title_inner">false</item>
+    <item type="id" name="bottom_layout">false</item>
+    <item type="id" name="tv_close">false</item>
+    <item type="id" name="iv_go_back">false</item>
+    <item type="id" name="iv_go_forward">false</item>
+    <item type="id" name="iv_go_refresh">false</item>
+    <item type="id" name="webviewContainer">false</item>
+    <item type="id" name="indicator">false</item>
+    <item type="id" name="arrow_area">false</item>
+    <item type="id" name="menu_quit">false</item>
+    <item type="id" name="menu_settings">false</item>
+    <item type="id" name="menu_search">false</item>
+    <item type="id" name="menu_filter">false</item>
+    <item type="id" name="menu_info">false</item>
+    <item type="id" name="action_settings">false</item>
+    <item type="id" name="menu_option">false</item>
+    <item type="id" name="menu_refresh">false</item>
+    <item type="id" name="menu_show">false</item>
+</resources>

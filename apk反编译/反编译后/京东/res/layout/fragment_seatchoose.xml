@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_top" style="@style/top_rl">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ll_btn_back" style="@style/top_iv_back" />
+        <TextView android:id="@id/tv_title" android:text="京东电影票" android:singleLine="true" style="@style/top_tv_title" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/ll_seatremark" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_below="@id/rl_top">
+        <com.jingdong.common.movie.widget.seats.SSThumView android:id="@id/ss_ssthumview" android:layout_width="@dimen/ss_seat_thum_size_w" android:layout_height="@dimen/ss_seat_thum_size_h" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/seat_normal" android:layout_width="wrap_content" android:layout_height="56.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/font_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可选" android:drawableLeft="@drawable/icon_seat_normal_small" android:drawablePadding="7.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/seat_checked" android:layout_width="wrap_content" android:layout_height="56.0dip" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/seat_normal">
+                <TextView android:textSize="13.0sp" android:textColor="@color/font_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选中" android:drawableLeft="@drawable/icon_seat_checked_small" android:drawablePadding="7.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/seat_lock" android:layout_width="wrap_content" android:layout_height="56.0dip" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/seat_checked">
+                <TextView android:textSize="15.0sp" android:textColor="@color/font_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已售" android:drawableLeft="@drawable/icon_seat_lock_small" android:drawablePadding="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/seat_love" android:layout_width="wrap_content" android:layout_height="56.0dip" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/seat_lock">
+                <TextView android:textSize="13.0sp" android:textColor="@color/font_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="情侣座" android:drawableLeft="@drawable/icon_seat_love_small" android:drawablePadding="7.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:id="@id/tv_line_a" android:background="@drawable/gap_line1" android:layout_width="wrap_content" android:layout_height="0.5dip" android:layout_marginRight="10.0dip" android:layout_below="@id/ll_seatremark" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="13.0dip" android:textColor="#ff686868" android:gravity="center_vertical" android:id="@id/seat_1" android:background="@drawable/bg_seat_1" android:paddingLeft="6.0dip" android:visibility="gone" android:layout_width="@dimen/movie_choose_seat_width" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0dip" android:textColor="#ff686868" android:gravity="center_vertical" android:id="@id/seat_2" android:background="@drawable/bg_seat_1" android:paddingLeft="6.0dip" android:visibility="gone" android:layout_width="@dimen/movie_choose_seat_width" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+            <TextView android:textSize="13.0dip" android:textColor="#ff686868" android:gravity="center_vertical" android:id="@id/seat_3" android:background="@drawable/bg_seat_1" android:paddingLeft="6.0dip" android:visibility="gone" android:layout_width="@dimen/movie_choose_seat_width" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+            <TextView android:textSize="13.0dip" android:textColor="#ff686868" android:gravity="center_vertical" android:id="@id/seat_4" android:background="@drawable/bg_seat_1" android:paddingLeft="6.0dip" android:visibility="gone" android:layout_width="@dimen/movie_choose_seat_width" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+        </LinearLayout>
+        <TextView android:id="@id/tv_line_d" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/ll_checked_main" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="15.0dip" android:textColor="#ffbfbfbf" android:id="@id/et_mobile" android:background="@null" android:paddingLeft="10.0dip" android:layout_width="292.0dip" android:layout_height="50.0dip" android:hint="请填写取票手机号码" android:inputType="number" />
+            <View android:background="#ffe0e0e0" android:layout_width="0.5dip" android:layout_height="50.0dip" android:layout_marginRight="67.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_add_contact" android:layout_width="68.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@id/img_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:src="@drawable/icon_contact" />
+                <TextView android:textSize="11.0dip" android:textColor="#ff686868" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="选择联系人" android:layout_below="@id/img_contact" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:id="@id/tv_line_e" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:paddingLeft="@dimen/main_pd_left" android:paddingRight="@dimen/main_pd_right" android:layout_width="fill_parent" android:layout_height="67.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="#ff252525" android:id="@id/tv_mname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/movie_choose_seat_date_text_size" android:textColor="#ff686868" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="@dimen/movie_choose_seat_price_text_size" android:textColor="#ff686868" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/tv_time" android:layout_alignTop="@id/tv_time" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_subseat" android:background="@drawable/button_a_01" android:layout_width="77.0dip" android:layout_height="39.0dip" android:text="确认选座" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_bottom_main" android:layout_below="@id/tv_line_a">
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_hall_name" android:background="@drawable/bg_screen" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+        <com.jingdong.common.movie.widget.seats.SSView android:id="@id/mSSView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="14.0dip" />
+    </LinearLayout>
+    <com.jingdong.common.movie.widget.LoadingView android:id="@id/wgt_loading_ssview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_bottom_main" android:layout_below="@id/tv_line_a" />
+</RelativeLayout>

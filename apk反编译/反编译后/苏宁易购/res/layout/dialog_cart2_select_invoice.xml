@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/android_public_space_10px" android:paddingRight="@dimen/android_public_space_10px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_btn_white_round_corner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_invoice_null" android:paddingLeft="@dimen/pub_margin_or_padding_space_fifteen" android:paddingRight="@dimen/pub_margin_or_padding_space_fifteen" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:minHeight="@dimen/pub_margin_or_padding_space_sixty">
+            <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/search_tab_color" android:gravity="center_vertical" android:id="@id/tv_invoice_null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_shopping_cart2_no_ticket" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_invoice_null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <RelativeLayout android:id="@id/rl_invoice_common" android:paddingLeft="@dimen/pub_margin_or_padding_space_fifteen" android:paddingRight="@dimen/pub_margin_or_padding_space_fifteen" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:minHeight="@dimen/pub_margin_or_padding_space_sixty">
+            <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/search_tab_color" android:gravity="center_vertical" android:id="@id/tv_invoice_common" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shoppingcart_common_invoice" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_invoice_common" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <RelativeLayout android:id="@id/rl_invoice_electronic" android:paddingLeft="@dimen/pub_margin_or_padding_space_fifteen" android:paddingRight="@dimen/pub_margin_or_padding_space_fifteen" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:minHeight="@dimen/pub_margin_or_padding_space_sixty">
+            <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/search_tab_color" android:gravity="center_vertical" android:id="@id/tv_invoice_electronic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shoppingcart_electronic_invoice" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_invoice_electronic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_twenty_one" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/bg_btn_white_round_corner" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:layout_marginTop="@dimen/android_public_space_10px" android:layout_marginBottom="@dimen/android_public_space_10px" android:text="取消" />
+</LinearLayout>

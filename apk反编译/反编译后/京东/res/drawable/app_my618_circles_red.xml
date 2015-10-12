@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#0fffffff" />
+            <stroke android:antialias="true" android:width="0.5dip" android:color="#fff790bc" />
+            <size android:height="303.75dip" android:width="303.75dip" />
+            <padding android:left="@dimen/my_618_dna_circle_padding_1" android:top="@dimen/my_618_dna_circle_padding_1" android:right="@dimen/my_618_dna_circle_padding_1" android:bottom="@dimen/my_618_dna_circle_padding_1" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#00000000" />
+            <stroke android:antialias="true" android:width="0.5dip" android:color="#fff790bc" />
+            <size android:height="217.125dip" android:width="217.125dip" />
+            <padding android:left="@dimen/my_618_dna_circle_padding_2" android:top="@dimen/my_618_dna_circle_padding_2" android:right="@dimen/my_618_dna_circle_padding_2" android:bottom="@dimen/my_618_dna_circle_padding_2" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#00000000" />
+            <stroke android:antialias="true" android:width="0.5dip" android:color="#fff790bc" />
+            <size android:height="123.75dip" android:width="123.75dip" />
+            <padding android:left="@dimen/my_618_dna_circle_padding_3" android:top="@dimen/my_618_dna_circle_padding_3" android:right="@dimen/my_618_dna_circle_padding_3" android:bottom="@dimen/my_618_dna_circle_padding_3" />
+        </shape>
+    </item>
+</layer-list>

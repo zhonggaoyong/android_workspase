@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootview" android:background="@color/newshishicai_bg_has_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/newshishicai_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/playtype_select_1" android:text="@string/newshishi_playtype_daxiaodanshuang" style="@style/lottery_newshishi_playtype_selecter_item" />
+            <RadioButton android:id="@id/playtype_select_2" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/newshishi_playtype_yixingzhixuan" style="@style/lottery_newshishi_playtype_selecter_item" />
+            <RadioButton android:id="@id/playtype_select_3" android:text="@string/newshishi_playtype_renxuanyi" style="@style/lottery_newshishi_playtype_selecter_item" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <RadioButton android:id="@id/playtype_select_4" android:text="@string/newshishi_playtype_renxuaner" style="@style/lottery_newshishi_playtype_selecter_item" />
+            <RadioButton android:id="@id/playtype_select_5" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/newshishi_playtype_erxingzhixuan" style="@style/lottery_newshishi_playtype_selecter_item" />
+            <RadioButton android:id="@id/playtype_select_6" android:text="@string/newshishi_playtype_erxingzuxuan" style="@style/lottery_newshishi_playtype_selecter_item" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <RadioButton android:id="@id/playtype_select_7" android:text="@string/newshishi_playtype_sanxingzhixuan" style="@style/lottery_newshishi_playtype_selecter_item" />
+            <RadioButton android:id="@id/playtype_select_8" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/newshishi_playtype_sanxingzusan" style="@style/lottery_newshishi_playtype_selecter_item" />
+            <RadioButton android:id="@id/playtype_select_9" android:text="@string/newshishi_playtype_sanxingzuliu" style="@style/lottery_newshishi_playtype_selecter_item" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <RadioButton android:id="@id/playtype_select_10" android:text="@string/newshishi_playtype_sixingzhixuan" style="@style/lottery_newshishi_playtype_selecter_item" />
+            <RadioButton android:id="@id/playtype_select_11" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/newshishi_playtype_wuxingzhixuan" style="@style/lottery_newshishi_playtype_selecter_item" />
+            <RadioButton android:id="@id/playtype_select_12" android:text="@string/newshishi_playtype_wuxingtongxuan" style="@style/lottery_newshishi_playtype_selecter_item" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.app.mall.utils.ui.JDResizeLayout android:id="@id/jdresize_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="true">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@drawable/none" android:layout_width="fill_parent" android:layout_height="800.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </com.jingdong.app.mall.utils.ui.JDResizeLayout>
+</LinearLayout>

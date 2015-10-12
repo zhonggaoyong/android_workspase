@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="@dimen/ratepop_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/ratepop_title" />
+    <TextView android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffff4d7b" android:gravity="center" android:layout_gravity="center" android:id="@id/ratepop_good" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="@string/ratepop_good" />
+    <TextView android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffff4d7b" android:gravity="center" android:layout_gravity="center" android:id="@id/ratepop_feedback" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="@string/ratepop_feedback" />
+    <TextView android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffff4d7b" android:gravity="center" android:layout_gravity="center" android:id="@id/ratepop_cancel" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="@string/ratepop_cancel" />
+</LinearLayout>

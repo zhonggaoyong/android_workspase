@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/rootView" android:background="@android:color/transparent" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/topView" android:paddingTop="21.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/gloab_sale" android:background="@drawable/label_icon_global" android:visibility="visible" android:layout_width="48.0dip" android:layout_height="16.0dip" android:layout_marginRight="8.0dip" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff585c64" android:ellipsize="marquee" android:id="@id/labelText" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/txt_time_broadcast" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" />
+        <com.achievo.vipshop.view.RapidProductListTickText android:textSize="13.0dip" android:textColor="#ff585c64" android:id="@id/txt_time_broadcast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <com.achievo.vipshop.view.widget.CouponTipsView android:id="@id/couponTipsView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/chooseViewContainer" />
+</RelativeLayout>

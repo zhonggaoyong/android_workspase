@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_more_view" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/l_layout_1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.jingdong.common.ui.JDProgressBar android:layout_gravity="center_vertical" android:id="@id/progressBar_1" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="@dimen/lib_story_t_middle_size" android:layout_gravity="center_vertical" android:id="@id/txt_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/lib_story_load_data" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/l_layout_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/lib_story_t_middle_size" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="more" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="10.0dip" android:layout_width="310.0dip" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/channel_miaosha_item_first" android:layout_width="300.0dip" android:layout_height="200.0dip" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/mobile_channel_miaosha_pic_leftcorner" android:background="@drawable/mobile_channel_miaosha_leftcorner" android:padding="2.0dip" android:layout_width="80.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="11.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/mobile_channel_miaosha_pic_leftcorner_count" android:background="@drawable/mobile_channel_miaosha_leftcorner_count" android:layout_width="75.0dip" android:layout_height="15.5dip" android:text="" android:singleLine="true" />
+        <RelativeLayout android:gravity="center" android:id="@id/mobile_channel_miaosha_pic_leftcorner_time_layout" android:layout_width="fill_parent" android:layout_height="15.5dip">
+            <TextView android:textSize="11.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/mobile_channel_miaosha_pic_leftcorner_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:singleLine="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="@drawable/mobile_channel_miaosha_image_bottom" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="300.0dip" android:layout_height="65.0dip" android:layout_alignLeft="@id/channel_miaosha_item_first" android:layout_alignRight="@id/channel_miaosha_item_first" android:layout_alignBottom="@id/channel_miaosha_item_first">
+        <RelativeLayout android:id="@id/mobile_channel_miaosha_info" android:layout_width="fill_parent" android:layout_height="27.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ff252525" android:ellipsize="end" android:gravity="center" android:id="@id/mobile_channel_miaosha_pic_name" android:layout_width="200.0dip" android:layout_height="fill_parent" android:text="asdfiajdf;ajdklfjalksdjfa;kdsfj;asdkjf;ksdfjakdl" android:singleLine="true" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff252525" android:gravity="center" android:id="@id/mobile_channel_miaosha_pic_price" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/mobile_channel_miaosha_btn" android:background="@drawable/mobile_channel_miaosha_btn" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_below="@id/mobile_channel_miaosha_info">
+            <TextView android:textSize="16.0dip" android:textColor="#ff868686" android:gravity="center" android:id="@id/channel_miaosha_btn_text" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/mobile_channel_miaosha_tomorrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mobile_channel_tomorrow" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/mobile_channel_miaosha_img_soldout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:background="@drawable/mobile_channel_miaosha_soldout_bg" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="41.0dip" android:text="已售罄" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/channel_miaosha_item_bg1" android:background="@drawable/limit_buy_list_image_backgroud_png" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignLeft="@id/channel_miaosha_item_first" android:layout_alignRight="@id/channel_miaosha_item_first" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/channel_miaosha_item_bg2" android:background="@drawable/mobile_channel_miaosha_pic_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignLeft="@id/channel_miaosha_item_first" android:layout_alignRight="@id/channel_miaosha_item_first" />
+</RelativeLayout>

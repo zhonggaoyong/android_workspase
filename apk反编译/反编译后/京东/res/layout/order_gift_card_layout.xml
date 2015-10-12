@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/order_gift_card_layout" android:background="#fff0e9eb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gift_card_top" android:scaleType="fitXY" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/fill_order_delivery_light" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/order_detail_gift_sale_wishes" />
+    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/fill_order_content_virtual1" android:id="@id/order_gift_card_to_name" android:paddingTop="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/fill_order_content_virtual1" android:id="@id/order_gift_card_content" android:paddingTop="8.0dip" android:paddingRight="21.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/fill_order_content_virtual1" android:layout_gravity="right" android:id="@id/order_gift_card_from_name" android:paddingTop="8.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="21.0dip" />
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gift_card_bottom" android:scaleType="fitXY" />
+</LinearLayout>

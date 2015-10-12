@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/home_homepage_top_layout" android:background="@drawable/category_product_question_search_bg" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/category_product_question_search_frame" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0">
+            <EditText android:textColor="@color/main_default_black_text_color" android:textColorHint="@color/hint_text_color" android:gravity="left|center" android:id="@id/gomestore_citylist_et_input" android:background="@android:color/transparent" android:paddingLeft="6.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/more_gomestore_search_hit" android:singleLine="true" android:drawableLeft="@drawable/homepage_search_icon" android:layout_weight="1.0" android:imeOptions="actionSearch" />
+        </LinearLayout>
+        <Button android:textSize="14.0sp" android:textColor="@color/common_top_btn_text_color_selector" android:layout_gravity="center_vertical" android:id="@id/home_homepage_search_btn" android:background="@drawable/common_title_btn_bg_selector" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="32.0dip" android:layout_marginRight="6.0dip" android:text="@string/cancel" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="120.0dip" layout="@layout/home_search_tips_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/common_scrollbar_style">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/more_hot_city" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/more_hot_city" />
+            <com.gome.ecmall.custom.DisScrollListView android:id="@id/hotcity_lv_first" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" style="@style/more_section_listview_style" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/more_select_city_by_province" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/more_select_city_by_province" />
+            <com.gome.ecmall.custom.DisScrollExpandableListView android:id="@id/province_lv_first" android:background="@android:color/transparent" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:groupIndicator="@android:color/transparent" android:childIndicator="@android:color/transparent" android:childDivider="@color/hint_text_color" android:dividerHeight="0.0px" style="@style/common_listview_style" />
+            <TextView android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/filter_key_text_size" android:textColor="@color/filter_page_252525" android:gravity="center" android:id="@id/price_text" android:layout_width="wrap_content" android:layout_height="@dimen/search_filter_item_height" android:layout_marginLeft="@dimen/filter_page_space_15" />
+    <RadioButton android:id="@id/price_check" style="@style/filter_check_style" />
+</RelativeLayout>

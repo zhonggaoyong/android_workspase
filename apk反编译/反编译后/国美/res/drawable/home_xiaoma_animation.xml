@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="150" android:drawable="@drawable/icon_xiaoma_gif01_hdpi" />
+    <item android:duration="150" android:drawable="@drawable/icon_xiaoma_gif02_hdpi" />
+    <item android:duration="150" android:drawable="@drawable/icon_xiaoma_gif03_hdpi" />
+    <item android:duration="150" android:drawable="@drawable/icon_xiaoma_gif04_hdpi" />
+    <item android:duration="150" android:drawable="@drawable/icon_xiaoma_gif05_hdpi" />
+</animation-list>

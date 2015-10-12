@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="@dimen/order_prerecevice_logistic_icon_size" android:src="@drawable/new_verify" />
+        <TextView android:enabled="false" android:textSize="@dimen/app_textsize_small" android:textColor="@color/enable_text_color" android:gravity="center_horizontal" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/order_status_verify" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="@dimen/order_prerecevice_logistic_icon_size" android:layout_marginLeft="10.0dip" android:src="@drawable/new_dash_arrow" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tab_group_area" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <RadioGroup android:orientation="horizontal" android:id="@id/tab_group" android:background="@color/order_list_light_grey" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentTop="true">
+            <RadioButton android:textColor="@color/order_list_grey" android:gravity="center" android:id="@id/tab_unusedlist" android:background="@color/order_list_light_grey" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/mine_remain_money_order_tab_unused_none" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:background="@color/order_list_mid_grey" android:layout_width="1.0px" android:layout_height="24.0dip" />
+            <RadioButton android:textColor="@color/order_list_grey" android:gravity="center" android:id="@id/tab_usedlist" android:background="@color/order_list_light_grey" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/mine_remain_money_order_tab_used_none" android:layout_weight="1.0" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:id="@id/tab_orderlist_indicator" android:background="@color/order_list_pink" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:id="@id/tab_movielist_indicator" android:background="@color/order_list_pink" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/tab_group_area_devider" android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+    <com.baidu.bainuo.view.ptr.impl.BDPullToRefreshListView android:id="@id/BDLV_cards" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

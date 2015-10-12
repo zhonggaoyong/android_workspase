@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="99.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/feedback_title_parent" android:background="@drawable/personal_view_pressed_selector" android:layout_width="100.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/feedback_title_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/help_feedback_icon_1" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff252525" android:id="@id/feedback_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Title" />
+        </LinearLayout>
+        <View android:background="@color/gray" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:gravity="center" android:id="@id/feedback_child1" android:background="@drawable/personal_view_pressed_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Title1" android:layout_weight="1.0" />
+            <View style="@style/line2" />
+            <TextView android:textSize="13.0sp" android:gravity="center" android:id="@id/feedback_child3" android:background="@drawable/personal_view_pressed_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Title3" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@color/gray" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:gravity="center" android:id="@id/feedback_child2" android:background="@drawable/personal_view_pressed_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Title2" android:layout_weight="1.0" />
+            <View style="@style/line2" />
+            <TextView android:textSize="13.0sp" android:gravity="center" android:id="@id/feedback_child4" android:background="@drawable/personal_view_pressed_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Title4" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

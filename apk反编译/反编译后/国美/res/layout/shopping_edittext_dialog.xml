@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="280.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:singleLine="true">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/shopping_cart_paypassword_input" />
+            <com.bangcle.safekeyboard.PasswordEditText android:textSize="18.0sp" android:id="@id/paypassword" android:background="@drawable/product_sku_attr_disable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minWidth="80.0dip" android:inputType="textPassword" mobile:maxlen="20" mobile:numTextSize="1.5" xmlns:mobile="http://www.bangcle.mobile" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:id="@id/messageTextview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:text="@string/shopping_cart_energy_pay_message" />
+    </LinearLayout>
+</LinearLayout>

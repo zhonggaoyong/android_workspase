@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/coupon_filter2_dark" android:background="#aa000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/coupon_filter_2_divider" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/coupon_jing_only_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="只看京券" android:singleLine="true" />
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/coupon_jing_only" android:background="@drawable/button_h" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginRight="12.0dip" android:button="@null" />
+                </LinearLayout>
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/coupon_jshop_only_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="只看店铺券" android:singleLine="true" />
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <CheckBox android:id="@id/coupon_jshop_only" android:background="@drawable/button_h" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginRight="12.0dip" android:button="@null" />
+                </LinearLayout>
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="品类" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0px">
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" />
+            </LinearLayout>
+            <com.jingdong.common.ui.JDGridView android:id="@id/coupon_filter_grid" android:background="@color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="3" android:divider="@drawable/none" />
+            <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff686868" android:gravity="center" android:id="@id/coupon_filter_reset" android:background="@drawable/button_c" android:layout_width="118.0dip" android:layout_height="38.0dip" android:layout_marginLeft="12.0dip" android:text="重置" android:singleLine="true" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/coupon_filter_confirm" android:background="@drawable/button_a" android:layout_width="118.0dip" android:layout_height="38.0dip" android:layout_marginRight="12.0dip" android:text="完成" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

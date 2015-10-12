@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/order_moneycontent_bg_gray" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <View android:id="@id/pre_salce_line" android:background="#ffcacad1" android:layout_width="1.0dip" android:layout_height="28.0dip" android:layout_marginLeft="3.7999878dip" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/first_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/first_image" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/step_highlight" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/app_text_black" android:id="@id/first_money_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="订金" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/app_text_black" android:id="@id/first_status_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/app_text_black" android:gravity="left|center" android:id="@id/first_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/last_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/first_layout">
+            <ImageView android:id="@id/last_image" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/step_gray" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/app_text_black" android:id="@id/last_money_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="尾款" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/app_text_black" android:id="@id/last_status_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/app_text_black" android:gravity="left|center" android:id="@id/last_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/return_rule" android:background="#fff4f5f7" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:src="@drawable/icon_failure_small" />
+        <TextView android:textSize="@dimen/wallet_button_text" android:textColor="@color/app_text_black" android:id="@id/pre_salce_price_des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

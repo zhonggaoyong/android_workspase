@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/mygome_one_exchange_layout" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/shopping_cart_order_bottom_rl" style="@style/common_scrollbar_style">
+        <com.gome.ecmall.custom.DisScrollGridView android:id="@id/mygome_my_exchange_list" android:background="@android:color/transparent" android:paddingRight="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:numColumns="2" style="@style/more_section_listview_style" />
+    </ScrollView>
+    <RelativeLayout android:id="@id/shopping_cart_order_bottom_rl" android:background="@drawable/phonerechare_submit_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/tishiyu_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:text="@string/point_message" android:layout_toLeftOf="@id/mygome_my_exchange_btn" />
+        <Button android:id="@id/mygome_my_exchange_btn" android:paddingLeft="20.0dip" android:paddingTop="11.0dip" android:paddingRight="20.0dip" android:paddingBottom="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/point_to_blue_coupon_exchange" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Gome.Button.SolidRed.Style" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_dialog_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/dialog_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

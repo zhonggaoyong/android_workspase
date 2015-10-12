@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTabPageIndicator" parent="@style/Widget.TabPageIndicator">
+        <item name="android:textSize">@dimen/text_size_medium2</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:padding">8.0dip</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+    <style name="SuperfanTitlePageIndicator" parent="@style/Widget.TabPageIndicator">
+        <item name="android:textSize">@dimen/text_size_medium2</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/superfan_page_title_color</item>
+        <item name="android:background">@drawable/superfan_tab_indicator</item>
+        <item name="android:padding">8.0dip</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+    <style name="windowNoTitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

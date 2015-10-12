@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/card_header" layout="@layout/vipnew_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sms_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/app_textsize_secondary" android:textColor="@color/error_tips_color" android:gravity="left|center" android:id="@id/smscode_error" android:background="@color/error_tips_bg_color" android:paddingLeft="12.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="22.0dip" android:text="@string/wallet_passnum_tip" android:drawableLeft="@drawable/icon_failure_least" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/app_title_text_gray" android:layout_gravity="center_horizontal" android:id="@id/phoneNumTextView" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="8.0dip" android:text="请输入 134****4784 收到的短信验证码" />
+        <EditText android:textSize="24.0dip" android:textColor="@color/new_text_black" android:textColorHint="@color/app_text_edittext_gray" android:gravity="center" android:layout_gravity="center" android:id="@id/ed_verify_code" android:background="@null" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginTop="19.0dip" android:layout_marginBottom="9.0dip" android:hint="请输入六位验证码" android:singleLine="true" android:inputType="number" />
+        <View android:layout_gravity="center_horizontal" android:background="@drawable/bg_table_line_input" android:layout_width="229.0dip" android:layout_height="6.0px" />
+        <Button android:textColor="@color/bule_tips" android:layout_gravity="center" android:id="@id/get_verify_code" android:background="@drawable/bg_verify_code_selector" android:layout_width="fill_parent" android:layout_height="58.0dip" android:text="重新获取" />
+    </LinearLayout>
+    <Button android:enabled="false" android:layout_gravity="center_horizontal" android:id="@id/next" android:layout_width="fill_parent" android:layout_height="@dimen/submit_pink_big_button_height" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:text="@string/wallet_next_text" style="@style/btn_violet_style" />
+</LinearLayout>

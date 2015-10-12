@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.RoundImageView android:id="@id/head_icon" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/repin_img" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/repin_img" android:layout_toRightOf="@id/head_icon" android:layout_centerVertical="true">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d1" android:id="@id/repin_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d5" android:id="@id/repin_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/line" android:layout_marginTop="10.0dip" style="@style/message_cutline" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fanli="http://fanli.com">
+    <com.fanli.android.view.MainPage.BorderImageView android:id="@id/biv_worth_buy_product" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="4.0dip" android:scaleType="fitXY" fanli:BorderColor="#DDDDDD" />
+    <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="@color/mall_percentage" android:id="@id/tv_worth_buy_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="7.0dip" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_worth_buy_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0dip">
+        <com.fanli.android.view.TangFontTextView android:textColor="@color/worth_buy_price" android:layout_gravity="center_vertical" android:id="@id/tv_worth_buy_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.fanli.android.view.TangFontTextView android:textSize="11.0sp" android:textColor="@color/mall_percentage" android:layout_gravity="bottom" android:id="@id/tv_worth_buy_old_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

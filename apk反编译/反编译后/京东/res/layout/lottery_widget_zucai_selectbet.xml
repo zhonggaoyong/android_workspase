@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title" android:background="@color/table_title_bg" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:text="@string/lottery_rang" style="@style/table_lefttop" />
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style2" />
+        <TextView android:id="@id/titleVs" style="@style/table_title" />
+        <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:layout_gravity="center" android:id="@id/delMatch" android:background="@drawable/lottery_selector_cancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style2" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.jd.lottery.lib.ui.lotteryhall.jingcaizuqiu.hunheguoguan.widget.SelectShengPingFu android:gravity="center" android:id="@id/shengpingfu1" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/shengpingfu2_splitter" style="@style/line_horizontal_style2" />
+            <com.jd.lottery.lib.ui.lotteryhall.jingcaizuqiu.hunheguoguan.widget.SelectShengPingFu android:gravity="center" android:id="@id/shengpingfu2" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style2" />
+        <com.jd.lottery.lib.ui.lotteryhall.jingcaizuqiu.hunheguoguan.widget.DanSelector android:id="@id/danSelector" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

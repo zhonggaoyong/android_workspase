@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/filter_divider" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/filter_parent_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_black" android:id="@id/lable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_padding_large" android:layout_centerVertical="true" />
+        <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_grey_dark" android:gravity="center" android:id="@id/info" android:background="@drawable/bg_tag_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_padding" android:layout_marginRight="@dimen/actionbar_compat_height" android:singleLine="true" android:layout_toRightOf="@id/lable" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/select_group_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/global_page_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

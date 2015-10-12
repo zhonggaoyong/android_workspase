@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/cate_bg3_shape" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/cate_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip">
+            <ImageView android:id="@id/cate_iv_logo" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/cate_pic1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/cate_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/cate_iv_main" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="手机数码" android:maxEms="10" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/hint_text_color" android:id="@id/cate_iv_sub" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:text="手机通讯/手机配件/摄影摄像" android:maxEms="15" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/cate_iv_line" android:background="@drawable/cate_line3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

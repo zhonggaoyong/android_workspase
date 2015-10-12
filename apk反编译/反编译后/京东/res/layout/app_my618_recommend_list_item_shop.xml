@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_content" android:background="@drawable/app_my618_recommend_bg_content" android:paddingLeft="17.4375dip" android:paddingRight="10.6875dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="41.625dip" android:layout_marginTop="7.875dip" android:layout_marginRight="7.875dip">
+        <RelativeLayout android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="48.375dip">
+            <TextView android:textSize="13.5sp" android:textColor="#ffe14b75" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/item_name" android:layout_centerVertical="true">
+                <ImageView android:id="@id/mini_image_1" android:layout_width="56.25dip" android:layout_height="20.25dip" android:layout_marginLeft="6.75dip" android:scaleType="fitXY" style="@style/app_my_618_img" />
+                <ImageView android:id="@id/mini_image_2" android:layout_width="56.25dip" android:layout_height="20.25dip" android:layout_marginLeft="6.75dip" android:scaleType="fitXY" style="@style/app_my_618_img" />
+            </LinearLayout>
+            <TextView android:id="@id/goto_page" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/my_recommend_goto_page" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/recommend_type_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <TextView android:textSize="14.625sp" android:textColor="#ff252525" android:gravity="center" android:id="@id/recommend_type_label" android:layout_width="wrap_content" android:layout_height="41.625dip" />
+        </LinearLayout>
+        <com.jingdong.app.mall.utils.ui.view.LoopViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="@dimen/my_618_shopx2_pager_height" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.jingdong.app.mall.chat.view.CirclePageIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" app:strokeWidth="0.0dip" app:fillColor="#fff1b1b2" app:pageColor="#ffd7d7d7" app:radius="2.25dip" app:space="6.75dip" app:strokeColor="#00000000" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/main_content">
+        <View android:background="#ffdddfe2" android:visibility="visible" android:layout_width="3.375dip" android:layout_height="wrap_content" android:layout_marginLeft="27.5625dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/icon" android:layout_width="32.625dip" android:layout_height="33.224976dip" android:layout_marginLeft="12.375dip" android:layout_marginTop="7.875dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

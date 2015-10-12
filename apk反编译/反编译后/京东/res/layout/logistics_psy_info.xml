@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/logistics_packet_popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/psy_portrait" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logistics_psy_portrait_bg" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/logistics_psy_info_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+        <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/psy_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColorLink="@color/logistics_red" android:gravity="center_vertical" android:autoLink="all" android:id="@id/psy_phonenumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/logistics_track_unused" android:gravity="center_vertical" android:id="@id/psy_logan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="64.0dip" android:text="@string/logistics_psy_slogan" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

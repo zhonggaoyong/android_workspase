@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_game_charge_margin_distance"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_game_charge_margin_distance" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="@dimen/lib_game_charge_text_size16" android:textColor="@color/lib_game_charge_text_color" android:id="@id/lib_game_cardnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卡号" />
+        <EditText android:textSize="@dimen/lib_game_charge_text_size16" android:textColor="@color/lib_game_charge_black" android:gravity="top" android:id="@id/lib_game_cardnum_value" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_game_charge_size17" android:text="" android:editable="false" android:textIsSelectable="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_game_charge_margin_distance" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="@dimen/lib_game_charge_text_size16" android:textColor="@color/lib_game_charge_text_color" android:id="@id/lib_game_cardpass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="密码" />
+        <EditText android:textSize="@dimen/lib_game_charge_text_size16" android:textColor="@color/lib_game_charge_black" android:gravity="top" android:id="@id/lib_game_cardpass_value" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_game_charge_size17" android:text="" android:editable="false" android:textIsSelectable="true" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/lib_game_charge_line_h" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+</LinearLayout>

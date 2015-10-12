@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back" android:text="@null" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:textColor="@color/pink_l2" android:id="@id/txt_commit" android:text="@string/post_release" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/TitleBtn" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fl_wrap_create_circle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_gravity="bottom" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <View android:layout_gravity="top" style="@style/FirstDividerViewStyle" />
+            <ImageView android:layout_gravity="center" android:id="@id/btn_create_circle" android:background="@drawable/icon_create_circle_aq" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/center" android:background="@color/grey_d2_t10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/fl_wrap_create_circle" android:layout_below="@id/header">
+        <RelativeLayout android:id="@id/user_input_layout" android:background="@color/white" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_original" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:scaleType="centerCrop" />
+            <com.meilishuo.app.widget.TagShowLayout android:id="@id/tagshow" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" />
+            <com.meilishuo.app.views.CustomEditText android:textSize="16.0sp" android:textColor="#ff999999" android:gravity="start" android:id="@id/txt_why_fashion" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:hint="为什么时尚呢" android:ems="10" android:maxLength="70" android:layout_toRightOf="@id/img_original" android:layout_alignParentTop="true">
+                <requestFocus />
+            </com.meilishuo.app.views.CustomEditText>
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink_l2" android:id="@id/txt_market_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="\#吃货" android:layout_toRightOf="@id/img_original" android:layout_below="@id/txt_why_fashion" android:layout_alignBaseline="@id/img_original" />
+            <ImageView android:id="@id/location_img" android:paddingTop="1.0dip" android:layout_width="16.0dip" android:layout_height="18.0dip" android:layout_marginTop="11.0dip" android:src="@drawable/me_ico_dingwei" android:scaleType="fitStart" android:layout_below="@id/img_original" android:layout_alignLeft="@id/img_original" />
+            <CheckBox android:id="@id/whether_open_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignBottom="@id/location_img" android:layout_alignParentRight="true" style="@style/setsync_checkbox_style" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff999999" android:id="@id/txt_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="11.0dip" android:maxWidth="210.0dip" android:text="地理位置" android:singleLine="true" android:layout_toRightOf="@id/location_img" android:layout_below="@id/img_original" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/about_update_info" android:background="@color/white" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_below="@id/user_input_layout">
+            <LinearLayout android:orientation="vertical" android:id="@id/circle_info" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/txt_select_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="300.0dip" android:text="选择群" />
+                <ListView android:id="@id/listview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:fastScrollEnabled="false" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nonecircle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/group" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收集同类的东西到一个群\n吸引同好来聊天" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

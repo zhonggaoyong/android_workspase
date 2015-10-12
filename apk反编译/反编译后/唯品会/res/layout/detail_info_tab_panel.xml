@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/info_tab" android:paddingLeft="@dimen/detail_lr_padding" android:paddingTop="25.0dip" android:paddingRight="@dimen/detail_lr_padding" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="14.0dip" android:textColor="@drawable/tab_check_btn_text_color_selector" android:gravity="center" android:id="@id/radiobtn_left" android:background="@drawable/tab_check_left_btn" android:layout_width="0.0dip" android:layout_height="34.0dip" android:button="@null" android:text="@string/detail_info" android:layout_weight="1.0" />
+    <Button android:textSize="14.0dip" android:textColor="@drawable/tab_check_btn_text_color_selector" android:gravity="center" android:id="@id/radiobtn_right" android:background="@drawable/tab_check_right_btn" android:layout_width="0.0dip" android:layout_height="34.0dip" android:button="@null" android:text="@string/services_info" android:layout_weight="1.0" />
+</LinearLayout>

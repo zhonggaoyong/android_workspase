@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <ScrollView android:background="@drawable/more_item_single_normal" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="10.0dip" android:paddingRight="0.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_recharge_help_1" style="@style/phone_recharge_text_black_style" />
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip" android:text="@string/phone_recharge_help_11" style="@style/phone_recharge_text_grey_style" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_recharge_help_2" style="@style/phone_recharge_text_black_style" />
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip" android:text="@string/phone_recharge_help_22" style="@style/phone_recharge_text_grey_style" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_recharge_help_3" style="@style/phone_recharge_text_black_style" />
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip" android:text="@string/phone_recharge_help_33" style="@style/phone_recharge_text_grey_style" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_recharge_help_4" style="@style/phone_recharge_text_black_style" />
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/phone_recharge_help_44" style="@style/phone_recharge_text_grey_style" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

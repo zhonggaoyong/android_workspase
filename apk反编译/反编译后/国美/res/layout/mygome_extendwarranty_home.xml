@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <ListView android:id="@id/lv_items" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#fff2f2f2" android:dividerHeight="14.0dip" />
+    <RelativeLayout android:id="@id/default_hint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/hint_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="您还未购买延保" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

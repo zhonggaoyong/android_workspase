@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/groupon_item_all_groupon_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/home_grouponlist_all_see_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center" android:orientation="vertical" android:id="@id/groupon_item_all_groupon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/home_grouponlist_all" style="@style/home_grouponlist_all" />
+</LinearLayout>

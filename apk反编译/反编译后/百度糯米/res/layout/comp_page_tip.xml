@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bainuolib.widget.PageTipView android:gravity="center" android:orientation="vertical" android:background="@color/bg_app" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/page_tip_loading_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/tip_loading" />
+    <ImageView android:id="@id/page_tip_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_failed_all" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff888888" android:layout_gravity="center_horizontal" android:id="@id/page_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="努力加载中…" />
+    <Button android:textSize="13.0dip" android:textColor="#ffff4978" android:gravity="center" android:id="@id/page_tip_btn" android:background="@drawable/tip_btn_selector" android:layout_width="144.0dip" android:layout_height="26.0dip" android:layout_marginTop="20.0dip" android:text="重试" />
+</com.baidu.bainuolib.widget.PageTipView>

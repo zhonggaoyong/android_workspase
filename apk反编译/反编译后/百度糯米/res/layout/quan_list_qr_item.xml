@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/order_list_white" android:layout_width="220.0dip" android:layout_height="305.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="19.0dip" android:minHeight="55.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="22.0sp" android:textColor="@color/order_list_black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/code" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="49.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="bottom" android:id="@id/qr_bg" android:background="@color/order_list_white" android:layout_width="142.0dip" android:layout_height="142.0dip" android:layout_marginBottom="19.0dip" android:scaleType="fitXY" />
+        <ImageView android:id="@id/qr" android:layout_width="182.0dip" android:layout_height="182.0dip" android:scaleType="fitXY" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/order_list_light_black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

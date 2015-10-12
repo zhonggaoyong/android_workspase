@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:orientation="vertical" android:background="@drawable/list_bg_middle_default" android:padding="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_page_padding" android:stretchColumns="1">
+        <TableRow android:gravity="center_vertical">
+            <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_grey_light" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fanli_record_time" android:singleLine="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_grey_dark" android:layout_gravity="left" android:id="@id/create_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" android:singleLine="true" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical">
+            <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_grey_light" android:layout_gravity="left" android:id="@id/fb_or_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_grey_dark" android:layout_gravity="left" android:id="@id/money_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" android:singleLine="true" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical">
+            <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_grey_light" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fanli_record_type" android:singleLine="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_grey_dark" android:layout_gravity="left" android:id="@id/type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" android:singleLine="true" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical">
+            <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_grey_light" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fanli_record_note" android:singleLine="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_grey_dark" android:layout_gravity="left" android:id="@id/note" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" android:layout_weight="1.0" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

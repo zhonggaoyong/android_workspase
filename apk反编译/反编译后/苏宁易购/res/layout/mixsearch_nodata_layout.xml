@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_nodata_layout" android:background="@color/pub_color_one" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/search_no_result_icon" android:background="@drawable/shopping_cart__loadfail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_ten" />
+        <TextView android:textSize="@dimen/pub_textsize_seventeen" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/no_data_remind" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/pub_textsize_seventeen" android:textColor="@color/pub_color_eighteen" android:gravity="center" android:id="@id/no_data_remind2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    </LinearLayout>
+    <com.suning.mobile.ebuy.search.view.SearchRecommendLayout android:gravity="bottom" android:id="@id/recommend_goods_part" android:background="@color/pub_color_twelev" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

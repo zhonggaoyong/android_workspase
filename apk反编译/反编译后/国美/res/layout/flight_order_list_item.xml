@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/main_default_black_text_color" android:id="@id/flight_order_city_sum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="北京-上海（单程）" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_orderlist_red" android:id="@id/flight_order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已完成" android:singleLine="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:layout_below="@id/flight_order_city_sum">
+            <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/valid_Start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="北京起飞2014-11-25 09:45" android:singleLine="true" android:drawableLeft="@drawable/flight_go" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/valid_End" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="上海起飞2014-11-30 09:45" android:singleLine="true" android:drawableLeft="@drawable/flight_back" />
+        </LinearLayout>
+        <ImageView android:id="@id/dividing_line" android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="6.0dip" android:layout_below="@id/layout_time" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_below="@id/dividing_line">
+            <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_hint" android:id="@id/tv_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单金额:" android:singleLine="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/flight_text_black" android:id="@id/tv_order_sum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥390" android:singleLine="true" android:layout_toRightOf="@id/tv_order" android:layout_centerVertical="true" />
+            <Button android:textSize="14.0sp" android:id="@id/btn_order_pay" android:layout_width="72.0dip" android:layout_height="28.0dip" android:text="立即支付" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Gome.Button.SolidRed.Style" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

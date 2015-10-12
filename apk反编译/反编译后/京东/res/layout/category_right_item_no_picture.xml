@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/category_item_no_picture_ll_1" android:background="@drawable/category_new_table" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/category_new_level3_text" android:textColor="@color/category_new_level3_font" android:ellipsize="end" android:gravity="center" android:id="@id/category_item_no_picture_text_1" android:layout_width="wrap_content" android:layout_height="50.0dip" android:maxLines="2" />
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/iv_arrow1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/category_item_no_picture_ll_2" android:background="@drawable/category_new_table" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/category_new_level3_text" android:textColor="@color/category_new_level3_font" android:ellipsize="end" android:gravity="center" android:id="@id/category_item_no_picture_text_2" android:layout_width="wrap_content" android:layout_height="50.0dip" android:maxLines="2" />
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/iv_arrow2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/category_item_no_picture_ll_3" android:background="@drawable/category_new_table" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/category_new_level3_text" android:textColor="@color/category_new_level3_font" android:ellipsize="end" android:gravity="center" android:id="@id/category_item_no_picture_text_3" android:layout_width="wrap_content" android:layout_height="50.0dip" android:maxLines="2" />
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/iv_arrow3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

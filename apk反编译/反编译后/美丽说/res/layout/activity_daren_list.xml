@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_header" android:onClick="onClick" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/tv_title" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/add_daren" android:background="@drawable/btn_pink_bg" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_dress_daren_add" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/listview" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0px" android:footerDividersEnabled="false" />
+        </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+        <com.meilishuo.app.views.CustomTextView android:id="@id/to_top" android:background="@drawable/to_top_icon" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="58.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.meilishuo.app.views.CustomPageLoading android:id="@id/progressbar_pink" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/center_refresh" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff6c6369" android:layout_gravity="center_horizontal" android:id="@id/loading_retry_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/network_retry_title2" android:layout_centerInParent="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ffccc2c9" android:id="@id/loading_retry_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/text_refound_reload" android:layout_below="@id/loading_retry_title" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/neterror_default_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/btn_reload" android:scaleType="center" android:layout_above="@id/loading_retry_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

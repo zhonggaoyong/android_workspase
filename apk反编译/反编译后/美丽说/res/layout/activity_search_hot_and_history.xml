@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meilishuo.app.category.views.SearchView android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_hot" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="热门搜索" android:drawableLeft="@drawable/search_hot_ico" android:drawablePadding="5.0dip" />
+            <com.meilishuo.app.post.home.view.AutoLineFeedLayout android:id="@id/hot_Linefeed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" app:verticalSpacing="10.0dip" app:horizontalSpacing="10.0dip" />
+        </LinearLayout>
+        <View android:id="@id/hot_history_line" android:background="@color/grey_d1_t20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_history" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="最近搜索" android:drawableLeft="@drawable/search_colock_ico" android:drawablePadding="5.0dip" />
+            <com.meilishuo.app.post.home.view.AutoLineFeedLayout android:id="@id/history_Linefeed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" app:verticalSpacing="10.0dip" app:horizontalSpacing="10.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff595056" android:id="@id/tv_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/search_clear" android:drawableLeft="@drawable/search_ico_delete" android:drawablePadding="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.meilishuo.app.category.views.SearchView>

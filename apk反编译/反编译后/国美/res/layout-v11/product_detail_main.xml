@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/product_detail_header_view" layout="@layout/vw_titlebar" />
+        <ViewSwitcher android:id="@id/vs_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/product_detail_bottom_view" android:layout_below="@id/product_detail_header_view">
+            <com.gome.ecmall.home.product.detail.layout.DetailContainerView android:id="@id/product_detail_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.gome.ecmall.home.product.detail.layout.DetailScrollView android:id="@id/product_detail_center_view" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_product_detail_linear_image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_product_detail_linear_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_product_detail_linear_spec" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_product_detail_linear_server" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_product_detail_linear_comments" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_product_detail_linear_shop" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_product_detail_linear_guess" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                            <ImageView android:id="@id/product_detail_drop_image" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/product_detail_btn_up" />
+                            <TextView android:textSize="15.0sp" android:id="@id/product_detail_drop_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上拉查看图文详情" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.gome.ecmall.home.product.detail.layout.DetailScrollView>
+                <LinearLayout android:orientation="vertical" android:id="@id/product_detail_summary_linear_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.gome.ecmall.home.product.detail.layout.DetailContainerView>
+        </ViewSwitcher>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/product_detail_header_bottom" android:background="#fff9f9f9" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/product_detail_header_view" android:alpha="0.9">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/product_detail_header_home_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/product_detail_header_home_btn_selector" android:contentDescription="@null" />
+                <TextView android:textColor="#ff666666" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首页" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/product_detail_header_login_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/product_detail_header_login_btn_selector" android:contentDescription="@null" />
+                <TextView android:textColor="#ff666666" android:id="@id/product_detail_header_login_title" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即登录" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/product_detail_header_share_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/product_detail_header_share_btn_selector" android:contentDescription="@null" />
+                <TextView android:textColor="#ff666666" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/product_detail_header_history_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/product_detail_header_history_btn_selector" android:contentDescription="@null" />
+                <TextView android:textColor="#ff666666" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="浏览历史" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.gome.ecmall.home.product.detail.layout.DialogView android:orientation="vertical" android:id="@id/product_detail_dialog_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/product_detail_bottom_view" />
+        <LinearLayout android:orientation="vertical" android:id="@id/product_detail_bottom_view" android:background="#fff9f9f9" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+            <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+                <ImageView android:id="@id/product_detail_fav_btn" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/product_detail_btn_fav_normal" android:layout_weight="5.0" android:contentDescription="@null" />
+                <LinearLayout android:id="@id/ll_product_detail_normal_buy_main" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:id="@id/ll_product_detail_normal_buy" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <Button android:id="@id/product_detail_buy_now_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="立即购买" android:layout_weight="1.0" style="@style/Gome.Button.SolidRed.Style" />
+                        <Button android:id="@id/product_detail_add_to_cart_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="加入购物车" android:layout_weight="1.0" style="@style/Gome.Button.SolidRed.Style" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/ll_product_detail_pre_sell" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <Button android:textColor="#ffffffff" android:id="@id/product_detail_buy_yushou_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="立即预订" style="@style/Gome.Button.SolidRed.Style" />
+                    </LinearLayout>
+                    <RelativeLayout android:layout_gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                        <ImageView android:id="@id/product_detail_cart_btn" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/product_detail_cart_btn_selector" android:contentDescription="@null" />
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/product_detail_cart_num_text" android:background="@drawable/shop_cart_total_num_bg_small" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_product_detail_reserve_buy_main" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_reserve_countdown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/weak_text_color" android:id="@id/tv_reserve_countdown_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reserve_from_start" />
+                            <LinearLayout android:gravity="center_vertical" android:id="@id/ll_reserve_countdown_time" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="16.0sp" android:textColor="#ff2a8c01" android:id="@id/reserve_surtime_day_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                                <TextView android:textSize="16.0sp" android:textColor="#ff2a8c01" android:id="@id/reserve_surtime_day_data_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                                <TextView android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:id="@id/reserve_surtime_day_data_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="天" />
+                                <TextView android:textSize="16.0sp" android:textColor="#ff2a8c01" android:id="@id/reserve_surtime_hour_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                                <TextView android:textSize="16.0sp" android:textColor="#ff2a8c01" android:id="@id/reserve_surtime_hour_data_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                                <TextView android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时" />
+                                <TextView android:textSize="16.0sp" android:textColor="#ff2a8c01" android:id="@id/reserve_surtime_min_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                                <TextView android:textSize="16.0sp" android:textColor="#ff2a8c01" android:id="@id/reserve_surtime_min_data_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                                <TextView android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分" />
+                                <TextView android:textSize="16.0sp" android:textColor="#ff2a8c01" android:id="@id/reserve_surtime_second_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                                <TextView android:textSize="16.0sp" android:textColor="#ff2a8c01" android:id="@id/reserve_surtime_second_data_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                                <TextView android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="秒" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="16.0sp" android:textColor="@color/weak_text_color" android:id="@id/tv_reserve_already_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100人已预约" />
+                    </LinearLayout>
+                    <Button android:textSize="18.0sp" android:id="@id/bt_reserve_buy" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/reserve_order_now" android:layout_weight="4.0" style="@style/Gome.Button.SolidRed.Style" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/iv_sendgift" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginBottom="80.0dip" android:src="@drawable/send_gift" android:layout_alignParentBottom="true" />
+        <com.gome.ecmall.home.product.detail.layout.DialogView android:orientation="vertical" android:id="@id/product_detail_dialog_view_no_bottombar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="end" android:id="@id/left_drawer" android:background="#ffffffff" android:paddingLeft="10.0dip" android:layout_width="300.0dip" android:layout_height="fill_parent">
+        <ImageView android:id="@id/browse_pannel_close_iv" android:background="@drawable/product_detail_dialog_close_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/contents_text" android:id="@id/browse_history_hint_tx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/browse_histoty_hint_text" android:layout_below="@id/browse_pannel_close_iv" />
+        <GridView android:id="@id/left_drawer_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:listSelector="@color/transparent" android:verticalSpacing="1.0dip" android:numColumns="3" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" android:layout_below="@id/browse_history_hint_tx" />
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

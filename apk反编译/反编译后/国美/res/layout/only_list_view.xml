@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/mygome_mycoupon_listView1" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dividerHeight="8.0dip" style="@style/common_listview_style" />
+    <ProgressBar android:id="@id/dialog_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/progressBar_loading" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/hint_text_color" android:gravity="center" android:id="@android:id/empty" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/shop_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/search_title_bar" />
+        <com.suning.mobile.ebuy.search.view.SearchTabView android:id="@id/search_shop_tab_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.suning.mobile.ebuy.utils.subpage.PullUpLoadListView android:id="@id/shop_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/shop_noData_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shopping_cart__loadfail" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/shop_noData_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="" />
+            <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_ten" android:gravity="center" android:id="@id/shop_noData_tip2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/shop_search_no_relative_shop2" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

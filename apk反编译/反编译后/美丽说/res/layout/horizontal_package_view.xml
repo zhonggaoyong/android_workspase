@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/hs" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="horizontal" android:id="@id/img_buy_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/img_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/buy_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <ImageView android:id="@id/equals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/danbao_ico_equals" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/equals" android:layout_centerInParent="true">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/pink_99" android:id="@id/total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/buy_btn" android:background="@drawable/btn_dark_pink_bg_normal" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/package_buy" android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

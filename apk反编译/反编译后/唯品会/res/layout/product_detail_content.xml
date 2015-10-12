@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.achievo.vipshop.view.DetailContentView android:id="@id/detail_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:divider="@null" />
+    <View android:id="@id/expandable_scroll_divider" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/detail_layout" />
+    <com.achievo.vipshop.view.DetailWebView android:id="@id/more_detail" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/expandable_scroll_divider" />
+</RelativeLayout>

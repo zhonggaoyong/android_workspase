@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/brand_iv" android:layout_width="100.0dip" android:layout_height="38.0dip" android:layout_margin="5.0dip" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/brand_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="Gap该谱" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/recommend_favor_ll" android:background="@drawable/btn_line_violet_bg" android:layout_width="54.0dip" android:layout_height="25.0dip" android:layout_marginTop="11.0dip" android:layout_marginBottom="14.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/recommend_favor_iv" android:background="@null" android:layout_width="11.0dip" android:layout_height="11.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/icon_red_concern" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/vip_red" android:layout_gravity="center_vertical" android:id="@id/recommend_favor_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="关注" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/driver_line" android:background="@color/favor_brand_item_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginBottom="14.0dip" />
+</LinearLayout>

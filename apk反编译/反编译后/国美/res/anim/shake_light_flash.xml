@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list apk:oneshot="false"
+  xmlns:apk="http://schemas.android.com/apk/res/android">
+    <item apk:duration="200" apk:drawable="@drawable/shake_light1" />
+    <item apk:duration="200" apk:drawable="@drawable/shake_light2" />
+    <item apk:duration="200" apk:drawable="@drawable/shake_light3" />
+    <item apk:duration="200" apk:drawable="@drawable/shake_light4" />
+    <item apk:duration="200" apk:drawable="@drawable/shake_light5" />
+    <item apk:duration="200" apk:drawable="@drawable/shake_light6" />
+</animation-list>

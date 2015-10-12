@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_gray_yellow" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/store_inc_store_header" />
+    <com.baidu.mapapi.map.MapView android:id="@id/bmapView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

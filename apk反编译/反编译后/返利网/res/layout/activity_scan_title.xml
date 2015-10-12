@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/mmtitle_bg_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@android:color/white" android:id="@id/button_back" android:background="@drawable/mm_title_back_btn" android:layout_width="75.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="返回" android:layout_centerVertical="true" />
+    <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二维码扫描" android:layout_alignBaseline="@id/button_back" android:layout_alignBottom="@id/button_back" android:layout_centerHorizontal="true" />
+</RelativeLayout>

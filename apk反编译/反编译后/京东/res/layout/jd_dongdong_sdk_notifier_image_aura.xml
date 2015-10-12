@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/door_contents" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_aura" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/jd_dongdong_sdk_chat_list_sending_aura" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp" android:id="@id/text_name_aura" android:paddingTop="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="tongzhi " />
+        <TextView android:textSize="15.0sp" android:ellipsize="end" android:id="@id/text_msg_aura" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="哈哈哈哈 哈哈 哈哈 哈哈 哈哈 哈哈 哈哈 哈哈 哈哈  " android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/text_time_aura" android:paddingTop="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="tongzhi" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/text_avatar_aura" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/jd_dongdong_sdk_close0_aura" />
+    </LinearLayout>
+</LinearLayout>

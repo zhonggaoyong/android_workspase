@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/fragment_select_brand" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/pull_refresh_scroll_view" android:scrollbars="none" android:persistentDrawingCache="none" android:alwaysDrawnWithCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:layout_below="@id/common_title" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/snap_to_top" android:padding="@dimen/pd_space_width_12" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:src="@drawable/home_to_top_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

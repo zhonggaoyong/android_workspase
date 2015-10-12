@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_btn_white_round_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/android_public_space_40px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/android_public_space_26px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/tv_cdialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/android_public_space_40px" android:text="@string/app_name" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/android_public_space_24px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/tv_cdialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" style="?android:attr/textAppearanceMedium" />
+        </ScrollView>
+    </LinearLayout>
+    <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/storeline_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_70px">
+        <Button android:textSize="@dimen/android_public_space_26px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/btn_cdialog_left" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_dialog_cancel" android:layout_weight="1.0" />
+        <View android:id="@id/view_cdialog_btn_divider" android:background="@color/pub_color_six" android:layout_width="@dimen/storeline_height" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/android_public_space_26px" android:textColor="@color/pub_color_twenty_one" android:gravity="center" android:id="@id/btn_cdialog_right" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_dialog_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

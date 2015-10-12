@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/top_category_bar" android:background="@drawable/category_tab_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="41.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/category_one" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/category_tab_text_bg" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="全部" android:layout_centerInParent="true" />
+        <View android:background="@drawable/category_radio_bg" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:layout_gravity="center_vertical" android:background="#ffd2d2d2" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+    <RelativeLayout android:id="@id/category_two" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/category_tab_text_bg" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="全部" android:layout_centerInParent="true" />
+        <View android:background="@drawable/category_radio_bg" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:layout_gravity="center_vertical" android:background="#ffd2d2d2" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+    <RelativeLayout android:id="@id/category_three" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/category_tab_text_bg" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="全部" android:layout_centerInParent="true" />
+        <View android:background="@drawable/category_radio_bg" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

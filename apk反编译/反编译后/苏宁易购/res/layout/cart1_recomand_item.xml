@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/recomand_product_img" android:layout_width="@dimen/ios_public_space_280px" android:layout_height="@dimen/ios_public_space_280px" android:src="@drawable/default_background_small" />
+    <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/recomand_product_name" android:paddingLeft="@dimen/ios_public_space_20px" android:paddingTop="@dimen/ios_public_space_20px" android:paddingRight="@dimen/ios_public_space_20px" android:layout_width="@dimen/ios_public_space_280px" android:layout_height="wrap_content" android:text="sssssddddddddddddfffffffffffssssssssssssssss" android:lines="2" />
+    <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_seveneen" android:id="@id/recomand_product_price" android:paddingLeft="@dimen/ios_public_space_20px" android:paddingTop="@dimen/ios_public_space_14px" android:paddingRight="@dimen/ios_public_space_20px" android:paddingBottom="@dimen/ios_public_space_14px" android:layout_width="@dimen/ios_public_space_280px" android:layout_height="wrap_content" android:text="sssssddddddddddddddddddddddddd" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/pull_to_refresh_header_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/xlistview_header_slogan" android:layout_width="fill_parent" android:layout_height="82.0dip">
+        <RelativeLayout android:gravity="center" android:id="@id/xlistview_header_lion" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/lionrl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/lion_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lion_head" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/lion_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/show_lion_open" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:src="@drawable/pull_refresh_slogon" android:layout_toRightOf="@id/lionrl" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_22px" android:textColor="@color/color_gray_909090" android:layout_gravity="center" android:id="@id/xlistview_header_hint_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/xlistview_header_hint_normal" android:layout_below="@id/xlistview_header_lion" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Fejl i Google Play-tjenester</string>
+    <string name="d3r">En applikation kræver, at Google Play-tjenester installeres.</string>
+    <string name="d3s">En applikation kræver, at Google Play-tjenester opdateres.</string>
+    <string name="d3t">En applikation kræver, at Google Play-tjenester aktiveres.</string>
+    <string name="d3u">Anmodning fra %1$s</string>
+    <string name="d3v">Hent Google Play-tjenester</string>
+    <string name="d3w">Denne app kan ikke køre uden Google Play-tjenester, som mangler på din telefon.</string>
+    <string name="d3x">Denne app kan ikke køre uden Google Play-tjenester, som mangler på din tablet.</string>
+    <string name="d3y">Hent Google Play-tjenester</string>
+    <string name="d3z">Aktivér Google Play-tjenester</string>
+    <string name="d40">Denne app virker ikke, medmindre du aktiverer Google Play-tjenester.</string>
+    <string name="d41">Aktivér Google Play-tjenester</string>
+    <string name="d42">Opdater Google Play-tjenester</string>
+    <string name="d43">Denne app kan ikke køre, medmindre du opdaterer Google Play-tjenester.</string>
+    <string name="d44">Netværksfejl</string>
+    <string name="d45">Der kræves en dataforbindelse for at oprette forbindelse til Google Play-tjenester.</string>
+    <string name="d46">Ugyldig konto</string>
+    <string name="d47">Den angivne konto findes ikke på denne enhed. Vælg en anden konto.</string>
+    <string name="d48">Ukendt problem med Google Play-tjenester.</string>
+    <string name="d49">Google Play-tjenester</string>
+    <string name="d4_">Google Play-tjenester, som nogle af dine applikationer er afhængige af, understøttes ikke af din enhed. Kontakt producenten for at få hjælp.</string>
+    <string name="d4a">Datoen på enheden ser ud til at være forkert. Husk at kontrollere datoen på enheden.</string>
+    <string name="d4b">Opdater</string>
+    <string name="d4c">Log ind</string>
+    <string name="d4d">Log ind med Google</string>
+</resources>

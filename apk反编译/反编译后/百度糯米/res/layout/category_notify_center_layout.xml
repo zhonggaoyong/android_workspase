@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_alignParentTop="true" layout="@layout/category_topbar_list" />
+    <ListView android:id="@id/category_notify_list_view" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@color/order_list_mid_grey" android:dividerHeight="1.0px" android:layout_above="@id/category_edit" android:layout_below="@id/top_category_bar" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/category_none_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tip_empty" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff888888" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/category_edit" android:background="@color/notice_radio_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_alignParentBottom="true" style="@style/NoticeEditTheme">
+        <LinearLayout android:orientation="horizontal" android:id="@id/category_select_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <CheckBox android:layout_gravity="center_vertical" android:id="@id/category_notify_select_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" style="@style/NoticeCustomCheckboxTheme" />
+            <TextView android:textSize="14.0dip" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="全部选择" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/category_delete_btn" android:background="@color/nuomi_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/category_delete_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="删除(0)" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

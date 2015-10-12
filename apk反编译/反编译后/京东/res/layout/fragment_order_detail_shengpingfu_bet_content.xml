@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_marginLeft="20.0dip" android:layout_marginBottom="12.0dip" android:text="@string/lottery_bet_content" style="@style/lottery_order_detail_bet_info_title" />
+    <TextView android:id="@id/lottery_bet_content_chuan" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="8.0dip" style="@style/lottery_order_detail_bet_info" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/bg_gray_light" android:layout_width="fill_parent" android:layout_height="32.0dip">
+                <TextView android:text="主队VS客队" android:layout_weight="4.0" style="@style/lottery_bet_content_title_text_style" />
+                <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+                <LinearLayout android:orientation="horizontal" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                    <TextView android:text="让" android:layout_weight="1.0" style="@style/lottery_bet_content_title_text_style" />
+                    <TextView android:text="投注" android:layout_weight="2.0" style="@style/lottery_bet_content_title_text_style" />
+                    <TextView android:text="彩果" android:layout_weight="1.0" style="@style/lottery_bet_content_title_text_style" />
+                </LinearLayout>
+                <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+                <TextView android:text="胆" android:layout_weight="1.0" style="@style/lottery_bet_content_title_text_style" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style" />
+            <com.jd.lottery.lib.ui.common.widget.FullSizeListView android:layout_gravity="center_vertical" android:id="@id/lottery_bet_content_title_list" android:background="@color/bg_normal" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:drawSelectorOnTop="false" android:divider="@drawable/lottery_divider" />
+            <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+    </LinearLayout>
+</LinearLayout>

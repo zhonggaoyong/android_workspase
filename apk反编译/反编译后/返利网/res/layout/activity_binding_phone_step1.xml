@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color_grey_light" android:padding="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/set_phone" android:background="@drawable/list_bg_middle_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:hint="手机号" android:singleLine="true" android:inputType="phone" />
+    <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_tiny" android:textColor="@color/text_color_grey_light" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="绑定手机后，您可以免费接收提现到帐短信，还可接受跟单短信！" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="获取验证码" style="@style/BtnBigOrange" />
+</LinearLayout>

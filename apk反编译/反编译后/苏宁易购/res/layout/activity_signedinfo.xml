@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rulerl" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/homefunctionbg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/signrule" />
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.suning.mobile.ebuy.view.AutoLineTextView android:id="@id/ruletext" android:layout_width="fill_parent" android:layout_height="fill_parent" suning:paddingLeft="15" suning:paddingRight="10" suning:paddingTop="6" suning:textSize="17"
+                  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:suning="http://www.suningEbuy.com/" />
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-18.0dip" android:layout_marginRight="18.0dip" android:layout_alignTop="@id/rulerl" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/rulebtn" android:background="@drawable/btn_closed_bg" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    </FrameLayout>
+</RelativeLayout>

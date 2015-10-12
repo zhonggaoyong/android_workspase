@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/submit_info_amount_area" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/order_list_mid_black" android:ellipsize="end" android:id="@id/submit_info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/order_list_mid_black" android:id="@id/submit_info_colon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit_info_colon" android:includeFontPadding="false" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/order_list_mid_black" android:id="@id/submit_info_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/submit_info_amount_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <Button android:layout_gravity="center_vertical" android:id="@id/submit_info_amount_dec" android:background="@drawable/submit_cart_btn_dec_selector" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        <EditText android:textSize="15.0sp" android:textColor="@color/order_list_dark_black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/submit_info_amount_edit" android:background="@drawable/submit_cart_input_selector" android:layout_width="38.0dip" android:layout_height="24.0dip" android:minWidth="38.0dip" android:singleLine="true" android:inputType="number" android:textCursorDrawable="@null" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/submit_info_amount_inc" android:background="@drawable/submit_cart_btn_inc_selector" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/order_list_dark_black" android:orientation="horizontal" android:id="@id/submit_info_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/order_list_black" android:orientation="horizontal" android:id="@id/submit_info_value_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit_tips_limit_cal_loading" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <include android:id="@id/submit_info_item_devider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" layout="@layout/pay_submit_dark_devider" />
+</RelativeLayout>

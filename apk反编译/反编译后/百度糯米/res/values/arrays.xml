@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_phone_bind_item">
+        <item>绑定手机号%s</item>
+        <item>换绑其他手机号</item>
+        <item>再想想，先不换了</item>
+    </string-array>
+    <string-array name="order_phone_bind_item2">
+        <item>统一为帐号手机号</item>
+        <item>改换其他手机号</item>
+        <item>再想想，先不换了</item>
+    </string-array>
+</resources>

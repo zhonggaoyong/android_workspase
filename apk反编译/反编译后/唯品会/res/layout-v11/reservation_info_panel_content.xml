@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dash1" android:background="@color/detail_divider_gray_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layerType="software" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/detail_dark" android:gravity="left|center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="16.0dip" android:text="@string/presell_process" />
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/step1_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1." />
+        <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center_vertical" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top|left|center" android:orientation="horizontal" android:id="@id/step1_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center_vertical" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1." />
+        <TextView android:textSize="12.0dip" android:textColor="@color/detail_gray_light" android:gravity="center_vertical" android:id="@id/content1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/step2_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2." />
+        <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center_vertical" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top|left|center" android:orientation="horizontal" android:id="@id/step2_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center_vertical" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2." />
+        <TextView android:textSize="12.0dip" android:textColor="@color/detail_gray_light" android:gravity="center_vertical" android:id="@id/content2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/step3_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3." />
+        <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center_vertical" android:id="@id/title3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top|left|center" android:orientation="horizontal" android:id="@id/step3_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="1.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center_vertical" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3." />
+        <TextView android:textSize="12.0dip" android:textColor="@color/detail_gray_light" android:gravity="center_vertical" android:id="@id/content3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

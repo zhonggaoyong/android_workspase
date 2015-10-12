@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <com.fanli.android.view.customPagerIndicator.TabPageIndicator android:id="@id/indicator" android:paddingLeft="7.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <RelativeLayout android:id="@id/arrow_area" android:background="#ccffffff" android:layout_width="36.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_arrow" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/nine_list_down" android:layout_centerInParent="true" android:contentDescription="@string/contentDescription" />
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

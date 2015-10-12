@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:text="@string/setting_check_update" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <View android:id="@id/about_view" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/header" />
+    <View android:id="@id/about_line1" android:layout_below="@id/about_view" style="@style/borderline" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/about_copyright" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/setting_about_copyright_part1" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_about_copyright_part2" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/setting_about_copyright_part3" />
+    </LinearLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/downLoad" android:background="@drawable/btn_pink_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip" android:layout_marginBottom="25.0dip" android:text="@string/setting_about_update" android:layout_above="@id/about_copyright" />
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip" android:layout_above="@id/downLoad" android:layout_below="@id/about_line1">
+        <ImageView android:id="@id/welcome_logo" android:background="@drawable/set_ico_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:scaleType="center" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff80737b" android:id="@id/version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/welcome_logo" android:layout_centerHorizontal="true" />
+        <View android:id="@id/about_line2" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/version" style="@style/cutline" />
+        <LinearLayout android:orientation="vertical" android:id="@id/about_update_info" android:background="@color/white" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/about_line2">
+            <RelativeLayout android:id="@id/about_update_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip">
+                <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ffff6699" android:id="@id/about_update_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ListView android:id="@id/about_update_content_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="7.0dip" android:layout_marginBottom="2.0dip" android:divider="@null" android:fastScrollEnabled="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

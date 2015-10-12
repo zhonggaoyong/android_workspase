@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:id="@id/shopname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/shopicon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" android:layout_toLeftOf="@id/shopname" android:layout_alignBottom="@id/shopname" android:contentDescription="@string/contentDescription" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff43b047" android:id="@id/tv_fanli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/shopname" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

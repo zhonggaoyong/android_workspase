@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/new_cartmenu_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_black" android:gravity="center_vertical" android:id="@id/cart_list_tx" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="13.0dip" android:text="子菜单测试" android:layout_alignParentLeft="true" />
+</RelativeLayout>

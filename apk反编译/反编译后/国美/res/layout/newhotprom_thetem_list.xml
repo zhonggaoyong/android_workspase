@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/list_bg" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+        <com.gome.ecmall.core.widget.listview.MyListView android:id="@id/hotprom_thetem_list" android:scrollbars="none" android:fadingEdge="none" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@null" android:dividerHeight="0.0dip" android:overScrollMode="never" style="@style/common_listview_style" />
+    </LinearLayout>
+    <include layout="@layout/vw_titlebar" />
+</FrameLayout>

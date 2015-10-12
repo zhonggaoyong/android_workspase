@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_handover" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/handover_bg" android:layout_width="242.0dip" android:layout_height="122.0dip">
+        <ImageView android:layout_gravity="left" android:orientation="vertical" android:id="@id/iv_hand" android:layout_width="44.0dip" android:layout_height="54.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/hand" android:scaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>

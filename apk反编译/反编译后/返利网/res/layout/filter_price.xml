@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/white" android:paddingLeft="@dimen/global_padding_tiny" android:paddingTop="@dimen/global_padding" android:paddingRight="@dimen/global_padding_tiny" android:paddingBottom="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/min" android:background="@drawable/filter_price_input" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/filter_price_min" android:singleLine="true" android:digits="1234567890." android:layout_weight="4.0" android:inputType="text" />
+    <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:gravity="center" android:id="@id/button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/price_range" android:singleLine="true" android:layout_weight="1.0" />
+    <EditText android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/max" android:background="@drawable/filter_price_input" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/filter_price_max" android:singleLine="true" android:digits="1234567890." android:layout_weight="4.0" android:inputType="text" />
+    <Button android:layout_width="0.0px" android:layout_height="0.0px" />
+</LinearLayout>

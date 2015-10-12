@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/search_barcode_btn" android:clickable="true" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/home_color_shopping_button">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_width="@dimen/scan_icon_width" android:layout_height="@dimen/scan_icon_height" android:src="@drawable/app_icon_barcode" android:scaleType="centerInside" android:adjustViewBounds="true" />
+        <TextView android:textSize="@dimen/color_shopping_button_textsize" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/search_barcode" />
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:background="@drawable/color_shopping_gap_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/search_camera_btn" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" style="@style/home_color_shopping_button">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_width="@dimen/scan_icon_width" android:layout_height="@dimen/scan_icon_height" android:src="@drawable/app_icon_camera" android:scaleType="centerInside" android:adjustViewBounds="true" />
+            <TextView android:textSize="@dimen/color_shopping_button_textsize" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/search_camera" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="top|right|center" android:id="@id/photograph_camera_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/plug_center_color_shopping_new" android:scaleType="centerInside" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <View android:layout_gravity="center_vertical" android:background="@drawable/color_shopping_gap_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/color_shopping_btn" android:clickable="true" android:layout_width="wrap_content" style="@style/home_color_shopping_button">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_width="@dimen/scan_icon_width" android:layout_height="@dimen/scan_icon_height" android:src="@drawable/app_color_shopping" android:scaleType="centerInside" android:adjustViewBounds="true" />
+            <TextView android:textSize="@dimen/color_shopping_button_textsize" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/color_shopping_title" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="top|right|center" android:id="@id/color_camera_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/plug_center_color_shopping_new" android:scaleType="centerInside" android:adjustViewBounds="true" />
+    </FrameLayout>
+</LinearLayout>

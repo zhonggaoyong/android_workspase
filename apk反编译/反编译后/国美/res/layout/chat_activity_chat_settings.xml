@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/layout_backgroud_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rlt_switch_notification_container" android:layout_marginTop="30.0dip" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="接收新消息通知" style="@style/mygome_setting_textview" />
+                <CheckBox android:id="@id/cbx_switch_notification" android:clickable="false" style="@style/mygome_setting_checkbox" />
+            </RelativeLayout>
+            <TextView android:textSize="15.0sp" android:textColor="#ff555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="9.0dip" android:text="提示音效" />
+            <RelativeLayout android:id="@id/rlt_sound_container" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="声音" style="@style/mygome_setting_textview" />
+                <CheckBox android:id="@id/cbx_sound_remind" android:clickable="false" style="@style/mygome_setting_checkbox" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlt_vibrate_container" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="震动" style="@style/mygome_setting_textview" />
+                <CheckBox android:id="@id/cbx_vibrate_remind" android:clickable="false" style="@style/mygome_setting_checkbox" />
+            </RelativeLayout>
+            <TextView android:textSize="15.0sp" android:textColor="#ff555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="9.0dip" android:text="聊天消息" />
+            <RelativeLayout android:id="@id/rlt_clear_history_container" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="清空客服列表" style="@style/mygome_setting_textview" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlt_clear_chat_container" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="清空所有聊天记录" style="@style/mygome_setting_textview" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlt_help_container" android:layout_marginTop="30.0dip" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="客服说明" style="@style/mygome_setting_textview" />
+                <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/address_jiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

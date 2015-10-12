@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_icon" android:layout_width="@dimen/height_list_item_icon" android:layout_height="@dimen/height_list_item_icon" android:layout_marginLeft="@dimen/new_more_image_horizontal_margin" android:layout_marginRight="@dimen/new_more_image_horizontal_margin" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <com.fanli.android.view.TangFontTextView android:textSize="17.0sp" android:textColor="@color/more_item_title" android:gravity="center_vertical" android:id="@id/tv_item" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_toRightOf="@id/iv_icon" android:layout_centerVertical="true" />
+    <ImageView android:layout_gravity="center" android:id="@id/triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_arrow_right_full" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/triangle" android:layout_centerVertical="true" />
+    <View android:id="@id/line" android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/new_more_seperator_margin" android:layout_marginRight="@dimen/new_more_seperator_margin" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:focusableInTouchMode="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/firstlinearlayout" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dip" android:textColor="@color/hint_text_color" android:gravity="center_vertical" android:id="@id/textView2s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="配送单编号：" android:singleLine="true" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/main_default_black_text_color" android:id="@id/mygome_myorder_order_nos" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="123456789" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/lastlinearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="80.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <HorizontalScrollView android:id="@id/mygome_myorder_order_list_item_horizontalScrollView1" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginRight="20.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/mygome_myorder_order_list_item_linearLayout" android:layout_width="wrap_content" android:layout_height="60.0dip" android:minWidth="200.0dip" />
+            </HorizontalScrollView>
+            <ImageView android:id="@id/mygome_myorder_list_item_right_imageView1" android:background="@drawable/common_right_arrow_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@color/hint_text_color" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mygome_order_ammount_pei" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/price_text_color" android:id="@id/mygome_myorder_order_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="￥1000.00" android:layout_toRightOf="@id/textView5" android:layout_alignParentTop="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/hint_text_color" android:id="@id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mygome_order_time" android:layout_below="@id/textView5" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/hint_text_color" android:id="@id/mygome_myorder_order_submit_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="2013-05-09" android:layout_toRightOf="@id/textView7" android:layout_below="@id/textView5" />
+            <Button android:textSize="13.0sp" android:id="@id/mygome_return_tools" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="申请" android:layout_alignBottom="@id/mygome_myorder_order_submit_time" android:layout_alignParentRight="true" style="@style/Gome.Button.SolidRed.Style" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

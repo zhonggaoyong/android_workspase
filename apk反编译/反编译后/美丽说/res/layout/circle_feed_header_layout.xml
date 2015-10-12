@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <RelativeLayout android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.RoundImageView android:id="@id/circle_avatar" android:background="@drawable/profile_icon_noimage" android:layout_width="55.0dip" android:layout_height="55.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" app:hasBorder="false" app:borderSize="0.0dip" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3_1" android:ellipsize="end" android:id="@id/circle_owner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="70.0dip" android:singleLine="true" android:layout_toRightOf="@id/circle_avatar" android:layout_alignTop="@id/circle_avatar" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_t80_1" android:id="@id/circle_share_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_toRightOf="@id/circle_avatar" android:layout_alignBottom="@id/circle_avatar" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/circle_focus" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="+关注群" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/activities_tab" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="15.0dip" android:textColor="@drawable/activities_tab_textcolor_selector" android:gravity="center" android:id="@id/activities_tab_left" android:layout_width="fill_parent" android:layout_height="33.0dip" android:text="最新" />
+        <View android:id="@id/activities_tab_left_line" android:background="#fff15353" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="15.0dip" android:textColor="@drawable/activities_tab_textcolor_selector" android:gravity="center" android:id="@id/activities_tab_right" android:layout_width="fill_parent" android:layout_height="33.0dip" android:text="热门" />
+        <View android:id="@id/activities_tab_right_line" android:background="#fff15353" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

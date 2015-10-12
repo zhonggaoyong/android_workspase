@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/common_title_layout" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="170.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/common_orange_textcolor" android:id="@id/tv_confirm_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="亲，请确认以下信息！" />
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="22.0dip" android:shrinkColumns="1">
+            <TableRow android:id="@id/tr_detail_item_1" android:layout_marginBottom="13.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/hint_text_color" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存    入:" android:singleLine="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/weak_text_color" android:ellipsize="end" android:gravity="left" android:id="@id/tv_recharge_item_1_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="2014-04-11" android:singleLine="true" />
+            </TableRow>
+            <TableRow android:id="@id/tr_detail_item_2" android:layout_marginBottom="13.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/hint_text_color" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存入金额：" android:singleLine="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/weak_text_color" android:ellipsize="end" android:gravity="left" android:id="@id/tv_recharge_item_2_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="2014-04-11" android:singleLine="true" />
+            </TableRow>
+            <TableRow android:id="@id/tr_detail_item_3">
+                <TextView android:textSize="16.0sp" android:textColor="@color/hint_text_color" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="付款银行卡：" android:singleLine="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/weak_text_color" android:gravity="left" android:id="@id/tv_recharge_item_3_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="2014-04-11" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/setting_activity_line_color" />
+    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_recharge_confirm" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" android:minHeight="40.0dip" android:text="确认存入" style="@style/Gome.Button.SolidRed.Style" />
+</LinearLayout>

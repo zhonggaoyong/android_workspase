@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/order_supplier_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:background="@drawable/category_listview_divider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/product_supplier_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_24px" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/android_public_space_26px" android:layout_marginBottom="5.0dip">
+            <ImageView android:id="@id/service_image_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_suning_service" />
+            <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/public_text_color" android:ellipsize="end" android:layout_gravity="left|center" android:id="@id/product_supplier_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/public_text_color" android:layout_gravity="right|center" android:id="@id/product_supplier_status" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" />
+            <Button android:textSize="16.0sp" android:textColor="@color/pub_color_four" android:gravity="center" android:id="@id/order_item_supplier_confirm_button" android:background="@drawable/btn_search_normal_bg" android:visibility="gone" android:layout_width="@dimen/pub_margin_or_padding_space_eighty_five" android:layout_height="@dimen/ios_public_space_74px" android:layout_marginRight="2.0dip" android:text="@string/order_item_confirm_accept" />
+        </LinearLayout>
+        <TextView android:background="@drawable/category_listview_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+    </LinearLayout>
+    <TextView android:id="@id/order_list_item_topline" android:background="@drawable/category_listview_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/product_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_24px" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/android_public_space_26px" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/product_icon_more_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/product_icon_layout" android:background="@drawable/goods_bg" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="80.0dip">
+                <ImageView android:id="@id/product_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_background_small" android:scaleType="fitXY" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/product_protection_icon" android:background="@drawable/sun_package" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="35.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/product_info_more_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/public_text_color" android:ellipsize="end" android:layout_gravity="top" android:id="@id/product_info_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentTop="true" />
+            <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_32px" android:layout_below="@id/product_info_name">
+                <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/pub_color_four" android:layout_gravity="center_vertical" android:id="@id/product_info_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/pub_color_nine" android:layout_gravity="bottom" android:id="@id/product_info_quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_toRight" android:background="@drawable/arrow_next" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:id="@id/order_list_item_bottomline" android:background="@drawable/category_listview_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_marginLeft="10.0dip" />
+</LinearLayout>

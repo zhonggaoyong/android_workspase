@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/jshop_logoline_height" android:layout_marginLeft="12.5dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.5dip">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff686868" android:gravity="center" android:id="@id/brand_logo" android:background="@drawable/jshop_brand_board" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="right" android:id="@id/jd_or_jshop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jshop_brandlogo_totop" android:layout_marginRight="@dimen/jshop_brandlogo_toright_new" android:src="@drawable/jshop_icon_call" android:scaleType="fitCenter" />
+    </FrameLayout>
+</LinearLayout>

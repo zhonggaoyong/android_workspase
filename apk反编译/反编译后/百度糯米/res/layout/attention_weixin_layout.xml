@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff22222d" android:gravity="center_vertical" android:id="@id/paid_vip_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" android:text="手动关注微信号" android:drawableLeft="@drawable/nuomiwechat_icon" android:drawablePadding="4.0dip" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:src="@drawable/nuomiwechat_guild" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff55555d" android:id="@id/func_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="15.0dip" android:text="关注方法：微信>添加>添加朋友>搜索微信号" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="#ff55555d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="糯米微信号" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffff4978" android:id="@id/weixin_hao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="nuomivip" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#ff88888d" android:gravity="center" android:id="@id/copy_weixin" android:background="@drawable/attention_weixin_copy_button_selecter" android:layout_width="120.0dip" android:layout_height="28.0dip" android:layout_marginTop="15.0dip" android:text="复制微信号" />
+</LinearLayout>

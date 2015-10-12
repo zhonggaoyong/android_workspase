@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <RelativeLayout android:id="@id/distribution_promotion_empty_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_title">
+        <com.jingdong.common.ui.JDProgressBar android:id="@id/distribution_loading_progressbar" android:visibility="gone" android:layout_centerInParent="true" style="@style/progress_loading" />
+        <include android:id="@id/distribution_loading_error_tips_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading_error_tips" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/distribution_promotion_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_title">
+        <RelativeLayout android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip">
+            <RelativeLayout android:id="@id/distribution_promotion_header" android:background="#ffffffff" android:paddingLeft="19.0dip" android:paddingTop="19.0dip" android:paddingRight="19.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageview_distribution_promotion_view" android:layout_width="59.0dip" android:layout_height="59.0dip" android:src="@drawable/distribution_promotion_invite" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@string/none" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff51545a" android:id="@id/distribution_promotion_hello" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/imageview_distribution_promotion_view" android:layout_alignTop="@id/imageview_distribution_promotion_view" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff51545a" android:id="@id/distribution_promotion_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/distribution_promotion_hello" android:layout_alignLeft="@id/distribution_promotion_hello" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/distribution_promotion_second" android:layout_alignParentRight="true">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffaaaaaa" android:layout_gravity="center_vertical" android:id="@id/distribution_promotion_rule_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/distribution_promotion_linkimg" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/distribution_promotion_link" android:scaleType="fitCenter" android:contentDescription="@string/none" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ff51545a" android:id="@id/distribution_promotion_achieve_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/distribution_promotion_margin_left" android:layout_marginTop="23.0dip" android:layout_marginRight="@dimen/distribution_promotion_margin_right" android:layout_below="@id/distribution_promotion_header" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/distribution_promotion_achieve_step1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/distribution_promotion_margin_right" android:layout_below="@id/distribution_promotion_achieve_info" android:layout_alignLeft="@id/distribution_promotion_achieve_info">
+                <TextView android:textSize="16.0sp" android:textColor="#ff51545a" android:layout_gravity="center_vertical" android:id="@id/distribution_promotion_achieve_step1_textview" android:layout_width="67.0dip" android:layout_height="wrap_content" />
+                <EditText android:textSize="15.0sp" android:id="@id/invite_input" android:background="@drawable/distribution_input_bg" android:layout_width="fill_parent" android:layout_height="39.5dip" android:singleLine="true" android:maxLength="20" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/distribution_promotion_achieve_step2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/distribution_promotion_achieve_step1" android:layout_alignLeft="@id/distribution_promotion_achieve_info" android:layout_alignRight="@id/distribution_promotion_achieve_step1">
+                <TextView android:textSize="16.0sp" android:textColor="#ff51545a" android:layout_gravity="center_vertical" android:id="@id/distribution_promotion_achieve_step2_textview" android:layout_width="67.0dip" android:layout_height="wrap_content" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/verify_image" android:layout_width="92.5dip" android:layout_height="37.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+                    <EditText android:textSize="15.0sp" android:id="@id/verify_input" android:background="@drawable/distribution_input_bg" android:layout_width="fill_parent" android:layout_height="39.5dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:maxLength="20" android:layout_toLeftOf="@id/verify_image" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/distribution_promotion_apply" android:background="@drawable/product_add_to_car_button_selector" android:layout_width="fill_parent" android:layout_height="39.5dip" android:layout_marginTop="42.0dip" android:layout_below="@id/distribution_promotion_achieve_step2" android:layout_alignLeft="@id/distribution_promotion_achieve_info" android:layout_alignRight="@id/distribution_promotion_achieve_step1" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

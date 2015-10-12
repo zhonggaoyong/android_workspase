@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="3.0px" />
+            <solid android:color="@color/flight_line_bg_grey" />
+        </shape>
+    </item>
+    <item android:left="1.5px" android:top="1.5px" android:right="1.5px" android:bottom="1.5px">
+        <shape>
+            <corners android:radius="2.0px" />
+            <solid android:color="#ffffffff" />
+            <padding android:left="7.0dip" android:top="7.0dip" android:right="7.0dip" android:bottom="7.0dip" />
+        </shape>
+    </item>
+</layer-list>

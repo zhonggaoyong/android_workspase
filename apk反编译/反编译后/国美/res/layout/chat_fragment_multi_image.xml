@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/chat_layout_photo_bottom_bar" layout="@layout/chat_layout_photo_bottom_bar" />
+    <GridView android:id="@id/grid" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/space_size" android:verticalSpacing="@dimen/space_size" android:columnWidth="@dimen/image_size" android:numColumns="auto_fit" android:layout_above="@id/chat_layout_photo_bottom_bar" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffcdcece" android:id="@id/timeline_area" android:background="#cc000000" android:paddingLeft="10.0sp" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/layout_album_ar" android:background="@color/layout_backgroud" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/lv_ablum_ar" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/setting_activity_line_color" android:dividerHeight="1.0px" android:headerDividersEnabled="false" />
+    </RelativeLayout>
+</RelativeLayout>

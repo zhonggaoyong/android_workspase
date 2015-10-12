@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:textSize="@dimen/app_textsize_button" android:textColor="@color/app_text_blue" android:id="@id/cancel" android:background="@drawable/sellwin_bg_white_item" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="取 消"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

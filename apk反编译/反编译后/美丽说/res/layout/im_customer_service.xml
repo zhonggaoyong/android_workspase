@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="10.0dip">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_btn_service" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/online_service_wrap" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_online_service_icon" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/ic_cs_online" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/iv_online_service_icon" android:layout_centerVertical="true">
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d1" android:id="@id/tv_online_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="在线客服" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="工作时间: 周一至周日(08:00-22:00)" android:layout_toRightOf="@id/iv_online_service_icon" />
+            </LinearLayout>
+            <ImageView android:background="@drawable/circle_info_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/phone_service_wrap" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/cutline" />
+            <RelativeLayout android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_phone_service_icon" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/ic_cs_phone" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/iv_phone_service_icon" android:layout_centerVertical="true">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d1" android:id="@id/tv_phone_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话客服" android:layout_toRightOf="@id/iv_phone_service_icon" />
+                    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="400-080-0577" android:layout_toRightOf="@id/iv_phone_service_icon" android:layout_below="@id/tv_phone_service" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/circle_info_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/v4_service_wrap" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/cutline" />
+            <RelativeLayout android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_v4_service_icon" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/ic_cs_v4" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/iv_v4_service_icon" android:layout_centerVertical="true">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d1" android:id="@id/tv_v4_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="V4专享电话预约" />
+                    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="预约时间: 周一至周日(08:00-20:00)" android:layout_below="@id/tv_v4_service" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/circle_info_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="@color/grey_d5" android:id="@id/question_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="常见问题" />
+    <ListView android:id="@id/lv_faq" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#00000000" />
+</LinearLayout>

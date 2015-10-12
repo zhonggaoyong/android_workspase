@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meilishuo.app.views.AccordantLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <com.meilishuo.app.views.SquareFrameLayout android:id="@id/img_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/circle_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/classification_mask" android:scaleType="fitXY" />
+        <TextView android:id="@id/new_msg_num_tv" style="@style/AllCircleNewMsgNumStyle" />
+    </com.meilishuo.app.views.SquareFrameLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ff80737b" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/circle_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+</com.meilishuo.app.views.AccordantLayout>

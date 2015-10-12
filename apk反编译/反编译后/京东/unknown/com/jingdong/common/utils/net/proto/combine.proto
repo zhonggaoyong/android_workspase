@@ -1,0 +1,29 @@
+package com.jingdong.common.utils.net.CombinePkg;
+
+message ReqItem {
+    required string id = 1;
+    required string urlParam = 2;
+    optional string body = 3;
+}
+
+message ResItem {
+    required string id = 1;
+    optional string header = 2;
+    required string body = 3;
+}
+
+message CombineReq {
+    required string urlTemplate =1;
+    repeated ReqItem req = 2;
+}
+
+enum ToggleFlag{
+    ALLOW = 0;
+    DENY_SESSION = 1;
+    DENY_ALL = 2;
+}
+message CombineRes {
+    optional ToggleFlag toggle = 1[default=ALLOW];
+    optional string commonHeader = 2;
+    repeated ResItem res = 3;
+}

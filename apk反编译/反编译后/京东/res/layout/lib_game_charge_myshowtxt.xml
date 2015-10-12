@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_game_charge_margin_distance" android:layout_marginTop="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/lib_game_charge_text_size16" android:textColor="@color/lib_game_charge_text_color" android:id="@id/lib_game_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_game_charge_game_name" />
+    <TextView android:textSize="@dimen/lib_game_charge_text_size16" android:textColor="@color/lib_game_charge_black" android:id="@id/lib_game_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_game_charge_size17" android:text="穿越火线" />
+</LinearLayout>

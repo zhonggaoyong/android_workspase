@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/text_view" android:background="@color/grey_l1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="群主及群管理" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/member" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/line" android:visibility="gone" android:layout_marginLeft="15.0dip" style="@style/SecondDividerViewStyle" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="70.0dip">
+            <CheckBox android:gravity="center_vertical" android:id="@id/circle_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:button="@drawable/circle_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/last_time" android:layout_toRightOf="@id/circle_check" android:layout_centerVertical="true">
+                <com.meilishuo.app.views.RoundImageView android:id="@id/member_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerCrop" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:text="推倒训练营" android:singleLine="true" android:layout_toRightOf="@id/member_icon" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/verify_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/member_icon" android:layout_below="@id/member_name" android:layout_alignBottom="@id/member_icon" />
+            </RelativeLayout>
+            <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:id="@id/last_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="1小时前登录" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

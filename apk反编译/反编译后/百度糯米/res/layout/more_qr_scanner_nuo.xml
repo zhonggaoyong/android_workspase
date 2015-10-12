@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:id="@id/more_scanner_preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.baidu.bainuo.QRCode.view.ViewfinderView android:id="@id/more_scanner_viewfinder_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="120.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qrcode_66x66" />
+            <TextView android:textColor="@color/white" android:background="@drawable/qrcode_text_bg" android:padding="5.0dip" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="将二维码图案放在取景框内，即可自动扫描。" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

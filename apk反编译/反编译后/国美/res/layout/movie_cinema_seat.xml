@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/flt_root_container" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llt_content_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="36.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@id/tv_film_show_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="07-01(今天)" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@id/tv_film_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="3D原声" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/price_text_color" android:layout_gravity="center_vertical" android:id="@id/tv_t_film_total_price_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="55" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@drawable/bg_hall_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@id/tv_cinema_hall_detail" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金逸影城（万柳店）2号厅" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.gome.ecmall.home.movie.custom.SeatView android:id="@id/mSSView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <com.gome.ecmall.home.movie.custom.SeatThumbView android:layout_gravity="top|right|center" android:id="@id/ss_ssthumview" android:layout_width="@dimen/ss_seat_thum_size_w" android:layout_height="@dimen/ss_seat_thum_size_h" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llt_hs_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/setting_activity_line_color" />
+            <HorizontalScrollView android:id="@id/hs" android:background="@android:color/white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/llt_choose_seats_container" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:background="@drawable/new_product_add_shopcar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/shopping_cart_order_title_size" android:textColor="@color/main_default_black_text_color" android:id="@id/tv_price_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="总额：" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/shopping_cart_order_title_size" android:textColor="@color/price_text_color" android:id="@id/tv_b_film_total_price_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_price_tip" android:layout_centerVertical="true" />
+            <Button android:enabled="false" android:id="@id/btn_film_to_buy" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/confirm" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Gome.Button.SolidRed.Style" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

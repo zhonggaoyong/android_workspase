@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/search_poi_first_position_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="top" android:background="@color/search_poi_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/poi_total_container" android:background="@drawable/selector_list_row" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/search_poi_merchant_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/search_poi_merchant_head" />
+            <View android:id="@id/poi_ktv_reserve_devider" android:background="@color/poi_ktv_devider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" />
+            <include android:id="@id/poi_ktv_reserve" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" layout="@layout/poi_ktv_reserve_item" />
+            <include android:id="@id/poi_ktv_groupon" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" layout="@layout/poi_ktv_reserve_item" />
+        </LinearLayout>
+        <include android:id="@id/poi_pay_at_shop_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/poi_pay_at_shop" />
+        <View android:layout_gravity="bottom" android:background="@color/search_poi_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/search_poi_tuan_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/search_poi_more_tip" />
+    <View android:layout_width="fill_parent" android:layout_height="12.0dip" />
+</merge>

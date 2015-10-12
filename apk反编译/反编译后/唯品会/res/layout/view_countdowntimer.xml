@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_hour_decade" android:background="@drawable/bg_count_down_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_hour_unit" android:background="@drawable/bg_count_down_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="0" />
+    <TextView android:textSize="20.0dip" android:textColor="#ff4f4242" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text=":" />
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_min_decade" android:background="@drawable/bg_count_down_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_min_unit" android:background="@drawable/bg_count_down_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="0" />
+    <TextView android:textSize="20.0dip" android:textColor="#ff4f4242" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text=":" />
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_sec_decade" android:background="@drawable/bg_count_down_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_sec_unit" android:background="@drawable/bg_count_down_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="0" />
+</LinearLayout>

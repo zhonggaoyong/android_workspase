@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/personal_bg_color_silver" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/more_activity_title" layout="@layout/title" />
+    <ScrollView android:id="@id/more_activity_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/more_activity_title" android:fadeScrollbars="true">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/more_activity_content" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/more_native_setting_list" layout="@layout/more_native_setting_layout" />
+            <include android:id="@id/more_native_service_list" layout="@layout/more_native_layout" />
+            <LinearLayout android:orientation="vertical" android:id="@id/more_entry_list_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="10.0dip">
+                <View android:id="@id/more_top_devider" style="@style/line5" />
+                <com.jingdong.common.ui.JDListView android:id="@id/more_service_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/more_setting_divide_line_grey_color" android:dividerHeight="0.5dip" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+                <View android:id="@id/more_footer_devider" style="@style/line5" />
+            </LinearLayout>
+            <Button android:textSize="17.0dip" android:textColor="@drawable/product_button_text_color_selector" android:id="@id/personel_logout_but" android:background="@drawable/button_b" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/pg_more_about_logout" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

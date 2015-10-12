@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/flight_order_main_linearlayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/flight_order_center_item01" android:background="@drawable/bg_selector_top" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/flight_already_payment_order_text" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/already_payment_order" android:layout_weight="3.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/red" android:gravity="right|center" android:layout_gravity="center_vertical" android:id="@id/flight_already_payment_order_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/order_arrow" android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/flight_order_center_item02" android:background="@drawable/bg_selector_center" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/flight_waiting_payment_order_text" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/waiting_payment_order" android:layout_weight="3.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/red" android:gravity="right|center" android:layout_gravity="center_vertical" android:id="@id/flight_waiting_payment_order_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/order_arrow" android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/flight_order_center_item03" android:background="@drawable/bg_selector_bottom" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/flight_cancel_payment_order_text" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/cancel_payment_order" android:layout_weight="3.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/red" android:gravity="right|center" android:layout_gravity="center_vertical" android:id="@id/flight_cancel_payment_order_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/order_arrow" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:id="@id/l_section1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/user_agreement_content" style="@style/TextDetailContent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/vip_name" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/tv_delivery_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送货时间：" />
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_selected_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_delivery_time_title" />
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_selected_sec_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_selected_time" android:layout_alignBaseline="@id/tv_selected_time" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_select_finish" android:background="@drawable/button_blue_short" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:text="确定" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/button_pop_cancel_press" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="0.1">
+            <com.jingdong.app.mall.utils.ui.view.WheelView android:id="@id/firstWheel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_weight="1.0" />
+            <com.jingdong.app.mall.utils.ui.view.WheelView android:id="@id/secWheel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

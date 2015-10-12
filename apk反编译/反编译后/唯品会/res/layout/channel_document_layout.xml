@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="180.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/icon_kids_sun" />
+    <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="每日小贴士" android:singleLine="true" />
+    <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/white" android:ellipsize="end" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:maxLines="4" />
+</LinearLayout>

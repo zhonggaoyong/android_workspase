@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeef0f3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout style="@style/title_bar_bg_style">
+        <ImageView android:id="@id/btn_back" android:scaleType="centerInside" style="@style/app_title_left_button_style" />
+        <TextView android:textSize="@dimen/app_title_size" android:textColor="@color/app_title_dark" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baby_list_title" android:singleLine="true" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffe6e8f4" android:layout_width="fill_parent" android:layout_height="32.0dip">
+            <ImageView android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/topbar_explain_normal" />
+            <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/app_text_black" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="将在亲子频道首页对选中的宝宝进行专属推荐" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ListView android:id="@id/list" android:background="#00000000" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="10.0dip" />
+    </LinearLayout>
+    <include android:id="@id/load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/new_load_fail" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginTop="-30.0dip" android:src="@drawable/icon_baby_empty" />
+        <TextView android:textSize="@dimen/app_textsize_title" android:textColor="@color/app_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="暂无宝宝档案" />
+        <com.achievo.vipshop.view.widget.ScalableIconText android:id="@id/add" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_marginTop="70.0dip" android:text="添加宝宝档案" android:drawableLeft="@drawable/icon_add_selector" android:drawablePadding="8.0dip" app:left_height="15.0dip" app:left_width="15.0dip" style="@style/submit_red_middle_button_style" />
+    </LinearLayout>
+</LinearLayout>

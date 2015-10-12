@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/lib_phone_charge_shape" android:layout_width="304.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/lib_phone_charge_black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/lib_phone_charge_customer_title" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/lib_phone_charge_black" android:id="@id/charge_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="@string/lib_phone_charge_unit" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/lib_phone_charge_black" android:id="@id/charge_customer_edit" android:background="@drawable/lib_phone_charge_kuang_bj" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:hint="@string/lib_phone_charge_customer_hint" android:maxLength="6" android:layout_toLeftOf="@id/charge_unit" android:inputType="numberDecimal" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="22.0dip">
+        <Button android:textSize="15.0sp" android:textColor="@color/lib_phone_charge_float_text" android:gravity="center" android:id="@id/charge_customer_cancel" android:background="@drawable/lib_phone_charge_cancel_shape" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/lib_phone_charge_customer_cancel" android:layout_weight="1.0" />
+        <Button android:textSize="15.0sp" android:textColor="@color/lib_phone_charge_white" android:gravity="center" android:id="@id/charge_customer_confirm" android:background="@drawable/lib_phone_charge_confirm_shape" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:text="@string/lib_phone_charge_customer_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fill_order_user_no_login_tips" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pricetext="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/fill_order_bottom_addressInfo_show_view" android:background="@color/fill_order_bottom_address_view_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="33.0dip">
+        <View android:background="#fff0d9b4" android:layout_width="fill_parent" android:layout_height="@dimen/fill_order_line_height" />
+        <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/c_252525" android:id="@id/fill_order_addressInfo_textView_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fill_order_layout_10dp" android:text="@string/send_to_address" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/c_252525" android:ellipsize="end" android:id="@id/fill_order_textView_addressInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fill_order_layout_10dp" android:singleLine="true" android:layout_toRightOf="@id/fill_order_addressInfo_textView_to" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/fill_order_price_show_view" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/fill_order_bottom_addressInfo_show_view">
+        <RelativeLayout android:layout_gravity="center_vertical" android:background="@color/cart_bottom_show_view_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_weight="2.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/fill_order_dialog_ok_text_color" android:gravity="center" android:id="@id/fill_order_money_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/last_money" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/fill_order_dialog_ok_text_color" android:gravity="center" android:id="@id/fill_order_money_RMB" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/RMB" android:layout_toRightOf="@id/fill_order_money_info" android:layout_centerVertical="true" />
+            <com.jingdong.app.mall.utils.ui.PriceTextView android:textSize="20.0sp" android:textColor="@color/fill_order_dialog_ok_text_color" android:ellipsize="none" android:gravity="left" android:id="@id/fill_order_money" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/fill_order_money_RMB" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.1" pricetext:isNum="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/fill_order_submit_order_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <Button android:textSize="20.0sp" android:textColor="@color/fill_order_dialog_ok_text_color" android:id="@id/submit_order" android:background="@drawable/submit_order_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/submit_ding_dan" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

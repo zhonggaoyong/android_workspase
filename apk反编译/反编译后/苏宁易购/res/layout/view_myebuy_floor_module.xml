@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_44dp">
+        <View android:id="@id/view_divider_modeule" android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+        <ImageView android:id="@id/icon_floor_module" android:layout_width="@dimen/android_public_space_25dp" android:layout_height="@dimen/android_public_space_25dp" android:src="@drawable/icon_act_my_financing" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/android_public_textsize_15sp" android:textColor="@color/pub_color_eight" android:gravity="center_vertical" android:id="@id/tv_floor_module_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_14dp" android:text="@string/act_myebuy_my_financing" android:layout_toRightOf="@id/icon_floor_module" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/android_public_textsize_13sp" android:textColor="@color/act_myebuy_color1" android:id="@id/tv_floor_module_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_12dp" android:layout_toLeftOf="@id/iv_module_arrow" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_module_arrow" android:paddingRight="@dimen/android_public_space_14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+</LinearLayout>

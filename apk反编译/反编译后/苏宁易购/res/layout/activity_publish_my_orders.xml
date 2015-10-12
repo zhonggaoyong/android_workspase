@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.suning.mobile.ebuy.view.component.MyScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/view_publish_menu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.suning.mobile.ebuy.view.MyGridView android:gravity="center" android:id="@id/grid_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:listSelector="@color/hyaline" android:cacheColorHint="@color/hyaline" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+        </LinearLayout>
+    </com.suning.mobile.ebuy.view.component.MyScrollView>
+</LinearLayout>

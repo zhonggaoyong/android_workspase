@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lv_virtual_ticket_select" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@color/paysdk_color_free_line" android:dividerHeight="1.0dip" android:layout_weight="1.0" />
+    <View android:id="@id/v_spliter1" android:background="@color/paysdk_color_free_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/paysdk_link_blue" android:gravity="center" android:id="@id/tv_virtual_ticket_select_hint" android:background="@drawable/paysdk2_bg_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="" />
+    <View android:id="@id/v_spliter2" android:background="@color/paysdk_color_free_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <Button android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/paysdk_link_blue" android:gravity="center" android:id="@id/bt_virtual_ticket_select_abandon" android:background="@drawable/paysdk2_bg_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/paysdk2_virtual_ticket_abandon" />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_title_new" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rela1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/hotel_normalsearch_img_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/android_public_space_20px">
+            <ImageView android:id="@id/hotel_normalsearch_img" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_marginTop="5.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/hotel_normalsearch_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_20px" android:layout_toRightOf="@id/hotel_normalsearch_img_layout">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/hotel_normalsearch_info_layout_in" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_20px" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/black" android:id="@id/hotel_normalsearch_hotelname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="酒店" android:singleLine="false" />
+                <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/Silver11" android:id="@id/hotel_normalsearch_hotel_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_14px" android:text="位置" android:layout_below="@id/hotel_normalsearch_hotelname" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/hotel_normalsearch_hotel_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_13px" android:layout_below="@id/hotel_normalsearch_hotel_address">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/red" android:id="@id/hotel_normalsearch_hotel_price_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    <RatingBar android:id="@id/hotel_normalsearch_ratingbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="0.0" android:isIndicator="true" style="@style/hotel_rating_bar" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/dark_yellow" android:id="@id/hotel_normalsearch_hotel_price_middle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/orange" android:id="@id/hotel_normalsearch_hotel_price_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout_btn" android:background="@drawable/tab_base_bg" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_52px" android:layout_marginLeft="@dimen/android_public_space_20px" android:layout_marginTop="@dimen/android_public_space_20px" android:layout_marginRight="@dimen/android_public_space_20px">
+        <LinearLayout android:gravity="center" android:id="@id/hotel_detail_btn_hotel_intro" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/Silver11" android:gravity="center" android:id="@id/hotel_detail_btn_tv_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hotel_detail_brief_introduction" />
+        </LinearLayout>
+        <View android:background="@color/pub_color_six" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hotel_detail_btn_device_and_service" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/Silver11" android:id="@id/hotel_detail_btn_tv_device_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hotel_detail_service" />
+        </LinearLayout>
+        <View android:background="@color/pub_color_six" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hotel_detail_btn_picture_and_num" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/Silver11" android:id="@id/hotel_detail_btn_tv_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hotel_detail_images" />
+            <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/Silver11" android:id="@id/hotel_detail_btn_tv_picture_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/android_public_space_20px">
+        <ListView android:orientation="vertical" android:id="@id/hotel_search_list_listview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#ff898989" android:dividerHeight="1.0px" />
+    </LinearLayout>
+</LinearLayout>

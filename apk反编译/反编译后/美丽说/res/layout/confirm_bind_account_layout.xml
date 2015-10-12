@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:onClick="onClick" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <View android:background="@color/grey_l5" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <com.meilishuo.app.views.RoundImageView android:layout_gravity="center_horizontal" android:id="@id/roundimgeview" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/default_avatar_round" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d1" android:layout_gravity="center_horizontal" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d1" android:layout_gravity="center_horizontal" android:id="@id/email" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/account_bind_is_your_account" android:singleLine="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/bind_account" android:background="@drawable/red_exit_btn" android:paddingLeft="35.0dip" android:paddingTop="8.0dip" android:paddingRight="35.0dip" android:paddingBottom="8.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:onClick="onClick" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink_d2" android:layout_gravity="center_horizontal" android:id="@id/contact_service" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/account_bind_is_not_me" android:singleLine="true" android:onClick="onClick" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d1" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4000-800-577" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/c_F8F8F8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/share_to_top_line" android:background="@color/c_F15353" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/share_to_mid_layout" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/share_to_top_line">
+        <LinearLayout android:orientation="horizontal" android:id="@id/share_to_item_box1" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/share_to_wx_friends_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/share_to_wx_friends_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_to_wx_friend_icon" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.5sp" android:textColor="@color/c_848689" android:id="@id/share_to_wx_friends_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/share_to_wx_friends" android:layout_below="@id/share_to_wx_friends_img" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/share_to_wx_circle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/share_to_wx_circle_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_to_wx_circle_icon" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.5sp" android:textColor="@color/c_848689" android:id="@id/share_to_wx_circle_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/share_to_wx_friends_circle" android:layout_below="@id/share_to_wx_circle_img" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/share_to_weibo_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/share_to_weibo_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_to_weibo_icon" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.5sp" android:textColor="@color/c_848689" android:id="@id/share_to_weibo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/share_to_weibo" android:layout_below="@id/share_to_weibo_img" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/share_to_item_box2" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/share_to_item_box1">
+            <RelativeLayout android:id="@id/share_to_qq_friends_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/share_to_qq_friends_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_to_qq_friend_icon" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.5sp" android:textColor="@color/c_848689" android:id="@id/share_to_qq_friends_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/share_to_qq_friends" android:layout_below="@id/share_to_qq_friends_img" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/share_to_qzone_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/share_to_qzone_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_to_qzone_icon" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.5sp" android:textColor="@color/c_848689" android:id="@id/share_to_qzone_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/share_to_qzone" android:layout_below="@id/share_to_qzone_img" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/share_to_more" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/share_to_wx_more_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_to_more_icon" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.5sp" android:textColor="@color/c_848689" android:id="@id/share_to_more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/more" android:layout_below="@id/share_to_wx_more_img" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/share_to_cancle" android:background="@color/c_F8F8F8" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.5sp" android:textColor="@color/c_252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:id="@id/share_to_bottom_line" android:background="@color/c_BFBFBF" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_above="@id/share_to_cancle" />
+</RelativeLayout>

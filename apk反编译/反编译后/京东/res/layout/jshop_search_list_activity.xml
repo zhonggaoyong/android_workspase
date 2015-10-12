@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/resize_layout" />
+    <include android:id="@id/jshop_list_title" layout="@layout/jshop_head_search" />
+    <ListView android:id="@id/jshop_shop_list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#ffdbdbdb" android:dividerHeight="1.0px" android:layout_below="@id/jshop_list_title" />
+    <TextView android:textAppearance="@android:style/TextAppearance" android:gravity="center" android:layout_gravity="center" android:id="@id/empty" android:padding="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/jshop_no_search_result" android:layout_below="@id/jshop_list_title" />
+</RelativeLayout>

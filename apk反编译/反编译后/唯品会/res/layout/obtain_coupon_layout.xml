@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/detail_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/detail_tb_padding" android:layout_marginBottom="6.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@drawable/vip_red_selector" android:gravity="center" android:id="@id/obtain_now" android:background="@drawable/btn_line_violet_bg" android:layout_width="69.0dip" android:layout_height="24.0dip" android:layout_marginLeft="25.0dip" android:text="立即领券" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/obtain_now" android:layout_alignParentLeft="true">
+            <TextView android:textSize="18.0dip" android:textColor="@color/detail_dark" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/coupon_money" android:background="@drawable/lable_icon_youhuiquan_big_for_detail" android:layout_width="74.0dip" android:layout_height="34.0dip" android:singleLine="true" />
+            <LinearLayout android:gravity="left|center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/detail_dark" android:id="@id/coupon_use" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/detail_gray_dark" android:id="@id/coupon_belong_brand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

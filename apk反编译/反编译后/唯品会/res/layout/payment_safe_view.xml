@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/vip_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/app_text_new_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_safe_view_text" />
+    <View android:layout_width="fill_parent" android:layout_height="15.0dip" />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shoppingcart_bg_goods" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img" android:background="@color/grey_l6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <RelativeLayout android:gravity="bottom" android:id="@id/dress_explain" android:background="@drawable/dress_mask" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/img">
+            <ImageView android:id="@id/explain_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dress_explain" android:layout_alignParentLeft="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/explain_text" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/explain_img" android:lineSpacingMultiplier="1.4" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/grey_l3" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_goods_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dress_detaill" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dress_detaill_english" />
+        </LinearLayout>
+        <View android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/layout_goods_title" android:layout_centerVertical="true" style="@style/cutline" />
+        <View android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/layout_goods_title" android:layout_centerVertical="true" style="@style/cutline" />
+    </RelativeLayout>
+    <HorizontalScrollView android:layout_gravity="center_horizontal" android:paddingTop="10.0dip" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.meilishuo.app.dress.view.SingleDressView android:id="@id/single_dress_view" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <View android:background="@color/grey_l3" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/more_dress_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_goods_title_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dress_detaill_more" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dress_detaill_more_english" />
+            </LinearLayout>
+            <View android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/layout_goods_title_more" android:layout_centerVertical="true" style="@style/cutline" />
+            <View android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/layout_goods_title_more" android:layout_centerVertical="true" style="@style/cutline" />
+        </RelativeLayout>
+        <com.meilishuo.app.dress.view.SameMoreDressView android:id="@id/more_dress_imgs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

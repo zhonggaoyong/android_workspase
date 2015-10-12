@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/util_view_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_three" android:id="@id/telephoneTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="积分余额：" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/detail_red" android:id="@id/integralcountTv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="激活积分账号" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/deliver_name_edit" />
+                <EditText android:layout_gravity="center_vertical" android:id="@id/nameEt" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/required" android:maxLength="16" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="性別：" />
+                <RadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/male" android:background="@null" android:checked="true" android:button="@null" android:text="男" android:drawableLeft="@drawable/btn_radio_card" />
+                    <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/female" android:background="@null" android:layout_marginLeft="25.0dip" android:button="@null" android:text="女" android:drawableLeft="@drawable/btn_radio_card" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/spinnerLayout" android:background="@drawable/input_bg" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <Spinner android:textSize="16.0sp" android:textColor="@color/black" android:entries="@array/documentsType" android:id="@id/spinner" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="证件类型：" android:layout_weight="1.0" />
+                <ImageView android:id="@id/spinnerimage" android:background="@drawable/arrow_next" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0sp" android:textColor="@color/pub_color_three" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/yfb_id_num" />
+                <EditText android:id="@id/documentsEt" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/required" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/addressLayout" android:background="@drawable/input_bg" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="@color/pub_color_three" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="选择省市" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff838282" android:id="@id/addressText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_question" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0sp" android:textColor="@color/pub_color_three" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="详细地址" />
+                <EditText android:id="@id/detailAddressEt" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/required" android:maxLength="16" />
+            </LinearLayout>
+            <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/activationBt" android:background="@drawable/add_to_shop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="50.0dip" android:text="激活积分账号" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

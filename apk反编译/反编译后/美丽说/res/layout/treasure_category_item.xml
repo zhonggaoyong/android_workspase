@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@drawable/treasure_category_item_textcolor" android:ellipsize="end" android:gravity="center" android:id="@id/name" android:background="@drawable/search_tab_press" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+    <View android:id="@id/line" android:background="@color/grey_d1_t20" android:layout_width="1.0px" android:layout_height="22.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

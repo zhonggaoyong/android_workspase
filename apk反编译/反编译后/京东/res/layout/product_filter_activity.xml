@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.common.ui.JDDrawerLayout android:id="@id/filter_drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/filter_vertical_separating_line_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/common_title" layout="@layout/title" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/common_title">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/product_fiter_3_address" android:background="@drawable/filter_list_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/search_filter_item_height" android:layout_marginTop="@dimen/search_filter_arrow_img_height">
+                    <View android:background="@color/filter_horizontal_separating_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <View android:background="@color/filter_horizontal_separating_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:gravity="center_vertical" android:layout_marginLeft="@dimen/filter_page_space_15" android:text="@string/search_filter_region" style="@style/filter_page_key_text_style" />
+                        <TextView android:gravity="right|center" android:id="@id/product_filter_address_txt" android:layout_marginRight="@dimen/filter_value_text_right_margin" android:layout_weight="1.0" style="@style/filter_page_selected_value_text_style" />
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/filter_3_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/filter_page_space_15" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/region_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_filter_arrow_img_height" android:layout_below="@id/product_fiter_3_address">
+                    <View android:background="@color/filter_horizontal_separating_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/filter_option_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" />
+                    <View android:id="@id/divider_line3" android:background="@color/filter_horizontal_separating_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <RelativeLayout android:gravity="center_vertical" android:id="@id/category_item" android:background="@drawable/filter_list_item_bg" android:paddingLeft="@dimen/filter_page_space_15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/search_filter_item_height">
+                        <TextView android:text="@string/filter_category_text" android:layout_centerVertical="true" style="@style/filter_page_key_text_style" />
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/product_filter_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/filter_page_space_15" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <TextView android:id="@id/product_filter_choosed" android:layout_marginRight="@dimen/filter_value_text_right_margin" android:text="@string/fiter_default_province" android:layout_toLeftOf="@id/product_filter_iv" android:layout_centerVertical="true" style="@style/filter_page_value_text_style" />
+                    </RelativeLayout>
+                    <View android:background="@color/filter_horizontal_separating_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/filter_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_filter_arrow_img_height" android:layout_below="@id/region_layout">
+                    <LinearLayout android:orientation="vertical" android:id="@id/category_last_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:id="@id/category_last_list_line1" android:background="@color/filter_horizontal_separating_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                        <com.jingdong.common.ui.JDListView android:id="@id/category_last_list" android:background="@android:color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/filter_list_item_bg" android:cacheColorHint="#00000000" android:divider="@null" />
+                        <View android:id="@id/category_last_list_line2" android:background="@color/filter_horizontal_separating_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    </LinearLayout>
+                    <TextView android:id="@id/category_last_list_nodata" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_filter_none_hint" android:layout_centerHorizontal="true" />
+                    <RelativeLayout android:id="@id/category_last_list_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/category_last_list_layout" android:layout_alignTop="@id/category_last_list_layout" android:layout_alignRight="@id/category_last_list_layout" android:layout_alignBottom="@id/category_last_list_layout">
+                        <com.jingdong.common.ui.JDProgressBar android:id="@id/category_last_list_loading" android:visibility="gone" android:layout_centerInParent="true" style="@style/progress_loading" />
+                        <include android:id="@id/loading_error_tips_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading_error_tips" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/filter_reset_btn" android:paddingBottom="@dimen/filter_page_space_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/filter_page_space_15" android:layout_below="@id/filter_list_layout" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="@dimen/filter_key_text_size" android:textColor="@color/filter_value_text_color" android:gravity="center" android:background="@drawable/fragment_button_selector" android:layout_width="@dimen/filter_clear_layout_width" android:layout_height="@dimen/filter_clear_layout_height" android:text="@string/filter_clear" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <RelativeLayout android:id="@id/loading_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.jingdong.common.ui.JDProgressBar android:gravity="center" android:id="@id/loading_pb" style="@style/progress_loading" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="right" android:id="@id/second_filter_menu" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.jingdong.common.ui.JDDrawerLayout>

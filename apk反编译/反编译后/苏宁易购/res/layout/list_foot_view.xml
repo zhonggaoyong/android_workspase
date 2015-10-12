@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@id/foot_arrowImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/down_icon" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/foot_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="15.0dip" android:id="@id/foot_tipsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上拉刷新" />
+            <TextView android:textSize="12.0dip" android:id="@id/foot_lastUpdatedTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上次更新" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

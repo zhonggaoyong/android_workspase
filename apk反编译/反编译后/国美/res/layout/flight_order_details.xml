@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/flight_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header" layout="@layout/flight_top_layout" />
+    <ScrollView android:id="@id/sc_content" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="#ffeb4646" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <HorizontalScrollView android:id="@id/sv_header" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </HorizontalScrollView>
+                <include android:id="@id/sigle_ticket" android:visibility="gone" layout="@layout/flight_order_ticket_sigle" />
+                <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="8.0sp" android:textColor="@color/flight_text_white" android:layout_gravity="center" android:id="@id/tv_first" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ● " />
+                    <TextView android:textSize="8.0sp" android:textColor="@color/flight_text_white_transparent" android:layout_gravity="center" android:id="@id/tv_second" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ● " />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:background="#ffffffff" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_black" android:id="@id/tv_order_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_red" android:id="@id/tv_order_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预定日期:" android:singleLine="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_black" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                    <RelativeLayout android:id="@id/pay_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/tv_date">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付方式:" android:singleLine="true" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_black" android:id="@id/tv_pay_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <include layout="@layout/flight_order_price_info" />
+                <View android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+                <View android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:gravity="center_vertical" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip" android:text="登机人信息" android:singleLine="true" />
+                <com.gome.ecmall.custom.DisScrollListView android:id="@id/lv_flight_person_info" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/common_listview_style" />
+                <View android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_reimbursement_container" android:background="#ffffffff" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+                <View android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="报销信息" android:singleLine="true" />
+                <View android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rl_yjlx" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:id="@id/yjlx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮寄类型:" android:singleLine="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_black" android:id="@id/tv_yjlx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_toRightOf="@id/yjlx" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_yjdz" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:id="@id/yjdz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="邮寄地址:" android:singleLine="true" android:layout_alignBottom="@id/tv_yjdz_name" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_black" android:id="@id/tv_yjdz_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_toRightOf="@id/yjdz" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_black" android:id="@id/tv_yjdz_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_toRightOf="@id/yjdz" android:layout_below="@id/tv_yjdz_name" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_black" android:id="@id/tv_yjdz_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/yjdz" android:layout_below="@id/tv_yjdz_phone" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="@color/flight_common_bg" android:layout_width="fill_parent" android:layout_height="14.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_retreatchange_container" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip">
+                <View android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rl_retreatchange_des" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退改签说明" android:singleLine="true" />
+                    <ImageView android:id="@id/tv_bx_more" android:background="@drawable/address_jiantou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/rl_phone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退改签请致电01058859030" android:singleLine="true" />
+                    <ImageView android:background="@drawable/ic_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <View android:id="@id/bottom" android:background="@color/flight_common_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/rl_bottom" android:background="@drawable/new_product_add_shopcar_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:orientation="vertical" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/flight_text_red" android:id="@id/tv_shouldpay_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_grey" android:id="@id/tv_zj_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_shouldpay_price" android:layout_alignLeft="@id/tv_shouldpay_price" />
+        </RelativeLayout>
+        <Button android:id="@id/bt_order_pay" android:paddingLeft="30.0dip" android:paddingTop="5.0dip" android:paddingRight="30.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/pay_now" android:layout_alignParentRight="true" style="@style/Gome.Button.SolidRed.Style" />
+    </RelativeLayout>
+</RelativeLayout>

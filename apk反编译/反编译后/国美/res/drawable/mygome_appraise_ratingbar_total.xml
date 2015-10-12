@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/ic_mygome_star_big_normal" android:left="10.0dip" android:right="10.0dip" />
+    <item android:id="@android:id/secondaryProgress" android:drawable="@drawable/ic_mygome_star_big_normal" android:left="10.0dip" android:right="10.0dip" />
+    <item android:id="@android:id/progress" android:drawable="@drawable/ic_mygome_star_big_selected" android:left="10.0dip" android:right="10.0dip" />
+</layer-list>

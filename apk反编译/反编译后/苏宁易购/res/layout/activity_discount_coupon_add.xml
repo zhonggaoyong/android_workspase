@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parentlinearlayout" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_30px">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_100px">
+                    <EditText android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:gravity="center_vertical" android:id="@id/coupon_gift_id" android:background="@null" android:paddingLeft="@dimen/ios_public_space_30px" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_100px" android:layout_marginRight="@dimen/ios_public_space_10px" android:layout_marginBottom="@dimen/ios_public_space_10px" android:hint="@string/shoppingcart_input_coupon_or_card" android:lines="1" android:selectAllOnFocus="true" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ" android:layout_weight="1.0" android:inputType="textUri" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/img_coupon_barcode" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_20px" android:src="@drawable/home_title_barcode" android:layout_weight="6.0" />
+                </LinearLayout>
+                <View android:background="@drawable/virtual_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" />
+                <EditText android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:gravity="center_vertical" android:id="@id/coupon_gift_id_password" android:background="@color/pub_color_one" android:paddingLeft="@dimen/ios_public_space_30px" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_100px" android:layout_marginTop="@dimen/pub_margin_or_padding_space_one" android:layout_marginBottom="@dimen/ios_public_space_10px" android:hint="@string/shoppingcart_input_coupon_or_card_passport" android:lines="1" android:password="true" android:selectAllOnFocus="true" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ" android:inputType="textUri" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_one" android:id="@id/add_coupon_gift_btn" android:background="@drawable/public_bg_btn_orange" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_80px" android:layout_margin="@dimen/ios_public_space_30px" android:text="@string/shoppingcart_add_prompt" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

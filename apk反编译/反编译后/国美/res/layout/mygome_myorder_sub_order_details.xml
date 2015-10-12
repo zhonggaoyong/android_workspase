@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/common_title_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sub_order_main_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@drawable/yellow_background" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/mygome_myorder_order_details_delivery_form_id_textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="配送单号:" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/price_text_color" android:id="@id/mygome_myorder_order_details_delivery_form_amount_textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="配送单金额:" android:layout_toLeftOf="@id/mygome_myorder_order_details_delivery_form_amount_textView1" android:layout_alignTop="@id/mygome_myorder_order_details_delivery_form_amount_textView1" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/mygome_myorder_order_details_order_elecConfmCode_textView1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:text="电子签收码:" android:layout_below="@id/mygome_myorder_order_details_delivery_form_id_textView1" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffcc0000" android:id="@id/mygome_myorder_order_details_order_elecConfmCode_data_textView1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/mygome_myorder_order_details_order_elecConfmCode_textView1" android:layout_alignTop="@id/mygome_myorder_order_details_order_elecConfmCode_textView1" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/mygome_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ScrollView android:id="@id/scrollView1" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/common_scrollbar_style">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/mygome_myorder_order_details_delivery_process_imageView1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:contentDescription="@string/order_status" />
+                <include layout="@layout/mygome_myorder_order_status_item" />
+                <include layout="@layout/mygome_myorder_order_details_tracking" />
+                <RelativeLayout android:id="@id/rl_sun_order_detail__open_close" android:background="@drawable/good_shop_name_top_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/main_default_black_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_sun_order_detail_open_close" android:layout_width="250.0dip" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="@string/goods_list" android:singleLine="true" />
+                    <ImageView android:id="@id/iv_sun_order_detail_open_close" android:background="@drawable/category_arrow_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:background="@color/common_round_line_color" android:layout_width="1.0px" android:layout_height="40.0dip" android:layout_marginRight="10.0px" android:layout_toLeftOf="@id/iv_sun_order_detail_open_close" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/more_item_last_normal" android:paddingLeft="11.0dip" android:paddingTop="10.0dip" android:paddingRight="11.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.gome.ecmall.custom.DisScrollListView android:id="@id/mygome_myorder_order_details_delivery_form_goods_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/more_section_listview_style" />
+                    <include layout="@layout/mygome_myorder_order_details_shop_goods_list_footview" />
+                </LinearLayout>
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:background="@drawable/more_item_first_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="40.0dip" android:text="@string/payment_info" android:singleLine="true" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/more_item_last_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:shrinkColumns="2">
+                        <TableRow android:gravity="center_vertical" android:id="@id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/main_default_black_text_color" android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goods_amount" android:singleLine="true" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/hint_text_color" android:id="@id/sub_order_goods_amount_textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        </TableRow>
+                        <TableRow android:gravity="center_vertical" android:id="@id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/main_default_black_text_color" android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/freight" android:singleLine="true" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/hint_text_color" android:layout_gravity="center_vertical" android:id="@id/sub_order_freight_textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        </TableRow>
+                        <TableRow android:gravity="center_vertical" android:id="@id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/main_default_black_text_color" android:layout_gravity="top|right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pre_payment" android:singleLine="true" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="15.0sp" android:textColor="@color/hint_text_color" android:layout_gravity="top" android:id="@id/sub_order_pre_payment_textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/common_orange_textcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contain_others" />
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:gravity="center_vertical" android:id="@id/tableRow4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/main_default_black_text_color" android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sub_order_order_discount" android:singleLine="true" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/hint_text_color" android:layout_gravity="center_vertical" android:id="@id/sub_order_order_discount_textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        </TableRow>
+                        <TableRow android:gravity="center_vertical" android:id="@id/tableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/main_default_black_text_color" android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sub_order_delivery_amount" android:singleLine="true" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/price_text_color" android:layout_gravity="center_vertical" android:id="@id/sub_order_delivery_amount_textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        </TableRow>
+                    </TableLayout>
+                    <TextView android:textSize="11.0sp" android:textColor="@color/main_default_white_text_color" android:background="@color/hint_text_color" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:text="@string/sub_order_payment_info_notice" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

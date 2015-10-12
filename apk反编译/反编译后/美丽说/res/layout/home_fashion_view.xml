@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.treasure.view.LimitRelativeLayout android:id="@id/home_fashion" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每日9.9时尚优选" android:layout_centerVertical="true" style="@style/home_item_title" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="聪明之选，轻松百变" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/home_item_subtitle" />
+    </com.meilishuo.app.treasure.view.LimitRelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/banners" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/banners_first" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/banners_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_vertical1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:layout_gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/banners_img1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="2.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/banners_img3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_vertical2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/banners_img2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="2.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/banners_img4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

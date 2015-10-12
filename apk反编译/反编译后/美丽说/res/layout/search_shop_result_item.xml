@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/header" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:magic="http://schemas.android.com/apk/res/com.meilishuo">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/shop_middle" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <com.meilishuo.app.views.RoundImageView android:id="@id/shop_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="15.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" magic:hasBorder="false" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/shop_icon" android:layout_alignTop="@id/shop_icon">
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff595056" android:id="@id/shop_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="" android:singleLine="true" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:layout_alignParentBottom="true">
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="销量：" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff999999" android:id="@id/saleCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4319" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="粉丝数：" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff999999" android:id="@id/follow_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="711" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:layout_marginLeft="15.0dip" style="@style/cutline" />
+</LinearLayout>

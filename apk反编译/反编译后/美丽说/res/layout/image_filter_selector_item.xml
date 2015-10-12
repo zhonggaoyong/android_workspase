@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imagefilter_selector_image" android:layout_width="@dimen/imagefilter_selector_img_size" android:layout_height="@dimen/imagefilter_selector_img_size" />
+        <ImageView android:id="@id/imagefilter_selector_lock" android:background="@color/black_t50" android:visibility="gone" android:layout_width="@dimen/imagefilter_selector_img_size" android:layout_height="@dimen/imagefilter_selector_img_size" android:src="@drawable/img_filter_mask_lock" android:scaleType="center" />
+        <ImageView android:id="@id/imagefilter_selector_new" android:background="@drawable/img_filter_icon_new" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="-25.0dip" android:layout_toRightOf="@id/imagefilter_selector_image" />
+    </RelativeLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/imagefilter_selector_name_text_size" android:textColor="@color/grey_d3" android:gravity="center" android:id="@id/imagefilter_selector_name" android:layout_width="@dimen/imagefilter_selector_img_size" android:layout_height="wrap_content" android:layout_marginTop="@dimen/imagefilter_selector_name_padding_top" />
+</LinearLayout>

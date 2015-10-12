@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dialog_frame" android:background="@color/nav_start" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/dialog_split_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ListView android:id="@id/list_content" android:background="@color/white" android:paddingLeft="10.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:cacheColorHint="@null" android:divider="@color/divider" android:dividerHeight="0.5dip" android:fadeScrollbars="false" />
+        <View android:background="@color/dialog_split_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="46.0dip" />
+</LinearLayout>

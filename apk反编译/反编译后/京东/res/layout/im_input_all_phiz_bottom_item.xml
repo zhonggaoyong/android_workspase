@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/ly" android:layout_width="56.0dip" android:layout_height="48.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <TextView android:background="@drawable/im_chat_phiz_bottom_page_div" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+</LinearLayout>

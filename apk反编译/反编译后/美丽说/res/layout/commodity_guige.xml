@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/share_info_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/info_guige_layout" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d2" android:id="@id/info_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/danbao_info_guige" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/circle_info_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/info_detail_line" android:visibility="gone" style="@style/FirstDividerViewStyle" />
+    <RelativeLayout android:id="@id/info_detail_layout" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/danbao_info_detail" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/share_preview_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/marr">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:scaleType="centerCrop" />
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:scaleType="centerCrop" />
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <ImageView android:id="@id/marr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/circle_info_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

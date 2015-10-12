@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/sv_screen_lock_user_guide" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/screen_lock_user_guide_bg" android:layout_width="fill_parent" android:layout_height="180.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <com.fanli.android.view.TangFontTextView android:textSize="35.0sp" android:textColor="@color/white" android:id="@id/tv_screen_lock_guide_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fanli_screen_locker" android:layout_centerHorizontal="true" />
+                    <com.fanli.android.view.TangFontTextView android:textSize="19.0sp" android:textColor="@color/screen_lock_app_name" android:gravity="center" android:id="@id/tv_screen_lock_guide_subtitle" android:background="@drawable/screen_lock_user_guid_subtitle_bg" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/earn_money_easily_by_screen_lock" android:layout_below="@id/tv_screen_lock_guide_title" android:layout_centerHorizontal="true" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_user_num_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/tv_screen_lock_guide_subtitle" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/iv_screen_lock_user_guide_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:layout_gravity="bottom" android:background="@color/screen_lock_grey" android:layout_width="fill_parent" android:layout_height="@dimen/screen_lock_user_guide_bottom_height">
+        <Button android:textSize="19.0sp" android:textColor="@color/white" android:id="@id/sb_slide_to_get_fanli" android:background="@drawable/screen_lock_fanli_button" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/screen_lock_user_guide_button_margin" android:layout_marginRight="@dimen/screen_lock_user_guide_button_margin" android:text="@string/open_screen_lock_fanli_you_can_get" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

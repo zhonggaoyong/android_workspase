@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_top" style="@style/top_rl">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ll_btn_back" style="@style/top_iv_back" />
+        <TextView android:id="@id/tv_title" android:text="订单确认" style="@style/top_tv_title" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_timerinfo" android:background="#fff15353" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/rl_top">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_clock" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="座位保留时间:" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/minute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/second" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/divider_line" android:layout_below="@id/ll_timerinfo">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_seat_info" android:background="@drawable/bg_order_submit" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff252525" android:id="@id/movie_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff686868" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff686868" android:id="@id/week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff686868" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff686868" android:id="@id/cinema_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff686868" android:id="@id/tv_hall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff686868" android:id="@id/tv_mobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff848689" android:gravity="center" android:id="@id/seat_1" android:background="@drawable/bg_seat" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff848689" android:gravity="center" android:id="@id/seat_2" android:background="@drawable/bg_seat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff848689" android:gravity="center" android:id="@id/seat_3" android:background="@drawable/bg_seat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff848689" android:gravity="center" android:id="@id/seat_4" android:background="@drawable/bg_seat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff848689" android:id="@id/total_money" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff848689" android:id="@id/tv_agent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_ticket_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff686868" android:id="@id/ticket_cname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff252525" android:id="@id/ticket_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+                <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="数量 :" android:layout_centerVertical="true" />
+                    <LinearLayout android:background="@drawable/box_edittext" android:layout_width="97.0dip" android:layout_height="27.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="18.0sp" android:textColor="#ffe0e0e0" android:gravity="center" android:id="@id/tv_minus" android:layout_width="27.0dip" android:layout_height="fill_parent" android:text="-" />
+                        <TextView android:background="@color/line" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                        <TextView android:textSize="16.0sp" android:textColor="#ff252525" android:gravity="center" android:id="@id/tv_num" android:layout_width="43.0dip" android:layout_height="fill_parent" android:text="1" />
+                        <TextView android:background="@color/line" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                        <TextView android:textSize="18.0sp" android:textColor="#ff252525" android:gravity="center" android:id="@id/tv_add" android:layout_width="27.0dip" android:layout_height="fill_parent" android:text="+" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <TextView android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+                <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="共计 ：" android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff252525" android:id="@id/ticket_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <TextView android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+                <RelativeLayout android:orientation="horizontal" android:id="@id/ll_checked_main" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <EditText android:textSize="16.0sp" android:textColor="#ff252525" android:id="@id/et_mobile" android:background="@null" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="接受兑换码手机号码：" android:layout_centerVertical="true" android:inputType="number" />
+                    <View android:background="#ffe0e0e0" android:layout_width="0.5dip" android:layout_height="44.0dip" android:layout_marginRight="67.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_add_contact" android:layout_width="67.0dip" android:layout_height="46.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:src="@drawable/icon_contact" />
+                        <TextView android:textSize="11.0sp" android:textColor="#ff686868" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="选择联系人" android:layout_below="@id/img_contact" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_discount" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <RelativeLayout android:id="@id/rl_discount" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff686868" android:id="@id/tv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠券" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="#fff15353" android:gravity="center_vertical" android:id="@id/tv_discountmoney" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_toRightOf="@id/tv_icon" android:layout_centerVertical="true" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/icon_coupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_jt_r" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_discountnum" android:background="@drawable/bg_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/icon_coupon" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff686868" android:id="@id/tv_jdou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="京豆" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/tv_jingdoucount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_toRightOf="@id/tv_jdou" android:layout_centerVertical="true" />
+                    <CheckBox android:id="@id/checkbox_jingdou" android:clickable="true" android:layout_marginRight="10.0dip" android:checked="false" style="@style/more_native_setting_checkbox" />
+                </RelativeLayout>
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+            <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_description" android:background="@color/white" android:paddingLeft="@dimen/main_pd_left" android:paddingTop="@dimen/main_pd_top" android:paddingRight="@dimen/main_pd_right" android:paddingBottom="@dimen/main_pd_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="购买须知" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff848689" android:id="@id/tv_buy_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="1、电影票售出后暂不支持退换；\n2、付款前请确认手机号无误，支付成功后，将无法修改；\n3、客服电话：400-611-5718" android:lineSpacingExtra="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="8.0" android:layout_alignParentBottom="true">
+        <LinearLayout android:background="#ff303031" android:layout_width="225.0dip" android:layout_height="54.0dip" android:layout_weight="5.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="实付款：" />
+            <TextView android:textSize="19.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_payprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="#fff15353" android:layout_width="135.0dip" android:layout_height="54.0dip" android:layout_weight="3.0">
+            <TextView android:textSize="19.0sp" android:textColor="@color/white" android:id="@id/tv_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提交订单" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider_line" android:background="#fff4e4ca" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_above="@id/tv_notice" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff252525" android:gravity="center" android:id="@id/tv_notice" android:background="#fffffaf3" android:layout_width="fill_parent" android:layout_height="33.0dip" android:text="座位已锁定，请在剩余时间内及时付款，超时将释放" android:singleLine="true" android:layout_above="@id/bottom_bar" />
+</RelativeLayout>

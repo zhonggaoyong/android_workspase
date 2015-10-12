@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.AutoBreakView android:gravity="center_vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:textColor="@color/pink" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/grey_d5" android:id="@id/original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" android:singleLine="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/discount_info" android:background="#ffff6666" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:singleLine="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d4" android:id="@id/freight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:singleLine="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/coin_use" android:background="#fffc9c26" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="金币抵10.3元" android:singleLine="true" />
+    </com.meilishuo.app.views.AutoBreakView>
+    <LinearLayout android:gravity="center" android:id="@id/promote_msg_lay" android:background="@color/pink_d7_t14" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/pink_d3" android:ellipsize="end" android:layout_gravity="center" android:id="@id/promote_msg" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="asdhjakldjlkasjd" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/count_down_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+        <View android:layout_width="0.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" style="@style/FirstDividerViewStyle" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d4" android:id="@id/main_count_down_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <com.meilishuo.app.views.CountdownChronometer android:textSize="14.0sp" android:textColor="@color/grey_d4" android:id="@id/count_down" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:layout_width="0.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" style="@style/FirstDividerViewStyle" />
+    </LinearLayout>
+</LinearLayout>

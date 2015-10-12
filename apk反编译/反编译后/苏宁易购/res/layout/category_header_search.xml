@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/pub_color_fourteen" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_96px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/search_edit_layout" android:background="@drawable/search_title_box" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_fifteen" android:gravity="center_vertical" android:id="@id/btn_search_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="商品" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_switch_shop" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_switch_shop" android:layout_toRightOf="@id/btn_search_select" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/pub_color_eight" android:textColorHint="@color/pub_color_ten" android:id="@id/search_edit_text" android:background="@null" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:hint="@string/search_hint" android:singleLine="true" android:layout_toRightOf="@id/img_switch_shop" android:layout_centerVertical="true" android:imeOptions="actionSearch" />
+        <ImageView android:id="@id/voice_icon" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_icon_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

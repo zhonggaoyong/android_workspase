@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/shake_promotion_result_page" android:layout_width="@dimen/result_page_width" android:layout_height="@dimen/result_page_height">
+        <TextView android:textSize="@dimen/result_page_textSize" android:textColor="@color/shake_white" android:gravity="center" android:id="@id/tv_shake_result_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/result_tp_0_marginLeft" android:layout_marginRight="@dimen/result_tp_0_marginRight" android:layout_marginBottom="@dimen/result_tp_0_marginBottom" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

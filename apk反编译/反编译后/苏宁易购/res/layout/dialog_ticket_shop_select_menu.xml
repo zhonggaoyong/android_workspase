@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/ticket_tab_bg" android:gravity="left|center" android:id="@id/btn_shop_ticket_unused" android:background="@null" android:paddingRight="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="@string/ticket_tab_store_unuse" android:drawableRight="@drawable/ticket_menu_item_selected" />
+        <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <Button android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:gravity="left|center" android:id="@id/btn_shop_ticket_used" android:background="@null" android:paddingRight="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="@string/ticket_tab_store_used" />
+    </LinearLayout>
+    <Button android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

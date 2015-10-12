@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.achievo.vipshop.view.order_detail.OrderFootView android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:gravity="right|center" android:id="@id/prepay_layout" android:background="@null" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textSize="@dimen/app_textsize_normal" android:layout_gravity="right|center" android:id="@id/pre_cancel_button" android:visibility="gone" android:text="@string/order_cancel" style="@style/submit_black_middle_button_style" />
+            <Button android:textSize="@dimen/app_textsize_normal" android:layout_gravity="right|center" android:id="@id/pay_for_another_button" android:visibility="gone" android:layout_marginLeft="15.0dip" style="@style/submit_black_middle_button_style" />
+            <Button android:textSize="@dimen/app_textsize_normal" android:layout_gravity="right|center" android:id="@id/delete_order_button" android:visibility="gone" android:layout_height="@dimen/order_middle_button_height" android:layout_marginLeft="15.0dip" android:text="@string/delete_order_text" style="@style/submit_black_middle_button_style" />
+            <Button android:textSize="@dimen/order_text_main" android:layout_gravity="right|center" android:id="@id/pay2_button" android:visibility="gone" android:layout_width="@dimen/order_middle_button_width" android:layout_marginLeft="15.0dip" android:text="支 付" style="@style/black_middle_button_style" />
+            <Button android:textSize="@dimen/order_text_main" android:layout_gravity="right|center" android:id="@id/pay_button" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginLeft="15.0dip" android:minWidth="@dimen/order_middle_button_width" android:text="支 付" style="@style/red_middle_button_style" />
+            <Button android:textSize="@dimen/order_text_main" android:layout_gravity="right|center" android:id="@id/reset_purchase_button" android:visibility="gone" android:layout_marginLeft="15.0dip" android:text="@string/rebuy_text" style="@style/submit_red_middle_button_style" />
+            <Button android:textSize="@dimen/order_text_main" android:layout_gravity="right|center" android:id="@id/account_logistics" android:visibility="gone" android:layout_marginLeft="15.0dip" android:text="@string/logistics_title" style="@style/submit_black_middle_button_style" />
+            <Button android:textSize="@dimen/order_text_main" android:layout_gravity="right|center" android:id="@id/merge_button" android:visibility="gone" android:layout_marginLeft="15.0dip" android:text="@string/order_merge_title" style="@style/submit_black_middle_button_style" />
+            <Button android:textSize="@dimen/order_text_main" android:layout_gravity="right|center" android:id="@id/apply_return_button" android:visibility="gone" android:layout_marginLeft="15.0dip" android:text="@string/order_return" style="@style/submit_black_middle_button_style" />
+            <Button android:textSize="@dimen/order_text_main" android:layout_gravity="right|center" android:id="@id/return_info_button" android:visibility="gone" android:layout_marginLeft="15.0dip" android:text="@string/return_info" style="@style/submit_black_middle_button_style" />
+        </LinearLayout>
+    </LinearLayout>
+</com.achievo.vipshop.view.order_detail.OrderFootView>

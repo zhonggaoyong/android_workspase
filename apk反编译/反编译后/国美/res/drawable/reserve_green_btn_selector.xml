@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/reserve_green_btn_down_shape" />
+    <item android:state_selected="true" android:drawable="@drawable/reserve_green_btn_down_shape" />
+    <item android:state_focused="true" android:drawable="@drawable/reserve_green_btn_down_shape" />
+    <item android:state_enabled="false" android:drawable="@drawable/reserve_disabled_btn_shape" />
+    <item android:drawable="@drawable/reserve_green_btn_up_shape" />
+</selector>

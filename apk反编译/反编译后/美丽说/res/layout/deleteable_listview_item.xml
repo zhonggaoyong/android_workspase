@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/search_result_item_color" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="6.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/order_list_button_item_evaluate" />
+        <RelativeLayout android:gravity="center" android:id="@id/imageview_relative" android:paddingLeft="1.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.meilishuo.app.views.CustomTextView android:background="@drawable/x" android:layout_width="11.0dip" android:layout_height="11.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

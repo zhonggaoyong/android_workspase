@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gome.ecmall.custom.MultiTouchImageView android:id="@id/photoview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/photo_show_bg" />
+    </RelativeLayout>
+</RelativeLayout>

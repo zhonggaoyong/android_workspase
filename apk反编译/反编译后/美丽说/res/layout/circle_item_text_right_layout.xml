@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imchat_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="13.0dip" android:src="@drawable/default_avatar_round" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/imchat_daren" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="38.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/imchat_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:maxWidth="180.0dip" android:singleLine="true" android:drawablePadding="5.0dip" android:layout_toLeftOf="@id/imchat_icon" android:layout_alignParentTop="true" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/imchat_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/imchat_name" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="5.0dip" android:layout_toLeftOf="@id/imchat_icon" android:layout_below="@id/imchat_name">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/sendstatus" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/imchat_sendstatus_failed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quanzi_send_failed" />
+            <com.meilishuo.app.views.CustomPageLoading android:layout_gravity="center" android:id="@id/imchat_sendstatusing" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminateDrawable="@drawable/circle_sendprogress" />
+        </FrameLayout>
+        <com.meilishuo.app.im.view.IMTextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/imchat_text" android:background="@drawable/quanzi_ico_airbubble_myself" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="40.0dip" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+</RelativeLayout>

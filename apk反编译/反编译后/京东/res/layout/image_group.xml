@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/image_group_left_top_layout" android:layout_width="fill_parent" android:layout_height="129.0dip">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image_group_left_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/image_group_pic_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/image_group_left_bottom_layout" android:layout_width="fill_parent" android:layout_height="149.5dip" android:layout_marginTop="4.5dip">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image_group_left_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/image_group_pic_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/image_group_right_top_layout" android:layout_width="fill_parent" android:layout_height="226.5dip">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image_group_right_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/image_group_pic_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/image_group_right_bottom_layout" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="4.5dip">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image_group_right_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/image_group_pic_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/mobile_channel_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

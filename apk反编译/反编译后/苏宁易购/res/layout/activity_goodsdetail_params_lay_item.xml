@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0" android:minHeight="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_eighteen" android:gravity="left" android:layout_gravity="top" android:id="@id/goodsdetail_param_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_eighteen" android:gravity="left" android:layout_gravity="top" android:id="@id/goodsdetail_param_info" android:paddingLeft="@dimen/android_public_space_13px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

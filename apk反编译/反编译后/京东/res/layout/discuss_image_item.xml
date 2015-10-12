@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="87.0dip" android:layout_height="87.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.app.mall.utils.ui.JDImageView android:id="@id/imageurl" android:background="@drawable/background_corners" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/delete_discuss_image_iv" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/delete_discuss_image" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

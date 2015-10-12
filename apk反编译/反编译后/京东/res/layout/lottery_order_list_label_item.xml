@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="#ff727171" android:gravity="center_vertical" android:id="@android:id/text1" android:background="@null" android:paddingLeft="@dimen/lottery_order_list_padding_left" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="本月"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/view_product_scroll" android:background="@color/pub_color_twelev" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_eighty_two">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_logistics_product" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_fourteen" />
+    </HorizontalScrollView>
+    <LinearLayout android:id="@id/layout_tab_title" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/tab_height">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/tv_detail" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="物流详情" />
+            <ImageView android:id="@id/iv_detail_cursor" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="matrix" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/tv_map" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="当前位置" android:singleLine="true" />
+            <ImageView android:id="@id/iv_map_cursor" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="matrix" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/layout_tab" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

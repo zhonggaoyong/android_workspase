@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/fl_activate_nobind" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/grey_secound" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="29.0dip" android:text="@string/yfb_web_active" android:drawableTop="@drawable/icon_active_nobind" android:drawablePadding="@dimen/android_public_space_26px" android:lineSpacingExtra="@dimen/android_public_space_16px" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_activate_normal" android:background="@color/pub_color_twelev" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/strip_topbg_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fyb_account" />
+                <com.suning.mobile.sdk.textstyle.MarqueeTextView android:textSize="17.0sp" android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/yfb_account" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/strip_bottombg_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/telNumber" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/phone_no" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="25.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_three" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/deliver_name_edit" />
+                <ImageView android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/return_btn_division" android:scaleType="fitXY" />
+                <EditText android:layout_gravity="center_vertical" android:id="@id/real_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/required" android:maxLength="16" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="25.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="@color/pub_color_three" android:layout_width="80.0sp" android:layout_height="wrap_content" android:text="@string/yfp_pay_pwd" />
+                <ImageView android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/return_btn_division" android:scaleType="fitXY" />
+                <EditText android:textSize="16.0sp" android:id="@id/pay_password" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/upomp_bypay_utils_inputpsw_hint" android:singleLine="true" android:digits="@string/password_input_character" android:layout_weight="1.0" android:inputType="textPassword" />
+                <com.suning.mobile.ebuy.view.SwitchButtonView android:layout_gravity="center_vertical" android:id="@id/ll_login_password_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <EditText android:id="@id/pay_password_confirm" android:background="@drawable/strip_bottombg_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/register_confirm_pwd" android:singleLine="true" android:digits="@string/password_input_character" android:inputType="textPassword" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/questionLayout" android:background="@drawable/input_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="25.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="@color/pub_color_three" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/yfb_safe_question" />
+                <ImageView android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/return_btn_division" android:scaleType="fitXY" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff838282" android:id="@id/questionText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_question" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="25.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0sp" android:textColor="@color/pub_color_three" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/answer" />
+                <ImageView android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/return_btn_division" android:scaleType="fitXY" />
+                <EditText android:id="@id/answer" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/required" android:maxLength="16" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="25.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="@color/pub_color_three" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/yfb_id_num" />
+                <ImageView android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/return_btn_division" android:scaleType="fitXY" />
+                <EditText android:id="@id/id_no" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/act_myebuy_activate_card" />
+            </LinearLayout>
+            <Button android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_confirm" android:background="@drawable/add_to_shop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="50.0dip" android:text="@string/done" />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

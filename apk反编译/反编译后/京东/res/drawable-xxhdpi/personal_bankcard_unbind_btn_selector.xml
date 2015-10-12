@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:drawable="@drawable/bankcard_unbind_normal" />
+    <item android:state_enabled="true" android:drawable="@drawable/bankcard_unbind_pressed" />
+    <item android:drawable="@drawable/bankcard_unbind_normal" />
+</selector>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/search_poi_more_tip_container" android:background="@drawable/selector_list_row" android:clickable="true" android:layout_width="fill_parent" android:layout_height="36.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="13.0sp" android:textColor="@color/search_poi_optimize_more_color" android:gravity="center" android:id="@id/search_poi_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_poi_more_groupon" android:includeFontPadding="false" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/cinema_detail_coupon_arrow_down" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:background="@color/search_poi_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </FrameLayout>
+</merge>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_cart1_shop_divider" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_28px" />
+    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="@dimen/ios_public_space_28px" android:paddingRight="@dimen/ios_public_space_28px" android:paddingBottom="@dimen/ios_public_space_28px" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <CheckBox android:id="@id/cb_cart1_shop" android:background="@null" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_28px" android:button="@null" android:drawableLeft="@drawable/shopping_cart_checkbox" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_28px" android:layout_marginTop="@dimen/ios_public_space_28px" android:layout_toRightOf="@id/cb_cart1_shop" android:layout_centerVertical="true">
+                <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/pub_margin_or_padding_space_ten" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_cart1_shop_swl" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_24px" android:src="@drawable/icon_suning_service" android:contentDescription="@string/app_name" />
+                    <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_cart1_shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7777777777777777777777777777777777777777777" android:singleLine="true" android:layout_toRightOf="@id/iv_cart1_shop_swl" android:layout_alignTop="@id/iv_cart1_shop_swl" android:layout_alignBottom="@id/iv_cart1_shop_swl" />
+                    <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/total_1" android:ellipsize="end" android:id="@id/tv_cart1_shop_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shoppingcart_suning_self_prompt" android:singleLine="true" android:layout_below="@id/tv_cart1_shop_name" android:layout_alignLeft="@id/tv_cart1_shop_name" />
+                </RelativeLayout>
+                <TextView android:id="@id/tv_cart1_arrow" android:background="@drawable/arrow_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/pub_margin_or_padding_space_sixteen" android:textColor="@color/total_1" android:id="@id/tv_cart1_shop_ship_price" android:paddingRight="@dimen/ios_public_space_28px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shoppingcart_suning_self_prompt" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.0px" />
+</LinearLayout>

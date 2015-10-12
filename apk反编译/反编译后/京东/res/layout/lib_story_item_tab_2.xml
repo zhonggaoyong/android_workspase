@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jd.lib.story.ui.TabGroupView android:id="@id/tabGroupView" android:background="@drawable/lib_story_shape_border" android:layout_width="fill_parent" android:layout_height="@dimen/lib_story_height_my_header_menu"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/tv_origin" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/lib_story_tab_with_notice" />
+        <include android:id="@id/tv_favorite" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/lib_story_tab_with_notice" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/im_indicator" android:background="@drawable/lib_story_line_red" android:layout_width="@dimen/lib_story_width_my_indicator" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</com.jd.lib.story.ui.TabGroupView>

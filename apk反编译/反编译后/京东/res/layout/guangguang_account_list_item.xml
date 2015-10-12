@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/activities_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_article_rl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/title_fl" android:layout_width="fill_parent" android:layout_height="170.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/guangguang_list_item_imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <LinearLayout android:layout_gravity="bottom" android:background="#7f000000" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title_article" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="33.0dip" android:maxLines="1" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/title_content" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:maxLines="2" android:layout_below="@id/title_fl" android:lineSpacingExtra="5.0dip" />
+        <View android:id="@id/refresh_line_view" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/title_content" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/button_rl" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/refresh_line_view" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@color/guang_chanel_freshTime" android:gravity="center_vertical" android:id="@id/refresh_time" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

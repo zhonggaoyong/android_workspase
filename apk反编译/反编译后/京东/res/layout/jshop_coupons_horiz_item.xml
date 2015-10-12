@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/jshop_concern_list_item_margin_left_right" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/jshop_coupon_item_layout" android:background="@drawable/jshop_focus_coupon_blue_selector" android:layout_width="fill_parent" style="@style/JshopCoupon_horiz_item">
+        <TextView android:id="@id/jshop_coupon1_name" android:text="" android:layout_alignParentLeft="true" style="@style/JshopCouponNameV" />
+        <TextView android:id="@id/jshop_coupon1_take" android:text="" android:layout_alignParentRight="true" style="@style/JshopCouponTake" />
+        <LinearLayout android:id="@id/jshop_coupon1_center" android:layout_toLeftOf="@id/jshop_coupon1_take" android:layout_toRightOf="@id/jshop_coupon1_name" style="@style/JshopCouponCenter_h_scroll">
+            <TextView android:textColor="@color/jshop_dynamic_dong_coupon_title_color" android:id="@id/jshop_coupon1_type" android:layout_marginTop="8.0dip" style="@style/JshopCouponTypeV" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <LinearLayout android:id="@id/jshop_coupon1_c" android:layout_marginBottom="8.0dip" style="@style/JshopDiscount">
+                <TextView android:textSize="@dimen/jshop_coupon_discount_bigsize" android:textColor="@color/jshop_dynamic_dong_coupon_title_color" android:id="@id/jshop_coupon1_yuan" android:visibility="gone" android:text="" style="@style/JshopCouponText" />
+                <TextView android:textSize="@dimen/jshop_coupon_discount_bigsize" android:textColor="@color/jshop_dynamic_dong_coupon_title_color" android:id="@id/jshop_coupon1_discount" style="@style/JshopCouponText" />
+                <TextView android:textSize="@dimen/jshop_coupon_discount_size" android:id="@id/jshop_coupon1_quan" android:visibility="gone" android:text="@string/jshop_coupon_quan" style="@style/JshopCouponText" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_coupon1_taken" android:background="@drawable/jshop_focus_coupon_grey_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

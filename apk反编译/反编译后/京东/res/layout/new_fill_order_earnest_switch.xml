@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/fill_order_delivery_normal" android:id="@id/presale_earnest_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/order_presale_earnest_agree" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/fill_order_delivery_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_presale_earnest_agree_tip" android:layout_below="@id/presale_earnest_text" android:layout_alignLeft="@id/presale_earnest_text" />
+    <CheckBox android:id="@id/presale_earnest_switch" android:background="@drawable/new_fill_order_ellipse_button_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fill_order_text_space_margin" android:layout_marginTop="@dimen/fill_order_arrow_left_margin" android:layout_marginRight="15.0dip" android:button="@drawable/none" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

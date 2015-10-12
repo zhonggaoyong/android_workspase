@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_color_grey_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/login_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:orientation="vertical" android:padding="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:layout_weight="1.0">
+            <TableRow android:gravity="center_vertical" android:background="@drawable/list_bg_middle_default">
+                <ImageView android:gravity="right" android:layout_width="0.0dip" android:src="@drawable/icon_login" android:layout_weight="1.0" />
+                <EditText android:id="@id/login_username" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="" android:hint="@string/login_edittext_hint_username" android:singleLine="true" android:layout_weight="3.0" />
+            </TableRow>
+            <View android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TableRow android:gravity="center_vertical" android:background="@drawable/list_bg_middle_default">
+                <ImageView android:gravity="right" android:layout_width="0.0dip" android:src="@drawable/icon_pwd" android:layout_weight="1.0" />
+                <EditText android:id="@id/login_password" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="" android:hint="@string/login_edittext_hint_pwd" android:password="true" android:singleLine="true" android:layout_weight="3.0" />
+            </TableRow>
+            <TableRow android:gravity="center_vertical" android:id="@id/verify_code_line" android:visibility="gone">
+                <com.fanli.android.view.TangFontTextView android:gravity="right" android:layout_width="0.0dip" android:text="@string/login_lbl_verify_code" android:layout_weight="1.0" />
+                <EditText android:id="@id/verify_code" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="" android:hint="@string/login_edittext_hint_veryfy_code" android:singleLine="true" android:layout_weight="2.0" />
+                <ImageView android:id="@id/verify_img" android:layout_width="70.0dip" android:layout_height="30.0dip" android:src="@drawable/logo_fanli" />
+            </TableRow>
+            <TableRow android:padding="@dimen/global_padding">
+                <Button android:id="@id/btn_login" android:layout_width="0.0dip" android:text="@string/login_btn_lable" android:layout_weight="1.0" style="@style/BtnBigOrangeP" />
+            </TableRow>
+        </TableLayout>
+        <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_small2" android:textColor="@color/text_color_grey_light" android:gravity="center_horizontal" android:id="@id/forget_password_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="忘记密码?" />
+        <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:gravity="left" android:padding="@dimen/padding_tutorial" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_padding" android:text="@string/login_hint" />
+        <TableLayout android:orientation="vertical" android:padding="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:layout_weight="1.0">
+            <TableRow android:gravity="center_vertical" android:id="@id/taobao_login" android:background="@drawable/list_bg_middle_default">
+                <ImageView android:gravity="right" android:layout_width="0.0dip" android:src="@drawable/icon_taobao" android:layout_weight="1.0" />
+                <com.fanli.android.view.TangFontTextView android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="@string/login_taobao" android:singleLine="true" android:layout_weight="3.0" />
+            </TableRow>
+            <View android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TableRow android:gravity="center_vertical" android:id="@id/qq_login" android:background="@drawable/list_bg_middle_default">
+                <ImageView android:gravity="right" android:layout_width="0.0dip" android:src="@drawable/icon_qq" android:layout_weight="1.0" />
+                <com.fanli.android.view.TangFontTextView android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="@string/login_qq" android:singleLine="true" android:layout_weight="3.0" />
+            </TableRow>
+            <View android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TableRow android:gravity="center_vertical" android:id="@id/sina_login" android:background="@drawable/list_bg_middle_default">
+                <ImageView android:gravity="right" android:layout_width="0.0dip" android:src="@drawable/icon_sina" android:layout_weight="1.0" />
+                <com.fanli.android.view.TangFontTextView android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="@string/login_sina" android:singleLine="true" android:layout_weight="3.0" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

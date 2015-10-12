@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/detail_current_view" android:background="@color/travel_all_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jdtravel="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.jdtravel.ui.TravelTitle android:id="@id/detail_title" android:layout_width="fill_parent" android:layout_height="wrap_content" jdtravel:fdrawableLeft="@drawable/common_title_back_selector" jdtravel:ftextTitle="@string/jdtravel_fillorder" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/detail_title">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/flight_fly_detail_top" />
+                <LinearLayout android:orientation="vertical" android:id="@id/flight_detail_top_splite_line" android:background="@drawable/flight_detail_repeat_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@drawable/flight_ticket_part" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <include layout="@layout/flight_fly_detail_top2" />
+                <include layout="@layout/flight_fly_detail_down" />
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:gravity="left|center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/bottom_layout" android:background="@drawable/pd_shadow_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/all_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="left|center" android:id="@id/bottom_fly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="实付金额" />
+                    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="left|center" android:id="@id/count_all_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="￥2050.00" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+                    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="乘机人数" />
+                    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="left" android:id="@id/count_board_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/sub_lay" android:layout_width="135.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                <Button android:textSize="21.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/submit_order" android:background="@drawable/pd_add2car_bg" android:layout_width="135.0dip" android:layout_height="fill_parent" android:text="提交订单" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@id/sp_line" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/bottom_layout" />
+        <com.jingdong.common.jdtravel.ui.CountPriceLinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/bottom_detail_price" android:background="@drawable/flight_mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/flight_submit_detail_bg" android:paddingLeft="@dimen/boarder_margin_right" android:layout_width="fill_parent" android:layout_height="130.0dip">
+                <TextView android:textSize="14.0dip" android:gravity="left|center" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height" android:text="金额详情" />
+                <View style="@style/travel_view_splite_h" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="乘机人数：" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/red" android:id="@id/board_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+                    <TextView android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机票：" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/red" android:id="@id/flight_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥1850" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="税费：" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/red" android:id="@id/flight_oiltax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥250" />
+                    <TextView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="机建：" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/red" android:id="@id/build_fee" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥50" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠金额" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/red" android:id="@id/preferential_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="-￥200" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.jingdong.common.jdtravel.ui.CountPriceLinearLayout>
+    </FrameLayout>
+</RelativeLayout>

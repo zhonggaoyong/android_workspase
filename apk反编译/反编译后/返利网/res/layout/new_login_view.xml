@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_color_grey_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/login_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <LinearLayout android:background="@drawable/bg_login_input" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <EditText android:textColorHint="#ffcacaca" android:layout_gravity="center_vertical" android:id="@id/login_username" android:background="@null" android:paddingLeft="7.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="" android:hint="@string/login_edittext_hint_username" android:singleLine="true" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/bg_login_input" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <EditText android:textColorHint="#ffcacaca" android:layout_gravity="center_vertical" android:id="@id/login_password" android:background="@null" android:paddingLeft="7.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="" android:hint="@string/login_edittext_hint_pwd" android:password="true" android:singleLine="true" android:layout_weight="3.0" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_showpwd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/input_pwd_hide" />
+                <com.fanli.android.view.SwitchButton android:layout_gravity="center_vertical" android:id="@id/pwd_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/verify_code_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.fanli.android.view.TangFontTextView android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/login_lbl_verify_code" android:layout_weight="1.0" />
+                <EditText android:id="@id/verify_code" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="" android:hint="@string/login_edittext_hint_veryfy_code" android:singleLine="true" android:layout_weight="2.0" />
+                <ImageView android:id="@id/verify_img" android:layout_width="70.0dip" android:layout_height="30.0dip" android:src="@drawable/logo_fanli" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="24.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/btn_login" android:background="@drawable/selector_bt_login" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="20.0dip" android:text="马上登录" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+            <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iv_forget_code_ico" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ff787878" android:id="@id/forget_password_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="忘记密码" android:layout_toRightOf="@id/imageView2" android:layout_centerVertical="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ff787878" android:id="@id/tv_reg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10秒免费注册" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/iv_account_code_ico" android:layout_toLeftOf="@id/tv_reg" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="20.0dip">
+            <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textColor="#ff787878" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginTop="8.0dip" android:text="@string/login_info" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/union_login_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:weightSum="4.0">
+                <ImageView android:id="@id/taobao_login" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/selector_bt_taobao" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/sina_login" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/selector_bt_sina" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/wechat_login" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/selector_bt_wechat" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/qq_login" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/selector_bt_qq" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ff787878" android:layout_gravity="center_horizontal" android:id="@id/tv_jhm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="如果你有兑换码，请点这里" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+</ScrollView>

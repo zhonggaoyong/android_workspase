@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Google Наадаан үйлчилгээний алдаа</string>
+    <string name="d3r">Аппликешн Google Наадаан Үйлчилгээг суулгахыг шаардана.</string>
+    <string name="d3s">Аппликешн Google Наадаан Үйлчилгээг шинэчлэхийг шаардана.</string>
+    <string name="d3t">Аппликешн Google Наадаан Үйлчилгээг идэвхжүүлсэн байхыг шаардана.</string>
+    <string name="d3u">%1$s хүсэлт гаргасан</string>
+    <string name="d3v">Google Play үйлчилгээ авах</string>
+    <string name="d3w">Таны утсанд байхгүй байгаа Google Play үйлчилгээг идэвхжүүлж байж энэ апп-г ажиллуулах боломжтой.</string>
+    <string name="d3x">Таны таблетэд байхгүй Google Play үйлчилгээг идэвхжүүлж байж энэ апп-г ажиллуулах боломжтой.</string>
+    <string name="d3y">Google Play үйлчилгээ авах</string>
+    <string name="d3z">Google Play үйлчилгээг идэвхжүүлэх</string>
+    <string name="d40">Та Google Play үйлчилгээг идэвхжүүлж байж энэ апп-г ажиллуулах боломжтой.</string>
+    <string name="d41">Google Play үйлчилгээг идэвхжүүлэх</string>
+    <string name="d42">Google Play үйлчилгээг шинэчлэх</string>
+    <string name="d43">Та Google Play үйлчилгээг шинэчлэхгүй бол энэ апп ажиллах боломжгүй.</string>
+    <string name="d44">Сүлжээний алдаа</string>
+    <string name="d45">Google Play үйлчилгээнд холбогдохын тулд дата холболт шаардлагатай.</string>
+    <string name="d46">Буруу акаунт</string>
+    <string name="d47">Заасан акаунт энэ төхөөрөмж дээр байхгүй байна. Өөр акаунт сонгоно уу.</string>
+    <string name="d48">Google Play үйлчилгээтэй холбоотой тодорхойгүй алдаа.</string>
+    <string name="d49">Google Play үйлчилгээ</string>
+    <string name="d4_">Таны зарим аппликешнүүдийн хамаардаг Google Play үйлчилгээ таны төхөөрөмжид дэмжигдэхгүй байна. Тусламж авахын тулд үйлдвэрлэгчтэй холбоо барина уу.</string>
+    <string name="d4a">Төхөөрөмжийн огноо буруу байгаа бололтой. Төхөөрөмжийн огноог шалгана уу.</string>
+    <string name="d4b">Шинэчлэх</string>
+    <string name="d4c">Нэвтрэх</string>
+    <string name="d4d">Google-р нэвтрэх:</string>
+</resources>

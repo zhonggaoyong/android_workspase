@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_product_detail_shop_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip">
+        <RelativeLayout android:id="@id/ll_product_detail_shop_layout" android:background="@drawable/product_detail_item_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="70.0dip">
+            <ImageView android:id="@id/iv_product_detail_shop_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/product_show_shop_message_icon" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/iv_product_detail_shop_head">
+                <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/tv_product_detail_shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RatingBar android:id="@id/rb_product_detail_shop_rating" android:paddingTop="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="0.0" android:isIndicator="true" style="@style/shop_home_ratingbar_style" />
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/address_jiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/product_detail_item_normal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品描述" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/product_price_red_color" android:id="@id/tv_product_shop_server_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.9" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/tv_product_shop_server_tag" android:background="@drawable/product_detail_rect_shape_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="高" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffe6e6e6" android:layout_width="0.6dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/product_detail_item_normal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务质量" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/product_price_red_color" android:id="@id/tv_product_shop_quality_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.9" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/tv_product_shop_quality_tag" android:background="@drawable/product_detail_rect_shape_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="高" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffe6e6e6" android:layout_width="0.6dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/product_detail_item_normal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发货速度" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/product_price_red_color" android:id="@id/tv_product_delivery_speed_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.9" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/tv_product_delivery_speed_tag" android:background="@drawable/product_detail_rect_shape_green" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="低" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

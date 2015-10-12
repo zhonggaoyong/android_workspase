@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/home_page_shortcut_menu_layout" android:background="@color/main_default_white_text_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gome.ecmall.custom.DisScrollGridView android:id="@id/home_page_shortcut_menu_gridview" android:background="@color/main_default_white_text_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="11.0dip" android:layout_marginBottom="11.0dip" android:verticalSpacing="14.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

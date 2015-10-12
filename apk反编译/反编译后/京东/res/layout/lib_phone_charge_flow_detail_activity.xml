@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/phone_charge_flow_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title" android:background="@drawable/common_title_background" android:layout_width="fill_parent" android:layout_height="@dimen/lib_phone_charge_titleh" android:layout_alignParentTop="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/title_back" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/common_title_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/common_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单详情" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/use_tip" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="使用说明" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                    <TextView android:textSize="@dimen/lib_phone_charge_flow_list_item_text_size" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/item_order_id_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单号：" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/lib_phone_charge_flow_list_item_text_size" android:textColor="@drawable/lib_phone_charge_tab_line_select" android:id="@id/item_order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/lib_phone_charge_flow_list_item_text_size" android:textColor="@color/lib_phone_charge_virtual_text_color" android:ellipsize="end" android:id="@id/item_order_id_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/item_order_status" android:layout_toRightOf="@id/item_order_id_title" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="#ffe0e0e0" android:layout_marginLeft="12.0dip" style="@style/lib_phone_charge_line_hh" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.5dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="16.5dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/lib_phone_charge_flow_detail_text_size" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_phone_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号码：" />
+                        <TextView android:textSize="16.5sp" android:textColor="@drawable/lib_phone_charge_tab_line_select" android:id="@id/detail_phone_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lib_phone_charge_flow_detail_marin_top">
+                        <TextView android:textSize="@dimen/lib_phone_charge_flow_detail_text_size" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_face_value_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="流量面值：" />
+                        <TextView android:textSize="16.5sp" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_face_value_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lib_phone_charge_flow_detail_marin_top">
+                        <TextView android:textSize="@dimen/lib_phone_charge_flow_detail_text_size" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_type_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="流量类型：" />
+                        <TextView android:textSize="16.5sp" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_type_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lib_phone_charge_flow_detail_marin_top">
+                        <TextView android:textSize="@dimen/lib_phone_charge_flow_detail_text_size" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_valid_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生效时间：" />
+                        <TextView android:textSize="16.5sp" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_valid_time_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lib_phone_charge_flow_detail_marin_top">
+                        <TextView android:textSize="@dimen/lib_phone_charge_flow_detail_text_size" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_period_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有效日期：" />
+                        <TextView android:textSize="16.5sp" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_period_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lib_phone_charge_flow_detail_marin_top">
+                        <TextView android:textSize="@dimen/lib_phone_charge_flow_detail_text_size" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_times_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="限充次数：" />
+                        <TextView android:textSize="16.5sp" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_times_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lib_phone_charge_flow_detail_marin_top">
+                        <TextView android:textSize="@dimen/lib_phone_charge_flow_detail_text_size" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_range_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支持范围：" />
+                        <TextView android:textSize="16.5sp" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_range_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffe5e6e7" style="@style/lib_phone_charge_line_hh" />
+            <View android:background="#ffe5e6e7" android:layout_marginTop="12.0dip" style="@style/lib_phone_charge_line_hh" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                    <TextView android:textSize="16.5dip" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_order_money_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单金额" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/lib_phone_charge_flow_list_item_text_size" android:textColor="@drawable/lib_phone_charge_tab_line_select" android:id="@id/detail_order_money_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="#ffe0e0e0" android:layout_marginLeft="12.0dip" style="@style/lib_phone_charge_line_hh" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lib_phone_charge_flow_detail_marin_top">
+                        <TextView android:textSize="16.5sp" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_pay_type_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付方式：" />
+                        <TextView android:textSize="16.5sp" android:textColor="@color/lib_phone_charge_virtual_text_color" android:id="@id/detail_pay_type_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:layout_marginBottom="7.5dip">
+                        <TextView android:textSize="13.5sp" android:textColor="#ff848689" android:id="@id/detail_order_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下单时间：" />
+                        <TextView android:textSize="13.5sp" android:textColor="#ff848689" android:id="@id/detail_order_time_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffe5e6e7" android:layout_marginBottom="72.0dip" style="@style/lib_phone_charge_line_hh" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/detail_charge_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:background="#d9000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_phone_charge_value_layout_margin_left" android:text="应付：" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/value_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/lib_phone_charge_bottom_size20" android:textColor="@color/phone_charge_btn_color" android:id="@id/charge_btn" android:background="@drawable/phone_charge_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="去支付" android:layout_weight="3.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/buy_again_layout" android:background="#ffeaedf1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <View android:background="#ffe5e6e7" style="@style/lib_phone_charge_line_hh" />
+        <Button android:textSize="15.0sp" android:textColor="@color/phone_charge_btn_color" android:id="@id/buy_again_btn" android:background="@drawable/phone_charge_rebuy_selector" android:layout_width="78.0dip" android:layout_height="40.0dip" android:layout_marginRight="12.0dip" android:text="再次购买" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/order_detail_complete_icon" android:background="@drawable/orderlist_finish_signet" android:visibility="gone" android:layout_width="69.0dip" android:layout_height="69.0dip" android:layout_marginTop="65.5dip" android:layout_marginRight="16.5dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

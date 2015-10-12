@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rr" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/re11" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <ImageView android:id="@id/jd_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/jd_push" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff848689" android:id="@id/notification_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="10:30" android:layout_alignBaseline="@id/notification_title" android:layout_alignBottom="@id/notification_title" android:layout_alignParentRight="true" />
+        <TextView android:textSize="18.0dip" android:textColor="#fff15353" android:ellipsize="end" android:id="@id/notification_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:text="全微（transwin）全微T全微T全微T全微T全微T全微T全微T全微T全微T全微T-2.1" android:singleLine="true" android:layout_toLeftOf="@id/notification_time" android:layout_toRightOf="@id/jd_image" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff848689" android:ellipsize="end" android:id="@id/notification_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="全品类巨献，年货也疯狂！家电爆品5折，数码1元秒杀" android:maxLines="1" android:layout_below="@id/notification_title" android:layout_alignLeft="@id/notification_title" android:lineSpacingExtra="2.0dip" />
+    </RelativeLayout>
+    <ImageView android:id="@id/notification_bigview" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="131.0dip" android:scaleType="fitXY" />
+</LinearLayout>

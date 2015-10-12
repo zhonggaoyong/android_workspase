@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sharedialog_rootlayout" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sharedialog_titlebar" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <Button android:textSize="15.0dip" android:gravity="center" android:id="@id/sharedialog_button_cancel" android:layout_width="61.0dip" android:layout_height="33.0dip" android:layout_marginLeft="17.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0dip" android:id="@id/sharedialog_textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <Button android:textSize="15.0dip" android:gravity="center" android:id="@id/sharedialog_button_share" android:layout_width="61.0dip" android:layout_height="33.0dip" android:layout_marginRight="17.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/sharedialog_contentlayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="174.0dip">
+        <RelativeLayout android:id="@id/sharedialog_imagepreview" android:padding="1.0dip" android:layout_width="63.0dip" android:layout_height="78.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <com.baidu.cloudsdk.social.share.uiwithlayout.CheckImageView android:id="@id/sharedialog_checkimage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        </RelativeLayout>
+        <EditText android:textSize="13.0sp" android:textColor="#ff111111" android:gravity="top" android:id="@id/sharedialog_edittext_content" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/sharedialog_imagepreview" android:lineSpacingExtra="3.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/sharedialog_textcounter" android:layout_width="37.0dip" android:layout_height="19.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <com.baidu.cloudsdk.social.share.uiwithlayout.LocationPreview android:gravity="center" android:id="@id/sharedialog_locationpreview" android:layout_width="wrap_content" android:layout_height="19.0dip" android:layout_marginLeft="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/sharedialog_medialistview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+</LinearLayout>

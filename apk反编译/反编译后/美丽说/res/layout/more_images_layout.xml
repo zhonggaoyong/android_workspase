@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/images_bg" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0px" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/ico_add_cart" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="@string/danbao_but_add_shopping_cart" style="@style/BtnDarkStyleDanBao" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/ico_goto_bug" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/danbao_but_goto_buy" style="@style/BtnDarkStyleDanBao" />
+    </LinearLayout>
+    <com.meilishuo.app.views.CustomPageLoading android:id="@id/progressbar_pink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

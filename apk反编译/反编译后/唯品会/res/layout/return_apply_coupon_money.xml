@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_lines" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <View android:id="@id/top_bg" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/return_total_money_text" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/order_submit_red_big_text" android:textStyle="bold" android:textColor="@color/order_black_text" android:id="@id/return_total_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥ 0.00" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_above="@id/bottom_layout" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/return_surplus_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip">
+        <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退至唯品钱包" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/order_text_main" android:textStyle="bold" android:textColor="@color/order_black_text" android:id="@id/return_surplus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/return_money_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip">
+        <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="原路返回" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/order_text_main" android:textStyle="bold" android:textColor="@color/order_black_text" android:id="@id/return_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/return_coupon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退回优惠" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/white" android:id="@id/return_vip_coin_txt" android:background="@color/vip_coin_color" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/white" android:id="@id/return_coupon_txt" android:background="@color/gift_color" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/white" android:id="@id/return_gits_txt" android:background="@color/gift_color" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <View android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+</LinearLayout>

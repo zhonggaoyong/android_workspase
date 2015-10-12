@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Google Play ծառայությունների սխալ կա</string>
+    <string name="d3r">Ինչ-որ հավելված պահանջում է տեղադրել Google Play ծառայությունները:</string>
+    <string name="d3s">Ինչ-որ հավելված պահանջում է թարմացնել Google Play ծառայությունները:</string>
+    <string name="d3t">Ինչ-որ հավելված պահանջում է միացնել Google Play ծառայությունները:</string>
+    <string name="d3u">%1$s-ի հարցմամբ</string>
+    <string name="d3v">Տեղադրեք Google Play ծառայությունները</string>
+    <string name="d3w">Այս հավելվածը չի գործարկվի առանց Google Play ծառայությունների, որոնք բացակայում են ձեր հեռախոսում:</string>
+    <string name="d3x">Այս հավելվածը չի գործարկվի առանց Google Play ծառայությունների, որոնք բացակայում են ձեր գրասալիկում:</string>
+    <string name="d3y">Տեղադրել Google Play ծառայությունները</string>
+    <string name="d3z">Միացնել Google Play ծառայությունները</string>
+    <string name="d40">Այս ծրագիրը չի աշխատի, եթե դուք չմիացնեք Google Play ծառայությունները:</string>
+    <string name="d41">Միացնել Google Play ծառայությունները</string>
+    <string name="d42">Նորացրեք Google Play ծառայությունները</string>
+    <string name="d43">Այս ծրագիրը չի գործարկվի, եթե դուք չնորացնեք Google Play ծառայությունները:</string>
+    <string name="d44">Ցանցի սխալ կա</string>
+    <string name="d45">Պահանջվում է տվյալների կապ` Google Play ծառայություններին միանալու համար:</string>
+    <string name="d46">Հաշիվն անվավեր է</string>
+    <string name="d47">Նշված հաշիվը գոյություն չունի այս սարքում: Ընտրեք այլ հաշիվ:</string>
+    <string name="d48">Անհայտ խնդիր՝ Google Play ծառայություններում:</string>
+    <string name="d49">Google Play ծառայություններ</string>
+    <string name="d4_">Google Play ծառայությունները, որոնց ապավինում են ձեր ծրագրերից որոշները, չեն աջակցվում ձեր սարքի կողմից: Խնդրում ենք կապվել արտադրողի հետ օգնության համար:</string>
+    <string name="d4a">Սարքի ամսաթիվը կարծես սխալ է: Ստուգեք սարքի ամսաթիվը:</string>
+    <string name="d4b">Նորացնել</string>
+    <string name="d4c">Մուտք գործել</string>
+    <string name="d4d">Մուտք գործեք Google-ով</string>
+</resources>

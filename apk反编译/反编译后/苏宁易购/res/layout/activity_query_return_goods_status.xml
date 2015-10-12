@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/order_shop_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_fourteen">
+                <LinearLayout android:orientation="horizontal" android:padding="@dimen/pub_margin_or_padding_space_fourteen" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_gravity="center" android:background="@drawable/bg_gray_one_border" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/item_image" android:background="@color/white" android:layout_width="@dimen/android_public_space_106px" android:layout_height="@dimen/android_public_space_106px" android:src="@drawable/default_backgroud" />
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_thirteen">
+                        <TextView android:textSize="@dimen/pub_textsize_sixteen" android:textColor="@color/public_text_color" android:id="@id/tv_return_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <TextView android:textSize="@dimen/pub_textsize_fifteen" android:textColor="@color/public_text_color" android:id="@id/tv_return_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" />
+                            <TextView android:textSize="@dimen/pub_textsize_fifteen" android:textColor="@color/public_text_color" android:id="@id/tv_return_product_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <TextView android:textSize="@dimen/pub_textsize_fourteen" android:textColor="@color/pub_color_three" android:id="@id/tv_return_supplier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.suning.mobile.ebuy.chat.util.CustomerServiceView android:id="@id/customer_service_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="18.0dip" android:textColor="#ff5f5f5f" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/return_goods_status" />
+            <LinearLayout android:orientation="vertical" android:id="@id/return_status_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

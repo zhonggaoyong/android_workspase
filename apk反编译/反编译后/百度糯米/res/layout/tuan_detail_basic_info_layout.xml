@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tuan_detail_basic_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/titleBGNew" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.baidu.bainuo.view.MobileNetworkPhotoView android:id="@id/titleBGImageNew" android:layout_width="fill_parent" android:layout_height="190.0dip" android:scaleType="fitXY" />
+        <RelativeLayout android:layout_gravity="bottom" android:background="@drawable/groupon_detail_gradation_line" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/groupon_detail_text_view_num_sold" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:text="@string/tuan_detial_basic_info_sold_count" android:includeFontPadding="false" android:layout_alignBaseline="@id/groupon_detail_text_view_title" android:layout_alignParentRight="true" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="left|center" android:layout_gravity="bottom" android:id="@id/groupon_detail_text_view_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="10.0dip" android:text="@string/tuan_detial_default_value" android:includeFontPadding="false" android:layout_toLeftOf="@id/groupon_detail_text_view_num_sold" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="left|center" android:layout_gravity="bottom" android:id="@id/groupon_detail_text_view_subtitle" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/tuan_detial_default_value" android:maxLines="2" android:includeFontPadding="false" android:layout_below="@id/groupon_detail_text_view_title" android:lineSpacingExtra="4.0dip" />
+        </RelativeLayout>
+    </FrameLayout>
+    <View android:id="@id/buyTopLineNew" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <include android:id="@id/tuan_detail_buy" layout="@layout/tuan_detail_buy" />
+    <TableLayout android:id="@id/protectionTableNew" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*" android:shrinkColumns="*" />
+    <View android:id="@id/basicBottomLineNew" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

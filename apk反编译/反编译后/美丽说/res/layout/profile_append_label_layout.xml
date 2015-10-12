@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_back" android:clickable="true" android:text="" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="个人标签" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <com.meilishuo.app.views.CustomTextView android:textColor="#ffff7a9a" android:id="@id/btn_done" android:text="完成" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopOkBtn" />
+    </RelativeLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff595056" android:id="@id/label_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="选择标签" android:layout_below="@id/added_labels" />
+    <RelativeLayout android:id="@id/added_labels" android:background="@drawable/bg_input_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/header">
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColorHint="#ffccc2c9" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/label_edittext" android:background="@null" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:hint="贴标签 说说自己的眼光与擅长" android:singleLine="true" android:textCursorDrawable="@null" />
+        <com.meilishuo.app.herprofile.view.FlowLayout android:id="@id/label_container" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/label_recommend" android:overScrollMode="never">
+        <com.meilishuo.app.herprofile.view.FlowLayout android:id="@id/flow_layout" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </ScrollView>
+    <com.meilishuo.app.views.CustomPageLoading android:id="@id/progressbar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/personal_view_pressed_selector" android:layout_width="fill_parent" android:layout_height="49.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/personal_item_icon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/personal_root_margin" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/personal_title_text_size" android:textColor="@color/personal_color_title" android:id="@id/personal_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/personal_root_margin" android:layout_toRightOf="@id/personal_item_icon" android:layout_centerVertical="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/personal_item_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/personal_root_margin" android:src="@drawable/personal_icon_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+    <TextView android:textColor="@color/personal_color_more" android:id="@id/personal_item_more_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_toLeftOf="@id/personal_item_arrow" android:layout_centerVertical="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/personal_item_new_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jd_red_point" android:scaleType="centerInside" android:layout_alignLeft="@id/personal_item_arrow" android:layout_centerVertical="true" />
+    <View android:id="@id/personal_item_top_line" android:layout_alignParentTop="true" style="@style/line2" />
+    <View android:id="@id/personal_item_bottom_line" android:layout_alignParentBottom="true" style="@style/line2" />
+</RelativeLayout>

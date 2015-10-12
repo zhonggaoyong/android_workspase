@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.achievo.vipshop.view.ProductDetailView android:id="@id/main_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/product_header_layout" layout="@layout/product_detail_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/product_foot_layout" android:background="@drawable/bottom_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.achievo.vipshop.view.ExpandableScrollView android:id="@id/detail_framework" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/product_foot_layout" android:layout_below="@id/product_header_layout" />
+    <include android:layout_width="166.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_above="@id/product_foot_layout" layout="@layout/new_product_detail_cart_animation_dialog" />
+    <include android:id="@id/go_top" android:visibility="invisible" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="11.0dip" android:layout_above="@id/product_foot_layout" android:layout_alignParentRight="true" layout="@layout/normal_go_top" />
+    <include android:id="@id/faush_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/product_header_layout" android:layout_alignParentLeft="true" layout="@layout/new_load_fail" />
+    <ImageView android:id="@id/ivRedPop" android:visibility="invisible" android:layout_width="13.0dip" android:layout_height="13.0dip" android:src="@drawable/bg_shoppingcar_small" />
+</com.achievo.vipshop.view.ProductDetailView>

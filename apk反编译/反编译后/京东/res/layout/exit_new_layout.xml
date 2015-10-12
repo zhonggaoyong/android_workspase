@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/more_exit_item_bg" android:layout_width="240.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/exit_app_layout" android:background="@color/more_exit_item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/exit_app_icon" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/exit_app_icon" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/more_exit_item_text_color" android:id="@id/exit_app_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/exit_app" android:layout_toRightOf="@id/exit_app_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffccd1d9" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:id="@id/exit_login_layout" android:background="@color/more_exit_item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/exit_login_icon" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/exit_login_icon" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/more_exit_item_text_color" android:id="@id/exit_login_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/exit_login" android:layout_toRightOf="@id/exit_login_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

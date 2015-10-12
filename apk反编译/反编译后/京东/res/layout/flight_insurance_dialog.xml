@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="240.0dip" android:layout_height="wrap_content" style="@style/flight_translucent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/insurance_2" android:background="@drawable/flight_dialog_bg_t_selector" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="2份" android:layout_weight="1.0" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/insurance_img_2" android:background="@drawable/flight_butn_check_unselect" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/insurance_1" android:background="@drawable/flight_dialog_bg_c_selector" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="1份" android:layout_weight="1.0" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/insurance_img_1" android:background="@drawable/flight_butn_check_unselect" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/insurance_0" android:background="@drawable/flight_dialog_bg_d_selector" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="0份" android:layout_weight="1.0" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/insurance_img_0" android:background="@drawable/flight_butn_check_unselect" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

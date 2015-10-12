@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/group_product_info_display" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_30px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="0.70000005dip" />
+    <RelativeLayout android:background="@color/pub_color_one" android:paddingLeft="@dimen/android_public_space_20px" android:paddingRight="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_eight" android:gravity="center_vertical" android:id="@id/group_shopname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="苏宁配送" android:maxEms="8" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/pub_color_nine" android:gravity="center_vertical" android:id="@id/group_shop_yf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="0.70000005dip" />
+    <RelativeLayout android:id="@id/group_public_item_product_info_layout" android:background="@color/pub_color_one" android:padding="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/group_public_item_product_img_layout" android:background="@drawable/goods_bg" android:padding="@dimen/pub_margin_or_padding_space_two" android:layout_width="@dimen/pub_margin_or_padding_space_eighty_two" android:layout_height="@dimen/pub_margin_or_padding_space_eighty_two">
+            <ImageView android:id="@id/group_public_item_product_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_background_small" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_eighty_two" android:layout_marginLeft="@dimen/ios_public_space_30px" android:layout_toRightOf="@id/group_public_item_product_img_layout">
+            <TextView android:textColor="@color/pub_color_eight" android:ellipsize="end" android:id="@id/group_public_item_product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentTop="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textColor="@color/pub_color_seven" android:id="@id/group_public_item_product_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+                <TextView android:textColor="@color/pub_color_nine" android:id="@id/group_public_item_product_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/group_public_item_product_bottom_line" android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="0.70000005dip" android:layout_marginLeft="@dimen/android_public_space_20px" />
+    <RelativeLayout android:background="@color/pub_color_one" android:paddingTop="@dimen/pub_margin_or_padding_space_ten" android:paddingBottom="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/pub_color_eight" android:gravity="center" android:id="@id/group_yuji_songda" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" android:text="预计送达时间" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/pub_color_eight" android:gravity="right|center" android:id="@id/group_deliver_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_10px" android:layout_marginRight="@dimen/ios_public_space_30px" android:text="" android:layout_toLeftOf="@id/group_merge_zero_rili" android:layout_toRightOf="@id/group_yuji_songda" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/group_merge_zero_rili" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_30px" android:src="@drawable/deliverty_tiem_calendar" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

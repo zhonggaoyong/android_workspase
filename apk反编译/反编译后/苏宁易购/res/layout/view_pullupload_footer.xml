@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_pul_load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/pb_pul_load" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/pull_updata_ProgressBar" />
+        <TextView android:textSize="@dimen/android_public_textsize_16pt" android:id="@id/tv_pul_load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/loading" />
+    </LinearLayout>
+    <Button android:textColor="@color/pub_color_nine" android:id="@id/btn_pul_load" android:background="@drawable/public_bg_btn_white" android:layout_width="@dimen/ios_public_space_161px" android:layout_height="@dimen/ios_public_space_75px" android:layout_margin="20.0dip" android:text="@string/comp_list_retry_text" android:layout_centerInParent="true" />
+</RelativeLayout>

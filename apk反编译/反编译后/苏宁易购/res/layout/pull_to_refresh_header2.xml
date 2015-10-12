@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/pull_to_refresh_header_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/lionrl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_24px">
+        <ImageView android:id="@id/lion_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lion_head" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/lion_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lion_open" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_10px" android:layout_marginBottom="@dimen/android_public_space_24px">
+        <RelativeLayout android:id="@id/pull_to_refresh_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="#ff353d44" android:id="@id/pull_to_refresh_header_hint_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pull_to_refresh_header_hint_normal" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

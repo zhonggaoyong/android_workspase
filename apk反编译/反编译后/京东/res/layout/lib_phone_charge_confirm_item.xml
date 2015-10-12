@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item_lay" android:layout_width="fill_parent" android:layout_height="47.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/coupon_txt4" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginTop="@dimen/lib_phone_charge_confirm7" style="@style/lib_phone_charge_MyCheckBox" />
+    <TextView android:textSize="@dimen/lib_phone_charge_confirm_item_size" android:textColor="#ffffa00a" android:ellipsize="end" android:id="@id/coupon_txt44" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_phone_charge_confirm_item_left" android:text="@string/lib_phone_charge_confirm_czjq" android:singleLine="true" android:layout_alignTop="@id/coupon_txt4" />
+</RelativeLayout>

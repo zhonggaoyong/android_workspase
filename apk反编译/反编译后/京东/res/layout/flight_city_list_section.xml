@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/top_tab_item_normal" android:layout_width="fill_parent" android:layout_height="@dimen/city_list_header_hight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bottom_line" android:layout_alignParentBottom="true" style="@style/travel_view_splite_h" />
+    <View android:id="@id/top_line" android:layout_alignParentTop="true" style="@style/travel_view_splite_h" />
+    <TextView android:textSize="@dimen/city_list_header_text_size" android:textStyle="bold" android:textColor="@color/text_normal_gray_color" android:gravity="center" android:id="@id/header_text" android:paddingLeft="@dimen/city_list_margin_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/bottom_line" android:layout_below="@id/top_line" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

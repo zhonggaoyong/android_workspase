@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/exchange_panel" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0dip" android:textColor="#ff585c64" android:id="@id/exchange_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <Button android:textSize="@dimen/app_textsize_secondary" android:textColor="@color/btn_text_color1" android:gravity="center_vertical" android:id="@id/exchange_action" android:background="@drawable/bg_btn_exchange" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="立即兑换" />
+                </LinearLayout>
+                <View android:background="@drawable/vipmoney_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/info_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/usable_panel" android:paddingLeft="15.0dip" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="134.0dip">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0dip" android:textColor="#ff98989f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="可用唯品币(个)" />
+                        <TextView android:textSize="55.0dip" android:textStyle="normal" android:textColor="#ffe4007f" android:gravity="center" android:id="@id/usable_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0" android:singleLine="true" />
+                    </LinearLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_pic" />
+                </LinearLayout>
+                <View android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/total_panel" android:paddingLeft="15.0dip" android:paddingTop="17.0dip" android:paddingRight="15.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0dip" android:textColor="#ff98989f" android:gravity="center" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="唯品币总额(个)" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ff222222" android:id="@id/total_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0" android:singleLine="true" />
+                    </LinearLayout>
+                    <View android:background="#ffe7e7e7" android:layout_width="1.0px" android:layout_height="32.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_weight="1.0">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="20.0dip">
+                            <TextView android:textSize="12.0dip" android:textColor="#ff98989f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在发放唯品币(个)" android:singleLine="true" />
+                            <LinearLayout android:gravity="center" android:id="@id/freeze_money_icon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="1.0dip">
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vipmoney_iconforget_selector" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="18.0dip" android:textColor="#ff222222" android:id="@id/freeze_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#ffeae9eb" android:layout_width="fill_parent" android:layout_height="3.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/nodata_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="40.0dip" android:textColor="#ffe4007f" android:gravity="center_vertical" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="134.0dip" android:text="暂无唯品币" android:drawableRight="@drawable/account_pic" />
+                <View android:background="#ffeae9eb" android:layout_width="fill_parent" android:layout_height="3.0px" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ff585c64" android:id="@id/nodata_tips2" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="唯品币为购物消费所得，在支付时可直接抵扣现金。" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

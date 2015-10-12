@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/linearlayoutbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/price_text_color" android:ellipsize="end" android:gravity="left|center" android:id="@id/product_inventory_division_group_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:id="@id/product_inventory_division_group_arrow" android:background="@drawable/common_down_arrow_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="16.0dip" />
+    </LinearLayout>
+</LinearLayout>

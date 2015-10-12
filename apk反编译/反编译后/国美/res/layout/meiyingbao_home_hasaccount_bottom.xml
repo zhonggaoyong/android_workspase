@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/graph" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_seven_graph" android:focusable="true" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="七日年化收益率 （%）" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_year_graph" android:background="@drawable/meiyingbao_rate_selector" android:focusable="true" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="每万份收益 （元）" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.gome.ecmall.custom.webview.BaseWebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/graph" />
+</RelativeLayout>

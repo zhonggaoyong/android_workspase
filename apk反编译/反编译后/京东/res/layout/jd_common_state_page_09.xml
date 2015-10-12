@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jd_tip_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/base_ui_jd_tip_page9_text1_size" android:textColor="@color/c_848689" android:gravity="center" android:id="@id/jd_tip_tv1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_ui_jd_tip_page_text_margin_top" android:singleLine="true" />
+    <TextView android:textSize="@dimen/base_ui_jd_tip_page9_text2_size" android:textColor="@color/c_BFBFBF" android:gravity="center" android:id="@id/jd_tip_tv2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_ui_jd_tip_page_text_margin_top" android:singleLine="true" />
+    <TextView android:textSize="@dimen/base_ui_jd_tip_page9_text2_size" android:textColor="@color/c_BFBFBF" android:gravity="center" android:id="@id/jd_tip_tv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_ui_jd_tip_page9_text3_margin_top" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_ui_jd_tip_page9_button_margin_top">
+        <Button android:textSize="@dimen/base_ui_jd_tip_page9_button_text_size" android:textColor="@color/c_686868" android:id="@id/jd_tip_button_left" android:background="@drawable/button_c_01" android:layout_width="@dimen/base_ui_jd_tip_page9_button_width" android:layout_height="@dimen/base_ui_jd_tip_page9_button_height" />
+        <Button android:textSize="@dimen/base_ui_jd_tip_page9_button_text_size" android:textColor="@color/c_686868" android:id="@id/jd_tip_button_right" android:background="@drawable/button_c_01" android:layout_width="@dimen/base_ui_jd_tip_page9_button_width" android:layout_height="@dimen/base_ui_jd_tip_page9_button_height" android:layout_marginLeft="@dimen/base_ui_jd_tip_page9_button_margin_left" />
+    </LinearLayout>
+</LinearLayout>

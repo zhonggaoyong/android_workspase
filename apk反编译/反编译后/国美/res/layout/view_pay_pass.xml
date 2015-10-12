@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/main_default_white_text_color" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:id="@id/tv_input_pay_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用优惠券，余额等需要输入支付密码" />
+    <com.bangcle.safekeyboard.PasswordEditText android:textColor="@color/main_default_black_text_color" android:textColorHint="@color/hint_text_color" android:id="@id/et_payment_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:hint="请输入支付密码" android:singleLine="true" android:layout_below="@id/tv_input_pay_password" android:inputType="textPassword" style="@style/gome.NewEditText.style" mobile:maxlen="20" mobile:numTextSize="1.5" xmlns:mobile="http://www.bangcle.mobile" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff0066cc" android:id="@id/tv_forget_payment_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:text="忘记支付密码" android:layout_below="@id/et_payment_password" android:layout_alignParentRight="true" />
+</RelativeLayout>

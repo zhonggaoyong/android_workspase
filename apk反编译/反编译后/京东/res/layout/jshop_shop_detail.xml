@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jshop_main_bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jshop="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.sample.jshop.ui.JshopTitle android:id="@id/detail_title" android:layout_width="fill_parent" android:layout_height="wrap_content" jshop:jshop_drawableLeft="@drawable/common_title_back_selector" jshop:jshop_drawableRight="@drawable/jshop_title_share_selector" jshop:jshop_textTitle="@string/jshop_shop_detail_title" />
+    <ScrollView android:id="@id/jshop_main_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/jshop_detail_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/jshop_logo_lay" android:background="@color/jshop_m_bgcolor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:background="#ffdddddd" style="@style/JshopDetailLogorect">
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_logo_img_nobar" android:background="#ffffffff" android:layout_margin="1.0px" style="@style/JshopBannerLogo" />
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/jshop_logo_and_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="14.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff231815" android:ellipsize="end" android:layout_gravity="left" android:id="@id/jshop_shopname" android:layout_width="@dimen/jshop_detail_name_width" android:layout_height="wrap_content" android:singleLine="true" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_jd_shop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/jshop_sellself_icon" />
+                            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_diamond_shop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/jshop_diamond_icon" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff9fa0a0" android:layout_gravity="left" android:id="@id/jshop_favcount_in_fbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="0人关注" android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:id="@id/jshop_detail_fav_bt" android:background="@drawable/jshop_favbt_red_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="4.0dip" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/jshop_btn_lay" android:background="@color/jshop_m_bgcolor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/jshop_btn_all_product" android:layout_weight="1.0" style="@style/JshoBannerBottomBtn">
+                        <TextView android:id="@id/jshop_btn_all_product_num" android:text="0" style="@style/JshoBannerBtnCount" />
+                        <TextView android:id="@id/jshop_btn_all_product_text" android:text="全部商品" style="@style/JshoBannerBtnContent" />
+                    </LinearLayout>
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_btn_all_product_line" style="@style/JshopBannerSpliteLine" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/jshop_btn_new_product" android:layout_weight="1.0" style="@style/JshoBannerBottomBtn">
+                        <TextView android:id="@id/jshop_btn_new_product_num" android:text="0" style="@style/JshoBannerBtnCount" />
+                        <TextView android:id="@id/jshop_btn_new_product_text" android:text="上新" style="@style/JshoBannerBtnContent" />
+                    </LinearLayout>
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_btn_new_product_line" style="@style/JshopBannerSpliteLine" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/jshop_btn_promo_product" android:layout_weight="1.0" style="@style/JshoBannerBottomBtn">
+                        <TextView android:id="@id/jshop_btn_promo_product_num" android:text="0" style="@style/JshoBannerBtnCount" />
+                        <TextView android:id="@id/jshop_btn_promo_product_text" android:text="@string/jshop_promotion_sell" style="@style/JshoBannerBtnContent" />
+                    </LinearLayout>
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_btn_promo_product_line" style="@style/JshopBannerSpliteLine" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/jshop_btn_act_product" android:layout_weight="1.0" style="@style/JshoBannerBottomBtn">
+                        <TextView android:id="@id/jshop_btn_act_num" android:text="0" style="@style/JshoBannerBtnCount" />
+                        <TextView android:id="@id/jshop_btn_act_text" android:text="@string/jshop_shop_act" style="@style/JshoBannerBtnContent" />
+                    </LinearLayout>
+                    <Button android:id="@id/jshop_shop_share_bt" android:visibility="gone" android:text="@string/jshop_share_bt" android:drawableTop="@drawable/jshop_share_selector" android:layout_weight="10.0" style="@style/JshopDefaultBottomMenu" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/jshop_info_lay" android:background="@color/jshop_m_bgcolor" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/jshop_detail_splitline" android:scaleType="fitXY" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/jshop_detail_ware_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/jshop_detail_waresco" style="@style/JshopDetailScoTextView" />
+                    <TextView android:id="@id/jshop_detail_waretrend" style="@style/JshopDetailTrendTextView" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/jshop_detail_service_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/jshop_detail_servicesco" style="@style/JshopDetailScoTextView" />
+                    <TextView android:id="@id/jshop_detail_servicetrend" style="@style/JshopDetailTrendTextView" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/jshop_detail_eff_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/jshop_detail_effsco" style="@style/JshopDetailScoTextView" />
+                    <TextView android:id="@id/jshop_detail_efftrend" style="@style/JshopDetailTrendTextView" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/jshop_contact_lay" android:background="@color/jshop_m_bgcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jshop_detail_onlinecs_lay" android:background="@drawable/jshop_detail_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/jshop_detail_online_cs" android:text="@string/jshop_detail_online_cs" android:drawableRight="@drawable/jshop_icon_dongdong" style="@style/JshopDetailContactTextView" />
+                </LinearLayout>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_detail_phone_line" android:visibility="gone" android:layout_marginLeft="10.0dip" style="@style/JshopALLProductSpliteLine" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jshop_detail_phone_lay" android:background="@drawable/jshop_detail_item_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/jshop_detail_phone" android:drawableRight="@drawable/jshop_icon_call" style="@style/JshopDetailContactTextView" />
+                </LinearLayout>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_detail_qrcode_line" android:visibility="gone" android:layout_marginLeft="10.0dip" style="@style/JshopALLProductSpliteLine" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jshop_detail_qrcode_lay" android:background="@drawable/jshop_detail_item_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/jshop_detail_qrcode" android:text="@string/jshop_detail_qrcode" android:drawableRight="@drawable/jshop_icon_qr_code" style="@style/JshopDetailContactTextView" />
+                </LinearLayout>
+                <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/jshop_detail_lay" android:background="@color/jshop_m_bgcolor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+                <TextView android:id="@id/jshop_detail_brief" style="@style/JshopDetailInfoTextView" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_detail_name_line" android:visibility="gone" android:layout_marginLeft="10.0dip" style="@style/JshopALLProductSpliteLine" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jshop_detail_name_lay" android:background="@drawable/jshop_detail_item_selector" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/jshop_detail_text_size" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/jshop_detail_name" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_weight="2.0" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="5.0">
+                        <TextView android:textSize="@dimen/jshop_detail_text_size" android:gravity="right|center" android:id="@id/jshop_detail_company_bt" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="@string/jshop_query_license" android:singleLine="true" android:drawableRight="@drawable/jshop_shop_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_detail_local_line" android:layout_marginLeft="10.0dip" style="@style/JshopALLProductSpliteLine" />
+                <TextView android:id="@id/jshop_detail_local" style="@style/JshopDetailInfoTextView" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_detail_from_line" android:visibility="gone" android:layout_marginLeft="10.0dip" style="@style/JshopALLProductSpliteLine" />
+                <TextView android:id="@id/jshop_detail_from" style="@style/JshopDetailInfoTextView" />
+                <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/jshop_brand_lay" android:background="@color/jshop_m_bgcolor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip">
+                <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/jshop_detail_text_color" android:ellipsize="end" android:gravity="center_vertical" android:paddingLeft="7.5dip" android:paddingRight="7.5dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/jshop_shop_detail_brand" android:singleLine="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jshop_detail_brand_first_lay" android:paddingLeft="7.5dip" android:paddingRight="7.5dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/jshop_1_brand" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/jshop_brand_item" />
+                    <include android:id="@id/jshop_2_brand" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/jshop_brand_item" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jshop_detail_brand_second_lay" android:paddingLeft="7.5dip" android:paddingRight="7.5dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/jshop_3_brand" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/jshop_brand_item" />
+                    <include android:id="@id/jshop_4_brand" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/jshop_brand_item" />
+                </LinearLayout>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_detail_all_brand_line" android:visibility="gone" android:layout_marginLeft="10.0dip" style="@style/JshopALLProductSpliteLine" />
+                <Button android:gravity="right|center" android:id="@id/jshop_detail_all_brand_bt" android:background="#00000000" android:paddingLeft="7.5dip" android:paddingRight="7.5dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/jshop_query_all_brand" android:drawableRight="@drawable/jshop_shop_arrow" />
+                <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/jshop_loading_error_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/jshop_loading_error" />
+</LinearLayout>

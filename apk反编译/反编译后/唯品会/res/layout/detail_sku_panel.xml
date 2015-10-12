@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line" android:background="@color/detail_divider_gray_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="20.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sku_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/detail_lr_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/detail_dark" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_size_select" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/detail_blue" android:gravity="center" android:id="@id/browse_btn" android:paddingLeft="10.0dip" android:paddingRight="@dimen/detail_lr_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_sku_table" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/size_layout" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/detail_gray_dark" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/detail_tb_padding" android:layout_marginBottom="@dimen/detail_tb_padding" />
+    </LinearLayout>
+</LinearLayout>

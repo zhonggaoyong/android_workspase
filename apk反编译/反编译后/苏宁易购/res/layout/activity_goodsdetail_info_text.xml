@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/util_view_header" />
+    <ScrollView android:id="@id/package_scrollview_root" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/black" android:id="@id/goodsDetailInfoText" android:background="@color/item_gray" android:padding="@dimen/goods_detail_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--------------" />
+            <View android:background="@color/item_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:text="@string/im_question_select" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <ListView android:id="@id/lv_question_type" android:background="@color/white" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <com.meilishuo.app.views.OptionsItemView android:id="@id/layout_order" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height3" android:layout_marginRight="15.0dip" app:optionContentColor="@color/pink_t80" app:optionTitle="@string/im_question_order" app:optionImage="@drawable/choice_icon_order" app:optionArray="@drawable/circle_info_arrow" app:optionTitleSize="16" app:optionImageSize="40" />
+            <View android:layout_height="1.0dip" style="@style/borderline_slide" />
+            <com.meilishuo.app.views.OptionsItemView android:id="@id/layout_return" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height3" android:layout_marginRight="15.0dip" app:optionContentColor="@color/pink_t80" app:optionTitle="@string/im_question_return" app:optionImage="@drawable/choice_icon_retreat" app:optionArray="@drawable/circle_info_arrow" app:optionTitleSize="16" app:optionImageSize="40" />
+            <View android:layout_height="1.0dip" style="@style/borderline_slide" />
+            <com.meilishuo.app.views.OptionsItemView android:id="@id/layout_pay" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height3" android:layout_marginRight="15.0dip" app:optionContentColor="@color/pink_t80" app:optionTitle="@string/im_question_pay" app:optionImage="@drawable/choice_icon_pay" app:optionArray="@drawable/circle_info_arrow" app:optionTitleSize="16" app:optionImageSize="40" />
+            <View android:layout_height="1.0dip" style="@style/borderline_slide" />
+            <com.meilishuo.app.views.OptionsItemView android:id="@id/layout_send" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height3" android:layout_marginRight="15.0dip" app:optionContentColor="@color/pink_t80" app:optionTitle="@string/im_question_send" app:optionImage="@drawable/choice_icon_dispatching" app:optionArray="@drawable/circle_info_arrow" app:optionTitleSize="16" app:optionImageSize="40" />
+            <View android:layout_height="1.0dip" style="@style/borderline_slide" />
+            <com.meilishuo.app.views.OptionsItemView android:id="@id/layout_goods" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height3" android:layout_marginRight="15.0dip" app:optionContentColor="@color/pink_t80" app:optionTitle="@string/im_question_goods" app:optionImage="@drawable/choice_icon_commodity" app:optionArray="@drawable/circle_info_arrow" app:optionTitleSize="16" app:optionImageSize="40" />
+            <View android:layout_height="1.0dip" style="@style/borderline_slide" />
+            <com.meilishuo.app.views.OptionsItemView android:id="@id/layout_other" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height3" android:layout_marginRight="15.0dip" app:optionContentColor="@color/pink_t80" app:optionTitle="@string/im_question_other" app:optionImage="@drawable/choice_icon_other" app:optionArray="@drawable/circle_info_arrow" app:optionTitleSize="16" app:optionImageSize="40" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

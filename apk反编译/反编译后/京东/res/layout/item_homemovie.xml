@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_homemovie" android:paddingLeft="25.0dip" android:paddingTop="20.0dip" android:paddingRight="25.0dip" android:layout_width="250.0dip" android:layout_height="356.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_movie" android:layout_width="fill_parent" android:layout_height="275.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/img_movie">
+            <TextView android:textSize="16.0sp" android:textColor="@color/font_black" android:id="@id/tv_mname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/font_red" android:id="@id/tv_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.8" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:gravity="left" android:id="@id/tv_tmplatetype" android:background="@drawable/hot_icon_2d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/img_movie" />
+    </RelativeLayout>
+</LinearLayout>

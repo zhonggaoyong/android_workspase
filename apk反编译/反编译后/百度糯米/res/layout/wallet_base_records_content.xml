@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.PullToRefreshListView android:id="@id/bd_wallet_pull_up_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bd_wallet_empty_list" android:background="@color/bd_wallet_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/bd_wallet_empty_img" android:layout_width="@dimen/bd_wallet_empty_view_logo_width" android:layout_height="@dimen/bd_wallet_empty_view_logo_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="37.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/wallet_base_trans_tip" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/bd_wallet_text_size_normal" android:textColor="@color/bd_wallet_text_gray" android:gravity="center" android:id="@id/bd_wallet_error_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/bd_wallet_load_error" android:lineSpacingExtra="5.0dip" />
+        <Button android:textSize="@dimen/bd_wallet_text_size_large" android:textColor="@color/bd_wallet_white" android:id="@id/bd_wallet_do" android:background="@drawable/wallet_base_btn" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="10.0dip" android:text="@string/bd_wallet_login_now" />
+    </LinearLayout>
+</RelativeLayout>

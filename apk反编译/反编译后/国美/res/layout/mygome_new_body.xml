@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mygome_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mytest="http://schemas.android.com/apk/res/com.gome.eshopnew">
+    <View android:id="@id/line" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_all_orders" android:layout_width="fill_parent" android:layout_height="44.0dip" mytest:titleText="全部订单" mytest:line="false" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_my_favourate" android:layout_width="fill_parent" android:layout_height="44.0dip" mytest:titleText="我的收藏" mytest:icon="@drawable/mygome_list_fav" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_my_appointment" android:layout_width="fill_parent" android:layout_height="44.0dip" mytest:titleText="我的预约" mytest:icon="@drawable/mygome_list_appointment" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_explore_history" android:layout_width="fill_parent" android:layout_height="44.0dip" mytest:titleText="浏览历史" mytest:icon="@drawable/mygome_list_history" mytest:line="false" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_my_account" android:layout_width="fill_parent" android:layout_height="44.0dip" mytest:titleText="我的账户" mytest:icon="@drawable/mygome_list_myaccount" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_my_present" android:layout_width="fill_parent" android:layout_height="44.0dip" mytest:titleText="我的礼物" mytest:icon="@drawable/wodeliwu" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_my_meiyingbao" android:layout_width="fill_parent" android:layout_height="44.0dip" mytest:titleText="我的美盈宝" mytest:icon="@drawable/mygome_meiyingbao" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_my_crowdfunding" android:layout_width="fill_parent" android:layout_height="44.0dip" android:onClick="onClick" mytest:titleText="我的众筹" mytest:icon="@drawable/mygome_zhongchou" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_account_security" android:layout_width="fill_parent" android:layout_height="44.0dip" mytest:titleText="账户安全" mytest:icon="@drawable/mygome_list_security" mytest:line="false" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_advice_aftersale" android:layout_width="fill_parent" android:layout_height="44.0dip" mytest:titleText="售后咨询" mytest:icon="@drawable/mygome_list_aftersale" />
+</LinearLayout>

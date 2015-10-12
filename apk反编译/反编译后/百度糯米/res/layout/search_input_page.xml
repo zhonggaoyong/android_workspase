@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/search_input_titlebar" android:layout_width="fill_parent" android:layout_height="46.0dip" layout="@layout/search_input_title" />
+    <View android:background="#ffacacac" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/search_hotword_history_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.baidu.bainuo.more.search.CustomNineGridLayout android:gravity="center" android:layout_gravity="top|center" android:id="@id/search_bussness_hotwords_grid" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/search_bussness_history_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <FrameLayout android:id="@id/search_keyword_result_container" android:background="#ffeeeeee" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/search_bussness_result_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dividerHeight="0.0dip" />
+            <TextView android:gravity="center" android:id="@id/search_bussness_result_list_emptyview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

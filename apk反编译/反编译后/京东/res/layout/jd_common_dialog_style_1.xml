@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/base_ui_jd_dialog_content_padding" android:paddingRight="@dimen/base_ui_jd_dialog_content_padding" android:layout_width="@dimen/base_ui_jd_dialog_width" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/base_ui_jd_dialog_content_margin" android:layout_marginRight="@dimen/base_ui_jd_dialog_content_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/base_ui_jd_dialog_textview_size" android:textColor="@color/c_686868" android:gravity="center" android:id="@id/jd_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_ui_jd_dialog_textview_margin_top" android:layout_marginBottom="@dimen/base_ui_jd_dialog_textview_margin_bottom" />
+    </ScrollView>
+    <View android:background="@drawable/jd_dialog_common_divider" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="-1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/base_ui_jd_dialog_button_content_height" android:layout_marginTop="@dimen/base_ui_jd_dialog_button_margin_top" android:layout_marginBottom="@dimen/base_ui_jd_dialog_button_margin_bottom">
+        <Button android:textSize="@dimen/base_ui_jd_dialog_button_text_size" android:textColor="@color/c_686868" android:id="@id/jd_dialog_pos_button" android:background="@drawable/button_d" android:layout_width="@dimen/base_ui_jd_dialog_button_child_width" android:layout_height="@dimen/base_ui_jd_dialog_button_child_height" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

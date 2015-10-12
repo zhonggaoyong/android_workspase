@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/pay_error_tips_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/pay_error_fail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/icon_failure_large" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="27.0dip" android:layout_marginBottom="27.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="@color/app_text_new_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_fail_msg" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/app_text_black" android:id="@id/payment_error_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/payment_pay_error" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <Button android:textSize="16.0dip" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/payment_error_retry_btn" android:visibility="visible" android:layout_width="fill_parent" android:text="@string/payment_pay_error_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/submit_red_big_button_style" />
+    </LinearLayout>
+    <include android:id="@id/payment_fail_setting_password_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginBottom="10.0dip" layout="@layout/new_payment_setting_password" />
+    <TextView android:textSize="@dimen/app_textsize_price" android:textColor="@color/payment_fail_text_coclor" android:textColorLink="@color/app_text_red" android:gravity="bottom|center" android:autoLink="phone" android:id="@id/callPhone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="14.5dip" android:text="@string/payment_fail_callPhone" android:layout_weight="1.0" />
+</LinearLayout>

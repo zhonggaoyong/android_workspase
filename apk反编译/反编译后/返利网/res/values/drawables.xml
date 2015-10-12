@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="pop_dialog_btn_background">false</item>
+    <item type="drawable" name="translucent_background">#99000000</item>
+    <item type="drawable" name="drawable_white">#ffffffff</item>
+    <item type="drawable" name="transparent">#00000000</item>
+    <item type="drawable" name="background">#ffeeeeee</item>
+</resources>

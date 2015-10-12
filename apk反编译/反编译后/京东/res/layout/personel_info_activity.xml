@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/my_personal_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <ScrollView android:id="@id/persion_main_scroller" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/common_title">
+        <LinearLayout android:orientation="vertical" android:id="@id/personel_entry_list_layout" android:background="@color/personal_view_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/personel_item_userpic" android:background="@drawable/personal_view_pressed_selector" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff252525" android:id="@id/userpic_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/personel_item_arrow" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/personal_icon_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+                <com.jingdong.common.ui.JDCircleImageView android:id="@id/user_img_view" android:layout_width="@dimen/personal_user_img_view_width" android:layout_height="@dimen/personal_user_img_view_height" android:layout_marginLeft="@dimen/personal_user_photo_marginleft" android:layout_marginTop="20.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/personal_icon_default_avatar" android:scaleType="centerCrop" android:layout_toLeftOf="@id/personel_item_arrow" android:layout_centerVertical="true" app:borderWidth="1.5dip" app:borderColor="@color/personal_avatar_border" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+            <View android:layout_marginLeft="10.0dip" style="@style/line6" />
+            <include android:id="@id/username_layout" layout="@layout/personal_info_item" />
+            <View android:layout_marginLeft="10.0dip" style="@style/line6" />
+            <include android:id="@id/nickname_layout" layout="@layout/personal_info_item" />
+            <View android:layout_marginLeft="10.0dip" style="@style/line6" />
+            <include android:id="@id/sex_layout" layout="@layout/personal_info_item" />
+            <View android:layout_marginLeft="10.0dip" style="@style/line6" />
+            <include android:id="@id/birthday_layout" layout="@layout/personal_info_item" />
+            <View style="@style/line6" />
+            <View android:background="@color/my_personal_bg" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

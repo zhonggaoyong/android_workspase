@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_top" style="@style/top_rl">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ll_btn_back" style="@style/top_iv_back" />
+        <TextView android:id="@id/tv_title" android:text="订单详情" style="@style/top_tv_title" />
+    </RelativeLayout>
+    <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_top">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/order_head" android:background="@drawable/coupon_orderinfo_bg" android:layout_width="wrap_content" android:layout_height="71.0dip" android:layout_below="@id/rl_top">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_movie_type" android:layout_width="39.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="17.0dip" android:src="@drawable/icon_2d" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="17.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tv_cinemaName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/coupon_order_validate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_coupon" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+                    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_coupon" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="兑换券" />
+                </LinearLayout>
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+                <com.jingdong.common.ui.JDListView android:id="@id/lv_coupon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" />
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+            <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:id="@id/tv_orderId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:id="@id/tv_orderStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="11.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:id="@id/tv_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="11.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:id="@id/tv_totalMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="11.0dip" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:id="@id/pay_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="支付金额：" android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="#fff15353" android:id="@id/tv_onlineMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/pay_name" android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:id="@id/tv_disMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_onlineMoney" android:layout_centerVertical="true" />
+                    <Button android:textColor="#fff15353" android:id="@id/btn_pay" android:background="@drawable/button_g_01" android:layout_width="78.0dip" android:layout_height="27.0dip" android:layout_marginRight="11.0dip" android:text="去支付" android:layout_alignParentRight="true" />
+                    <Button android:textColor="#ff848689" android:id="@id/btn_to_cinema" android:background="@drawable/button_f_01" android:visibility="gone" android:layout_width="78.0dip" android:layout_height="27.0dip" android:layout_marginRight="11.0dip" android:text="影票首页" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View android:background="#ffe0e0e0" android:layout_width="wrap_content" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="32.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:id="@id/tv_custom_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="客服电话：400-611-5718" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff686868" android:id="@id/tv_agent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.jingdong.common.movie.widget.LoadingView android:id="@id/wgt_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/android_public_space_20px" android:paddingRight="@dimen/android_public_space_20px" android:paddingBottom="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/iv_udl_card" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_20px" android:button="@null" android:drawableLeft="@drawable/shopping_cart_checkbox" android:contentDescription="@string/app_name" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_udl_card_price" android:background="@drawable/bg_discount_card" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_discount_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/android_public_space_13px">
+                <TextView android:textSize="@dimen/android_public_textsize_22pt" android:textColor="@color/pub_color_seven" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_money_rmb_preunit" />
+                <TextView android:textSize="@dimen/android_public_textsize_42pt" android:textStyle="bold" android:textColor="@color/pub_color_seven" android:id="@id/tv_udl_card_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textColor="@color/pub_color_eight" android:ellipsize="end" android:id="@id/tv_udl_card_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+            <TextView android:textColor="@color/pub_color_nine" android:id="@id/tv_udl_card_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

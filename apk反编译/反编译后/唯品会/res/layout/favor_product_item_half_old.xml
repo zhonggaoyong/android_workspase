@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/image_rl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/favor_item_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/product_default" android:scaleType="centerCrop" />
+        <LinearLayout android:gravity="center" android:id="@id/sold_out_ll" android:background="@color/transparency" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/sold_out" android:background="@drawable/sold_out_icon_bg" android:layout_width="64.0dip" android:layout_height="64.0dip" android:text="已抢光" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/hongbao_ll" android:background="#ffec5042" android:padding="1.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:background="#ffec5042" android:layout_width="16.0dip" android:layout_height="16.0dip" android:text="减" />
+            <TextView android:textSize="10.0dip" android:textColor="#ffda2207" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/hongbao_tv" android:background="#fffffce5" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="29.0dip" android:layout_height="fill_parent" android:text="¥20" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/remaining_sku" android:background="@color/vip_red" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="剩3件" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/sale_price_tips" android:background="@drawable/my_favor_pms_bg" android:visibility="visible" android:layout_width="127.0dip" android:layout_height="22.0dip" android:text="专享价" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/favor_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/image_rl">
+        <LinearLayout android:orientation="horizontal" android:id="@id/price_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/favor_vip_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$600" android:singleLine="true" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff98989f" android:ellipsize="end" android:id="@id/favor_origin_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="$369" android:singleLine="true" />
+            <TextView android:textSize="10.0dip" android:gravity="top" android:id="@id/fenge_line" android:background="#ff98989f" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/vip_pink_new_ui" android:ellipsize="end" android:id="@id/favor_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="4折" android:singleLine="true" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cart_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="21.0dip" android:id="@id/fenge_line2" android:background="#ff98989f" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+                <ImageView android:id="@id/favor_add_cart" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/addcart_round_button2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/name_sku_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/cart_ll" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:id="@id/favor_name_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/price_rl">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/haitao_tv" android:background="#ff774eb1" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginRight="2.0dip" android:text="海外精选" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/presell_tv" android:background="#ff774eb1" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginRight="2.0dip" android:text="预订" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ff747a86" android:ellipsize="end" android:id="@id/favor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品名称" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="12.0dip" android:textColor="#ff747a86" android:ellipsize="end" android:id="@id/favor_sku" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="7.5dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="12.0dip" android:text="尺码：XL 190" android:singleLine="true" android:layout_below="@id/favor_name_ll" android:layout_alignParentLeft="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:id="@id/default_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/favor_default_item" />
+    <include android:id="@id/product_mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/favor_item_mask" />
+</RelativeLayout>

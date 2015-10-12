@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" style="@style/title_bar_bg_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerVertical="true" style="@style/app_title_left_button_style" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/insurance_tab" android:layout_width="160.0dip" android:layout_height="29.0dip" android:layout_centerInParent="true">
+        <Button android:textSize="13.0dip" android:textColor="@drawable/tab_check_btn_text_color_selector" android:gravity="center" android:id="@id/left_btn" android:background="@drawable/tab_check_left_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="正品授权" android:layout_weight="1.0" />
+        <Button android:textSize="13.0dip" android:textColor="@drawable/tab_check_btn_text_color_selector" android:gravity="center" android:id="@id/right_btn" android:background="@drawable/tab_check_right_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="退货说明" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/app_title_size" android:textColor="@color/app_title_dark" android:gravity="center" android:id="@id/vipheader_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正品授权" android:layout_centerInParent="true" />
+</RelativeLayout>

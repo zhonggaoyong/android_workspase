@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bainuo.view.ptr.impl.PullToRefreshAnyView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_width="fill_parent" android:layout_height="1.0px" layout="@layout/order_detail_devider" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/order_list_light_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_delivery_company" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/order_list_black" android:id="@id/delivery_detail_company" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" layout="@layout/order_detail_devider" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/order_list_light_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_delivery_num" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/order_list_black" android:id="@id/delivery_detail_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="10.0dip" layout="@layout/order_detail_devider" />
+        </LinearLayout>
+    </ScrollView>
+</com.baidu.bainuo.view.ptr.impl.PullToRefreshAnyView>

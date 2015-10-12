@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shopping_cart_select_red_coupon_itme_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <RadioButton android:textColor="@color/main_default_black_text_color" android:id="@id/phone_coupon_redio" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="false" android:button="@drawable/radio_button_bg_selector" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="6.0dip">
+            <ImageView android:id="@id/line" android:background="@drawable/line_xuxian_duan_coupon" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginRight="15.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffc70000" android:id="@id/phone_conpon_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-2.0dip" android:text="￥50.00" android:layout_toRightOf="@id/line" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/hint_text_color" android:id="@id/phone_conpon_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="2014-10-01到期" android:layout_toRightOf="@id/line" android:layout_below="@id/phone_conpon_amount" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

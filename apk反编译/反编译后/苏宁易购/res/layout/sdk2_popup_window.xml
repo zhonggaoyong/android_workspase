@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/sdk_pop_linear_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/sdk_pop_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sdk_pop_btn_first" android:background="@drawable/sdk_btn_selectpopwin_up" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+            <ImageView android:id="@id/sdk_pop_btn_first_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/comm_padding_size_1" android:src="@drawable/sdk_selectpopwin_add_icon" />
+            <TextView android:textSize="17.0sp" android:id="@id/sdk_pop_btn_first_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sdk_pop_btn_third" android:background="@drawable/sdk_btn_camp_selpopwin_center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <ImageView android:id="@id/sdk_pop_btn_third_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/comm_padding_size_1" android:src="@drawable/sdk_selectpopwin_add_icon" />
+            <TextView android:textSize="17.0sp" android:id="@id/sdk_pop_btn_third_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sdk_pop_btn_second" android:background="@drawable/sdk_btn_selectpopwin_down" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <ImageView android:id="@id/sdk_pop_btn_second_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/comm_padding_size_1" android:src="@drawable/sdk_selectpopwin_add_icon" />
+            <TextView android:textSize="17.0sp" android:id="@id/sdk_pop_btn_second_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:textSize="17.0sp" android:id="@id/sdk_pop_btn_cancel" android:background="@drawable/sdk_btn_selectpopwin_cancel" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

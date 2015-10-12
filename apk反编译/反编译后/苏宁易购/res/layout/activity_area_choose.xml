@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/list_areas" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="#00000000" android:divider="@color/transparent" android:dividerHeight="0.0px" />
+        <TextView android:textSize="45.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_letter" android:background="@drawable/font_bg" android:visibility="invisible" android:layout_width="@dimen/android_public_space_80px" android:layout_height="@dimen/android_public_space_80px" android:text="" />
+        <RelativeLayout android:layout_gravity="right|center" android:paddingBottom="35.0dip" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_marginRight="8.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff008def" android:gravity="bottom" android:layout_gravity="center" android:id="@id/tv_hot" android:paddingBottom="3.0dip" android:layout_width="30.0dip" android:layout_height="35.0dip" android:text="热门" />
+            <com.suning.mobile.ebuy.virtualgoods.view.MyLetterListView android:id="@id/sidrbar" android:layout_width="18.0dip" android:layout_height="fill_parent" android:layout_below="@id/tv_hot" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="130.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/group" android:background="@drawable/bg_giftcard_nomal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/ll_voucher_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <TextView android:textSize="20.0dip" android:textStyle="italic" android:textColor="@color/coupon_price" android:id="@id/txt_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="¥" android:includeFontPadding="false" />
+            <TextView android:textSize="45.0dip" android:textStyle="italic" android:textColor="@color/coupon_price" android:id="@id/coupon_price" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="200" android:singleLine="true" android:includeFontPadding="false" android:layout_toRightOf="@id/txt_tips" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/coupon_price" android:layout_centerVertical="true">
+                <TextView android:textSize="14.0dip" android:textColor="@color/coupon_data" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="唯品会发货订单" android:singleLine="true" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/coupon_data" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/stop_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="2015-2-10" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/favourable_id_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="12.0dip" android:textColor="@color/coupon_extra" android:id="@id/pre_favourable_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编号  " />
+            <TextView android:textSize="12.0dip" android:textColor="@color/coupon_extra" android:id="@id/favourable_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/checkbox" android:background="@drawable/cart_gifts_checkbox" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:button="@null" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

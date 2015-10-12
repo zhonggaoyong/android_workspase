@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/listview_item_root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/listview_item_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/listview_item_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lottery_blue_ball_icon" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/text_size_tab_title" android:gravity="center" android:id="@id/listview_item_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/text_gray_light" android:id="@id/listview_item_miss_textview" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/listview_item_select" android:layout_centerHorizontal="true" />
+</RelativeLayout>

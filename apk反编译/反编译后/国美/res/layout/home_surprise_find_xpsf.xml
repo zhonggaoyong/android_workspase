@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/xpsf_main_layout" android:background="@color/home_surprise_find_xpsf_color" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/xpsf_main_top" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/find_xpsf_main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gome_product_forestall" android:layout_alignParentLeft="true" />
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/find_xpsf_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gome_product_forestall_des" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/find_xpsf_sub_title_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/surprise_arrow_small" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/xpsf_main_top">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_centerHorizontal="true">
+            <android.support.v4.view.ViewPager android:id="@id/vp_find_xpsf" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/arrow_big_left_layout" android:background="@drawable/surprise_find_xpsf_btn_selector" android:visibility="invisible" android:clickable="true" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/surprise_arrow_big_left" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/arrow_big_right_layout" android:background="@drawable/surprise_find_xpsf_btn_selector" android:visibility="invisible" android:clickable="true" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/surprise_arrow_big_right" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

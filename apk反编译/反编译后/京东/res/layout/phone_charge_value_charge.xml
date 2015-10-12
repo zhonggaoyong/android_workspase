@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/jd_dialog_common_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.5sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="提示" />
+    <TextView android:textSize="16.5sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="12.0dip" android:text="优惠券金额大于应付金额，系统不找零确认付款吗？" />
+    <View android:layout_marginLeft="12.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="12.0dip" style="@style/lib_phone_charge_line_h" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.5dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="16.5dip">
+        <Button android:textSize="15.0sp" android:textColor="#ff686868" android:gravity="center" android:id="@id/cancel" android:background="@drawable/button_d" android:layout_width="0.0dip" android:layout_height="43.0dip" android:layout_marginRight="15.0dip" android:text="取消" android:layout_weight="1.0" />
+        <Button android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/confirm" android:background="@drawable/button_a" android:layout_width="0.0dip" android:layout_height="43.0dip" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

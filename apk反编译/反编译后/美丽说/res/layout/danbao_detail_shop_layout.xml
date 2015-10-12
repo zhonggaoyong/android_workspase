@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/goods_shop_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/shop_icon_w" android:layout_height="@dimen/shop_icon_w" android:layout_marginRight="7.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.CustomTextView android:textColor="@color/white" android:id="@id/merchant" android:text="@string/danbao_enter_shop" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BtnYellowDarkStyle" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="@color/grey_d2" android:gravity="left|center" android:id="@id/shop_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="韩国馆" android:singleLine="true" android:layout_toLeftOf="@id/merchant" android:layout_toRightOf="@id/icon" android:layout_alignParentTop="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey" android:gravity="left|center" android:id="@id/shop_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:maxWidth="280.0dip" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/merchant" android:layout_toRightOf="@id/icon" android:layout_below="@id/shop_name" />
+    </RelativeLayout>
+    <View android:id="@id/shop_line" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" style="@style/FirstDividerViewStyle" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/score_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.meilishuo.app.views.KeepScaleImageView android:id="@id/banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:scaleType="fitXY" />
+</LinearLayout>

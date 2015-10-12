@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header_layout" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_button" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/followlist_tab" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/header_layout">
+        <RelativeLayout android:id="@id/myfollowuser" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink" android:gravity="center" android:id="@id/follow_user_text" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="好友" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <View android:id="@id/follow_user_line" android:background="@color/pink" android:layout_width="50.0dip" android:layout_height="1.0dip" android:layout_below="@id/follow_user_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/myfollowcircle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/follow_circle_text" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="群" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <View android:id="@id/follow_circle_line" android:background="@color/pink" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="1.0dip" android:layout_below="@id/follow_circle_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/myfollowmaga" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/follow_maga_text" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="杂志" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <View android:id="@id/follow_maga_line" android:background="@color/pink" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="1.0dip" android:layout_below="@id/follow_maga_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/followlist_line2" android:layout_below="@id/followlist_tab" style="@style/borderline" />
+    <android.support.v4.view.ViewPager android:id="@id/follow_viewpager" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="300" android:layout_below="@id/followlist_line2" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:background="@color/lbspay_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:paysdk="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/lbspay_color_c6c6c6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.baidu.android.lbspay.view.LbsPayRadioGroup android:id="@id/paysdk_id_radiogroup" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/pasdk_id_vg_more_channels" android:background="@drawable/lbspay_bg_list_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/lbspay_cashier_item_height">
+        <View android:background="@color/lbspay_bg_item_devider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:gravity="left|center" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/lbspay_cashier_item_height" android:text="@string/lbspay_channel_more" android:layout_centerVertical="true" style="@style/lbspay_cashier_text_title" />
+        <ImageView android:background="@drawable/paysdk_bg_arrow_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/ebpay_img" />
+    </RelativeLayout>
+    <com.baidu.android.lbspay.view.ChannelFootView android:id="@id/lbspay_channel_foot_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/paychannel_loading_layout" android:background="@color/lbspay_white" android:paddingLeft="30.0dip" android:paddingTop="20.0dip" android:paddingRight="30.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/loading_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/wallet_base_loading_gray" android:minWidth="28.5dip" android:minHeight="33.5dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/ebpay_scroll_bar" android:id="@id/dialog_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/lbspay_get_pay_chanel" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pasdk_id_network_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/lbspay_white" android:layout_width="fill_parent" android:layout_height="140.0dip">
+            <ImageView android:background="@drawable/lbspay_wanring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="15.0dip" android:contentDescription="@string/ebpay_img" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/lbspay_color_bbbbbb" android:id="@id/lbspay_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/lbspay_get_cashier_error" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/lbspay_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="18.0sp" android:textColor="@color/lbspay_white" android:gravity="center" android:id="@id/lbspay_reload" android:background="@drawable/lbspay_gray_button" android:layout_width="fill_parent" android:layout_height="@dimen/lbspay_button_height" android:layout_marginLeft="24.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="10.0dip" android:text="@string/lbspay_reload" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

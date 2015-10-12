@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/web_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <ProgressBar android:id="@id/pb_wapload" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/common_top_layout" style="@style/webview_progressbar" />
+    <com.gome.ecmall.custom.webview.BaseWebView android:id="@id/wv_wap_sales" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pb_wapload" />
+</RelativeLayout>

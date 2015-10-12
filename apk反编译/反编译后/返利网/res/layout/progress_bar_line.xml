@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/selector_list_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/row_list_height" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressBar" android:padding="@dimen/global_padding" android:layout_width="32.0dip" android:layout_height="32.0dip" android:indeterminateDrawable="@drawable/anim_progressbar" />
+    <com.fanli.android.view.TangFontTextView android:padding="@dimen/global_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_list_footer" />
+</LinearLayout>

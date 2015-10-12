@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_80px" android:layout_marginRight="@dimen/ios_public_space_80px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/pub_textsize_nineteen" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/message" android:paddingLeft="@dimen/ios_public_space_40px" android:paddingRight="@dimen/ios_public_space_40px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_60px" android:layout_marginBottom="@dimen/ios_public_space_60px" android:text="dfdf" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_88px">
+        <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center" android:id="@id/layout_button2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:textSize="@dimen/pub_textsize_nineteen" android:textColor="@color/pub_color_fifteen" android:id="@id/button2" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_88px" android:text="不正确" />
+            </LinearLayout>
+            <View android:background="@color/pub_color_six" android:layout_width="1.0dip" android:layout_height="@dimen/ios_public_space_88px" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/layout_button3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:textSize="@dimen/pub_textsize_nineteen" android:textColor="@color/pub_color_twenty_one" android:id="@id/button3" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_88px" android:text="正确" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

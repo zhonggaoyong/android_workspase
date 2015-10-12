@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/sellerTelParentClk" android:background="@drawable/selector_list_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="43.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ffff4978" android:id="@id/sellerTelTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/tuan_detial_seller_tel_title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffff4978" android:id="@id/sellerTelNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tuan_detial_default_value" android:layout_toRightOf="@id/sellerTelTitle" android:layout_alignParentTop="true" />
+</RelativeLayout>

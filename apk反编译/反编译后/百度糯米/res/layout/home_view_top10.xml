@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/home_top10_title_layout" android:background="#ffffffff" android:paddingTop="@dimen/home_t10_title_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/home_t10_title_font_size" android:textColor="#ff22222d" android:gravity="center_vertical" android:id="@id/home_top10_title_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/home_t10_title_margin_left" android:text="@string/home_top10_title" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/home_top_10_arrow" android:layout_width="@dimen/home_goto_arrow_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/home_goto_margin_right" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/home_top10_countdown_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/home_t10_title_countdown_margin_right" android:layout_toLeftOf="@id/home_top_10_arrow">
+            <com.baidu.bainuo.home.view.CountdownView android:id="@id/home_top10_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/home_t10_vip_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/home_t10_title_countdown_margin_right" android:layout_toLeftOf="@id/home_top_10_arrow">
+            <TextView android:textSize="@dimen/home_t10_vip_desc_text_size" android:textColor="#ff55555d" android:gravity="center_vertical" android:id="@id/home_t10_vip_desc" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/home_t10_vip_desc" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/home_t10_vip_img" android:paddingTop="@dimen/home_t10_vip_img_margin_top" android:layout_width="@dimen/home_t10_vip_img_width" android:layout_height="@dimen/home_t10_vip_img_height" android:layout_marginRight="@dimen/home_t10_title_vip_img_margin_right" android:src="@drawable/home_t10_vip_icon" android:layout_toLeftOf="@id/home_t10_vip_desc" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/home_top10_middle_split" android:background="@color/app_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/home_top10_shop_margin_1" android:layout_width="@dimen/home_t10_shop_margin" android:layout_height="fill_parent" />
+        <include android:id="@id/home_top10_shop_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/home_view_top10_shop" />
+        <TextView android:id="@id/home_top10_shop_margin_2" android:layout_width="@dimen/home_t10_shop_margin" android:layout_height="fill_parent" />
+        <include android:id="@id/home_top10_shop_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/home_view_top10_shop" />
+        <TextView android:id="@id/home_top10_shop_margin_3" android:layout_width="@dimen/home_t10_shop_margin" android:layout_height="fill_parent" />
+        <include android:id="@id/home_top10_shop_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/home_view_top10_shop" />
+        <TextView android:id="@id/home_top10_shop_margin_4" android:layout_width="@dimen/home_t10_shop_margin" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/home_top10_bottom_split" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/home_split_t10_space_height" />
+</LinearLayout>

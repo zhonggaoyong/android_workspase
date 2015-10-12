@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/nearby_user_img" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffff663c" android:id="@id/nearby_user_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/nearby_user_img" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffbfbfbf" android:id="@id/nearby_user_title_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/nearby_user_title_name" android:layout_centerVertical="true" />
+        <TextView android:textSize="11.0dip" android:textColor="#ffa0a0a0" android:id="@id/nearby_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#fff3f5f7" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignLeft="@id/nearby_user_title_name" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/nearby_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="7.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff616161" android:ellipsize="end" android:id="@id/nearby_comment_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="9" android:includeFontPadding="false" android:lineSpacingExtra="2.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/nearby_comment_img_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/nearby_comment_img1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="85.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginLeft="0.5dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginLeft="0.5dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/nearby_comment_img2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="85.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginLeft="0.5dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginLeft="0.5dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/nearby_comment_img3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="85.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginLeft="0.5dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginLeft="0.5dip" android:scaleType="centerCrop" android:layout_weight="1.0" android:layout_centerVertical="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#fff3f5f7" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/nearby_item" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip">
+        <LinearLayout android:background="@drawable/nearby_item_text_bg" android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/nearby_item_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+        <TextView android:textSize="13.0dip" android:textColor="#ff616161" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/nearby_item_title" android:background="@drawable/nearby_item_text_bg" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.5dip" android:maxLines="2" android:layout_centerVertical="true" android:lineSpacingExtra="2.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="11.0dip" android:textColor="#ffa0a0a0" android:id="@id/nearby_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:layout_centerVertical="true" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/shopping_car_order_manager_Llayout" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/emptyViewParent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gome.ecmall.custom.MarqueeTextView android:textSize="13.0dip" android:textColor="@color/shopping_goods_order_prompt_text_bg" android:ellipsize="marquee" android:id="@id/shopping_cart_Cancelorderprompt_tv" android:background="@color/shopping_goods_order_prompt_bg" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/common_scrollbar_style">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/shopping_cart_order_success_headinfo_lly" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="@color/main_default_white_text_color" android:paddingLeft="16.0dip" android:paddingTop="20.0dip" android:paddingRight="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/order_commit_success" />
+                        <LinearLayout android:orientation="vertical" android:paddingLeft="14.0dip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0sp" android:id="@id/shopping_cart_order_success_info_goodsprompt" android:text="" style="@style/shopping_cart_order_success_info_textview" />
+                            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                                <TextView android:id="@id/shopping_cart_order_success_info_virtualprompt" android:text="有效期 ：" style="@style/shopping_cart_order_success_info_textview" />
+                                <TextView android:id="@id/shopping_cart_order_success_info_virtual" android:paddingLeft="7.0dip" android:text="2015年4月8日11:19:40" style="@style/shopping_cart_order_success_info_textview" />
+                            </LinearLayout>
+                            <TextView android:textSize="13.0dip" android:textColor="@color/shopping_goods_order_info_price_text" android:id="@id/shopping_cart_order_success_paymenttip_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                                <TextView android:id="@id/shopping_cart_order_success_info_priceprompt" android:text="@string/shopping_goods_order_success_orderprice" style="@style/shopping_cart_order_success_info_textview" />
+                                <TextView android:textColor="@color/shopping_goods_order_info_price_text" android:id="@id/shopping_cart_order_success_info_price" android:paddingLeft="7.0dip" android:text="" style="@style/shopping_cart_order_success_info_textview" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/shopping_cart_order_success_info_paymethodlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                                <TextView android:id="@id/shopping_cart_order_success_info_paymethodprompt" android:text="@string/shopping_goods_order_success_paymethod" style="@style/shopping_cart_order_success_info_textview" />
+                                <TextView android:id="@id/shopping_cart_order_success_info_paymethod" android:paddingLeft="7.0dip" android:text="" style="@style/shopping_cart_order_success_info_textview" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View style="@style/shopping_cart_order_success_line" />
+                </LinearLayout> /** 如果订单是送礼物，就提示一下用户 ****/
+<TextView android:textSize="13.0sp" android:textColor="@color/shopping_goods_order_info_sendgift_tip_text" android:id="@id/sendgift_tip_tv" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/shopping_goods_order_sendgift_tip" />
+                <FrameLayout android:id="@id/shopping_cart_order_success_paymethodlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" />
+            </LinearLayout>>
+</ScrollView>>
+</LinearLayout>
+</LinearLayout>

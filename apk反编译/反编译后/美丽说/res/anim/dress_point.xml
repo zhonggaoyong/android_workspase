@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/point_00000" />
+    <item android:duration="40" android:drawable="@drawable/point_00001" />
+    <item android:duration="40" android:drawable="@drawable/point_00002" />
+    <item android:duration="40" android:drawable="@drawable/point_00003" />
+    <item android:duration="40" android:drawable="@drawable/point_00004" />
+    <item android:duration="40" android:drawable="@drawable/point_00005" />
+    <item android:duration="40" android:drawable="@drawable/point_00006" />
+    <item android:duration="40" android:drawable="@drawable/point_00007" />
+    <item android:duration="40" android:drawable="@drawable/point_00008" />
+    <item android:duration="40" android:drawable="@drawable/point_00009" />
+    <item android:duration="40" android:drawable="@drawable/point_00010" />
+    <item android:duration="40" android:drawable="@drawable/point_00011" />
+    <item android:duration="40" android:drawable="@drawable/point_00012" />
+    <item android:duration="40" android:drawable="@drawable/point_00013" />
+    <item android:duration="40" android:drawable="@drawable/point_00014" />
+    <item android:duration="40" android:drawable="@drawable/point_00015" />
+    <item android:duration="40" android:drawable="@drawable/point_00016" />
+    <item android:duration="40" android:drawable="@drawable/point_00017" />
+    <item android:duration="40" android:drawable="@drawable/point_00018" />
+    <item android:duration="40" android:drawable="@drawable/point_00019" />
+    <item android:duration="40" android:drawable="@drawable/point_00020" />
+    <item android:duration="40" android:drawable="@drawable/point_00021" />
+    <item android:duration="40" android:drawable="@drawable/point_00022" />
+    <item android:duration="40" android:drawable="@drawable/point_00023" />
+    <item android:duration="40" android:drawable="@drawable/point_00024" />
+    <item android:duration="40" android:drawable="@drawable/point_00025" />
+    <item android:duration="40" android:drawable="@drawable/point_00026" />
+    <item android:duration="40" android:drawable="@drawable/point_00027" />
+    <item android:duration="40" android:drawable="@drawable/point_00028" />
+    <item android:duration="40" android:drawable="@drawable/point_00029" />
+    <item android:duration="40" android:drawable="@drawable/point_00030" />
+    <item android:duration="40" android:drawable="@drawable/point_00031" />
+    <item android:duration="40" android:drawable="@drawable/point_00032" />
+    <item android:duration="40" android:drawable="@drawable/point_00033" />
+    <item android:duration="40" android:drawable="@drawable/point_00034" />
+    <item android:duration="40" android:drawable="@drawable/point_00035" />
+    <item android:duration="40" android:drawable="@drawable/point_00036" />
+    <item android:duration="40" android:drawable="@drawable/point_00037" />
+    <item android:duration="40" android:drawable="@drawable/point_00038" />
+    <item android:duration="40" android:drawable="@drawable/point_00039" />
+</animation-list>

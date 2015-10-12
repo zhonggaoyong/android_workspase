@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/index_voice_progerss" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.widget.RoundProgressBar android:id="@id/progerss" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" />
+    <FrameLayout android:id="@id/audioplay_play" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.meilishuo.app.views.CustomPageLoading android:layout_gravity="center_vertical" android:id="@id/audioplay_loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/circle_sendprogress" style="?android:attr/progressBarStyleSmall" />
+        <ImageView android:layout_gravity="center" android:id="@id/audioplay_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.suning.mobile.ebuy.found.view.DiscoverUserView android:id="@id/userinfo_view_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/discover_margin" />
+        <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/discover_margin_left" />
+        <com.suning.mobile.ebuy.found.view.StaticGridView android:gravity="center" android:id="@id/discover_icon_gv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/discover_margin" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:horizontalSpacing="6.0dip" android:stretchMode="columnWidth" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/item_discover_content_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.suning.mobile.ebuy.found.view.TopicBaseItemView android:id="@id/hot_topic_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.suning.mobile.ebuy.found.view.DiscoverContentView android:id="@id/featured_content_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/discover_margin" android:layout_marginTop="@dimen/discover_margin" android:layout_marginRight="@dimen/discover_margin" />
+        <com.suning.mobile.ebuy.found.view.DiscoverTalentView android:id="@id/intelligent_person_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/discover_margin" android:layout_marginTop="@dimen/discover_margin" android:layout_marginRight="@dimen/discover_margin" />
+        <ImageView android:id="@id/game_advertising_iv" android:layout_width="fill_parent" android:layout_height="@dimen/discover_adver_height" android:layout_margin="@dimen/discover_margin" android:scaleType="fitXY" />
+    </LinearLayout>
+</LinearLayout>

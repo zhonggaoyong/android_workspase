@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jshop_other_bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/favo_list_title" layout="@layout/jshop_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/jshop_coupon_view" android:visibility="gone" android:layout_width="@dimen/jshop_takecoupon_width" android:layout_height="@dimen/jshop_takecoupon_height" android:layout_marginLeft="19.0dip" android:layout_marginTop="@dimen/jshop_takecoupon_margin_t" android:layout_marginRight="19.0dip" android:layout_marginBottom="28.0dip">
+                <include android:id="@id/jshop_coupon_view_43" layout="@layout/jshop_coupon_list_item" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/jshop_license_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="41.0dip" android:layout_marginBottom="20.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/jshop_detail_text_color" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/jshop_license_captcha" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="16.0sp" android:textColor="#ff606060" android:textColorHint="#ffc5c5c5" android:id="@id/jshop_verify_result" android:background="@drawable/jshop_receive_input" android:paddingLeft="10.0dip" android:layout_width="@dimen/jshop_takecoupon_edit_width" android:layout_height="@dimen/jshop_takecoupon_edit_height" android:hint="请输入验证码" android:singleLine="true" android:inputType="number" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jshop_verify_img_margin_l" android:layout_marginRight="3.0dip">
+                        <com.facebook.drawee.view.SimpleDraweeView android:textSize="15.0sp" android:id="@id/jshop_verify_img" android:layout_width="@dimen/jshop_takecoupon_verifyimg_width" android:layout_height="@dimen/jshop_takecoupon_verifyimg_height" android:layout_marginTop="1.0dip" android:src="@drawable/jshop_verify_image" android:scaleType="fitXY" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff9fa0a0" android:id="@id/jshop_verify_img_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/jshop_verify_change_img" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textSize="16.0sp" android:textColor="@color/jshop_login_bt_textcolor" android:id="@id/jshop_verify_submit" android:background="@drawable/button_b_login" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_takecoupon_bt_height" android:layout_marginTop="22.0dip" android:layout_marginBottom="3.0dip" android:text="@string/ok" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

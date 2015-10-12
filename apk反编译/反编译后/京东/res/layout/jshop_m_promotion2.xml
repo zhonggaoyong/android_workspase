@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/jshop_m_promotion2" style="@style/JshopALLTemplate"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jshop_m_promotion_marginl" android:layout_marginTop="@dimen/jshop_m_promotion_margint" android:layout_marginRight="@dimen/jshop_m_promotion_marginr" android:layout_marginBottom="@dimen/jshop_m_promotion_marginb">
+        <ImageView android:id="@id/promotion21_img" style="@style/JshopPromotionTwoImage" />
+        <View android:background="#00000000" android:layout_width="12.0dip" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/promotion22_img" style="@style/JshopPromotionTwoImage" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+</LinearLayout>

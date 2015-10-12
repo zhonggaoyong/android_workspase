@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/group_root" android:background="@color/superfan_background" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/hs_group_title" android:background="#ffffffff" android:scrollbars="none" android:fadingEdge="none" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/superfan_channel_height_nor" android:layout_marginLeft="@dimen/superfan_limited_product_margin" android:layout_marginRight="@dimen/superfan_limited_product_margin" android:layout_marginBottom="@dimen/superfan_divider_height">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_group_title" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.bainuo.city.PinBDPullToRefreshListView android:id="@id/day_recommend_list" android:background="@color/city_white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:background="@color/city_deal_list_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

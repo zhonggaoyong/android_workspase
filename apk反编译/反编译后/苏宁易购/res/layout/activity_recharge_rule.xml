@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textStyle="bold" android:textColor="@color/pub_color_three" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="苏宁易付宝自助缴费协议" />
+        <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_three" android:id="@id/ruletext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/recharge_rule_txt" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_color_grey_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium2" android:id="@id/phone_number" android:padding="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@id/verify_code_input" android:background="@drawable/list_bg_middle_default" android:padding="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:hint="@string/register_edittext_verify_code_hint" android:singleLine="true" android:inputType="number" />
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/submit_verify_code_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/global_padding" android:text="@string/register_submit_verify_code_btn" android:layout_weight="0.4" style="@style/BtnBigOrangeP" />
+            <Button android:id="@id/submit_redo_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_padding" android:singleLine="true" android:layout_weight="0.6" style="@style/BtnBigOrangeP" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/model0_fenge_line" android:background="@color/pub_color_six" android:layout_width="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/model0_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_toLeftOf="@id/model0_fenge_line" />
+</RelativeLayout>

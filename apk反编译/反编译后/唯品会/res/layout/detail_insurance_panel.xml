@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ic="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/insurance_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/detail_divider_gray_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="52.0dip" android:layout_marginLeft="@dimen/detail_lr_padding" android:layout_centerVertical="true">
+            <com.achievo.vipshop.view.widget.ScalableIconText android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center" android:id="@id/in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/insurance1" android:drawableLeft="@drawable/itemdetail_right_normal" android:drawablePadding="6.0dip" android:layout_centerVertical="true" ic:left_height="14.0dip" ic:left_width="14.0dip" />
+            <com.achievo.vipshop.view.widget.ScalableIconText android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center" android:id="@id/in2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/insurance2" android:drawableLeft="@drawable/itemdetail_right_normal" android:drawablePadding="6.0dip" android:layout_toRightOf="@id/in" android:layout_centerVertical="true" ic:left_height="14.0dip" ic:left_width="14.0dip" />
+            <com.achievo.vipshop.view.widget.ScalableIconText android:textSize="14.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center" android:id="@id/in3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/insurance3" android:drawableLeft="@drawable/itemdetail_right_normal" android:drawablePadding="6.0dip" android:layout_toRightOf="@id/in2" android:layout_centerVertical="true" ic:left_height="14.0dip" ic:left_width="14.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/detail_lr_padding" android:src="@drawable/icon_forward_right_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/detail_divider_gray_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</LinearLayout>

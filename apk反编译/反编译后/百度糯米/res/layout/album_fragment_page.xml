@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.bainuo.view.HackyViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <View android:background="@color/home_split" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/page_bar" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <TextView android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/page_bar_filter" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="滤镜" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:enabled="false" android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_gravity="right" android:id="@id/page_bar_done" android:background="@drawable/bg_red_button_selector" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_margin="12.0dip" android:text="完成" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="right" android:id="@id/page_bar_num" android:background="@drawable/album_bg_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="50.0dip" android:text="1" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

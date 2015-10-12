@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/dayrecommendHeader" android:background="#fffff5df" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ffd37c00" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/day_recomment_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.baidu.bainuo.view.ptr.impl.BDPullToRefreshListView android:id="@id/day_recommend_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:background="@color/city_deal_list_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

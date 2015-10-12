@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/baby_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/icon_kid" />
+        <ImageView android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/icon_kids_mask" />
+        <LinearLayout android:orientation="vertical" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_toRightOf="@id/img">
+            <TextView android:textSize="@dimen/app_textsize_price" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" android:drawableRight="@drawable/icon_forward_grey" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+            <View android:background="@drawable/divider_left_padding" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/triangle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/ic_balloon_triangle" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/remind_panel" android:background="@drawable/ic_balloon_bg" android:paddingLeft="5.0px" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_kids_remind" />
+        <TextView android:textSize="@dimen/app_textsize_price" android:textColor="@color/black" android:id="@id/remind" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:drawableRight="@drawable/icon_forward_grey" />
+    </LinearLayout>
+</LinearLayout>

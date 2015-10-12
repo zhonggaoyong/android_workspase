@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <ScrollView android:id="@id/sc_content" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rl_pics" android:layout_width="fill_parent" android:layout_height="200.0dip">
+                <com.gome.ecmall.home.movie.custom.MyViewPager android:id="@id/vp_ad" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_centerInParent="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ad_pager_point" android:layout_width="wrap_content" android:layout_height="6.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/cf_bg_follow" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentRight="true">
+                    <TextView android:textSize="11.0sp" android:textColor="@color/flight_text_grey" android:layout_gravity="right" android:id="@id/follow_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/flight_text_grey" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注" />
+                </LinearLayout>
+                <ImageView android:id="@id/pre_hot" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/cf_hot" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_more" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/flight_text_black" android:id="@id/product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:maxLines="2" android:layout_toLeftOf="@id/rig" />
+                    <ImageView android:id="@id/rig" android:layout_width="13.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_movie_right_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:id="@id/product_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:maxLines="4" android:lineSpacingExtra="4.0dip" />
+                <RelativeLayout android:paddingTop="16.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/cf_text_blue" android:id="@id/follow_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" />
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/follow_status" android:background="@drawable/crowdfunding_packagestate_bg" android:paddingLeft="3.0dip" android:paddingTop="3.0dip" android:paddingRight="3.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                    <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:max="100" android:layout_below="@id/follow_progress" style="@style/cf_progressbar" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/flight_text_black" android:id="@id/support_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/flight_text_black" android:id="@id/current_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/flight_text_black" android:id="@id/left_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/follow_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/support_count" android:layout_alignLeft="@id/support_count" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/money_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/current_money" android:layout_alignLeft="@id/current_money" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/left_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/left_day" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_attr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/iv_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_follow" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_black" android:layout_gravity="center_vertical" android:id="@id/follow_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0人关注" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <View android:background="#ffc8c7cc" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <RelativeLayout android:id="@id/rl_appr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentRight="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/iv_appraise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_praise" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_black" android:layout_gravity="center" android:id="@id/praise_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0人赞" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <com.gome.ecmall.custom.DisScrollListView android:id="@id/lv_grade_infos" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/common_listview_style" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/group_deliver_type_suning_layout" android:background="#ffb5b5b5" android:padding="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:id="@id/group_btn_time_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:id="@id/group_btn_time_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.suning.mobile.ebuy.shopcart.settlement.view.WheelView android:layout_gravity="center_vertical" android:id="@id/group_select_year" android:layout_width="0.0dip" android:layout_height="150.0dip" android:layout_weight="1.0" />
+        <com.suning.mobile.ebuy.shopcart.settlement.view.WheelView android:layout_gravity="center_vertical" android:id="@id/group_select_time" android:layout_width="0.0dip" android:layout_height="150.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

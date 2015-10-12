@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/xpsf_imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gome_logo_defalut" android:scaleType="fitXY" />
+        <TextView android:gravity="center" android:id="@id/xpsf_price_text" android:background="@drawable/home_surprise_find_corner_circle_title_shape" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="15.0dip" android:maxLines="2" android:layout_alignBottom="@id/xpsf_imageView" />
+    </RelativeLayout>
+</LinearLayout>

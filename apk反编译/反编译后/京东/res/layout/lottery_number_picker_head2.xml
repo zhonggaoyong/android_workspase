@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/bg_white" android:layout_width="fill_parent" android:layout_height="26.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_lottery_info" android:textColor="@color/text_black_h_4" android:gravity="center" android:layout_gravity="center" android:id="@id/currIssuePeriod" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/lottery_activity_msg_marginLeft" android:text="@string/curr_issue_peroid" />
+    <TextView android:textSize="@dimen/text_size_lottery_info" android:textColor="@color/text_black_h_4" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/timeCounter" android:fadingEdge="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/lottery_activity_msg_marginLeft" android:text="@string/time_counter_default" android:lines="1" android:scrollHorizontally="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

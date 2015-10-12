@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_item_product" android:layout_width="fill_parent" android:layout_height="124.0dip">
+        <View android:id="@id/line_view" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_similar_product" android:layout_width="102.0dip" android:layout_height="102.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="12.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/txt_similar_product_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="20.0dip" android:text="富士通微型单电套机" android:maxLines="2" android:layout_toRightOf="@id/img_similar_product" />
+        <LinearLayout android:id="@id/ll_similar_product_price" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_similar_product_description" android:layout_alignLeft="@id/txt_similar_product_description">
+            <TextView android:textSize="18.0dip" android:textColor="#fff15353" android:id="@id/txt_similar_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥1888.00" android:maxLines="2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

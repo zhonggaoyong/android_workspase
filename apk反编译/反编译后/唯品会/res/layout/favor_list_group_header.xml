@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/vip_cart_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:minHeight="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="#ff585c64" android:gravity="left|center" android:id="@id/title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="2014年8月8日 10:00 开售" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="default_state" format="integer" />
+    <attr name="checked_bkg" format="reference" />
+    <attr name="unchecked_bkg" format="reference" />
+    <attr name="checked_disabled" format="reference" />
+    <attr name="handle" format="reference" />
+    <attr name="content" format="reference" />
+    <attr name="orientation" format="integer" />
+    <attr name="bottomOffset" format="dimension" />
+    <attr name="topOffset" format="dimension" />
+    <attr name="allowSingleTap" format="boolean" />
+    <attr name="animateOnClick" format="boolean" />
+    <attr name="needTrans" format="boolean" />
+    <attr name="needZoom" format="boolean" />
+    <attr name="reboundGalleryStyle" format="reference" />
+    <attr name="reboundSpinnerStyle" format="reference" />
+    <attr name="gravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="center" value="0x00000011" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="entries" format="reference" />
+    <attr name="animationDuration" format="integer" min="0" />
+    <attr name="spacing" format="dimension" />
+    <attr name="unselectedAlpha" format="float" />
+    <attr name="format" format="string" localization="suggested" />
+    <attr name="fadeOutDelay" format="integer" />
+    <attr name="fadeOutDuration" format="integer" />
+    <attr name="textColorSelected" format="color" />
+    <attr name="lineColor" format="color" />
+    <attr name="lineColorSelected" format="color" />
+    <attr name="lineHeight" format="dimension" />
+    <attr name="lineHeightSelected" format="dimension" />
+    <attr name="dividerColor" format="color" />
+    <attr name="dividerMarginTop" format="dimension" />
+    <attr name="dividerMarginBottom" format="dimension" />
+    <attr name="dividerDrawable" format="reference" />
+    <attr name="outsideOffset" format="dimension" />
+    <attr name="expandDuration" format="integer" />
+    <attr name="closeOnClick" format="boolean" />
+    <attr name="totalSpacingDegree" format="float" />
+    <attr name="satelliteDistance" format="dimension" />
+    <attr name="mainImage" format="reference" />
+    <attr name="roundColor" format="color" />
+    <attr name="roundProgressColor" format="color" />
+    <attr name="roundWidth" format="dimension" />
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="max" format="float" />
+    <attr name="paddingWidth" format="dimension" />
+    <attr name="textIsDisplayable" format="boolean" />
+    <attr name="style">
+        <enum name="FILL" value="1" />
+        <enum name="STROKE" value="0" />
+    </attr>
+    <attr name="showleftline" format="boolean" />
+    <attr name="showrightline" format="boolean" />
+    <attr name="showtopline" format="boolean" />
+    <attr name="showbottomline" format="boolean" />
+    <attr name="hotTextColor" format="color" />
+    <attr name="hotTextSize" format="dimension" />
+    <attr name="textWordMargin" format="dimension" />
+    <attr name="textLineMargin" format="dimension" />
+    <attr name="textBackground" format="integer" />
+    <attr name="textPaddingLeft" format="dimension" />
+    <attr name="textPaddingRight" format="dimension" />
+    <attr name="textPaddingTop" format="dimension" />
+    <attr name="textPaddingBottom" format="dimension" />
+    <attr name="textAnimation" format="boolean" />
+    <attr name="textTwoLine" format="boolean" />
+    <attr name="UseReflection" format="boolean" />
+    <attr name="Items" format="integer" />
+    <attr name="SelectedItem" format="integer" />
+    <attr name="maxTheta" format="float" />
+    <attr name="minQuantity" format="integer" />
+    <attr name="maxQuantity" format="integer" />
+    <attr name="Names" format="string" />
+    <attr name="enableScroll" format="boolean" />
+    <attr name="ptrRefreshableViewBackground" format="reference|color" />
+    <attr name="ptrHeaderBackground" format="reference|color" />
+    <attr name="ptrHeaderTextColor" format="reference|color" />
+    <attr name="ptrHeaderSubTextColor" format="reference|color" />
+    <attr name="ptrMode">
+        <flag name="both" value="0x00000003" />
+        <flag name="disabled" value="0x00000000" />
+        <flag name="manualOnly" value="0x00000004" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullFromEnd" value="0x00000002" />
+        <flag name="pullFromStart" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean" />
+    <attr name="ptrDrawable" format="reference" />
+    <attr name="ptrDrawableStart" format="reference" />
+    <attr name="ptrDrawableEnd" format="reference" />
+    <attr name="ptrOverScroll" format="reference|boolean" />
+    <attr name="ptrHeaderTextAppearance" format="reference" />
+    <attr name="ptrSubHeaderTextAppearance" format="reference" />
+    <attr name="ptrAnimationStyle">
+        <flag name="flip" value="0x00000001" />
+        <flag name="rotate" value="0x00000000" />
+    </attr>
+    <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+    <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+    <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+    <attr name="ptrAdapterViewBackground" format="reference|color" />
+    <attr name="ptrDrawableTop" format="reference" />
+    <attr name="ptrDrawableBottom" format="reference" />
+    <attr name="dividerWidth" format="dimension" />
+    <attr name="horizontalSpacing" format="dimension" />
+    <attr name="verticalSpacing" format="dimension" />
+    <attr name="autoMatchBlockWidth" format="boolean" />
+</resources>

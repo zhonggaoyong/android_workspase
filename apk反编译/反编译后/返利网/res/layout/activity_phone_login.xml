@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_color_grey_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/reg_phone" android:background="@drawable/list_bg_middle_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:hint="@string/register_edittext_hint_phone" android:singleLine="true" android:drawableLeft="@drawable/icon_login" android:inputType="phone" />
+        <Button android:id="@id/btn_get_verify_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="@string/register_send_dynic_password" style="@style/BtnBigOrangeP" />
+        <EditText android:id="@id/reg_verify_code" android:background="@drawable/list_bg_middle_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_padding" android:layout_marginTop="@dimen/global_padding_large" android:layout_marginRight="@dimen/global_padding" android:layout_marginBottom="@dimen/global_padding" android:hint="@string/register_dynic_password" android:singleLine="true" android:drawableLeft="@drawable/icon_pwd" />
+        <Button android:id="@id/btn_login" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding" android:text="@string/login_btn_lable" style="@style/BtnBigOrangeP" />
+        <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_grey_light" android:gravity="center_horizontal" android:id="@id/forget_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_padding_large" android:text="@string/forget_password" />
+    </LinearLayout>
+</ScrollView>

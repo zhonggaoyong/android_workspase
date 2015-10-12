@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/grey_d3" android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/pink_l2" android:id="@id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="完成" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.meilishuo.app.views.picker.MeilishuoDatePickerView android:layout_gravity="center_horizontal" android:id="@id/timepicker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

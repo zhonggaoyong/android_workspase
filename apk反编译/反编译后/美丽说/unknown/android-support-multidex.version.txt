@@ -1,0 +1,3 @@
+build.version=1958253
+build.id=AOSP
+git.version=94968516ca9ae681df18f463c2f66ce0f8c5c5c0

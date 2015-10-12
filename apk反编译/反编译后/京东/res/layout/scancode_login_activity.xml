@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/regist_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/scancode_common_title" layout="@layout/title" />
+    <ScrollView android:id="@id/scancode_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/scancode_common_title">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/scancode_accountIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/iconmargintop" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+            <com.jingdong.common.ui.JDProgressBar android:id="@id/scancode_progress_bar" android:visibility="gone" android:layout_width="34.0dip" android:layout_height="34.0dip" android:max="100" android:indeterminate="false" android:layout_centerInParent="true" />
+            <RelativeLayout android:gravity="center" android:id="@id/scancode_tips_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/scancode_accountIcon">
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/scancode_tip_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/regist_input" android:gravity="center" android:id="@id/scancode_bigTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/regist_getCode" android:gravity="center" android:id="@id/scancode_confirmLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/scancode_bigTitle" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/scancode_tip_ll_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/regist_tip2" android:gravity="center" android:id="@id/scancode_bigTitle_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/scancodeLogin_tip" android:gravity="center" android:id="@id/scancode_confirmLogin_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/scancode_bigTitle_default" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/scancode_loginBtn_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/btnmargintop" android:layout_below="@id/scancode_tips_ll">
+                <Button android:enabled="true" android:textSize="17.0sp" android:textColor="@color/regist_btn" android:gravity="center" android:id="@id/scancode_complete" android:background="@drawable/button_b" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" />
+                <Button android:enabled="true" android:textSize="17.0sp" android:textColor="@color/regist_tip" android:gravity="center" android:id="@id/scancode_cancel" android:background="@drawable/button_d" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="23.0dip" android:text="取消登录" android:layout_below="@id/scancode_complete" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/scancode_freshBtn_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/btnmargintop" android:layout_below="@id/scancode_tips_ll">
+                <Button android:enabled="true" android:textSize="17.0sp" android:textColor="@color/regist_btn" android:gravity="center" android:id="@id/scancode_fresh" android:background="@drawable/button_b" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" android:layout_marginBottom="20.0dip" android:text="刷新" />
+                <Button android:enabled="true" android:textSize="17.0sp" android:textColor="@color/regist_tip" android:gravity="center" android:id="@id/scancode_rescan" android:background="@drawable/button_d" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip" android:text="重新扫描" android:layout_below="@id/scancode_fresh" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

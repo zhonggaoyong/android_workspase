@@ -1,0 +1,11 @@
+java -jar apktool_2.0.0rc3.jar d -f baidunuomi.apk -o baidunuomi
+java -jar apktool_2.0.0rc3.jar d -f dazhongdianping.apk -o dazhongdianping
+java -jar apktool_2.0.0rc3.jar d -f guomei.apk -o guomei
+java -jar apktool_2.0.0rc3.jar d -f jingdong.apk -o jingdong
+java -jar apktool_2.0.0rc3.jar d -f 返利网.apk -o 返利网
+java -jar apktool_2.0.0rc3.jar d -f 美丽说.apk -o 美丽说
+java -jar apktool_2.0.0rc3.jar d -f 苏宁易购.apk -o 苏宁易购
+java -jar apktool_2.0.0rc3.jar d -f 豌豆荚.apk -o 豌豆荚
+java -jar apktool_2.0.0rc3.jar d -f 唯品会.apk -o 唯品会
+java -jar apktool_2.0.0rc3.jar d -f 支付宝.apk -o 支付宝
+java -jar apktool_2.0.0rc3.jar d -f 微信.apk -o 微信

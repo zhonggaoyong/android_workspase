@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/order_insurance_enable" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:textColor="@color/order_list_pink" android:id="@id/order_insurance_enable_button" android:background="@drawable/common_btn_white_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/order_btn_insurance" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/order_list_item_status_font_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="@string/order_insurance_enable_txt1" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/order_insurance_submit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/order_list_mid_black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_insurance_submit_txt1" android:includeFontPadding="false" android:drawableLeft="@drawable/insurance_submit" android:drawablePadding="4.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/order_list_item_status_font_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/order_insurance_submit_txt2" android:includeFontPadding="false" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/order_list_item_status_font_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_insurance_submit_txt3" android:includeFontPadding="false" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/order_list_pink" android:layout_gravity="center_vertical" android:id="@id/order_insurance_submit_tel" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_insurance_submit_txt4" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

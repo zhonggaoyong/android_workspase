@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/shake_rule_image_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="bottom|center" android:id="@id/shake_rule_image" android:background="@drawable/shake_rule_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/none" />
+    <Button android:textSize="@dimen/shake_rule_btn_size" android:textColor="@color/white" android:layout_gravity="bottom|center" android:id="@id/shake_rule_dialog_close" android:background="@drawable/fill_order_dialog_button_cancel_selector" android:paddingLeft="@dimen/shake_rule_close_btn_padding" android:paddingRight="@dimen/shake_rule_close_btn_padding" android:layout_width="@dimen/shake_rule_dialog_close_width" android:layout_height="@dimen/shake_rule_dialog_close_height" android:layout_marginBottom="@dimen/shake_rule_btn_bottom" android:text="@string/shake_rule_hint_close" />
+</FrameLayout>

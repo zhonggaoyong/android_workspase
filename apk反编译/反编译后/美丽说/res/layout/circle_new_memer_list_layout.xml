@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:ellipsize="end" android:text="@string/circle_new_member_title" android:singleLine="true" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+        <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:footerDividersEnabled="false" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/reload_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_reload" android:scaleType="center" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="#ff777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/text_refound_reload" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/no_data_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:src="@drawable/icon_cnew_member_empty" />
+            <com.meilishuo.app.views.CustomTextView android:text="@string/circle_no_new_member_data_text" style="@style/EmptyDataFirstTextStyle" />
+        </LinearLayout>
+        <com.meilishuo.app.views.CustomPageLoading android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <com.meilishuo.app.views.CustomTextView android:layout_gravity="bottom|right|center" android:id="@id/btn_to_top" android:background="@drawable/to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="onClick" />
+    </RelativeLayout>
+</RelativeLayout>

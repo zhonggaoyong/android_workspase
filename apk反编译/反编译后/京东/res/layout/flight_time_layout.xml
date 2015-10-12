@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/flight_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ffe60012" android:gravity="center" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height" android:text="日期选择" />
+        <View android:background="@color/red" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/timePicker1" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <com.jingdong.common.jdtravel.dateview.WheelView android:id="@id/year" android:layout_width="100.0dip" android:layout_height="wrap_content" />
+        <com.jingdong.common.jdtravel.dateview.WheelView android:id="@id/month" android:layout_width="80.0dip" android:layout_height="wrap_content" />
+        <com.jingdong.common.jdtravel.dateview.WheelView android:id="@id/day" android:layout_width="80.0dip" android:layout_height="wrap_content" />
+        <com.jingdong.common.jdtravel.dateview.WheelView android:id="@id/hour" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="wrap_content" />
+        <com.jingdong.common.jdtravel.dateview.WheelView android:id="@id/mins" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View style="@style/travel_view_splite_h" />
+    <TextView android:textSize="17.0dip" android:textColor="@color/calendar_color_enable" android:gravity="center" android:id="@id/btn_ok" android:background="@drawable/flight_list_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/time_dialog_ok_height" android:text="@string/jdtravel_add_ok" />
+</LinearLayout>

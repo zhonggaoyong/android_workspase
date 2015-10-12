@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/promotion_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="选择优惠券" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffffbb5c" android:gravity="center" android:id="@id/shopping_goods_use_coupon_intr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/shopping_goods_new_brand_ticket_hint" android:layout_below="@id/promotion_title" />
+        <ImageView android:id="@id/promotion_close" android:background="@drawable/icon_cha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+        <View android:background="@color/shopping_cart_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/shopping_goods_use_coupon_intr" />
+    </RelativeLayout>
+    <ListView android:id="@id/mygome_mycoupon_listView1" android:background="@android:color/transparent" android:paddingBottom="10.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dividerHeight="0.0dip" style="@style/common_listview_style" />
+</LinearLayout>

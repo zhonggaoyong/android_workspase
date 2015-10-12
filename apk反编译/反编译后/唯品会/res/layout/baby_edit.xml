@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeef0f3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout style="@style/title_bar_bg_style">
+        <ImageView android:id="@id/btn_back" android:scaleType="centerInside" style="@style/app_title_left_button_style" />
+        <TextView android:textSize="@dimen/app_title_size" android:textColor="@color/app_title_dark" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baby_edit_title" android:singleLine="true" />
+        <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_new_black" android:gravity="center" android:layout_gravity="right|center" android:id="@id/save" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/address_save" />
+    </FrameLayout>
+    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/app_textsize_button" android:textColor="#ff000000" android:id="@id/born_tab" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="宝宝已出生" />
+            <View android:id="@id/born_line" android:background="@color/detail_pink_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:background="@color/divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/app_textsize_button" android:textColor="#ff000000" android:id="@id/expectant_tab" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="我是准妈妈" />
+            <View android:id="@id/expectant_line" android:background="@color/detail_pink_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="16.0dip" />
+    <ScrollView android:id="@id/born_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item1" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="头像" android:layout_weight="1.0" />
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="7.0dip">
+                    <ImageView android:id="@id/img" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/icon_kid" />
+                    <ImageView android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/icon_kids_mask" />
+                </FrameLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_forward_grey" />
+            </LinearLayout>
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item2" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="宝宝昵称" android:minEms="4" />
+                <EditText android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:id="@id/name" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item3" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生日" android:minEms="4" />
+                <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:id="@id/birth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item4" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="性别" android:minEms="4" />
+                <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                    <com.achievo.vipshop.view.SizableRadioButton android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/female" android:background="@null" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="女" android:drawableLeft="@drawable/radio_check_selector2" android:drawablePadding="5.0dip" />
+                    <com.achievo.vipshop.view.SizableRadioButton android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/male" android:background="@null" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:button="@null" android:text="男" android:drawableLeft="@drawable/radio_check_selector2" android:drawablePadding="5.0dip" />
+                </RadioGroup>
+            </LinearLayout>
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/expectant_panel" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item5" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="宝宝昵称" android:minEms="4" />
+            <EditText android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:id="@id/pre_name" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item6" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预产期" android:minEms="4" />
+            <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/black" android:id="@id/expecte_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+</LinearLayout>

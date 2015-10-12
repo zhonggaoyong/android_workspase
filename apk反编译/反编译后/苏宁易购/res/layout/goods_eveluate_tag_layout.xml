@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/store_list_service_block_bg" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/pub_textsize_twelev" android:textColor="@color/evaluate_content_color" android:gravity="center" android:layout_gravity="center" android:id="@id/eveluate_toplable_item_tv" android:background="@drawable/eva_tag_select" android:paddingLeft="9.0dip" android:paddingTop="@dimen/android_public_space_7px" android:paddingRight="9.0dip" android:paddingBottom="@dimen/android_public_space_7px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日人发的" />
+</LinearLayout>

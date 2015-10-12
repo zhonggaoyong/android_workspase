@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/goods_item_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/product_default" android:scaleType="centerCrop" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/sold_out" android:background="@drawable/bg_circle_black" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="55.0dip" android:text="@string/sold_out" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mobileSpecialView" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="13.0dip" android:textColor="@color/white" android:id="@id/save_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/goods_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="42.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13.0dip" android:textColor="@color/detail_black" android:ellipsize="end" android:gravity="left" android:id="@id/goods_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="6.0dip" android:lines="2" android:lineSpacingMultiplier="1.2" />
+        <RelativeLayout android:id="@id/price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/goods_name" android:layout_alignParentBottom="true">
+            <TextView android:textSize="13.0dip" android:textColor="@color/detail_pink_dark" android:id="@id/goods_vip_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/detail_gray_light" android:ellipsize="end" android:gravity="left" android:id="@id/goods_origin_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/goods_vip_price" android:layout_alignBaseline="@id/goods_vip_price" />
+            <TextView android:textSize="10.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/goods_discount" android:background="@color/black" android:layout_width="wrap_content" android:layout_height="15.0dip" android:minWidth="35.0dip" android:singleLine="true" android:layout_alignBottom="@id/goods_vip_price" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

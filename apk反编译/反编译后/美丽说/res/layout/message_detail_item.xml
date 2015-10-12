@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginEnd="15.0dip">
+        <com.meilishuo.app.views.RoundImageView android:id="@id/msg_detail_user_head_iv" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/profile_icon_noimage" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/pink" android:id="@id/msg_detail_username_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="5" android:singleLine="true" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey" android:gravity="center" android:id="@id/msg_detail_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <com.meilishuo.app.views.ArticleTextView android:textSize="14.0sp" android:textColor="@color/grey_d4" android:id="@id/msg_detail_msg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d5" android:gravity="center" android:id="@id/msg_detail_date_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/msg_detail_img_iv" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="fitXY" android:contentDescription="@string/app_tip" />
+    </LinearLayout>
+    <View android:id="@id/msg_detail_line" style="@style/borderline" />
+</LinearLayout>

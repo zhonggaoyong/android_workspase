@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.common.ui.JDSquareLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/float_view" android:background="#88ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/checked" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/button_i_01" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</com.jingdong.common.ui.JDSquareLayout>

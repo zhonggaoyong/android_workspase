@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fastpay_padding_space_2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/FirstDividerViewStyle" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/fastpay_padding_space_2" android:paddingTop="@dimen/fastpay_padding_space_1" android:paddingRight="@dimen/fastpay_padding_space_2" android:paddingBottom="@dimen/fastpay_padding_space_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/fastpay_text_standard_size_2" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_fastpay_bankinfo_username_label" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/fastpay_text_standard_size_2" android:textColor="@color/grey_d4" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/verify_bank_username_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30.0dip" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:layout_marginLeft="@dimen/fastpay_padding_space_2" style="@style/FirstDividerViewStyle" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/fastpay_padding_space_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View style="@style/FirstDividerViewStyle" />
+        <RelativeLayout android:paddingTop="@dimen/fastpay_padding_space_1" android:paddingRight="@dimen/fastpay_padding_space_2" android:paddingBottom="@dimen/fastpay_padding_space_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/fastpay_text_standard_size_2" android:textColor="@color/grey_d3" android:id="@id/order_fastpay_banknum_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_fastpay_bankinfo_banknum_label2" android:layout_centerVertical="true" />
+            <com.meilishuo.app.views.DeletableEditText android:textSize="18.0sp" android:textColor="@color/grey_d4" android:textColorHint="@color/grey" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/et_recharge_money" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fastpay_padding_space_2" android:minHeight="30.0dip" android:hint="@string/pay_verify_bank_hint" android:layout_toRightOf="@id/order_fastpay_banknum_label" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:inputType="number" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View style="@style/FirstDividerViewStyle" />
+</LinearLayout>

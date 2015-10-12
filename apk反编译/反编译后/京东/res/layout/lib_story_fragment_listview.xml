@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jd.lib.story.ui.EditLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_bar" android:layout_width="fill_parent" android:layout_height="@dimen/lib_story_height_top_bar" layout="@layout/lib_story_item_top_bar" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_bar">
+        <ListView android:id="@id/listView" android:background="@drawable/lib_story_shape_border" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="true" style="@style/lib_story_listview" />
+        <LinearLayout android:orientation="vertical" android:id="@id/lib_story_edit_publish_container" android:background="@color/lib_story_default_backgroud" android:layout_width="fill_parent" android:layout_height="54.399994dip" android:layout_alignParentBottom="true">
+            <View android:background="@color/lib_story_line_e0e0e0" android:layout_width="fill_parent" android:layout_height="@dimen/lib_story_height_line" />
+            <Button android:textSize="@dimen/lib_story_t_large_size" android:textColor="@color/lib_story_white" android:gravity="center" android:layout_gravity="center" android:id="@id/lib_story_edit_publish" android:background="@drawable/button_a" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_margin="@dimen/lib_story_margin_vertical_10" android:text="@string/lib_story_publish" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.jd.lib.story.ui.EditLayout>

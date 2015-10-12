@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/shake_rl_home" android:background="#ff120132" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/common_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/common_title_btn_back" android:background="@drawable/shake_home_right_selector" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/shake_back" android:minWidth="44.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_top_btn_text_style_new" />
+        <ImageView android:id="@id/common_title_btn_right" android:background="@drawable/shake_home_right_selector" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/shake_share_no_background" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/common_top_right_btn_text_style" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/shake_home_flag" android:scaleType="fitStart" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/shake_home_rules" android:layout_width="65.0dip" android:layout_height="40.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/shake_home_rules_selector" android:layout_below="@id/common_title" android:layout_alignParentRight="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="450.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/shake_home_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shake_home_cloud" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/shake_home_flash_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-100.0dip" android:layout_above="@id/shake_home_cloud" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/shake_home_horse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="-100.0dip" android:src="@drawable/shake_home_horse" android:layout_above="@id/shake_home_cloud" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:id="@id/tv_shakes_left_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_color_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fanli.android.activity.widget.THSDashboardLayout android:id="@id/home_dash" android:padding="@dimen/global_padding_tiny" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/jhs" android:background="@drawable/selector_ths_item_bg" android:padding="@dimen/global_padding_tiny" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_jhs" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <com.fanli.android.view.TangFontTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_jhs" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/TextTHSLabel" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tttj" android:background="@drawable/selector_ths_item_bg" android:padding="@dimen/global_padding_tiny" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_tttj" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <com.fanli.android.view.TangFontTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_tttj" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/TextTHSLabel" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/zxth" android:background="@drawable/selector_ths_item_bg" android:padding="@dimen/global_padding_tiny" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_zxth" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <com.fanli.android.view.TangFontTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_zxyh" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/TextTHSLabel" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/yht" android:background="@drawable/selector_ths_item_bg" android:padding="@dimen/global_padding_tiny" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_yht" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <com.fanli.android.view.TangFontTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_yht" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/TextTHSLabel" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tmtm" android:background="@drawable/selector_ths_item_bg" android:padding="@dimen/global_padding_tiny" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_tmtm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <com.fanli.android.view.TangFontTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_tmtm" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/TextTHSLabel" />
+        </RelativeLayout>
+    </com.fanli.android.activity.widget.THSDashboardLayout>
+</ScrollView>

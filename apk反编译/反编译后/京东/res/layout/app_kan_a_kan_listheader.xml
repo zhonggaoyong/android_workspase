@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/app_kan_a_kan_banner" android:layout_width="fill_parent" android:layout_height="133.0dip" android:src="@drawable/kan_a_kan_banner" android:scaleType="fitXY" />
+    <TextView android:textSize="12.0dip" android:textColor="#ffbf303a" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/app_kan_a_kan_text" android:background="@drawable/kan_a_kan_header_list_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="23.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="7.0dip" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

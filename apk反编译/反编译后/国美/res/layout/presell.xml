@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/vw_titlebar" />
+    <ScrollView android:id="@id/presell_scroll_view" android:scrollbars="none" android:alwaysDrawnWithCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_title">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/activity_rule" />
+            <ImageView android:id="@id/presell_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/pre_phone_image_back" android:scaleType="center" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/pre_sell_img_layout" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/telephone_layout" android:background="@drawable/pre_sell_phone_back" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/phone_layout" android:background="@drawable/btn_pre_sell_selector" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/presell_phone_num" android:drawableLeft="@drawable/pre_sell_phone" android:drawablePadding="3.0dip" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:text="@string/server_number" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

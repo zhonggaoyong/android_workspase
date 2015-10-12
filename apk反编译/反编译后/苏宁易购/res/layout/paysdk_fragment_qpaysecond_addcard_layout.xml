@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/notice_layout" android:background="#fffffaf0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ffff5a00" android:layout_gravity="center_horizontal" android:id="@id/notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:background="#ffffdcbe" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:background="@color/paysdk_bg_whole_gray" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/paysdk_bg_whole_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/paysdk_bg_item" android:layout_width="fill_parent" android:layout_height="@dimen/paysdk_btn_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:weightSum="1.0">
+                <EditText android:id="@id/bankcard_num" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="20.0dip" android:hint="@string/paysdk_bankcard_num_hint" android:maxLength="23" android:layout_weight="1.0" android:inputType="number" style="@style/paysdk_edittext_style" />
+                <ImageView android:id="@id/bankcard_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/paysdk_delete_ic" android:contentDescription="@string/paysdk_img_description" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="13.0sp" android:id="@id/bank_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/paysdk_support_bank_list" android:singleLine="true" android:layout_alignParentLeft="true" style="@style/paysdk_text_little_blue" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/paysdk_color_tip" android:id="@id/bank_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paysdk_support_bank_tip" android:singleLine="true" android:layout_alignParentRight="true" style="@style/paysdk_text_little_gray" />
+            </RelativeLayout>
+            <Button android:id="@id/next" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="@string/paysdk_next" style="@style/paysdk_base_btn_blue" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

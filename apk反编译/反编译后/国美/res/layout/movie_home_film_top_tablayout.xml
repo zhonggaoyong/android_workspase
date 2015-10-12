@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:orientation="horizontal" android:id="@id/movie_home_film_group" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:textSize="@dimen/shopping_cart_order_title_size" android:textColor="@color/movie_home_tab_text_selector" android:id="@id/movie_home_film_hot" android:background="@drawable/movie_film_tab_left_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="-2.5dip" android:layout_marginBottom="2.0dip" android:checked="true" android:button="@null" android:text="@string/movie_home_hot_film" style="@style/home_bottom_bar_item_style" />
+    <RadioButton android:textSize="@dimen/shopping_cart_order_title_size" android:textColor="@color/movie_home_tab_text_selector" android:id="@id/movie_home_film_pre" android:background="@drawable/movie_film_tab_right_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:button="@null" android:text="@string/movie_home_presell_film" style="@style/home_bottom_bar_item_style" />
+</RadioGroup>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Iphutha lamasevisi we-Google Play</string>
+    <string name="d3r">Uhlelo lokusebenza ludinga ukufakwa kwamasevisi we-Google Play.</string>
+    <string name="d3s">Uhlelo lokusebenza ludinga isibuyekezo samasevisi we-Google Play.</string>
+    <string name="d3t">Uhlelo lokusebenza ludinga amasevisi we-Google Play ukuze anikwe amandla.</string>
+    <string name="d3u">Icelwe yi-%1$s</string>
+    <string name="d3v">Thola amasevisi e-Google Play</string>
+    <string name="d3w">Lolu hlelo lokusebenza ngeke lusebenze ngaphandle kwamasevisi e-Google Play, angekho efonini yakho.</string>
+    <string name="d3x">Lolu hlelo lokusebenza ngeke lusebenze ngaphandle kwamasevisi e-Google Play, angekho kuthebulethi yakho.</string>
+    <string name="d3y">Thola amasevisi e-Google Play</string>
+    <string name="d3z">Nika amandla amasevisi e-Google Play</string>
+    <string name="d40">Lolu hlelo lokusebenza ngeke lusebenze ngaphandle nje kokuthi unike amandla amasevisi e-Google Play.</string>
+    <string name="d41">Nika amandla amasevisi e-Google Play</string>
+    <string name="d42">Buyekeza amasevisi e-Google Play</string>
+    <string name="d43">Lolu hlelo lokusebenza ngeke lusebenze ngaphandle nje kokuthi ubuyekeze amasevisi e-Google Play.</string>
+    <string name="d44">Iphutha lenethiwekhi</string>
+    <string name="d45">Kudingeka ukuxhumeka kwedatha ukuze kuxhunyekwe kumasevisi we-Google Play.</string>
+    <string name="d46">I-Akhawunti engavumelekile</string>
+    <string name="d47">I-Akhawunti ecacisiwe ayikho kule divayisi. Sicela ukhethe i-akhawunti ehlukile.</string>
+    <string name="d48">Indaba engaziwa yamasevisi we-Google Play</string>
+    <string name="d49">Amasevisi we-Google Play</string>
+    <string name="d4_">Amasevisi we-Google Play, okungukuthi ezinye izinhlelo zakho zithembele kuwo, awasekelwe yidivayisi yakho. Sicela uxhumane nomkhiqizi ukuze uthole usizo.</string>
+    <string name="d4a">Idethi kudivayisi ibonakala ingalungile. Sicela uhlole idethi kudivayisi.</string>
+    <string name="d4b">Isibuyekezo</string>
+    <string name="d4c">Ngena ngemvume</string>
+    <string name="d4d">Ngena ngemvume nge-Google</string>
+</resources>

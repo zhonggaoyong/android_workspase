@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/home_root" android:background="@color/bg_color_white" android:padding="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/item_pic" android:layout_width="fill_parent" android:layout_height="@dimen/height_item_details_pic" />
+            <com.fanli.android.view.TangFontTextView android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="title" android:layout_below="@id/item_pic" style="@style/TextBody" />
+            <com.fanli.android.view.TangFontTextView android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" android:layout_below="@id/tv_title" android:layout_alignParentLeft="true" style="@style/TextListHeader" />
+            <Button android:gravity="center" android:id="@id/btn_fanli" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fanliInfo" android:drawableRight="@drawable/icon_arrow_right_full" android:layout_alignBaseline="@id/tv_price" android:layout_alignParentRight="true" style="@style/BtnPlane" />
+        </RelativeLayout>
+    </ScrollView>
+    <Button android:id="@id/btn_order" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/product_detail_go_order" style="@style/BtnBigOrange" />
+</LinearLayout>

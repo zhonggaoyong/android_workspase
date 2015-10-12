@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/paycart_black" android:id="@id/paydone_cart_refund_item_text" android:paddingTop="12.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:maxLines="5" android:includeFontPadding="false" android:lineSpacingExtra="5.0dip" />
+    <View android:background="@color/paycart_grey_mid" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.picker.NumberPicker android:id="@id/date_year" android:focusable="true" android:clickable="true" android:layout_width="70.0dip" android:layout_height="wrap_content" style="@style/AiWidget.Light.NumberPicker" />
+    <com.meilishuo.app.views.picker.NumberPicker android:id="@id/date_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" style="@style/AiWidget.Light.NumberPicker" />
+    <com.meilishuo.app.views.picker.NumberPicker android:id="@id/date_day" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AiWidget.Light.NumberPicker" />
+</LinearLayout>

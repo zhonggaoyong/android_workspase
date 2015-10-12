@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/common_scrollbar_style">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="#ffffffff" android:padding="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/ic_face" android:background="@drawable/ic_xiaolian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:layout_gravity="center_vertical" android:id="@id/success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cf_tip_success" android:layout_toRightOf="@id/ic_face" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_grey" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/cf_tip_success2" android:layout_toRightOf="@id/ic_face" android:layout_below="@id/success" android:layout_alignLeft="@id/success" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/top" android:layout_centerHorizontal="true">
+                <Button android:id="@id/bt_check_order" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="120.0dip" android:text="我支持的项目" android:layout_weight="1.0" style="@style/Gome.Button.StrokeGray.Style" />
+                <Button android:id="@id/bt_more" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:minWidth="120.0dip" android:text="其他项目" android:layout_weight="1.0" style="@style/Gome.Button.StrokeGray.Style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

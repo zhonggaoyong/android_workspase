@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cart_list_empty_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="90.0dip" android:layout_height="74.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/icon_shoppingcart_repurchase" />
+        <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/app_text_black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="40.0dip" android:text="@string/native_cart_empty_text" android:singleLine="true" />
+        <View android:background="@color/cart_divider_color" android:layout_width="fill_parent" android:layout_height="3.0px" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cart_list_time_over_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="90.0dip" android:layout_height="74.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/icon_shoppingcart_repurchase" />
+        <TextView android:textSize="@dimen/app_textsize_button" android:textColor="@color/app_text_black" android:layout_gravity="center_horizontal" android:id="@id/cart_list_time_over_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/native_cart_empty_time_over_count_text" android:singleLine="true" />
+        <TextView android:textSize="@dimen/app_textsize_price" android:textColor="@color/app_text_cart_gray" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="21.0dip" android:text="@string/native_cart_empty_time_over_text" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

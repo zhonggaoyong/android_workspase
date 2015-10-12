@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sku_layout" android:background="#eef5f5f5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/detail_black" android:gravity="left" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择尺码" />
+        <View android:layout_gravity="center_vertical" android:id="@id/dash2" android:background="@color/detail_black" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layerType="software" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/size_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="25.0dip" />
+    <View android:background="@color/detail_black" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <Button android:textSize="17.0sp" android:textColor="#ff555555" android:gravity="center" android:id="@id/cancel" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="取消" android:layout_weight="1.0" />
+        <View android:background="@color/detail_black" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <Button android:textSize="17.0sp" android:textColor="@color/detail_pink_dark" android:gravity="center" android:id="@id/buy" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="加入购物车" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/tab_height">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/pub_textsize_fifteen" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/tv_shake" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="摇易摇" />
+            <ImageView android:id="@id/iv_shake_cursor" android:background="@drawable/search_tap_line_selected" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="matrix" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/divider_horizontal" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/pub_margin_or_padding_space_ten" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_ten" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/pub_textsize_fifteen" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/tv_cloudbox" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="云宝箱" android:singleLine="true" />
+            <ImageView android:id="@id/iv_cloudbox_cursor" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="matrix" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.suning.mobile.ebuy.view.WebViewPager android:id="@id/viewpage_shake" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

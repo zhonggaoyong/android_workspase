@@ -1,0 +1,22 @@
+version: 2.0.0-RC3
+apkFileName: jingdong.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '9'
+  targetSdkVersion: '9'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '20440'
+  versionName: 4.3.1
+compressionType: true
+unknownFiles:
+  ice-1.0.xsd: '8'
+  com/jd/common/selector/SelectorView.txt: '8'
+  com/jd/common/selector/SelectorViewGroup.txt: '8'
+  com/tencent/mm/sdk/platformtools/rep5402863540997075488.tmp: '8'
+  com/jingdong/aura/plugin/META-INF/MANIFEST.MF: '8'
+  com/jingdong/common/utils/net/proto/combine.proto: '8'

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_left_margin">10.0dip</dimen>
+    <dimen name="dialog_top_margin">30.0dip</dimen>
+    <dimen name="dialog_right_margin">10.0dip</dimen>
+    <dimen name="dialog_bottom_margin">10.0dip</dimen>
+    <dimen name="dialog_btn_close_right_margin">10.0dip</dimen>
+    <dimen name="dialog_btn_close_top_margin">10.0dip</dimen>
+    <dimen name="dialog_title_logo_left_margin">5.0dip</dimen>
+    <dimen name="dialog_title_height">30.0dip</dimen>
+    <dimen name="appStore_title_height">25.0dip</dimen>
+    <dimen name="appStore_bottom_height">30.0dip</dimen>
+    <dimen name="appStore_item_height">55.0dip</dimen>
+    <dimen name="appStore_item_image_height">40.0dip</dimen>
+    <dimen name="broseckill_padding50">50.0dip</dimen>
+    <dimen name="broseckill_length70">65.0dip</dimen>
+    <dimen name="broseckill_length80">80.0dip</dimen>
+    <dimen name="broseckill_length150">150.0dip</dimen>
+    <dimen name="broseckill_length170">170.0dip</dimen>
+    <dimen name="broseckill_length185">185.0dip</dimen>
+    <dimen name="broseckill_length190">190.0dip</dimen>
+    <dimen name="broseckill_length200">200.0dip</dimen>
+    <dimen name="secondbuy_btn140">140.0dip</dimen>
+    <dimen name="tab_height">50.0dip</dimen>
+    <dimen name="home_searchbar_margintop">113.0dip</dimen>
+    <dimen name="homefloor_height">141.0dip</dimen>
+    <dimen name="homefloor_halfheight">71.0dip</dimen>
+</resources>

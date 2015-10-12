@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="0.0dip">
+        <TextView android:text="@string/lottery_rang" style="@style/table_lefttop" />
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style2" />
+        <TextView android:id="@id/titleVs" android:text="AC米栏 VS 博洛尼亚" style="@style/table_title" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style2" />
+    <com.jd.lottery.lib.ui.lotteryhall.jingcaizuqiu.hunheguoguan.widget.SelectShengPingFu android:gravity="center" android:id="@id/shengpingfu1" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/shengpingfu2_splitter" style="@style/line_horizontal_style2" />
+    <com.jd.lottery.lib.ui.lotteryhall.jingcaizuqiu.hunheguoguan.widget.SelectShengPingFu android:gravity="center" android:id="@id/shengpingfu2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" />
+</LinearLayout>

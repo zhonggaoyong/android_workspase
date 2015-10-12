@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.jd.lib.story.ui.XListView android:id="@id/listView" style="@style/lib_story_listview" />
+        <include layout="@layout/lib_story_item_net_error" />
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <include layout="@layout/lib_story_item_top_bar" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/lib_story_topic_publish_view" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_story_topic_publish_icon_selector" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

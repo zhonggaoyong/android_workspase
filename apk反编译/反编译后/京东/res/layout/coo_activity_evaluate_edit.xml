@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.app.mall.utils.ui.JDResizeLayout android:orientation="vertical" android:id="@id/resizeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:focusableInTouchMode="true" layout="@layout/title" />
+    <ScrollView android:id="@id/scrollView" android:background="#fff0f2f5" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/evaluate_tostory" android:background="@drawable/coo_to_story_btn_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="36.0dip">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff252525" android:layout_gravity="center_vertical" android:id="@id/evaluate_tostroy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/coo_evaluate_to_stroy" android:scaleType="centerInside" />
+                </LinearLayout>
+                <View android:background="#fff1dbb8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/coo_view_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/ll_product_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/coo_view_margin">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/evaluate_imageView" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="centerCrop" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff252525" android:id="@id/coo_grade_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coo_view_margin" android:layout_marginTop="8.5dip" android:text="@string/coo_evaluate_comment_grade" android:layout_toRightOf="@id/evaluate_imageView" android:layout_alignParentTop="true" />
+                    <RatingBar android:id="@id/coo_grade_star" android:layout_width="wrap_content" android:layout_height="19.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.5dip" android:progressDrawable="@drawable/coo_ratingbar_evaluate" android:numStars="5" android:rating="5.0" android:stepSize="1.0" android:isIndicator="false" android:layout_toRightOf="@id/evaluate_imageView" android:layout_below="@id/coo_grade_text" />
+                </RelativeLayout>
+                <View android:saveEnabled="false" android:layout_marginTop="@dimen/coo_view_margin" style="@style/coo_line" />
+                <EditText android:textSize="13.0sp" android:textColor="@color/coo_edit_text" android:textColorHint="#ffbfbfbf" android:gravity="top" android:id="@id/coo_edit_content" android:background="@color/transparent" android:paddingTop="7.0dip" android:paddingRight="@dimen/coo_view_margin" android:layout_width="fill_parent" android:layout_height="73.0dip" android:maxLength="500" android:lineSpacingMultiplier="1.2" android:isScrollContainer="true" />
+                <TextView android:textSize="11.0sp" android:textColor="#ffbfbfbf" android:layout_gravity="right" android:id="@id/coo_edit_content_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/coo_view_margin" android:text="500" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/coo_img_view" android:background="#fff0f2f5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <View android:saveEnabled="false" style="@style/coo_line" />
+                <View android:saveEnabled="false" android:layout_marginTop="@dimen/coo_view_margin" style="@style/coo_line" />
+                <LinearLayout android:orientation="vertical" android:id="@id/coo_img_layout" android:background="@color/white" android:paddingLeft="@dimen/coo_view_margin" android:paddingRight="@dimen/coo_view_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/coo_add_img" android:background="@drawable/coo_add_photo_btn_bg" android:layout_width="140.0dip" android:layout_height="32.0dip" android:layout_marginTop="@dimen/coo_view_margin">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/coo_add_pic" />
+                <TextView android:textSize="14.0sp" android:textColor="#fff15353" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/coo_evaluate_add_image_text" />
+            </LinearLayout>
+            <View android:saveEnabled="false" android:layout_marginTop="@dimen/coo_view_margin" style="@style/coo_line" />
+            <LinearLayout android:orientation="vertical" android:background="#fff0f2f5" android:paddingBottom="@dimen/coo_view_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:textSize="13.0sp" android:textColor="#ff252525" android:id="@id/coo_anonymous_checkbox" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/coo_view_margin" android:layout_marginTop="@dimen/coo_view_margin" android:checked="true" android:button="@drawable/coo_anonymous_checkbox_bg" android:text="@string/coo_evaluate_anonymous_comment" />
+                <CheckBox android:textSize="13.0sp" android:textColor="#ff252525" android:id="@id/coo_syncToStory_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/coo_view_margin" android:layout_marginTop="@dimen/coo_view_margin" android:checked="true" android:button="@drawable/coo_anonymous_checkbox_bg" android:text="@string/coo_evaluate_syncToStory_comment" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/coo_submit_layout" android:background="#ffeaedf1" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <View android:saveEnabled="false" style="@style/coo_line" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/coo_submit_btn" android:background="@drawable/coo_btn_red_bg" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="@dimen/coo_view_margin" android:layout_marginRight="@dimen/coo_view_margin" android:text="@string/coo_evaluate_new_comment_submit" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.jingdong.app.mall.utils.ui.JDResizeLayout>

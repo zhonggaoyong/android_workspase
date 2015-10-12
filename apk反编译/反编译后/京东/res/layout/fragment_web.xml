@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_top" style="@style/top_rl">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ll_btn_back" style="@style/top_iv_back" />
+        <TextView android:id="@id/tv_title" android:text="京东电影票" style="@style/top_tv_title" />
+    </RelativeLayout>
+    <WebView android:id="@id/wv_web" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_top" />
+    <com.jingdong.common.movie.widget.LoadingView android:id="@id/wgt_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+</RelativeLayout>

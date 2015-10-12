@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/product_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image_1" android:layout_width="@dimen/my_618_productx3_img_width" android:layout_height="@dimen/my_618_productx3_img_width" style="@style/app_my_618_img" />
+        <TextView android:id="@id/name_1" android:layout_width="@dimen/my_618_productx3_img_width" android:layout_height="@dimen/my_618_productx3_name_height" style="@style/my_recommend_product_name" />
+        <TextView android:id="@id/price_1" android:layout_width="@dimen/my_618_productx3_img_width" android:layout_height="@dimen/my_618_productx3_price_height" style="@style/my_recommend_product_price" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/product_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image_2" android:layout_width="@dimen/my_618_productx3_img_width" android:layout_height="@dimen/my_618_productx3_img_width" style="@style/app_my_618_img" />
+        <TextView android:id="@id/name_2" android:layout_width="@dimen/my_618_productx3_img_width" android:layout_height="@dimen/my_618_productx3_name_height" style="@style/my_recommend_product_name" />
+        <TextView android:id="@id/price_2" android:layout_width="@dimen/my_618_productx3_img_width" android:layout_height="@dimen/my_618_productx3_price_height" style="@style/my_recommend_product_price" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/product_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image_3" android:layout_width="@dimen/my_618_productx3_img_width" android:layout_height="@dimen/my_618_productx3_img_width" style="@style/app_my_618_img" />
+        <TextView android:id="@id/name_3" android:layout_width="@dimen/my_618_productx3_img_width" android:layout_height="@dimen/my_618_productx3_name_height" style="@style/my_recommend_product_name" />
+        <TextView android:id="@id/price_3" android:layout_width="@dimen/my_618_productx3_img_width" android:layout_height="@dimen/my_618_productx3_price_height" style="@style/my_recommend_product_price" />
+    </LinearLayout>
+</LinearLayout>

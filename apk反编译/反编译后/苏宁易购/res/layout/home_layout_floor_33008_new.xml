@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/margin_left_view" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_1" android:layout_width="100.0px" android:layout_height="100.0px" android:src="@color/pub_color_one" />
+            </LinearLayout>
+            <View android:layout_width="2.0px" android:layout_height="2.0px" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_2" android:layout_width="100.0px" android:layout_height="100.0px" android:src="@color/pub_color_one" />
+            </LinearLayout>
+            <View android:layout_width="2.0px" android:layout_height="2.0px" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item_3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_3" android:layout_width="100.0px" android:layout_height="100.0px" android:src="@color/pub_color_one" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/margin_right_view" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/margin_bottom_view" android:layout_width="fill_parent" android:layout_height="8.0px" />
+</LinearLayout>

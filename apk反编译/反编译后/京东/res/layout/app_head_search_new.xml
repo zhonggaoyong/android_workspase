@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/header" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/home_search_button" android:clickable="true" android:layout_width="54.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/topbar_search" android:scaleType="centerInside" />
+        <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扫啊扫" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/home_title_search" android:background="@drawable/topbar_edittext_background" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="31.0dip" android:layout_toLeftOf="@id/to_message_btn" android:layout_toRightOf="@id/home_search_button" android:layout_centerVertical="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_search" android:layout_centerVertical="true" />
+        <AutoCompleteTextView android:textSize="14.0dip" android:textColor="@color/search_font_dark_grey" android:textColorHint="@color/search_title_hint_text_color" android:gravity="center_vertical" android:id="@id/homeActivity_autoComplete" android:background="@color/transparent" android:paddingTop="2.0dip" android:paddingRight="20.0dip" android:paddingBottom="2.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="2.0dip" android:hint="@string/homeActivity_autoComplete" android:singleLine="true" android:completionThreshold="1" android:layout_toRightOf="@id/iv_search" android:layout_centerVertical="true" android:dropDownWidth="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/homeActivity_voice" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="32.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:background="@drawable/app_icon_voice" android:layout_width="12.0dip" android:layout_height="20.0dip" android:scaleType="centerInside" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/to_message_btn" android:clickable="true" android:layout_width="54.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/home_message_img" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/topbar_message" android:scaleType="centerInside" />
+            <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息" android:layout_below="@id/home_message_img" />
+        </LinearLayout>
+        <TextView android:textSize="8.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/home_message_number" android:background="@drawable/home_message_red_bg" android:paddingLeft="3.0dip" android:paddingTop="0.5dip" android:paddingRight="3.0dip" android:paddingBottom="0.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip" android:text="99" android:layout_alignParentRight="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/home_message_red_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/home_message_red_dot" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

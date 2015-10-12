@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/ios_public_space_28px" android:paddingTop="@dimen/ios_public_space_28px" android:paddingRight="@dimen/ios_public_space_28px" android:paddingBottom="@dimen/ios_public_space_28px" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/package_product_icon_layout" android:background="@drawable/bg_pptv_smallpackage_item" android:layout_width="@dimen/ios_public_space_120px" android:layout_height="@dimen/ios_public_space_120px">
+        <ImageView android:id="@id/package_product_icon" android:layout_width="@dimen/android_public_space_78px" android:layout_height="@dimen/android_public_space_78px" android:src="@drawable/default_backgroud" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/package_product_info_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ios_public_space_24px" android:layout_toRightOf="@id/package_product_icon_layout" android:layout_alignTop="@id/package_product_icon_layout" android:layout_alignBottom="@id/package_product_icon_layout">
+        <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:id="@id/package_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_eighteen" android:id="@id/package_product_price_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_8px" android:text="套餐价" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_seveneen" android:id="@id/package_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/package_product_price_tips" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/pub_color_eighteen" android:id="@id/package_product_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

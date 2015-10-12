@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ff5e5e5e" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_jimi_msg" android:background="#ff000000" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_jimi_install" />
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="#ff5e5e5e" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="18.0sp" android:textColor="#ff231815" android:gravity="center" android:id="@id/jimi_install_ok" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ok" android:onClick="onClick" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="18.0sp" android:textColor="#ff231815" android:gravity="center" android:id="@id/jimi_install_cancel" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:onClick="onClick" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

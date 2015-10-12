@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/weixin_login_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/weixin_login_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_icon_wx" android:scaleType="fitCenter" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff9a9a9a" android:id="@id/weixin_login_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/weixin_login" android:layout_toRightOf="@id/weixin_login_icon" />
+    </RelativeLayout>
+    <View android:id="@id/login_divider_1" android:background="@color/login_bottom_devider_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <RelativeLayout android:gravity="center" android:id="@id/qq_login_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/qq_login_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_icon_qq" android:scaleType="fitCenter" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff9a9a9a" android:id="@id/qq_login_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/qq_login" android:layout_toRightOf="@id/qq_login_icon" />
+    </RelativeLayout>
+    <View android:id="@id/login_divider_2" android:background="@color/login_bottom_devider_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff9a9a9a" android:gravity="center" android:id="@id/other_login_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/other_login" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/province_sel_flag" android:background="@color/pub_color_twenty_one" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/search_tab_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/search_province_name" android:background="@drawable/search_province_bg" android:paddingLeft="@dimen/android_public_space_26px" android:layout_width="fill_parent" android:layout_height="45.0dip" android:singleLine="true" />
+</LinearLayout>

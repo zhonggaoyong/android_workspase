@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/vw_titlebar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <SurfaceView android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.gome.zxing.view.ViewfinderView android:id="@id/viewfinder_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0sp" android:id="@id/txtResult" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textColor="@color/status_text" android:id="@id/status_view" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bar_code_message_bottom" android:text="@string/barcode_explain" android:layout_above="@id/rl_btn" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/rl_btn" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="18.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/btn_input" android:background="@drawable/btn_bar_code" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="30.0dip" android:text="手动输入" />
+        <Button android:textSize="18.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/btn_scan" android:background="@drawable/btn_bar_code" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="取消扫描" />
+    </LinearLayout>
+</RelativeLayout>

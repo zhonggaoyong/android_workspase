@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Fel på Google Play-tjänster</string>
+    <string name="d3r">Google Play-tjänster måste installeras för att en app ska fungera.</string>
+    <string name="d3s">Google Play-tjänster måste uppdateras för en app ska fungera.</string>
+    <string name="d3t">Google Play-tjänster måste aktiveras för att en app ska fungera.</string>
+    <string name="d3u">Begärdes av %1$s</string>
+    <string name="d3v">Hämta Google Play Tjänster</string>
+    <string name="d3w">Den här appen kan inte köras utan Google Play Tjänster, som saknas på mobilen.</string>
+    <string name="d3x">Den här appen kan inte köras utan Google Play Tjänster, som saknas på surfplattan.</string>
+    <string name="d3y">Hämta Google Play Tjänster</string>
+    <string name="d3z">Aktivera Google Play Tjänster</string>
+    <string name="d40">Du måste aktivera Google Play Tjänster för att den här appen ska fungera.</string>
+    <string name="d41">Aktivera Google Play Tjänster</string>
+    <string name="d42">Uppdatera Google Play Tjänster</string>
+    <string name="d43">Du måste uppdatera Google Play Tjänster innan du kan köra den här appen.</string>
+    <string name="d44">Nätverksfel</string>
+    <string name="d45">En dataanslutning krävs för att ansluta till Google Plays tjänster.</string>
+    <string name="d46">Ogiltigt konto</string>
+    <string name="d47">Det angivna kontot finns inte på den här enheten. Välj ett annat konto.</string>
+    <string name="d48">Okänt problem med Google Play Tjänster</string>
+    <string name="d49">Google Play-tjänster</string>
+    <string name="d4_">Några av dina appar använder Google Play-tjänster som inte stöds av din enhet. Kontakta tillverkaren om du vill ha hjälp.</string>
+    <string name="d4a">Datumet på enheten verkar inte vara rätt. Kontrollera datumet på enheten.</string>
+    <string name="d4b">Uppdatera</string>
+    <string name="d4c">Logga in</string>
+    <string name="d4d">Logga in med Google</string>
+</resources>

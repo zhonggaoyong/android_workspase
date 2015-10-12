@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="@style/common_hm_vw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/sdk2_channel_content_layout" style="@style/common_hm_vm">
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/sdk2_channel_listView" android:divider="@drawable/sdk2_list_divider_" android:headerDividersEnabled="false" android:footerDividersEnabled="false" style="@style/common_hm_vm" />
+    </LinearLayout>
+</FrameLayout>

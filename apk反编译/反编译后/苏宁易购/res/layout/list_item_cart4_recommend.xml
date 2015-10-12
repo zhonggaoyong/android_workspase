@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_one" android:padding="@dimen/android_public_space_13px" android:layout_width="@dimen/android_public_space_140px" android:layout_height="@dimen/android_public_space_210px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_item_cart4_recommend" android:background="@drawable/goods_bg" android:layout_width="85.0dip" android:layout_height="@dimen/android_public_space_106px" android:src="@drawable/default_background_small" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="@dimen/android_public_textsize_14pt" android:textColor="@color/pub_color_three" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_item_cart4_recommend_name" android:layout_width="85.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/android_public_space_52px" android:text="@string/app_name" android:maxLines="2" />
+    <TextView android:textSize="@dimen/ios_public_textsize_20pt" android:textColor="@color/pub_color_seveneen" android:id="@id/tv_item_cart4_recommend_price" android:layout_width="85.0dip" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+</LinearLayout>

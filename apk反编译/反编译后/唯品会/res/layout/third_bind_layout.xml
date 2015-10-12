@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/header_layout" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_below="@id/header" layout="@layout/login_part_layout" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff0079ff" android:id="@id/next_time_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="19.0dip" android:text="下次再说" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

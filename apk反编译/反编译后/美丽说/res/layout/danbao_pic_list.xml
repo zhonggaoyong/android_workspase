@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.MyImage android:id="@id/big_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:id="@id/two_small_pic" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.MyImage android:id="@id/small_pic1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        <com.meilishuo.app.views.MyImage android:id="@id/small_pic2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_view_pager" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <android.support.v4.view.ViewPager android:id="@id/mp_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:id="@id/mp_top_linear" android:padding="@dimen/pub_margin_or_padding_space_two" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_thirty" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/gallery_ind_0" android:layout_width="@dimen/pub_margin_or_padding_space_seven" android:layout_height="@dimen/pub_margin_or_padding_space_three" android:src="@drawable/goodsdetail_picture_nav_on" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_1" android:layout_width="@dimen/pub_margin_or_padding_space_seven" android:layout_height="@dimen/pub_margin_or_padding_space_three" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/goodsdetail_picture_nav_up" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_2" android:layout_width="@dimen/pub_margin_or_padding_space_seven" android:layout_height="@dimen/pub_margin_or_padding_space_three" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/goodsdetail_picture_nav_up" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_3" android:layout_width="@dimen/pub_margin_or_padding_space_seven" android:layout_height="@dimen/pub_margin_or_padding_space_three" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/goodsdetail_picture_nav_up" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_4" android:layout_width="@dimen/pub_margin_or_padding_space_seven" android:layout_height="@dimen/pub_margin_or_padding_space_three" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/goodsdetail_picture_nav_up" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_5" android:layout_width="@dimen/pub_margin_or_padding_space_seven" android:layout_height="@dimen/pub_margin_or_padding_space_three" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/goodsdetail_picture_nav_up" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_6" android:layout_width="@dimen/pub_margin_or_padding_space_seven" android:layout_height="@dimen/pub_margin_or_padding_space_three" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/goodsdetail_picture_nav_up" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gallery_ind_7" android:layout_width="@dimen/pub_margin_or_padding_space_seven" android:layout_height="@dimen/pub_margin_or_padding_space_three" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/goodsdetail_picture_nav_up" android:scaleType="fitXY" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

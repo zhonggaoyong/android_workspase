@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fanli.android.view.TangFontTextView android:gravity="center_vertical" android:id="@id/catalog" android:background="@drawable/mm_contact_title" android:paddingLeft="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/height_list_item_40" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/side_listitem" android:padding="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/height_list_item_40">
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/img" android:layout_width="@dimen/height_list_item_icon" android:layout_height="@dimen/height_list_item_icon" />
+        <com.fanli.android.view.TangFontTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

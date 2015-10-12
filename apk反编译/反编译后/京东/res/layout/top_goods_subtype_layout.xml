@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/top_goods_subtype_margin_edge" android:layout_marginTop="@dimen/top_goods_subtype_margin_top" android:layout_marginRight="@dimen/top_goods_subtype_margin_edge" android:layout_marginBottom="@dimen/top_goods_subtype_margin_top" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.app.mall.top.SubTypeItem android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.jingdong.app.mall.top.SubTypeItem android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/top_goods_subtype_margin_left" android:layout_weight="1.0" />
+    <com.jingdong.app.mall.top.SubTypeItem android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/top_goods_subtype_margin_left" android:layout_weight="1.0" />
+    <com.jingdong.app.mall.top.SubTypeItem android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/top_goods_subtype_margin_left" android:layout_weight="1.0" />
+</LinearLayout>

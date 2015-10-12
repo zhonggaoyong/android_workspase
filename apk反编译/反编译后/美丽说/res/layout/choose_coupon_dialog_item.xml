@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageview_coupon_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/checkbox_icon_unselected" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:id="@id/textview_coupon_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_toLeftOf="@id/imageview_coupon_select" android:layout_centerVertical="true" />
+    <View android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/textview_coupon_title" style="@style/SecondDividerViewStyle" />
+</RelativeLayout>

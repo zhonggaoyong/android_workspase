@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pavilion_horizontal_item" android:layout_width="fill_parent" android:layout_height="94.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/pavilion_big_img" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/pavilion_text_size_22" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pavilion_tag" android:layout_width="24.0dip" android:layout_height="15.0dip" android:layout_alignLeft="@id/pavilion_big_img" android:layout_alignTop="@id/pavilion_big_img" />
+    <RelativeLayout android:gravity="center" android:background="#b2000000" android:layout_width="105.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/pavilion_text_size_30" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pavilion_big_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/pavilion_text_size_24" android:textColor="#ddffffff" android:gravity="center" android:id="@id/pavilion_pv_copy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/pavilion_big_title" />
+    </RelativeLayout>
+</RelativeLayout>

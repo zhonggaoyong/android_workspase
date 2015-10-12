@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/realname_auth_header" layout="@layout/vipnew_header" />
+    <TextView android:textSize="@dimen/app_textsize_secondary" android:textColor="@color/error_tips_color" android:gravity="left|center" android:id="@id/code_error" android:background="@color/error_tips_bg_color" android:paddingLeft="12.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="@string/wallet_passnum_tip" android:drawableLeft="@drawable/icon_failure_least" android:drawablePadding="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/wallet_editbinding_layout" android:layout_width="fill_parent" android:layout_height="@dimen/table_row_new_height" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="@dimen/wallet_text_main" android:textColor="@color/app_text_black_new_ui" android:id="@id/nameTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:text="姓名" />
+                <EditText android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:textColorHint="@color/app_text_edittext_gray" android:layout_gravity="center_horizontal" android:id="@id/name" android:background="@color/white" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="真实姓名" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="right|center" android:id="@id/del_auth_name" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/new_ic_edit_clear" />
+            </LinearLayout>
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/table_row_new_height" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="@dimen/wallet_text_main" android:textColor="@color/app_text_black_new_ui" android:id="@id/identifyIDTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="身份证号" />
+                <EditText android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:textColorHint="@color/app_text_edittext_gray" android:layout_gravity="center_horizontal" android:id="@id/identifyID" android:background="@color/white" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="15或18位身份证号码" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="right|center" android:id="@id/del_auth_indentifyID" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/new_ic_edit_clear" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/gray" android:id="@id/auth_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="实名认证成功后不可修改，请谨慎填写。" />
+    <Button android:enabled="false" android:layout_gravity="center_horizontal" android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="@dimen/submit_pink_big_button_height" android:layout_marginLeft="15.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="15.0dip" android:text="完 成" style="@style/btn_violet_style" />
+</LinearLayout>

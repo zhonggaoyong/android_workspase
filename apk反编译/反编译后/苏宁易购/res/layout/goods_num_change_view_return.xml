@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/btn_num_desc" android:background="@drawable/btn_num_descending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <EditText android:textSize="16.0sp" android:textColor="@color/public_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/num_edit_text_view" android:background="@drawable/shoppingcart_edittext_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:digits="0123456789" android:inputType="phone" />
+    <TextView android:id="@id/btn_num_asc" android:background="@drawable/btn_num_ascending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+</LinearLayout>

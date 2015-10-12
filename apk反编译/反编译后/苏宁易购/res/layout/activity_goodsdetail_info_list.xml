@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/evaluate_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/no_transparent_white" android:layout_gravity="center_horizontal" android:background="@drawable/btn_default" android:padding="@dimen/pub_margin_or_padding_space_ten" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_ten" android:layout_marginRight="@dimen/pub_margin_or_padding_space_ten" android:text="@string/eval_consult" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/evaluateLinearLayout" android:background="@drawable/tab_base_bg" android:padding="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_124px">
+        <RelativeLayout android:background="@drawable/tab_base_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/cursor_imag" android:background="@color/transparent" android:visibility="gone" android:layout_width="@dimen/android_public_space_135px" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/pub_textsize_fourteen" android:textColor="@color/pub_color_three" android:gravity="center" android:id="@id/good_evaluate" android:background="@drawable/evaluate_tab_select_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/good_reputations" android:layout_weight="1.0" />
+                <TextView android:background="@drawable/divider_horizontal" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="@dimen/pub_textsize_fourteen" android:textColor="@color/pub_color_three" android:gravity="center" android:id="@id/mid_evaluate" android:background="@drawable/evaluate_tab_select_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/middle_reputations" android:layout_weight="1.0" />
+                <TextView android:background="@drawable/divider_horizontal" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="@dimen/pub_textsize_fourteen" android:textColor="@color/pub_color_three" android:gravity="center" android:id="@id/lack_evaluate" android:background="@drawable/evaluate_tab_select_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/bad_reputations" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/goods_evaluate_list" />
+</LinearLayout>

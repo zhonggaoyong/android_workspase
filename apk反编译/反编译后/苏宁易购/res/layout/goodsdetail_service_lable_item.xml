@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="@dimen/ios_public_space_32px" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_goodsdetail_service_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/public_return_dady_label" />
+    <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_eighteen" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_goodsdetail_service_item" android:paddingLeft="@dimen/android_public_space_8px" android:paddingTop="@dimen/android_public_space_4px" android:paddingBottom="@dimen/android_public_space_4px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="满减" />
+</LinearLayout>

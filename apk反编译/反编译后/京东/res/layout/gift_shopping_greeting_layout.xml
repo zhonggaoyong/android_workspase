@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff9f5ef" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" android:layout_width="fill_parent" android:layout_height="49.5dip" android:layout_alignParentTop="true" layout="@layout/title" />
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gift_corner" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="left|center" android:id="@id/bottom_tv" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/gift_greet_bottom_tips" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/red" android:gravity="center" android:id="@id/imput_num" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/from_layout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_above="@id/bottom_layout">
+        <View android:background="#ffcec7bc" android:layout_width="180.0dip" android:layout_height="1.0px" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <com.jingdong.app.mall.shoppinggift.view.ContainsEmojiEditText android:textSize="15.0dip" android:ellipsize="end" android:gravity="bottom|left|center" android:id="@id/send_name_tv" android:background="@null" android:paddingBottom="5.0dip" android:layout_width="120.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:singleLine="true" android:maxLength="10" android:layout_alignParentRight="true" android:inputType="text" android:textCursorDrawable="@drawable/gift_text_light2" />
+        <TextView android:gravity="bottom" android:paddingBottom="7.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="From:" android:layout_toLeftOf="@id/send_name_tv" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/edit_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_above="@id/from_layout" android:layout_below="@id/common_title">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gift_mark" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <RelativeLayout android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+                <View android:background="#ffcec7bc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginRight="200.0dip" android:layout_alignParentBottom="true" />
+                <TextView android:gravity="bottom|left|center" android:id="@id/top_tv" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="To: " />
+                <com.jingdong.app.mall.shoppinggift.view.ContainsEmojiEditText android:textSize="15.0dip" android:gravity="bottom|left|center" android:id="@id/receive_tv" android:background="@null" android:paddingLeft="4.0dip" android:paddingBottom="2.0dip" android:layout_width="200.0dip" android:layout_height="fill_parent" android:singleLine="true" android:maxLength="10" android:layout_toRightOf="@id/top_tv" android:inputType="text" android:textCursorDrawable="@drawable/gift_text_light2" />
+            </RelativeLayout>
+            <com.jingdong.app.mall.shoppinggift.view.LinedEditText android:textSize="15.0dip" android:gravity="top" android:layout_gravity="center" android:id="@id/cart_content" android:background="@null" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_marginTop="21.5dip" android:minHeight="100.0dip" android:text="@string/gift_greet_default_content" android:cursorVisible="true" android:maxLength="120" android:layout_below="@id/top_layout" android:lineSpacingExtra="20.0dip" android:inputType="textMultiLine" android:textCursorDrawable="@drawable/gift_text_light" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

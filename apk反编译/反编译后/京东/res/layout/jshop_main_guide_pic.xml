@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_guide_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/jdshop_android_guide" android:scaleType="fitXY"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

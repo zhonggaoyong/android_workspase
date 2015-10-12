@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="20440" android:versionName="4.3.1" package="com.jingdong.app.mall" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" android:xlargeScreens="true" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <permission android:name="com.jingdong.app.mall.permission.self_broadcast" android:protectionLevel="signature" />
+    <uses-permission android:name="com.jingdong.app.mall.permission.self_broadcast" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <application android:theme="@style/applicationTheme" android:label="@string/app_name" android:icon="@drawable/jd_buy_icon" android:name="com.jingdong.app.mall.MyApplication" android:persistent="false" android:allowBackup="false" android:hardwareAccelerated="false" android:largeHeap="true" android:uiOptions="splitActionBarWhenNarrow">
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="AHdRDuNGfkf5foVQcGvtYf3L" />
+        <meta-data android:name="PAY_APPID" android:value="jd_android_app4" />
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote" />
+        <service android:name="com.jingdong.app.mall.service.PausableDownloadService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.jingdong.app.mall.service.PausableDownloadService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.jingdong.app.mall.service.InstallApkService" />
+        <meta-data android:name="Ja_Sdk_ID" android:value="JdAndroidPhone_ja" />
+        <meta-data android:name="Ja_Sdk_CHANNEL" android:value="JdAndroidPhone_ja" />
+        <meta-data android:name="Ja_Sdk_SEND_STRATEGY" android:value="" />
+        <meta-data android:name="Ja_Sdk_EXCEPTION_LOG" android:value="true" />
+        <meta-data android:name="JD_APPKEY" android:value="20095" />
+        <meta-data android:name="JD_CHANNEL" android:value="jingdong" />
+        <meta-data android:name="JD_ACCESSKEY" android:value="96d4e673f2094c4a8dac297afeb85c3b" />
+        <activity android:theme="@style/fakeFirstTheme" android:name="com.jingdong.app.mall.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.jingdong.app.mall.jplug.PlugsMainActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:label="@string/app_name" android:name="com.jingdong.app.mall.jplug.center.PlugsCenterActivity" android:exported="true" android:launchMode="singleTop" />
+        <provider android:name="com.jingdong.app.mall.plug.framework.download.DownloadDBProvider" android:exported="false" android:authorities="com.jingdong.app.mall.plug.framework.provider" />
+        <activity android:theme="@style/splashTheme" android:label="@string/app_name" android:name="com.jingdong.app.mall.MainFrameActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.jingdong.app.mall.ErrorActivity" android:process=":error" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.jingdong.app.mall.basic.JDTransferActivity" android:launchMode="singleTask" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.jingdong.app.mall.basic.JDTaskClearActivity" android:launchMode="standard" android:noHistory="true" />
+        <activity android:theme="@style/msDialogTheme" android:name="com.jingdong.app.mall.miaosha.MiaoShaDialogActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/msDialogTheme" android:name="com.jingdong.app.mall.home.MobileChannelMiaoShaClockActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.WebActivity" android:hardwareAccelerated="true" />
+        <activity android:name="com.jingdong.app.mall.WebActivityWithLikeBtn" />
+        <activity android:name="com.jingdong.app.mall.personel.IdCardUploadActivity" />
+        <activity android:name="com.jingdong.app.mall.pay.CashierDeskActivity" />
+        <activity android:name="com.jingdong.app.mall.WebActivityLandscape" android:screenOrientation="landscape" android:configChanges="touchscreen|keyboard|navigation|orientation|screenLayout|uiMode|fontScale" />
+        <activity android:name="com.jingdong.app.mall.home.slide.WebSlideAcvtivity" />
+        <activity android:name="com.jingdong.app.mall.home.slide.PromotionSlideActivity" />
+        <activity android:name="com.jingdong.app.mall.more.MoreActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.PersonalInfoActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.PersonalModifyActivity" android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity android:name="com.jingdong.app.mall.personel.PersonalSelectActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.PersonalSubActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.MyOrderInfoListActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.MyGoodsOrderListActivity" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.jingdong.app.mall.personel.MyGoodsOrderFilterActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.MyCancelOrderListActivity" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.jingdong.app.mall.personel.OrderSearchActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.CheckMyOrderDetail" />
+        <activity android:name="com.jingdong.app.mall.personel.logistics.LogisticsOrderDetail" />
+        <activity android:name="com.jingdong.app.mall.personel.MyOrderDetailActivity" android:launchMode="singleTop" />
+        <activity android:name="com.jingdong.app.mall.personel.MyOrderDetailModifyActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.SelectOrderAddressActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.MyCollectActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.MakeNewBuyAsk" />
+        <activity android:name="com.jingdong.app.mall.personel.MyBackAndExchangeActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.MyAccountCenterActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.MyWalletActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.MyAfterSaleServiceActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.myCoupon.MyCouponActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.myGiftCard.MyGiftCardActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.myGiftCard.MyGiftCardAndECardBindActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.myCoupon.MyCouponFetchCouponListActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.myCoupon.MyCouponFetchCouponActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.MyMessageBox" />
+        <activity android:name="com.jingdong.app.mall.personel.MyWebMessage" />
+        <activity android:name="com.jingdong.app.mall.personel.MyMessageShow" />
+        <activity android:name="com.jingdong.app.mall.personel.MessageSettingActivity" />
+        <activity android:name="com.jingdong.app.mall.product.SearchFilterActivity" />
+        <activity android:name="com.jingdong.app.mall.product.LimitBuyListActivity" />
+        <activity android:name="com.jingdong.app.mall.miaosha.MiaoShaActivity" />
+        <activity android:name="com.jingdong.app.mall.miaosha.MiaoShaSoldOutActivity" />
+        <activity android:name="com.jingdong.app.mall.miaosha.MiaoShaBrandInnerActivity" />
+        <activity android:name="com.jingdong.app.mall.cutevent.KanAKanActivity" android:launchMode="singleTask" />
+        <activity android:name="com.jingdong.app.mall.mobileChannel.JDMobileChannel" android:configChanges="touchscreen|keyboard|navigation|orientation|screenLayout|uiMode|fontScale" android:windowSoftInputMode="adjustNothing" />
+        <activity android:theme="@style/xunmi_comment_popup_activity_style" android:name="com.jingdong.app.mall.mobileChannel.CommentActivity" android:configChanges="touchscreen|keyboard|navigation|orientation|screenLayout|uiMode|fontScale" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.jingdong.app.mall.cutevent.CuttingActivity" />
+        <activity android:name="com.jingdong.app.mall.pavilion.PavilionRssActivity" />
+        <activity android:name="com.jingdong.app.mall.pavilion.PavilionListActivity" />
+        <activity android:name="com.jingdong.app.mall.faxian.Faxian4EventActivity" />
+        <activity android:name="com.jingdong.app.mall.nearby.NearbyListActivity" />
+        <activity android:name="com.jingdong.app.mall.activities.Activities" />
+        <activity android:name="com.jingdong.app.mall.activities.ActivitiesDetail" android:launchMode="singleTask" />
+        <activity android:name="com.jingdong.app.mall.product.ProductListActivity" android:launchMode="singleTop" android:configChanges="screenSize|fontScale" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.jingdong.app.mall.product.ProductTogetherSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.app.mall.product.MultiSellerActivity" />
+        <activity android:name="com.jingdong.app.mall.product.ProductListRecommendActivity" />
+        <activity android:name="com.jingdong.app.mall.product.CommercialRuleActivity" />
+        <activity android:name="com.jingdong.app.mall.product.ProductDetailActivity" />
+        <activity android:name="com.jingdong.app.mall.product.ProductDetailActivity1" />
+        <activity android:name="com.jingdong.app.mall.product.PriceReportActivity" />
+        <activity android:name="com.jingdong.app.mall.product.PriceReportSuccessActivity" />
+        <activity android:name="com.jingdong.common.widget.ImageActivity" />
+        <activity android:name="com.jingdong.app.mall.product.ProductDetailInfoActivity" />
+        <activity android:name="com.jingdong.app.mall.product.CommentListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.widget.photo.AlbumListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.widget.photo.PhotoListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.product.BuyAskListActivity" />
+        <activity android:name="com.jingdong.app.mall.shopping.ShoppingCartNewActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.SimilarRecommendationActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.CombineOrderActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.YanBaoNewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.app.mall.shopping.NewFillOrderActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.SelectPaymentAndDeliveryActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.SelfPickShipmentListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.OrderCommodityActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.EditOrderAddressListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.EditOrderAddressActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.EditOrderAddressActivityNew" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.SelectAddressActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/shake_dialog_style" android:name="com.jingdong.app.mall.shopping.AddressCheckErrorHintActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/shake_dialog_style" android:name="com.jingdong.app.mall.shopping.SecurityPaymentPasswordActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.ReceiptInfoEditNewActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.app.mall.shopping.EditYouHuiLipinActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.JDCardBindActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.CompleteOrderActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.SelfMapActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.easybuy.NewEasyBuyAddressListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.easybuy.EditNewEasyBuyAddressActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.easybuy.SelfPickListListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.PacksListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.product.ProductPacksListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.login.LoginActivity" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jingdong.app.mall.login.ScanCodeLoginActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jingdong.app.mall.register.RegisterActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.register.SetPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.jingdong.app.mall.register.InputMessageCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.jingdong.app.mall.more.FeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.jingdong.app.mall.more.HistoryListActivity" />
+        <activity android:name="com.jingdong.app.mall.more.SearchActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="screenSize|fontScale" android:windowSoftInputMode="stateVisible" />
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.jingdong.app.mall.more.PushMessageCategoryFilterSetting" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.more.AboutActivity" />
+        <activity android:name="com.jingdong.app.mall.more.NetworkTipsActivity" />
+        <activity android:name="com.jingdong.app.mall.search.CameraPurchaseActivity" />
+        <activity android:name="com.jingdong.app.mall.search.EditorActivity" />
+        <activity android:name="com.jingdong.app.mall.search.CPProductListActivity" />
+        <activity android:name="com.jingdong.app.mall.search.CorrectionActivity" />
+        <activity android:name="com.jingdong.app.mall.barcode.BarcodeActivity" android:launchMode="singleTask" />
+        <activity android:name="com.jingdong.app.mall.personel.MyOrderPostPayConfirm" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.app.mall.promotion.PromotionActivity" />
+        <activity android:name="com.jingdong.app.mall.promotion.PromotionMessageActivity" />
+        <activity android:name="com.jingdong.app.mall.promotion.PromotionProductListActivity" />
+        <activity android:name="com.jingdong.app.mall.home.FloorProductListActivity" />
+        <activity android:name="com.jingdong.app.mall.home.slide.LifeAssistantActivity" />
+        <activity android:name="com.jingdong.app.mall.home.HSimilarProductListActivity" />
+        <activity android:name="com.jingdong.app.mall.barcode.BarcodeInputActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.jingdong.lib.zxing.client.android.CaptureActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.jingdong.app.mall.barcode.BarcodeProductListActivity" />
+        <activity android:name="com.jingdong.app.mall.shopping.CameraActivity" />
+        <activity android:name="com.jingdong.app.mall.color.BlankActivity" />
+        <activity android:name="com.jingdong.app.mall.shake.ShakeActivity" />
+        <activity android:name="com.jingdong.app.mall.home.slide.SlideScreenActivity" />
+        <activity android:name="com.jingdong.app.mall.appcenter.AppCenterActivity" />
+        <activity android:theme="@style/shake_dialog_style" android:name="com.jingdong.app.mall.shake.ShakeDialogNew" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.shopping.CategoriesSelectionActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.jingdong.app.mall.coo.comment.EvaluateActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.jingdong.app.mall.coo.comment.EvaluateDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.jingdong.app.mall.coo.comment.EvaluateCenter" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.coo.comment.EvaluateEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.jingdong.app.mall.coo.comment.CooImageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.jingdong.app.mall.color.SimilarProductListActivity" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.jingdong.app.mall.open.InterfaceActivity">
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="openApp.jdMobile" />
+                <data android:scheme="openapp.jdmobile" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.jingdong.app.mall.wxapi.WXPayEntryActivity" android:exported="true" android:launchMode="singleTop" />
+        <activity android:name="com.jingdong.common.sample.JshopSearchListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.jingdong.app.mall.personel.favourites.FavoListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.jingdong.app.mall.personel.favourites.SearchFavoListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.jingdong.app.mall.personel.favourites.SimilarGoodsActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.personel.favourites.NotifyProductArrivedActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.jingdong.common.sample.JshopCouponsListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.JshopNoPayPinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.JshopTakeCouponActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopProductListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopBrandGridActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopLicenseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopBrandListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopBrandListActivity2" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopMainShopActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopSignupActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopTopicWareActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.jingdong.common.sample.jshop.JshopSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopPromotionRule" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopQrcodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.jshop.JShopDynamicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.jshop.JShopDynamicMoreProductsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.sample.jshop.JshopDynaFragmentActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.gamecharge.GameListSelectActivity" />
+        <activity android:name="com.jingdong.common.gamecharge.QBChargeActivity" />
+        <activity android:name="com.jingdong.common.gamecharge.QBGameOrderListActivity" />
+        <activity android:name="com.jingdong.common.gamecharge.GameAreaSrvListSelectActivity" />
+        <activity android:name="com.jingdong.common.gamecharge.GameChargeCouponActivity" />
+        <activity android:name="com.jingdong.common.gamecharge.GameChargeDetailActivity" />
+        <activity android:name="com.jingdong.common.coupons.CouponMainActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|navigation|orientation|screenLayout" />
+        <activity android:name="com.jingdong.common.coupons.CouponTakeCouponActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.jingdong.common.coupons.CouponTakeSuccessActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.phonecharge.PhoneChargeActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.jingdong.common.phonecharge.PhoneChargeConfirmActivity" />
+        <activity android:name="com.jingdong.common.phonecharge.PhoneChargeHelpActivity" />
+        <activity android:name="com.jingdong.common.phonecharge.PhoneChargeFlowListActivity" />
+        <activity android:name="com.jingdong.common.phonecharge.PhoneChargeFlowOrderDetailActivity" />
+        <activity android:name="com.jingdong.common.phonecharge.PhoneChargeCouponActivity" />
+        <activity android:name="com.jingdong.common.phonecharge.PhoneChargeFlowCouponActivity" />
+        <activity android:name="com.jingdong.common.phonecharge.PhoneChargeSuccessActivity" />
+        <activity android:name="com.jingdong.common.phonecharge.PhoneChargeOrderlistActivity" />
+        <activity android:name="com.jingdong.common.phonecharge.PhoneChargeOrderdetailActivity" />
+        <activity android:name="com.jingdong.app.mall.more.VoiceSearchActivity" />
+        <activity android:theme="@style/msDialogTheme" android:name="com.jingdong.common.phonecharge.calendar.AlamrActivity" android:screenOrientation="portrait" />
+        <receiver android:name="com.jingdong.common.phonecharge.calendar.AlarmReceiver" />
+        <receiver android:label="@string/app_name" android:name="com.jingdong.common.phonecharge.calendar.AutoService" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.unionpay.uppay.PayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|fontScale" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.Run" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.jingdong.app.mall.widget.JdWidget" android:process=":service">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_provider" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.360buy.jdWidgetBroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jingdong.app.mall.broadcastReceiver.ReActivationUserReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.360buy.RE_ACTIVATION_USER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:label="NetworkConnection" android:name="com.jingdong.app.mall.broadcastReceiver.NetworkBroadcast">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service android:label="@string/pull_service_title" android:name="com.jingdong.common.service.MessagePullService" android:process=":service" />
+        <service android:name="com.jingdong.app.mall.service.ForwardActionService" />
+        <service android:name="com.jingdong.app.mall.miaosha.MiaoShaAlarmService" />
+        <receiver android:name="com.jingdong.app.mall.miaosha.MiaoShaAlarmReceive">
+            <intent-filter>
+                <action android:name="com.jingdong.app.mall.panicbuying" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.jingdong.app.mall.home.MobileChannelMiaoShaClockService" />
+        <receiver android:name="com.jingdong.app.mall.home.MobileChannelMiaoShaClockReceive">
+            <intent-filter>
+                <action android:name="com.jingdong.app.mall.panicbuying" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="client_name" android:value="androidJD-phone" />
+        <activity android:name="com.jingdong.app.mall.story.StoryContainerActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jingdong.app.mall.story.StoryMainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jingdong.app.mall.top.TopActivity" />
+        <activity android:name="com.jingdong.app.mall.o2o.map.RecieverAddressLocationActivity" />
+        <activity android:name="com.jingdong.app.mall.more.DistributionPromotionActivity" />
+        <activity android:name="com.jingdong.app.mall.more.DistributionPromotionSuccessActivity" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.jingdong.app.mall.wxapi.WXEntryActivity" android:exported="true" />
+        <activity android:theme="@android:style/Theme.NoDisplay" android:name="com.jingdong.app.mall.api.WeiboShareResponseActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/shake_dialog_style" android:name="com.jingdong.app.mall.InstallApkActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jingdong.app.mall.ACTION_INSTALLAPKACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/setting_push_dialog_style" android:name="com.jingdong.app.mall.more.PushTimeSettingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100273020" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/BingChatTheme" android:name="com.jingdong.common.bing.JDXBExtranceActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/BingChatTheme" android:name="com.jingdong.common.bing.JDXBIntroActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/BingChatTheme" android:name="com.jingdong.common.bing.JDXBValidateActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/BingChatTheme" android:name="com.jingdong.common.bing.JDXBChatActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <receiver android:name="com.jingdong.app.mall.broadcastReceiver.AppStateRecevier">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jingdong.app.mall.broadcastReceiver.CloudMessageReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.jd.msg" />
+                <action android:name="com.jd.register.action" />
+                <action android:name="com.jingdong.cloud.push.app.msg.receiver.action" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.jingdong.cloud.jdpush.JDPushNotificationActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jingdong.app.mall.open.NotificationActivity" android:exported="true">
+            <intent-filter android:priority="0x7fffffff">
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.jingdong.cloud.jdpush.JDPushConnectService_Cloud" android:process=":jdpush_cloud" android:priority="1000" />
+        <service android:name="com.jingdong.cloud.jdpush.db.OpenUDID_service">
+            <intent-filter>
+                <action android:name="org.openudid.GETUDID" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.jingdong.cloud.jdpush.JDPushReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.jingdong.cloud.push.msg.sendtosdkreceiver.action" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="JD_PUSH_APPID" android:value="jdapp" />
+        <meta-data android:name="TencentMapSDK" android:value="OLVBZ-7L2HG-YPGQE-I3NON-J3X5Z-3CFQL" />
+        <activity android:name="com.jingdong.common.jdtravel.FlightInOrderdetailActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.FlightExOrderdetailActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.FlightSearchActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.FlightClassDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.IntFlightClassDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.FlightDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.jingdong.common.jdtravel.IntFlightDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.jingdong.common.jdtravel.FlightListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.IntFlightListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.calendar2.CalendarActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.citylist.CityActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.jingdong.common.jdtravel.FlightAddBoarderActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.IntFlightAddBoarderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.jingdong.common.jdtravel.FlightSelectCountryActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.FlightDeliveryActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.BoarderListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.IntBoarderListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.FlightCounterActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.jdtravel.LinkmanListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.movie.main.MovieActivity" />
+        <activity android:name="com.jingdong.common.jdtravel.FlightUseCouponListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.product.CommentReplyListActivity" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.jingdong.app.mall.select.RecommendActivity" />
+        <activity android:name="com.jingdong.app.mall.select.GoodActivity" />
+        <activity android:name="com.jingdong.app.mall.shoppinggift.GiftShoppingActivity" android:launchMode="singleTop" />
+        <activity android:name="com.jingdong.app.mall.shoppinggift.GiftShoppingGreetingActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jingdong.app.mall.guangguang.GuangguangMainActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jingdong.app.mall.guangguang.GuangguangItemDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jingdong.app.mall.guangguang.account.AccountActivityV2" />
+        <activity android:name="com.jingdong.app.mall.guangguang.similar.SimilarActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.my618.MyRecommendActivity" />
+        <activity android:name="com.jingdong.app.mall.personel.my618.MyDNAActivity" android:launchMode="singleTask" />
+        <activity android:name="com.jingdong.app.mall.personel.my618.MyDNAActivity2" />
+        <activity android:name="com.jingdong.app.mall.personel.my618.MyDNAProductListActivity" />
+        <meta-data android:name="isInAura" android:value="true" />
+        <activity android:name="com.jingdong.app.mall.pluginsjumper.UfoPageNotFound" />
+        <activity android:theme="@style/AppTheme" android:name="com.jimi.sdk.activity.MainActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jimi.sdk.activity.AddressActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.jimi.sdk.activity.OrderTrackerActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/AppBaseTheme" android:name="com.jimi.sdk.activity.WebViewActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.jimi.sdk.activity.ErrorActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.jimi.sdk.monitor.ActivityDebugMonitor" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.jimi.sdk.monitor.ActivityDebugMonitorHTTP" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.jimi.sdk.monitor.ActivityDebugMonitorHTTPDetail" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/AppTransparentTheme" android:name="com.jingdong.app.mall.im.IMForwardActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.aura.im" />
+                <action android:name="android.intent.action.aura.jimi" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jingdong.app.mall.personel.bankCard.BindingCardListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.personel.bankCard.BindingCardDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.personel.help.HelpAndFeedBackActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.app.mall.personel.help.WantToFeedBackActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.jingdong.app.mall.personel.PersonalGuideImageActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/AppTransparentTheme" android:name="com.jd.mobiledd.sdk.ShadowActivity" android:exported="true" android:excludeFromRecents="true" android:noHistory="true" />
+        <service android:name="com.jd.mobiledd.sdk.core.NotificationService" android:exported="false" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.SkillActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Transparent" android:name="com.jd.mobiledd.sdk.foreground.Fragment.MainFragment" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.ErrorActivity" android:excludeFromRecents="true" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:noHistory="true" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.PopWaiterInforActivity" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.HistoryMsgActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.JDHistoryMsgActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/Transparent" android:name="com.jd.mobiledd.sdk.foreground.activity.ChatListActivity" android:exported="true" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.SettingActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.MyOrderActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.RecentViewActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jd.mobiledd.sdk.monitor.ActivityDebugMonitor" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.jd.mobiledd.sdk.monitor.ActivityDebugMonitorHTTP" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.jd.mobiledd.sdk.monitor.ActivityDebugMonitorHTTPDetail" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.ActivityPictureGallery" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.ActivityImageSelect" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.ActivityCameraReview" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.ActivityImagePreview" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jd.mobiledd.sdk.foreground.activity.JDWaiterInfoActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.jd.deliverystaff.activity.MainActivity" />
+        <activity android:name="com.jd.deliverystaff.activity.GiftHistoryActivity" />
+        <activity android:name="com.jd.deliverystaff.activity.ServiceVoteActivity" />
+        <activity android:name="com.jingdong.common.ranking.RankingListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jingdong.common.hybrid.api.HybridActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:hardwareAccelerated="true" />
+        <activity android:label="RecyclerViewTestActivity" android:name="android.support.v7.widget.TestActivity" />
+        <service android:name="com.jingdong.jdma.service.JDMAService" android:enabled="true" android:exported="true" android:process=":maprocess" />
+        <meta-data android:name="droidlib_dependency_provider" android:value="com.jd.lottery.lib.engine.jdlop.legacy.DependencyProvider" />
+        <meta-data android:name="droidlib_log_level" android:value="warn" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:label="@string/jd_lottery" android:name="com.jd.lottery.lib.ui.lotteryhall.mainwrapper.MainActivity" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.lotteryhall.shuzicai.LotteryActivity" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.lotteryhall.shuzicainew.LotteryActivity2" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.lotteryhall.jingcaizuqiu.ZucaiActivity" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.lotteryhall.jingcaizuqiu.hunheguoguan.ShengPingFuTouZhuActivity" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.lotteryhall.jingcaizuqiu.sjbcaiguanjun.ShiJieBeiTouZhuActivity" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.lotteryhall.shuzicai.ConfirmListActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.lotteryhall.bet.EditPersonalInfoActivity" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.lotteryhall.bet.PayCompleteActivity" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.awardannounce.BoardActivity" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.awardannounce.WinningNumbersListActivity" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.awardannounce.WinningNumbersFootballActivity" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.mylottery.orderlist.MyOrdersActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.mylottery.orderdetail.OrderDetailsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.mylottery.orderdetail.AppendDetailsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.ui.lotteryhall.bet.ConfirmOrderActivity" />
+        <activity android:name="com.jd.lib.story.test.StartLogin" />
+        <activity android:name="com.jd.lib.story.MyStoryActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.jd.lib.story.StoryEditActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.jd.lib.story.MyJdInfoEditActivity" />
+    </application>
+</manifest>

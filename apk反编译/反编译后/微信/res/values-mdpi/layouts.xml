@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="ru">r/o/ru.xml</item>
+    <item type="layout" name="xe">r/o/xe.xml</item>
+    <item type="layout" name="aax">r/o/aax.xml</item>
+    <item type="layout" name="aay">r/o/aay.xml</item>
+</resources>

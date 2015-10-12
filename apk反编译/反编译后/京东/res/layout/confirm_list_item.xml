@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/lottery_confirm_list_bg" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/title_line" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" style="@style/line_horizontal_style_4_0" />
+    <TextView android:textSize="@dimen/text_size_persional_info" android:textColor="@color/text_red_betnumber" android:id="@id/lottery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="16.0dip" android:layout_toLeftOf="@id/delete" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="@dimen/text_size_persional_info" android:textColor="#ff848689" android:id="@id/type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="18.0dip" android:singleLine="true" android:layout_below="@id/lottery" android:layout_alignLeft="@id/lottery" />
+    <TextView android:textSize="@dimen/text_size_persional_info" android:textColor="#ff686868" android:id="@id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:singleLine="true" android:layout_alignTop="@id/type" android:layout_alignParentRight="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/delete" android:paddingLeft="8.0dip" android:paddingTop="16.0dip" android:paddingRight="18.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lottery_btn_selector_delete_item" android:scaleType="centerInside" android:layout_above="@id/money" android:layout_alignParentRight="true" />
+</RelativeLayout>

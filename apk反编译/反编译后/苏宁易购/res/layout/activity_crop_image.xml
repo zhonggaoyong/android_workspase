@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/civ_crop_image" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.suning.mobile.ebuy.camera.CropImageView" />
+    <RelativeLayout android:background="#cc24292c" android:paddingLeft="@dimen/android_public_space_20px" android:paddingTop="@dimen/android_public_space_20px" android:paddingRight="@dimen/android_public_space_20px" android:paddingBottom="@dimen/android_public_space_20px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:id="@id/btn_crop_image_discard" android:background="@drawable/btn_act_cropimage_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/btn_crop_image_save" android:background="@drawable/btn_act_cropimage_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

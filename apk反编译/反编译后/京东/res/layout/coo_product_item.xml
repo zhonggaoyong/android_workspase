@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/coo_product_item_image" android:layout_width="91.0dip" android:layout_height="91.0dip" android:layout_marginTop="10.0dip" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff252525" android:ellipsize="end" android:gravity="top" android:id="@id/coo_product_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:maxLines="2" android:layout_toRightOf="@id/coo_product_item_image" android:layout_alignParentTop="true" android:lineSpacingMultiplier="1.2" />
+    <TextView android:textSize="11.0sp" android:textColor="#ff686868" android:gravity="center" android:id="@id/coo_product_item_info" android:background="@drawable/coo_evaluate_product_info_background" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="18.0dip" android:singleLine="true" android:layout_below="@id/coo_product_item_title" android:layout_alignLeft="@id/coo_product_item_title" />
+    <LinearLayout android:gravity="bottom|right|center" android:id="@id/ll_coo_product_item_comment_btn" android:layout_width="100.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:layout_alignBottom="@id/coo_product_item_image" android:layout_alignParentRight="true">
+        <TextView android:ellipsize="end" android:id="@id/coo_product_item_comment_btn" android:paddingLeft="8.0dip" android:text="@string/coo_evaluate_Evaluate" android:singleLine="true" android:drawableLeft="@drawable/coo_evaluate_commented" style="@style/coo_btn_style" />
+    </LinearLayout>
+    <View android:id="@id/coo_product_item_devideline" android:layout_marginTop="10.0dip" android:layout_below="@id/coo_product_item_image" style="@style/coo_line" />
+</RelativeLayout>

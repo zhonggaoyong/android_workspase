@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jdtravel="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.jdtravel.ui.TravelTitle android:id="@id/city_title" android:layout_width="fill_parent" android:layout_height="wrap_content" jdtravel:fdrawableLeft="@drawable/common_title_back_selector" jdtravel:ftextTitle="@string/select_city" />
+    <com.jingdong.common.jdtravel.citylist.MyEditText android:textSize="16.0dip" android:gravity="left|center" android:id="@id/edt_search_input" android:background="@drawable/flight_search_input_bar" android:paddingLeft="35.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/add_boarder_margin_left" android:layout_marginTop="4.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="4.0dip" android:hint="@string/search_city_hint" android:cursorVisible="true" android:singleLine="true" android:imeOptions="actionSearch" />
+    <View style="@style/travel_view_splite_h" />
+    <include layout="@layout/flight_city_tab" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/llParent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.jingdong.common.jdtravel.citylist.SectionIndexerListView android:id="@id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" />
+        <TextView android:textSize="50.0sp" android:textColor="#99ffffff" android:gravity="center" android:id="@id/tvLetter" android:background="#bb000000" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dip" android:minWidth="70.0dip" android:layout_centerInParent="true" />
+        <com.jingdong.common.jdtravel.citylist.MyLetterView android:id="@id/myView" android:scrollbars="none" android:layout_width="15.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_get_city_fail" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_get_city_fail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:src="@drawable/y_04" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0dip" android:textColor="#ffbfbfbf" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="网络请求失败" android:layout_below="@id/iv_get_city_fail" />
+    </RelativeLayout>
+</LinearLayout>

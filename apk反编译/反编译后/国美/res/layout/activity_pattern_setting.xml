@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pattern_setting_home" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mytest="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <RelativeLayout android:background="@drawable/more_item_color_bg_selector" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="12.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="手势密码" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/slipbutton_pattern" android:background="@drawable/flight_on_off_btn" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="14.0dip" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/line" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/modify_pattern" android:layout_width="fill_parent" android:layout_height="60.0dip" mytest:titleText="修改手势密码" mytest:line="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0sp" android:layout_marginTop="14.0dip" android:text="进入美盈宝时使用，保护你的账户安全" />
+</LinearLayout>

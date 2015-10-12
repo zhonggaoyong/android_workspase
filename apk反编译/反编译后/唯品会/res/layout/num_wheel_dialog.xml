@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/bg_menu" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wheel_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <Button android:textColor="@color/white" android:id="@id/btn_cancel" android:background="@drawable/item_single" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_margin="6.0dip" android:text="取消" android:layout_alignParentLeft="true" />
+        <Button android:textColor="@color/white" android:id="@id/num_ok_btn" android:background="@drawable/item_single" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_margin="6.0dip" android:layout_marginBottom="0.0dip" android:text="确定" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.achievo.vipshop.view.wheelview.wheel.MyWheelView android:layout_gravity="bottom" android:id="@id/num_wheel" android:background="@drawable/wheel_panel_bg" android:layout_width="fill_parent" android:layout_height="160.0dip" />
+</LinearLayout>

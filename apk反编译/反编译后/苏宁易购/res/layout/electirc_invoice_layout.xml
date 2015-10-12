@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_18px" android:layout_marginRight="@dimen/android_public_space_13px">
+        <TextView android:textSize="@dimen/pub_textsize_sixteen" android:textColor="@color/pub_color_twenty_one" android:id="@id/electric_invoice_topic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_myebuy_order_electric_topic" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_electric_invoice_ask" android:layout_width="@dimen/android_public_space_20px" android:layout_height="@dimen/android_public_space_20px" android:layout_marginTop="@dimen/android_public_space_18px" android:layout_marginRight="@dimen/android_public_space_11px" android:src="@drawable/electric_invoice_ask_yellow_icon" android:layout_toLeftOf="@id/electric_invoice_topic" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

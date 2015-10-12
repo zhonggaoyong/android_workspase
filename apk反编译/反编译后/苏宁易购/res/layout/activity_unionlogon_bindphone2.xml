@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/register_layout" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/util_view_header" />
+    <include layout="@layout/include_unionlogon_topimgs_views" />
+    <LinearLayout android:paddingRight="0.0dip" style="@style/ETcontainer_logon_register_pub_style">
+        <TextView android:text="验证码" style="@style/text_logon_register" />
+        <EditText android:id="@id/check_code_input" android:hint="@string/please_enter_verification_code" android:singleLine="true" android:maxLength="10" android:layout_weight="1.0" android:inputType="number" style="@style/edittext_logon_register_pub_style" />
+        <com.suning.mobile.ebuy.view.DelImgView android:layout_gravity="center_vertical" android:id="@id/img_delete_verifycode" android:paddingRight="14.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_del_img_bg" />
+        <View android:background="@color/pub_color_six" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <com.suning.mobile.ebuy.view.RegetCodeButton android:id="@id/get_phone_check_code_again" style="@style/text_get_code" />
+    </LinearLayout>
+    <LinearLayout android:paddingRight="0.0dip" android:layout_marginTop="14.0dip" style="@style/ETcontainer_logon_register_pub_style">
+        <TextView android:text="@string/register_set_password" style="@style/text_logon_register" />
+        <EditText android:id="@id/password" android:hint="@string/logon_pwd_hint" android:password="true" android:singleLine="true" android:layout_weight="1.0" style="@style/edittext_logon_register_pub_style" />
+        <com.suning.mobile.ebuy.view.DelImgView android:layout_gravity="center_vertical" android:id="@id/img_delete_password" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:src="@drawable/btn_del_img_bg" />
+        <com.suning.mobile.ebuy.view.SwitchButtonView android:layout_gravity="center_vertical" android:id="@id/ll_login_password_show" android:paddingTop="5.0dip" android:paddingRight="14.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button android:id="@id/btn_ok" android:layout_marginTop="30.0dip" android:text="@string/unionlogon_comlete" style="@style/btn_logon_register_pub_style" />
+</LinearLayout>

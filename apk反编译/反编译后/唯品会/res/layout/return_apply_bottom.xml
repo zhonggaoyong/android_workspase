@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_above="@id/bottom_layout" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bottom_total_money_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/return_total_money_text" />
+        <TextView android:textSize="@dimen/order_submit_red_big_text" android:textStyle="bold" android:textColor="#ffe4007f" android:id="@id/return_total_money_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <Button android:layout_gravity="center" android:id="@id/confirm_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/apply_submit_text" style="@style/return_big_button_style" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/button_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@drawable/btn_text_returngoods_color" android:gravity="center" android:id="@id/return_normal_button" android:background="@drawable/btn_line_violet_new_bg" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="自己寄回" android:layout_weight="1.0" />
+        <Button android:textColor="@drawable/btn_text_returngoods_pink_color" android:gravity="center" android:id="@id/return_receive_button" android:background="@drawable/btn_line_violet_bg" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="唯品会上门取件" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

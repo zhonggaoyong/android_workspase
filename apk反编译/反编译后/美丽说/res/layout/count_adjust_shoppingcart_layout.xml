@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/count_adjust_left" android:background="@drawable/count_adjust_shoppingcart_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:gravity="center" android:id="@id/count_adjust_count" android:background="@drawable/cart_btn_input" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageButton android:id="@id/count_adjust_right" android:background="@drawable/count_adjust_shoppingcart_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

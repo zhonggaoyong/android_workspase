@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/chat_item_type_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center" android:id="@id/timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/chat_text_date_style" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_chat_activity" android:layout_marginRight="@dimen/chat_item_type_margin">
+        <com.gome.ecmall.home.im.widget.ImageViewCircle android:id="@id/iv_userhead" android:layout_width="@dimen/size_avatar" android:layout_height="@dimen/size_avatar" android:layout_marginLeft="@dimen/margin_chat_activity" android:src="@drawable/mygome_default_logo" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:id="@id/tv_userid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_userhead" android:layout_alignLeft="@id/tv_chatcontent" android:layout_alignParentTop="true" style="@style/chat_text_name_style" />
+        <TextView android:autoLink="phone|web" android:id="@id/tv_chatcontent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_userhead" android:layout_below="@id/tv_userid" style="@style/chat_received_content_date_style" />
+    </RelativeLayout>
+</LinearLayout>

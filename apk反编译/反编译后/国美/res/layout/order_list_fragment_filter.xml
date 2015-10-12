@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/mygome_coupon_filter_bg" android:layout_width="130.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/order_list_filter_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="50.0dip" android:text="@string/filter" android:shadowColor="#ff5f6168" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:drawableLeft="@drawable/mygome_coupon_filter" android:drawablePadding="5.0dip" android:layout_centerHorizontal="true" />
+    <ListView android:id="@id/order_list_filter_listview" android:background="@drawable/mygome_coupon_bg_selector" android:layout_width="130.0dip" android:layout_height="fill_parent" android:layout_below="@id/order_list_filter_textview" />
+</RelativeLayout>

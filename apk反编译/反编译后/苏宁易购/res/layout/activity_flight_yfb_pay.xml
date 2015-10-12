@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@id/flight_yfb_tablelyout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_30px">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/flight_yfb_pay_balance_layout" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ios_public_textsize_30pt" android:textColor="@color/pub_color_eight" android:id="@id/flight_yfb_pay_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" android:text="@string/yfb_balance" />
+            <TextView android:textSize="@dimen/ios_public_textsize_30pt" android:textColor="@color/pub_color_seven" android:id="@id/flight_yfb_pay_balance_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/flight_yfb_pay_amount_layout" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ios_public_textsize_30pt" android:textColor="@color/pub_color_eight" android:id="@id/flight_yfb_pay_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" android:text="@string/yfb_accout_pay" />
+            <TextView android:textSize="@dimen/ios_public_textsize_30pt" android:textColor="@color/pub_color_seven" android:id="@id/flight_yfb_pay_amount_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/line" android:scaleType="fitXY" />
+        <EditText android:textSize="@dimen/ios_public_textsize_30pt" android:textColor="@color/pub_color_nine" android:id="@id/flight_yfb_password" android:background="@drawable/input_bg" android:paddingLeft="@dimen/pub_margin_or_padding_space_fifteen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:hint="@string/input_pay_password" android:password="true" android:singleLine="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/line" android:scaleType="fitXY" />
+    </TableLayout>
+    <LinearLayout android:gravity="center" android:id="@id/flight_yfb_finally_buy_linearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/flight_yfb_tablelyout02">
+        <Button android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_one" android:id="@id/flight_yfb_pay_button" android:background="@drawable/add_to_shop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" android:layout_marginRight="@dimen/ios_public_space_30px" android:text="@string/confirm_pay" />
+    </LinearLayout>
+</LinearLayout>

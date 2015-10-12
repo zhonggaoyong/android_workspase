@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bainuo.view.LinearLayoutWithMaxHeight android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tuanlist_filter_popup_list_layout" android:background="@color/tuanlist_filter_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/tuanlist_filter_popup_list_1_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <ListView android:id="@id/tuanlist_filter_popup_list_1" android:background="@color/tuanlist_filter_background" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@color/tuanlist_filter_listitem_divider" android:dividerHeight="1.0px" android:layout_alignParentTop="true" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/tuanlist_filter_popup_list_1_mask" android:background="@drawable/tuanlist_filter_mask_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/tuanlist_filter_popup_list_2_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <ListView android:id="@id/tuanlist_filter_popup_list_2" android:background="@color/tuanlist_filter_listitem_two_bg_normal" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@color/tuanlist_filter_listitem_divider" android:dividerHeight="1.0px" android:layout_alignParentTop="true" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/tuanlist_filter_popup_list_2_mask" android:background="@drawable/tuanlist_filter_mask_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/transparent_holder" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</com.baidu.bainuo.view.LinearLayoutWithMaxHeight>

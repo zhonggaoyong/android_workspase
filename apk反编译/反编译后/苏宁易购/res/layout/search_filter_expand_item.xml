@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_filter_expand_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/pub_margin_or_padding_space_forty_five">
+        <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:id="@id/search_filter_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_20px" android:text="品牌" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_twenty_one" android:ellipsize="end" android:gravity="right" android:id="@id/search_filter_expand_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="@dimen/ios_public_space_20px" android:text="已选" android:singleLine="true" android:layout_weight="1.0" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/search_filter_check_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_20px" android:src="@drawable/indicator_close" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+    <com.suning.mobile.ebuy.search.view.SearchListView android:id="@id/search_filter_list_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="220.0dip" android:divider="@null" />
+</LinearLayout>

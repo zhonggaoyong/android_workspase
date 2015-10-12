@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_110px" android:src="@drawable/red_package_bound" android:scaleType="fitXY" android:contentDescription="@string/invite_friend" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/pub_color_eight" android:id="@id/code_submit_hint_tv" android:paddingLeft="@dimen/ios_public_space_66px" android:paddingRight="@dimen/ios_public_space_66px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_44px" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_130px">
+        <Button android:textSize="17.0sp" android:textColor="@color/pub_color_one" android:id="@id/btn_grps_ticket" android:background="@drawable/bg_btn_yellow_new_vi" android:layout_width="0.0dip" android:layout_height="@dimen/ios_public_space_80px" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/invite_ticket_button" android:layout_weight="1.0" />
+        <Button android:textSize="17.0sp" android:textColor="@color/pub_color_one" android:id="@id/btn_grps_invite" android:background="@drawable/btn_cart_settlt" android:layout_width="0.0dip" android:layout_height="@dimen/ios_public_space_80px" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

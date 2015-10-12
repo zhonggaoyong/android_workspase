@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/selectedImg" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_centerInParent="true" style="@style/lib_story_imageView" />
+    <CheckBox android:id="@id/selectImgBt" android:background="@drawable/lib_story_img_select" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:button="@null" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

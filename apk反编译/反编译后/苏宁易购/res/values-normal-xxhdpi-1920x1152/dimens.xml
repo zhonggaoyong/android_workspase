@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_searchbar_margintop">147.0dip</dimen>
+    <dimen name="discover_adver_height">100.0dip</dimen>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meilishuo.app.views.KeepScaleImageView android:id="@id/iv_head" android:background="#ff4a3d44" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:minHeight="300.0dip" />
+    <View android:background="#55000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/headerbar" android:background="#00000000" android:onClick="onClick" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:textColor="@color/white" android:id="@id/search_goods_back" android:drawableLeft="@drawable/ico_return_white" android:drawablePadding="0.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:textColor="@color/white" android:id="@id/searchtitle" android:singleLine="true" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <com.meilishuo.app.views.GoShoppingcartView android:id="@id/to_shoppingcart_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:imageResouce="@drawable/toolbar_ico_shoppingcar_white" app:textBackground="@drawable/home_bg_shoppingcar_tips_trans" />
+    </RelativeLayout>
+    <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/headerbar">
+        <com.meilishuo.app.views.PhotoScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+    <com.meilishuo.app.views.CustomPageLoading android:id="@id/progressbar_pink" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/center_nogoods" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_fangdajiang_big" android:scaleType="center" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/grey_d5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/no_goods_find" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/center_refresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_reload" android:scaleType="center" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="#ff777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/text_refound_reload" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/toolbarpanel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/to_search" android:background="@drawable/to_search_icon" android:visibility="gone" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:onClick="onClick" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/to_top" android:background="@drawable/to_top_icon" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:onClick="onClick" />
+    </LinearLayout>
+</RelativeLayout>

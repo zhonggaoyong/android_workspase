@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jd.lib.story.ui.MyStoryListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/lib_story_listview" />
+    <include layout="@layout/lib_story_item_net_error" />
+    <include layout="@layout/lib_story_my_item_no_data" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/mine_pink" android:gravity="center_vertical" android:id="@id/error_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:drawableLeft="@drawable/paydone_failed_icon" android:drawablePadding="5.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/bd_wallet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:hint="@string/mine_recharge_card_exchange_title" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/mine_gray3" android:id="@id/code_input" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:hint="@string/mine_recharge_card_exchange_hint" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:id="@id/qr_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/home_saoyisao_selector" />
+    </LinearLayout>
+</LinearLayout>

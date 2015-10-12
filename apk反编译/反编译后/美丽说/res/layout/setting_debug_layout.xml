@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_test" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/red" android:gravity="center" android:id="@id/push_test_btn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:text="推送测试(初始化)" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/env_mob" android:background="#ffffffff" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:text="一键切换到线上" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/env_newlab" android:background="#ffffffff" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:text="一键切换到newlab" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/env_mobrdlab" android:background="#ffffffff" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:text="一键切换到mob.rdlab" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/standard_env" android:background="#ffffffff" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/mob_setting" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/doota_setting" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/account_setting" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/layout_huaserver" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/layout_pushserver" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/im_setting" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/wap_setting" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/fastpay_setting" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/mls__force__split" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/mls__openmall_setting" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:onClick="onClick" />
+    <View style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/mls_version" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:text="渠道号、版本号" android:onClick="onClick" />
+</LinearLayout>

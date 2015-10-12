@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/app_network_model_layout" android:background="#ee595959" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/app_network_model_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:src="@drawable/app_network_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/app_network_model_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:src="@drawable/app_network_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/white" android:id="@id/app_network_model_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/off_network" android:layout_toLeftOf="@id/app_network_model_arrow" android:layout_toRightOf="@id/app_network_model_icon" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</AbsoluteLayout>

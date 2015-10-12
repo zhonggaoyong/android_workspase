@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/lySubBingItem" android:background="@drawable/bing_input_submenu_bg_selector" android:layout_width="fill_parent" android:layout_height="39.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="#ff686868" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tvSubMenu" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:lines="1" />z
+<TextView android:layout_gravity="bottom|center" android:id="@id/div" android:background="#ffbfbfbf" android:layout_width="80.0dip" android:layout_height="1.0px" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" />
+</FrameLayout>

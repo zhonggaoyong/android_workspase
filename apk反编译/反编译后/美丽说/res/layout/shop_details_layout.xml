@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <RelativeLayout android:id="@id/header_layout" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_button" android:clickable="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="20.0sp" android:textColor="#ff666666" android:id="@id/title" android:text="店铺详情" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <com.meilishuo.app.views.GoShoppingcartView android:id="@id/to_shoppingcart_btn" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <com.meilishuo.app.views.RoundImageView android:id="@id/shop_logo_view" android:layout_width="@dimen/shop_header_icon_size" android:layout_height="@dimen/shop_header_icon_size" android:layout_marginLeft="20.0dip" android:src="@drawable/icon_default_shop" android:scaleType="fitXY" app:hasBorder="true" app:borderSize="1.0dip" app:borderColor="@color/grey_l14" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="20.0sp" android:textColor="#ff666666" android:id="@id/shop_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:maxWidth="200.0dip" android:singleLine="true" android:layout_toRightOf="@id/shop_logo_view" />
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/shop_logo_view" android:layout_below="@id/shop_nick_name">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/pay_attention_what" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="人已关注" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="22.0sp" android:textColor="#ff707070" android:layout_gravity="center_horizontal" android:id="@id/sale_num_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/shop_info_text_style" />
+                    <com.meilishuo.app.views.CustomTextView android:textColor="#ff707070" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/shop_sale_num_label" style="@style/shop_info_label_text_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="22.0sp" android:textColor="#ff707070" android:layout_gravity="center_horizontal" android:id="@id/item_num_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/shop_info_text_style" />
+                    <com.meilishuo.app.views.CustomTextView android:textColor="#ff707070" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/shop_product_num_label" style="@style/shop_info_label_text_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="22.0sp" android:textColor="#ff707070" android:layout_gravity="center_horizontal" android:id="@id/new_num_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/shop_info_text_style" />
+                    <com.meilishuo.app.views.CustomTextView android:textColor="#ff707070" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/shop_promote_num_label" style="@style/shop_info_label_text_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="25.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/points" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="25.0dip" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shop_info_margin_size_rl" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/shop_info_margin_size_rl">
+                <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_address_label" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/shop_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shop_info_margin_size_rl" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shop_info_margin_size_rl" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/shop_info_margin_size_rl">
+                <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_service_phone_num_label" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/shop_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shop_info_margin_size_rl" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/shop_info_margin_size_rl" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/shop_info_margin_size_rl">
+                <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopkeeper_recommend_label" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/shop_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shop_info_margin_size_rl" android:maxLines="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

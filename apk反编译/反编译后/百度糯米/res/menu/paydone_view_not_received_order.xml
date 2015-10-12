@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bdmenu="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/paydone_view_not_received_order" android:title="@string/paydone_query_btn" android:titleCondensed="@string/paydone_query_btn" bdmenu:showAsAction="always" />
+</menu>

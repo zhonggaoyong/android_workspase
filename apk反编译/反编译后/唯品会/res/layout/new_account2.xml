@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/account_header" layout="@layout/vipnew_header" />
+        <ScrollView android:id="@id/main_panel" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/noticeView" android:background="@color/app_message_red_bg" android:layout_width="fill_parent" android:layout_height="32.0dip">
+                    <ImageView android:gravity="center_vertical" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_notice_normal" />
+                    <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/notice" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="唯品会使用习惯调研" android:singleLine="true" android:shadowColor="@color/shadow_color" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+                    <ImageView android:id="@id/close_notice" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/account_icon_close_normal" />
+                </LinearLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@id/account_layout" android:background="@drawable/new_personal_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                    <ImageView android:id="@id/color_egg" android:layout_width="100.0dip" android:layout_height="60.0dip" android:layout_centerHorizontal="true" />
+                    <include android:id="@id/account_user_info" layout="@layout/account_user_info_layout" />
+                    <include android:id="@id/account_order" layout="@layout/account_order_layout" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/account_row_space_height">
+                    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                    <LinearLayout android:orientation="vertical" android:id="@id/account_menu_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include android:id="@id/loadFailView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/new_load_fail" />
+    </LinearLayout>
+</RelativeLayout>

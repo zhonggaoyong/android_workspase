@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mine_gray4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/mine_gray5" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" android:text="@string/mine_remain_money_add_value_card_exchange" />
+    <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:background="@color/mine_white" android:layout_width="fill_parent" android:layout_height="43.0dip">
+        <ImageView android:id="@id/code_input_clear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:src="@drawable/remain_money_add_value_clear" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/mine_gray5" android:id="@id/remain_money_code_input" android:background="@null" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/mine_recharge_card_exchange_hint" android:singleLine="true" android:layout_toLeftOf="@id/code_input_clear" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/remain_money_saoyisao_exchange" android:background="@drawable/bg_white_button_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/home_saoyisao_selector" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/mine_pink1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_remain_money_add_value_card_exchange_by_icon" />
+        </LinearLayout>
+        <View android:layout_width="12.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/mine_white" android:gravity="center" android:id="@id/remain_exchange_card" android:background="@drawable/selector_red_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/mine_exchange_card" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/mine_pink1" android:id="@id/remain_money_direct" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/mine_remain_money_add_value_direct" />
+</LinearLayout>

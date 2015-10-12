@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/xlistview_header_content" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/xlistview_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/pulltofresh_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_5px" android:src="@drawable/pulltofresh" />
+            <LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上次刷新时间：" />
+                <TextView android:textSize="14.0sp" android:id="@id/xlistview_header_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上次更新于%1$s前" />
+            </LinearLayout>
+            <FrameLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/ig1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lion_head" android:scaleType="matrix" />
+                <ImageView android:layout_gravity="center" android:id="@id/ig2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lion_open" />
+            </FrameLayout>
+            <TextView android:textSize="12.0sp" android:id="@id/xlistview_header_hint_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下拉刷新" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/android_public_space_10px" android:paddingBottom="@dimen/android_public_space_14px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/xlistview_header_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/goicon" />
+                <ProgressBar android:id="@id/xlistview_header_progressbar" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

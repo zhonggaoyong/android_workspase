@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/guangguang_contentview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.common.ui.LoadingView android:id="@id/guanguang_ldv" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView android:id="@id/guang_pull_refresh_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.jingdong.common.ui.JDListView android:layout_gravity="center_vertical" android:id="@id/guangguang_listview" android:background="@android:color/white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:drawSelectorOnTop="false" android:divider="@android:color/transparent" android:dividerHeight="12.0dip" />
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </com.jingdong.common.ui.LoadingView>
+</RelativeLayout>

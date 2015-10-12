@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/shoping_cart_user_no_login_tips" android:background="@color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pricetext="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/shoping_cart_top_menu" android:background="@color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:id="@id/shopping_cart_show_view" android:background="@color/cart_bottom_show_view_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:baselineAligned="false" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <TextView android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/cart_count_price_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/cart_bottom_all_select_color" android:ellipsize="none" android:id="@id/cart_original_return_price_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/cart_count_price_tv" android:layout_alignLeft="@id/cart_count_price_tv" android:lineSpacingMultiplier="1.1" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.5">
+                <TextView android:textSize="@dimen/cart_settle_accounts_but_textsize" android:textColor="@color/white" android:gravity="center" android:id="@id/cart_settle_accounts_but" android:background="@drawable/pd_add2car_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/settle_accounts" android:singleLine="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/shopping_cart_edit_view" android:background="@color/shopping_cart_bottom_total_price_bg" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@id/cart_select_all_layout_edit" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_alignParentLeft="true">
+                <CheckBox android:id="@id/cart_select_all_button_edit" android:background="@drawable/cart_select_checkbox_selector" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginLeft="12.0dip" android:button="@null" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/shopping_cart_show_all_select_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/shopping_cart_all_select" android:layout_toRightOf="@id/cart_select_all_button_edit" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="right|center" android:id="@id/shopping_cart_edit_to_delete" android:background="@drawable/shopping_cart_gift_btn_bg" android:paddingLeft="28.0dip" android:paddingTop="7.0dip" android:paddingRight="28.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textColor="@color/cart_color_f15353" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/shopping_cart_edit_to_collect" android:background="@drawable/shopping_cart_change_product_btn_bg" android:paddingLeft="16.0dip" android:paddingTop="7.0dip" android:paddingRight="16.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:layout_toLeftOf="@id/shopping_cart_edit_to_delete" android:layout_centerVertical="true">
+                <TextView android:textColor="@color/shopping_cart_move_to_collect_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_move_to_collect" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/cart_view_gap" android:background="#ff5a5a5a" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/shoping_cart_top_menu" />
+</RelativeLayout>

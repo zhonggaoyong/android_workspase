@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/lib_phone_charge_shape" android:layout_width="304.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/lib_phone_charge_float_text" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/voice_operation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39.0dip" android:layout_marginBottom="32.0dip" android:text="语音识别中..." />
+    <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/voice_operation_status" android:layout_width="wrap_content" android:layout_height="70.0dip" android:src="@drawable/amp1" />
+    <LinearLayout android:orientation="vertical" android:id="@id/voice_operation_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:layout_marginBottom="19.0dip" style="@style/line4" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="22.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/lib_phone_charge_float_text" android:gravity="center" android:id="@id/voice_operation_giveup" android:background="@drawable/lib_phone_charge_cancel_shape" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="算了" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/lib_phone_charge_white" android:gravity="center" android:id="@id/voice_operation_again" android:background="@drawable/lib_phone_charge_confirm_shape" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:text="好的" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

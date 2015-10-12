@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/model2_marg_inTop" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+    <RelativeLayout android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/android_public_textsize_22pt" android:textColor="@color/pub_color_three" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/model2title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_20px" android:text="品牌推荐楼层" android:maxEms="8" android:singleLine="true" />
+        <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/pub_color_four" android:gravity="center" android:id="@id/model2more" android:paddingLeft="@dimen/android_public_space_20px" android:paddingRight="@dimen/android_public_space_20px" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" android:layout_alignTop="@id/model2title" android:layout_alignBottom="@id/model2title" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+    <com.suning.mobile.ebuy.home.homefloor.ui.FloorViewPager android:id="@id/viewpager" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/home_header_view_layout" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/home_offsetIndicatorLayout" android:layout_width="wrap_content" android:layout_height="@dimen/android_public_space_24px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/groupPoint" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+</LinearLayout>

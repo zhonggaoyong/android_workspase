@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/searchresult_searchbar" android:background="@drawable/searchbar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/home_searchbar_height" android:layout_marginLeft="@dimen/home_searchbar_margin" android:layout_marginRight="@dimen/home_searchbar_margin" android:layout_centerVertical="true">
+        <TextView android:gravity="left|center" android:id="@id/searchresult_searchbar_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="28.0dip" android:text="@string/default_text" android:singleLine="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/searchresult_searchbar_voice" android:paddingLeft="@dimen/home_searchbar_voice_padding_left" android:paddingRight="@dimen/home_searchbar_margin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/home_searchbar_voice_icon_width" android:layout_height="@dimen/home_searchbar_voice_icon_height" android:layout_margin="@dimen/home_searchbar_voice_icon_margin" android:src="@drawable/searchbar_voice_selector" />
+    </LinearLayout>
+</RelativeLayout>

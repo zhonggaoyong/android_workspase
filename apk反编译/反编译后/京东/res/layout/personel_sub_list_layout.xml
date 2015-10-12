@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/personel_sub_entry_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/personel_sub_header_devider" android:visibility="gone" style="@style/line2" />
+    <ListView android:id="@id/personel_sub_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/gray" android:dividerHeight="1.0px" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+    <View android:id="@id/personel_sub_footer_devider" style="@style/line2" />
+</LinearLayout>

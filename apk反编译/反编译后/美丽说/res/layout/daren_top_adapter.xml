@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_tag_type" android:background="@drawable/dress_daren_tab_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" />
+    <RelativeLayout android:id="@id/user_view" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_tag_type">
+        <ImageView android:id="@id/avatar" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_centerVertical="true" />
+        <View android:id="@id/line" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="@style/borderline2" />
+        <FrameLayout android:layout_width="48.0dip" android:layout_height="wrap_content" android:layout_alignLeft="@id/avatar" android:layout_alignBottom="@id/avatar">
+            <com.meilishuo.app.views.CustomTextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/daren_id" android:background="@drawable/dress_daren_id_bg" android:layout_width="wrap_content" android:layout_height="14.0dip" />
+        </FrameLayout>
+        <ImageView android:id="@id/times" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.meilishuo.app.views.MyAttentionTextView android:id="@id/btn_attention" android:layout_marginTop="-2.0dip" android:layout_marginRight="16.0dip" android:layout_alignTop="@id/avatar" android:layout_alignParentRight="true" style="@style/BtnAttentionStyle" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey" android:gravity="right" android:id="@id/fans_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/btn_attention" android:layout_alignParentRight="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d2" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/attention" android:layout_toRightOf="@id/avatar" android:layout_alignTop="@id/avatar" />
+        <ImageView android:id="@id/iv_daren" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_toRightOf="@id/nickname" android:layout_alignTop="@id/avatar" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/btn_attention" android:layout_below="@id/nickname" android:layout_alignLeft="@id/nickname" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/img_parent" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/user_view" />
+    <ImageView android:id="@id/banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:scaleType="centerCrop" />
+</RelativeLayout>

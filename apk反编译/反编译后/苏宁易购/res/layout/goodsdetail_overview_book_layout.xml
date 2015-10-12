@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:gravity="center_vertical" android:id="@id/tv_goodsdetail_book_overview_title" android:background="@drawable/goodsdetail_books_bg_top" android:paddingLeft="@dimen/android_public_space_21px" android:paddingTop="@dimen/android_public_space_5px" android:paddingBottom="@dimen/android_public_space_5px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_19px" android:text="" />
+    <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_eighteen" android:id="@id/tv_goodsdetail_book_overview_context" android:background="@drawable/goodsdetail_books_bg_bottom" android:padding="@dimen/android_public_space_21px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+</LinearLayout>

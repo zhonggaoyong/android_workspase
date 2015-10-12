@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/xlistview_header_content" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/story_speed" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pull_to_refresh_speed_left_margin" android:src="@drawable/app_refresh_speed" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/story_people" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pull_to_refresh_people_left_margin" android:src="@drawable/app_refresh_people_0" android:layout_toRightOf="@id/story_speed" android:layout_alignTop="@id/story_speed" android:layout_alignBottom="@id/story_speed" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/story_goods" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pull_to_refresh_goods_left_margin" android:src="@drawable/app_refresh_goods_0" android:layout_toRightOf="@id/story_people" android:layout_alignTop="@id/story_people" android:layout_alignBottom="@id/story_people" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/xlistview_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_alignTop="@id/story_goods" android:layout_alignBottom="@id/story_goods" android:layout_centerHorizontal="true">
+            <TextView android:textAppearance="@android:style/TextAppearance.Small" android:textSize="15.0sp" android:textColor="#ff878787" android:id="@id/xlistview_header_hint_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pull_to_refresh_header_title_text" />
+            <TextView android:textAppearance="@android:style/TextAppearance.Small" android:textSize="12.0sp" android:textColor="#ff9e9e9e" android:id="@id/xlistview_header_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

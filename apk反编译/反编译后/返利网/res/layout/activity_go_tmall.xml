@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/nine_dot_nine_popup_background" android:layout_width="fill_parent" android:layout_height="350.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <ImageView android:id="@id/iv_nine_dot_nine_brand_pic" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginTop="15.0dip" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_nine_dot_nine_brand_pic">
+            <RelativeLayout android:id="@id/rl_nine_dot_nine_hint" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_weight="15.0">
+                <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tv_pay_in_tmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tv_fanli_pay_you" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/tv_pay_in_tmall" android:layout_alignParentRight="true" />
+                <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tv_only_need" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/tv_fanli_pay_you" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_nine_dot_nine_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="12.0dip" android:layout_weight="10.0">
+                <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tv_money_paid_in_tmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+                <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tv_money_paid_by_fanli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/tv_money_paid_in_tmall" android:layout_alignParentLeft="true" />
+                <com.fanli.android.view.TangFontTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/nine_dot_nine_brand_product_price_color" android:id="@id/tv_money_paid_at_last" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/tv_money_paid_by_fanli" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/nine_dot_nine_split" android:background="@color/nine_dot_nine_split" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_nine_dot_nine_go_tmall" android:padding="10.0dip" android:layout_width="160.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_four" android:id="@id/hotel_location_commerce" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/hotel_location_business_circles" android:layout_weight="1.0" />
+            <View android:id="@id/hotel_view_line_1" android:background="@color/pub_color_four" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <View android:background="@color/pub_color_six" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_nine" android:id="@id/hotel_location_government" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/hotel_location_administrative_district" android:layout_weight="1.0" />
+            <View android:id="@id/hotel_view_line_2" android:background="@color/pub_color_four" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/hotel_location_scrollview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <ListView android:orientation="vertical" android:id="@id/hotel_location_listview" android:background="@drawable/input_bg" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#ff898989" android:dividerHeight="0.5dip" />
+    </LinearLayout>
+</LinearLayout>

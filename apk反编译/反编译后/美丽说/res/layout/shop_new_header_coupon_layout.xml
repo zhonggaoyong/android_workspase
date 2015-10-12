@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meilishuo.app.shop.view.HeaderCouponView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/gray_line" android:background="@color/grey_l3" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="5.0dip" />
+    <com.meilishuo.app.views.ShopCouponLay android:orientation="horizontal" android:id="@id/coupon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" />
+    <include layout="@layout/shop_banner_layout" />
+</com.meilishuo.app.shop.view.HeaderCouponView>

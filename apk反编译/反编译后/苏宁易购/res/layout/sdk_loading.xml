@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/sdk_colorBlack" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.5" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/sdk_dialog_view">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/sdk_load_progressbar" style="@style/sdk_load_progress_style" />
+        <TextView android:id="@id/loading_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sdk_loading" />
+    </LinearLayout>
+</FrameLayout>

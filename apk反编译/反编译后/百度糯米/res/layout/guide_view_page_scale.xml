@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/guide_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/guide_img_1" android:scaleType="fitXY" />
+    <View android:id="@id/guide_skip" android:background="@drawable/guide_skip_selector" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_margin="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <View android:layout_gravity="center_horizontal" android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="180.0" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/guide_front" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/guide_font_1" android:layout_weight="1400.0" />
+        <View android:layout_gravity="center_horizontal" android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="22.0" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/guide_enter" android:layout_width="98.0dip" android:layout_height="28.0dip" android:src="@drawable/guide_enter_selector" />
+        <View android:layout_gravity="center_horizontal" android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="90.0" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/_anchor" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/guide_indicator1" android:layout_width="9.0dip" android:layout_height="9.0dip" android:src="@drawable/guide_point" android:scaleType="fitXY" />
+            <ImageView android:id="@id/guide_indicator2" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/guide_point" android:scaleType="fitXY" />
+        </LinearLayout>
+        <View android:layout_gravity="center_horizontal" android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="120.0" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c_F8F8F8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/combine_order_title" android:background="@drawable/common_title_background" android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/title_back" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/common_title_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:gravity="center" android:id="@id/combine_order_title_text" android:layout_width="wrap_content" android:text="@string/combine_order_header" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/common_layout_title" />
+        </RelativeLayout>
+        <ListView android:id="@id/combine_order_list_view" android:background="@color/c_F8F8F8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@drawable/none" android:layout_below="@id/combine_order_title" />
+        <RelativeLayout android:id="@id/search_space_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="49.0dip" android:layout_below="@id/combine_order_title">
+            <RelativeLayout android:id="@id/combine_order_search_space_layout" android:background="@drawable/combine_order_price_space_background" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.jingdong.common.ui.HorizontalListView android:id="@id/combine_order_search_space_container" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/combine_order_floor" android:background="@color/footer_view_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/white" android:id="@id/combine_order_floor_text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/combine_order_floor1" />
+                <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/white" android:id="@id/combine_order_floor_text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/combine_order_floor2" />
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="right" android:id="@id/shopping_cart_reback" android:background="#fff15353" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.1">
+                <TextView android:textSize="@dimen/text_size_18sp" android:textColor="@color/white" android:id="@id/shopping_cart_reback_but" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_cart_reback" android:singleLine="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/network_tip_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/combine_order_title">
+            <include android:id="@id/network_tip" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/jd_common_state_page_02" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/nodata_tip_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_space_layout">
+            <include android:id="@id/nodata_tip" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/jd_common_state_page_03" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

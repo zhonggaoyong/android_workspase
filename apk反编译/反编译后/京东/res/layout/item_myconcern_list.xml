@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/myconcern_listitem_bg" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="26.0dip">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff252525" android:gravity="bottom" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="08:00" android:layout_centerVertical="true" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="场" android:layout_toRightOf="@id/tv_time" android:layout_alignBottom="@id/tv_time" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_remain_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="#ffd7d7d7" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_products" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="@drawable/myconcern_listitem_red_dot" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" />
+</RelativeLayout>

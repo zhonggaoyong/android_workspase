@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/my_personal_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:panel="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <com.jingdong.common.ui.JDListView android:id="@id/personel_select_list" android:background="@color/personal_view_normal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@drawable/personal_info_divider" android:dividerHeight="1.0px" android:layout_below="@id/common_title" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+    <View android:id="@id/personel_footer_devider" android:layout_below="@id/personel_select_list" style="@style/line6" />
+</RelativeLayout>

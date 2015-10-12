@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="152.0dip">
+        <android.support.v4.view.ViewPager android:id="@id/vp_home_viewpager" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="vertical" android:background="#ffc4c4c4" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/vp_home_viewpager">
+            <com.gome.ecmall.custom.PageIndicator android:gravity="center" android:id="@id/pi_home_page_indictor" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_home_first_head" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <include android:visibility="visible" layout="@layout/home_quickentry_two" />
+    <include android:visibility="visible" layout="@layout/home_discount" />
+    <include android:visibility="gone" layout="@layout/home_mobile_own" />
+    <include layout="@layout/home_big_down" />
+    <include layout="@layout/home_floor" />
+    <include layout="@layout/home_appliance" />
+    <include layout="@layout/home_preference_choiceness" />
+    <include layout="@layout/home_shop_prom" />
+    <include android:id="@id/ll_home_gome_communication_main" layout="@layout/home_gome_communication" />
+    <include layout="@layout/home_find_gome" />
+    <include android:id="@id/ll_home_communication_prom" layout="@layout/home_gome_communication_prom" />
+    <include layout="@layout/home_bottom" />
+</LinearLayout>

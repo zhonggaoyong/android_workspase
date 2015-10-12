@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/water_layout" android:background="@color/white" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_line" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <RelativeLayout android:id="@id/title_layout" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/text_left" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/text_right" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="4.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.meilishuo.app.views.KeepScaleImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/info" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/img" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.2" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/price_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_below="@id/info">
+                <TextView android:id="@id/price" style="@style/PhotoWallPriceTextStyle" />
+                <ImageView android:id="@id/iv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/goods_ico_like" />
+                <TextView android:id="@id/like" style="@style/PhotoWallLiKeTextStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="2.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.meilishuo.app.views.KeepScaleImageView android:id="@id/img2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/info2" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/img2" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.2" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/price_lay2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_below="@id/info2">
+                <TextView android:id="@id/price2" style="@style/PhotoWallPriceTextStyle" />
+                <ImageView android:id="@id/iv_like2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/goods_ico_like" />
+                <TextView android:id="@id/like2" style="@style/PhotoWallLiKeTextStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ffff6699" android:layout_gravity="center" android:id="@id/text_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="查看更多" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/good_detail_text_gray" android:gravity="center" android:id="@id/cluster_name" android:background="@drawable/tab_base_bg" android:paddingLeft="@dimen/android_public_space_16px" android:paddingRight="@dimen/android_public_space_16px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:minWidth="@dimen/android_public_space_72px" android:text="" android:singleLine="true" />
+</LinearLayout>

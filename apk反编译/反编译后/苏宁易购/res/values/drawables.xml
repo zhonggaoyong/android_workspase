@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="bg_home_imagepress">#883f3f3f</item>
+    <item type="drawable" name="bg_home_imagenormal">#00000000</item>
+    <item type="drawable" name="translucent_background">#55000000</item>
+    <item type="drawable" name="translucent_background2">#00000000</item>
+    <item type="drawable" name="pub_twelev_background">#fff2f2f2</item>
+</resources>

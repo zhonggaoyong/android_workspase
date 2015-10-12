@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="#ff3cb147" android:layout_width="fill_parent" android:layout_height="212.0dip">
+        <RelativeLayout android:id="@id/logined_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/icon_area" android:layout_width="84.0dip" android:layout_height="84.0dip" android:layout_marginTop="35.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                <com.fanli.android.view.CircleImageView android:id="@id/icon_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerHorizontal="true" android:contentDescription="@string/account_img_avatar" />
+                <com.fanli.android.view.GradeImageView android:id="@id/icon_grade" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/account_img_grade" />
+            </RelativeLayout>
+            <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/name_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/icon_area" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/money_txt_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_below="@id/name_txt">
+                <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:textColor="@android:color/white" android:id="@id/money_txt_float_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_money_txt1" />
+                <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/money_txt_float" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:textColor="@android:color/white" android:id="@id/money_txt_float_suff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_money_txt2" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/nologin_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="26.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/login_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_alignParentBottom="true">
+                <Button android:textSize="17.0sp" android:textColor="#ff3cb147" android:layout_gravity="center_horizontal" android:id="@id/btn_login" android:background="@drawable/account_login_reg_button" android:layout_width="109.0dip" android:layout_height="34.0dip" android:text="@string/account_login_txt" />
+                <Button android:textSize="17.0sp" android:textColor="#ff3cb147" android:layout_gravity="center_horizontal" android:id="@id/btn_reg" android:background="@drawable/account_login_reg_button" android:layout_width="109.0dip" android:layout_height="34.0dip" android:layout_marginLeft="32.0dip" android:text="@string/account_reg_txt" />
+            </LinearLayout>
+            <ImageView android:layout_width="139.0dip" android:layout_height="63.0dip" android:layout_marginBottom="40.0dip" android:src="@drawable/account_logo_vision" android:layout_above="@id/login_area" android:layout_centerHorizontal="true" android:contentDescription="@string/account_img_logo_vision" />
+        </RelativeLayout>
+    </FrameLayout>
+    <com.fanli.android.view.AccountGridView android:id="@id/account_grid_view" android:background="@null" android:paddingLeft="14.0dip" android:paddingTop="14.0dip" android:paddingRight="14.0dip" android:paddingBottom="14.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:horizontalSpacing="7.0dip" android:verticalSpacing="5.0dip" android:numColumns="2" />
+</LinearLayout>

@@ -1,0 +1,91 @@
+.class Lcom/meilishuo/app/club/a/n;
+.super Ljava/lang/Object;
+.source "CommunityAdapter.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field final synthetic a:Lcom/meilishuo/app/club/model/e$a;
+
+.field final synthetic b:Lcom/meilishuo/app/club/a/m;
+
+
+# direct methods
+.method constructor <init>(Lcom/meilishuo/app/club/a/m;Lcom/meilishuo/app/club/model/e$a;)V
+    .locals 0
+
+    .prologue
+    .line 120
+    iput-object p1, p0, Lcom/meilishuo/app/club/a/n;->b:Lcom/meilishuo/app/club/a/m;
+
+    iput-object p2, p0, Lcom/meilishuo/app/club/a/n;->a:Lcom/meilishuo/app/club/model/e$a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 3
+
+    .prologue
+    .line 124
+    new-instance v0, Landroid/content/Intent;
+
+    iget-object v1, p0, Lcom/meilishuo/app/club/a/n;->b:Lcom/meilishuo/app/club/a/m;
+
+    invoke-static {v1}, Lcom/meilishuo/app/club/a/m;->a(Lcom/meilishuo/app/club/a/m;)Landroid/app/Activity;
+
+    move-result-object v1
+
+    const-class v2, Lcom/meilishuo/app/club/activity/ArticleInfoActivity;
+
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 125
+    const-string v1, "article_id"
+
+    iget-object v2, p0, Lcom/meilishuo/app/club/a/n;->a:Lcom/meilishuo/app/club/model/e$a;
+
+    iget-object v2, v2, Lcom/meilishuo/app/club/model/e$a;->a:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 126
+    const-string v1, "board_name"
+
+    iget-object v2, p0, Lcom/meilishuo/app/club/a/n;->a:Lcom/meilishuo/app/club/model/e$a;
+
+    iget-object v2, v2, Lcom/meilishuo/app/club/model/e$a;->d:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 127
+    const-string v1, "r"
+
+    iget-object v2, p0, Lcom/meilishuo/app/club/a/n;->b:Lcom/meilishuo/app/club/a/m;
+
+    invoke-static {v2}, Lcom/meilishuo/app/club/a/m;->b(Lcom/meilishuo/app/club/a/m;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 128
+    iget-object v1, p0, Lcom/meilishuo/app/club/a/n;->b:Lcom/meilishuo/app/club/a/m;
+
+    invoke-static {v1}, Lcom/meilishuo/app/club/a/m;->c(Lcom/meilishuo/app/club/a/m;)Landroid/app/Activity;
+
+    move-result-object v1
+
+    const/16 v2, 0x3ee
+
+    invoke-virtual {v1, v0, v2}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+
+    .line 130
+    return-void
+.end method

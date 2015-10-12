@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lly_context" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_order_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <ListView android:id="@id/lv_tab" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <GridView android:id="@id/gv_hotkey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:transcriptMode="disabled" android:horizontalSpacing="1.5dip" android:verticalSpacing="1.5dip" android:stretchMode="columnWidth" android:numColumns="3" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="7.0">
+            <Button android:textSize="12.0sp" android:textColor="#ff949494" android:id="@id/bt_goto_taobao" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/taobao_label" android:drawableTop="@drawable/selector_tb_fanli" android:layout_weight="1.0" />
+            <Button android:textSize="12.0sp" android:textColor="#ff949494" android:id="@id/bt_goto_gwc" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/taobao_shop_cart_title" android:drawableTop="@drawable/selector_tb_gwc" android:layout_weight="1.0" />
+            <Button android:textSize="12.0sp" android:textColor="#ff949494" android:id="@id/bt_goto_scj" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/taobao_shop_fav_title" android:drawableTop="@drawable/selector_tb_scj" android:layout_weight="1.0" />
+            <Button android:textSize="12.0sp" android:textColor="#ff949494" android:id="@id/bt_goto_mldq" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/taobao_shop_catalog" android:drawableTop="@drawable/selector_tb_mldq" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/LoadingBar" android:background="@color/bg_color_white" layout="@layout/progress_bar_line" />
+</LinearLayout>

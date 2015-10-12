@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f5f7" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/single_choice_title" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/cart_change_promotion" />
+    <View android:background="#ffabacad" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/single_choice_radio" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

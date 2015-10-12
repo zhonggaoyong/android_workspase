@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TableLayout android:orientation="vertical" android:padding="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+                <TableRow android:gravity="center_vertical" android:background="@drawable/list_bg_middle_default">
+                    <com.fanli.android.view.TangFontTextView android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提现账户" android:singleLine="true" />
+                    <com.fanli.android.view.TangFontTextView android:gravity="left" android:id="@id/confirm_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" android:singleLine="true" />
+                </TableRow>
+                <TableRow android:gravity="center_vertical" android:background="@drawable/list_bg_middle_default">
+                    <com.fanli.android.view.TangFontTextView android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提现金额" android:singleLine="true" />
+                    <com.fanli.android.view.TangFontTextView android:gravity="left" android:id="@id/confirm_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" android:singleLine="true" />
+                </TableRow>
+                <TableRow android:gravity="center_vertical" android:background="@drawable/list_bg_middle_default">
+                    <com.fanli.android.view.TangFontTextView android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手续费" android:singleLine="true" />
+                    <com.fanli.android.view.TangFontTextView android:gravity="left" android:id="@id/confirm_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" android:singleLine="true" />
+                </TableRow>
+                <TableRow android:gravity="center_vertical" android:background="@drawable/list_bg_middle_default">
+                    <com.fanli.android.view.TangFontTextView android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预计到账" android:singleLine="true" />
+                    <com.fanli.android.view.TangFontTextView android:gravity="left" android:id="@id/confirm_final" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" />
+                </TableRow>
+                <TableRow android:gravity="center_vertical" android:id="@id/tr_remark" android:background="@drawable/list_bg_middle_default" android:visibility="gone">
+                    <com.fanli.android.view.TangFontTextView android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备注" android:singleLine="true" />
+                    <com.fanli.android.view.TangFontTextView android:gravity="left" android:id="@id/confirm_remark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" />
+                </TableRow>
+            </TableLayout>
+            <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_grey_light" android:layout_gravity="center_horizontal" android:id="@id/cash_return_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/global_page_padding" android:layout_marginTop="@dimen/global_page_padding" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/passcode_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/global_page_padding" android:weightSum="2.0">
+                <EditText android:textSize="@dimen/text_size_small2" android:textColor="@color/text_color_grey_light" android:id="@id/passcode_edit" android:background="@color/text_color_white" android:padding="@dimen/global_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/login_edittext_hint_veryfy_code" android:maxLength="32" android:layout_weight="1.0" />
+                <Button android:id="@id/passcode_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/global_page_padding" android:text="@string/retrieve_pwd_phone_btn" android:layout_weight="1.0" style="@style/BtnBigBlue" />
+            </LinearLayout>
+            <Button android:id="@id/cash_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/global_page_padding" android:layout_marginTop="@dimen/global_page_padding" android:text="确认" style="@style/BtnBigOrangeP" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

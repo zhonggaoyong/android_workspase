@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanli.android.view.FlipLayout android:id="@id/flip_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingBottom="@dimen/home_dash_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.fanli.android.view.EntryBackgroundView android:id="@id/bg_view" android:background="#ff88c700" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.fanli.android.view.TangFontTextView android:textSize="31.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.5dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:singleLine="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.5dip" android:layout_below="@id/tv_title" />
+            <View android:id="@id/mark" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_toRightOf="@id/tv_title" />
+            <com.fanli.android.view.TangFontTextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_new" android:background="@drawable/icon_new_msg" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="5.0dip" android:layout_toLeftOf="@id/mark" />
+            <ImageView android:id="@id/iv_channel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitEnd" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:paddingBottom="@dimen/home_dash_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.fanli.android.view.EntryBackgroundView android:id="@id/bg_view_back" android:background="#ff88c700" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.fanli.android.view.TangFont2TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_title_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="11.0dip" android:lineSpacingExtra="2.0dip" />
+            <ImageView android:id="@id/iv_channel_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitEnd" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</com.fanli.android.view.FlipLayout>

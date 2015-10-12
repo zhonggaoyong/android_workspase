@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.common.jdtravel.calendar2.MonthView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/check_update" android:background="@color/calendar_text_month_title_bg" android:paddingTop="@dimen/calendar_month_toppadding" android:paddingBottom="@dimen/calendar_month_bottompadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CalendarTitle" />
+    </LinearLayout>
+    <com.jingdong.common.jdtravel.calendar2.CalendarGridView android:id="@id/calendar_grid" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.jingdong.common.jdtravel.calendar2.CalendarRowView android:background="@color/calendar_text_month_week_bg" android:paddingTop="@dimen/calendar_day_headers_paddingtop" android:paddingBottom="@dimen/calendar_day_headers_paddingbottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CalendarCell.DayHeader" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CalendarCell.DayHeader" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CalendarCell.DayHeader" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CalendarCell.DayHeader" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CalendarCell.DayHeader" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CalendarCell.DayHeader" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CalendarCell.DayHeader" />
+        </com.jingdong.common.jdtravel.calendar2.CalendarRowView>
+        <include layout="@layout/week" />
+        <include layout="@layout/week" />
+        <include layout="@layout/week" />
+        <include layout="@layout/week" />
+        <include layout="@layout/week" />
+        <include layout="@layout/week" />
+    </com.jingdong.common.jdtravel.calendar2.CalendarGridView>
+</com.jingdong.common.jdtravel.calendar2.MonthView>

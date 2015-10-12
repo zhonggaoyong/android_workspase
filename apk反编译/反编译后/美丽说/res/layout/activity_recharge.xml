@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mls_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:onClick="onClick" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/tv_title" android:text="@string/profile_recharge_account" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/order_bg_goodsinformation" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d2" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_recharge_money" android:singleLine="true" />
+        <com.meilishuo.app.views.DeletableEditText android:textSize="16.0sp" android:textColor="@color/grey_d4" android:textColorHint="@color/grey" android:layout_gravity="center_vertical" android:id="@id/et_recharge_money" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="@string/profile_recharge_hint" android:numeric="integer" android:digits="0123456789." android:inputType="number" />
+    </LinearLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/pink_l6" android:layout_gravity="center_vertical" android:id="@id/tv_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:text="@string/profile_recharge_tips" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_next" android:background="@drawable/btn_pink_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/next" />
+</LinearLayout>

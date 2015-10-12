@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_back" android:clickable="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:text="@string/express_text_title" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <ScrollView android:layout_gravity="top" android:id="@id/express_wrap" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+            <View android:layout_alignParentTop="true" style="@style/FirstDividerViewStyle" />
+            <com.meilishuo.app.views.ExpandedListView android:id="@id/express_list" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+            <View android:layout_alignParentBottom="true" style="@style/FirstDividerViewStyle" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

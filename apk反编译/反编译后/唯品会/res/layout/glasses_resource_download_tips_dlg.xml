@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/dialog_bg_color" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@color/app_text_new_black" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/app_name" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dialog_content_size" android:textColor="@color/app_text_new_black" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/app_name" />
+        <View android:background="@color/textarea_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TableRow android:gravity="center" android:id="@id/multi_button" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <Button android:textSize="15.0dip" android:textColor="@color/app_text_blue" android:id="@id/left_button" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/glasses_resource_dlg_left_button" android:layout_weight="1.0" />
+            <View android:background="@color/textarea_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <Button android:textSize="15.0dip" android:textColor="@color/app_text_blue" android:id="@id/right_button" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/glasses_resource_dlg_button_comfirm" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow android:gravity="center" android:id="@id/one_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <Button android:textSize="15.0dip" android:textColor="@color/app_text_blue" android:id="@id/submit_button" android:background="@drawable/button_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/glasses_resource_dlg_cancel_button" />
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>

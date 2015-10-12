@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="440.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="分享到" />
+    <View android:background="#ffc70000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <GridView android:id="@id/gv_share" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="24.0dip" android:layout_marginBottom="4.0dip" android:numColumns="2" />
+</LinearLayout>

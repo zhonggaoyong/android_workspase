@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/new_personal_tab_center_pressed" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.5sp" android:textColor="#ff000000" android:gravity="left|center" android:id="@id/browsing_history" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginRight="10.0dip" android:text="我最近浏览的商品" android:drawableRight="@drawable/icon_forward_right_selector" android:layout_below="@id/cart_list_header" />
+    <View android:id="@id/line" android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="0.33000004dip" android:layout_below="@id/browsing_history" />
+</LinearLayout>

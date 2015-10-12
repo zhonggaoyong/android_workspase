@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/title_bar_middle_text_color" android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/common_title_tv_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ddddd" android:scrollHorizontally="true" android:singleLine="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" />
+    <ImageView android:id="@id/iv_title_chat_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/chat_ic_gome_zy_offline" android:layout_centerVertical="true" />
+</LinearLayout>

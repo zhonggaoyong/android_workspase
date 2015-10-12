@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:background="@color/pub_color_fifteen" android:layout_width="6.0dip" android:layout_height="20.0dip" android:layout_marginLeft="14.0dip" />
+        <TextView android:textSize="@dimen/pub_textsize_seventeen" android:textColor="@color/pub_color_fifteen" android:gravity="center_vertical" android:id="@id/search_recommend_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/search_interested_product" />
+    </LinearLayout>
+    <com.suning.mobile.ebuy.view.HorizontalListView android:id="@id/list_recommend_goods" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" />
+</LinearLayout>

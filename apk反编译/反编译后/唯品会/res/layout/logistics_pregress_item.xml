@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <View android:id="@id/left_line" android:background="#ffe8e8e8" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/order_icon_progressbar_circle_gray" />
+        <View android:id="@id/right_line" android:background="#ffe8e8e8" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/logistics_enable_text_color" android:gravity="center" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="已签收" android:layout_weight="1.0" />
+</LinearLayout>

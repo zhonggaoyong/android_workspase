@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line1" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/rl_product" android:background="@drawable/more_item_color_bg_selector" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="86.0dip" android:layout_below="@id/line1">
+        <ImageView android:id="@id/iv_logo" android:background="@drawable/product_list_item_icon_bg" android:padding="2.0px" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="14.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/tv_product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="14.0dip" android:text="" android:maxLines="2" android:layout_toLeftOf="@id/arrow" android:layout_toRightOf="@id/iv_logo" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffcc0000" android:gravity="left|center" android:id="@id/tv_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:singleLine="true" android:layout_below="@id/tv_product_name" android:layout_alignLeft="@id/tv_product_name" />
+    </RelativeLayout>
+    <View android:id="@id/line" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/rl_product" />
+    <RelativeLayout android:id="@id/rl_order" android:background="#ffffffff" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_below="@id/line">
+        <Button android:textSize="14.0sp" android:id="@id/btn_comment" android:layout_width="82.0dip" android:layout_height="32.0dip" android:layout_marginTop="10.0dip" android:maxWidth="150.0dip" android:text="发表评价" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Gome.Button.StrokeRed.Style" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/order_number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="订单编号:" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_order_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="12345678" android:layout_toRightOf="@id/order_number_text" android:layout_alignBottom="@id/order_number_text" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/order_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="成交时间:" android:layout_below="@id/order_number_text" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_order_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="1999-11-11 17:21:33" android:layout_toRightOf="@id/order_time_text" android:layout_alignBottom="@id/order_time_text" />
+    </RelativeLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/rl_order" />
+</RelativeLayout>

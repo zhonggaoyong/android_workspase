@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/transparent" android:padding="@dimen/ios_public_space_28px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/tv_cart2_empty_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_cart2_discount_empty" android:drawableTop="@drawable/wait_shop_eva_empty" android:drawablePadding="@dimen/android_public_space_26px" />
+    <Button android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_one" android:id="@id/btn_cart2_empty" android:background="@drawable/bg_btn_yellow_new_vi" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_80px" android:layout_marginTop="@dimen/android_public_space_26px" android:text="@string/act_cart2_add_discount" />
+</LinearLayout>

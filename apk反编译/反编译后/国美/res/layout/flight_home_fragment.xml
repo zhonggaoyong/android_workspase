@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_ad" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <com.gome.ecmall.home.movie.custom.MyViewPager android:id="@id/vp_ad" android:background="@drawable/flight_ad_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ad_pager_point" android:layout_width="wrap_content" android:layout_height="6.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RadioGroup android:orientation="horizontal" android:id="@id/rg_select" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="20.0sp" android:textColor="@color/flight_home_text_selector" android:gravity="top|center" android:layout_gravity="center" android:id="@id/rb_single" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:minHeight="45.0dip" android:text="@string/flight_home_single_ticket" android:drawableBottom="@drawable/zx_code_line" android:layout_weight="1.0" />
+            <RadioButton android:textSize="20.0sp" android:textColor="@color/flight_home_text_selector" android:gravity="top|center" android:layout_gravity="center" android:id="@id/rb_round" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:minHeight="45.0dip" android:text="@string/flight_home_round_ticket" android:layout_weight="1.0" />
+        </RadioGroup>
+        <com.gome.ecmall.home.flight.custom.WrapContentHeightViewPager android:id="@id/vp_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:textSize="22.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/flight_search" android:paddingLeft="55.0dip" android:paddingTop="12.0dip" android:paddingRight="55.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="17.0dip" android:text="@string/flight_home_search" android:singleLine="true" style="@style/Gome.Button.SolidRed.Style" />
+    </LinearLayout>
+</LinearLayout>

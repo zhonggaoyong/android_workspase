@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#b0000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/my_coupon_tips_bk" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/my_coupon_tips_text" android:gravity="center_vertical" android:id="@id/popupContent" android:background="@drawable/my_coupon_tips_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="6.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="yellowStarRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">16.0dip</item>
+        <item name="android:progressDrawable">@drawable/yellow_star_rating_bar_full</item>
+        <item name="android:minHeight">16.0dip</item>
+    </style>
+</resources>

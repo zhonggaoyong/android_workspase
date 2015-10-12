@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/shopping_dialog_main" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:layout_gravity="center" android:id="@id/shopping_gift_list" android:background="@color/transparent" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@color/transparent" android:divider="@drawable/dashed_line" android:dividerHeight="1.0dip" />
+    <LinearLayout android:id="@id/shopping_gift_layout_for_two" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/shopping_gift_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_data" />
+</LinearLayout>

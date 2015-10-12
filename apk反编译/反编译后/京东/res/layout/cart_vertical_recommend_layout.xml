@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cart_v_rec_loading" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.jingdong.common.ui.JDProgressBar android:gravity="center" android:id="@id/cart_v_rec_loading_pb" style="@style/progress_loading" />
+        <TextView android:textColor="@color/c_848689" android:gravity="center_vertical" android:id="@id/cart_v_rec_loading_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="加载中..." />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/cart_recommend_bottom_layout" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cart_vertical_joy" android:layout_width="@dimen/cart_recommend_vertical_joy_height" android:layout_height="@dimen/cart_recommend_vertical_joy_height" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/cart_vertical_joy" android:layout_centerHorizontal="true" />
+        <View android:background="@color/cart_empty_horizontal_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" android:layout_toLeftOf="@id/cart_vertical_joy" android:layout_alignTop="@id/cart_vertical_joy" />
+        <View android:background="@color/cart_empty_horizontal_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" android:layout_toRightOf="@id/cart_vertical_joy" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/cart_login_empty_state" android:id="@id/cart_recommend_bottom_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/cart_vertical_joy" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

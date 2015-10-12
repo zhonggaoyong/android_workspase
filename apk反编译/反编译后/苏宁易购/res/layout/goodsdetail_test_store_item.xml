@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/goodsdetail_store_test_bg" android:paddingRight="@dimen/android_public_space_8px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_to_next" android:layout_width="@dimen/android_public_space_20px" android:layout_height="fill_parent" android:src="@drawable/public_icon_jump_page_right" android:layout_alignParentRight="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/iv_to_next">
+        <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_twenty_one" android:gravity="center_vertical" android:id="@id/store_distance_text" android:paddingRight="@dimen/android_public_space_13px" android:layout_width="wrap_content" android:layout_height="@dimen/android_public_space_56px" android:drawableLeft="@drawable/store_list_distance_logo" android:drawablePadding="2.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_fifteen" android:gravity="center_vertical" android:id="@id/store_name_text" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_56px" android:layout_marginLeft="@dimen/android_public_space_16px" android:layout_marginRight="@dimen/android_public_space_13px" android:layout_toLeftOf="@id/store_distance_text" />
+        <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_eighteen" android:gravity="center_vertical" android:id="@id/store_address_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/android_public_space_7px" android:layout_below="@id/store_name_text" android:layout_alignLeft="@id/store_name_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

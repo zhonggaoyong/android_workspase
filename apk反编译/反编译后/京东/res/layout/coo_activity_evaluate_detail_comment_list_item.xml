@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/coo_evaluate_detail_user_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/coo_view_margin" android:layout_marginRight="@dimen/coo_view_margin">
+        <com.jingdong.common.ui.JDCircleImageView android:id="@id/coo_evaluate_detail_comment_image" android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@drawable/personal_icon_default_avatar" android:layout_centerVertical="true" app:borderColor="#ffffffff" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff252525" android:ellipsize="end" android:id="@id/coo_evaluate_detail_comment_pubUserId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coo_view_margin" android:singleLine="true" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/coo_evaluate_detail_comment_image" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffbfbfbf" android:id="@id/coo_evaluate_detail_comment_pubDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#ff686868" android:id="@id/coo_evaluate_detail_comment_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="37.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="@dimen/coo_view_margin" android:layout_below="@id/coo_evaluate_detail_user_layout" android:lineSpacingMultiplier="1.2" />
+    <View android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_below="@id/coo_evaluate_detail_comment_body" />
+</RelativeLayout>

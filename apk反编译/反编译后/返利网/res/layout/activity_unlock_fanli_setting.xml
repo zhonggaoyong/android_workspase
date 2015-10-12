@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/unlock_setting_green_bg" android:layout_width="fill_parent" android:layout_height="212.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_money_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/unlock_setting_money" />
+                    <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="#88ffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/today_money_hint" />
+                </LinearLayout>
+                <TextView android:textSize="80.0sp" android:textColor="@color/white" android:id="@id/tv_today_money_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+                <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="#88ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/today_money_hint_arrive_hint" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_fanli_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="28.0dip" android:src="@drawable/fanli_detail" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="115.0dip">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_centerVertical="true">
+                    <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/unlock_setting_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/this_week_money_hint" />
+                    <TextView android:textSize="40.0sp" android:textColor="@color/unlock_setting_week_and_month_money_color" android:id="@id/tv_week_fanli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:layout_gravity="center_vertical" android:background="#ffdfdfdf" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_centerVertical="true">
+                    <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/unlock_setting_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/history_money_hint" />
+                    <TextView android:textSize="40.0sp" android:textColor="@color/unlock_setting_week_and_month_money_color" android:id="@id/tv_history_fanli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="72.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="@color/unlock_setting_title" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open_unlock_fanli" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_show_unlock_demo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/unlock_fanli_deom" />
+                </LinearLayout>
+                <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="@color/unlock_setting_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/unlock_fanli_tree_new_bee" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_unlock_sv_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="72.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_centerVertical="true">
+                <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="@color/unlock_setting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unlock_fanli_flow_save_mode" />
+                <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="@color/unlock_setting_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/unlock_fanli_flow_save_hint" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_save_flow_sv_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:id="@id/rl_unlock_fanli_feedback" android:layout_width="fill_parent" android:layout_height="72.0dip">
+            <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="@color/unlock_setting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/unlock_fanli_feedback" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

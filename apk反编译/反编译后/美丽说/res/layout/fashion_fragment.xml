@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <com.meilishuo.app.views.PhotoScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/reload_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_reload" android:scaleType="center" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="#ff777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/text_refound_reload" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/refresh_tip_layout" android:background="@drawable/fashion_update_tips_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentTop="true">
+        <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="@color/pink" android:gravity="center" android:id="@id/refresh_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/refresh_icon" android:drawablePadding="10.0dip" />
+    </LinearLayout>
+    <com.meilishuo.app.views.CustomPageLoading android:id="@id/progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.meilishuo.app.views.CustomTextView android:layout_gravity="bottom|right|center" android:id="@id/btn_to_top" android:background="@drawable/to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="onClick" />
+</RelativeLayout>

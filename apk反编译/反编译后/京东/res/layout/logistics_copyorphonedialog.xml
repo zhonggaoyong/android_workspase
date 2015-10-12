@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/copy_or_phone_linearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/logistics_red" android:gravity="center_vertical" android:id="@id/dialog_title" android:background="@drawable/logistics_dialog_up_normal" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawable="@drawable/logistics_dialog_down_normal">
+        <TextView android:textSize="18.0sp" android:textColor="@color/logistics_track_normal" android:gravity="center_vertical" android:id="@id/call_phone" android:background="@drawable/logistics_phone_selector" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/logistics_call_phone" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/logistics_track_normal" android:gravity="center_vertical" android:id="@id/copy_text" android:background="@drawable/logistics_copy_text_selector" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/logistics_copy_text" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

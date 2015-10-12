@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/left_right_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/pub_margin_or_padding_space_forty_five">
+        <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:id="@id/left_right_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_20px" android:text="" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_twenty_one" android:ellipsize="end" android:id="@id/tv_select_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/pub_margin_or_padding_space_ten" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/left_right_img" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/left_right_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_20px" android:src="@drawable/indicator_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/left_right_content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.suning.mobile.ebuy.search.view.SearchListView android:id="@id/left_listview" android:background="#fff2f2f2" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="wrap_content" android:divider="@null" android:minHeight="225.0dip" android:layout_weight="1.0" />
+        <com.suning.mobile.ebuy.search.view.SearchListView android:id="@id/right_listview" android:background="#ffeaeaea" android:layout_width="0.0dip" android:layout_height="wrap_content" android:divider="@null" android:minHeight="225.0dip" android:layout_weight="2.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/limitbuy_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="87.0dip" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_countdown" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

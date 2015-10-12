@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:onClick="onClick" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d2" android:id="@id/textview_cancel_order" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/textview_cancel_order" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/imageview_delete_order" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/goods_ico_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+    </RelativeLayout>
+    <ScrollView android:layout_gravity="center" android:id="@id/container_layout" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/order_tips_layout" android:background="@color/pink" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.meilishuo.app.views.CountdownChronometer android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/remain_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/order_detail_tips_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View style="@style/FirstDividerViewStyle" />
+                    <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/tips_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/order_tips_yellow_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/order_tips_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/tips_icon" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View android:layout_marginLeft="15.0dip" style="@style/SecondDividerViewStyle" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/layout_address" android:background="@color/white" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/address_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/personal_ico_address" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/address_icon">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                                <TextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:ellipsize="end" android:id="@id/order_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/layout_phone" android:layout_alignParentLeft="true">
+                                <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/order_confirm_textview_username" />
+                                <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:ellipsize="end" android:id="@id/order_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="15" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:gravity="top" android:id="@id/order_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:lineSpacingMultiplier="1.2" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_express" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_marginLeft="15.0dip" style="@style/FirstDividerViewStyle" />
+                    <RelativeLayout android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <ImageView android:id="@id/express_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/detail_ico_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/express_right_arrow" android:layout_alignParentRight="true">
+                            <RelativeLayout android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:id="@id/express_company" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/order_icon_express" android:drawablePadding="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/express_company" android:layout_centerVertical="true">
+                                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:ellipsize="end" android:id="@id/express_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                            <RelativeLayout android:orientation="horizontal" android:id="@id/layout_express_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <com.meilishuo.app.doota.order.view.ExpressLineView android:id="@id/express_line" android:layout_width="20.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" />
+                                <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/pink_d7" android:ellipsize="end" android:id="@id/express_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/express_line" />
+                                <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:ellipsize="end" android:id="@id/express_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/express_line" android:layout_below="@id/express_content" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:layout_marginTop="10.0dip" style="@style/FirstDividerViewStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_order_goods_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/total_append_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/total_append_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_margin_space" android:layout_marginRight="@dimen/order_margin_space" />
+                <View android:layout_marginTop="10.0dip" style="@style/SecondDividerViewStyle" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/pink" android:layout_gravity="right" android:id="@id/total_price" android:padding="@dimen/order_margin_space" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip">
+                <View style="@style/FirstDividerViewStyle" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/order_basicinfo_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/layout_guarantee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <View style="@style/SecondDividerViewStyle" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/layout_guarantee_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/layout_contact_phone" android:background="@drawable/contact_phone_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip">
+                        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_detail_textview_service_phone" android:drawableLeft="@drawable/order_detail_tel_icon" android:drawablePadding="5.0dip" />
+                            <TextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:gravity="center" android:id="@id/contact_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d5" android:id="@id/pay_success_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                </LinearLayout>
+                <View android:layout_marginTop="10.0dip" style="@style/FirstDividerViewStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/share_coupon_btn" android:background="@drawable/share_coupon_bg" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+                <ImageView android:id="@id/coupon_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_coupon_empty" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="分享优惠券礼包" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/layout_bottom" android:background="@drawable/home_bg_toolbar" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ffff6699" android:id="@id/textview_order_comment_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ffff6699" android:layout_gravity="center_vertical" android:id="@id/textview_order_totalprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <com.meilishuo.app.views.CustomTextView android:layout_gravity="center_vertical" android:id="@id/delay_deliver_btn" android:visibility="gone" android:layout_marginRight="10.0dip" android:text="@string/order_confirm_button_delay_deliver" android:onClick="onClick" style="@style/BtnRedFrameStyle" />
+            <com.meilishuo.app.views.CustomTextView android:id="@id/sure_btn" android:text="@string/order_confirm_button_submit" android:onClick="onClick" style="@style/BtnRedStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/network_error_refresh_layout" android:background="@color/grey_l1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff6c6369" android:layout_gravity="center_horizontal" android:id="@id/loading_retry_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/network_retry_title2" android:layout_centerInParent="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ffccc2c9" android:id="@id/loading_retry_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/text_refound_reload" android:layout_below="@id/loading_retry_title" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/neterror_default_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/btn_reload" android:scaleType="center" android:layout_above="@id/loading_retry_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

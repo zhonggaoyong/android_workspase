@@ -1,0 +1,349 @@
+{
+  "errno": 0,
+  "errmsg": "success",
+  "data": {
+    "banner_info": [],
+    "front_category": [
+      {
+        "k": "snd_cattag_id",
+        "n": "\u897f\u9910",
+        "v": 391
+      }
+    ],
+    "category_filter_num": [
+      {
+        "filter_id": "801",
+        "count": 216
+      }
+    ],
+    "area_filter_num": [
+      {
+        "key": "district_id",
+        "count": [
+          {
+            "filter_id": "6636",
+            "count": 213
+          }
+        ]
+      },
+      {
+        "key": "bizarea_id",
+        "count": [
+          {
+            "filter_id": "17430",
+            "count": 7
+          }
+        ]
+      },
+      {
+        "key": "subline_id",
+        "count": [
+          {
+            "filter_id": "89",
+            "count": 265
+          }
+        ]
+      },
+      {
+        "key": "substation_id",
+        "count": [
+          {
+            "filter_id": "358198",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "key": "labelid",
+        "count": [
+          {
+            "filter_id": "111_0",
+            "count": 177
+          }
+        ]
+      }
+    ],
+    "tags_filter_num": [
+      {
+        "filter_id": "111_0",
+        "count": 177
+      }
+    ],
+    "tuan_num": 0,
+    "tuan_list": [],
+    "poi_num": 10,
+    "poi_list": [
+      {
+        "poi_name": "\u6c49\u5821\u738b(\u5f20\u6c5f\u5730\u94c1\u5e97)",
+        "poi_id": "2540571",
+        "poi_distance": "3.2km",
+        "lat": 31.207295,
+        "lng": 121.591598,
+        "bizarea_title": "\u5f20\u6c5f",
+        "tuan_more": 0,
+        "tuan_list": [
+          {
+            "deal_id": "4083029",
+            "image": "http:\/\/cdn00.baidu-img.cn\/timg?nuomina&size=w360&imgtype=4&sec=1418745600&di=012fa9ad364c75440493eeb95cd4640b&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fbainuo%2Fcrop%253D0%252C0%252C720%252C436%253Bw%253D230%253Bq%253D80%2Fsign%3D25b8c1eba744ad343af0ddc7ed9220c4%2F377adab44aed2e733f4fe52a8101a18b87d6fa16.jpg",
+            "brand_name": "\u6c49\u5821\u738b",
+            "short_title": "\u8513\u8d8a\u8393\u679c\u8336\u996e2\u4efd\uff01\u8282\u5047\u65e5\u901a\u7528\uff01",
+            "sale_count": 4018,
+            "groupon_price": 1200,
+            "market_price": 2400,
+            "pay_start_time": 1436457600,
+            "pay_end_time": 1441036799,
+            "new_groupon": 0,
+            "sale_out": 0,
+            "groupon_type": 1,
+            "score": 4.4759,
+            "comment_num": 2699,
+            "bought_weekly": 1330,
+            "reason": "",
+            "bizarea": null,
+            "favour_list": {
+              "deal_id": "4083029",
+              "reductionAmount": 600,
+              "price": 600,
+              "memberShip": {
+                "member_text": "\u4f1a\u5458\u518d\u51cf1\u5143"
+              },
+              "activityList": [
+                {
+                  "favour_id": "11574",
+                  "name": "\u6c49\u5821\u738b\u4e70\u7acb\u51cf",
+                  "text": "\u7acb\u51cf6\u5143",
+                  "type": 1
+                }
+              ],
+              "price_tag_id": "11574"
+            },
+            "distance": null,
+            "user_distance_status": 0,
+            "user_distance_poi": 2540571,
+            "user_distance": 0,
+            "appoint": 0,
+            "is_flash": 0,
+            "is_t10": 0,
+            "is_card": 0,
+            "promotionTag": 0,
+            "s": "c7a89f51560d3477af8bf2ff817e4dbd",
+            "ifvirtual": 0,
+            "virtual_redirect_url": null,
+            "is_latest": 0,
+            "other_desc": "\u5df2\u552e 4018"
+          }
+        ],
+        "poi_type": 0,
+        "distance_type": 0,
+        "appoint": 1,
+        "is_flash": 0,
+        "is_t10": 1,
+        "promotionTag": 0,
+        "tuan_num": 5,
+        "poi_image": "http:\/\/cdn00.baidu-img.cn\/timg?nuomina&size=w360&imgtype=4&sec=1418745600&di=3ea403e39004c223605ccdaeb5513083&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fbainuo%2Fcrop%253D0%252C0%252C720%252C436%253Bw%253D230%253Bq%253D80%2Fsign%3Dfdb87918bf389b502cb0ba12b805c9ed%2F0bd162d9f2d3572cdab6ffda8c13632762d0c364.jpg",
+        "payAtshop": {
+          "shopPay": 0
+        }
+      },
+      {
+        "poi_name": "\u4e45\u4e45\u4e2b(\u5efa\u4e2d\u8def\u5e97)",
+        "poi_id": "2837448",
+        "poi_distance": "2.8km",
+        "lat": 31.209194,
+        "lng": 121.621098,
+        "bizarea_title": "\u5f20\u6c5f",
+        "tuan_more": 0,
+        "tuan_list": [
+          {
+            "deal_id": "4300847",
+            "image": "http:\/\/cdn00.baidu-img.cn\/timg?nuomina&size=w360&imgtype=4&sec=1418745600&di=5586af0ad41e4e4fb23072a33764a018&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fbainuo%2Fcrop%253D0%252C0%252C720%252C436%253Bw%253D230%253Bq%253D80%2Fsign%3D9c519bcb573d26973a9c521d68cb9ecb%2F7c1ed21b0ef41bd591d34ef557da81cb39db3d2a.jpg",
+            "brand_name": "\u4e45\u4e45\u4e2b",
+            "short_title": "25\u5143\u4ee3\u91d1\u5238\uff01\u53ef\u53e0\u52a0\u4f7f\u7528\uff01",
+            "sale_count": 107696,
+            "groupon_price": 2210,
+            "market_price": 2500,
+            "pay_start_time": 1438012800,
+            "pay_end_time": 1445961599,
+            "new_groupon": 0,
+            "sale_out": 0,
+            "groupon_type": 1,
+            "score": 4.745,
+            "comment_num": 45140,
+            "bought_weekly": 22400,
+            "reason": "",
+            "bizarea": null,
+            "favour_list": {
+              "deal_id": "4300847",
+              "reductionAmount": 100,
+              "price": 2110,
+              "memberShip": {
+                "member_text": "\u4f1a\u5458\u518d\u51cf1\u5143"
+              },
+              "activityList": [
+                {
+                  "favour_id": "12132",
+                  "name": "\u7cef\u7c73\u6691\u671f\u5927\u4fc3",
+                  "text": "\u7acb\u51cf",
+                  "type": 1
+                }
+              ],
+              "price_tag_id": "12132"
+            },
+            "distance": null,
+            "user_distance_status": 0,
+            "user_distance_poi": 2837448,
+            "user_distance": 0,
+            "appoint": 0,
+            "is_flash": 0,
+            "is_t10": 0,
+            "is_card": 0,
+            "promotionTag": 0,
+            "s": "c7a89f51560d3477af8bf2ff817e4dbd",
+            "ifvirtual": 0,
+            "virtual_redirect_url": null,
+            "is_latest": 0,
+            "other_desc": "\u5df2\u552e 11\u4e07"
+          },
+          {
+            "deal_id": "4398283",
+            "image": "http:\/\/cdn00.baidu-img.cn\/timg?nuomina&size=w360&imgtype=4&sec=1418745600&di=0d6755afad57ace8db3665304d7885d6&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fbainuo%2Fcrop%253D0%252C0%252C720%252C436%253Bw%253D230%253Bq%253D80%2Fsign%3Dfb4be5c1f136afc31a4365258e29c7f4%2Fe1fe9925bc315c60ccacc3ee8bb1cb13495477f2.jpg",
+            "brand_name": "\u4e45\u4e45\u4e2b",
+            "short_title": "50\u5143\u4ee3\u91d1\u5238\uff01\u53ef\u53e0\u52a0\u4f7f\u7528\uff01",
+            "sale_count": 510,
+            "groupon_price": 4500,
+            "market_price": 5000,
+            "pay_start_time": 1438876800,
+            "pay_end_time": 1446047999,
+            "new_groupon": 0,
+            "sale_out": 0,
+            "groupon_type": 1,
+            "score": 4.5517,
+            "comment_num": 132,
+            "bought_weekly": 499,
+            "reason": "",
+            "bizarea": null,
+            "favour_list": {
+              "deal_id": "4398283",
+              "price": 0,
+              "price_tag_id": null,
+              "reductionAmount": 0,
+              "activityList": []
+            },
+            "distance": null,
+            "user_distance_status": 0,
+            "user_distance_poi": 2837448,
+            "user_distance": 0,
+            "appoint": 0,
+            "is_flash": 0,
+            "is_t10": 0,
+            "is_card": 0,
+            "promotionTag": 0,
+            "s": "c7a89f51560d3477af8bf2ff817e4dbd",
+            "ifvirtual": 0,
+            "virtual_redirect_url": null,
+            "is_latest": 0,
+            "other_desc": "\u5df2\u552e 510"
+          }
+        ],
+        "poi_type": 0,
+        "distance_type": 0,
+        "ugc": {
+          "average_score": "4.8",
+          "user_num": 66
+        },
+        "appoint": 1,
+        "is_flash": 0,
+        "is_t10": 1,
+        "promotionTag": 0,
+        "tuan_num": 2,
+        "poi_image": "http:\/\/cdn00.baidu-img.cn\/timg?nuomina&size=w360&imgtype=4&sec=1418745600&di=5586af0ad41e4e4fb23072a33764a018&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fbainuo%2Fcrop%253D0%252C0%252C720%252C436%253Bw%253D230%253Bq%253D80%2Fsign%3D9c519bcb573d26973a9c521d68cb9ecb%2F7c1ed21b0ef41bd591d34ef557da81cb39db3d2a.jpg",
+        "payAtshop": {
+          "shopPay": 0
+        }
+      },
+      {
+        "poi_name": "R&B \u4e16\u754c\u8336\u996e(\u4f20\u5947\u5e7f\u573a\u5e97)",
+        "poi_id": "5289050",
+        "poi_distance": "3.1km",
+        "lat": 31.206298,
+        "lng": 121.5914,
+        "bizarea_title": "\u5f20\u6c5f",
+        "tuan_more": 0,
+        "tuan_list": [
+          {
+            "deal_id": "4326684",
+            "image": "http:\/\/cdn00.baidu-img.cn\/timg?nuomina&size=w360&imgtype=4&sec=1418745600&di=41d2d1d9aa608081349dd53231a05ee3&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fbainuo%2Fcrop%253D0%252C0%252C470%252C285%253Bw%253D230%253Bq%253D99%2Fsign%3D8ccafdf3a186c9171c4c0879f40d5cff%2F6a600c338744ebf8034c7d34dff9d72a6059a7ff.jpg",
+            "brand_name": "R&B\u4e16\u754c\u8336\u996e",
+            "short_title": "25\u5143\u4ee3\u91d1\u5238\uff01\u53ef\u53e0\u52a0\u4f7f\u7528\uff01",
+            "sale_count": 576,
+            "groupon_price": 2200,
+            "market_price": 2500,
+            "pay_start_time": 1438272000,
+            "pay_end_time": 1446047999,
+            "new_groupon": 0,
+            "sale_out": 0,
+            "groupon_type": 1,
+            "score": 4.8888,
+            "comment_num": 220,
+            "bought_weekly": 616,
+            "reason": "",
+            "bizarea": null,
+            "favour_list": {
+              "deal_id": "4326684",
+              "reductionAmount": 0,
+              "price": 2200,
+              "activityList": [
+                {
+                  "favour_id": "12269",
+                  "name": "\u7ea6\u4f1a\u4e03\u5915\u9a8c\u5238\u6ee1\u8fd4\u6d3b\u52a8",
+                  "text": "\u9a8c\u5238\u6ee1\u8fd4",
+                  "type": 2
+                }
+              ],
+              "price_tag_id": ""
+            },
+            "distance": null,
+            "user_distance_status": 0,
+            "user_distance_poi": 5289050,
+            "user_distance": 0,
+            "appoint": 0,
+            "is_flash": 0,
+            "is_t10": 0,
+            "is_card": 0,
+            "promotionTag": 0,
+            "s": "c7a89f51560d3477af8bf2ff817e4dbd",
+            "ifvirtual": 0,
+            "virtual_redirect_url": null,
+            "is_latest": 0,
+            "other_desc": "\u5df2\u552e 576"
+          }
+        ],
+        "poi_type": 0,
+        "distance_type": 0,
+        "appoint": 1,
+        "is_flash": 0,
+        "is_t10": 0,
+        "promotionTag": 0,
+        "tuan_num": 1,
+        "poi_image": "http:\/\/cdn00.baidu-img.cn\/timg?nuomina&size=w360&imgtype=4&sec=1418745600&di=41d2d1d9aa608081349dd53231a05ee3&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fbainuo%2Fcrop%253D0%252C0%252C470%252C285%253Bw%253D230%253Bq%253D99%2Fsign%3D8ccafdf3a186c9171c4c0879f40d5cff%2F6a600c338744ebf8034c7d34dff9d72a6059a7ff.jpg",
+        "payAtshop": {
+          "shopPay": 0
+        }
+      }
+    ],
+    "distance": null,
+    "top_list": null,
+    "nosearch_num": 0,
+    "nosearch_list": [],
+    "recovery_words": null,
+    "recovery_type": 0,
+    "highlights": null,
+    "tuan_more": 1,
+    "recomwd_id": "c7a89f51560d3477af8bf2ff817e4dbd"
+  },
+  "timestamp": 1439265836,
+  "cached": 0,
+  "serverstatus": 0,
+  "msg": "success",
+  "serverlogid": 235590766
+}

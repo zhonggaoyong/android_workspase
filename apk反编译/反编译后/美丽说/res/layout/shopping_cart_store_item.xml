@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/header_line" style="@style/FirstDividerViewStyle" />
+    <RelativeLayout android:id="@id/content" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/store_name_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomCheckBox android:id="@id/check_box" android:background="@drawable/shopping_cart_radio_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/grey_d2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/shop_label" android:singleLine="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink" android:id="@id/store_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="5.0dip" android:maxWidth="165.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/promotion_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/store_name_lay">
+            <com.meilishuo.app.views.CustomCheckBox android:background="@drawable/shopping_cart_radio_selector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            <ImageView android:id="@id/promotion_ico_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/shoppingcart_ico_free_delivery" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d4" android:id="@id/promotion_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxWidth="200.0dip" android:text="" android:singleLine="true" />
+            <ImageView android:id="@id/promotion_ico_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/shoppingcart_ico_full_reduction" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d4" android:id="@id/promotion_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <View android:id="@id/line" android:layout_width="fill_parent" android:layout_marginTop="0.0dip" android:layout_below="@id/promotion_lay" style="@style/FirstDividerViewStyle" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/coupon_lay" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line">
+            <com.meilishuo.app.views.CustomCheckBox android:background="@drawable/shopping_cart_radio_selector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            <ImageView android:id="@id/promotion_ico_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/shoppingcart_ico_coupon" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d4" android:id="@id/promotion_text_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/coupons_arrow_pink" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/header_line2" style="@style/FirstDividerViewStyle" />
+</LinearLayout>

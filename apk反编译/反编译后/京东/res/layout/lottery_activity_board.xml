@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.common.widget.TempTitle android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" stuan:drawableLeft="@drawable/common_title_back_selector" stuan:textTitle="@string/winning_numbers_board" xmlns:stuan="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout android:id="@id/contents" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/jshop_main_bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jshop="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/jshop_main_touch" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/jshop_search_title" layout="@layout/jshop_head_search" />
+        <RelativeLayout android:id="@id/jshop_main_relative_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/jshop_fav_bar_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <View android:background="#ffbbbbbb" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <include android:id="@id/jshop_follow_bar" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_favbar_height" android:layout_marginTop="0.0dip" layout="@layout/jshop_fav_bar" />
+            </LinearLayout>
+            <com.jingdong.common.sample.jshop.JshopAllProductView android:id="@id/jshop_allproduct_listview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#00000000" android:layout_above="@id/jshop_fav_bar_layout" android:overScrollMode="never" />
+            <TextView android:textColor="#ffffffff" android:id="@id/product_list_float_count_num" android:background="@drawable/home_cursor_layout_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_above="@id/jshop_fav_bar_layout" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/product_list_to_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/c_up_button" android:layout_above="@id/jshop_fav_bar_layout" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="true" />
+            <LinearLayout android:id="@id/jshop_all_product_title" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true">
+                <include layout="@layout/jshop_all_product_head_view" />
+            </LinearLayout>
+            <Button android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/jshop_sign_status" android:background="@drawable/jshop_sign_layer_ok" android:paddingLeft="5.0dip" android:paddingTop="41.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/jshop_menu_shadow" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/jshop_menu_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/jshop_main_menu" />
+    <include android:id="@id/jshop_submenu_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/jshop_main_submenu" />
+    <include android:id="@id/jshop_main_share" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/jshop_main_share_widget" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/jshop_cancel_follow_layout" android:background="#ffeaedf1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff3e3a39" android:gravity="center" android:layout_gravity="center" android:id="@id/jshop_cancel_follow_text" android:background="@drawable/jshop_m_all_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="取消关注本店" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_marginBottom="6.0dip" style="@style/JshopALLProductSpliteLine" />
+        <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffe9321f" android:gravity="center" android:layout_gravity="center" android:id="@id/jshop_cancel_follow_btn" android:background="@drawable/jshop_m_all_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="取消" />
+    </LinearLayout>
+    <ViewStub android:id="@id/jshop_main_guide" android:layout="@layout/jshop_main_guide_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/home_product_left_layout" android:background="@drawable/category_sub_menu_normal2_shape" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/home_product_left_image_view" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:contentDescription="@null" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/home_product_left_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.gome.ecmall.home.product.category.layout.LineTextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/home_product_left_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:lines="2" />
+        </LinearLayout>
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/home_product_left_button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffef3030" android:id="@id/home_product_left_price" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/home_product_right_layout" android:background="@drawable/category_sub_menu_normal2_shape" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/home_product_right_image_view" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:contentDescription="@null" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/home_product_right_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.gome.ecmall.home.product.category.layout.LineTextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/home_product_right_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:lines="2" />
+        </LinearLayout>
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/home_product_right_button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffef3030" android:id="@id/home_product_right_price" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

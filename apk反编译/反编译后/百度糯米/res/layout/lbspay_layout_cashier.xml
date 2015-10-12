@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/lbspay_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/lbspay_cashier_wap" android:background="@color/lbspay_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/lbspay_pay_warp">
+        <LinearLayout android:orientation="vertical" android:background="@color/lbspay_color_fcfcfd" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/lbspay_text_deep_gray" android:gravity="center_vertical" android:id="@id/goodsName" android:layout_width="fill_parent" android:layout_height="@dimen/lbspay_cashier_goodsname_height" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" />
+                <View android:background="@color/lbspay_bg_item_devider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/lbspay_cashier_item_height">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/lbspay_text_deep_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="@string/lbspay_original_amount" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/lbspay_text_deep_gray" android:gravity="center_vertical" android:id="@id/originalPrice" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View android:background="@color/lbspay_bg_item_devider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/lbspay_cashier_item_height">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/lbspay_text_deep_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="@string/lbspay_pay_amount" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/lbspay_color_ff4071" android:gravity="center_vertical" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <com.baidu.android.lbspay.view.ChannelListView android:id="@id/paysdk_id_channellistview" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/lbspay_pay_warp" android:background="@color/lbspay_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:gravity="center" android:id="@id/lbspay_pay" android:layout_width="fill_parent" android:layout_height="@dimen/lbspay_button_height" android:layout_marginLeft="24.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="10.0dip" android:text="@string/lbspay_pay" style="@style/lbs_confirm_pay_btn" />
+    </LinearLayout>
+</RelativeLayout>

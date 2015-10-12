@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/expiring_coupon_headerbar" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:ellipsize="end" android:id="@id/title" android:maxWidth="160.0dip" android:text="@string/coupon_expiring_page_title" android:singleLine="true" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/expiring_coupon_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/expiring_coupon_headerbar" />
+</RelativeLayout>

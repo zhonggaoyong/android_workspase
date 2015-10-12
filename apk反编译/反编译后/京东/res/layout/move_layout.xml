@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hello world !!" android:layout_centerInParent="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:scaleType="fitCenter" android:layout_below="@id/text" android:layout_centerHorizontal="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/imageView2" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:scaleType="fitCenter" android:layout_below="@id/imageView" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:id="@id/jd_bean_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="京豆数量：" android:layout_below="@id/imageView2" android:layout_centerHorizontal="true" />
+</RelativeLayout>

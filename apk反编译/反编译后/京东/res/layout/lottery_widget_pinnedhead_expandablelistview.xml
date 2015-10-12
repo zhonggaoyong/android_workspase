@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView android:id="@id/list" android:background="@color/activity_bg" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:childDivider="@android:color/transparent" ptr:ptrAnimationStyle="jingdong" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout android:orientation="vertical" android:id="@id/topGroup" android:background="@drawable/lottery_shape_rectangle_onlybottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

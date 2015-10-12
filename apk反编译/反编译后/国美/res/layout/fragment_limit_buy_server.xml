@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_product_book_current_attributes_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/new_editrelative" android:padding="13.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/limitbuy_buy_count_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_num" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <Button android:enabled="false" android:id="@id/limitbuy_substract_btn" android:background="@drawable/virtual_btn_decrease_selector" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="9.0dip" android:layout_toRightOf="@id/limitbuy_buy_count_tip_tv" android:layout_centerVertical="true" />
+            <EditText android:textColor="@color/main_default_black_text_color" android:textColorHint="@color/main_default_black_text_color" android:gravity="center" android:id="@id/limitbuy_buy_count_et" android:background="@drawable/virtual_num" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:focusable="false" android:layout_width="40.0dip" android:layout_height="35.0dip" android:minWidth="50.0dip" android:text="1" android:maxLength="3" android:numeric="integer" android:layout_toRightOf="@id/limitbuy_substract_btn" android:layout_centerVertical="true" />
+            <Button android:id="@id/limitbuy_plus_btn" android:background="@drawable/virtual_btn_plus_selector" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_toRightOf="@id/limitbuy_buy_count_et" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/View01" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginLeft="13.0dip" android:layout_below="@id/new_editrelative" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/limitbuy_standrd_layout" android:background="@drawable/product_detail_item_selector" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/limitbuy_standrd_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limitbuy_standrd" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/limitbuy_standrd_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_toRightOf="@id/limitbuy_standrd_name_tv" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/address_jiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/View02" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginLeft="13.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/limitbuy_area_layout" android:background="@drawable/product_detail_item_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="25.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/limitbuy_sendto_tv" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送至：" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/limitbuy_address_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minLines="1" android:layout_toRightOf="@id/limitbuy_sendto_tv" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/address_jiantou" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="10.0dip" android:minHeight="25.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/limitbuy_store_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="20.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/limitbuy_sendtime_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:layout_toRightOf="@id/limitbuy_store_tv" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

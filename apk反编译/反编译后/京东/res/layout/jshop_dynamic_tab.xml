@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/line2" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/jshop_dynamic_tab_layout" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_dynamic_tab_height">
+        <TextView android:textSize="@dimen/jshop_dynamic_tab_text_size" android:textColor="@color/jshop_dynamic_tab_text_color_selector" android:gravity="center" android:id="@id/jshop_dynamic_tab_all" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/jshop_concern_item_activity_all" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/jshop_dynamic_tab_text_size" android:textColor="@color/jshop_dynamic_tab_text_color_selector" android:gravity="center" android:id="@id/jshop_dynamic_tab_promotion" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/jshop_concern_item_activity_promotion" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/jshop_dynamic_tab_text_size" android:textColor="@color/jshop_dynamic_tab_text_color_selector" android:gravity="center" android:id="@id/jshop_dynamic_tab_new" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/jshop_concern_item_activity_new" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/jshop_dynamic_tab_text_size" android:textColor="@color/jshop_dynamic_tab_text_color_selector" android:gravity="center" android:id="@id/jshop_dynamic_tab_special" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/jshop_concern_item_activity_special" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View style="@style/line2" />
+</LinearLayout>

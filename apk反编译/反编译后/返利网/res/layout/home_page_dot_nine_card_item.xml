@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/biv_dot_nine_item" android:layout_width="fill_parent" android:layout_height="102.0dip" android:scaleType="fitXY" />
+    <RelativeLayout android:background="@drawable/dot_nine_transparent_bg" android:layout_width="fill_parent" android:layout_height="19.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/tv_home_page_dot_nine_price_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/tv_home_page_dot_nine_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.fanli.android.view.TangFontTextView android:textColor="@color/white" android:id="@id/tv_home_page_dot_nine_old_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

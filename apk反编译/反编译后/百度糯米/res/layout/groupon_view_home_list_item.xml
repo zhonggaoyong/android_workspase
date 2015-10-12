@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/groupon_view_list_item" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffff7e00" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/groupon_listitem_activity_personal" android:background="@drawable/selector_list_row" android:paddingLeft="@dimen/groupon_list_home_per_label_padding_left" android:paddingRight="@dimen/groupon_list_home_per_label_padding_right" android:paddingBottom="@dimen/groupon_list_home_per_label_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="@drawable/groupon_list_item_good" android:drawablePadding="@dimen/groupon_list_home_per_label_drawable_padding" />
+    <ImageView android:id="@id/divide_line_home" android:background="@drawable/list_row_normal" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="#ffd9d9d9" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/my_personal_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_geo_location" style="@style/more_native_setting_layout_style">
+        <TextView android:id="@id/tv_geo_location_info" android:text="@string/location_update_title" style="@style/more_native_setting_title_style" />
+        <TextView android:id="@id/tv_geo_location_city" android:layout_marginRight="20.0dip" style="@style/more_native_setting_right_tv_style" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/more_geo_location_arrow" style="@style/more_native_setting_arrow_style" />
+    </RelativeLayout>
+    <View style="@style/line5" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/layout_bright_adjust" style="@style/more_native_setting_layout_style">
+            <TextView android:id="@id/tv_bright_adjust" android:text="@string/menu_lightmode_title" style="@style/more_native_setting_title_style" />
+            <CheckBox android:id="@id/checkbox_bright_adjust" style="@style/more_native_setting_checkbox" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/bar_screen_bright_adjust" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/line5" />
+            <include layout="@layout/setting_night_mode_preference" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/line5" />
+    <RelativeLayout android:id="@id/layout_download_pic_by_hand" style="@style/more_native_setting_layout_style">
+        <TextView android:id="@id/tv_download_pic_by_hand" android:text="@string/no_image_switch_title" style="@style/more_native_setting_title_style" />
+        <CheckBox android:id="@id/checkbox_load_pic" style="@style/more_native_setting_checkbox" />
+    </RelativeLayout>
+    <View style="@style/line5" />
+    <RelativeLayout android:id="@id/layout_upgrade_client" style="@style/more_native_setting_layout_style">
+        <TextView android:id="@id/tv_upgrade_client" android:text="@string/upgrade_wifi_auto_title" style="@style/more_native_setting_title_style" />
+        <CheckBox android:id="@id/checkbox_upgrade_client" style="@style/more_native_setting_checkbox" />
+    </RelativeLayout>
+    <View style="@style/line5" />
+    <RelativeLayout android:id="@id/layout_clean_loc_cache_pic" style="@style/more_native_setting_layout_style">
+        <TextView android:id="@id/tv_clean_loc_cache_pic" android:text="@string/local_cache_clear_image_title" style="@style/more_native_setting_title_style" />
+        <TextView android:id="@id/tv_loc_cache_pic_size" android:text="2M" style="@style/more_native_setting_right_tv_style" />
+    </RelativeLayout>
+    <View style="@style/line5" />
+</LinearLayout>

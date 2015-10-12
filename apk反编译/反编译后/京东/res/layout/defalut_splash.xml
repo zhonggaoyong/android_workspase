@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/default_splash_shape" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/center_pos" android:layout_width="1.0px" android:layout_height="1.0px" android:layout_centerInParent="true" />
+    <RelativeLayout android:background="@drawable/new_startimage_loadingbg" android:layout_width="136.0dip" android:layout_height="8.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/center_pos" android:layout_centerHorizontal="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/loading_item" android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_marginTop="-1.0dip" android:src="@drawable/new_startimage_loadingitem" />
+    </RelativeLayout>
+</RelativeLayout>

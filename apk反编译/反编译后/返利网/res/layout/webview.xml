@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/titlelayout_inner" android:background="@drawable/super_jump_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height">
+        <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/tv_title_inner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:singleLine="true" android:layout_centerInParent="true" />
+        <View android:id="@id/back_view" android:layout_width="60.0dip" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/bottom_layout" android:background="@drawable/bg_white_with_grey_border" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_close" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="关闭" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_go_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/browser_back_arrow" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_go_forward" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/browser_forward_arrow" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_go_refresh" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="28.0dip" android:layout_height="36.0dip" android:src="@drawable/super_jump_refresh" android:scaleType="fitEnd" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.fanli.android.view.FanliWebviewContainer android:id="@id/webviewContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_layout" android:layout_below="@id/titlelayout_inner" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="@dimen/global_padding_tiny" android:max="100" android:progress="0" android:progressDrawable="@drawable/bg_progressbar_horizontal" android:layout_below="@id/titlelayout_inner" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

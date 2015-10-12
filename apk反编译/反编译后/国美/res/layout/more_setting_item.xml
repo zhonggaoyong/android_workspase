@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/more_settings_update" android:background="@drawable/more_item_color_bg_selector" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:text="检查更新" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_settings_main_text_style" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/hint_text_color" android:id="@id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginRight="10.0dip" android:text="当前版本" android:layout_toLeftOf="@id/iv_icon" android:layout_centerVertical="true" style="@style/common_settings_main_text_style" />
+    <ImageView android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/common_right_arrow_bg_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

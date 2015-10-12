@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/flight_common_grey_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_layout" layout="@layout/vw_titlebar" />
+    <RelativeLayout android:id="@id/rl_qfsd" android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/flight_sift_qfsd" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:id="@id/tv_qfsd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="12.0dip" android:text="@string/flight_sift_no_limit" android:layout_toLeftOf="@id/iv_right1" />
+        <ImageView android:id="@id/iv_right1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_movie_right_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/tv_qfsd" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_jx" android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/flight_sift_jx" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:id="@id/tv_jx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="12.0dip" android:text="@string/flight_sift_no_limit" android:layout_toLeftOf="@id/iv_right2" />
+        <ImageView android:id="@id/iv_right2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_movie_right_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/tv_jx" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_hkgs" android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/flight_sift_hkgs" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:id="@id/tv_hkgs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="12.0dip" android:text="@string/flight_sift_no_limit" android:layout_toLeftOf="@id/iv_right3" />
+        <ImageView android:id="@id/iv_right3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_movie_right_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:background="@color/flight_line_bg_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/tv_hkgs" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_cwlx" android:background="#ffffffff" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/flight_sift_cwlx" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:id="@id/tv_cwlx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="12.0dip" android:text="@string/flight_sift_no_limit" android:layout_toLeftOf="@id/iv_right4" />
+        <ImageView android:id="@id/iv_right4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_movie_right_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingTop="20.0dip" android:paddingRight="12.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/bt_reset" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="清空筛选" android:layout_weight="1.0" style="@style/Gome.Button.StrokeGray.Style" />
+        <Button android:id="@id/bt_ok" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="120.0dip" android:text="完成" android:layout_weight="1.0" style="@style/Gome.Button.SolidRed.Style" />
+    </LinearLayout>
+</LinearLayout>

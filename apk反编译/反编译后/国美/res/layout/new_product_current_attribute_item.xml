@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/tv_product_current_attribute_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="合法" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/tv_product_current_attribute_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="合法的凤凰山圣达菲呵呵第三方呵呵第三方河山大好" android:lines="1" android:layout_toRightOf="@id/tv_product_current_attribute_name" android:layout_alignTop="@id/tv_product_current_attribute_name" />
+</RelativeLayout>

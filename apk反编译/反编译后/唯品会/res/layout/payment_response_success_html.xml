@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/pay_head" layout="@layout/vipnew_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/pay_success_web" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:id="@id/pay_success_web_progress" android:layout_width="fill_parent" android:layout_height="@dimen/progressbar_height" android:max="100" android:progress="0" android:progressDrawable="@drawable/progressbar_drawable" android:layout_alignTop="@id/pay_success_web" style="?android:attr/progressBarStyleHorizontal" />
+        <include android:id="@id/pay_success_load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/new_load_fail" />
+    </RelativeLayout>
+</LinearLayout>

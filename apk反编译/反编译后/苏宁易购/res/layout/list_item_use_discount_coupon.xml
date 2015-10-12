@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/android_public_space_20px" android:paddingTop="@dimen/android_public_space_20px" android:paddingRight="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/iv_udl_coupon" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_20px" android:button="@null" android:drawableLeft="@drawable/shopping_cart_checkbox" android:contentDescription="@string/app_name" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_one" android:gravity="center" android:id="@id/tv_coupon_kind" android:background="@drawable/bg_coupon_kind_useable" android:paddingLeft="@dimen/ios_public_space_12px" android:paddingRight="@dimen/ios_public_space_12px" android:layout_width="35.0dip" android:layout_height="100.0dip" android:text="@string/app_name" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_coupon_name" android:paddingLeft="@dimen/ios_public_space_28px" android:paddingRight="@dimen/ios_public_space_28px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/cart_product_name" android:id="@id/tv_udl_coupon_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_weight="5.0" />
+                    <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_eighteen" android:gravity="right" android:id="@id/tv_shop_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_28px" android:text="@string/app_name" android:singleLine="true" android:layout_weight="3.0" android:layout_toRightOf="@id/tv_udl_coupon_name" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_coupon_price_date" android:paddingLeft="@dimen/ios_public_space_28px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_udl_coupon_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_8px">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/cart2_coupon_price" android:id="@id/tv_coupon_rmb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_money_rmb_preunit" />
+                        <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/cart2_coupon_price" android:id="@id/tv_udl_coupon_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/android_public_textsize_14pt" android:textColor="@color/pub_color_eighteen" android:id="@id/tv_udl_coupon_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_eighteen" android:id="@id/tv_unuse_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_16px" android:text="@string/app_name" android:drawableLeft="@drawable/icon_coupon_unuse" android:drawablePadding="@dimen/ios_public_space_12px" android:layout_centerVertical="true" />
+    </LinearLayout>
+</LinearLayout>

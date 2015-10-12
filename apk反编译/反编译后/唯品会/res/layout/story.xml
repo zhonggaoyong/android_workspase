@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/vipnew_header" android:layout_alignParentTop="true" layout="@layout/vipnew_header" />
+    <RelativeLayout android:id="@id/story_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/vipnew_header">
+        <com.achievo.vipshop.view.widget.TransformerImageView android:id="@id/story_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/product_default" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/new_textarea" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="-90.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/story_layout">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_black" android:id="@id/story_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="14.0dip" android:text="\u0009品牌是一种用于营销的策略. (2001年)Pickton and Broderic形容区分产品、公司和品牌策略并建立消费者对经济价值和品牌所有者. 品牌占据的消费大脑的观念、 结果是什么,从整体消费者考虑什么,然后才决定购买(Pickton and Broderic)" android:lineSpacingExtra="10.0dip" />
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

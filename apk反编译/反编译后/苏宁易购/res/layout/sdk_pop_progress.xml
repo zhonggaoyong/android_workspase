@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/sdk_pb_pop_loading" android:layout_width="wrap_content" android:layout_height="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" style="@style/pop_progress_style" />
+    <WebView android:id="@id/sdk_wv_pop_sdk" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/sdk_pb_pop_loading" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/chat_error_item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_neterror" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:src="@drawable/chat_msg_state_fail_resend" android:layout_centerVertical="true" />
+    <TextView android:textColor="@color/textview_black" android:id="@id/tv_connect_errormsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="无法连接到服务器" android:layout_toRightOf="@id/iv_neterror" android:layout_centerVertical="true" />
+</RelativeLayout>

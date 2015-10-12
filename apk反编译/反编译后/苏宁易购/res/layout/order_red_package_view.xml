@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_red_package_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_sixty_four" android:src="@drawable/bg_order_red_package" />
+    <ImageView android:id="@id/btn_close_red_package" android:paddingRight="@dimen/pub_margin_or_padding_space_fourteen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_sixty_four" android:src="@drawable/btn_close_red_package" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/btn_get_red_package" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_three_hundred_seventy" android:src="@drawable/btn_get_red_package" android:layout_centerHorizontal="true" />
+</RelativeLayout>

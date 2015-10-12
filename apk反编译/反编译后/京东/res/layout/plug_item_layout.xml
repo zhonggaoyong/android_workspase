@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/plug_center_plug_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="@dimen/plug_item_height">
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="16.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/plug_item_icon" android:layout_width="@dimen/plug_item_icon_width" android:layout_height="@dimen/plug_item_icon_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="7.8">
+            <TextView android:textSize="18.0sp" android:textColor="@color/plug_center_item_text" android:id="@id/plug_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="15.4">
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/plug_use_or_unuse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/plug_image_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plug_center_plug_new" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_upgrade_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <TextView android:textSize="@dimen/android_public_textsize_26pt" android:textColor="@color/pub_color_four" android:gravity="center" android:id="@id/txt_upgrade_normal" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="@string/act_update_update_confirm" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_upgrade_incremental" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <TextView android:textSize="@dimen/android_public_textsize_26pt" android:textColor="@color/pub_color_four" android:gravity="center" android:id="@id/txt_upgrade_incremental" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="@string/act_update_increase_update" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <TextView android:textSize="@dimen/android_public_textsize_26pt" android:textColor="@color/pub_color_nine" android:gravity="center" android:id="@id/txt_cancel" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="@string/app_dialog_cancel" />
+    </LinearLayout>
+</LinearLayout>

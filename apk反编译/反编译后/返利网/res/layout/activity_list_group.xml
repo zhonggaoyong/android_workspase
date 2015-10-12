@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/home_root" android:background="@drawable/backgroud" android:padding="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/option_update_list" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#ffdddddd" android:dividerHeight="1.0dip" />
+        <ListView android:id="@id/option_feed_call_list" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_page_padding_5" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#ffdddddd" android:dividerHeight="1.0dip" />
+        <ListView android:id="@id/option_other_list" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_page_padding_5" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#ffdddddd" android:dividerHeight="1.0dip" />
+        <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/text_color_grey_dark" android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/option_ad_msg" />
+        <Button android:textSize="24.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/btn_logout" android:background="@drawable/btn_logout" android:padding="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="14.0dip" android:text="" />
+    </LinearLayout>
+</RelativeLayout>

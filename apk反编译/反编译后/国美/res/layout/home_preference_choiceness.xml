@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rl_home_preference_choiceness_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/tv_home_preference_choiceness_title" android:background="@color/main_default_white_text_color" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="特惠 · 精选" />
+    <com.gome.ecmall.custom.DisScrollGridView android:id="@id/gv_home_preference_choiceness_list" android:background="@color/main_default_white_text_color" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:numColumns="2" />
+    <View android:id="@id/v_home_preference_choiceness_bottom_line" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

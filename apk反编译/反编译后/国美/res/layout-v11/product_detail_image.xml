@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gome.ecmall.home.product.detail.layout.MoreJumpViewPager android:id="@id/vp_product_imgs" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="270.0dip" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_product_imgs_num" android:background="@drawable/product_detail_page_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:layout_alignRight="@id/vp_product_imgs" android:layout_alignBottom="@id/vp_product_imgs">
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/tv_product_imgs_num_element" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:contentDescription="@null" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:contentDescription="@null" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/tv_product_imgs_num_denominator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:contentDescription="@null" />
+    </LinearLayout>
+    <View android:id="@id/product_image_line" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_below="@id/vp_product_imgs" />
+    <HorizontalScrollView android:id="@id/hs_product_imgs_small" android:background="#ffffffff" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/product_image_line">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_product_imgs_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_product_imgs_up_arrow" android:background="@drawable/common_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="0.6dip" android:layout_marginBottom="0.6dip" android:layout_alignTop="@id/hs_product_imgs_small" android:layout_alignBottom="@id/hs_product_imgs_small" android:layout_alignParentRight="true" android:alpha="0.9">
+        <ImageView android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/common_up_arrow_bg_selector" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_product_imgs_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" android:src="@drawable/common_bg" android:layout_below="@id/hs_product_imgs_small" />
+</RelativeLayout>

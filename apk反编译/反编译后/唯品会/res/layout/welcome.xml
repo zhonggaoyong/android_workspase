@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pink" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/welcomeImageView" android:background="@drawable/loding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/checklayout" android:background="@color/pink" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@drawable/header_bg_vipshop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/reds" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_net" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/vip_y" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_network_close" />
+            <TextView android:textSize="14.0sp" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_network_error_faush" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/network_fail" android:visibility="gone" layout="@layout/new_network_fail" />
+</LinearLayout>

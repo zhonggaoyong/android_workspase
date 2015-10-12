@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/act_myebuy_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/android_public_space_204dp">
+        <RelativeLayout android:orientation="horizontal" android:background="@color/no_transparent_white" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_43.5dp">
+            <TextView android:textSize="@dimen/android_public_textsize_17sp" android:textColor="@color/pub_color_fifteen" android:id="@id/tv_area_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <LinearLayout android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick">
+                <ImageView android:background="@drawable/btn_address_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/android_public_space_14dp" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/bg_address_divider" android:layout_width="@dimen/pub_margin_or_padding_space_one" android:layout_height="fill_parent" android:layout_marginTop="@dimen/android_public_space_12dp" android:layout_marginBottom="@dimen/android_public_space_12dp" android:layout_toLeftOf="@id/btn_back" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/category_listview_divider" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_40dp">
+            <Button android:textSize="@dimen/android_public_textsize_13sp" android:textColor="@color/pub_color_nine" android:id="@id/btn_province" android:background="@color/no_transparent_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/chooseProvince" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/android_public_textsize_13sp" android:textColor="@color/pub_color_nine" android:id="@id/btn_city" android:background="@color/no_transparent_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/chooseCity" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/android_public_textsize_13sp" android:textColor="@color/pub_color_nine" android:id="@id/btn_district" android:background="@color/no_transparent_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/chooseDistrict" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/line_buttom" android:background="@color/recharge_account_color_select" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" android:layout_alignParentBottom="true">
+            <View android:id="@id/line_selected" android:background="@drawable/bg_address_line_selected" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <ListView android:orientation="vertical" android:id="@id/item_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/hyaline" android:divider="@null" />
+    </LinearLayout>
+</LinearLayout>

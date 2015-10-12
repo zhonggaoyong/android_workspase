@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/pub_color_one" android:paddingLeft="@dimen/android_public_space_18px" android:paddingRight="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/order_product_item" android:paddingTop="@dimen/pub_margin_or_padding_space_thirteen" android:paddingBottom="@dimen/pub_margin_or_padding_space_thirteen" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/product_icon" android:background="@drawable/bg_gray_one_border" android:padding="@dimen/pub_margin_or_padding_space_one" android:visibility="visible" android:layout_width="@dimen/pub_margin_or_padding_space_sixty" android:layout_height="@dimen/pub_margin_or_padding_space_sixty" android:src="@drawable/default_backgroud" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_sixty" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_ten" android:layout_marginRight="@dimen/pub_margin_or_padding_space_fifteen" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:id="@id/product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentTop="true" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_fifteen" android:id="@id/product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_fifteen" android:id="@id/product_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/btn_review_eva_id" android:background="@drawable/pub_btn_grey_bg" android:layout_width="@dimen/pub_margin_or_padding_space_seventy" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

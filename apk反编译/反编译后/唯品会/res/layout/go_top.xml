@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/go_top" android:background="@drawable/bg_top_selector" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="7.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/go_top_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="12.0dip" android:textColor="@color/app_text_title" android:id="@id/go_top_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120件" />
+        <View android:background="@color/black" android:layout_width="30.0dip" android:layout_height="3.0px" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/app_text_title" android:id="@id/go_top_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="140" />
+    </LinearLayout>
+    <include android:id="@id/go_top_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_top_only_normal" android:layout_centerInParent="true" layout="@layout/go_top_content" />
+</RelativeLayout>

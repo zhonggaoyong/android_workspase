@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="chat_consulting_type">
+        <item>订单查询</item>
+        <item>售后服务</item>
+        <item>投诉建议</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="chat_service_evaluation">
+        <item>非常满意</item>
+        <item>满意</item>
+        <item>一般</item>
+        <item>不满意</item>
+    </string-array>
+    <string-array name="delivery_status_desc">
+        <item>订单拆分</item>
+        <item>配送出库</item>
+        <item>等待收货</item>
+        <item>配送完成</item>
+    </string-array>
+    <string-array name="gift_type">
+        <item>[赠品]</item>
+        <item>[红券]</item>
+        <item>[蓝券]</item>
+        <item>[促销]</item>
+    </string-array>
+    <string-array name="hot_prom_type">
+        <item>返券</item>
+        <item>直降</item>
+        <item>折扣</item>
+        <item>赠品</item>
+    </string-array>
+    <string-array name="myb_deal_type">
+        <item>交易明细</item>
+        <item>存入明细</item>
+        <item>取现明细</item>
+        <item>支付明细</item>
+        <item>冻结明细</item>
+    </string-array>
+    <integer-array name="myb_deal_type_value">
+        <item>7</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="myb_filter_date_type">
+        <item>全部</item>
+        <item>今天</item>
+        <item>最近一周</item>
+        <item>一个月内</item>
+        <item>六个月内</item>
+    </string-array>
+    <string-array name="mygome_advisory_reply_spinner_category_array">
+        <item>咨询类型</item>
+        <item>商品咨询</item>
+        <item>库存及配送</item>
+        <item>支付问题</item>
+    </string-array>
+    <string-array name="mygome_advisory_reply_spinner_status_array">
+        <item>回复状态</item>
+        <item>已回复</item>
+        <item>未回复</item>
+    </string-array>
+    <string-array name="mygome_advisory_reply_spinner_time_array">
+        <item>咨询时间</item>
+        <item>最近三天</item>
+        <item>最近一周</item>
+        <item>最近一个月</item>
+    </string-array>
+    <string-array name="mygome_draw_cash_steps">
+        <item>验证身份</item>
+        <item>选择提取方式</item>
+        <item>申请提现</item>
+        <item>申请提现成功</item>
+    </string-array>
+    <string-array name="mygome_favorite_collect">
+        <item>商品收藏</item>
+        <item>店铺收藏</item>
+    </string-array>
+    <string-array name="mygome_favorite_no_collect">
+        <item>暂无商品收藏</item>
+        <item>暂无店铺收藏</item>
+    </string-array>
+    <string-array name="mygome_orderstatus">
+        <item>全部订单</item>
+        <item>待支付</item>
+        <item>待收货</item>
+        <item>待评价</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="no_more_order">
+        <item>您暂无普通订单</item>
+        <item>您暂无手机充值订单</item>
+        <item>您暂无团购订单</item>
+        <item></item>
+    </string-array>
+    <string-array name="no_more_order_to_pay">
+        <item>您暂无普通订单</item>
+        <item>您暂无手机充值订单</item>
+        <item>您暂无团购订单</item>
+        <item></item>
+    </string-array>
+    <string-array name="order_prom_type">
+        <item>[直降]</item>
+        <item>[折扣]</item>
+        <item>[促销]</item>
+    </string-array>
+    <string-array name="order_status_button_desc">
+        <item>立即支付</item>
+        <item>跟踪包裹</item>
+        <item>确认收货</item>
+    </string-array>
+    <string-array name="order_status_desc">
+        <item>您的订单还未付款</item>
+        <item>订单已通过审核，正在等待发货</item>
+        <item>您的包裹于从</item>
+        <item>配送员已从站点出发，请您准备收货</item>
+        <item>感谢您在国美购物，欢迎下次光临</item>
+    </string-array>
+    <string-array name="order_status_desc_splited">
+        <item>您的订单已拆分</item>
+        <item>您的订单已拆分成</item>
+        <item>您的包裹于从</item>
+        <item>配送员已从站点出发，请您准备收货</item>
+        <item>感谢您在国美购物，欢迎下次光临</item>
+    </string-array>
+    <string-array name="phone_recharge_alb">
+        <item>100</item>
+        <item>200</item>
+        <item>200</item>
+        <item>300</item>
+        <item>500</item>
+    </string-array>
+    <string-array name="phone_recharge_denomination">
+        <item>一百</item>
+        <item>二百</item>
+        <item>两百</item>
+        <item>三百</item>
+        <item>五百</item>
+    </string-array>
+    <string-array name="phone_recharge_not_find_contact">
+        <item>臣妾做不到啊，请重新说一遍吧</item>
+        <item>说什么呢怪怪的，不太明白你要充给谁</item>
+        <item>声音太小了，是汉子就应该大声点再来一次</item>
+        <item>对不起，我没太听清你的话，能再说一次吗</item>
+        <item>没找到你要充值的联系人，请再说一次</item>
+        <item>这个真没有，再来一次</item>
+    </string-array>
+    <string-array name="product_desc_list">
+        <item>商品介绍</item>
+        <item>规格参数</item>
+        <item>包装清单</item>
+        <item>售后服务</item>
+    </string-array>
+    <string-array name="product_sort_segments">
+        <item>热度</item>
+        <item>销量</item>
+        <item>价格</item>
+        <item>上架时间</item>
+    </string-array>
+    <string-array name="prom_type">
+        <item>[直降]</item>
+        <item>[折扣]</item>
+        <item>[红券]</item>
+        <item>[蓝券]</item>
+        <item>[赠品]</item>
+        <item>[节能补贴]</item>
+        <item>[满减]</item>
+        <item>[满返]</item>
+        <item>[其他促销]</item>
+    </string-array>
+    <string-array name="tab_titles">
+        <item>一个月内</item>
+        <item>一个月前</item>
+    </string-array>
+    <string-array name="tab_type_virtual_group_tickets">
+        <item>未使用</item>
+        <item>已使用</item>
+    </string-array>
+    <string-array name="type_order_segments">
+        <item>一个月内订单</item>
+        <item>一个月前订单</item>
+    </string-array>
+    <string-array name="type_phone_order_segments">
+        <item>三个月内订单</item>
+        <item>三个月前订单</item>
+    </string-array>
+</resources>

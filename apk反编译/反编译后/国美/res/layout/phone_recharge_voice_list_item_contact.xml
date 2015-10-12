@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/phone_voice_charge_blue" android:gravity="right" android:id="@id/tv_result" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="给小星星充100" />
+    <TextView android:textSize="22.0sp" android:textColor="@color/phone_voice_charge_deep_deep_gray" android:gravity="center_vertical" android:id="@id/tv_tip" android:padding="20.0dip" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="50.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="给小星星充100" />
+    <View android:background="@color/phone_voice_charge_list_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_container_contact" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/phone_voice_charge_list_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

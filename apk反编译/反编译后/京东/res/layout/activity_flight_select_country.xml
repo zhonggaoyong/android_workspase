@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jdtravel="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.jdtravel.ui.TravelTitle android:id="@id/add_boarder_title" android:layout_width="fill_parent" android:layout_height="wrap_content" jdtravel:fdrawableLeft="@drawable/common_title_back_selector" jdtravel:ftextTitle="@string/jdtravel_select_country" />
+    <LinearLayout android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.jingdong.common.jdtravel.citylist.MyEditText android:textSize="16.0dip" android:gravity="left|center" android:id="@id/edt_search_input" android:background="@drawable/flight_search_input_bar" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/add_boarder_margin_left" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="8.0dip" android:hint="搜索国家/地区" android:cursorVisible="true" android:singleLine="true" android:imeOptions="actionSearch" />
+    </LinearLayout>
+    <ListView android:id="@id/lv_country" android:background="#ffffffff" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" />
+    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

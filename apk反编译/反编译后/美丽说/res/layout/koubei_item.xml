@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:magic="http://schemas.android.com/apk/res/com.meilishuo">
+    <com.meilishuo.app.views.RoundImageView android:id="@id/reply_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/round_avatar" android:layout_alignParentLeft="true" magic:hasBorder="false" magic:borderSize="0.0dip" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ffff6699" android:gravity="top" android:id="@id/reply_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/reply_icon" android:layout_alignParentTop="true" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="颜色：灰色" android:singleLine="true" android:layout_toRightOf="@id/reply_icon" android:layout_below="@id/reply_nickname" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/reply_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="6.0dip" android:layout_toRightOf="@id/reply_icon" android:layout_below="@id/style" android:lineSpacingMultiplier="1.2" />
+    <View android:id="@id/line" android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/reply_description" />
+</RelativeLayout>

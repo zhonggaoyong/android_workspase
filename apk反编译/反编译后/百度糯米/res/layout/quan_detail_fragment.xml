@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/parentScroll" android:background="@color/tuan_detial_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/llParent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/quan_detail_goods_info" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/quan_detail_goods_info" />
+            <ImageView android:id="@id/goodsInfoLineNew" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/protectionNew" android:background="@drawable/tuan_detail_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableLayout android:id="@id/protectionTableNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:stretchColumns="*" android:shrinkColumns="*" />
+            </LinearLayout>
+            <ImageView android:id="@id/protectionLineNew" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="0.0dip" />
+            <ImageView android:id="@id/noticeTopLineNew" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/quan_detail_gap_height" />
+            <include android:id="@id/tuan_detail_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tuan_detail_notice" />
+            <ImageView android:id="@id/noticeBottomLineNew" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="0.0dip" />
+            <ImageView android:id="@id/sellerInfoItemTopLineNew" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/quan_detail_gap_height" />
+            <include android:id="@id/tuan_detail_seller_info_item" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tuan_detail_seller_info_item" />
+            <ImageView android:id="@id/sellerInfoItemBottomLineNew" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="0.0dip" />
+            <ImageView android:id="@id/menuTopLineNew" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/quan_detail_gap_height" />
+            <include android:id="@id/tuan_detail_menu_info" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tuan_detail_menu_info" />
+            <ImageView android:id="@id/menuBottomLineNew" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="0.0dip" />
+            <ImageView android:id="@id/consumerTopLineNew" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/quan_detail_gap_height" />
+            <include android:id="@id/tuan_detail_consumer_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tuan_detail_consumer_tips" />
+            <ImageView android:id="@id/consumerBottomLineNew" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="0.0dip" />
+            <include android:id="@id/order_detail_quan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" layout="@layout/order_detail_quan" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/order_list_pink" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/refundNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip" android:text="@string/quan_refound_tip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

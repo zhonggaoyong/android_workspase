@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_parent" android:background="@color/color_2c323a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <com.gome.ecmall.core.widget.listview.MyListView android:id="@id/lv_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_top_layout" style="@style/common_listview_style" />
+    <RelativeLayout android:id="@id/rl_sendmessage" android:background="@color/color_ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_alignParentBottom="true">
+        <View android:background="@color/color_d2d2d2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+        <Button android:textColor="@color/color_cccccc" android:gravity="center" android:id="@id/btn_send" android:background="@drawable/chaodian_bg_btnsend_normal" android:layout_width="45.0dip" android:layout_height="30.0dip" android:layout_marginRight="6.0dip" android:checked="false" android:text="发送" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/hot_prom_black_dark" android:id="@id/et_message" android:background="@drawable/login_input_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:hint="评论" android:layout_toLeftOf="@id/btn_send" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <Button android:id="@id/btn_limitlist_go_top_btn" android:background="@drawable/common_go_top_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+</RelativeLayout>

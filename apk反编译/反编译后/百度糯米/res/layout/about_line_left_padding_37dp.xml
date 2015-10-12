@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:background="@color/city_deal_list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="37.0dip" />
+    </FrameLayout>
+</merge>

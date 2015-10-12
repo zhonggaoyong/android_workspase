@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meilishuo.app.views.CustomTextView android:textColor="@color/grey_d3" android:gravity="top|center" android:layout_gravity="top" android:id="@id/empty_view" android:paddingTop="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/empty_talk_hint"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

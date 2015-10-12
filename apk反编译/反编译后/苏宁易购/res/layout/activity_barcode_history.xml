@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/bar_layout_suer_bt" android:background="@color/pub_color_one" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_73px" android:layout_alignParentBottom="true">
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/bar_suer_bt" android:background="@drawable/search_complete" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/android_public_space_21px" android:layout_marginTop="@dimen/android_public_space_8px" android:layout_marginRight="@dimen/android_public_space_21px" android:layout_marginBottom="@dimen/android_public_space_8px" android:text="@string/act_barcode_history_clear_all" />
+    </LinearLayout>
+    <ListView android:id="@id/barcode_history_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@drawable/category_listview_divider" android:dividerHeight="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_above="@id/bar_layout_suer_bt" />
+    <TextView android:textSize="@dimen/pub_textsize_twenty" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/text_no_barcode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/act_search_barcode_no_data" android:drawableTop="@drawable/shopping_cart__loadfail" android:drawablePadding="10.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

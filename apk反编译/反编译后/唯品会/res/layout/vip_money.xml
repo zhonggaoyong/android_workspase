@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout style="@style/title_bar_bg_style">
+        <ImageView android:id="@id/btn_back" android:scaleType="centerInside" style="@style/app_title_left_button_style" />
+        <TextView android:textSize="@dimen/app_title_size" android:textColor="@color/app_title_dark" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_vipmoney_title" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff222222" android:gravity="center" android:layout_gravity="right|center" android:id="@id/explain" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="使用帮助" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="vertical" android:background="#fff3f4f5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.achievo.vipshop.view.LoadMoreOnlyListView android:id="@id/vipmoney_list" android:background="#fff3f4f5" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/divider_left_padding" android:dividerHeight="0.0dip" android:overScrollMode="never" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/record_title" android:background="#fff3f4f5" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dip" android:textColor="#ff585c64" android:paddingLeft="15.0dip" android:paddingTop="26.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="唯品币明细" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

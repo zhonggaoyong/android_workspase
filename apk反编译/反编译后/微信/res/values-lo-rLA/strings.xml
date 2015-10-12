@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Google Play Services ​ເກີດ​ຄວາມ​ຜິດ​ພາດ</string>
+    <string name="d3r">​ແອັບ​ພ​ລິ​ເຄ​ຊັນ​ຕ້ອງ​ການ​ໃຫ້​ຕິດ​ຕັ້ງ​ບໍ​ລິ​ການ Google Play ກ່ອນ.</string>
+    <string name="d3s">​ແອັບ​ພ​ລິ​ເຄ​ຊັນ​ຕ້ອງ​ການ​ໃຫ້​ອັບ​ເດດບໍ​ລິ​ການ Google Play ກ່ອນ.</string>
+    <string name="d3t">ແອັບພລິເຄຊັນຕ້ອງ​ການນຳໃຊ້ Google Play Services.</string>
+    <string name="d3u">ຮ້ອງຂໍໂດຍ %1$s</string>
+    <string name="d3v">ຕິດຕັ້ງບໍລິການ Google Play</string>
+    <string name="d3w">ແອັບຯນີ້ຈະບໍ່ສາມາດເຮັດວຽກໄດ້ໂດຍທີ່ບໍ່ມີບໍລິການ Google Play ເຊິ່ງຂາດຫາຍໄປໃນໂທລະສັບຂອງທ່ານ.</string>
+    <string name="d3x">ແອັບຯນີ້ຈະບໍ່ສາມາດເຮັດວຽກໄດ້ໂດຍທີ່ບໍ່ມີບໍລິການ Google Play ເຊິ່ງຂາດຫາຍໄປໃນແທັບເລັດຂອງທ່ານ.</string>
+    <string name="d3y">ຕິດຕັ້ງບໍລິການ Google Play</string>
+    <string name="d3z">ເປີດໃຊ້ບໍລິການ Google Play</string>
+    <string name="d40">ແອັບຯນີ້ຈະບໍ່ສາມາດເຮັດວຽກໄດ້ຈົນກວ່າທ່ານຈະເປີດໃຊ້ບໍລິການ Google Play</string>
+    <string name="d41">ເປີດໃຊ້ບໍລິການ Google Play</string>
+    <string name="d42">ອັບເດດບໍລິການ Google Play</string>
+    <string name="d43">ແອັບຯນີ້ຈະບໍ່ສາມາດເຮັດວຽກໄດ້ຈົນກວ່າທ່ານຈະອັບເດດບໍລິການ Google Play.</string>
+    <string name="d44">ເຄືອຂ່າຍຜິດພາດ</string>
+    <string name="d45">ຕ້ອງໃຊ້ການເຊື່ອມຕໍ່ອິນເຕີເນັດເພື່ອໃຊ້ Google Play Services.</string>
+    <string name="d46">ບັນຊີບໍ່ຖືກຕ້ອງ</string>
+    <string name="d47">ບັນຊີທີ່ເລືອກບໍ່ມີໃນອຸປະກອນນີ້. ກະລຸນາເລືອກບັນຊີອື່ນ.</string>
+    <string name="d48">ມີປັນຫາທີ່ບໍ່ຄາດຄິດໃນບໍລິການ Google Play.</string>
+    <string name="d49">ບໍລິການ Google Play</string>
+    <string name="d4_">ບໍລິການ Google Play ທີ່ບາງແອັບພລິເຄຊັນຂອງທ່ານຕ້ອງອາໄສນັ້ນ ບໍ່ຖືກຮອງຮັບໃນອຸປະກອນຂອງທ່ານ. ກະລຸນາຕິດຕໍ່ຜູ້ຜະລິດສຳລັບການແນະນຳ.</string>
+    <string name="d4a">ວັນທີຂອງອຸປະກອນບໍ່ຖືກຕ້ອງ. ກະລຸນາກວດສອບວັນທີຂອງອຸປະກອນຂອງທ່ານ.</string>
+    <string name="d4b">ອັບເດດ</string>
+    <string name="d4c">ເຂົ້າສູ່ລະບົບ</string>
+    <string name="d4d">ເຂົ້າສູ່ລະບົບດ້ວຍ Google</string>
+</resources>

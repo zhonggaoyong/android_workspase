@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/promotion_message_item_background" android:paddingLeft="7.0dip" android:paddingTop="5.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.5999756dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:image="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.app.mall.utils.ui.JDImageView android:id="@id/promotion_message_item_imageview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerHorizontal="true" image:ratio="2.96" />
+    <TextView android:textColor="@android:color/black" android:id="@id/promotion_message_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:singleLine="true" android:layout_below="@id/promotion_message_item_imageview" android:layout_alignParentRight="true" />
+</RelativeLayout>

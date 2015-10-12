@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/shake_promotion_lighting_red" />
+    <item android:duration="50" android:drawable="@drawable/shake_promotion_lighting_yellow" />
+</animation-list>

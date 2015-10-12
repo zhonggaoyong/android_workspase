@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/cart_select_promotion_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip">
+        <RadioButton android:layout_gravity="center_vertical" android:id="@id/cart_select_promotion_radio" android:background="@drawable/button_j" android:layout_width="20.0dip" android:layout_height="20.0dip" android:button="@null" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff252525" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/cart_select_promotion_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="2" android:lines="2" />
+    </LinearLayout>
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/cart_select_promotion_content" />
+</RelativeLayout>

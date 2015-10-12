@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="logistics_progress_text">
+        <item>已审核</item>
+        <item>拣货中</item>
+        <item>已打包</item>
+        <item>已发货</item>
+        <item>已签收</item>
+    </string-array>
+    <integer-array name="order_default">
+        <item>1</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+    </integer-array>
+    <integer-array name="order_delivery">
+        <item>10</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+    </integer-array>
+    <integer-array name="order_invoice">
+        <item>22</item>
+        <item>25</item>
+        <item>60</item>
+    </integer-array>
+    <integer-array name="order_refund">
+        <item>54</item>
+        <item>58</item>
+    </integer-array>
+    <integer-array name="order_return">
+        <item>22</item>
+        <item>25</item>
+    </integer-array>
+</resources>

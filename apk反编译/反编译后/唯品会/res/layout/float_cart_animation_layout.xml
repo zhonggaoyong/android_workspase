@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.achievo.vipshop.view.CartAnimationLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/beauty_img_animation" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/goodsdetail_add_cart" />
+    <ImageView android:id="@id/favor_img_animation" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/goodsdetail_add_cart" android:layout_centerInParent="true" />
+</com.achievo.vipshop.view.CartAnimationLayout>

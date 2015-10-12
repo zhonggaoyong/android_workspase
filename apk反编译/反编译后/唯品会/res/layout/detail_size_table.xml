@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/info_layout" android:background="@drawable/round_rectangle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" android:layout_alignParentLeft="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="7.0dip" android:minWidth="150.0dip" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <HorizontalScrollView android:scrollbarTrackHorizontal="@null" android:scrollbarAlwaysDrawHorizontalTrack="false" android:gravity="center" android:id="@id/infos" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:fadeScrollbars="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/info_items" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/gray_divider" android:layout_centerHorizontal="true" />
+        </HorizontalScrollView>
+        <View android:id="@id/line" android:background="#ffaaaaaa" android:layout_width="wrap_content" android:layout_height="0.5dip" android:layout_below="@id/title" android:layout_alignLeft="@id/infos" android:layout_alignRight="@id/infos" />
+    </RelativeLayout>
+    <ImageView android:id="@id/close" android:paddingBottom="16.0dip" android:layout_width="24.0dip" android:layout_height="40.0dip" android:layout_marginLeft="-24.0dip" android:src="@drawable/itemdetail_icon_closed" android:layout_toRightOf="@id/info_layout" android:layout_alignParentTop="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/info_layout" android:layout_alignRight="@id/info_layout">
+        <View android:id="@id/arrow" android:background="@drawable/itemdetail_icon_message_triangle" android:layout_width="12.0dip" android:layout_height="6.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

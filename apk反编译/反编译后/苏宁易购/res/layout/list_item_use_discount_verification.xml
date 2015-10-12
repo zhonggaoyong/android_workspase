@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_udlv_content" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/android_public_space_20px">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_udlv_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/android_public_space_20px">
+                <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/public_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_26px" android:text="@string/shoppingcart_has_bind_phonenum" />
+                <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/public_text_color" android:id="@id/tv_udlv_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/public_text_color" android:id="@id/et_udlv" android:background="@drawable/search_edit_bg" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="@dimen/pub_margin_or_padding_space_thirty_five" android:layout_marginRight="10.0dip" android:hint="@string/shoppingcart_phone_verify_input_prompt" android:singleLine="true" android:maxLength="10" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ" android:layout_weight="3.0" android:inputType="textUri" />
+                <Button android:textColor="@color/pub_color_four" android:id="@id/btn_udlv" android:background="@drawable/btn_search_normal_bg" android:layout_width="0.0dip" android:layout_height="@dimen/pub_margin_or_padding_space_thirty_five" android:text="@string/getVerificationCode" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/public_text_color" android:gravity="center_vertical" android:id="@id/tv_udlv_not_bind_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/act_cart2_use_discount_not_bind_phone" />
+    </LinearLayout>
+</FrameLayout>

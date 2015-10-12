@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="left" android:orientation="vertical" android:background="@drawable/phone_rechange_num_edit_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:id="@id/shopping_cart_shop_title_float_long_enter_shop" android:background="@drawable/address_background_item" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="进入店铺" android:singleLine="true" />
+    <View android:background="@color/shopping_cart_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:id="@id/shopping_cart_shop_title_float_long_collect_shop" android:background="@drawable/address_background_item" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="收藏店铺" android:singleLine="true" />
+</LinearLayout>

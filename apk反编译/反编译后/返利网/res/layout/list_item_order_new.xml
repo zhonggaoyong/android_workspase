@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/head" android:paddingTop="8.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip">
+        <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff585858" android:id="@id/vendorName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="#ffb8b8b8" android:id="@id/tv_orderId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="TextView" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/imageView2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="19.0dip" android:src="#ffc8c7cc" />
+    <RelativeLayout android:id="@id/body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+        <RelativeLayout android:id="@id/rly_img" android:padding="@dimen/global_padding_tiny" android:layout_width="@dimen/height_list_item_thumb" android:layout_height="@dimen/height_list_item_thumb" android:layout_marginLeft="9.0dip" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/img" android:background="@drawable/icon_bg_order_list" android:padding="1.0dip" android:layout_width="@dimen/height_list_item_thumb" android:layout_height="@dimen/height_list_item_thumb" android:src="@drawable/stub" />
+            <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/num" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="17.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:alpha="0.5" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/rly_img" android:layout_alignParentTop="true">
+            <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:id="@id/fanli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:id="@id/wxfl_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:id="@id/tv_check_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有异议请联系客服" />
+            <Button android:textSize="13.0sp" android:textColor="#ffb8b8b8" android:id="@id/btn_check" android:background="@drawable/btn_order_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="返利复查" />
+            <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:id="@id/fanliinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <com.fanli.android.view.TangFontTextView android:textSize="13.0sp" android:id="@id/note" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="#ffb8b8b8" android:id="@id/orderData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_below="@id/linearLayout1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/bg_line" />
+    <com.fanli.android.view.HorizontalListView android:id="@id/lv_products" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" />
+    <ImageView android:id="@id/iv_top" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" android:src="#ffc8c7cc" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/rly_line" android:background="@color/order_bg_color" android:layout_width="fill_parent" android:layout_height="13.0dip">
+        <ImageView android:id="@id/iv_bottom" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffc8c7cc" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

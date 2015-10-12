@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/selector_list_row" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="59.0dip">
+        <com.baidu.bainuo.view.label.AutoHeightLabelLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_alignParentTop="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/poi_zone" android:ellipsize="end" android:id="@id/poi_tuanlist_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <com.baidu.bainuo.view.label.LabelsView android:id="@id/poi_tuanlist_label_view" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.baidu.bainuo.view.label.AutoHeightLabelLayout>
+        <TextView android:textSize="11.0sp" android:textColor="@color/poi_evaluation_score" android:id="@id/poi_tuanlist_evaluation_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/poi_evaluation_num" android:id="@id/poi_tuanlist_evaluation_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/poi_tuanlist_evaluation_score" android:layout_alignBaseline="@id/poi_tuanlist_evaluation_score" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/poi_tuanlist_evaluation_score" android:layout_alignParentRight="true">
+            <TextView android:textSize="11.0sp" android:textColor="@color/poi_place" android:ellipsize="end" android:gravity="right" android:id="@id/poi_tuanlist_place" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/poi_place" android:ellipsize="end" android:gravity="right" android:id="@id/poi_tuanlist_distance_ext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="距" android:singleLine="true" android:includeFontPadding="false" android:drawableRight="@drawable/landmark" android:drawablePadding="4.0dip" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/poi_place" android:ellipsize="end" android:gravity="right" android:id="@id/poi_tuanlist_distance" android:paddingLeft="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/poi_pay_at_shop_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/poi_pay_at_shop" />
+    <View android:background="@color/poi_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</merge>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/limitbuy_title_total_layout" android:background="@drawable/product_detail_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/address_jiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <com.gome.ecmall.custom.LineTextView android:textSize="16.0sp" android:textStyle="bold" android:ellipsize="end" android:id="@id/limitbuy_title_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:maxLines="2" pl:plTextColor="@color/color_333333" pl:plLine="2"
+                  xmlns:pl="http://schemas.android.com/apk/res/com.gome.eshopnew" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/product_price_red_color" android:gravity="center" android:id="@id/limitbuy_title_tip_tv" android:background="@drawable/product_detail_prom_shape" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_alignLeft="@id/limitbuy_title_name_tv" android:layout_alignTop="@id/limitbuy_title_name_tv" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limitbuy_limitbuyprice" />
+                <LinearLayout android:gravity="bottom|left|center" android:orientation="horizontal" android:id="@id/limitbuy_has_price_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_cf3000" android:id="@id/limitbuy_limit_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/color_ff8000" android:id="@id/limitbuy_discount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:id="@id/limitbuy_prime_price_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limitbuy_orgprice_02" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_cccccc" android:id="@id/limitbuy_prime_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:id="@id/limitbuy_remain_prompt_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limitbuy_remainnum3" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:id="@id/limitbuy_remain_data_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="0件" />
+                <ProgressBar android:id="@id/limitbuy_state_pb" android:layout_width="@dimen/limitbuy_progress_bar_width" android:layout_height="6.0dip" android:layout_marginLeft="10.0dip" android:progress="0" android:progressDrawable="@drawable/limitbuy_progress_style" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/limitbuy_finish_discount" android:id="@id/limitbuy_limit_count_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

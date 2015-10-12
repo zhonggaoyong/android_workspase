@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/serviceheader" android:background="@drawable/bg_title_new" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <ImageView android:id="@id/btn_menu" android:paddingLeft="@dimen/android_public_space_28px" android:paddingRight="@dimen/android_public_space_25px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/androidy" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <Button android:textSize="@dimen/android_public_textsize_22pt" android:textColor="@color/text_black" android:id="@id/btn_close" android:background="@null" android:paddingLeft="@dimen/android_public_space_20px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" android:text="关闭" android:layout_toLeftOf="@id/btn_menu" android:layout_alignParentTop="true" />
+        <ImageView android:gravity="center" android:id="@id/btn_back" android:paddingLeft="@dimen/android_public_space_20px" android:paddingRight="@dimen/android_public_space_10px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_back" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/android_public_space_120px" android:layout_toLeftOf="@id/btn_close">
+            <TextView android:textSize="@dimen/android_public_textsize_26pt" android:textColor="@color/pub_color_eight" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="6" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.suning.mobile.ebuy.host.webview.BusyWebView android:id="@id/webview" android:fadingEdge="none" android:fadingEdgeLength="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

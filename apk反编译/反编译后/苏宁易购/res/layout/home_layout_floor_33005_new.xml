@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_0" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="154.0px">
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@id/item_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_1" android:layout_width="60.0px" android:layout_height="60.0px" android:scaleType="fitXY" />
+                    <View android:id="@id/margin_1" android:layout_width="1.0dip" android:layout_height="2.0px" />
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/pub_color_fifteen" android:id="@id/tv_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试1" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/item_2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_2" android:layout_width="60.0px" android:layout_height="60.0px" android:scaleType="fitXY" />
+                    <View android:id="@id/margin_2" android:layout_width="1.0dip" android:layout_height="2.0px" />
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/pub_color_fifteen" android:id="@id/tv_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试2" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/item_3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_3" android:layout_width="60.0px" android:layout_height="60.0px" android:scaleType="fitXY" />
+                    <View android:id="@id/margin_3" android:layout_width="1.0dip" android:layout_height="2.0px" />
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/pub_color_fifteen" android:id="@id/tv_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试3" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/item_4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_4" android:layout_width="60.0px" android:layout_height="60.0px" android:scaleType="fitXY" />
+                    <View android:id="@id/margin_4" android:layout_width="1.0dip" android:layout_height="2.0px" />
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/pub_color_fifteen" android:id="@id/tv_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试4" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/item_5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_5" android:layout_width="60.0px" android:layout_height="60.0px" android:scaleType="fitXY" />
+                    <View android:id="@id/margin_5" android:layout_width="1.0dip" android:layout_height="2.0px" />
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/pub_color_fifteen" android:id="@id/tv_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/margin_bottom_view" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

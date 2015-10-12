@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/FirstDividerViewStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_order_shop_goods" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/layout_order_price_info_confirm" android:layout="@layout/manage_order_shop_info_item_price_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <ViewStub android:id="@id/layout_order_price_info_detail" android:layout="@layout/manage_order_shop_info_item_price_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <View android:layout_marginTop="12.0dip" style="@style/FirstDividerViewStyle" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout" android:layout_width="fill_parent" style="@style/title_bar_bg_style">
+        <TextView android:textSize="20.0dip" android:textColor="@color/app_title_dark" android:gravity="center" android:layout_gravity="center" android:id="@id/classifyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/btn_back" android:layout_width="50.0dip" android:layout_height="@dimen/app_title_left_icon_size" android:src="@drawable/new_back_btn_selector" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/list_refresh_view" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparency" android:drawSelectorOnTop="true" android:cacheColorHint="#00000000" android:divider="@color/transparency" android:choiceMode="none" android:fastScrollEnabled="false" />
+    <include android:id="@id/load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_id" layout="@layout/new_load_fail" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_title_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/price_text_color" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:gravity="center" android:id="@id/phonetext" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号：" android:layout_centerVertical="true" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/weak_text_color" android:id="@id/belowprice_edit_phone" android:background="@drawable/rectangle" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minHeight="30.0dip" android:hint="@string/please_write_11_num" android:layout_toRightOf="@id/phonetext" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:inputType="phone" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:gravity="center" android:id="@id/emailtext" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮　箱：" android:layout_centerVertical="true" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/weak_text_color" android:id="@id/belowprice_edit_email" android:background="@drawable/rectangle" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minHeight="30.0dip" android:hint="example@gome.com.cn" android:layout_toRightOf="@id/emailtext" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:inputType="textEmailAddress" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="23.0dip" android:text="留下您的联系方式，便于及时掌握商品降价信息" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="23.0dip">
+        <CheckBox android:id="@id/cb_add_favourite" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" style="@style/choice_checkbox_custom_style" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/main_default_black_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 同时将商品加入“收藏夹”" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:layout_gravity="center_horizontal" android:id="@id/exception_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="23.0dip" />
+</LinearLayout>

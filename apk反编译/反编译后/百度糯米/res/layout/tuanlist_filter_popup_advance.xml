@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bainuo.view.LinearLayoutWithMaxHeight android:orientation="vertical" android:background="@color/tuanlist_filter_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/tuanlist_filter_popup_advance_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </ScrollView>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/nuomi_color" android:id="@id/tuanlist_filter_popup_advance_finish" android:background="@drawable/bg_white_button_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="@string/tuanlist_filter_popup_finish" />
+    </LinearLayout>
+</com.baidu.bainuo.view.LinearLayoutWithMaxHeight>

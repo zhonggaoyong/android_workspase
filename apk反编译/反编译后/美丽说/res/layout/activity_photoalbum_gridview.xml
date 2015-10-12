@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_layout" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_back" android:clickable="true" android:text="@string/share_cancle" android:drawableLeft="@null" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:gravity="center" android:id="@id/title" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:maxLines="2" android:drawablePadding="5.0dip" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_cancel" android:visibility="gone" android:clickable="true" android:text="@string/cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TitleBtn" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/photo_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_layout">
+        <GridView android:gravity="center" android:id="@id/photo_gridview" android:paddingLeft="3.0dip" android:paddingTop="8.0dip" android:paddingRight="3.0dip" android:paddingBottom="5.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="8.0dip" android:verticalSpacing="8.0dip" android:numColumns="3" android:layout_weight="1.0" />
+        <RelativeLayout android:id="@id/photo_control" android:background="@drawable/footer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/photo_preview" android:background="@drawable/btn_photo_preview" android:layout_width="65.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" />
+            <ImageButton android:id="@id/photo_ok" android:background="@drawable/btn_photo_ok" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+            <com.meilishuo.app.views.CustomTextView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="top|right|center" android:id="@id/photo_count" android:background="@drawable/show_photo_header_btn" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/photo_list_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_layout">
+        <ImageView android:id="@id/photo_list_bg" android:background="@color/black_t70" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.meilishuo.app.widget.listview.HeightListView android:id="@id/album_list" android:background="@color/white_t95" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:footerDividersEnabled="false" />
+    </RelativeLayout>
+</RelativeLayout>

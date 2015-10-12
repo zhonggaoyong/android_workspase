@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/wv_dialog_float_up" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" />
+    <Button android:id="@id/btn_dialog_float_up_close" android:background="@drawable/btn_closed_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

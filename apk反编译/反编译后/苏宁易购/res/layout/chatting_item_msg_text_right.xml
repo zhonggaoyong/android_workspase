@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chat_left_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/chat_send_error" android:background="@drawable/chat_send_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:background="@drawable/chat_buy_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/chat_send_error" android:layout_alignRight="@id/chat_send_error" android:layout_alignParentRight="true">
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:autoLink="phone|web|email" android:id="@id/tv_chatcontent" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2.0dip" />
+            <ProgressBar android:id="@id/pbProgress" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+            <ImageView android:id="@id/iv_chat_img" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:contentDescription="@string/Mon" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="top" android:id="@id/iv_userhead" android:background="@drawable/chat_buyer_icon" android:focusable="false" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginRight="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.BannerAdView android:id="@id/banner" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/msg_remind" android:background="@drawable/show_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/banner" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.meilishuo.app.views.RoundImageView android:id="@id/msg_img" android:background="@drawable/default_avatar_round" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/msg_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:drawableRight="@drawable/show_message_right_arrow" android:layout_toRightOf="@id/msg_img" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="90" android:versionName="7.1.0" android:installLocation="auto" package="com.meilishuo" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.launcher.permission.android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MEIZU_BOOT_ALARM" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+    <uses-feature android:name="android.hardware.flash" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+    <application android:theme="@style/noMultiTouchNoTitleBar" android:label="@string/app_name" android:icon="@drawable/icon" android:name=".app.MeilishuoApplication" android:taskAffinity="com.meilishuo" android:hardwareAccelerated="true" android:largeHeap="true">
+        <meta-data android:name="QBSDKAppKey" android:value="ApN29CQwSFi0BdCueK60yg82" />
+        <meta-data android:name="SVNREVISION" android:value="revision" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="df764cca60960265d2278f2ba9f4ce436fa7e2e0" />
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="cqhvgyXtG0nWzWlxIz33YPGj" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.meilishuo.app.activity.WelcomeActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.meilishuo.app.activity.MainActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <data android:scheme="meilishuo" />
+                <data android:host="*.meilishuo" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.profile.activity.NewShareActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.meilishuo.app.category.activity.SearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.category.activity.SearchGoodsResultActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.NicknameActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.MyShareOrderActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.MyShareActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.MyMaganizeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.FocusShopActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.PopHeadImageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.register.LoginActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.meilishuo.app.profile.activity.FocusActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.meilishuo.app.register.BindAccountActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".app.herprofile.activity.HerProfileActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.BindingSettingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.CustomerServiceMsgSettingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.home.activity.NewHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.post.home.activity.PostHomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.WeiboInviteActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.goods.activity.GoodsImageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.goods.activity.MoreImagesActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.FollowsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.RecommendShopActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.herprofile.activity.GroupMagaActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.FansActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.web.MLSWebActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.share.activity.CollectMagazineActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.share.activity.ShareToSinaWeiboActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.ProfileSettingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.BankListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.ProfilePurseActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.AccountSecurityActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.RechargeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.meilishuo.app.doota.pay.activity.MLSPayWithdrawActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.meilishuo.app.doota.pay.activity.MLSPayIouResultActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.commodity.activity.CommoditySetActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.doota.pay.activity.MLSPayVerifyWithdrawActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.doota.pay.activity.MLSPayWithdrawResultActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.doota.pay.activity.MLSPayBankListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.profile.activity.DeviceListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.VersionUpdateActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.FeedbackActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.club.activity.ClubDoingsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.club.activity.ClubMsgActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.dress.activity.DressDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.dress.activity.DressPropertyListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.dress.activity.DarenListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.dress.activity.DressSkuListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name=".wxapi.WXEntryActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.goods.activity.ReplyTwitterActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".app.activity.FirstSellActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent210915" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" />
+        <activity android:name="com.meilishuo.app.shop.activity.NewShopActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.shop.activity.ShopSearchResultActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.meilishuo.app.shop.activity.ShopNewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.shop.activity.ShopDetailsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.shop.activity.ShopSpecialActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.AppSettingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.club.activity.ArticleInfoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.photo.PreviewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.club.activity.SocialCommentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".app.club.activity.GoodsShowActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".app.club.activity.GoodsChooseActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.OrderConfirmActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.doota.pay.activity.MLSPayFastPayActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.profile.activity.AutonymStatusActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.doota.pay.activity.MLSPayFastPayPayFailedActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.activity.UserIdActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.OrderCommentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.AddOrderCommentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.club.activity.ShowShoppingChooseActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.meilishuo.app.doota.pay.activity.MLSPayCheckoutActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.doota.pay.activity.MLSPayPhoneBindActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.doota.pay.activity.MLSPayVerifyBankActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.MyAddressActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.OrderDetailActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.OrderListActivty" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.CouponOrdersActivty" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.AddressActivty" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.RecommendBuyActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.AddAddressActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.circle.activity.CircleMembersActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.circle.activity.CirclePicReleaseActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.club.activity.CommunityActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.shoppingcart.activity.ShoppingCartActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.CouponActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.profile.activity.HelpActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.activity.CaptureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".wxapi.WXPayEntryActivity" android:exported="true" android:launchMode="singleTop" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.ExpressDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".app.doota.order.activity.ManageOrderExpressActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.meilishuo.app.photo.PhotoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.meilishuo.app.profile.activity.ImageFilterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.meilishuo.app.profile.activity.AddTagActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.meilishuo.app.activity.UploadActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".app.im.activity.ImActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.im.activity.CustomerServiceActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.im.activity.ServiceOrderSuccessActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.meilishuo.app.photo.CameraActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" android:largeHeap="true" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.meilishuo.app.photo.camera.CameraNewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" android:largeHeap="true" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.meilishuo.app.activity.ChangeStandardEnvironment" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.meilishuo.app.activity.ChangeABTestParam" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.meilishuo.app.profile.activity.ChangeEnvActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.meilishuo.app.profile.activity.ChangePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.meilishuo.app.register.MobileVerifyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.meilishuo.app.photo.PhotoCropActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.EvaluateMiddleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.unionpay.uppay.PayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@android:style/Theme.Translucent" android:name=".app.activity.EmptyActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="meilishuo1" />
+                <data android:host="starthttp.meilishuo" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.meilishuo.app.profile.activity.ProfileDressedActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meilishuo.app.treasure.activity.FindTreasureNewActivity" android:screenOrientation="portrait" />
+        <activity android:name=".app.qqapi.QQPayResultActivity" android:exported="true" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="qwallet210915" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.dress.activity.NewDressActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meilishuo.app.push.xgpush.LockScreenActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.meilishuo.app.push.xgpush.UnLockActivity" android:screenOrientation="portrait" />
+        <activity android:name=".app.post.home.activity.CircleDetailListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".app.post.home.activity.CircleClassifyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.circle.activity.HotCricleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.circle.activity.CircleDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.meilishuo.app.circle.activity.CircleSetActivity" android:screenOrientation="portrait" />
+        <activity android:name=".app.circle.activity.CircleDescriptionActivity" android:screenOrientation="portrait" />
+        <activity android:name=".app.circle.activity.CircleMsgDetailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name=".app.profile.fragment.CouponExpiringActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name=".app.circle.activity.CircleNewMemberListActivity" android:screenOrientation="portrait" />
+        <activity android:name=".app.circle.activity.CreateCircleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".app.circle.activity.CircleSetNoticeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".app.post.home.activity.PostDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name=".app.post.home.activity.CircleListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/activity_dialog" android:name=".app.post.home.activity.PostSuccessActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.meilishuo.app.post.release.activity.ReleaseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.meilishuo.app.post.release.activity.ReleaseEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.meilishuo.app.post.release.EditReleaseLocalAddrActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.meilishuo.app.herprofile.activity.AddLabelForUserActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name=".app.profile.activity.ProfileMessageActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.meilishuo.app.photo.TakePhotoActicity" android:screenOrientation="portrait" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.ManageOrderDetailActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.ManageOrderChangePriceActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.ManageOrderAddCommentActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meilishuo.app.doota.order.activity.ManageOrderListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.meilishuo.opensdk.OpenSdkControllerActivity" android:exported="true" android:taskAffinity="meilishuo.sdk" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:allowTaskReparenting="true">
+            <intent-filter>
+                <action android:name="com.meilishuo.opensdk" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.meilishuo.opensdk.OpenSdkAuthActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.treasure.activity.FindTreasureDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.commodity.activity.CommodityActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.meilishuo.app.commodity.activity.DanbaoHeaderPicActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.doota.order.activity.ChooseWelfareActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.im.activity.ImPhoneBookingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.im.activity.ImQuestionSelectActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".app.circle.activity.CircleFeedActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/activity_dialog" android:name=".app.home.activity.NewCustomerPromptActivity" android:screenOrientation="portrait" />
+        <activity android:name=".app.register.ConfirmBindAccountActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <receiver android:name=".app.AppRegister" android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".app.im.IMService" android:exported="true" android:process=":push">
+            <intent-filter>
+                <action android:name="com.meilishuo.push.SHUTDOWN" />
+                <action android:name="com.meilishuo.push.DISCONNECT" />
+                <action android:name="com.meilishuo.push.DISMISS" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".app.im.IMReceiver" />
+        <service android:name=".app.UninstallMonitorService" android:process=":uninstallmonitor" />
+        <receiver android:name=".app.ServiceMonitorBroadcast">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.meilishuo.alarm.GET_PUSH_ACTION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.meilishuo.app.LoginStateReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.meilishuo.app.action.user_login" />
+                <action android:name="com.meilishuo.app.action.user_logout" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.android.tpush.XGPushReceiver" android:process=":xg_service_v2">
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.meilishuo.app.push.xgpush.CustomReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.android.tpush.XGPushActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.tencent.android.tpush.service.XGPushService" android:persistent="true" android:exported="true" android:process=":xg_service_v2" />
+        <service android:name="com.tencent.android.tpush.rpc.XGRemoteService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.meilishuo.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+        <service android:name="com.tencent.android.tpush.service.XGDaemonService" android:process=":qq_push_daemon" />
+        <meta-data android:name="XG_V2_ACCESS_ID" android:value="2100028341" />
+        <meta-data android:name="XG_V2_ACCESS_KEY" android:value="A48FBY38S2KF" />
+        <meta-data android:name="XG_V2_SECRET_KEY" android:value="3e5099b437298e2e870e74655e403340" />
+    </application>
+</manifest>

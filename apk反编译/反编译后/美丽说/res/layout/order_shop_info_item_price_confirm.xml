@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <View android:layout_marginLeft="@dimen/order_margin_space" style="@style/SecondDividerViewStyle" />
+    <com.meilishuo.app.doota.order.view.OrderShopItemView android:id="@id/order_shop_info_promotion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_margin_space" app:label="@string/order_shop_info_text_shop_promotion" />
+    <com.meilishuo.app.doota.order.view.OrderShopItemView android:id="@id/order_shop_info_coupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_margin_space" app:label="@string/order_shop_info_text_shop_coupon" />
+    <com.meilishuo.app.doota.order.view.OrderShopItemView android:id="@id/order_shop_info_freight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_margin_space" app:label="@string/order_shop_info_text_shop_freight" app:isShowArrow="false" />
+    <LinearLayout android:orientation="vertical" android:id="@id/order_shop_info_cut_stock_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_margin_space" android:layout_marginTop="@dimen/order_margin_space">
+        <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/pink_d7" android:id="@id/order_shop_info_cut_stock_tips" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/order_margin_space" />
+        <View android:layout_marginTop="@dimen/order_margin_space" style="@style/SecondDividerViewStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_margin_space" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/order_margin_space" android:layout_marginBottom="15.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_shop_info_text_shop_total_price" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/pink" android:id="@id/order_shop_info_total_price_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/actionbar_compat_background" android:padding="@dimen/global_padding" android:layout_width="fill_parent" android:layout_height="@dimen/compat_list_preferred_item_height_small">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_title_home" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <com.fanli.android.view.TangFontTextView android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/icon" android:layout_toRightOf="@id/menu" />
+    </RelativeLayout>
+</LinearLayout>

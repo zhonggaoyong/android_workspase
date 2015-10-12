@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/paydone_success_background_color" android:paddingTop="30.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/paydone_sucess_icon" android:background="@drawable/paydone_success_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:contentDescription="@string/app_name" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/paydone_success_font_color1" android:id="@id/paydone_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paydone_success_text" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/paydone_success_font_color2" android:id="@id/paydone_has_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/paydone_has_send_text" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/paycart_grey_mid" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:background="@color/paydone_success_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <View android:background="@color/paycart_grey_mid" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/paydone_cart_refund_msg_area" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/paydone_cart_code_area" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/paydone_cart_goto_coupon_area" android:background="@drawable/selector_list_row" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/paycart_pink_dark" android:layout_gravity="left|center" android:id="@id/paydone_cart_goto_coupon_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paydone_cart_goto_coupon" />
+                <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" />
+            </FrameLayout>
+            <View android:background="@color/paycart_grey_mid" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/paydone_cart_goto_home" android:background="@drawable/bg_red_button_selector" android:layout_width="143.0dip" android:layout_height="40.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/paydone_cart_goto_home" android:includeFontPadding="false" />
+            <View android:background="@color/paycart_grey_mid" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <View android:id="@id/paydone_cart_recommen_devider_top" android:background="@color/paycart_grey_mid" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+        <include android:id="@id/paydone_cart_recommen_list" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tuan_detail_recommen_list" />
+        <View android:id="@id/paydone_cart_recommen_devider_bottom" android:background="@color/paycart_grey_mid" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    </LinearLayout>
+</ScrollView>

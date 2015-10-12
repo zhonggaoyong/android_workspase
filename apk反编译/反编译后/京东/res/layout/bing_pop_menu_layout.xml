@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bing_pop_menu_bg" android:layout_width="@dimen/bing_chat_popwin_width" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="11.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/delete_all_msg" android:background="@drawable/bing_right_menu_selector" android:layout_width="wrap_content" android:layout_height="@dimen/bing_chat_popwin_item_h">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bing_delete_icon" />
+            <TextView android:text="@string/bing_del_all_msg" style="@style/bing_chat_popwin_text" />
+        </LinearLayout>
+        <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/feedback_msg" android:background="@drawable/bing_right_menu_selector" android:layout_width="wrap_content" android:layout_height="@dimen/bing_chat_popwin_item_h">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bing_feedback_icon" />
+            <TextView android:text="@string/bing_feedback_msg" style="@style/bing_chat_popwin_text" />
+        </LinearLayout>
+        <View android:background="#ffe2e2e2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/help" android:background="@drawable/bing_right_menu_selector" android:visibility="gone" android:layout_width="@dimen/bing_chat_popwin_width" android:layout_height="38.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bing_help" />
+            <TextView android:text="@string/bing_help_msg" style="@style/bing_chat_popwin_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

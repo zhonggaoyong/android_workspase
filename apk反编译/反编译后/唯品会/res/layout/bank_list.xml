@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/vipnew_list_payment_header" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_tab" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="-1.0dip" android:layout_below="@id/title">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_tab_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@drawable/bank_tab_selector" android:gravity="center" android:id="@id/creditCard_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/bank_creditcard" android:layout_weight="1.0" />
+            <TextView android:id="@id/creditCard_selection" android:background="@color/vip_red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_tab_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@drawable/bank_tab_selector" android:gravity="center" android:id="@id/bankCard_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/bank_bankcard" android:layout_weight="1.0" />
+            <TextView android:id="@id/bankCard_selection" android:background="@color/vip_red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/bank_divider_line" android:background="@color/payment_border_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/layout_tab" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_creditcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_below="@id/bank_divider_line">
+        <ListView android:id="@id/creditcrad_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparency" android:cacheColorHint="#00000000" android:divider="@color/app_divider_grid_list" android:dividerHeight="0.0px" android:choiceMode="none" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_bankcontent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_below="@id/bank_divider_line">
+        <ListView android:id="@id/bankcrad_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparency" android:cacheColorHint="#00000000" android:divider="@color/app_divider_grid_list" android:dividerHeight="0.0px" android:choiceMode="none" />
+    </LinearLayout>
+    <include android:id="@id/load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title" android:layout_centerInParent="true" layout="@layout/new_load_fail" />
+</RelativeLayout>

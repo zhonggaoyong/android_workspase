@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/top_goods_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/goods_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/top_goods_list_dividing" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    <include android:id="@id/frame_header" layout="@layout/top_goods_header_view" />
+</FrameLayout>

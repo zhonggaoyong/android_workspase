@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/jd_dialog_common_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.5sp" android:textColor="#ff686868" android:gravity="center" android:layout_width="fill_parent" android:layout_height="78.0dip" android:text="使用说明" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+        <View android:background="#ffe0e0e0" style="@style/lib_phone_charge_line_hh" />
+        <TextView android:textSize="16.5sp" android:textColor="@color/lib_phone_charge_value_normal" android:id="@id/tishi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.5dip" android:text="1.列表只展示充值相关的优惠券" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="6.0dip" android:text="（分可用和不可用）" />
+        <View android:background="#ffe0e0e0" android:layout_marginTop="16.5dip" style="@style/lib_phone_charge_line_hh" />
+        <TextView android:textSize="16.5sp" android:textColor="@color/lib_phone_charge_value_normal" android:id="@id/tishi1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.5dip" android:text="2.一个订单只能使用一张优惠券" />
+        <View android:background="#ffe0e0e0" android:layout_marginTop="16.5dip" style="@style/lib_phone_charge_line_hh" />
+        <TextView android:textSize="16.5sp" android:textColor="@color/lib_phone_charge_value_normal" android:id="@id/tishi2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.5dip" android:text="3.京券金额大于订单应付金额，差额不予退回" />
+        <View android:background="#ffe0e0e0" android:layout_marginTop="16.5dip" style="@style/lib_phone_charge_line_hh" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/lib_phone_charge_value_normal" android:gravity="center" android:id="@id/confirm" android:background="@drawable/button_d" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginTop="16.5dip" android:layout_marginBottom="16.5dip" android:text="我知道了" />
+    </LinearLayout>
+</LinearLayout>

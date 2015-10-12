@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="265.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff111111" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/quan_quick_verify_title" />
+    <RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff111111" android:id="@id/quan_quick_count_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quan_quick_count_title" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:id="@id/quan_quick_count" android:paddingTop="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quan_quick_count" android:layout_below="@id/quan_quick_count_title" android:layout_alignLeft="@id/quan_quick_count_title" />
+        <RelativeLayout android:id="@id/submit_info_amount_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <include android:id="@id/submit_info_amount" layout="@layout/pay_submit_info_item" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/daren_divide" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+    <RelativeLayout android:id="@id/quan_quick_change_layout" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="61.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff111111" android:ellipsize="end" android:id="@id/quan_quick_shop_name" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:ellipsize="end" android:id="@id/quan_quick_shop_place" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:singleLine="true" android:layout_below="@id/quan_quick_shop_name" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffff4978" android:id="@id/quan_quick_shop_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/quan_quick_header_spit" android:layout_width="6.0dip" android:layout_height="12.0dip" android:src="@drawable/icon_arrows_red_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/daren_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="76.0dip">
+        <Button android:textSize="16.0sp" android:textColor="#ffff4978" android:id="@id/quan_quick_cancel" android:background="@drawable/bg_white_button_selector" android:layout_width="115.0dip" android:layout_height="40.0dip" android:layout_marginRight="11.0dip" android:text="@string/quan_quick_cancel" />
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/quan_quick_submit" android:background="@drawable/bg_red_full_button_selector" android:layout_width="115.0dip" android:layout_height="40.0dip" />
+    </LinearLayout>
+</LinearLayout>

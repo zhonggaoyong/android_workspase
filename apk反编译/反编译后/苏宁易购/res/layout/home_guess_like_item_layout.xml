@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/margin_top" android:layout_width="1.0px" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/margin_left" android:layout_width="1.0px" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_gl_item_1" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_gl_iv_1" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_eight" android:layout_marginTop="@dimen/pub_margin_or_padding_space_eight" android:layout_marginRight="@dimen/pub_margin_or_padding_space_eight">
+                <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:id="@id/tv_gl_like_des_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="描述0" android:maxLines="2" android:lines="2" />
+                <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/order_item_pay_bg" android:id="@id/tv_gl_like_price_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格0" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/margin_center" android:layout_width="1.0px" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_gl_item_2" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_gl_iv_2" android:layout_width="100.0dip" android:layout_height="100.0dip" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_eight" android:layout_marginTop="@dimen/pub_margin_or_padding_space_eight" android:layout_marginRight="@dimen/pub_margin_or_padding_space_eight">
+                <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:id="@id/tv_gl_like_des_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="描述1" android:maxLines="2" android:lines="2" />
+                <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/order_item_pay_bg" android:id="@id/tv_gl_like_price_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格1" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/margin_right" android:layout_width="1.0px" android:layout_height="1.0px" />
+    </LinearLayout>
+</LinearLayout>

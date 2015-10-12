@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_dialog_title" android:textColor="@color/dilaog_title_text_color" android:id="@id/fragment_number_picker_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_margin_left" android:layout_marginTop="@dimen/dialog_title_margin_top" android:layout_marginBottom="@dimen/dialog_title_margin_bottom" android:text="@string/select_random_ball_num" />
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_dialog_title_style" />
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_title" />
+    <com.jingdong.common.ui.GridViewWithHeaderAndFooter android:id="@id/gridview" android:background="#fff3f5f7" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="#00000000" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:numColumns="4" android:choiceMode="multipleChoice" android:layout_weight="1.0" />
+    <View android:background="#ffd7d7d7" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:orientation="horizontal" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:enabled="false" android:textSize="14.0sp" android:textColor="@color/lib_photo_bt_text_color" android:id="@id/confirm" android:background="@drawable/lib_photo_bt_confirm" android:layout_width="95.0dip" android:layout_height="33.5dip" android:layout_marginRight="11.0dip" android:text="确定" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

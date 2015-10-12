@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/mygome_simple_edit_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <com.gome.ecmall.business.login.layout.ClearEditText android:gravity="bottom" android:id="@id/mygome_simple_edit_view_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/mygome_simple_edit_view_title" android:layout_alignParentBottom="true" style="@style/gome.NewEditText.style" />
+</RelativeLayout>

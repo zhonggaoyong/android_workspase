@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/order_list_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/order_list_black" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/submit_retry_title" android:includeFontPadding="false" />
+    <View android:background="@color/order_list_mid_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="15.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/order_list_black" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/submit_retry_message1" android:includeFontPadding="false" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/order_list_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/submit_retry_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:text="@string/submit_retry_message3" android:includeFontPadding="false" />
+    <View android:background="@color/order_list_mid_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+    <Button android:textColor="@color/order_list_blue" android:gravity="center" android:layout_gravity="center" android:id="@id/submit_retry_tips_ok" android:background="@null" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/submit_retry_ok" android:includeFontPadding="false" />
+</LinearLayout>

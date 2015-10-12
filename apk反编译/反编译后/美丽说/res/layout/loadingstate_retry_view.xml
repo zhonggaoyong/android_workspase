@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_reload" android:scaleType="center" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff6c6369" android:id="@id/loading_retry_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/text_refound_reload" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ffcccccc" android:id="@id/loading_retry_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/text_refound_reload" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff80737b" android:gravity="center" android:id="@id/loading_retry_btn" android:background="@drawable/btn_done_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:minWidth="100.0dip" android:minHeight="35.0dip" android:text="@string/network_retry_btn" style="@style/CancelButtonStyle" />
+</LinearLayout>

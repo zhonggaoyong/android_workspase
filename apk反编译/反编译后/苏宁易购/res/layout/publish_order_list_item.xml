@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="90.0dip" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/publish_my_order_camera" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/rey_probar" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

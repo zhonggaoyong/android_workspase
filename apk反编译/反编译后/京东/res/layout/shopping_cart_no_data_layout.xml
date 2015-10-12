@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cart_no_data_icon" android:background="@drawable/cart_no_data_new_icon" android:layout_width="105.0dip" android:layout_height="87.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/cart_login_empty_state" android:gravity="center" android:id="@id/cart_no_data_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/cart_empty_tip" android:layout_below="@id/cart_no_data_icon" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cart_go_next_page" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/cart_no_data_state">
+        <Button android:textSize="15.0sp" android:textColor="@color/cart_empty_text_color" android:id="@id/cart_to_limit" android:background="@drawable/button_f" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/cart_look_limit" />
+        <Button android:textSize="15.0sp" android:textColor="@color/cart_empty_text_color" android:id="@id/cart_to_collect" android:background="@drawable/button_f" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cart_look_collect" />
+    </LinearLayout>
+    <View android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="65.0dip" android:layout_below="@id/cart_go_next_page" />
+</RelativeLayout>

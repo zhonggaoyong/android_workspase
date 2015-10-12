@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.BannerAdView android:id="@id/banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.meilishuo.app.treasure.view.CategoryGridView android:id="@id/channel_grid" android:background="@color/white" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:numColumns="5" />
+    <com.meilishuo.app.treasure.view.CategoryGridView android:id="@id/grid" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:stretchMode="columnWidth" android:numColumns="5" />
+    <View android:background="@color/grey_d1_t20" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <com.meilishuo.app.treasure.view.TreasureListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:listSelector="@android:color/transparent" android:divider="@null" />
+</LinearLayout>

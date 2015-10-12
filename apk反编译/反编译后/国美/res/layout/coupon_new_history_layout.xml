@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mygome_gray_white_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <FrameLayout android:id="@id/coupon_new_history_framelayout" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:layout_below="@id/common_top_layout" style="@style/common_layout_fill_height_fill_width" />
+</LinearLayout>

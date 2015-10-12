@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/global_page_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/thumb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentTop="true" />
+    <com.fanli.android.view.TangFontTextView android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_padding" android:singleLine="true" android:layout_below="@id/thumb" style="@style/TextListBody" />
+    <com.fanli.android.view.TangFontTextView android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/title" android:layout_alignParentLeft="true" style="@style/TextListPrice" />
+    <com.fanli.android.view.TangFontTextView android:id="@id/popular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/title" android:layout_alignBaseline="@id/price" android:layout_alignParentRight="true" style="@style/TextListFooter" />
+    <View android:background="@color/bg_color_grey_light" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/global_padding" android:layout_below="@id/price" />
+</RelativeLayout>

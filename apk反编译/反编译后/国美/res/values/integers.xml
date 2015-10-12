@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="alp_pkey_display_captcha_wired_dots_default">4</integer>
+    <integer name="alp_pkey_display_max_retry_default">10</integer>
+    <integer name="alp_pkey_display_min_wired_dots_default">4</integer>
+</resources>

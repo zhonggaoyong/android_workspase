@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/order_main_linearlayout" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:suning="http://schemas.android.com/apk/res/com.suning.mobile.ebuy">
+    <LinearLayout android:orientation="horizontal" android:id="@id/recreation_container_first" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="10.0dip">
+        <com.suning.mobile.ebuy.ui.home.RecreationItemView android:id="@id/recreation_btn_0" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0" />
+        <com.suning.mobile.ebuy.ui.home.RecreationItemView android:id="@id/recreation_btn_1" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0" suning:showleftline="true" />
+        <com.suning.mobile.ebuy.ui.home.RecreationItemView android:id="@id/recreation_btn_2" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0" suning:showleftline="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/recreation_container_second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <com.suning.mobile.ebuy.ui.home.RecreationItemView android:id="@id/recreation_btn_3" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0" suning:showtopline="true" />
+        <com.suning.mobile.ebuy.ui.home.RecreationItemView android:id="@id/recreation_btn_4" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0" suning:showleftline="true" suning:showtopline="true" />
+        <com.suning.mobile.ebuy.ui.home.RecreationItemView android:id="@id/recreation_btn_5" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0" suning:showleftline="true" suning:showtopline="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/recreation_container_third" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <com.suning.mobile.ebuy.ui.home.RecreationItemView android:id="@id/recreation_btn_6" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0" suning:showtopline="true" />
+        <com.suning.mobile.ebuy.ui.home.RecreationItemView android:id="@id/recreation_btn_7" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0" suning:showleftline="true" suning:showtopline="true" />
+        <com.suning.mobile.ebuy.ui.home.RecreationItemView android:id="@id/recreation_btn_8" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0" suning:showleftline="true" suning:showtopline="true" />
+    </LinearLayout>
+</LinearLayout>

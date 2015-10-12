@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/shopping_cart_delete_bg_color" android:endColor="@color/shopping_cart_delete_bg_color" android:angle="90.0" android:centerColor="@color/shopping_cart_delete_bg_color" />
+</shape>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/about_top_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding_large" android:src="@drawable/logo_fanli" />
+    <com.fanli.android.view.TangFontTextView android:gravity="left" android:id="@id/about_top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_padding_large" android:text="您的返利帐号存在安全风险，为了保障您的账户资金安全，请登录返利进行提现，请访问http://www.fanli.com" />
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_padding_large">
+        <com.fanli.android.view.TangFontTextView android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="如有疑问,请联系返利客服：" />
+        <com.fanli.android.view.TangFontTextView android:textColor="@color/text_color_red" android:gravity="left" android:autoLink="phone" android:id="@id/phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="400-672-5100" />
+    </LinearLayout>
+</LinearLayout>

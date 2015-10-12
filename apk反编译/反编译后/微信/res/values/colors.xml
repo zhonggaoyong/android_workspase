@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="a">#ffcb3816</color>
+    <color name="b">#ff808080</color>
+    <color name="c">#ff439057</color>
+    <color name="d">#fff5f5f7</color>
+    <color name="e">#ff1766be</color>
+    <color name="f">#08000000</color>
+    <color name="g">#76ffffff</color>
+    <color name="h">#ff357345</color>
+    <color name="i">#33000000</color>
+    <color name="j">#ff353535</color>
+    <color name="k">#00000000</color>
+    <color name="l">#ffededed</color>
+    <color name="m">#26000000</color>
+    <color name="n">#ff1766be</color>
+    <color name="o">#ff2d3132</color>
+    <color name="p">#ff353535</color>
+    <color name="q">#ff718bc1</color>
+    <color name="r">#ff353535</color>
+    <color name="s">#ff666666</color>
+    <color name="t">#ff525252</color>
+    <color name="u">@android:color/white</color>
+    <color name="v">@android:color/white</color>
+    <color name="w">#ffaaaaaa</color>
+    <color name="x">@android:color/white</color>
+    <color name="y">#ff737373</color>
+    <color name="z">@android:color/white</color>
+    <color name="a0">#ffaaaaaa</color>
+    <color name="a1">#ff737373</color>
+    <color name="a2">#ffdd4b39</color>
+    <color name="a3">#ffd2d2d2</color>
+    <color name="a4">#fff3f3f3</color>
+    <color name="a5">#ffbebebe</color>
+    <color name="a6">#80bebebe</color>
+    <color name="a7">#ff323232</color>
+    <color name="a8">#80323232</color>
+    <color name="a9">#ffb2b2b2</color>
+    <color name="a_">#ff000000</color>
+    <color name="aa">#ff808080</color>
+    <color name="ab">#ff808080</color>
+    <color name="ac">#6633b5e5</color>
+    <color name="ad">#6633b5e5</color>
+    <color name="ae">#ff33b5e5</color>
+    <color name="af">#ff0000ee</color>
+    <color name="ag">#ff7fa87f</color>
+    <color name="ah">@android:color/black</color>
+    <color name="ai">@android:color/black</color>
+    <color name="aj">#ffffffff</color>
+    <color name="ak">#ff000000</color>
+    <color name="al">#7f000000</color>
+    <color name="am">#7fffffff</color>
+    <color name="an">#d9000000</color>
+    <color name="ao">#ffccddff</color>
+    <color name="ap">#ffff0101</color>
+    <color name="aq">#ff58616d</color>
+    <color name="ar">#ff404040</color>
+    <color name="as">#ff9fd524</color>
+    <color name="at">#ff737373</color>
+    <color name="au">#ffe0e0e0</color>
+    <color name="av">#4d000000</color>
+    <color name="aw">#a0000000</color>
+    <color name="ax">#00000000</color>
+    <color name="ay">#ffffffff</color>
+    <color name="az">#ffebebeb</color>
+    <color name="b0">#ff576b95</color>
+    <color name="b1">#ff7a93af</color>
+    <color name="b2">@color/ay</color>
+    <color name="b3">#ff1d1d1d</color>
+    <color name="b4">#bf000000</color>
+    <color name="b5">#4c000000</color>
+    <color name="b6">#ff385486</color>
+    <color name="b7">#ff000000</color>
+    <color name="b8">#ffbab9b5</color>
+    <color name="b9">#ff339900</color>
+    <color name="b_">#ff7f7f7f</color>
+    <color name="ba">#fff00000</color>
+    <color name="bb">@color/b0</color>
+    <color name="bc">@color/b0</color>
+    <color name="bd">#ff444444</color>
+    <color name="be">#ff888888</color>
+    <color name="bf">#ffebebeb</color>
+    <color name="bg">#ffebebeb</color>
+    <color name="bh">#ff353535</color>
+    <color name="bi">#ffbb5f5d</color>
+    <color name="bj">#7f353535</color>
+    <color name="bk">#ff999999</color>
+    <color name="bl">#ff888888</color>
+    <color name="bm">#ffdddddd</color>
+    <color name="bn">#ffd8d8d8</color>
+    <color name="bo">#ffbbbbbb</color>
+    <color name="bp">#ffaaaaaa</color>
+    <color name="bq">#ff636363</color>
+    <color name="br">#ffc9c9c9</color>
+    <color name="bs">#ffffffff</color>
+    <color name="bt">#ff22292c</color>
+    <color name="bu">#ea303537</color>
+    <color name="bv">#ff45c01a</color>
+    <color name="bw">#ff999999</color>
+    <color name="bx">#7fffffff</color>
+    <color name="by">#ff484c4c</color>
+    <color name="bz">#ffc5c5c5</color>
+    <color name="c0">#ff727272</color>
+    <color name="c1">#ffd9d9d9</color>
+    <color name="c2">#ff666666</color>
+    <color name="c3">#ff45c01a</color>
+    <color name="c4">#ff7feb37</color>
+    <color name="c5">#7f45c01a</color>
+    <color name="c6">#ffaaaaaa</color>
+    <color name="c7">#ff3cac17</color>
+    <color name="c8">#40000000</color>
+    <color name="c9">#26000000</color>
+    <color name="c_">#ff14191a</color>
+    <color name="ca">#4d000000</color>
+    <color name="cb">#ff191b1c</color>
+    <color name="cc">@color/c9</color>
+    <color name="cd">#f22e3132</color>
+    <color name="ce">#ffe5e5e5</color>
+    <color name="cf">@color/ce</color>
+    <color name="cg">#ff2e3132</color>
+    <color name="ch">#ffbbbbbb</color>
+    <color name="ci">#ff191919</color>
+    <color name="cj">@color/c3</color>
+    <color name="ck">#ffaaaaaa</color>
+    <color name="cl">#ff858585</color>
+    <color name="cm">#ff45c01a</color>
+    <color name="cn">@color/aj</color>
+    <color name="co">@color/am</color>
+    <color name="cp">@color/am</color>
+    <color name="cq">@color/c3</color>
+    <color name="cr">#ff298409</color>
+    <color name="cs">@color/c5</color>
+    <color name="ct">#ffff5454</color>
+    <color name="cu">#ffd24242</color>
+    <color name="cv">#7fff5454</color>
+    <color name="cw">#fff1f1f1</color>
+    <color name="cx">#ffd8d8d8</color>
+    <color name="cy">#7fd8d8d8</color>
+    <color name="cz">#ffbebebe</color>
+    <color name="d0">#ff9e9e9e</color>
+    <color name="d1">#7f9e9e9e</color>
+    <color name="d2">#00000000</color>
+    <color name="d3">#00000000</color>
+    <color name="d4">#00000000</color>
+    <color name="d5">#ffcfcfcf</color>
+    <color name="d6">#ff353535</color>
+    <color name="d7">#7fcfcfcf</color>
+    <color name="d8">#ffedfff0</color>
+    <color name="d9">@color/b0</color>
+    <color name="d_">#80ffffff</color>
+    <color name="da">#80ffffff</color>
+    <color name="db">#ff007aff</color>
+    <color name="dc">#ffee524d</color>
+    <color name="dd">@color/c3</color>
+    <color name="de">#ffff2c55</color>
+    <color name="df">#9dff2c55</color>
+    <color name="dg">#26ffffff</color>
+    <color name="dh">#33000000</color>
+    <color name="di">#c0000000</color>
+    <color name="dj">#4cffffff</color>
+    <color name="dk">#ffc44e3f</color>
+    <color name="dl">@color/b0</color>
+    <color name="dm">#ffe6e6e6</color>
+    <color name="dn">#ffff3e3e</color>
+    <color name="do">#ffd8d8d8</color>
+    <color name="dp">#ffdbdbdb</color>
+    <color name="dq">#ff8daebf</color>
+    <color name="dr">#ffb3b3b3</color>
+    <color name="ds">#ff469f04</color>
+    <color name="dt">#ff04539c</color>
+    <color name="du">#fff3f3f3</color>
+    <color name="dv">#ffacacac</color>
+    <color name="dw">#ff434343</color>
+    <color name="dx">#ff353535</color>
+    <color name="dy">#ff999999</color>
+    <color name="dz">#ffb3b3b3</color>
+    <color name="e0">#ffd1d1d1</color>
+    <color name="e1">#ff7a93af</color>
+    <color name="e2">@color/aj</color>
+    <color name="e3">#ff999999</color>
+    <color name="e4">#ff353535</color>
+    <color name="e5">#ffb3b3b3</color>
+    <color name="e6">#ffededed</color>
+    <color name="e7">#26000000</color>
+    <color name="e8">#ffffc15c</color>
+    <color name="e9">#ff62be85</color>
+    <color name="e_">#ffffffff</color>
+    <color name="ea">#ff50b56a</color>
+    <color name="eb">#ffffffff</color>
+    <color name="ec">#ffe64340</color>
+    <color name="ed">#ff45c01a</color>
+    <color name="ee">#fff88616</color>
+    <color name="ef">#ffb3b3b3</color>
+    <color name="eg">#9a50b56a</color>
+    <color name="eh">#73000000</color>
+    <color name="ei">#fff6951d</color>
+    <color name="ej">#ff21b310</color>
+    <color name="ek">#1a000000</color>
+    <color name="el">#ffdfdfdf</color>
+    <color name="em">#ff808080</color>
+    <color name="en">#ff353535</color>
+    <color name="eo">#ff808080</color>
+    <color name="ep">#ff737373</color>
+    <color name="eq">#ffd1d1d1</color>
+    <color name="er">#ff03bc01</color>
+    <color name="es">#fff0eff3</color>
+    <color name="et">#cd4e4e4e</color>
+    <color name="eu">#ff5e6971</color>
+    <color name="ev">#ffb2b2b2</color>
+    <color name="ew">#fff8f8f8</color>
+    <color name="ex">#ffdadada</color>
+    <color name="ey">#ff888888</color>
+    <color name="ez">#ff757575</color>
+    <color name="f0">#fff2f2f2</color>
+    <color name="f1">#ff353535</color>
+    <color name="f2">#ff7a93af</color>
+    <color name="f3">#ffd1d1d1</color>
+    <color name="f4">#ff999999</color>
+    <color name="f5">#f5ffffff</color>
+    <color name="f6">#e5363636</color>
+    <color name="f7">#dededede</color>
+    <color name="f8">#ff9a9a9a</color>
+    <color name="f9">#ff282828</color>
+    <color name="f_">#ffcccac6</color>
+    <color name="fa">#ff353535</color>
+    <color name="fb">#ff999999</color>
+    <color name="fc">#ff14bd20</color>
+    <color name="fd">#ff737373</color>
+    <color name="fe">@color/fd</color>
+    <color name="ff">#ff737373</color>
+    <color name="fg">#ffeeeeee</color>
+    <color name="fh">#00000000</color>
+    <color name="fi">#fff2f2f2</color>
+    <color name="fj">@color/f_</color>
+    <color name="fk">#ff000000</color>
+    <color name="fl">#ffd9d9d9</color>
+    <color name="fm">#ffff9900</color>
+    <color name="fn">#ffcacaca</color>
+    <color name="fo">#ff007aff</color>
+    <color name="fp">#ff21b100</color>
+    <color name="fq">#ff576895</color>
+    <color name="fr">#ffffffff</color>
+    <color name="fs">#9affffff</color>
+    <color name="ft">#8affffff</color>
+    <color name="fu">#66ffffff</color>
+    <color name="fv">#ccffffff</color>
+    <color name="fw">#33ffffff</color>
+    <color name="fx">#ff666666</color>
+    <color name="fy">#ff3d5a8d</color>
+    <color name="fz">#ff45c01a</color>
+    <color name="g0">#ff353535</color>
+    <color name="g1">#ff999999</color>
+    <color name="g2">#ff2d3132</color>
+    <color name="g3">#ff9eaab8</color>
+    <color name="g4">#ffb2b2b2</color>
+    <color name="g5">#ffbf3932</color>
+    <color name="g6">#ff576b95</color>
+    <color name="g7">#ffb2b2b2</color>
+    <color name="g8">#ff888888</color>
+    <color name="g9">#ff000000</color>
+    <color name="g_">#ffaaaaaa</color>
+    <color name="ga">#ff686f78</color>
+    <color name="gb">#80ffffff</color>
+    <color name="gc">#ff808080</color>
+    <color name="gd">#ff454545</color>
+    <color name="ge">#ff000000</color>
+    <color name="gf">#ffdb5454</color>
+    <color name="gg">#ff45c44f</color>
+    <color name="gh">#ffdb5454</color>
+    <color name="gi">#ff8fdc95</color>
+    <color name="gj">#ff45c44f</color>
+    <color name="gk">#ff76c27c</color>
+    <color name="gl">#ffdb5454</color>
+    <color name="gm">#ffdb5454</color>
+    <color name="gn">#ff181e1f</color>
+    <color name="go">#66454545</color>
+    <color name="gp">#4cffffff</color>
+    <color name="gq">#66ffffff</color>
+    <color name="gr">#28ffffff</color>
+    <color name="gs">#ccff0101</color>
+    <color name="gt">@color/aj</color>
+    <color name="gu">#ff909090</color>
+    <color name="gv">#0d000000</color>
+    <color name="gw">#ffa6473a</color>
+    <color name="gx">@color/ak</color>
+    <color name="gy">#b3000000</color>
+    <color name="gz">#b3ffffff</color>
+    <color name="h0">#fffa6352</color>
+    <color name="h1">#ffffd196</color>
+    <color name="h2">#ff999999</color>
+    <color name="h3">#ffe85946</color>
+    <color name="h4">#ffddb364</color>
+    <color name="h5">#ffa74739</color>
+    <color name="h6">#ff5171b0</color>
+    <color name="h7">#ff7a93af</color>
+    <color name="h8">#1affffff</color>
+    <color name="h9">#ff404040</color>
+    <color name="h_">#ff757575</color>
+    <color name="ha">#ffa5a5a5</color>
+    <color name="hb">#ff292929</color>
+    <color name="hc">#ffa1a1a1</color>
+    <color name="hd">#ffffffff</color>
+    <color name="he">#ff353535</color>
+    <color name="hf">#ff999999</color>
+    <color name="hg">#ff999999</color>
+    <color name="hh">#ffffffff</color>
+    <color name="hi">#ffd2d2d2</color>
+    <color name="hj">#fff5f5f5</color>
+    <color name="hk">#ffaaaaaa</color>
+    <color name="hl">#eb7f7f7f</color>
+    <color name="hm">#ff353535</color>
+    <color name="hn">#ffaaaaaa</color>
+    <color name="ho">#ff406ca2</color>
+    <color name="hp">#88111111</color>
+    <color name="hq">#ffb8b8b8</color>
+    <color name="hr">#99000000</color>
+    <color name="hs">#ffd9d9d9</color>
+    <color name="ht">#ff353535</color>
+    <color name="hu">#ffaaaaaa</color>
+    <color name="hv">#ffb0b0b0</color>
+    <color name="hw">#ff999999</color>
+    <color name="hx">#ff353535</color>
+    <color name="hy">#ff353535</color>
+    <color name="hz">#ffeaeaea</color>
+    <color name="i0">#ff298409</color>
+    <color name="i1">#ff45c01a</color>
+    <color name="i2">#80d24242</color>
+    <color name="i3">#ff292c2d</color>
+    <color name="i4">#ffb8b8b8</color>
+    <color name="i5">#fffbfafa</color>
+    <color name="i6">#ff2b2d2e</color>
+    <color name="i7">#aa2b2d2e</color>
+    <color name="i8">#ff454545</color>
+    <color name="i9">#ff999999</color>
+    <color name="i_">#ff5e5e5e</color>
+    <color name="ia">#ff222425</color>
+    <color name="ib">#ff323435</color>
+    <color name="ic">#8affffff</color>
+    <color name="id">#ccffffff</color>
+    <color name="ie">#ff1766be</color>
+    <color name="if">#ff3b3e3f</color>
+    <color name="ig">#ffffe8b6</color>
+    <color name="ih">#ffffe8b6</color>
+    <color name="ii">#ff8f220c</color>
+    <color name="ij">#ffd34336</color>
+    <color name="ik">#ffff5454</color>
+    <color name="il">#ffeeeeee</color>
+    <color name="im">#ffffffff</color>
+    <color name="in">#ff4f4f4f</color>
+    <color name="io">#ff111111</color>
+    <color name="ip">#ffcccac6</color>
+    <color name="iq">#ff323232</color>
+    <color name="ir">#ff272727</color>
+    <color name="is">#ff454545</color>
+    <color name="it">#fff8f8f8</color>
+    <color name="iu">#ffb3b3b3</color>
+    <color name="iv">#ff8a8a8a</color>
+    <color name="iw">#ff393939</color>
+    <color name="ix">#ffb3b3b3</color>
+    <color name="iy">#ff292929</color>
+    <color name="iz">#ffe8eaec</color>
+    <color name="j0">#80000000</color>
+    <color name="j1">#b8000000</color>
+    <color name="j2">#fffdc006</color>
+    <color name="j3">#fff1f1f1</color>
+    <color name="j4">#ff454545</color>
+    <color name="j5">#ffd9d9d9</color>
+    <color name="j6">#ffc6c6c6</color>
+    <color name="j7">#ff4b4b4b</color>
+    <color name="j8">#ff676767</color>
+    <color name="j9">#ffc3c3c3</color>
+    <color name="j_">#ff555555</color>
+    <color name="ja">#ff576b95</color>
+    <color name="jb">#ffaaaaaa</color>
+    <color name="jc">#ffa0a0a0</color>
+    <color name="jd">#ff666666</color>
+    <color name="je">#cc000000</color>
+    <color name="jf">#ffd7d7d7</color>
+    <color name="jg">#fff8f8f8</color>
+    <color name="jh">#ffb2b2b2</color>
+    <color name="ji">#ff737373</color>
+    <color name="jj">#ff282b2d</color>
+    <color name="jk">#ff6f7476</color>
+    <color name="jl">#7f000000</color>
+    <color name="jm">#ff7feb37</color>
+    <color name="jn">#3309bb07</color>
+    <color name="jo">#ffd5d7d8</color>
+    <color name="jp">#ffd5d7d8</color>
+    <color name="jq">#ff333333</color>
+    <color name="jr">#ff6f7378</color>
+    <color name="js">#ffffffff</color>
+    <color name="jt">#ff3fb838</color>
+    <color name="ju">#ffffffff</color>
+    <color name="jv">#ffd5d7d8</color>
+    <color name="jw">#96ffffff</color>
+    <color name="jx">#ff000000</color>
+    <color name="jy">#ff888888</color>
+    <color name="jz">#ff888888</color>
+    <color name="k0">#88888888</color>
+    <color name="k1">#ffaaaaaa</color>
+    <color name="k2">#ff333333</color>
+    <color name="k3">#ff6f7378</color>
+    <color name="k4">#ff333333</color>
+    <color name="k5">#ff333333</color>
+    <color name="k6">#ff79ffc5</color>
+    <color name="k7">#fffa80a0</color>
+    <color name="k8">#ff393c41</color>
+    <color name="k9">#ffd2d6de</color>
+    <color name="k_">#ff757575</color>
+    <color name="ka">#ff707070</color>
+    <color name="kb">#ffb71414</color>
+    <color name="kc">#ff576b95</color>
+    <color name="kd">#ff7c7c7c</color>
+    <color name="ke">#ffb3b3b3</color>
+    <color name="kf">#ff5d5d5d</color>
+    <color name="kg">#ffa5db2c</color>
+    <color name="kh">#ff999999</color>
+    <color name="ki">#3f000000</color>
+    <color name="kj">#66000000</color>
+    <color name="kk">#3fffffff</color>
+    <color name="kl">#66ffffff</color>
+    <color name="km">#b2ffffff</color>
+    <color name="kn">#b30a0a0a</color>
+    <color name="ko">#cc0a0a0a</color>
+    <color name="kp">#b3ffffff</color>
+    <color name="kq">#99ffffff</color>
+    <item type="color" name="kr">r/i/kr.xml</item>
+    <item type="color" name="ks">r/i/ks.xml</item>
+    <item type="color" name="kt">r/i/kt.xml</item>
+    <item type="color" name="ku">r/i/ku.xml</item>
+    <item type="color" name="kv">r/i/kv.xml</item>
+    <item type="color" name="kw">r/i/kw.xml</item>
+    <item type="color" name="kx">r/i/kx.xml</item>
+    <item type="color" name="ky">r/i/ky.xml</item>
+    <item type="color" name="kz">r/i/kz.xml</item>
+    <item type="color" name="l0">r/i/l0.xml</item>
+    <item type="color" name="l1">r/i/l1.xml</item>
+    <item type="color" name="l2">r/i/l2.xml</item>
+    <item type="color" name="l3">r/i/l3.xml</item>
+    <item type="color" name="l4">r/i/l4.xml</item>
+    <item type="color" name="l5">r/i/l5.xml</item>
+    <item type="color" name="l6">r/i/l6.xml</item>
+    <item type="color" name="l7">r/i/l7.xml</item>
+    <item type="color" name="l8">r/i/l8.xml</item>
+    <item type="color" name="l9">r/i/l9.xml</item>
+    <item type="color" name="l_">r/i/l_.xml</item>
+    <item type="color" name="la">r/i/la.xml</item>
+    <item type="color" name="lb">r/i/lb.xml</item>
+    <item type="color" name="lc">r/i/lc.xml</item>
+    <item type="color" name="ld">r/i/ld.xml</item>
+    <item type="color" name="le">r/i/le.xml</item>
+    <item type="color" name="lf">r/i/lf.xml</item>
+    <item type="color" name="lg">r/i/lg.xml</item>
+    <item type="color" name="lh">r/i/lh.xml</item>
+    <item type="color" name="li">r/i/li.xml</item>
+    <item type="color" name="lj">r/i/lj.xml</item>
+    <item type="color" name="lk">r/i/lk.xml</item>
+    <item type="color" name="ll">r/i/ll.xml</item>
+    <item type="color" name="lm">r/i/lm.xml</item>
+    <item type="color" name="ln">r/i/ln.xml</item>
+    <item type="color" name="lo">r/i/lo.xml</item>
+    <item type="color" name="lp">r/i/lp.xml</item>
+    <item type="color" name="lq">r/i/lq.xml</item>
+    <item type="color" name="lr">r/i/lr.xml</item>
+    <item type="color" name="ls">r/i/ls.xml</item>
+    <item type="color" name="lt">r/i/lt.xml</item>
+    <item type="color" name="lu">r/i/lu.xml</item>
+    <item type="color" name="lv">r/i/lv.xml</item>
+    <item type="color" name="lw">r/i/lw.xml</item>
+    <item type="color" name="lx">r/i/lx.xml</item>
+    <item type="color" name="ly">r/i/ly.xml</item>
+</resources>

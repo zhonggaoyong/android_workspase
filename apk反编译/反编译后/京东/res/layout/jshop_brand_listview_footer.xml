@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="#fff2f1f6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jshop="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="#ff9fa0a0" android:gravity="center" android:layout_gravity="center" android:id="@id/jshop_brand_footer_tv" android:layout_width="wrap_content" android:layout_height="52.0dip" android:text="@string/jshop_brand_footer_end" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:gesture-image="http://schemas.polites.com/android"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_loading_vpp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/progressBar_loading" />
+    <com.gome.ecmall.custom.photoview.PhotoView android:id="@id/iv_content_vpp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

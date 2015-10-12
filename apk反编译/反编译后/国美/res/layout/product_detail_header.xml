@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/title_bar_bg_color" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/product_detail_header_back_btn" android:background="@drawable/product_detail_back_selector" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/title_layout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <Button android:id="@id/product_detail_header_online_btn" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+        <Button android:enabled="false" android:id="@id/product_detail_header_more_btn" android:background="@drawable/product_detail_header_more_white" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+    </LinearLayout>
+    <View android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</RelativeLayout>

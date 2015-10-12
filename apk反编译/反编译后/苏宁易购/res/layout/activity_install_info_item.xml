@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/install_item_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_ten"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/pub_textsize_eighteen" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_ten" android:text="@string/logistics_install_status" />
+</LinearLayout>

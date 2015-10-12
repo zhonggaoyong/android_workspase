@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/rl_bottombanner_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_home_preference_choiceness_img" android:layout_width="wrap_content" android:layout_height="90.0dip" android:scaleType="centerInside" android:contentDescription="@null" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/tv_home_preference_choiceness_name" android:layout_width="85.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="30.0dip" android:lines="1" android:layout_toRightOf="@id/iv_home_preference_choiceness_img" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffc4c4c4" android:id="@id/tv_home_preference_choiceness_ad" android:layout_width="80.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_toRightOf="@id/iv_home_preference_choiceness_img" android:layout_below="@id/tv_home_preference_choiceness_name" android:layout_alignLeft="@id/tv_home_preference_choiceness_name" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/coupon_gou_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/coupon_gou_header0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#fff0eff7" android:layout_width="fill_parent" android:layout_height="@dimen/detail_tb_padding" />
+            <View android:background="@color/detail_divider_gray_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" android:layerType="software" />
+        </LinearLayout>
+        <include android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/coupon_gou_header" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/coupon_gou_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/coupon_gou_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <View android:background="@color/detail_divider_gray_light" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" android:layerType="software" />
+        <View android:background="@color/detail_divider_gray_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" android:layerType="software" />
+        <RelativeLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_lr_padding" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="12.0sp" android:textColor="@color/detail_gray_light" android:id="@id/v_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_price" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/detail_gray_light" android:id="@id/coupon_gou_prices1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/v_tag" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/detail_black" android:id="@id/c_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/coupon_price" android:layout_below="@id/v_tag" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/detail_pink_dark" android:id="@id/coupon_gou_prices2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_toRightOf="@id/c_tag" android:layout_below="@id/v_tag" />
+        </RelativeLayout>
+        <Button android:textSize="14.0sp" android:textColor="@color/detail_pink_dark" android:id="@id/coupon_gou_btn" android:background="@drawable/btn_line_violet_bg" android:layout_width="120.0dip" android:layout_height="30.0dip" android:layout_marginRight="@dimen/detail_lr_padding" android:text="@string/coupon_add_cart" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

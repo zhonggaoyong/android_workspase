@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/list_panel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip">
+                <CheckBox android:id="@id/all_select" android:background="@drawable/new_cb_img" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:checked="false" android:button="@null" />
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/return_products_title" android:singleLine="true" android:layout_weight="1.0" />
+                <ImageView android:gravity="right|center" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_notice_purple" />
+                <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_red" android:gravity="right|center" android:id="@id/flow_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="@string/return_info_flow_view" android:singleLine="true" />
+            </LinearLayout>
+            <ListView android:id="@id/orderReturnListView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@null" android:divider="@drawable/transparent" android:dividerHeight="0.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/return_apply_bottom" />
+</LinearLayout>

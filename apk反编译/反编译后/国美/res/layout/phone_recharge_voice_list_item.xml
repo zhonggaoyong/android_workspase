@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/phone_voice_charge_light_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/phone_voice_charge_deep_deep_gray" android:id="@id/tv_contact_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="13.0dip" android:text="大大大星" />
+    <TextView android:textSize="22.0sp" android:textColor="@color/phone_voice_charge_red" android:id="@id/tv_contact_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="13978947895" android:drawableRight="@drawable/shop_car_jiantou" />
+    <View android:id="@id/divider" android:background="@color/phone_voice_charge_list_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="13.0dip" />
+</LinearLayout>

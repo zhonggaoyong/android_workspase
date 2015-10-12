@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d4" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务" android:singleLine="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="1.0dip" android:text="4.5" android:singleLine="true" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ico_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginBottom="0.5dip" />
+</LinearLayout>

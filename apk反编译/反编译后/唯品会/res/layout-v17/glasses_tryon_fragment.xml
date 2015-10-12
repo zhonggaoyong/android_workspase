@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-50.0dip" android:layout_below="@id/title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <FrameLayout android:id="@id/camera_stream" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/sdk_can_not_connect_camera" android:background="#60ffffff" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sdk_can_not_connect_camera" />
+    <ImageView android:id="@id/guide_anchor" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <include android:id="@id/title" layout="@layout/glasses_tryon_title" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/root_group" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/glasses_gallery_parent" android:layout_below="@id/title">
+        <RelativeLayout android:id="@id/relativeLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/glasses_album_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/glasses_album" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/glasses_album_btn" />
+                <RelativeLayout android:orientation="horizontal" android:id="@id/glasses_album_parent1" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/glasses_album_tip" android:background="@drawable/glasses_album_redpoint" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text="" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/glasses_photograph_parent" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_weight="1.0" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/glasses_page_tip" android:background="@drawable/glasses_tip_bg" android:visibility="gone" android:layout_width="75.0dip" android:layout_height="75.0dip" android:text="12/40" />
+                <ImageView android:id="@id/glasses_photograph" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/glasses_take_photo_btn" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/glasses_cart_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/glasses_cart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/glasses_cart" />
+                <ImageView android:id="@id/glasses_cart_tip" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/glasses_redpoint" android:layout_alignRight="@id/glasses_cart" android:layout_alignParentTop="true" android:layout_alignEnd="@id/glasses_cart" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/glasses_gallery_parent" android:background="#ff17161e" android:layout_width="fill_parent" android:layout_height="106.0dip" android:layout_alignParentBottom="true">
+        <com.achievo.vipshop.glasses.ui.gallery.GlassesGalleryRecyclerView android:scrollbarSize="0.0dip" android:layout_gravity="bottom" android:id="@id/id_recyclerview_horizontal" android:background="#ff17161e" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/glasses_gallery_disable_parent" android:background="#00ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="106.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/glasses_gallery_empty_parent" android:background="#00ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="106.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/app_textsize_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/glasses_gallery_products_empty" />
+    </LinearLayout>
+    <ViewStub android:id="@id/glassed_guide_viewstub" android:visibility="gone" android:layout="@layout/glasses_tryon_guide" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

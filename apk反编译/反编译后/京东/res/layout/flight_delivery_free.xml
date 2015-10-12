@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/receiver_info_title" android:background="@color/travel_all_bg" android:paddingLeft="@dimen/add_boarder_margin_left" android:layout_width="fill_parent" android:layout_height="@dimen/add_constant_tv_hight" />
+    <View style="@style/travel_view_splite_h" />
+    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/add_boarder_margin_left" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/jdtravel_contact_icon" android:background="@drawable/flight_icon_contacts_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/jdtravel_contact_icon">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+                <TextView android:textSize="18.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="姓名:" />
+                <EditText android:id="@id/jdtravel_check_name_et" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/flight_splitline_h" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+                <TextView android:textSize="18.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号:" />
+                <EditText android:id="@id/jdtravel_check_phonenumber_et" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/flight_splitline_h" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/jdtravel_district_rl" android:background="@color/white" android:paddingLeft="@dimen/add_boarder_margin_left" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+        <TextView android:textSize="18.0sp" android:textColor="#ff686868" android:id="@id/jdtravel_district_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地区:" android:layout_centerVertical="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jdtravel_district_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/flight_back_arrow_common" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:id="@id/jdtravel_district_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/jdtravel_district_iv" android:layout_toRightOf="@id/jdtravel_district_head" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/flight_splitline_h" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/add_boarder_margin_left" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+        <TextView android:textSize="18.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地址:" />
+        <EditText android:id="@id/jdtravel_addr_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/flight_splitline_h" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/add_boarder_margin_left" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+        <TextView android:textSize="18.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮编:" />
+        <EditText android:id="@id/jdtravel_postal_code_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="number" />
+    </LinearLayout>
+    <View style="@style/travel_view_splite_h" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/add_boarder_margin_left" android:layout_marginTop="10.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flight_icon_info" />
+        <TextView android:textSize="12.0sp" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="飞机起飞后，为您邮寄，一般7-15个工作日到达" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/my_account_manager_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <View android:id="@id/my_account_center_divide_line_1" style="@style/line1" />
+        <RelativeLayout android:id="@id/my_easy_buy" android:background="@drawable/personel_list_item_bg_selector" android:paddingLeft="23.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <TextView android:id="@id/my_easybuy_image" android:background="@drawable/android_my_jd_easy_mananger" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/my_easybuy_text" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pg_my_jd_my_easybuy" android:layout_toRightOf="@id/my_easybuy_image" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/my_easybuy_arrow" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/android_list_idex" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/my_account_center_divide_line_2" style="@style/line1" />
+        <RelativeLayout android:id="@id/my_blank_note" android:background="@drawable/personel_list_item_bg_selector" android:paddingLeft="23.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:textColor="@color/black" android:id="@id/my_blank_note_image" android:background="@drawable/android_my_jd_blank_note" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/my_blank_note_text" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_jd_blank_note" android:layout_toRightOf="@id/my_blank_note_image" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/my_blank_note_arrow" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/android_list_idex" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/my_account_center_divide_line_3" android:visibility="gone" style="@style/line1" />
+        <RelativeLayout android:id="@id/my_account_safe" android:background="@drawable/personel_list_item_bg_selector" android:paddingLeft="23.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:textColor="@color/black" android:id="@id/my_account_safe_image" android:background="@drawable/android_my_jd_account_safe" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/my_account_safe_text" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pg_my_jd_my_account_safe" android:layout_toRightOf="@id/my_account_safe_image" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/my_account_safe_arrow" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/android_list_idex" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/my_account_center_divide_line_4" style="@style/line1" />
+    </LinearLayout>
+</LinearLayout>

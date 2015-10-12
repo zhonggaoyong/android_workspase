@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color_grey_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@drawable/bg_edittext_default_no_padding" android:paddingBottom="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/global_padding">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/about_top_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/global_padding_large" android:src="@drawable/logo_fanli" android:layout_alignParentTop="true" />
+            <com.fanli.android.view.TangFontTextView android:gravity="center_horizontal" android:id="@id/about_top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_padding_large" android:text="@string/option_about_subtitle" android:layout_below="@id/about_top_logo" style="@style/TextListHeaderNoBold" />
+            <com.fanli.android.view.TangFontTextView android:gravity="center_horizontal" android:id="@id/version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/option_about_version" android:layout_below="@id/about_top_title" style="@style/TextListHeaderNoBold" />
+            <com.fanli.android.view.TangFontTextView android:gravity="center_horizontal" android:id="@id/about_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/TextListDetailNoBold" />
+            <TextView android:gravity="center_horizontal" android:padding="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/option_about_footer" android:layout_alignParentBottom="true" style="@style/TextListBody2" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_tab" android:layout_width="27.0dip" android:layout_height="26.0dip" android:layout_centerVertical="true" />
+        <com.fanli.android.view.TangFontTextView android:textSize="@dimen/home350_textsize" android:textColor="@color/new_bottom_tab_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/tv_tab" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:singleLine="true" android:layout_toRightOf="@id/iv_tab" />
+        <com.fanli.android.view.TangFontTextView android:id="@id/tv_new" android:background="@drawable/tab_red" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/iv_tab" />
+    </RelativeLayout>
+</LinearLayout>

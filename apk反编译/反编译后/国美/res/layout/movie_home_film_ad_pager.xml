@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gome.ecmall.home.movie.custom.MyViewPager android:id="@id/movie_home_ad_pager" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/pager_ad_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_close" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/movie_home_ad_pager_point" android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

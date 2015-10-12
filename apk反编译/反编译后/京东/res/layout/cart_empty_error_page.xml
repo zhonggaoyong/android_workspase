@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/shopping_cart_no_data_page" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/shopping_cart_no_data_layout" />
+        <include android:id="@id/shopping_cart_load_error_page" android:background="@color/cart_new_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_error_tips" />
+    </LinearLayout>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

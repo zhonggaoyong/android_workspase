@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/lib_phone_charge_shape" android:layout_width="304.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/lib_phone_charge_float_text" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/charge_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="39.0dip" android:layout_marginRight="16.0dip" android:text="什么是支付密码？" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/lib_phone_charge_float_text" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/charge_alart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="39.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="32.0dip" android:text="@string/pay_password_explain" />
+    <LinearLayout android:orientation="vertical" android:id="@id/voice_operation_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:layout_marginBottom="19.0dip" style="@style/line4" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="22.0dip">
+            <Button android:textSize="15.0sp" android:textColor="@color/lib_phone_charge_float_text" android:gravity="center" android:id="@id/charge_cancel" android:background="@drawable/lib_phone_charge_cancel_shape" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="我知道了" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

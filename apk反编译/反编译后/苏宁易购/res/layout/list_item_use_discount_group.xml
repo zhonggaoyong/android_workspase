@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_coupon_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_28px" android:layout_marginTop="@dimen/ios_public_space_28px" android:layout_marginRight="@dimen/ios_public_space_28px">
+        <View android:background="@drawable/line_imaginary" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_toLeftOf="@id/tv_udl_coupon_group" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/pub_color_eighteen" android:ellipsize="end" android:id="@id/tv_udl_coupon_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_12px" android:layout_marginRight="@dimen/ios_public_space_12px" android:text="@string/app_name" android:singleLine="true" android:layout_centerInParent="true" />
+        <View android:background="@drawable/line_imaginary" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_toRightOf="@id/tv_udl_coupon_group" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/android_public_textsize_14pt" android:textColor="@color/pub_color_ten" android:ellipsize="end" android:gravity="center" android:id="@id/tv_udl_card_group" android:padding="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/act_cart2_use_discount_card_group" android:singleLine="true" />
+</LinearLayout>

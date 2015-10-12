@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:layout_gravity="center" android:id="@id/preview_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/title_area" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/ivBack" android:layout_width="@dimen/title_icon_height" android:layout_height="@dimen/title_icon_height" android:layout_marginLeft="20.0dip" android:src="@drawable/qrcode_icon_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+        <ImageView android:id="@id/ivFlash" android:layout_width="@dimen/title_icon_height" android:layout_height="@dimen/title_icon_height" android:layout_marginRight="20.0dip" android:src="@drawable/qrcode_icon_flashlight" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+        <ImageView android:id="@id/ivImg" android:layout_width="@dimen/title_icon_height" android:layout_height="@dimen/title_icon_height" android:layout_marginRight="20.0dip" android:src="@drawable/qrcode_icon_image" android:layout_toLeftOf="@id/ivFlash" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+    </RelativeLayout>
+    <com.mining.app.zxing.view.ViewfinderView android:id="@id/viewfinder_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

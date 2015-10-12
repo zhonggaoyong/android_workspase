@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/product_gallery_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:gravity="center" android:id="@id/product_gallery" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" class="com.achievo.vipshop.view.CenterViewPager" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tryon" android:background="@drawable/glasses_enter_btn" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/glassess_icon" />
+        <TextView android:textSize="12.0sp" android:id="@id/tryonTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:text="@string/glasses_enter_tip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RadioGroup android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/advert_radio" android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_marginBottom="15.0dip" android:layout_above="@id/pms_layout" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/pms_layout" android:background="#99455164" android:paddingRight="@dimen/detail_lr_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/leaving" android:background="#ffde3d96" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="-9.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/pms" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/detail_lr_padding" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/sellout_label" android:background="@drawable/bg_circle_black_big" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" android:text="@string/sold_out" android:layout_centerInParent="true" />
+</RelativeLayout>

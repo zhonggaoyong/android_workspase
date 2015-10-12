@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="20.0sp" android:textColor="#ff868686" android:gravity="center" android:background="@drawable/calendar_sel_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="30"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

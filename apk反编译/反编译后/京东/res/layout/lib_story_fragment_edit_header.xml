@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/lib_story_shape_border" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="@dimen/lib_story_t_large_size" android:textColor="@color/lib_story_edit_font_color" android:gravity="top" android:id="@id/edit_story_content" android:background="@null" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lib_story_edit_hint" android:minLines="7" android:maxLength="500" android:textCursorDrawable="@drawable/lib_story_edit_cursor" />
+        <TextView android:textSize="@dimen/lib_story_t_small_size" android:textColor="@color/lib_story_title_right_text_unclickable" android:id="@id/canInputNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/lib_story_margin_vertical_10" android:text="@string/lib_story_edit_input" android:layout_alignRight="@id/edit_story_content" android:layout_alignBottom="@id/edit_story_content" />
+    </RelativeLayout>
+    <View android:background="@color/lib_story_line_e0e0e0" android:layout_width="fill_parent" android:layout_height="@dimen/lib_story_height_line" />
+    <View android:background="@color/lib_story_default_backgroud" android:layout_width="fill_parent" android:layout_height="@dimen/lib_story_margin_vertical_10" />
+    <View android:background="@color/lib_story_line_e0e0e0" android:layout_width="fill_parent" android:layout_height="@dimen/lib_story_height_line" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff1e212e" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/common_top_layout" layout="@layout/meiyingbao_common_title_layout" />
+    <RelativeLayout android:id="@id/rl_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_below="@id/common_top_layout" android:layout_centerHorizontal="true">
+        <com.gome.ecmall.home.mygome.lockpattern.widget.LockPatternView android:id="@id/small_alp_view_lock_pattern" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" app:radious="6" app:drawPath="false" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:gravity="center_horizontal" android:id="@id/alp_textview_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="" android:layout_below="@id/rl_small" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_above="@id/btn_reset_pattern" android:layout_below="@id/alp_textview_info">
+        <include android:id="@id/alp_view_lock_pattern" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/alp_lock_pattern_view" />
+    </RelativeLayout>
+    <Button android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/btn_reset_pattern" android:background="#22000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="重新设置手势" android:layout_alignParentBottom="true" />
+</RelativeLayout>

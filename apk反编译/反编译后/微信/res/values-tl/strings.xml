@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Error sa Mga Serbisyo ng Google Play</string>
+    <string name="d3r">Kailangan ng application na i-install ang Mga Serbisyo ng Google Play.</string>
+    <string name="d3s">Kailangan ng application ng update sa Mga Serbisyo ng Google Play.</string>
+    <string name="d3t">Kailangan ng application na na-enable ang Mga Serbisyo ng Google Play.</string>
+    <string name="d3u">Hiniling ng %1$s</string>
+    <string name="d3v">Kumuha ng mga serbisyo ng Google Play</string>
+    <string name="d3w">Hindi tatakbo ang app na ito nang wala ang mga serbisyo ng Google Play, na wala sa iyong telepono.</string>
+    <string name="d3x">Hindi gagana ang app na ito nang wala ang mga serbisyo ng Google Play, na wala sa iyong tablet.</string>
+    <string name="d3y">Kumuha ng Google Play services</string>
+    <string name="d3z">Paganahin ang Google Play services</string>
+    <string name="d40">Hindi gagana ang app na ito maliban kung papaganahin mo ang mga serbisyo ng Google Play.</string>
+    <string name="d41">Enable Google Play services</string>
+    <string name="d42">I-update ang mga serbisyo ng Google Play</string>
+    <string name="d43">Hindi gagana ang app na ito maliban kung i-a-update mo ang mga serbisyo ng Google Play.</string>
+    <string name="d44">May Error sa Network</string>
+    <string name="d45">Kailangan ng koneksyon ng data upang makakonekta sa mga serbisyo ng Google Play.</string>
+    <string name="d46">Di-wasto ang Account</string>
+    <string name="d47">Hindi umiiral ang tinukoy na account sa device na ito. Mangyaring pumili ng ibang account.</string>
+    <string name="d48">May hindi alam na isyu sa mga serbisyo ng Google Play.</string>
+    <string name="d49">Mga serbisyo ng Google Play</string>
+    <string name="d4_">Ang mga serbisyo ng Google Play, kung saan nakadepende ang ilan sa iyong mga application, ay hindi sinusuportahan ng iyong device. Mangyaring makipag-ugnay sa manufacturer para sa tulong.</string>
+    <string name="d4a">Mukhang hindi tama ang petsa sa device. Pakisuri ang petsa sa device.</string>
+    <string name="d4b">I-update</string>
+    <string name="d4c">Sign in</string>
+    <string name="d4d">Mag-sign in sa Google</string>
+</resources>

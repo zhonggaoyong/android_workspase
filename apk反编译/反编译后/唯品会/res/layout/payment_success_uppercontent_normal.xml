@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/uppercontent_normal_logo_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="28.0dip" android:src="@drawable/icon_success_middle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/uppercontent_normal_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0dip" android:textColor="@color/new_text_black" android:id="@id/payment_success_show_or_close_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="27.0dip" android:text="@string/payment_succeed_title" />
+            <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@color/app_text_black" android:ellipsize="end" android:id="@id/payment_gift_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="28.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

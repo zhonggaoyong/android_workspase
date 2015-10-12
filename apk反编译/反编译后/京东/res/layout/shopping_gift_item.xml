@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/shopping_gift_icon" android:layout_width="51.0dip" android:layout_height="51.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+    <Button android:textSize="15.0dip" android:id="@id/shopping_gift_select_btn" android:background="@drawable/cart_delete_button" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="@string/full_gift_btn_text" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0dip" android:id="@id/shopping_gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/shopping_gift_select_btn" android:layout_toRightOf="@id/shopping_gift_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

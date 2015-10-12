@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageview" android:padding="1.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/icon" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0sp" android:layout_marginRight="8.0sp" android:layout_toRightOf="@id/imageview" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="苏宁易购" android:singleLine="true" android:layout_toLeftOf="@id/time" android:layout_alignParentLeft="true" style="@style/NotificationTitle" />
+        <TextView android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignBottom="@id/textView1" android:layout_alignParentRight="true" style="@style/NotificationContent" />
+        <TextView android:ellipsize="end" android:id="@id/mTv_One" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_below="@id/textView1" style="@style/NotificationContent" />
+        <TextView android:ellipsize="end" android:id="@id/mTv_Two" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/textView1" style="@style/NotificationContent" />
+    </RelativeLayout>
+</RelativeLayout>

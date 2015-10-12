@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_third_category" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_third_category_img" android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/default_background_small" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_eighteen" android:ellipsize="end" android:gravity="center" android:id="@id/tv_third_category_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="6.0dip" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.bainuo.tuandetail.DynamicPriceTextView android:textSize="21.0sp" android:textColor="#ffff4978" android:gravity="center" android:id="@id/favourCountParentNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <TextView android:textSize="10.0sp" android:textColor="#ffff4978" android:gravity="center" android:id="@id/remaining_amount" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:includeFontPadding="false" />
+</merge>

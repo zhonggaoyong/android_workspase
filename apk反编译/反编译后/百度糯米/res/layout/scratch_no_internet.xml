@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dialog_scratch_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/avatar_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/avatar_error" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff88888d" android:gravity="center_horizontal" android:id="@id/warning_no_internet" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/find_voucher_no_internet" android:lineSpacingExtra="8.0dip" />
+</LinearLayout>

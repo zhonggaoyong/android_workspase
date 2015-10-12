@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.RoundImageView android:id="@id/maga_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink_l1" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="45.0dip" android:text="Maga" android:singleLine="true" android:layout_toRightOf="@id/maga_icon" android:layout_alignTop="@id/maga_icon" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="45.0dip" android:text="Maga info" android:singleLine="true" android:layout_toRightOf="@id/maga_icon" android:layout_below="@id/name" />
+        <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/me_btn_arrow_pink" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/mage_line1" android:layout_marginLeft="10.0dip" style="@style/cutline" />
+    <View android:id="@id/mage_line2" style="@style/borderline" />
+</LinearLayout>

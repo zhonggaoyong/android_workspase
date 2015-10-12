@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffbabdd3" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/couponView" android:layout_width="74.0dip" android:layout_height="34.0dip" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true" layout="@layout/view_coupon" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/tipsInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="你有一张券" android:layout_toRightOf="@id/couponView" android:layout_centerVertical="true" />
+    <View android:background="#ffabb1d2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/tipsInfo" />
+</RelativeLayout>

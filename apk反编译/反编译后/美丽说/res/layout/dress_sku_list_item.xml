@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/check_box" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:button="@drawable/shopping_cart_radio_selector" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/dialog_goods_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/goods_pic" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d4" android:ellipsize="end" android:layout_gravity="top" android:id="@id/goods_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <TextView android:textSize="13.0sp" android:textColor="@color/pink_l1" android:id="@id/goods_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d5" android:id="@id/goods_block" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                        </LinearLayout>
+                        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d4" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/goods_property_select_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/color_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d4" android:id="@id/color_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" />
+                    <com.meilishuo.app.views.MyGridView android:id="@id/color_grid" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:listSelector="@color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="5.0dip" android:numColumns="2" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/size_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d4" android:id="@id/size_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <com.meilishuo.app.views.MyGridView android:id="@id/size_grid" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:listSelector="@color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="5.0dip" android:numColumns="2" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/meilishuo_buy_dialog_textview_count" />
+                    <com.meilishuo.app.views.CountAdjustView android:id="@id/count_ajust_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/line" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="1.0dip" style="@style/cutline" />
+    </LinearLayout>
+    <View android:id="@id/layout_null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+</LinearLayout>

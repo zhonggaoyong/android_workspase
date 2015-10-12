@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.app.mall.shopping.CameraView android:id="@id/surfaceView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="top" android:id="@id/color_shopping_title" layout="@layout/title" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/viewfinder_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" />
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="top|left|center" android:id="@id/color_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="58.0dip" android:src="@drawable/color_shopping_close" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/show_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="@dimen/color_shopping_banner_height">
+            <Button android:id="@id/obtain_color" android:background="@drawable/color_shopping_pause" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/show_view_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image1" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image2" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image3" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/show_view_down" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image4" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image5" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/image6" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

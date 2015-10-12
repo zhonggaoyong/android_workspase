@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/xlistview_footer_content" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/xlistview_footer_progressbar" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:layout_gravity="center_vertical" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+            <TextView android:textSize="14.0sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="20条载入中..." />
+        </LinearLayout>
+        <TextView android:id="@id/xlistview_footer_hint_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ssss" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

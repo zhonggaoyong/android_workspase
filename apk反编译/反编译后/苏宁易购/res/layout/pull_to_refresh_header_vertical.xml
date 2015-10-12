@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_inner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/pulltofresh_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_5px" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/head_contentLayout" android:paddingTop="@dimen/android_public_space_10px" android:paddingBottom="@dimen/android_public_space_14px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/pull_to_refresh_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/android_public_space_20px" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/pull_to_refresh_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/pull_updata_ProgressBar" />
+                <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_eight" android:layout_gravity="center" android:id="@id/pull_to_refresh_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_5px" android:text="下拉刷新" />
+                <TextView android:textSize="12.0dip" android:id="@id/pull_to_refresh_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

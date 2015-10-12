@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.625dip" android:textColor="#ff252525" android:gravity="center" android:id="@id/day" android:background="@drawable/app_my618_myrecommend_bg_day" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="45.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.75dip" android:layout_marginTop="19.125dip" android:text="今天" />
+    <View android:background="#ffdddfe2" android:layout_width="3.375dip" android:layout_height="19.125dip" android:layout_marginLeft="27.5625dip" android:layout_below="@id/day" />
+    <TextView android:textSize="13.5dip" android:textColor="#ff686868" android:id="@id/day_label" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="你购买了4个商品，消费400元" android:layout_toRightOf="@id/day" android:layout_alignBaseline="@id/day" />
+</RelativeLayout>

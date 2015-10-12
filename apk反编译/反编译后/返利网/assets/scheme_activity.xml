@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemes>
+	<scheme name="tiantiantejia" activity="com.fanli.android.activity.THSActivity" mode="1"/>
+	<scheme name="juhuasuan" activity="com.fanli.android.activity.THSActivity" mode="2"/>
+	<scheme name="tianmaotemai" activity="com.fanli.android.activity.THSActivity" mode="3" />
+	<scheme name="taojinbi" activity="com.fanli.android.activity.THSActivity" mode="5" />
+	<scheme name="ths" activity="com.fanli.android.activity.THSActivity" mode="4"/>
+	
+	<scheme name="account" activity="com.fanli.android.activity.NewContainerActivity" mode="0" />
+	<scheme name="taskfanli" activity="com.fanli.android.activity.NewContainerActivity" mode="1" />
+	
+	<scheme name="mycash" activity="com.fanli.android.activity.UserFanliActivity" mode="1" />
+	<scheme name="myfb" activity="com.fanli.android.activity.UserFanliActivity" mode="2" />
+	
+	<scheme name="help" activity="com.fanli.android.activity.HelpActivity"/>
+	
+	<scheme name="feedback" activity="com.fanli.android.activity.FanliConversationActivity"/>
+	
+	<scheme name="hotmall" activity="com.fanli.android.activity.MallListActivity" mode="0" />
+	<scheme name="tuanmall" activity="com.fanli.android.activity.MallListActivity" mode="1" />
+	<scheme name="travelmall" activity="com.fanli.android.activity.MallListActivity" mode="2" />
+	
+	<scheme name="about" activity="com.fanli.android.activity.AboutActivity"/>
+	
+	<scheme name="more" activity="com.fanli.android.activity.OptionActivity"/>
+	
+	<scheme name="order" activity="com.fanli.android.activity.OrdersActivity"/>
+	
+	<scheme name="splash" activity="com.fanli.android.activity.SplashActivity"/>
+	
+	<scheme name="login" activity="com.fanli.android.activity.LoginActivity"/>
+	
+	<scheme name="reg" activity="com.fanli.android.activity.RegActivity" mode="0"/>
+	<scheme name="upgradevuser" activity="com.fanli.android.activity.RegActivity" mode="1"/>
+	
+	<scheme name="fbhelp" activity="com.fanli.android.activity.FBHelpActivity"/>
+	
+	<scheme name="retpwd" activity="com.fanli.android.activity.RetrievePasswordActivity"/>
+	
+	<scheme name="drawrecord" activity="com.fanli.android.activity.DrawRecordActivity"/>
+	
+	<scheme name="search" activity="com.fanli.android.activity.SearchActivity"/>
+	
+	<scheme name="searchshop" activity="com.fanli.android.activity.SearchShopActivity"/>
+	
+	<scheme name="jprecord" activity="com.fanli.android.activity.JumpRecordActivity"/>
+	
+	<scheme name="msgset" activity="com.fanli.android.activity.MsgSettingActivity"/>
+	
+	<scheme name="draw" activity="com.fanli.android.activity.DrawActivity" mode="1"/>
+	<scheme name="drawfb" activity="com.fanli.android.activity.DrawActivity" mode="2"/>
+	
+	<scheme name="taobao" activity="com.fanli.android.activity.TaobaofanliActivity"/>
+	
+	<scheme name="phonefee" activity="com.fanli.android.activity.PhoneFeeActivity"/>
+	
+	<scheme name="fav" activity="com.fanli.android.activity.FavActivity"/>
+	
+	<scheme name="searchresult" activity="com.fanli.android.activity.SearchResultActivity"/>
+	
+	<scheme name="adwall_limei" activity="com.fanli.android.activity.AdwallActivity"/>
+	
+	<scheme name="main" activity="com.fanli.android.activity.MainTabActivity"/>
+	
+	<scheme name="main" activity="com.fanli.android.activity.MainActivity"/>
+	
+</schemes>

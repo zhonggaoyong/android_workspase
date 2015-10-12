@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header_layout" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/filter_buttons" android:background="@color/white" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <RelativeLayout android:id="@id/hot_sell_button_comment" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="18.0dip" android:textColor="@color/reanking_operation_text_color" android:id="@id/reank_tv1" android:padding="5.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/discount_sale_button" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="18.0dip" android:textColor="@color/reanking_operation_text_color" android:id="@id/reank_tv2" android:padding="5.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/reduction_button" android:background="@color/white" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="18.0dip" android:textColor="@color/reanking_operation_text_color" android:gravity="center" android:id="@id/reank_tv3" android:padding="5.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/list_tabs_underline" android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        <com.jingdong.common.ranking.TabIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_above="@id/list_tabs_underline" app:height="2.0dip" app:selectColor="#ffff0000" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/product_list_normalcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_18sp" android:textColor="@color/color_bfbfbf" android:gravity="center" android:id="@id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_mobile_search_result" android:drawableTop="@drawable/joy_icon_cry" android:drawablePadding="15.0dip" android:layout_centerInParent="true" />
+    <Button android:textSize="16.0sp" android:textColor="@color/color_686868" android:gravity="center" android:id="@id/go_all_product_button" android:background="@drawable/button_c" android:visibility="gone" android:layout_width="142.5dip" android:layout_height="38.5dip" android:layout_marginTop="@dimen/fill_order_layout_15dp" android:text="@string/goback_all_product" android:layout_below="@id/empty" android:layout_centerHorizontal="true" />
+</RelativeLayout>

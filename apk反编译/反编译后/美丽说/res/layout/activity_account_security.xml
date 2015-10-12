@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mls_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <RelativeLayout android:id="@id/header" android:onClick="onClick" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/tv_title" android:text="@string/account_security" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/order_bg_goodsinformation" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d2" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lasttime_login" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey" android:id="@id/tv_last_login_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/lasttime_login_tip" android:singleLine="true" />
+            </LinearLayout>
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/account_info" android:singleLine="true" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/order_bg_goodsinformation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.meilishuo.app.views.OptionsItemView android:id="@id/layout_login_password" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height" android:layout_marginLeft="22.0dip" android:layout_marginRight="18.0dip" app:optionContentColor="@color/grey" app:optionTitle="@string/login_password" app:optionImage="@drawable/ico_prompt" />
+                <View android:layout_marginLeft="22.0dip" style="@style/cutline" />
+                <com.meilishuo.app.views.OptionsItemView android:id="@id/layout_bound_phone" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height" android:layout_marginLeft="22.0dip" android:layout_marginRight="18.0dip" app:optionContentColor="@color/grey" app:optionTitle="@string/bound_phone" app:optionImage="@drawable/ico_prompt" />
+                <View android:layout_marginLeft="22.0dip" style="@style/cutline" />
+                <com.meilishuo.app.views.OptionsItemView android:id="@id/layout_pay_password" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height" android:layout_marginLeft="22.0dip" android:layout_marginRight="18.0dip" app:optionContentColor="@color/grey" app:optionTitle="@string/pay_password" app:optionImage="@drawable/ico_prompt" />
+            </LinearLayout>
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/login_history" android:singleLine="true" />
+            <com.meilishuo.app.views.OptionsItemView android:id="@id/layout_login_device" android:background="@drawable/order_bg_goodsinformation" android:paddingLeft="22.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height" android:layout_marginTop="10.0dip" app:optionContentColor="@color/grey" app:optionTitle="@string/login_device" app:optionImage="@drawable/ico_computer" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/account_safe_tip" android:singleLine="true" />
+            <com.meilishuo.app.views.OptionsItemView android:id="@id/layout_account_safe" android:background="@drawable/order_bg_goodsinformation" android:paddingLeft="22.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/option_item_height" android:layout_marginTop="10.0dip" app:optionContentColor="@color/grey" app:optionTitle="@string/account_safe_tip" app:optionImage="@drawable/ico_safety" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

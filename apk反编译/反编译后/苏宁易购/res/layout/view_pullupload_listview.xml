@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lv_pul" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" style="@style/listview_common_style" />
+    <RelativeLayout android:id="@id/rl_pul_up_load" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_pul_up_load" android:background="@drawable/loading_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ProgressBar android:id="@id/pb_pul_up_load" android:fadingEdge="none" android:layout_width="22.0dip" android:layout_height="22.0dip" android:indeterminateDuration="700" style="@style/myProgressBarStyleLarge" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="#ff808080" android:gravity="center_horizontal" android:id="@id/tv_pul_up_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/comp_list_no_data" android:drawableTop="@drawable/wait_shop_eva_empty" android:drawablePadding="@dimen/ios_public_space_40px" android:layout_centerHorizontal="true" />
+        <Button android:textColor="@color/pub_color_nine" android:id="@id/btn_pul_up_load" android:background="@drawable/public_bg_btn_white" android:layout_width="@dimen/ios_public_space_161px" android:layout_height="@dimen/ios_public_space_75px" android:layout_margin="10.0dip" android:text="@string/comp_list_retry_text" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

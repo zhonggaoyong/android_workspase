@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/home_quickentry_main_two_ll" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gome.ecmall.custom.DisScrollGridView android:id="@id/home_quickentry_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:verticalSpacing="1.0dip" />
+</LinearLayout>

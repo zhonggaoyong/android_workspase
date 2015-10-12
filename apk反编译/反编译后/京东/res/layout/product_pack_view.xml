@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pack_item_container" android:background="@drawable/pd_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/packs_top" android:background="@drawable/pd_item_enable_bg" android:paddingLeft="@dimen/pd_space_width_10" android:paddingTop="@dimen/pd_space_width_16" android:paddingRight="@dimen/pd_space_width_10" android:paddingBottom="@dimen/pd_space_width_16" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/packs_button" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/pd_txt_size_middle" android:textColor="@color/pd_gray" android:id="@id/pack_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠套装1" />
+            <TextView android:textSize="@dimen/pd_txt_size_middle" android:textStyle="bold" android:textColor="@color/pd_red" android:id="@id/pack_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pd_space_width_9" android:layout_weight="1.0" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_1" android:background="@drawable/pd_arrow_r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:contentDescription="@string/none" />
+        </LinearLayout>
+        <HorizontalScrollView android:id="@id/scrollView" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pd_space_width_9">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/l_layout_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pack_bottom" android:background="@drawable/pd_item_enable_bg" android:paddingTop="@dimen/pd_space_width_16" android:paddingBottom="@dimen/pd_space_width_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/packs_button" android:paddingLeft="@dimen/pd_space_width_10" android:paddingRight="@dimen/pd_space_width_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/pd_txt_size_middle" android:textColor="@color/pd_gray" android:id="@id/pack_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠套装1" />
+            <TextView android:textSize="@dimen/pd_txt_size_middle" android:textStyle="bold" android:textColor="@color/pd_red" android:id="@id/pack_price" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pd_space_width_9" android:text="20" android:layout_weight="1.0" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_1" android:background="@drawable/pd_arrow_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/none" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pack_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/packs_money" android:paddingLeft="@dimen/pd_space_width_10" android:paddingRight="@dimen/pd_space_width_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pd_space_width_12">
+            <LinearLayout android:orientation="horizontal" android:id="@id/pack_money_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/pd_txt_size_middle" android:textColor="@color/pd_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pd_pack_price" />
+                <TextView android:textSize="@dimen/pd_txt_size_middle" android:textStyle="bold" android:textColor="@color/pd_red" android:id="@id/pack_price_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pd_space_width_9" />
+                <TextView android:textSize="@dimen/pd_txt_size_small" android:textColor="#ffb2b2b2" android:id="@id/pack_list_price_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pd_space_width_9" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/pd_txt_size_small" android:textColor="@color/white" android:id="@id/pack_discount_content" android:background="@drawable/pd_label_bg" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pd_space_width_9" />
+            <LinearLayout android:gravity="center" android:id="@id/pack_add2car" android:background="@drawable/button_b" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="@dimen/pd_space_width_12">
+                <TextView android:textSize="@dimen/pd_txt_size_large" android:textColor="@color/pd_white_gray" android:gravity="center" android:id="@id/txt_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:text="@string/pd_add2car" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/electirc_invoice_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_name" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_three" android:id="@id/invoice_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:background="@drawable/category_listview_divider" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invoice_code_order" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_nine" android:id="@id/invoice_code" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invoice_num_order" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_nine" android:id="@id/invoice_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invoice_password_order" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_nine" android:id="@id/invoice_password" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invoice_content_order" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_nine" android:id="@id/invoice_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

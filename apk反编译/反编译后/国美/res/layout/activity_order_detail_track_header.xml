@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/common_model_yello_bg" android:padding="@dimen/od_frame_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView1" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/img_kuaidiyuan" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/od_font_13" android:textColor="@color/tishiyu_color" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/od_frame_padding" android:text="亲，让您久等啦！感谢您的购物，我们会努力做到更好，欢迎下次再来哦^-^" android:layout_toRightOf="@id/imageView1" android:layout_centerVertical="true" />
+</RelativeLayout>

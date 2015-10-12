@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/group_space" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_fifteen" />
+    <RelativeLayout android:background="@color/white" android:padding="@dimen/pub_margin_or_padding_space_ten" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/select_all" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/shopping_cart_checkbox" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/icon_shop_swl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_13px" android:layout_marginRight="@dimen/android_public_space_7px" android:src="@drawable/icon_suning_service" android:layout_toRightOf="@id/select_all" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/pub_margin_or_padding_space_ten" android:layout_toLeftOf="@id/ship_price" android:layout_toRightOf="@id/icon_shop_swl" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/pub_margin_or_padding_space_eighteen" android:textColor="@color/pub_color_eight" android:ellipsize="end" android:id="@id/shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shoppingcart_suning_self_prompt" android:singleLine="true" />
+            <TextView android:textColor="@color/pub_color_nine" android:ellipsize="end" android:id="@id/prompt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/pub_margin_or_padding_space_sixteen" android:textColor="@color/pub_color_nine" android:id="@id/ship_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

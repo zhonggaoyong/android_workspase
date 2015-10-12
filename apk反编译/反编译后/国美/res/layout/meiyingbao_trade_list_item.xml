@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="53.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llt_item_left_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:ellipsize="end" android:id="@id/tv_trade_type_tip_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当日收益" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/hint_text_color" android:id="@id/tv_trade_type_tip_1_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014-09-21" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center" android:orientation="vertical" android:id="@id/llt_item_right_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/myb_amount_green" android:ellipsize="end" android:id="@id/tv_trade_type_tip_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+123" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/hint_text_color" android:id="@id/tv_trade_type_tip_3_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="交易成功" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/llt_item_right_container" android:layout_toRightOf="@id/llt_item_left_container" android:layout_alignTop="@id/llt_item_left_container" android:layout_alignBottom="@id/llt_item_left_container" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:ellipsize="end" android:id="@id/tv_trade_type_tip_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当日收益" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/hint_text_color" android:id="@id/tv_trade_type_tip_2_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014-09-21" />
+    </LinearLayout>
+</RelativeLayout>

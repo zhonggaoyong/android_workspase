@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/more_tv_title" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_settings_main_text_style" />
+    <TextView android:id="@id/more_tv_hint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/more_tv_title" android:layout_centerVertical="true" style="@style/common_settings_hint_text_style" />
+    <ImageView android:id="@id/more_iv_arrow" android:background="@drawable/common_right_arrow_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

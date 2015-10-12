@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:stuan="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.widget.TempTitle android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" stuan:drawableLeft="@drawable/common_title_back_selector" stuan:textTitle="@string/lottery_activity_append_details_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/confirm_order_submit_layout" android:background="@color/bg_white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:id="@id/lottBuyMore" android:text="@string/lottery_continue_buy" style="@style/lottery_order_detail_action_btn_blue_style" />
+            <TextView android:id="@id/lottDrawAward" android:text="@string/lottery_order_next_action_draw_gains" style="@style/lottery_order_detail_action_btn_red_style" />
+            <TextView android:id="@id/lottPayment" android:text="@string/lottery_order_next_action_wait_pay" style="@style/lottery_order_detail_action_btn_red_style" />
+            <TextView android:id="@id/stopZhuiHao" android:text="@string/lottery_order_next_action_stop_zhuihao" style="@style/lottery_order_detail_action_btn_red_style" />
+            <TextView android:id="@id/lottBuyThisAgain" android:text="@string/lottery_order_next_action_bet_again" style="@style/lottery_order_detail_action_btn_red_style" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/confirm_order_submit_layout_head_line" android:layout_above="@id/confirm_order_submit_layout" style="@style/line_horizontal_style" />
+        <ScrollView android:id="@id/lottScrollView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/confirm_order_submit_layout_head_line">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@color/bg_white" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/lottLogo" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/lottery_icon_shuangseqiu" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/text_gray_light" android:gravity="center" android:id="@id/lotteryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:minWidth="70.0dip" android:text="双色球" android:layout_below="@id/lottLogo" android:layout_alignLeft="@id/lottLogo" />
+                    <TextView android:id="@id/usedFee" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:text="已投金额:2元" android:singleLine="false" android:layout_toRightOf="@id/lottLogo" android:layout_alignTop="@id/lottLogo" android:lineSpacingExtra="4.0dip" style="@style/lottery_order_detail_bet_info" />
+                    <TextView android:id="@id/totalOrderFee" android:text="方案总额" android:layout_below="@id/usedFee" android:layout_alignLeft="@id/usedFee" style="@style/lottery_order_detail_bet_info" />
+                    <TextView android:id="@id/totalWinAwardFee" android:text="累计中奖" android:layout_below="@id/totalOrderFee" android:layout_alignLeft="@id/usedFee" style="@style/lottery_order_detail_bet_info" />
+                    <TextView android:id="@id/lotteryOrderType" android:layout_marginRight="19.0dip" android:text="@string/lottery_order_type_normal" android:layout_alignTop="@id/usedFee" android:layout_alignParentRight="true" style="@style/lottery_order_detail_bet_info" />
+                    <TextView android:textSize="@dimen/text_size_order_detail_bet_info" android:textColor="@color/text_gray_light" android:id="@id/winStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19.0dip" android:text="中奖 派奖完成" android:layout_alignTop="@id/totalOrderFee" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/bg_white" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TableLayout android:background="@color/bg_white" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+                        <include android:id="@id/numStake" android:visibility="gone" layout="@layout/lottery_orderdetail_tablerow" />
+                        <include android:id="@id/numMulti" android:visibility="gone" layout="@layout/lottery_orderdetail_tablerow" />
+                    </TableLayout>
+                    <FrameLayout android:id="@id/betContent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="5.0dip" android:text="@string/lottery_append_details_title" style="@style/lottery_order_detail_bet_info_title" />
+                    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_horizontal_style" />
+                    <com.jd.lottery.lib.ui.common.widget.FullSizeListView android:id="@id/zhuihao_list_view" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                </LinearLayout>
+                <TableLayout android:background="@color/bg_white" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <include android:id="@id/erpOrderId" layout="@layout/lottery_orderdetail_tablerow" />
+                    <include android:id="@id/zhuihaoProgress" layout="@layout/lottery_orderdetail_tablerow" />
+                    <include android:id="@id/zhuihaoSetting" layout="@layout/lottery_orderdetail_tablerow" />
+                    <include android:id="@id/orderStatus" layout="@layout/lottery_orderdetail_tablerow" />
+                    <include android:id="@id/payType" layout="@layout/lottery_orderdetail_tablerow" />
+                    <include android:id="@id/placedTime" layout="@layout/lottery_orderdetail_tablerow" />
+                </TableLayout>
+                <TableLayout android:background="@color/bg_white" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip">
+                    <include android:id="@id/userName" layout="@layout/lottery_orderdetail_tablerow" />
+                    <include android:id="@id/userIdCard" layout="@layout/lottery_orderdetail_tablerow" />
+                    <include android:id="@id/userMobile" layout="@layout/lottery_orderdetail_tablerow" />
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include android:id="@id/lotteryEmptyView" android:visibility="gone" layout="@layout/lottery_empty_view_retry" />
+        <include android:id="@id/lotteryLoadingView" android:visibility="gone" layout="@layout/lottery_loading_view" />
+    </RelativeLayout>
+</LinearLayout>

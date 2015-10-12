@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.app.mall.product.TabViewIndicator android:id="@id/commentlist_tab" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="49.0dip" />
+    <View android:id="@id/order_list_divider_line" android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/commentlist_tab" />
+    <RelativeLayout android:id="@id/commentlist_content" android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/order_list_divider_line" />
+</RelativeLayout>

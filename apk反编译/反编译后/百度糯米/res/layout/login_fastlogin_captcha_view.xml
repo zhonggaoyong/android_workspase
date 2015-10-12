@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffefefef" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/login_captcha_phoneinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="37.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff55555d" android:gravity="center_vertical" android:id="@id/login_captcha_phone_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff55555d" android:gravity="center_vertical" android:id="@id/login_captcha_phone_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right" android:id="@id/login_captcha_request" android:background="@drawable/login_fastreg" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="4.0dip" android:layout_width="76.0dip" android:layout_height="24.0dip" android:text="@string/title_login_captcha_request" android:includeFontPadding="false" android:layout_above="@id/layout_captcha_view" android:layout_alignParentRight="true" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/layout_captcha_view" android:background="@drawable/searchbar_bg" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/login_captcha_phoneinfo">
+        <TextView android:textSize="20.0sp" android:textColor="#ff33333d" android:gravity="center" android:layout_gravity="center" android:id="@id/login_captcha_one" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <View android:gravity="center" android:layout_gravity="center_horizontal" android:background="#ffd6d6d6" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:textSize="20.0sp" android:textColor="#ff33333d" android:gravity="center" android:layout_gravity="center" android:id="@id/login_captcha_two" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <View android:gravity="center" android:layout_gravity="center_horizontal" android:background="#ffd6d6d6" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:textSize="20.0sp" android:textColor="#ff33333d" android:gravity="center" android:layout_gravity="center" android:id="@id/login_captcha_three" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <View android:gravity="center" android:layout_gravity="center_horizontal" android:background="#ffd6d6d6" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:textSize="20.0sp" android:textColor="#ff33333d" android:gravity="center" android:layout_gravity="center" android:id="@id/login_captcha_four" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <View android:gravity="center" android:layout_gravity="center_horizontal" android:background="#ffd6d6d6" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:textSize="20.0sp" android:textColor="#ff33333d" android:gravity="center" android:layout_gravity="center" android:id="@id/login_captcha_five" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <View android:gravity="center" android:layout_gravity="center_horizontal" android:background="#ffd6d6d6" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:textSize="20.0sp" android:textColor="#ff33333d" android:gravity="center" android:layout_gravity="center" android:id="@id/login_captcha_six" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ff55555d" android:id="@id/login_captcha_passport" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_login_passport" android:layout_below="@id/layout_captcha_view" />
+    <EditText android:id="@id/login_captcha_visable" android:focusable="true" android:layout_width="0.0dip" android:layout_height="0.0dip" android:maxLength="6" android:layout_below="@id/login_captcha_passport" android:inputType="number" android:imeOptions="actionNone" />
+</RelativeLayout>

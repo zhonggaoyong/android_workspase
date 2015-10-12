@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Fout met Google Play-services</string>
+    <string name="d3r">Google Play-services moet zijn geïnstalleerd voor een app.</string>
+    <string name="d3s">Google Play-services moet worden bijgewerkt voor een app.</string>
+    <string name="d3t">Google Play-services moet zijn ingeschakeld voor een app.</string>
+    <string name="d3u">Aangevraagd door %1$s</string>
+    <string name="d3v">Google Play-services ophalen</string>
+    <string name="d3w">Deze app kan niet worden uitgevoerd zonder Google Play-services die ontbreken op uw telefoon.</string>
+    <string name="d3x">Deze app kan niet worden uitgevoerd zonder Google Play-services die ontbreken op uw tablet.</string>
+    <string name="d3y">Google Play-services ophalen</string>
+    <string name="d3z">Google Play-services inschakelen</string>
+    <string name="d40">Deze app werkt niet, tenzij u Google Play-services inschakelt.</string>
+    <string name="d41">Google Play-services inschak.</string>
+    <string name="d42">Google Play-services bijwerken</string>
+    <string name="d43">Deze app kan niet worden uitgevoerd, tenzij u Google Play-services bijwerkt.</string>
+    <string name="d44">Netwerkfout</string>
+    <string name="d45">Er is een gegevensverbinding nodig om verbinding te kunnen maken met Google Play-services.</string>
+    <string name="d46">Ongeldig account</string>
+    <string name="d47">Het gespecificeerde account bestaat niet op dit apparaat. Kies een ander account.</string>
+    <string name="d48">Onbekend probleem met Google Play-services.</string>
+    <string name="d49">Google Play-services</string>
+    <string name="d4_">Google Play-services, dat vereist is voor een aantal van uw applicaties, wordt niet ondersteund door uw apparaat. Neem contact op met de fabrikant voor ondersteuning.</string>
+    <string name="d4a">De datum op het apparaat lijkt onjuist. Controleer de datum op het apparaat.</string>
+    <string name="d4b">Bijwerken</string>
+    <string name="d4c">Inloggen</string>
+    <string name="d4d">Inloggen met Google</string>
+</resources>

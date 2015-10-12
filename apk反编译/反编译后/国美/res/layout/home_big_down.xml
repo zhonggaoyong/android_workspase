@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_home_big_down_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/tv_home_big_down_title" android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="大牌闪购" />
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_home_big_down_left_img" android:layout_width="fill_parent" android:layout_height="50.0dip" android:scaleType="fitXY" android:layout_weight="1.0" android:contentDescription="@null" />
+        <View android:background="#ffe5e5e5" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_home_big_down_right_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_home_big_down_right_first_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@null" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:id="@id/v_big_right_lin2" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+                <ImageView android:id="@id/iv_home_big_down_right_second_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_below="@id/v_big_right_lin2" android:contentDescription="@null" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:id="@id/v_big_right_lin3" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+                <ImageView android:id="@id/iv_home_big_down_right_three_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_below="@id/v_big_right_lin3" android:contentDescription="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

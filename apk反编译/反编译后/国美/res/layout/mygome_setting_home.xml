@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_marginTop="20.0dip" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="无图版本" style="@style/mygome_setting_textview" />
+                <CheckBox android:id="@id/slipbutton_picture" style="@style/mygome_setting_checkbox" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/mygome_setting_relativelayout">
+                <TextView android:text="开启定位" style="@style/mygome_setting_textview" />
+                <CheckBox android:id="@id/slipbutton_location" style="@style/mygome_setting_checkbox" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/mygome_setting_relativelayout">
+                <TextView android:text="推送通知" style="@style/mygome_setting_textview" />
+                <CheckBox android:id="@id/slipbutton_notify" style="@style/mygome_setting_checkbox" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout android:visibility="gone" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="消息盒子" style="@style/mygome_setting_textview" />
+                <CheckBox android:id="@id/slipbutton_message" style="@style/mygome_setting_checkbox" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/auto_update_rr" android:visibility="gone" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="自动升级" style="@style/mygome_setting_textview" />
+                <CheckBox android:id="@id/slipbutton_auto_upgrade" style="@style/mygome_setting_checkbox" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_clear_cache" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="清除缓存" style="@style/mygome_setting_textview" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_help" android:layout_marginTop="10.0dip" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="帮助" style="@style/mygome_setting_textview" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_feedback" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="意见反馈" style="@style/mygome_setting_textview" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_game_center" android:visibility="gone" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="游戏中心" style="@style/mygome_setting_textview" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_check_upate" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="检查更新" style="@style/mygome_setting_textview" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_about" style="@style/mygome_setting_relativelayout">
+                <TextView android:text="关于" style="@style/mygome_setting_textview" />
+                <View style="@style/mygome_setting_line" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/change_ip_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip">
+                <Button android:id="@id/bt_change_ip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="UAT-http://10.126.53.142:7058/mobile" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/bt_add_ip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="手动添加新IP" android:layout_weight="1.0" />
+                    <Button android:id="@id/bt_look_crush_log" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="查看崩溃日志" android:layout_weight="1.0" />
+                </LinearLayout>
+                <Button android:id="@id/bt_clear_all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="清除所有手动添加的IP,恢复默认并重启" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/common_orange_textcolor" android:id="@id/tv_current_version_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="当前版本时间：V4.0.3-Dev-1028-1730" style="@style/common_settings_main_text_style" />
+            </LinearLayout>
+            <Button android:id="@id/mygome_exit" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/login_out" style="@style/Gome.Button.SolidRed.Style" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

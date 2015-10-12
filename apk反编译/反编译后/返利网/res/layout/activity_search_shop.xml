@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ListView android:id="@id/list_search" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/selector_list_item_bg" android:transcriptMode="disabled" android:cacheColorHint="#ffffffff" android:divider="#ffdddddd" android:dividerHeight="1.0dip" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.bainuo.view.ptr.impl.BDPullToRefreshListView android:id="@id/quan_groupon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/quan_hint" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/quan_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/quan_hint_devider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" layout="@layout/quan_list_devider" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/order_list_grey" android:id="@id/quan_hint_text" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" android:text="@string/quan_cache_hint" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/padone_success_packet_icon" android:background="@drawable/paydone_success_packet" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="21.0sp" android:textColor="@color/paydone_success_font_color4" android:id="@id/paydone_packet_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/padone_success_packet_icon" android:layout_centerVertical="true" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/paydone_success_font_color4" android:id="@id/paydone_packet_yuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paydone_packet_money" android:layout_toRightOf="@id/paydone_packet_price" android:layout_alignBaseline="@id/paydone_packet_price" android:layout_alignBottom="@id/paydone_packet_price" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/paydone_success_font_color1" android:id="@id/paydone_packet_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:text="@string/paydone_life_packet_title" android:layout_toRightOf="@id/paydone_packet_yuan" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/paydone_success_font_color2" android:id="@id/paydone_packet_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/paydone_life_packet_detail" android:layout_below="@id/paydone_packet_title" android:layout_alignLeft="@id/paydone_packet_title" />
+</RelativeLayout>

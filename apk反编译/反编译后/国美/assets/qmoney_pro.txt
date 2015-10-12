@@ -1,0 +1,3 @@
+qmoney_pem = <private.pem>
+qmoney_pem(test) = <private(test).pem>
+qmoney_bks = <cacerts.bks>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/order_margin_space_0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/FirstDividerViewStyle" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:text="@string/manage_order_detail_comment" />
+        <LinearLayout android:gravity="top" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/manager_order_comment_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:layout_marginTop="10.0dip" style="@style/FirstDividerViewStyle" />
+</LinearLayout>

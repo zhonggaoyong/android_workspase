@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/suite_notice_imageView" android:background="@drawable/suite_notice" android:layout_width="320.0dip" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:text="@string/look_more_suite_goods" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/shop_categroy_mian_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shop_categroy_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip">
+        <ExpandableListView android:id="@id/el_categroy" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/pb_categroy_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/progressBar_loading" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/hint_text_color" android:id="@id/tv_categroys_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无分类信息" android:layout_centerInParent="true" />
+</RelativeLayout>

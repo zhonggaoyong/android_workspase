@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="#ffffffff" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="@string/recommend_buy_title" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <com.meilishuo.app.views.PhotoScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+    <com.meilishuo.app.views.CustomPageLoading android:id="@id/loading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

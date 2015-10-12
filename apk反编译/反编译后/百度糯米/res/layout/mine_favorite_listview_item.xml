@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/devider_area" android:background="@color/list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:background="@color/mine_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/devider_area">
+        <RelativeLayout android:id="@id/select_area" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/selected_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/order_check_unchecked" android:layout_centerVertical="true" />
+            <View android:id="@id/select_devide" android:background="@color/list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.baidu.bainuo.view.FavoriteGrouponListItemView android:id="@id/groupon_item" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:layout_gravity="bottom" android:id="@id/favorite_devide" android:background="@color/list_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

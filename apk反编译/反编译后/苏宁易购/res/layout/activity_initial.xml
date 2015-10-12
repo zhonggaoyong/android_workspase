@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/initlayout" android:background="@color/init_bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="150.0dip">
+            <View android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/load1" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            <View android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0" />
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:src="@drawable/load2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/big_dm_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:layout_gravity="right" android:orientation="vertical" android:id="@id/count_down_view" android:background="@drawable/dm_skip_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="22.0dip">
+        <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过" />
+        <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/white" android:id="@id/count_down_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

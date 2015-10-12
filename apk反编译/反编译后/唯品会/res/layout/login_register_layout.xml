@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/header" android:visibility="gone" android:layout_width="fill_parent" android:layout_alignParentTop="true" style="@style/title_bar_bg_style">
+        <ImageView android:id="@id/btn_back" android:visibility="visible" android:layout_centerVertical="true" style="@style/app_title_left_button_style" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/radiogroup" android:layout_width="160.0dip" android:layout_height="29.0dip" android:layout_centerInParent="true">
+            <RadioButton android:textSize="13.0dip" android:textColor="@drawable/login_register_color_selector" android:gravity="center" android:id="@id/radiobtn_login" android:background="@drawable/radiobtn_login_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="登录" android:layout_weight="1.0" />
+            <RadioButton android:textSize="13.0dip" android:textColor="@drawable/login_register_color_selector" android:gravity="center" android:id="@id/radiobtn_sigin" android:background="@drawable/radiobtn_sigin_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="注册" android:layout_weight="1.0" />
+        </RadioGroup>
+    </RelativeLayout>
+    <View android:background="@drawable/favor_item_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

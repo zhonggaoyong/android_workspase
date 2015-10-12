@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/webLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:layout_gravity="center" android:id="@id/mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <include android:id="@id/navigation_bar" layout="@layout/webview_navigation_bar_layout" />
+    </LinearLayout>
+    <include android:id="@id/webNoNet" android:visibility="gone" layout="@layout/wap_nonetwork_error" />
+</FrameLayout>

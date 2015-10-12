@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/focus_shop_title_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/focus_shop_title_btn_back" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="20.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/focus_shop_title_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/shopfocus_title" android:layout_centerHorizontal="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/focus_shop_title_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:text="@string/shopfocus_recommend" android:layout_alignParentRight="true" />
+        <View android:layout_alignParentBottom="true" style="@style/borderline2" />
+    </RelativeLayout>
+    <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/focus_shop_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/focus_shop_title_bar">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/focus_shop_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/no_focus_shop" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/shop_no_focus_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/empty_page_margin_top" />
+                <com.meilishuo.app.views.CustomTextView android:text="@string/no_followed_shop_text" style="@style/EmptyDataFirstTextStyle" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+    <com.meilishuo.app.views.CustomTextView android:id="@id/focus_shop_to_top" android:background="@drawable/to_top_icon" android:visibility="gone" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

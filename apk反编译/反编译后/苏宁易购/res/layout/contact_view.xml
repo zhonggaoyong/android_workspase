@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/top" android:background="@drawable/cell_phone_paylayout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+        <AutoCompleteTextView android:id="@id/edit" android:background="@null" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="12.0dip" android:hint="请搜索要充值的联系人" android:completionThreshold="1" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="对不起,未能查找到手机号!" android:layout_below="@id/top" />
+    <ListView android:id="@id/list" android:nextFocusUp="@id/edit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:layout_below="@id/top" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/pack_list_title" layout="@layout/title" />
+    <ScrollView android:id="@id/pd_packlist_scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pack_list_title" android:fadeScrollbars="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/pd_packlist_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

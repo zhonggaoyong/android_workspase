@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="50.0dip" style="@style/pay_common_hm_vw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/paysdk2_simple_pwd_bg_" android:layout_width="fill_parent" android:layout_height="50.0dip" android:baselineAligned="false">
+        <RelativeLayout android:orientation="horizontal" android:layout_weight="1.0" style="@style/pay_common_ho_vm">
+            <ImageView android:id="@id/sdk2_pwd_one_img" android:visibility="invisible" android:src="@drawable/paysdk_circle_icon" android:layout_centerInParent="true" style="@style/pay_common_hm_vw" />
+            <View android:background="@color/paysdk_color_pwd_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_weight="1.0" style="@style/pay_common_ho_vm">
+            <ImageView android:id="@id/sdk2_pwd_two_img" android:visibility="invisible" android:src="@drawable/paysdk_circle_icon" android:layout_centerInParent="true" style="@style/pay_common_hw_vw" />
+            <View android:background="@color/paysdk_color_pwd_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_weight="1.0" style="@style/pay_common_ho_vm">
+            <ImageView android:id="@id/sdk2_pwd_three_img" android:visibility="invisible" android:src="@drawable/paysdk_circle_icon" android:layout_centerInParent="true" style="@style/pay_common_hw_vw" />
+            <View android:background="@color/paysdk_color_pwd_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_weight="1.0" style="@style/pay_common_ho_vm">
+            <ImageView android:id="@id/sdk2_pwd_four_img" android:visibility="invisible" android:src="@drawable/paysdk_circle_icon" android:layout_centerInParent="true" style="@style/pay_common_hw_vw" />
+            <View android:background="@color/paysdk_color_pwd_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_weight="1.0" style="@style/pay_common_ho_vm">
+            <ImageView android:id="@id/sdk2_pwd_five_img" android:visibility="invisible" android:src="@drawable/paysdk_circle_icon" android:layout_centerInParent="true" style="@style/pay_common_hw_vw" />
+            <View android:background="@color/paysdk_color_pwd_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_weight="1.0" style="@style/pay_common_ho_vm">
+            <ImageView android:id="@id/sdk2_pwd_six_img" android:visibility="invisible" android:src="@drawable/paysdk_circle_icon" android:layout_centerInParent="true" style="@style/pay_common_hw_vw" />
+            <View android:background="@color/paysdk_color_pwd_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.suning.mobile.paysdk.pay.common.view.SdkSecurityEditText android:textColor="@color/paysdk2_color_black" android:id="@id/sdk2_pwd_edit_simple" android:background="@null" android:cursorVisible="false" android:maxLength="6" android:inputType="numberPassword" style="@style/pay_common_hm_vm" />
+</FrameLayout>

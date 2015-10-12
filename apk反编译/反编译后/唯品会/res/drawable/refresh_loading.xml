@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/vip_logo_00" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_01" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_02" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_03" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_04" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_05" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_06" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_07" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_08" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_09" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_10" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_11" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_12" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_13" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_14" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_15" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_16" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_17" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_18" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_19" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_20" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_21" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_22" />
+    <item android:duration="50" android:drawable="@drawable/vip_logo_23" />
+</animation-list>

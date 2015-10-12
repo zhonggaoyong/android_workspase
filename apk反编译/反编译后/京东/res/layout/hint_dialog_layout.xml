@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/fill_order_dialog_background_corners" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/common_dialog_title_size" android:textColor="@color/common_dialog_title_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/common_dredge_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_dialog_margintop" android:layout_marginBottom="@dimen/common_dialog_margintop" android:text="@string/alert_camera_choose" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/common_dialog_item_size" android:textColor="@color/common_dialog_item_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/common_dredge_text_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fill_order_address_list_edit_address" />
+        <View android:id="@id/common_dredge_text_1_line" android:visibility="visible" android:layout_height="@dimen/fill_order_line" android:layout_marginTop="@dimen/common_dialog_margintop" android:layout_marginBottom="@dimen/common_dialog_margintop" style="@style/fill_order_line" />
+        <TextView android:textSize="@dimen/common_dialog_item_size" android:textColor="@color/common_dialog_item_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/common_dredge_text_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/edit_order_address_alert_delete" />
+        <View android:id="@id/common_dredge_text_2_line" android:visibility="gone" android:layout_height="@dimen/fill_order_line" android:layout_marginTop="@dimen/common_dialog_margintop" android:layout_marginBottom="@dimen/common_dialog_margintop" style="@style/fill_order_line" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="@dimen/common_dialog_margintop">
+        <Button android:textSize="@dimen/common_dialog_item_size" android:textColor="@color/common_dialog_title_text_color" android:id="@id/common_cancel" android:background="@drawable/fill_order_button_cancel_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

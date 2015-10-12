@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line6" android:layout_marginLeft="@dimen/lib_game_charge_margin" android:layout_marginRight="0.0dip" style="@style/lib_phone_charge_line_h" />
+    <RelativeLayout android:id="@id/lib_game_charge_item_2" android:paddingLeft="@dimen/lib_game_charge_margin" android:paddingRight="@dimen/lib_game_charge_margin" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_below="@id/line6">
+        <TextView android:textSize="@dimen/lib_game_charge_text_size" android:textColor="@color/lib_game_charge_text_color" android:id="@id/lib_game_charge_name_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/lib_game_charge_arrow_2" android:background="@drawable/lib_game_charge_arrow_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/lib_game_charge_text_size" android:textColor="@color/lib_game_charge_black" android:id="@id/lib_game_charge_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:text="" android:layout_toRightOf="@id/lib_game_charge_name_2" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

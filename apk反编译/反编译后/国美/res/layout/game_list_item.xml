@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:id="@id/app_tag" android:background="@color/price_text_color" android:layout_width="3.0dip" android:layout_height="92.0dip" />
+    <ImageView android:id="@id/app_logo_iv" android:background="@drawable/game_detail_icon_img" android:padding="3.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="7.0dip" android:scaleType="fitXY" android:layout_toRightOf="@id/app_tag" android:layout_centerVertical="true" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/relativeLayout1" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/app_down_bt" android:layout_toRightOf="@id/app_logo_iv">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/main_default_black_text_color" android:id="@id/app_name_tv" android:paddingLeft="7.0dip" android:paddingTop="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        <TextView android:textColor="@color/hint_text_color" android:id="@id/app_size_tv" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="10.0dip" android:text="2.3M" android:maxLines="2" android:layout_below="@id/app_name_tv" />
+    </RelativeLayout>
+    <Button android:textSize="12.0sp" android:textColor="@color/hint_text_color" android:id="@id/app_down_bt" android:background="@drawable/app_down_btn" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="60.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="下载" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:background="@color/game_list_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_toRightOf="@id/app_tag" android:layout_alignBottom="@id/app_tag" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/my_gome_layout" android:background="@color/setting_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mygome_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/scrollView1" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/common_scrollbar_style">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <fragment android:name="com.gome.ecmall.home.mygome.MyGomeHeadFragment" android:id="@id/frag_header" android:layout_width="fill_parent" android:layout_height="255.0dip" />
+                <include layout="@layout/mygome_new_body" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/coupon_mature_rl" android:background="#ff232323" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/common_top_layout">
+        <ImageView android:id="@id/coupon_mature_icon" android:background="@drawable/my_coupon_warn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.0dip" />
+        <ImageView android:id="@id/coupon_mature_close" android:background="@drawable/limitbuy_esoterica_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="15.0sp" android:id="@id/mygome_coupon_mature_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mygome_coupon_mature_title" android:layout_toRightOf="@id/coupon_mature_icon" android:layout_alignTop="@id/coupon_mature_icon" />
+        <ListView android:id="@id/mygome_coupon_mature_list" android:background="@android:color/transparent" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:listSelector="@android:color/transparent" android:layout_toRightOf="@id/coupon_mature_icon" android:layout_below="@id/mygome_coupon_mature_title_tv" style="@style/more_section_listview_style" />
+    </RelativeLayout>
+</RelativeLayout>

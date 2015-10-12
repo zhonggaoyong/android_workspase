@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/android_public_space_20px" android:paddingRight="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px">
+        <ImageView android:id="@id/ivIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_eight" android:id="@id/tvItemName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_20px" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <View android:id="@id/itemLine" android:background="@drawable/category_listview_divider" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_marginLeft="@dimen/android_public_space_80px" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/order_shop_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_fourteen">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/pub_color_one" android:paddingLeft="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px">
+            <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/view_order_id_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单号  " />
+                <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/view_order_id" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/pub_color_eighteen" android:id="@id/view_order_price_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总计  " />
+                <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:id="@id/view_order_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_18px" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:id="@id/btn_order_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/order_delete_btn_bg" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_product_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

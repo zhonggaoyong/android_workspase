@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/text_icon_menu" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ffff4683" android:ellipsize="end" android:gravity="center" android:id="@id/actionbar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="北京" android:maxEms="3" android:singleLine="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/actionbar_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_toRightOf="@id/actionbar_text" android:layout_centerVertical="true" />
+</RelativeLayout>

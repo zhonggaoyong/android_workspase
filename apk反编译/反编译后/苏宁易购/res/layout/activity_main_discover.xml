@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/page_title" />
+    <com.suning.mobile.ebuy.found.view.XListView android:id="@id/lv_home_discover_list" android:background="@color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/white" android:dividerHeight="14.0dip" android:layout_weight="1.0" />
+</LinearLayout>

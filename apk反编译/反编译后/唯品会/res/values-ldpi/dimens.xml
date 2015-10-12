@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="product_list_auto_indent">62.0dip</dimen>
+    <dimen name="dialog_upgrade_banner_height">107.51999dip</dimen>
+    <dimen name="dialog_upgrade_banner_mb">23.892975dip</dimen>
+    <dimen name="dialog_upgrade_banner_width">238.93298dip</dimen>
+    <dimen name="dialog_upgrade_bottom_height">46.079987dip</dimen>
+    <dimen name="dialog_upgrade_bottom_mt">22.186981dip</dimen>
+    <dimen name="dialog_upgrade_content_linespacing">5.972992dip</dimen>
+    <dimen name="dialog_upgrade_content_mb">26.452972dip</dimen>
+    <dimen name="dialog_upgrade_content_ml">22.186981dip</dimen>
+    <dimen name="dialog_upgrade_content_mt">0.0dip</dimen>
+    <dimen name="dialog_upgrade_content_textsize">13.22699dip</dimen>
+    <dimen name="dialog_upgrade_mim_height">298.66406dip</dimen>
+    <dimen name="dialog_upgrade_title_mb">17.066986dip</dimen>
+    <dimen name="dialog_upgrade_title_textsize">9.386993dip</dimen>
+</resources>

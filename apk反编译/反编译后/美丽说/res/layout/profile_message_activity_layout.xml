@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mls="http://schemas.android.com/apk/res/com.meilishuo">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_back" android:clickable="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.SlidebarView android:id="@id/sidebar" android:layout_centerVertical="true" style="@style/SlideBarTtyle" />
+        <com.meilishuo.app.home.view.HomeTabViewWithTip android:id="@id/title_parent" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" mls:defaultColor="@color/grey_d3" mls:selectColor="@color/pink" mls:lineColor="@color/pink" mls:animation="true" mls:tabTextSize="16.0sp" mls:gapWidth="40.0dip" mls:lineBeyond="5.0dip" mls:customIndex="3" />
+        <com.meilishuo.app.views.GoShoppingcartView android:id="@id/to_shoppingcart_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+    </RelativeLayout>
+    <com.meilishuo.app.views.NoScrollViewPager android:id="@id/viewpager" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="300" android:layout_below="@id/header" />
+    <FrameLayout android:id="@id/page_container" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

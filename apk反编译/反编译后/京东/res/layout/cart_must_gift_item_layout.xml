@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/cart_yb_gift_content" android:background="@drawable/cart_gift_yb_select_selector" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:paddingBottom="7.0dip" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/cart_gift_no_stock_color" android:ellipsize="end" android:id="@id/cart_must_gift_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="right" android:id="@id/cart_must_gift_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.1">
+            <TextView android:textSize="14.0sp" android:textColor="@color/cart_gift_no_stock_color" android:id="@id/cart_must_gift_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x1" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/cart_color_f15353" android:id="@id/cart_must_gift_no_stock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_cart_no_stock" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/shopping_cart_change_product" android:gravity="center" android:id="@id/cart_must_gift_delete" android:background="@drawable/cart_yb_gift_delete_btn_selector" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:text="@string/delete" android:layout_weight="2.5" />
+</LinearLayout>

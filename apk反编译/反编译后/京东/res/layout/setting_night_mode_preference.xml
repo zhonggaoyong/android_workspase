@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/nightModeLayout" android:background="@drawable/personel_list_item_bg2_selector" android:paddingLeft="9.0dip" android:paddingTop="9.0dip" android:paddingRight="12.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/minIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/night_mode_seekbar_min_icon" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/maxIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/night_mode_seekbar_max_icon" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <SeekBar android:id="@id/seekbar" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="3.0dip" android:max="100" android:progress="20" android:progressDrawable="@drawable/night_mode_seekbar_drawable" android:minHeight="3.0dip" android:thumb="@drawable/night_mode_seekbar_thumb" android:layout_toLeftOf="@id/maxIcon" android:layout_toRightOf="@id/minIcon" android:layout_centerVertical="true" />
+</RelativeLayout>

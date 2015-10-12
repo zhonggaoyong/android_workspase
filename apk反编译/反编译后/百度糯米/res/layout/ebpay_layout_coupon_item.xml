@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@color/ebpay_white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/ebpay_black" android:id="@id/ebpay_coupon_check" android:clickable="false" android:layout_width="25.0dip" android:layout_height="25.0dip" android:checked="false" android:button="@drawable/ebpay_bg_checkbox_for_coupon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/ebpay_text_size_18" android:textColor="@color/ebpay_text_normal" android:ellipsize="end" android:id="@id/ebpay_coupon_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/ebpay_text_hint" android:ellipsize="end" android:id="@id/ebpay_coupon_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/ebpay_text_size_18" android:textColor="@color/ebpay_text_normal" android:id="@id/ebpay_coupon_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/goodsDetailThumbBoader" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/goodsDetailThumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/default_background_big" android:scaleType="center" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/scroll_prompt_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/scroll_prompt" android:scaleType="fitEnd" android:layout_alignParentRight="true" />
+</RelativeLayout>

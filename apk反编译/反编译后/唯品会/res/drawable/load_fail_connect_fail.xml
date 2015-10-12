@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/net_reload_01" />
+    <item android:duration="200" android:drawable="@drawable/net_reload_02" />
+    <item android:duration="200" android:drawable="@drawable/net_reload_03" />
+    <item android:duration="200" android:drawable="@drawable/net_reload_04" />
+</animation-list>

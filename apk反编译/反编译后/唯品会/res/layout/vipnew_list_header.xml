@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" style="@style/title_bar_bg_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_back" android:visibility="visible" android:layout_centerVertical="true" style="@style/app_title_left_button_style" />
+    <Button android:textSize="@dimen/app_textsize_button" android:textColor="@color/app_text_black" android:ellipsize="end" android:gravity="center" android:id="@id/vipheader_left_btn" android:background="@drawable/submit_white_button" android:visibility="gone" android:layout_width="61.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/app_title_icon_padding_left_right" android:singleLine="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/app_text_new_black" android:id="@id/vipheader_left_close_btn" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/menu_close" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.5">
+            <LinearLayout android:id="@id/vipheader_title_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/vipheader_titleimage" android:visibility="gone" android:layout_width="51.0dip" android:layout_height="17.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/new_title_logo" />
+                <TextView android:textSize="@dimen/app_title_size" android:textColor="@color/pule_black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/vipheader_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/vipheader_ware_layout" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/vipheader_title_layout" android:layout_alignBottom="@id/vipheader_title_layout">
+                <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_black" android:id="@id/vipheader_ware_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/vipheader_ware_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ware_arrow_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/vipheader_title_time_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/app_textsize_title" android:textColor="@color/app_text_black_new_ui" android:ellipsize="end" android:id="@id/vipheader_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="@dimen/app_textsize_large" android:textColor="@color/vip_pink_new_ui" android:ellipsize="end" android:id="@id/vipheader_time_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/vipheader_favor_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/vipheader_share_btn">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/favor_view" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/topbar_collect_selector" android:scaleType="centerInside" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/vipheader_share_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="@dimen/app_title_icon_padding_left_right" android:src="@drawable/topbar_share_selector" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/mark_point" android:visibility="gone" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/new_circle_btn" />
+    </FrameLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/app_text_new_black" android:id="@id/vipheader_close_btn" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:scaleType="centerInside" android:text="@string/menu_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mls="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/gray_line" android:background="@color/grey_l3" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="5.0dip" />
+    <com.meilishuo.app.widget.HomeTabView android:id="@id/tab_lay" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/shop_sort_label_height" mls:defaultColor="@color/grey_d4" mls:selectColor="@color/pink" mls:lineColor="@color/pink" mls:animation="true" mls:tabTextSize="14.0dip" mls:customResId="@drawable/ico_sort_default" mls:customIndex="3" />
+</LinearLayout>

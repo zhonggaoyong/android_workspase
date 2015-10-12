@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/im_chat_input_panel_bg" android:layout_width="fill_parent" android:layout_height="@dimen/im_input_phiz_tool_page_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/hor" android:background="@drawable/im_input_tool_horizontal_div" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+    <TextView android:id="@id/ver" android:background="@drawable/im_input_tool_vertical_div" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/ver" android:layout_above="@id/hor">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lyPicture" android:layout_width="@dimen/im_input_function_btn_size" android:layout_height="@dimen/im_input_function_btn_size">
+                <Button android:id="@id/picture" android:background="@drawable/im_input_tool_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/im_input_function_btn_font" android:textColor="@color/im_input_tool_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="图片" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/ver" android:layout_above="@id/hor">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/lyCapture" android:layout_width="@dimen/im_input_function_btn_size" android:layout_height="@dimen/im_input_function_btn_size">
+                <Button android:id="@id/capture" android:background="@drawable/im_input_tool_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/im_input_function_btn_font" android:textColor="@color/im_input_tool_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="拍照" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/ver" android:layout_below="@id/hor">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/lyAdd" android:layout_width="@dimen/im_input_function_btn_size" android:layout_height="@dimen/im_input_function_btn_size">
+                    <Button android:id="@id/add" android:background="@drawable/im_input_tool_add" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/im_input_function_btn_font" android:textColor="@color/im_input_tool_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="新增" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/ver" android:layout_below="@id/hor">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lyVoice" android:layout_width="@dimen/im_input_function_btn_size" android:layout_height="@dimen/im_input_function_btn_size" android:layout_centerInParent="true">
+            <Button android:id="@id/voice" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/im_input_function_btn_font" android:textColor="@color/im_input_tool_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="位置" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

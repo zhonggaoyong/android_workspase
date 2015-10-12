@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="114.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/jshop_top_divider" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/jshop_list_item_whole" android:background="@color/c_F3F5F7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/jshop_top_divider">
+        <LinearLayout android:orientation="vertical" android:id="@id/jshop_list_item_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.5dip" android:layout_centerVertical="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_list_item_logo" android:background="@drawable/jshop_list_item_logo" android:padding="1.0px" android:layout_width="90.0dip" android:layout_height="30.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/jshop_list_item_right" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.5dip" android:layout_toRightOf="@id/jshop_list_item_left">
+            <TextView android:textSize="15.0sp" android:textColor="@color/c_252525" android:id="@id/jshop_list_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="蓝莓儿外贸服装店" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <RatingBar android:id="@id/jshop_list_item_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:numStars="5" android:rating="4.0" android:stepSize="1.0" android:isIndicator="true" style="@style/jshop_recommend_search_ratingBar" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/c_252525" android:id="@id/jshop_list_item_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/scan_history" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_list_item_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/jshop_list_item_new" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_list_item_quan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jshop_list_item_quan" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:id="@id/jshop_list_item_favorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:text="2.5万人关注" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/jshop_list_item_right_three_lines" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_toRightOf="@id/jshop_list_item_left">
+            <TextView android:textSize="15.0sp" android:textColor="@color/c_252525" android:id="@id/jshop_list_item_name_three_lines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="蓝莓儿外贸服装店" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/icon_three_lines_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_list_item_new_three_lines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/jshop_list_item_new" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_list_item_quan_three_lines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jshop_list_item_quan" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/icon_three_lines_rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <RatingBar android:id="@id/jshop_list_item_rating_three_lines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:numStars="5" android:rating="4.0" android:stepSize="1.0" android:isIndicator="true" style="@style/jshop_recommend_search_ratingBar" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/c_252525" android:id="@id/jshop_list_item_score_three_lines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/scan_history" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:id="@id/jshop_list_item_favorite_three_lines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="2.5万人关注" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/jshop_list_item_right_two_lines" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="35.0dip" android:layout_toRightOf="@id/jshop_list_item_left">
+            <TextView android:textSize="15.0sp" android:textColor="@color/c_252525" android:id="@id/jshop_list_item_name_two_lines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="蓝莓儿外贸服装店" android:singleLine="true" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff848689" android:id="@id/jshop_list_item_favorite_two_lines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:text="2.5万人关注" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_banner_next_img" android:background="@drawable/button_k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.5dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jshop_list_item_self_support" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.5dip" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/jshop_bottom_divider" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

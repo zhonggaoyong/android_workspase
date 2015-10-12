@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/poi_place" android:ellipsize="end" android:gravity="right" android:id="@id/porder_date_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周一" android:singleLine="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/poi_place" android:ellipsize="end" android:gravity="right" android:id="@id/porder_date_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="8月12日" android:singleLine="true" android:layout_below="@id/porder_date_week" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/poi_place" android:ellipsize="end" android:gravity="right" android:id="@id/porder_date_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="余80" android:singleLine="true" android:layout_below="@id/porder_date_date" android:layout_centerHorizontal="true" />
+</RelativeLayout>

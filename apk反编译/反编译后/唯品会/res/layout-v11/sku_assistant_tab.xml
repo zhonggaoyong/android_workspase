@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/detail_gray_dark" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="13.0dip" android:text="@string/recommend_size_tips" android:lineSpacingMultiplier="1.2" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.achievo.vipshop.view.PinnedHeaderScrollView android:id="@id/recommend_part" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/table" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/recommend_vertical_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/slash" android:layout_width="55.0dip" android:layout_height="43.0dip">
+                        <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="bottom|left|center" android:layout_gravity="left" android:paddingLeft="5.0dip" android:paddingBottom="3.0dip" android:layout_width="27.5dip" android:layout_height="fill_parent" android:text="@string/weight" />
+                        <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="top|right|center" android:layout_gravity="right" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:layout_width="27.5dip" android:layout_height="fill_parent" android:text="@string/height" android:lineSpacingMultiplier="0.8" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.achievo.vipshop.view.SkuTableHorizontalScrollView android:scrollbarTrackHorizontal="@null" android:scrollbarAlwaysDrawHorizontalTrack="false" android:id="@id/recommend_table_fw" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/recommend_vertical_indicator">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/recommend_table" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </com.achievo.vipshop.view.SkuTableHorizontalScrollView>
+                <View android:background="@color/detail_divider_gray_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/recommend_table_fw" android:layerType="software" />
+            </RelativeLayout>
+        </com.achievo.vipshop.view.PinnedHeaderScrollView>
+        <HorizontalScrollView android:orientation="horizontal" android:id="@id/header" android:visibility="invisible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/slash" android:layout_width="55.0dip" android:layout_height="43.0dip">
+                    <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="bottom|left|center" android:layout_gravity="left" android:paddingLeft="5.0dip" android:paddingBottom="3.0dip" android:layout_width="27.5dip" android:layout_height="fill_parent" android:text="@string/weight" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="top|right|center" android:layout_gravity="right" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:layout_width="27.5dip" android:layout_height="fill_parent" android:text="@string/height" android:lineSpacingMultiplier="0.8" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </FrameLayout>
+</LinearLayout>

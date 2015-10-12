@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/android_public_space_10px" android:paddingRight="@dimen/android_public_space_10px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_btn_white_round_corner" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_online" android:padding="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/pub_margin_or_padding_space_sixty">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_online">
+                <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/search_tab_color" android:id="@id/tv_online" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_paymode_online" />
+                <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/cart2_dialog_payment" android:ellipsize="end" android:id="@id/tv_online_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_selectpaymode_online_detaildesc" android:maxLines="3" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_online" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <RelativeLayout android:id="@id/rl_cash" android:padding="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/pub_margin_or_padding_space_sixty">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_cash">
+                <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/search_tab_color" android:id="@id/tv_cash" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_selectpaymode_cod_cash_prompt" />
+                <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/cart2_dialog_payment" android:ellipsize="end" android:id="@id/tv_cash_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_payment_choose_cash_detaildesc" android:maxLines="3" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_cash" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <RelativeLayout android:id="@id/rl_pos" android:padding="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/pub_margin_or_padding_space_sixty">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_pos">
+                <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/search_tab_color" android:id="@id/tv_pos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_selectpaymode_cod_pos_prompt" />
+                <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/cart2_dialog_payment" android:ellipsize="end" android:id="@id/tv_pos_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_payment_choose_pos_detaildesc" android:maxLines="3" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_pos" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+        <RelativeLayout android:id="@id/rl_store" android:padding="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/pub_margin_or_padding_space_sixty">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_store">
+                <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/search_tab_color" android:id="@id/tv_store" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_submitorder_paymode_storepay" />
+                <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/cart2_dialog_payment" android:ellipsize="end" android:id="@id/tv_store_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_submitorder_store_pay_prompt" android:maxLines="3" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_store" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/pub_color_twenty_one" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/bg_btn_white_round_corner" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:layout_marginTop="@dimen/android_public_space_10px" android:layout_marginBottom="@dimen/android_public_space_10px" android:text="取消" />
+</LinearLayout>

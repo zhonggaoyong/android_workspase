@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="5.0dip">
+        <LinearLayout android:gravity="right|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="19.0sp" android:textColor="#ff666666" android:id="@id/but_fashion" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="流行" />
+                <View android:layout_gravity="center_horizontal" android:id="@id/but_fashion_tiao" android:background="#b2ff6699" android:layout_width="41.0dip" android:layout_height="1.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.meilishuo.app.views.CustomTextView android:textSize="19.0sp" android:textColor="#ff666666" android:id="@id/but_upnew" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新品" />
+            <View android:id="@id/but_upnew_tiao" android:background="#b2ff6699" android:layout_width="41.0dip" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="19.0sp" android:textColor="#ff666666" android:id="@id/but_hot_sale" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热销" />
+                <View android:layout_gravity="center_horizontal" android:id="@id/but_hotSale_tiao" android:background="#b2ff6699" android:layout_width="41.0dip" android:layout_height="1.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#26000000" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

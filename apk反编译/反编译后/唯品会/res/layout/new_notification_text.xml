@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/notification_root" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/notification_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:src="@drawable/icon" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/notification_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="唯品会" android:maxLines="1" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/notification_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="唯品会唯品会唯品会唯品会" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/jshop_dynamic_shop_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/jshop_clock_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="@dimen/jshop_concern_list_item_margin_left_right" />
+    <TextView android:textSize="@dimen/jshop_dynamic_time_text_size" android:textColor="@color/jshop_dynamic_time_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/jshop_dynamic_time" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_dynamic_time_height" android:layout_marginLeft="@dimen/jshop_concern_list_item_margin_left_right" android:text="" android:singleLine="true" />
+</LinearLayout>

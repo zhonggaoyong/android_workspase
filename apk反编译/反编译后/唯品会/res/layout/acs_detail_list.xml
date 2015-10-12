@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/acs_group_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <ImageView android:id="@id/acs_group_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/acs_other" />
+        <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/personal_text_color" android:id="@id/acs_group_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/account_vipshop_customer_phone" android:layout_weight="1.0" />
+        <ImageView android:id="@id/acs_group_arrow" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_forward_grey" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

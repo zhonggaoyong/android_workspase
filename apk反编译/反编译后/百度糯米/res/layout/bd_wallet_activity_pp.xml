@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wallet_base_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.wallet.base.widget.BdActionBar android:id="@id/bdactionbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/security_item_layout" android:background="@drawable/bd_wallet_single_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <RelativeLayout android:id="@id/bd_wallet_security_item_layout" android:background="@drawable/wallet_base_bank_item_selector" android:paddingLeft="19.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/bd_wallet_transfer_item_height">
+            <TextView android:textSize="15.0sp" android:textColor="@color/bd_wallet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bd_wallet_pay_security_pp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/bd_wallet_security_switch" android:background="@drawable/wallet_base_btn_switch" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/wallet_base_6c" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/bd_wallet_text_gray" android:id="@id/bd_wallet_security_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:text="@string/bd_wallet_pay_security_pp_tip" />
+</LinearLayout>

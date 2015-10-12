@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/problem_detail_ll" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center" android:padding="11.0dip" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/account_question_pic" />
+        <TextView android:textSize="@dimen/app_textsize_main" android:textColor="#ff000000" android:id="@id/acs_detail_item_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/account_vipshop_customer_phone" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="4.0dip" />
+    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="#ff8d8e8e" android:id="@id/acs_detail_item_content" android:padding="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_vipshop_customer_phone" android:lineSpacingExtra="1.0dip" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

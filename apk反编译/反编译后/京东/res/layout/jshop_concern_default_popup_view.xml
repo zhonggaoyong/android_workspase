@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/toolBar" android:background="#f2ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/shop_popup_view_item_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/shop_popup_view_item_tv_1" android:paddingLeft="15.5dip" android:paddingTop="15.0dip" android:paddingBottom="8.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shop_default" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/shop_popup_view_item_iv_1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/shop_popup_view_item_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/shop_popup_view_item_tv_3" android:paddingLeft="15.5dip" android:paddingTop="15.0dip" android:paddingBottom="8.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shop_popup_view_item_2" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/shop_popup_view_item_iv_3" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/shop_popup_view_item_5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/shop_popup_view_item_tv_5" android:paddingLeft="15.5dip" android:paddingTop="15.0dip" android:paddingBottom="8.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shop_popup_view_item_3" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/shop_popup_view_item_iv_5" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/gray_area" android:background="#bf252525" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolBar" />
+</RelativeLayout>

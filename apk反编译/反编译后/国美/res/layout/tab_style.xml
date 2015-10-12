@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:id="@id/mygome_mycoupon_unused" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tab_style_indicator" style="@style/my_coupon_type_item_style" />
+    <View android:id="@id/tab_style_indicator" android:background="#ffc70000" android:layout_width="136.0px" android:layout_height="4.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

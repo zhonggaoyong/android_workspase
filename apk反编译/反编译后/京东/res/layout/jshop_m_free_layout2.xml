@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/jshop_m_free2" style="@style/JshopALLTemplate"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+    <TextView android:id="@id/jshop_m_free_title" android:visibility="gone" style="@style/JshopLayoutTitle" />
+    <View android:id="@id/jshop_m_title_margin" style="@style/JshopLayoutTitleMargin" />
+    <LinearLayout android:orientation="horizontal" style="@style/JshopFreeLayout_h">
+        <LinearLayout android:orientation="vertical" android:id="@id/free2_item_l" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/free2_pic_l" style="@style/JshopFree3Image" />
+            <LinearLayout style="@style/JshopFree3Text">
+                <TextView android:id="@id/free2_l_name" style="@style/JshopFree3Name" />
+                <TextView android:id="@id/free2_l_price" style="@style/JshopFree2Price" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="8.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/free2_item_r" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/free2_pic_r" style="@style/JshopFree3Image" />
+            <LinearLayout style="@style/JshopFree3Text">
+                <TextView android:id="@id/free2_r_name" style="@style/JshopFree3Name" />
+                <TextView android:id="@id/free2_r_price" style="@style/JshopFree2Price" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+</LinearLayout>

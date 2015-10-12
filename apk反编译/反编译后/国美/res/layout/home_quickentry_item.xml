@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_home_quickentry_one" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_home_quickentry_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/home_menu_icon" android:scaleType="fitXY" android:maxWidth="@dimen/server_icon_width" android:maxHeight="@dimen/server_icon_height" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff84898b" android:id="@id/tv_home_quickentry_menu_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" android:maxLength="5" android:layout_below="@id/iv_home_quickentry_icon" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_home_quickentry_prom" android:background="#ffeb5a5a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image" android:background="@color/grey_l6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/iv_tips" android:background="@color/grey_l6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_niceshop" />
+    </RelativeLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:singleLine="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/pink_l1" android:gravity="center_vertical" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <com.meilishuo.app.views.MiddleLineTextView android:textSize="13.0sp" android:textColor="#ffcccccc" android:gravity="center_vertical" android:id="@id/tv_origin_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

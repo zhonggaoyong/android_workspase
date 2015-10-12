@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:id="@id/grid_photos" android:layout_width="fill_parent" android:layout_height="0.0dip" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:numColumns="4" android:layout_weight="1.0" />
+    <View android:background="@color/home_split" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/grid_bar" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <Button android:textSize="14.0sp" android:textColor="@color/btn_white_text_color" android:id="@id/grid_bar_preview" android:background="@drawable/bg_white_button_selector" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_margin="12.0dip" android:text="预览" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:enabled="false" android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_gravity="right" android:id="@id/grid_bar_done" android:background="@drawable/bg_red_button_selector" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_margin="12.0dip" android:text="完成" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="right" android:id="@id/grid_bar_num" android:background="@drawable/album_bg_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="50.0dip" android:text="1" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

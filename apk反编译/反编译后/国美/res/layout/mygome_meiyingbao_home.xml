@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/meiyingbao_home_page_title_layout" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/rl_meiyingbao_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/common_top_layout">
+        <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="vertical" android:id="@id/rl_ad_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.v4.view.ViewPager android:id="@id/vp_ads" android:background="@color/meiyingbao_pink" android:layout_width="fill_parent" android:layout_height="42.0dip" />
+                    <com.gome.ecmall.custom.PageIndicator android:id="@id/ad_page_indictor" android:layout_width="50.0dip" android:layout_height="15.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/iv_ad_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <FrameLayout android:id="@id/head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_ad_group" />
+                <FrameLayout android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/head" />
+                <View android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_below="@id/bottom" />
+            </RelativeLayout>
+        </ScrollView>
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/ll_bottom" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom" android:background="#fff4f4f4" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                <Button android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/btn_recharge" android:layout_width="fill_parent" android:layout_height="45.0dip" android:maxWidth="150.0dip" android:text="存入" android:layout_centerInParent="true" style="@style/Gome.Button.SolidRed.Style" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_withdraw" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentBottom="true">
+                <Button android:textSize="20.0sp" android:id="@id/btn_withdraw" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="取现 " android:layout_centerInParent="true" style="@style/Gome.Button.StrokeGray.Style" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_account_detail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentBottom="true">
+                <TextView android:textSize="20.0sp" android:textColor="#ff0066cc" android:gravity="center" android:id="@id/tv_account_detail" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="账户明细" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

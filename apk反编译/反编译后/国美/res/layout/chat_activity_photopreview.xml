@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/vp_base_app" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="top" android:id="@id/hl_head_ar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/vw_titlebar" />
+    <include android:layout_gravity="bottom" android:id="@id/preview_toolbar_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/collection_photo_toolbar_height" layout="@layout/chat_layout_photo_bottom_bar" />
+</FrameLayout>

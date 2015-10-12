@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlt_root_container" android:background="@color/layout_backgroud" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="iniuniu" android:hint="用户名216970000 179990000" />
+    <EditText android:id="@id/password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="n66922411" android:hint="密码" android:layout_below="@id/username" />
+    <Button android:id="@id/login" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="登陆" android:layout_below="@id/password" android:onClick="login" />
+    <Button android:id="@id/exit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="注销" android:hint="" android:layout_below="@id/login" android:onClick="exit" />
+    <RelativeLayout android:id="@id/llt_other_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/exit">
+        <Button android:id="@id/productEnter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="商品详情页进入" android:onClick="productEnter" />
+        <Button android:id="@id/myGomeEnter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="我的国美进入" android:layout_below="@id/productEnter" android:onClick="myGomeEnter" />
+        <Button android:id="@id/guestBook" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="给客服留言" android:layout_below="@id/myGomeEnter" android:onClick="guestBook" />
+        <Button android:id="@id/chatBoxType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="选择技能组" android:layout_below="@id/guestBook" android:onClick="chatBoxType" />
+        <Button android:id="@id/btn_robot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="机器人" android:layout_below="@id/chatBoxType" android:onClick="openRobotChatUI" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llt_mygome" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/btn_robot">
+            <TextView android:autoLink="web" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的国美 Www.baidu.com" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llt_mygome_chat_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="图片选择" android:layout_below="@id/llt_mygome" android:onClick="choosePhoto" />
+    </RelativeLayout>
+</RelativeLayout>

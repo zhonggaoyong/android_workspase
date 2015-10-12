@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffeef0f3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titleView" layout="@layout/vipnew_header" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleView">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-2.0dip" android:layout_below="@id/chooseViewLayout">
+                <com.achievo.vipshop.view.XListViewAutoLoad android:id="@id/listView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0px" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/noProductView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:background="@drawable/icon_filter_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/app_text_black" android:id="@id/noProductInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:text="没有找到符合条件的商品" />
+                    <Button android:textSize="15.0dip" android:id="@id/reFilt" android:visibility="gone" android:layout_width="150.0dip" android:layout_marginTop="13.0dip" android:text="重新筛选" style="@style/submit_red_big_button_style" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/chooseViewLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <include android:id="@id/load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/new_load_fail" />
+    </FrameLayout>
+    <include android:id="@id/goTopView" layout="@layout/go_top" />
+</RelativeLayout>

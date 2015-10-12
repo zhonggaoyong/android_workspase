@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/dialog_frame" android:background="@color/nav_start" android:paddingLeft="35.0dip" android:paddingRight="35.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/app_title_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="扫码分享" />
+        <ImageView android:id="@id/qr_img" android:background="@drawable/photo_frame" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" />
+        <TextView android:textSize="@dimen/app_textsize_price_symbol" android:textColor="@color/app_text_new_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="邀请好友扫一扫分享给TA" />
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+        <Button android:textSize="@dimen/app_textsize_button" android:textColor="@color/app_text_blue" android:id="@id/cancel" android:background="@drawable/sellwin_bg_white_item" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="取消" />
+    </LinearLayout>
+</LinearLayout>

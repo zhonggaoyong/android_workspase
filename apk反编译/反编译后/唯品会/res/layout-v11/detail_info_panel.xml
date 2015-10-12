@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/product_detail" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_lr_padding" android:layout_marginRight="@dimen/detail_lr_padding">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/detail_haitao_msg_bg" android:paddingLeft="15.0dip" android:paddingTop="14.0dip" android:paddingRight="15.0dip" android:paddingBottom="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/detail_tb_padding2">
+            <TextView android:textSize="14.0sp" android:textColor="@color/detail_gray_dark" android:layout_gravity="top" android:id="@id/haitao_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/integral_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/detail_tb_padding2">
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tag" android:background="@drawable/lable_icon_bg_fillpurple" android:layout_width="40.0dip" android:layout_height="16.0dip" android:text="@string/integral_info" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/detail_black" android:id="@id/integral_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_toRightOf="@id/tag" />
+            <View android:background="@color/detail_divider_gray_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/detail_tb_padding2" android:layout_below="@id/tag" android:layerType="software" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/detail_dark" android:gravity="left|center" android:id="@id/meizhuang_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/detail_tb_padding" android:lineSpacingMultiplier="1.2" />
+        <LinearLayout android:orientation="vertical" android:id="@id/info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_unlock_main_page" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_unlock_fanli_main_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="85.0dip">
+            <RelativeLayout android:id="@id/rl_unlock_fanli_center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_unlock_fanli_to_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/screen_lock_left_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <android.support.v4.view.ViewPager android:id="@id/vp_unlock_fanli_display_content" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="260.0dip" android:layout_marginLeft="@dimen/screen_lock_margin" android:layout_marginRight="@dimen/screen_lock_margin" android:flipInterval="30" android:overScrollMode="never" />
+                <ImageView android:id="@id/iv_unlock_fanli_to_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/screen_lock_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_unlock_page_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_unlock_fanli_upper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.fanli.android.view.TangFontTextView android:textSize="48.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_unlock_fanli_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:text="07 : 16" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true">
+            <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tv_unlock_fanli_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="11月26日" android:layout_toLeftOf="@id/tv_unlock_fanli_week" />
+            <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tv_unlock_fanli_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="星期三" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.fanli.android.view.shimmer.ShimmerTextView android:textSize="14.0sp" android:textColor="@color/screen_lock_slide_to_check" android:layout_gravity="bottom|center" android:id="@id/tv_unlock_fanli_slide_to_check" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="140.0dip" />
+    <com.fanli.android.view.UnlockBar android:layout_gravity="bottom|center" android:id="@id/unlock" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" />
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_edit_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="@color/pink" android:gravity="center" android:layout_gravity="center" android:id="@id/change_user_nickname" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="修改昵称" />
+        <View android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" style="@style/cutline" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="@color/pink" android:gravity="center" android:layout_gravity="center" android:id="@id/change_user_tag" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="修改个人标签" />
+        <View android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" style="@style/cutline" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="@color/pink" android:gravity="center" android:layout_gravity="center" android:id="@id/change_user_icon" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="更换头像" />
+        <View android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" style="@style/cutline" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="@color/pink" android:gravity="center" android:layout_gravity="center" android:id="@id/change_user_back" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="更换背景图" />
+    </LinearLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:layout_gravity="center" android:id="@id/profile_edit_cancel" android:background="@drawable/dialog_edit_bg" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="取消" />
+</LinearLayout>

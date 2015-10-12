@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ic="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0dip" android:textColor="@color/detail_gray_light" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/favor_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_lr_padding" android:layout_marginRight="@dimen/detail_lr_padding" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.achievo.vipshop.view.CollectView android:id="@id/mark_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" ic:button_collect_status="true" ic:button_showtips="false" />
+    </LinearLayout>
+</LinearLayout>

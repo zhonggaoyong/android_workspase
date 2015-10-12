@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rules_item_layout" android:background="@color/activity_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/rules_item_li" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="13.0dip" android:src="@drawable/lottery_shape_oval_red" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="@dimen/text_size_dialog_title" android:id="@id/rules_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="投注方式" android:layout_toRightOf="@id/rules_item_li" android:layout_alignTop="@id/rules_item_li" />
+    <TextView android:textSize="@dimen/text_size_dialog_title" android:textColor="@color/text_gray" android:id="@id/rules_item_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/rules_item_title" android:layout_alignLeft="@id/rules_item_title" />
+</RelativeLayout>

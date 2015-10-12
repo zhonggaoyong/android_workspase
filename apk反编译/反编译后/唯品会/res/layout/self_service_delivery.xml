@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="top" layout="@layout/header_layout" />
+    <View android:id="@id/main_load_header_bottom" android:background="@drawable/new_titlebottom" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <View android:background="@color/textarea_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/account_type_item_height">
+        <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单编号：" />
+        <TextView android:textSize="@dimen/account_order_text_size" android:textColor="@color/black" android:id="@id/order_sn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/textarea_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/self_service_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="催促理由 ：" />
+        <EditText android:textSize="@dimen/app_textsize_main" android:textColor="#ff000000" android:gravity="top" android:id="@id/tv_msg_content" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="" />
+    </LinearLayout>
+</LinearLayout>

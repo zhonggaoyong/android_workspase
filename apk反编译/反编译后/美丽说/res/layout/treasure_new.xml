@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/treasure_lay" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header" android:background="@color/white" style="@style/mainHeader">
+        <com.meilishuo.app.views.GoShoppingcartView android:id="@id/to_shoppingcart_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.NewMessageTipView android:id="@id/msgtips" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/to_shoppingcart_btn" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.SlidebarView android:id="@id/sidebar" android:layout_centerVertical="true" style="@style/SlideBarTtyle" />
+        <RelativeLayout android:id="@id/search_parent" android:background="@drawable/home_search_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/msgtips" android:layout_toRightOf="@id/sidebar" android:layout_centerVertical="true" android:onClick="onClick">
+            <com.meilishuo.app.views.CustomTextView android:textColor="@color/grey" android:textColorHint="@color/grey" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="32.0dip" android:singleLine="true" android:drawableLeft="@drawable/classification_ico_search_pink" android:drawablePadding="5.0dip" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/search_qb_code" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="40.0dip" android:layout_height="wrap_content" android:src="@drawable/search_qr_code" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header" PullToRefresh:ptrHeaderBackground="@color/grey_l1" xmlns:PullToRefresh="http://schemas.android.com/apk/res-auto">
+        <com.meilishuo.app.views.waterfall.MeilishuoWaterFallView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+    <com.meilishuo.app.views.CustomPageLoading android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <View android:id="@id/bottom" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/btn_to_top" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/to_top_icon" android:layout_above="@id/bottom" android:layout_alignParentRight="true" android:onClick="onClick" />
+    <include android:id="@id/neterror" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header" layout="@layout/networkerror_default_layout" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ebpay_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/ebpay_view_title_bar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/ebpay_result_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:src="@drawable/ebpay_result_success" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/ebpay_text_size_25" android:textColor="@color/ebpay_text_normal" android:layout_gravity="center_horizontal" android:id="@id/ebpay_result_tip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="@string/ebpay_pay_success" />
+            <TextView android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/ebpay_text_normal" android:layout_gravity="center_horizontal" android:id="@id/ebpay_other_tip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/ebpay_payresult_huifei" />
+            <Button android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/ebpay_white" android:id="@id/pay_success_bt" android:background="@drawable/ebpay_bg_confrim_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_bt_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip" android:text="@string/ebpay_confirm" />
+            <Button android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/ebpay_white" android:id="@id/select_paytype_bt" android:background="@drawable/ebpay_bg_confrim_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_bt_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip" android:text="@string/ebpay_select_other" />
+            <Button android:textSize="@dimen/ebpay_text_size_15" android:textColor="@color/ebpay_white" android:id="@id/pay_cancel" android:background="@drawable/bd_wallet_neg_btn_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/ebpay_bt_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/ebpay_line_margin_10" android:layout_marginRight="10.0dip" android:text="@string/ebpay_cancel" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

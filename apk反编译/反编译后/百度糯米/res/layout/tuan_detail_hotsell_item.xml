@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hotsellParentClk" android:background="@drawable/selector_list_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/hotsellItemNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/hotsellTitleNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/tuan_detial_default_value" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffff4978" android:id="@id/hotsellRMBCountNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/tuan_detial_default_value" android:layout_toRightOf="@id/hotsellRMBIconNew" android:layout_below="@id/hotsellTitleNew" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:id="@id/hotsellRMBOriginCountNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/tuan_detial_default_value" android:layout_toRightOf="@id/hotsellRMBCountNew" android:layout_alignBaseline="@id/hotsellRMBCountNew" android:layout_alignBottom="@id/hotsellRMBCountNew" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffff4978" android:id="@id/hotsellRMBIconNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tuan_detial_rmb_icon" android:layout_alignBaseline="@id/hotsellRMBCountNew" android:layout_alignLeft="@id/hotsellTitleNew" android:layout_alignBottom="@id/hotsellRMBCountNew" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/icon_arrows_gray_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

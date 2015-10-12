@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/cart_shop_recommend_top_divider" android:background="@color/cart_group_top_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip">
+        <View android:background="@color/cart_group_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+        <View android:background="@color/cart_group_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/cart_guess_like_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/cart_shop_recommend_top_divider">
+        <include android:id="@id/cart_guess_like_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/cart_recommend_content_page" />
+        <include android:id="@id/cart_guess_like_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/cart_c_list_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/cart_recommend_bottom_gap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_below="@id/cart_guess_like_top_layout" />
+</RelativeLayout>

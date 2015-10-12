@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_one" android:padding="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/scan_net_out_dialog_image" android:background="@drawable/browser" android:padding="@dimen/pub_margin_or_padding_space_two" android:layout_width="@dimen/pub_margin_or_padding_space_sixty" android:layout_height="@dimen/pub_margin_or_padding_space_sixty" android:scaleType="centerInside" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_15px">
+            <TextView android:textSize="@dimen/pub_margin_or_padding_space_sixteen" android:textColor="@color/pub_color_eight" android:ellipsize="end" android:gravity="center" android:id="@id/scan_net_out_dialog_title" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_34px" android:layout_marginBottom="@dimen/android_public_space_5px" android:singleLine="true" />
+            <TextView android:textSize="@dimen/pub_textsize_fourteen" android:textColor="@color/pub_color_nine" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/scan_net_out_dialog_feature" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/android_public_space_40px" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/pub_color_nine" android:gravity="center_horizontal" android:id="@id/scan_net_out_dialog_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_8px" android:text="@string/act_barcode_history_outer_net" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/pub_margin_or_padding_space_four" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/android_public_space_55px">
+        <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/layout_button2" android:paddingRight="@dimen/pub_margin_or_padding_space_six" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/pub_textsize_twenty" android:textColor="@color/pub_color_nine" android:id="@id/button2" android:background="@drawable/public_bg_btn_white" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_90px" android:text="@string/cancel" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/layout_button1" android:paddingLeft="@dimen/pub_margin_or_padding_space_six" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/pub_textsize_twenty" android:textColor="@color/pub_color_one" android:id="@id/button1" android:background="@drawable/public_bg_btn_orange" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_90px" android:text="@string/btn_ok" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

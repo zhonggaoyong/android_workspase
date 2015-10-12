@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_carzy" android:background="@color/lib_phone_charge_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title" android:background="@drawable/common_title_background" android:layout_width="fill_parent" android:layout_height="@dimen/lib_phone_charge_titleh">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/title_back" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/common_title_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0dip" android:textColor="@color/common_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单详情" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/charge_btn_lay" android:background="#ffeaedf1" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_alignParentBottom="true">
+        <View android:id="@id/line" style="@style/lib_phone_charge_line_h" />
+        <Button android:textSize="13.0dip" android:textColor="@color/button_a_font_color" android:gravity="center" android:id="@id/charge_btn" android:background="@drawable/lib_game_charge_btn_selector" android:layout_width="75.0dip" android:layout_height="38.0dip" android:layout_marginRight="@dimen/lib_phone_charge_bottom13" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/charge_btn_lay" android:layout_below="@id/title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/lib_phone_charge_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                <View style="@style/lib_phone_charge_line_h" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/lib_game_charge_text_color" android:id="@id/phone_order" android:paddingLeft="@dimen/lib_game_charge_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_phone_charge_ddh" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/lib_game_charge_black" android:id="@id/phone_order_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:layout_toRightOf="@id/phone_order" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="#fff15353" android:id="@id/phone_status_value" android:paddingRight="@dimen/lib_game_charge_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View style="@style/lib_phone_charge_line_h" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="105.0dip">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/lib_game_charge_text_color" android:id="@id/phone_number" android:paddingLeft="@dimen/lib_game_charge_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_phone_charge_sjhm" android:layout_centerVertical="true" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/lib_game_charge_text_color" android:id="@id/phone_number_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:layout_toRightOf="@id/phone_number" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/lib_game_charge_text_color" android:id="@id/phone_adress" android:paddingLeft="@dimen/lib_game_charge_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_phone_charge_confirm_gsd" android:layout_centerVertical="true" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/lib_game_charge_text_color" android:id="@id/phone_adress_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:layout_toRightOf="@id/phone_adress" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/lib_game_charge_text_color" android:id="@id/charge_number" android:paddingLeft="@dimen/lib_game_charge_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_phone_charge_confirm_czje" android:layout_centerVertical="true" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/lib_game_charge_text_color" android:id="@id/charge_number_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:layout_toRightOf="@id/charge_number" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View style="@style/lib_phone_charge_line_h" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/lib_phone_charge_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                <View style="@style/lib_phone_charge_line_h" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="13.0dip" android:textColor="@color/lib_game_charge_text_color" android:id="@id/phone_type" android:paddingLeft="@dimen/lib_game_charge_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_phone_charge_confirm_zffs" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/lib_game_charge_black" android:id="@id/phone_type_value" android:paddingRight="@dimen/lib_game_charge_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View style="@style/lib_phone_charge_line_h" />
+            </LinearLayout>
+            <View android:layout_marginTop="11.0dip" style="@style/lib_phone_charge_line_h" />
+            <LinearLayout android:orientation="vertical" android:background="@color/lib_phone_charge_white" android:paddingLeft="@dimen/lib_game_charge_margin" android:paddingRight="@dimen/lib_game_charge_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="86.0dip">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff686868" android:id="@id/phone_allpay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_phone_charge_spze" />
+                        <TextView android:textSize="15.0dip" android:textColor="#fff15353" android:id="@id/phone_allpay_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/lib_game_charge_text_color" android:id="@id/phone_payred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" />
+                        <TextView android:textSize="15.0dip" android:textColor="#fff15353" android:id="@id/phone_payred_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View style="@style/lib_phone_charge_line_h" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="79.0dip">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="22.0dip" android:textColor="#fff15353" android:id="@id/phone_conpay_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/lib_game_charge_black" android:id="@id/phone_conpay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_phone_charge_confirm_yfze" android:layout_toLeftOf="@id/phone_conpay_value" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="13.0dip" android:textColor="@color/lib_game_charge_text_color" android:id="@id/charge_time_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/lib_game_charge_text_color" android:id="@id/charge_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_phone_charge_xdsj" android:layout_toLeftOf="@id/charge_time_value" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/lib_phone_charge_line_h" />
+            <RelativeLayout android:id="@id/layout2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:id="@id/order_allpay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_phone_charge_orderdetail13" android:layout_marginTop="8.0dip" android:text="@string/lib_phone_charge_ddje" />
+                <TextView android:textSize="16.0dip" android:textColor="#ffe93d3f" android:id="@id/order_allpay_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/lib_phone_charge_orderdetail22" android:layout_alignParentRight="true" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:id="@id/phone_paylef" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/lib_phone_charge_ye" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:id="@id/phone_paylef_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0.00" android:layout_alignTop="@id/phone_paylef" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:id="@id/phone_jd" android:paddingBottom="@dimen/lib_phone_charge_orderdetail23" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/lib_phone_charge_jd" android:layout_below="@id/phone_paylef" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:id="@id/phone_jd_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0.00" android:layout_alignTop="@id/phone_jd" />
+            </RelativeLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/layout2" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

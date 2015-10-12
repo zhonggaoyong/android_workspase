@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Base Domain" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/debug_base_domain" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="http://promo.lbc.baidu.com/" android:ems="10" android:layout_weight="1.0" />
+            <Button android:id="@id/debug_base_domain_choose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="sapi/push 环境设置" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/debug_environment_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/debug_environment_online" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ONLINE" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/debug_environment_rd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RD" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/debug_environment_qa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QA" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/debug_environment_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Preview" android:layout_weight="1.0" />
+        </RadioGroup>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启请求代理" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <CheckBox android:id="@id/debug_network_proxy" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <EditText android:enabled="false" android:id="@id/debug_network_proxy_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="10.48.57.63:8888" android:hint="代理地址" android:ems="10" />
+        </LinearLayout>
+        <CheckBox android:id="@id/debug_network_delay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="模拟5秒网络延时" />
+        <CheckBox android:id="@id/debug_network_error" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="模拟50%网络错误" />
+        <Button android:id="@id/debug_force_network_error" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="模拟10次网络错误" />
+        <TextView android:id="@id/debug_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

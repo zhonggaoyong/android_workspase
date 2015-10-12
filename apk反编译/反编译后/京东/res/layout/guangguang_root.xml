@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/guangguang_root_fragement" android:background="@color/lib_story_default_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="right" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/guangzhujia_ll" android:background="@drawable/floatguangzhu" android:layout_width="@dimen/guang_guangzhujia_width" android:layout_height="@dimen/guang_guangzhujia_heigth" android:layout_alignParentBottom="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:gravity="center_vertical" android:id="@id/guangzhujia_image" android:background="@drawable/love_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/guang_guangzhujia_paddingLeft" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

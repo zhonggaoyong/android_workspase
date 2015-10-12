@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <View android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/msg_item_dongdong" android:background="@drawable/personel_list_item_bg2_selector" android:layout_width="fill_parent" android:layout_height="79.0dip">
+        <RelativeLayout android:id="@id/rel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_msg_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="11.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/rel">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff252525" android:id="@id/txt_msg_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff848689" android:gravity="right" android:id="@id/txt_msg_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:singleLine="true">
+                <TextView android:textSize="15.0sp" android:textColor="#ff848689" android:ellipsize="end" android:id="@id/txt_msg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:gravity="center" android:id="@id/fram_message_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/my_message_box_photo_number_more" android:layout_alignLeft="@id/rel" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txt_msg_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="8.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right" android:id="@id/txt_msg_count_add_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <View android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ListView android:id="@id/message_box_list" android:background="@color/transparent" android:focusable="false" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:divider="#ffe1e1e1" android:dividerHeight="1.0px" />
+    <View android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

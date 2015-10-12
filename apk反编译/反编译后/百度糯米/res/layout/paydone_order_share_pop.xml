@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom|center" android:background="@drawable/bnlian_share_bigbg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="145.0dip">
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/paydone_bnlian_share_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:src="@drawable/bnlian_share_close" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="170.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="#ffffd51c" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lianshare_paydone_title" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff851724" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/lianshare_paydone_message1" android:includeFontPadding="false" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ff851724" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lianshare_paydone_message2" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffd51c" android:id="@id/paydone_bnlian_share_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/lianshare_paydone_message3" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff851724" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/lianshare_paydone_message4" android:includeFontPadding="false" />
+        </LinearLayout>
+        <Button android:textSize="18.0sp" android:textColor="#fff71854" android:layout_gravity="center_horizontal" android:id="@id/paydone_bnlian_share_button" android:background="@drawable/paydone_bnlian_button_selector" android:layout_width="127.0dip" android:layout_height="36.0dip" android:layout_marginTop="26.0dip" android:text="@string/lianshare_paydone_button" android:includeFontPadding="false" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/filter_first_line_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip">
+        <LinearLayout android:id="@id/jd_distribute_filter_layout" android:background="@drawable/android_filter_notchecked_style" android:layout_width="0.0dip" android:layout_height="34.0dip" android:layout_weight="1.0">
+            <Button android:textColor="@color/text_color_252525" android:gravity="center" android:id="@id/jd_distribute_filter" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/filter_jddistribute" android:singleLine="true" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/pay_on_delievery_filter_layout" android:background="@drawable/android_filter_notchecked_style" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <Button android:textColor="@color/text_color_252525" android:gravity="center" android:id="@id/pay_on_delievery_filter" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="@string/filter_payondelivery" android:singleLine="true" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/phone_preferentail_filter_layout" android:background="@drawable/android_filter_notchecked_style" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <Button android:textColor="@color/text_color_252525" android:gravity="center" android:id="@id/phone_preferentail_filter" android:background="@drawable/fragment_filter_redpoint" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="@string/filter_phonepreferential" android:singleLine="true" android:layout_centerInParent="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/filter_second_line_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="3.0dip" android:layout_below="@id/filter_first_line_layout">
+        <LinearLayout android:id="@id/have_stock_filter_layout" android:background="@drawable/android_filter_notchecked_style" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textColor="@color/text_color_252525" android:gravity="center" android:id="@id/have_stock_filter" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="@string/filter_ishave" android:singleLine="true" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/promoiton_filter_layout" android:background="@drawable/android_filter_notchecked_style" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <Button android:textColor="@color/text_color_252525" android:gravity="center" android:id="@id/promoiton_filter" android:background="@drawable/fragment_filter_redpoint" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="@string/filter_ispromotion" android:singleLine="true" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/global_filter_layout" android:background="@drawable/android_filter_notchecked_style" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <Button android:textColor="@color/text_color_252525" android:gravity="center" android:id="@id/global_filter" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="@string/filter_allWorldShopping" android:singleLine="true" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/none_filter_layout" android:background="@color/white" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <Button android:textColor="@color/text_color_252525" android:gravity="center" android:id="@id/none_filter" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="34.0dip" android:singleLine="true" android:layout_centerInParent="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/filter_third_line_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_below="@id/filter_second_line_layout" />
+</RelativeLayout>

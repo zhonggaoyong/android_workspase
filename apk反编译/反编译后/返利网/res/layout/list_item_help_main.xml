@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/selector_list_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/height_list_item_tiny"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/height_list_item_tiny" android:layout_height="@dimen/height_list_item_tiny" android:scaleType="center" />
+    <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium2" android:textColor="@color/text_color_grey_dark" android:gravity="center_vertical" android:id="@android:id/text1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="suggestion" android:singleLine="true" android:layout_weight="1.0" />
+</LinearLayout>

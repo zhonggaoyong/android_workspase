@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/pub_color_one" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_goodsdetail_promotion_full_lable" android:background="@drawable/public_label_bg_orange" android:paddingLeft="@dimen/android_public_space_10px" android:paddingRight="@dimen/android_public_space_10px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_8px" android:text="满 减" />
+</LinearLayout>

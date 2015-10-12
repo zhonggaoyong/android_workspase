@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/vw_titlebar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout1" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="100.0">
+            <LinearLayout android:gravity="center" android:id="@id/ll_type_selection" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/tv_type" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="全部类型" />
+                <ImageView android:id="@id/iv_type_selection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/groupbuy_arrow_pick_up" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_gravity="center" android:background="#ffcccccc" android:layout_width="1.0px" android:layout_height="22.0dip" />
+        <LinearLayout android:gravity="center" android:id="@id/ll_status_selection" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="100.0">
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="全部状态" />
+                <ImageView android:id="@id/iv_status_selection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/groupbuy_arrow_pick_up" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ListView android:id="@id/mygome_question_reply_list" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:dividerHeight="10.0dip" android:layout_weight="1.0" android:footerDividersEnabled="false" style="@style/common_listview_style" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/weak_text_color" android:gravity="center" android:id="@android:id/empty" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

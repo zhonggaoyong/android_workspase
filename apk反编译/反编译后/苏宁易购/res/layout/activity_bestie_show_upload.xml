@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/android_public_space_28px" android:layout_marginBottom="@dimen/android_public_space_28px">
+            <EditText android:gravity="top" android:id="@id/bestie_blessing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_28px" android:layout_marginRight="@dimen/android_public_space_28px" android:hint="@string/bestie_edit_hint" android:maxLines="5" android:lines="5" android:maxLength="140" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/file_chooser_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_28px" android:layout_marginTop="@dimen/android_public_space_20px" android:layout_marginRight="@dimen/android_public_space_16px" />
+            <Button android:textSize="@dimen/android_public_textsize_22pt" android:textColor="@color/cp_lottery_white" android:id="@id/btn_commit" android:background="@drawable/bg_bestie_commit" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_50px" android:layout_marginLeft="@dimen/android_public_space_28px" android:layout_marginTop="@dimen/android_public_space_50px" android:layout_marginRight="@dimen/android_public_space_28px" android:text="@string/app_dialog_confirm" android:onClick="commit" />
+            <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/address_manager_address" android:id="@id/txt_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_28px" android:layout_marginTop="@dimen/android_public_space_32px" android:layout_marginRight="@dimen/android_public_space_28px" android:text="@string/bestie_info" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/product_list_long_click_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/color_f8f8f8" android:paddingBottom="@dimen/filter_page_space_15" android:layout_width="304.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_15sp" android:textColor="@color/color_252525" android:id="@id/product_list_handle_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/filter_page_space_15" android:text="@string/product_list_handle" android:layout_centerHorizontal="true" />
+        <View android:id="@id/line1" android:background="@color/color_e6e6e6" android:layout_width="277.0dip" android:layout_height="0.5dip" android:layout_marginTop="@dimen/filter_page_space_10" android:layout_below="@id/product_list_handle_text" android:layout_centerHorizontal="true" />
+        <View android:id="@id/line2" android:background="@color/white" android:layout_width="277.0dip" android:layout_height="0.5dip" android:layout_below="@id/line1" android:layout_centerHorizontal="true" />
+        <Button android:textSize="@dimen/text_size_15sp" android:textColor="@color/color_51545a" android:gravity="center" android:id="@id/product_list_attention_btn" android:background="@drawable/product_list_long_click_btn_bg" android:layout_width="265.5dip" android:layout_height="43.5dip" android:layout_marginTop="@dimen/filter_page_space_15" android:text="@string/favo_cancel_favorite" android:layout_below="@id/line2" android:layout_centerHorizontal="true" />
+        <Button android:textSize="@dimen/text_size_15sp" android:textColor="@color/color_51545a" android:gravity="center" android:id="@id/product_list_add_to_cart_btn" android:background="@drawable/product_list_long_click_btn_bg" android:layout_width="265.5dip" android:layout_height="43.5dip" android:layout_marginTop="@dimen/filter_page_space_10" android:text="@string/favo_add_to_cart" android:layout_below="@id/product_list_attention_btn" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/shake_integral_bg" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/shake_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/shake_middle_marginTop">
+        <ImageView android:id="@id/iv_light" android:background="@drawable/shake_integral_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <ImageSwitcher android:id="@id/switcher_ernie" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/shake_integral_ernie" android:layout_centerInParent="true" />
+        <ViewSwitcher android:id="@id/switcher_result" android:layout_width="@dimen/result_page_width" android:layout_height="@dimen/result_page_height" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_boy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/shake_foot_marginTop" android:src="@drawable/shake_integral_foot_boy" android:scaleType="fitXY" android:layout_below="@id/shake_middle" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/shake_rule_textSize" android:textColor="@color/shake_black" android:id="@id/tv_active_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/shake_foot_marginBottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/shake_rule_textSize" android:textColor="@color/shake_black" android:gravity="center" android:id="@id/tv_shake_rule" android:background="@color/shake_rule_bg" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="更多规则" android:layout_alignParentRight="true" />
+</RelativeLayout>

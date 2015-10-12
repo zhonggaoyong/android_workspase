@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/common_title_layout" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/common_scrollbar_style">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/more_item_single_bg_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/main_default_black_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_cart_energy_info" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <com.gome.ecmall.custom.SlipButton android:id="@id/slipbutton_wance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/my_wance_linearlayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textColor="@color/common_brwon_textcolor" android:gravity="left|center" android:background="@drawable/wance_prompt_bg" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/shopping_cart_wance_prom" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/more_item_first_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:weightSum="4.0">
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.5">
+                        <TextView android:textColor="@color/price_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:textColor="@color/main_default_black_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_cart_energy_buytype_null" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.5">
+                        <RadioButton android:id="@id/enery_person_radiobutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:drawableLeft="@drawable/radio_button_bg_selector" style="@style/radiogroup_item_style" />
+                        <TextView android:textColor="@color/main_default_black_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_goods_order_general_invoice_person" />
+                        <RadioButton android:id="@id/enery_company_radiobutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:drawableLeft="@drawable/radio_button_bg_selector" style="@style/radiogroup_item_style" />
+                        <TextView android:textColor="@color/main_default_black_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_cart_energy_company" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/more_item_middle_bg_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+                        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.5">
+                            <TextView android:textColor="@color/price_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+                            <TextView android:textColor="@color/main_default_black_text_color" android:id="@id/shopping_cart_energy_name_null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_cart_energy_name_null" />
+                        </LinearLayout>
+                        <EditText android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:id="@id/shopping_cart_energy_name" android:background="@drawable/more_item_single_bg_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="30.0dip" android:maxLength="25" android:layout_weight="2.5" />
+                    </LinearLayout>
+                    <TextView android:textColor="@color/hint_text_color" android:id="@id/shopping_cart_wance_name_prom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/shopping_cart_wance_name_prom" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/more_item_middle_bg_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.5">
+                        <TextView android:textColor="@color/price_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:textColor="@color/main_default_black_text_color" android:id="@id/shopping_cart_energy_idcardnumber_null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_cart_energy_idcardnumber_null" />
+                    </LinearLayout>
+                    <EditText android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:id="@id/shopping_cart_energy_idcardnumber" android:background="@drawable/more_item_single_bg_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="30.0dip" android:hint="@string/shopping_cart_energy_idcardnumber_prom" android:layout_weight="2.5" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/energy_bank_linearlayout" android:background="@drawable/more_item_middle_bg_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+                    <LinearLayout android:gravity="top|right|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.5">
+                        <TextView android:textColor="@color/price_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:textColor="@color/main_default_black_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_cart_energy_bank_null" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.5">
+                        <EditText android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:id="@id/shopping_cart_energy_bankname_edit" android:background="@drawable/more_item_single_bg_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="30.0dip" android:hint="@string/shopping_cart_energy_input_bankname" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/enery_bank_linearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/more_item_middle_bg_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.5">
+                        <TextView android:textColor="@color/price_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:textColor="@color/main_default_black_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_cart_energy_bank_number" />
+                    </LinearLayout>
+                    <EditText android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:id="@id/shopping_cart_energy_bank_number" android:background="@drawable/more_item_single_bg_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="30.0dip" android:hint="@string/shopping_cart_energy_bank_hint" android:maxLength="26" android:layout_weight="2.5" android:inputType="number" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/more_item_middle_bg_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+                    <TextView android:textColor="@color/main_default_black_text_color" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/shopping_cart_energy_zipcode" android:layout_weight="1.5" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:id="@id/shopping_cart_energy_zipcode" android:background="@drawable/more_item_single_bg_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="30.0dip" android:hint="@string/shopping_cart_energy_zipcode_hint" android:maxLength="18" android:layout_weight="2.5" android:inputType="number" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/shopping_cart_energy_annoument_linearlayout" android:background="@drawable/more_item_middle_bg_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+                    <TextView android:textColor="@color/main_default_black_text_color" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/shopping_cart_energy_annoument" android:layout_weight="1.5" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.5">
+                        <ImageView android:layout_gravity="right|center" android:id="@id/arrow_img" android:background="@drawable/common_right_arrow_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:background="@drawable/more_item_last_bg_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <CheckBox android:textSize="16.0dip" android:textColor="@color/main_default_black_text_color" android:gravity="center" android:id="@id/shopping_cart_energy_have_read_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/shopping_cart_energy_have_read" style="@style/checkbox_custom_style" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/link_text_color" android:id="@id/shopping_cart_energy_see_process" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/shopping_cart_energy_see_process" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

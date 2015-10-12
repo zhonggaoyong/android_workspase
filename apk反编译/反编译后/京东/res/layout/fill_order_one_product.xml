@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/one_product_left_image" android:background="@drawable/commitlist_product_icon_bg" android:visibility="visible" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginRight="@dimen/fill_order_commitlist_margin" android:scaleType="fitCenter" />
+    <RelativeLayout android:id="@id/one_product_left_no_stock" android:background="#e0000000" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="wrap_content" android:layout_alignLeft="@id/one_product_left_image" android:layout_alignBottom="@id/one_product_left_image" android:alpha="0.7">
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_commodity_no_stock" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/fill_order_delivery_button_red_color" android:id="@id/one_product_jdprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/fill_order_commit_index" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/fill_order_delivery_normal" android:ellipsize="end" android:id="@id/one_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@id/one_product_jdprice" android:layout_toRightOf="@id/one_product_left_image" android:layout_alignTop="@id/one_product_left_image" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_toRightOf="@id/one_product_left_image" android:layout_below="@id/one_product_name">
+        <TextView android:textSize="15.0sp" android:textColor="@color/fill_order_delivery_normal" android:id="@id/one_product_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/one_product_international_img" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="18.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/fill_order_commit_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fill_order_arrow_left_margin" android:src="@drawable/button_k_01" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

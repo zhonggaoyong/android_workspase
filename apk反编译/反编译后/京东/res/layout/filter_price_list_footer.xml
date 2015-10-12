@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/price_edit_layout" android:layout_width="wrap_content" android:layout_height="@dimen/search_filter_item_height" android:layout_marginLeft="@dimen/filter_page_space_15">
+        <EditText android:textSize="@dimen/filter_value_text_size" android:textColorHint="@color/filter_page_d7d7d7" android:layout_gravity="center_vertical" android:id="@id/min_price" android:background="@drawable/filter_edit_text_bg" android:paddingLeft="@dimen/filter_page_space_10" android:layout_width="80.0dip" android:layout_height="25.0dip" android:hint="@string/filter_customer_minprice_hint" android:maxLength="8" android:inputType="number" />
+        <View android:background="@color/filter_page_d7d7d7" android:layout_width="5.0dip" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/filter_page_space_5" android:layout_marginRight="@dimen/filter_page_space_5" />
+        <EditText android:textSize="@dimen/filter_value_text_size" android:textColorHint="@color/filter_page_d7d7d7" android:layout_gravity="center_vertical" android:id="@id/max_price" android:background="@drawable/filter_edit_text_bg" android:paddingLeft="@dimen/filter_page_space_10" android:layout_width="80.0dip" android:layout_height="25.0dip" android:hint="@string/filter_customer_maxprice_hint" android:maxLength="8" android:inputType="number" />
+    </LinearLayout>
+    <CheckBox android:id="@id/price_check1" style="@style/filter_check_style" />
+    <View android:layout_alignParentBottom="true" style="@style/filter_line" />
+</RelativeLayout>

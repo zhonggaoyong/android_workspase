@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/hot_movies" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="热映电影" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sel_all_movie" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/sel_all_movie" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0dip" android:textColor="#ff848689" android:id="@id/tv_all_movie" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="全部" android:layout_toLeftOf="@id/sel_all_movie" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <Gallery android:id="@id/gallery_movies" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="0.0sp" android:layout_below="@id/hot_movies" />
+    </RelativeLayout>
+    <com.jingdong.common.movie.widget.LoadingView android:layout_gravity="center" android:orientation="vertical" android:id="@id/wgt_loading_movies" android:layout_width="wrap_content" android:layout_height="200.0dip" />
+    <android.support.v4.view.ViewPager android:id="@id/vp_banners" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="75.0dip" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/more_cinema" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="推荐影院" android:layout_centerVertical="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sel_all_cinema" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/sel_all_movie" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff848689" android:id="@id/tv_all_cinema" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="全部" android:layout_toLeftOf="@id/sel_all_cinema" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.jingdong.common.movie.widget.LinearLayoutForListView android:id="@id/lv_cinemas" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+    <com.jingdong.common.movie.widget.LoadingView android:layout_gravity="center" android:id="@id/wgt_loading_cinemas" android:layout_width="wrap_content" android:layout_height="200.0dip" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center" android:id="@id/appspecial_pager_goods_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" android:text="标题" android:lines="1" android:maxLength="20" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/hint_text_color" android:layout_gravity="center" android:id="@id/appspecial_pager_goods_short_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="小标题" android:lines="1" android:maxLength="20" />
+    <ImageView android:layout_gravity="center" android:id="@id/appspecial_pager_goods_image" android:layout_width="fill_parent" android:layout_height="166.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/product_list_grid_item_icon_bg" android:contentDescription="@null" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffc70000" android:layout_gravity="center" android:id="@id/appspecial_pager_good_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="2.0dip" android:text="" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/appspecial_pager_ll_vs" android:layout_width="270.0dip" android:layout_height="60.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/home_mobile_own_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.2">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/appspecial_pager_special_price_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专享价" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/appspecial_pager_special_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="？" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/home_mobile_own_middle" android:layout_width="32.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/home_mobile_own_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/hint_text_color" android:id="@id/appspecial_pager_original_price_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网站价" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/hint_text_color" android:id="@id/appspecial_pager_original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

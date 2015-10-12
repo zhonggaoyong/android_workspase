@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/payment_remark_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@color/app_text_black_new_ui" android:gravity="center_vertical" android:paddingLeft="@dimen/payment_margin_new" android:paddingRight="@dimen/payment_margin_new" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="商品备注" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/remark_list" android:paddingLeft="@dimen/payment_margin_new" android:paddingRight="@dimen/payment_margin_new" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btnmargintop">45.0dip</dimen>
+    <dimen name="cart_count_price_tv_textsize">16.0sp</dimen>
+    <dimen name="cart_num_edit_add_width">25.0dip</dimen>
+    <dimen name="cart_num_edit_view_text_size">12.0sp</dimen>
+    <dimen name="cart_num_edit_view_width">32.0dip</dimen>
+    <dimen name="cart_recommend_margin_left">20.0dip</dimen>
+    <dimen name="cart_settle_accounts_but_textsize">17.0sp</dimen>
+    <dimen name="cart_shop_group_name_max_width">130.0dip</dimen>
+    <dimen name="cart_show_all_select_textsize">12.0sp</dimen>
+    <dimen name="cart_single_product_name_textsize">15.0sp</dimen>
+    <dimen name="cart_single_product_num_tip_textsize">14.0sp</dimen>
+    <dimen name="cart_single_product_price_textsize">16.0sp</dimen>
+    <dimen name="cart_single_product_yb_but_padding_left">5.0dip</dimen>
+    <dimen name="cart_single_product_yb_but_padding_top">4.0dip</dimen>
+    <dimen name="cart_single_product_yb_but_textsize">13.0sp</dimen>
+    <dimen name="cutting_count_down_view_margintop">18.0dip</dimen>
+    <dimen name="cutting_head_bottom_margin">-17.0dip</dimen>
+    <dimen name="cutting_jdprice_textsize">15.0dip</dimen>
+    <dimen name="cutting_tip_layout_margiontop">10.0dip</dimen>
+    <dimen name="cutting_top_align_lay_height">17.0dip</dimen>
+    <dimen name="cutting_trunk_bottom_margin">1.0dip</dimen>
+    <dimen name="cutting_wenxin_tips">14.0dip</dimen>
+    <dimen name="iconmargintop">30.0dip</dimen>
+    <dimen name="regist_inputEdite_padding">10.0dip</dimen>
+    <dimen name="web_msg_unread_height">69.0dip</dimen>
+    <dimen name="web_msg_unread_icon_width">45.0dip</dimen>
+    <dimen name="web_msg_unread_text_content">14.0sp</dimen>
+    <dimen name="web_msg_unread_text_time">10.0sp</dimen>
+    <dimen name="web_msg_unread_text_title">16.0sp</dimen>
+    <dimen name="cart_product_nodata_padding_top">22.0dip</dimen>
+</resources>

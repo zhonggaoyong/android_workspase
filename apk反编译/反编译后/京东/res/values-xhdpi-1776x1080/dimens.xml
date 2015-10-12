@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="botton_width">78.0dip</dimen>
+    <dimen name="cart_no_data_detail_padding_top">20.0dip</dimen>
+    <dimen name="cart_no_data_login_detail_padding_top">42.0dip</dimen>
+    <dimen name="cart_no_data_login_padding_top">26.0dip</dimen>
+    <dimen name="cart_no_data_padding_top">14.0dip</dimen>
+    <dimen name="cart_no_data_recommend_to_icon">55.0dip</dimen>
+    <dimen name="flight_internation_joy_top">200.0px</dimen>
+    <dimen name="fragment_order_info_image_height">164.0dip</dimen>
+    <dimen name="fragment_order_info_image_width">113.0dip</dimen>
+    <dimen name="fragment_order_info_margin_buttom">30.0dip</dimen>
+    <dimen name="fragment_order_info_margin_top">34.0dip</dimen>
+    <dimen name="gift_greeting_edit_line_margin">14.0dip</dimen>
+    <dimen name="jdtravel_banner">140.0px</dimen>
+    <dimen name="jshop_concern_item_coupon_height">54.0dip</dimen>
+    <dimen name="jshop_dynamic_shop_icon_height">35.0dip</dimen>
+    <dimen name="jshop_m_free3_bigimg_h">343.0dip</dimen>
+    <dimen name="jshop_m_free3_bigimg_w">343.0dip</dimen>
+    <dimen name="jshop_m_product_img_h">166.0dip</dimen>
+    <dimen name="jshop_m_product_img_w">166.0dip</dimen>
+    <dimen name="jshop_name_size">15.0dip</dimen>
+    <dimen name="jshop_recently_size">12.0dip</dimen>
+    <dimen name="jshop_sign_title_height">180.0dip</dimen>
+    <dimen name="jshop_sign_title_margin_1">58.0dip</dimen>
+    <dimen name="jshop_sign_title_margin_2">11.0dip</dimen>
+    <dimen name="jshop_sign_title_margin_3">13.0dip</dimen>
+    <dimen name="jshop_sign_title_margin_4">8.0dip</dimen>
+    <item type="dimen" name="jshop_topic_grid_item_h">@dimen/jshop_m_product_img_h</item>
+    <item type="dimen" name="jshop_topic_grid_item_w">@dimen/jshop_m_product_img_w</item>
+    <dimen name="jshop_zuji_shop_title_height">70.0dip</dimen>
+</resources>

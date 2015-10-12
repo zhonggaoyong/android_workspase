@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pub_color_twelev" android:paddingLeft="@dimen/android_public_space_20px" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_forty_five"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:gravity="center_vertical" android:id="@id/search_discount_type_name" android:paddingLeft="@dimen/pub_margin_or_padding_space_five" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="全部商品" />
+    <ImageView android:id="@id/search_discount_type_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_20px" android:src="@drawable/contact_way_pressed" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

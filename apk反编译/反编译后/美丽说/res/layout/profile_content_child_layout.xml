@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/head" android:visibility="gone" layout="@layout/profile_title" />
+    <com.meilishuo.app.widget.pulltorefresh.RefreshView android:layout_gravity="top" android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/head">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.meilishuo.app.views.PhotoScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/img_nolike" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/empty_page_margin_top" android:src="@drawable/icon_my_focus_no_data" />
+                <com.meilishuo.app.views.CustomTextView android:text="还没有关注的内容" style="@style/EmptyDataFirstTextStyle" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/empty_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.meilishuo.app.views.CustomTextView android:id="@id/empty_textView" android:layout_marginTop="@dimen/empty_page_margin_top" android:text="@string/no_followed_shop_text" android:drawableTop="@drawable/shop_no_focus_image" android:layout_centerHorizontal="true" style="@style/EmptyDataFirstTextStyle" />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+    <com.meilishuo.app.views.CustomTextView android:id="@id/to_top" android:background="@drawable/to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

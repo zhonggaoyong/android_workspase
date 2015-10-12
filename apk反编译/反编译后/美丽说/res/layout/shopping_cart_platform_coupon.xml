@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d4" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/shopcart_coupon_title" />
+    <com.meilishuo.app.views.HorizontalListView android:layout_gravity="center_horizontal" android:id="@id/coupons" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+    <View android:layout_gravity="bottom" android:id="@id/line" android:layout_marginTop="10.0dip" style="@style/FirstDividerViewStyle" />
+</LinearLayout>

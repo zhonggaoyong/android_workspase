@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sub_contain" android:background="@drawable/selector_list_sub_page_item" android:padding="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/global_page_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fanli.android.view.TangFontTextView android:textColor="@color/text_color_white" android:gravity="center_vertical" android:id="@id/title" android:paddingLeft="@dimen/global_page_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/height_list_item_40" android:lines="2" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_weight="1.0" />
+    <ImageView android:id="@id/clear" android:padding="@dimen/global_page_padding" android:paddingRight="@dimen/global_page_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sub_page_close_btn" android:scaleType="fitCenter" />
+</LinearLayout>

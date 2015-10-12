@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jd.lib.story.ui.CircleImageView android:id="@id/user_img" android:layout_width="@dimen/lib_story_height_favorite_user_face" android:layout_height="@dimen/lib_story_height_favorite_user_face" android:layout_marginRight="@dimen/lib_story_marginright_favorite_user_face" android:src="@drawable/lib_story_icon_face_default" android:scaleType="centerCrop" app:border_width="2.0dip" app:border_color="@color/lib_story_bg_favorite" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="bottom|right|center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_story_icon_bonus_small" />
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/payment_walletcoin_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/payment_coin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" layout="@layout/new_paylist_extra_item" />
+        <TextView android:id="@id/payment_walletcoin_divider" android:background="@color/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="48.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <include android:id="@id/payment_wallet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" layout="@layout/new_paylist_extra_item" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/paylist_leftmoney" android:background="@color/app_text_white" android:paddingLeft="@dimen/payment_margin_new" android:paddingRight="@dimen/payment_margin_new" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="@dimen/payment_margin_new_other">
+        <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_black_new_ui" android:id="@id/paylist_leftmoney_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_leftmoney_title" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@color/vip_red" android:id="@id/paylist_leftmoney_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_leftmoney_value" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/payment_small_deep_text" android:textColor="@color/payment_paytips_text" android:ellipsize="end" android:id="@id/paylist_paytips" android:background="@drawable/lable_icon_bg_pink" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/paylist_leftmoney_title" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.achievo.vipshop.view.widget.NoScrollListView android:id="@id/payment_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:cacheColorHint="@null" android:divider="@color/transparency" android:dividerHeight="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/payment_select_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/dash_driver" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center" android:background="@drawable/new_personal_tab_center_pressed" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/app_text_black" android:id="@id/text_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_more_select" />
+                <ImageView android:id="@id/image_select_arrow" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_open_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/app_text_black" android:ellipsize="end" android:id="@id/paylist_cod_tips" android:background="@color/app_body_bg" android:paddingLeft="@dimen/payment_margin_new" android:paddingRight="@dimen/payment_margin_new" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="13.0dip" android:singleLine="true" />
+</LinearLayout>

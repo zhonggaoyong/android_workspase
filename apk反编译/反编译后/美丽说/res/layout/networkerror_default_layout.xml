@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/center_refresh" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/neterror_default_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_reload" android:scaleType="center" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff6c6369" android:layout_gravity="center_horizontal" android:id="@id/loading_retry_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/network_retry_title2" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ffccc2c9" android:layout_gravity="center_horizontal" android:id="@id/loading_retry_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/text_refound_reload" />
+    </LinearLayout>
+</RelativeLayout>

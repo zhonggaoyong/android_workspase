@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/order_category_layout_out" android:background="@color/pub_color_eleven" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="55.0dip">
+            <ImageView android:id="@id/btn_back" android:paddingLeft="@dimen/android_public_space_20px" android:paddingRight="@dimen/android_public_space_10px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/order_category_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/pub_textsize_eighteen" android:textColor="@color/public_text_color" android:layout_gravity="center_vertical" android:id="@id/order_category_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_five" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_five" android:text="@string/order_product" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/order_category_arrows" android:background="@drawable/pub_arrow_down_black" android:visibility="gone" android:layout_width="@dimen/pub_margin_or_padding_space_ten" android:layout_height="@dimen/pub_margin_or_padding_space_ten" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_ten" />
+            </LinearLayout>
+            <ImageView android:id="@id/navi_yi" android:paddingLeft="@dimen/android_public_space_10px" android:paddingRight="@dimen/android_public_space_20px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/androidy" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:background="@drawable/category_listview_divider" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/order_title_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/order_category_layout_out">
+        <LinearLayout android:id="@id/ll_tab_appmanager" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_four" android:gravity="center" android:id="@id/btn_product_order_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/order_product" android:layout_weight="1.0" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/left_text" android:background="@drawable/segment_line_vertical_gray" android:layout_width="wrap_content" android:layout_height="30.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_nine" android:gravity="center" android:id="@id/btn_store_order_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/order_store" android:layout_weight="1.0" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/right_text" android:background="@drawable/segment_line_vertical_gray" android:layout_width="wrap_content" android:layout_height="30.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_nine" android:gravity="center" android:id="@id/btn_other_order_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/act_myebuy_order_other_category" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_three">
+            <View android:id="@id/orange_line_left" android:background="@color/pub_color_four" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_three" android:layout_weight="1.0" />
+            <View android:id="@id/orange_line_center" android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" android:layout_marginTop="@dimen/pub_margin_or_padding_space_two" android:layout_weight="1.0" />
+            <View android:id="@id/orange_line_right" android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" android:layout_marginTop="@dimen/pub_margin_or_padding_space_two" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/all_order_list_layout" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/order_title_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/category_list_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/order_category_layout_out" />
+</RelativeLayout>

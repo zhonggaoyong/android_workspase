@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_btn_white_round_corner" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/android_public_text_size_34px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/btn_book_top" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="@string/act_goods_detail_schedule_rule" android:layout_weight="1.0" />
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+    <WebView android:id="@id/wbv_goodsdetail_book_goods" android:padding="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_420px" />
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+    <TextView android:textSize="@dimen/android_public_text_size_34px" android:textColor="@color/pub_color_twenty_one" android:gravity="center" android:id="@id/btn_book_dialog_bottom" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="@string/act_goods_detail_schedule_noticed" android:layout_weight="1.0" />
+</LinearLayout>

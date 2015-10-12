@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_product" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <ImageView android:id="@id/iv_product" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/product_list_grid_item_icon_bg" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/hint_text_color" android:id="@id/tv_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="50.0dip" android:lines="2" android:layout_toRightOf="@id/iv_product" />
+    </RelativeLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <Button android:textSize="14.0sp" android:id="@id/btn_commit" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="发表评价" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Gome.Button.StrokeRed.Style" />
+    </RelativeLayout>
+</LinearLayout>

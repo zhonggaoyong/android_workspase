@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_365dp">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_act_myebuy_header" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_170dp" android:layout_marginTop="@dimen/android_public_space_10px" android:layout_marginRight="@dimen/android_public_space_10px" android:layout_alignParentBottom="true">
+                <FrameLayout android:id="@id/btn_settings" android:layout_width="@dimen/android_public_space_34dp" android:layout_height="@dimen/android_public_space_34dp" android:layout_marginTop="@dimen/android_public_space_15dp" android:layout_marginRight="@dimen/android_public_space_10px" android:layout_alignParentRight="true">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/btn_act_myebuy_setting_bg" />
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_act_myebuy_setting" />
+                </FrameLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rl_myebuy_header_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <FrameLayout android:layout_width="@dimen/android_public_space_70dp" android:layout_height="@dimen/android_public_space_70dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/myebuy_head_bg" />
+                        <com.suning.mobile.ebuy.myebuy.entrance.util.HeaderImageView android:layout_gravity="center" android:id="@id/iv_myebuy_header" android:layout_width="@dimen/android_public_space_60dp" android:layout_height="@dimen/android_public_space_60dp" android:src="@drawable/myebuy_head" android:onClick="onClick" />
+                    </FrameLayout>
+                    <TextView android:textSize="@dimen/android_public_textsize_22pt" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_myebuy_username" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_10dp" android:singleLine="true" android:drawablePadding="@dimen/android_public_space_10px" android:onClick="onClick" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_myebuy_header_unlogin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_to_myebuy" />
+                    <Button android:textSize="@dimen/android_public_textsize_13sp" android:textColor="@color/pub_color_fifteen" android:id="@id/btn_myebuy_header_login" android:background="@drawable/btn_login" android:layout_width="@dimen/android_public_space_100dp" android:layout_height="@dimen/android_public_space_30dp" android:layout_marginTop="@dimen/android_public_space_20px" android:text="@string/cp_lottery_login_register" android:onClick="onClick" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

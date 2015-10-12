@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/login_moretype" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:text="@string/login_text_moretype" android:singleLine="true" />
+    <SlidingDrawer android:orientation="vertical" android:id="@id/slidingdrawer" android:layout_width="fill_parent" android:layout_height="250.0dip" android:handle="@id/handle" android:content="@id/content">
+        <ImageView android:id="@id/handle" android:layout_width="fill_parent" android:layout_height="40.0dip" android:src="@drawable/arrow_open" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/content" android:background="#fff2efef" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/login_sina" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_login_sina" android:onClick="onClick" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/login_by_sinaweibo" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/login_txweibo" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_login_txweibo" android:onClick="onClick" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/login_by_txweibo" />
+            </LinearLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+</FrameLayout>

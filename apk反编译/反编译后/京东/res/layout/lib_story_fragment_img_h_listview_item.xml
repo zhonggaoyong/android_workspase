@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/itemView" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/selectedImg" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:layout_centerInParent="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_story_img_delete" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="@dimen/lib_story_t_large_size" android:textColor="#ff8f8f8f" android:id="@id/num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_story_select_num" android:layout_centerInParent="true" />
+</RelativeLayout>

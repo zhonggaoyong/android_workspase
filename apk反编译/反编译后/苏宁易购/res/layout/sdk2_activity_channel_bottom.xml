@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/sdk2_sms_tip_bottom" android:padding="15.0dip" style="@style/common_hm_vw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sdk2_chanell_add_img" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/sdk2_add" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_hw_vw" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/sdk_colorBlack" android:gravity="center_horizontal" android:text="@string/sdk2_channel_bottom_tip" android:layout_toRightOf="@id/sdk2_chanell_add_img" android:layout_centerVertical="true" style="@style/common_hw_vw" />
+    <ImageView android:layout_marginTop="3.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/sdk2_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/common_hw_vw" />
+</RelativeLayout>

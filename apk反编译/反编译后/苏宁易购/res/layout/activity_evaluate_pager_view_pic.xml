@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pagetitle_whole_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/topGapWhole" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/pub_color_fifteen" android:id="@id/pagetitle_whole_f" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/eval_total_eva" android:singleLine="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/pub_color_eighteen" android:id="@id/pagetitle_whole" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0" />
+            <ImageView android:id="@id/pagetitle_whole_cursor" android:background="@drawable/store_detail_tab" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginTop="14.0dip" android:scaleType="matrix" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pagetitle_good_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/topGapGood" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/pub_color_fifteen" android:id="@id/pagetitle_good_f" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/eval_good_eva" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/pub_color_eighteen" android:id="@id/pagetitle_good" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0" />
+            <ImageView android:id="@id/pagetitle_good_cursor" android:background="@drawable/store_detail_tab" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginTop="14.0dip" android:scaleType="matrix" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pagetitle_mid_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/topGapMid" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/pub_color_fifteen" android:id="@id/pagetitle_mid_f" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/eval_mid_eva" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/pub_color_eighteen" android:id="@id/pagetitle_mid" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0" />
+            <ImageView android:id="@id/pagetitle_mid_cursor" android:background="@drawable/store_detail_tab" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginTop="14.0dip" android:scaleType="matrix" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pagetitle_lack_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/topGapLack" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/pub_color_fifteen" android:id="@id/pagetitle_lack_f" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/eval_bad_eva" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/pub_color_eighteen" android:id="@id/pagetitle_lack" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0" />
+            <ImageView android:id="@id/pagetitle_lack_cursor" android:background="@drawable/store_detail_tab" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginTop="14.0dip" android:scaleType="matrix" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pagetitle_pic_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/topGapPic" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_fifteen" android:id="@id/pagetitle_pic_f" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/eval_pic_eva" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/pub_color_eighteen" android:id="@id/pagetitle_pic" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0" />
+            <ImageView android:id="@id/pagetitle_pic_cursor" android:background="@drawable/store_detail_tab" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginTop="14.0dip" android:scaleType="matrix" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="matrix" />
+    <android.support.v4.view.ViewPager android:id="@id/viewPager" android:persistentDrawingCache="animation" android:layout_width="wrap_content" android:layout_height="0.0dip" android:flipInterval="30" android:layout_weight="1.0" />
+</LinearLayout>

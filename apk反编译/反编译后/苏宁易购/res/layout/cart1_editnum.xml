@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom|right|center" android:orientation="horizontal" android:id="@id/ll_no_edit_num" android:layout_width="100.0dip" android:layout_height="wrap_content">
+        <ImageView android:id="@id/no_edit_sub_bt" android:background="@drawable/shoppingcart_sub_btn_enabled" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <EditText android:textColor="@color/pub_color_eight" android:gravity="center" android:id="@id/no_edit_product_num" android:background="@drawable/shoppingcart_numtext_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" />
+        <ImageView android:id="@id/no_edit_add_bt" android:background="@drawable/shoppingcart_add_btn_enabled" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

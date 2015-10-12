@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_layout" layout="@layout/vw_titlebar" />
+    <ViewSwitcher android:id="@id/vs_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_layout">
+        <ScrollView android:id="@id/sc_content" android:paddingTop="12.0dip" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_address" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/flight_text_black" android:paddingLeft="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="收货人地址" />
+                    <View android:background="#ffc8c7cc" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="14.0dip" />
+                    <RelativeLayout android:id="@id/choose_address" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="#ffc8c8c8" android:id="@id/tv_choose_add" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择收货地址" />
+                        <RelativeLayout android:id="@id/add_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/flight_text_grey" android:id="@id/add_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="齐胡子" />
+                            <TextView android:textSize="16.0sp" android:textColor="@color/flight_text_grey" android:id="@id/add_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="18701636666" android:layout_toRightOf="@id/add_name" />
+                            <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="北京市朝阳区亚运村安苑北里小区2号楼9单元2332安苑北里小区2号楼9单元2332" android:layout_below="@id/add_name" android:layout_alignLeft="@id/add_name" android:lineSpacingExtra="3.0dip" />
+                        </RelativeLayout>
+                        <ImageView android:id="@id/arrow" android:layout_width="13.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_movie_right_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="20.0px" />
+                </LinearLayout>
+                <TextView android:textSize="16.0sp" android:textColor="@color/flight_text_black" android:id="@id/product_name" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/product_company" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+                <View android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="14.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="14.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_back" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/flight_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="回报内容" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:id="@id/back_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lineSpacingExtra="3.0dip" />
+                    <View android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="14.0dip" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/flight_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="回报时间" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:id="@id/product_back_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lineSpacingExtra="3.0dip" />
+                    <View android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="14.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/flight_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备注" />
+                    <EditText android:textSize="13.0sp" android:textColor="@color/flight_text_grey" android:textColorHint="#ffc8c8c8" android:id="@id/remark" android:background="@drawable/edittext_bg_grey" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="给项目发起人留下信息" android:maxLines="2" android:maxLength="20" />
+                </LinearLayout>
+                <View android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+                <RelativeLayout android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_hint" android:id="@id/price_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="支付金额" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/price_name" android:layout_alignParentRight="true" />
+                    <com.gome.ecmall.business.login.layout.ClearEditText android:textSize="13.0sp" android:textColor="@color/flight_text_black" android:textColorHint="#ffc8c8c8" android:gravity="right" android:id="@id/free_price" android:background="@drawable/edittext_bg_grey" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:maxLines="1" android:maxLength="8" android:layout_alignParentRight="true" android:inputType="number" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_hint" android:id="@id/deliver_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="配送费用" android:layout_below="@id/price_name" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/flight_text_black" android:id="@id/delever_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥1.00" android:layout_alignBottom="@id/deliver_name" android:layout_alignParentRight="true" />
+                    <View android:id="@id/pay_line" android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" android:layout_below="@id/deliver_name" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_black" android:id="@id/pay_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="应付金额" android:layout_below="@id/pay_line" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/cf_text_red" android:id="@id/pay_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/pay_name" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_risk" android:background="#fff4f4f4" android:paddingLeft="14.0dip" android:paddingTop="14.0dip" android:paddingRight="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="风险说明:" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_orange" android:id="@id/risk_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_alignParentRight="true" android:lineSpacingExtra="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="#fff4f4f4" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="特别说明:" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_orange" android:id="@id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/cf_tip_order" android:layout_alignParentRight="true" android:lineSpacingExtra="4.0dip" />
+                </LinearLayout>
+                <View android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="58.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </ViewSwitcher>
+    <RelativeLayout android:id="@id/rl_bottom" android:background="@drawable/new_product_add_shopcar_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/flight_text_black" android:id="@id/pay_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应付金额:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/cf_text_red" android:id="@id/pay_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="￥0.00" android:layout_toRightOf="@id/pay_money" android:layout_centerVertical="true" />
+        <Button android:id="@id/bt_order_commit" android:paddingLeft="26.0dip" android:paddingTop="6.0dip" android:paddingRight="26.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去支付" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Gome.Button.SolidRed.Style" />
+    </RelativeLayout>
+</RelativeLayout>

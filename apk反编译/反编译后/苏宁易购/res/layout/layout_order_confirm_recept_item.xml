@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_product_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/layout_item_operation" android:paddingLeft="@dimen/android_public_space_18px" android:paddingRight="@dimen/android_public_space_18px" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px">
+        <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_twenty" android:gravity="center" android:id="@id/btn_shop_confirm_accept" android:background="@drawable/public_bg_btn_blue" android:visibility="visible" android:layout_width="@dimen/pub_margin_or_padding_space_seventy" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_ten" android:text="@string/order_item_confirm_accept" />
+    </LinearLayout>
+    <TextView android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+</LinearLayout>

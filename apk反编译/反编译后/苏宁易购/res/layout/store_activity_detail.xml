@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.suning.mobile.ebuy.host.tab.view.OutScrollView android:id="@id/osv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/store_inc_detail_top" />
+            <LinearLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <FrameLayout android:id="@id/layout_tab" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </com.suning.mobile.ebuy.host.tab.view.OutScrollView>
+    <include layout="@layout/store_inc_detail_header" />
+    <include layout="@layout/store_inc_detail_bottom_bar" />
+    <include layout="@layout/store_inc_detail_telephone" />
+</RelativeLayout>

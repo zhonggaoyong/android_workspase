@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/collect_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ff9f9f9f" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:background="#ecffffff" android:layout_width="wrap_content" android:layout_height="48.0dip">
+            <include android:id="@id/couponImage" android:layout_width="74.0dip" android:layout_height="34.0dip" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true" layout="@layout/view_coupon" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toLeftOf="@id/collect_button" android:layout_toRightOf="@id/couponImage" android:layout_centerVertical="true">
+                <TextView android:textSize="14.0dip" android:textColor="@color/black" android:ellipsize="end" android:id="@id/couponName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/collect_button" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/app_text_black" android:ellipsize="end" android:id="@id/couponInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="仅限女装专场" android:singleLine="true" />
+            </LinearLayout>
+            <Button android:textSize="12.0dip" android:textColor="@drawable/vip_red_selector" android:id="@id/collect_button" android:background="@drawable/shape_vip_red_frame_selector" android:visibility="visible" android:layout_width="68.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="立即领券" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

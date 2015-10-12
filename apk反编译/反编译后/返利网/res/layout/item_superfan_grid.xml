@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/product_layout" android:background="@drawable/bg_super_grid" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/fuckyou" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/iv_product" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/contentDescription" />
+            <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_prouct_hint" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_name" android:background="@color/white" android:paddingLeft="@dimen/superfan_search_result_product_margin" android:paddingTop="12.0dip" android:paddingRight="@dimen/superfan_search_result_product_margin" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fuckyou">
+            <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="#ff40494d" android:ellipsize="end" android:gravity="left|center" android:id="@id/tv_product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" android:minLines="2" android:lineSpacingExtra="6.0dip" />
+        </LinearLayout>
+        <com.fanli.android.view.SuperfanProductGridPriceView android:id="@id/grid_price_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_name" />
+        <ImageView android:id="@id/iv_shop_icon" android:layout_width="@dimen/superfan_product_grid_icon_size" android:layout_height="@dimen/superfan_product_grid_icon_size" android:layout_marginRight="14.0dip" android:layout_marginBottom="13.0dip" android:scaleType="fitXY" android:layout_alignRight="@id/grid_price_view" android:layout_alignBottom="@id/grid_price_view" android:contentDescription="@string/contentDescription" />
+        <ImageView android:id="@id/iv_clock" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="@dimen/superfan_search_result_product_margin" android:src="@drawable/super_search_remind" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/contentDescription" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_yiyuangou" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" />
+</RelativeLayout>

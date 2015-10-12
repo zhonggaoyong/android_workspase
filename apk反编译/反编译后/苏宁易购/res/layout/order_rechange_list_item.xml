@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/order_rechange_item_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/public_text_color" android:id="@id/order_num_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sfgdgdfgd" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/public_text_color" android:id="@id/order_time_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sfgdgdfgd" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@drawable/category_listview_divider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+    <LinearLayout android:orientation="vertical" android:id="@id/product_container_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

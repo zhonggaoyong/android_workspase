@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mls_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:onClick="onClick" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/tv_title" android:text="提现" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/order_line_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/order_bg_white_short" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="-3.0dip" android:layout_marginRight="10.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/withdraw_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="20.0sp" android:textColor="#ff80737b" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="提交成功" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/order_banner_phone" android:background="@drawable/order_banner_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                    <ImageView android:background="@drawable/little_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/order_banner_phone" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="#ff80737b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="提交" android:singleLine="true" android:layout_below="@id/order_banner_phone" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/order_banner_money" android:background="@drawable/order_banner_money_g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                    <ImageView android:background="@drawable/little_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/order_banner_money" android:layout_centerVertical="true" />
+                    <ImageView android:background="@drawable/littilearrow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/order_banner_money" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="#ff80737b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="银行处理" android:singleLine="true" android:layout_below="@id/order_banner_money" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/order_banner_card" android:background="@drawable/order_banner_card_g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                    <ImageView android:background="@drawable/littilearrow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/order_banner_card" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="#ff80737b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="提现成功" android:singleLine="true" android:layout_below="@id/order_banner_card" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:background="@drawable/order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff80737b" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提现单号" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff80737b" android:gravity="center_vertical" android:id="@id/withdraw_order_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff80737b" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提现方式" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff80737b" android:gravity="center_vertical" android:id="@id/bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff80737b" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提现时间" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff80737b" android:gravity="center_vertical" android:id="@id/withdraw_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/order_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff80737b" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="提现金额" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="23.0sp" android:textColor="@color/pink_d4" android:gravity="center_vertical" android:id="@id/withdraw_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_next" android:background="@drawable/btn_pink_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="确认" />
+</LinearLayout>

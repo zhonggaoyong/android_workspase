@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/price_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_lr_padding" android:layout_marginRight="@dimen/detail_lr_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/detail_dark" android:id="@id/rebate_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/product_name" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/detail_gray_light" android:id="@id/market_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/rebate_price" android:layout_alignBaseline="@id/rebate_price" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_light" android:gravity="center" android:id="@id/rebate_value" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:minWidth="35.0dip" android:layout_toRightOf="@id/market_price" android:layout_alignBaseline="@id/rebate_price" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/detail_gray_light" android:gravity="center" android:id="@id/one_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:minWidth="35.0dip" android:text="@string/one_price" android:layout_toRightOf="@id/rebate_value" android:layout_alignBaseline="@id/rebate_price" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/detail_pink_dark" android:gravity="left|center" android:id="@id/foreign_origin_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="5.0dip" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activities_list_item" android:background="#fff3f5f7" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/activities_item_top_gap" android:background="#fff3f5f7" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:id="@id/activities_item_total" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/activities_item_top_gap">
+        <RelativeLayout android:id="@id/activities_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/activities_item_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/activities_new_image" android:layout_width="22.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/activities_new_icon" android:layout_alignTop="@id/activities_item_image" />
+            <TextView android:textSize="8.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/activities_new_image_text" android:layout_width="22.0dip" android:layout_height="20.0dip" android:text="NEW" android:layout_alignLeft="@id/activities_new_image" android:layout_alignRight="@id/activities_new_image" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/activities_item_detail" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/activities_item">
+            <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:ellipsize="end" android:id="@id/activities_item_name" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff848689" android:ellipsize="end" android:id="@id/activities_item_description" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" android:layout_below="@id/activities_item_name" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff848689" android:id="@id/activity_like" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 0" android:layout_alignBottom="@id/activities_item_name" android:layout_alignParentRight="true" />
+            <TextView android:id="@id/activity_like_bg" android:background="#00000000" android:layout_width="50.0dip" android:layout_height="40.0dip" android:layout_alignBottom="@id/activities_item_name" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

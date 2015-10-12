@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0dip" android:textColor="@color/category_text_color" android:id="@id/price_report_title" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/price_report_product" />
+            <RelativeLayout android:id="@id/price_report_product_introduce" android:background="@drawable/price_report_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/price_report_title">
+                <TextView android:textSize="15.0dip" android:textColor="@color/category_text_color" android:id="@id/price_report_name_aword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/category_text_color" android:id="@id/price_report_jd_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/price_report_name_aword" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/price_report_right_arrow" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/index_icon1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/price_report_line" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/price_report_product_introduce" style="@style/line1" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/category_text_color" android:id="@id/price_report_example" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/price_report_label" android:layout_below="@id/price_report_line" />
+            <LinearLayout android:gravity="center" android:id="@id/price_report_taka_layout" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/price_report_example">
+                <RelativeLayout android:id="@id/price_report_example_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/price_report_picture_example" android:layout_width="150.0dip" android:layout_height="106.0dip" android:src="@drawable/android_rec" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/font_gray" android:id="@id/price_report_example_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/price_report_example" android:layout_below="@id/price_report_picture_example" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/price_report_picture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/price_report_picture_take" android:background="@drawable/price_report_bg_selector" android:layout_width="150.0dip" android:layout_height="106.0dip" android:src="@drawable/android_camera" android:scaleType="center" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/font_gray" android:id="@id/price_report_picture_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/price_report_take" android:layout_below="@id/price_report_picture_take" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:id="@id/price_report_line2" android:layout_marginBottom="10.0dip" android:layout_below="@id/price_report_taka_layout" style="@style/line1" />
+            <LinearLayout android:orientation="vertical" android:id="@id/price_report_shop_layout" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/price_report_line2">
+                <TextView android:textSize="18.0dip" android:textColor="@color/category_text_color" android:id="@id/price_report_shop_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/price_report_shop_name" />
+                <EditText android:id="@id/price_report_shop_name_edit" android:background="@drawable/edit_text_x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/price_report_shop_name_edit_hint" android:singleLine="true" />
+                <TextView android:textSize="18.0dip" android:textColor="@color/category_text_color" android:id="@id/price_report_shop_price_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/price_report_shop_price" />
+                <EditText android:id="@id/price_report_shop_price_edit" android:background="@drawable/edit_text_x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="numberDecimal" />
+            </LinearLayout>
+            <View android:id="@id/price_report_line3" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/price_report_shop_layout" style="@style/line1" />
+            <Button android:textColor="@color/category_text_color" android:id="@id/price_report_submit" android:paddingBottom="10.0dip" android:layout_width="120.0dip" android:layout_margin="10.0dip" android:text="@string/new_buy_ask" android:layout_below="@id/price_report_line3" android:layout_centerHorizontal="true" style="@style/common_button" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

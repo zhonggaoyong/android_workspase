@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/o2o_city_sub_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/common_banner_wenlu_bg" android:scaleType="fitXY" android:layout_alignParentTop="true" android:contentDescription="@null" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/promtion_top" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@null" />
+</RelativeLayout>

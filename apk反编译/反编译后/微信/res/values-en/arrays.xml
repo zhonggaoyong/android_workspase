@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="a">
+        <item>@string/b94</item>
+        <item>@string/b8x</item>
+        <item>@string/bax</item>
+    </string-array>
+    <string-array name="b">
+        <item>@string/cau</item>
+        <item>@string/cav</item>
+        <item>@string/caw</item>
+    </string-array>
+    <string-array name="c">
+        <item>@string/fr</item>
+        <item>@string/fq</item>
+    </string-array>
+    <string-array name="d">
+        <item>@string/bcv</item>
+    </string-array>
+    <string-array name="e">
+        <item>@string/qn</item>
+        <item>@string/qo</item>
+    </string-array>
+    <string-array name="f">
+        <item>@string/qt</item>
+        <item>@string/qr</item>
+        <item>@string/qw</item>
+    </string-array>
+    <string-array name="g">
+        <item>@string/qu</item>
+        <item>@string/qv</item>
+    </string-array>
+    <string-array name="h">
+        <item>@string/cf1</item>
+        <item>@string/cf2</item>
+        <item>@string/cf3</item>
+        <item>@string/cf4</item>
+        <item>@string/cf5</item>
+        <item>@string/cf6</item>
+        <item>@string/cf7</item>
+        <item>@string/cf8</item>
+        <item>@string/cf9</item>
+        <item>@string/cf_</item>
+        <item>@string/cfa</item>
+        <item>@string/cfb</item>
+    </string-array>
+    <string-array name="i">
+        <item>@string/cfc</item>
+        <item>@string/cfd</item>
+        <item>@string/cfe</item>
+        <item>@string/cff</item>
+        <item>@string/cfg</item>
+        <item>@string/cfh</item>
+        <item>@string/cfi</item>
+    </string-array>
+    <string-array name="j">
+        <item>@string/bae</item>
+        <item>@string/b_t</item>
+        <item>@string/b_u</item>
+        <item>@string/b_v</item>
+        <item>@string/b_w</item>
+        <item>@string/b_y</item>
+        <item>@string/ba_</item>
+        <item>@string/ba1</item>
+        <item>@string/ba9</item>
+        <item>@string/ba8</item>
+        <item>@string/ba7</item>
+        <item>@string/ba5</item>
+        <item>@string/ba0</item>
+        <item>@string/ba2</item>
+        <item>@string/b_x</item>
+        <item>@string/b_z</item>
+        <item>@string/ba4</item>
+        <item>@string/ba3</item>
+        <item>@string/ba6</item>
+        <item>@string/baa</item>
+        <item>@string/bab</item>
+        <item>@string/bac</item>
+        <item>@string/bad</item>
+    </string-array>
+    <string-array name="k">
+        <item>@string/bbo</item>
+        <item>@string/bbp</item>
+    </string-array>
+    <string-array name="l">
+        <item>@string/bvm</item>
+        <item>@string/cn_</item>
+        <item>@string/cna</item>
+        <item>@string/cnb</item>
+    </string-array>
+    <string-array name="m">
+        <item>@string/bvm</item>
+        <item>@string/cna</item>
+        <item>@string/cnb</item>
+    </string-array>
+    <string-array name="n">
+        <item>@string/bvm</item>
+        <item>@string/d19</item>
+        <item>@string/cnb</item>
+    </string-array>
+    <string-array name="o">
+        <item>@string/bvm</item>
+        <item>@string/cnb</item>
+    </string-array>
+    <string-array name="p">
+        <item>@string/b1g</item>
+    </string-array>
+    <string-array name="q">
+        <item>@string/b1o</item>
+    </string-array>
+    <string-array name="r">
+        <item>@string/cax</item>
+        <item>@string/cay</item>
+        <item>@string/caz</item>
+    </string-array>
+    <string-array name="s">
+        <item>@string/cau</item>
+        <item>@string/bbh</item>
+        <item>@string/cbf</item>
+        <item>@string/bc9</item>
+    </string-array>
+    <string-array name="t">
+        <item>Log</item>
+        <item>@string/bzn</item>
+    </string-array>
+    <string-array name="u">
+        <item>@string/cxw</item>
+        <item>@string/cxp</item>
+    </string-array>
+    <string-array name="v">
+        <item>@string/aen</item>
+        <item>@string/aem</item>
+        <item>@string/bc9</item>
+    </string-array>
+    <string-array name="w">
+        <item>@string/na</item>
+        <item>@string/n7</item>
+        <item>@string/bc9</item>
+    </string-array>
+    <string-array name="x">
+        <item>@string/na</item>
+        <item>@string/n7</item>
+    </string-array>
+    <string-array name="y">
+        <item>@string/a56</item>
+        <item>@string/a57</item>
+        <item>@string/a58</item>
+    </string-array>
+    <string-array name="z">
+        <item>@string/a56</item>
+        <item>@string/a57</item>
+    </string-array>
+    <string-array name="a0">
+        <item>@string/ai2</item>
+        <item>@string/ai3</item>
+        <item>@string/ai4</item>
+    </string-array>
+    <string-array name="a1">
+        <item>验证码</item>
+    </string-array>
+    <string-array name="a2">
+        <item>@string/cp5</item>
+    </string-array>
+    <string-array name="a3">
+        <item>@string/cp4</item>
+    </string-array>
+</resources>

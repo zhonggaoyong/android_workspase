@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.mapapi.map.MapView android:id="@id/mapviewOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/address_location_title" android:clickable="true" layout="@layout/title" />
+    <FrameLayout android:orientation="vertical" android:id="@id/frameLayout1" android:background="#b2000000" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="116.0dip" android:layout_alignParentBottom="true">
+        <include android:visibility="visible" layout="@layout/o2o_map_address" />
+    </FrameLayout>
+    <Button android:id="@id/my_position_button" android:background="@drawable/o2o_map_my_position" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/frameLayout1" android:layout_alignParentLeft="true" />
+</RelativeLayout>

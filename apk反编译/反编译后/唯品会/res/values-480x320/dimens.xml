@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="favor_guide_image_height">180.0dip</dimen>
+    <dimen name="coupon_text_large">12.0sp</dimen>
+    <dimen name="coupon_text_margin">6.0dip</dimen>
+    <dimen name="coupon_text_normal">12.0sp</dimen>
+    <dimen name="coupon_text_xlarge">20.0sp</dimen>
+    <dimen name="favor_guide_image_bmargin">21.0dip</dimen>
+    <dimen name="favor_guide_image_lrmargin">21.0dip</dimen>
+    <dimen name="favor_guide_image_tmargin">10.0dip</dimen>
+    <dimen name="favor_guide_text_size">14.0sp</dimen>
+    <dimen name="favor_guide_tip_bmargin">50.0dip</dimen>
+    <dimen name="favor_tip_text_size">14.0sp</dimen>
+    <dimen name="favourable_text_large">14.0sp</dimen>
+    <dimen name="favourable_text_margin">4.0dip</dimen>
+    <dimen name="favourable_text_normal">12.0sp</dimen>
+    <dimen name="favourable_text_xlarge">18.0sp</dimen>
+    <dimen name="product_list_auto_indent">62.0dip</dimen>
+    <dimen name="splash_activity_img_height">133.0dip</dimen>
+</resources>

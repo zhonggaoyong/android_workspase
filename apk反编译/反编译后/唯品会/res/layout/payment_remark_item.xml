@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/diver" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@color/app_text_new_gray1" android:id="@id/remark_sku" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_alignParentRight="true" />
+    <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@color/gray_dark" android:id="@id/remark_product" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:singleLine="true" android:layout_toLeftOf="@id/remark_sku" android:layout_alignParentLeft="true" />
+    <EditText android:textSize="@dimen/app_textsize_normal" android:textColor="@color/gray_dark" android:textColorHint="@color/app_text_edittext_gray" android:id="@id/remark_text" android:background="@null" android:paddingRight="35.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="1.0dip" android:hint="请输入商品备注信息" android:singleLine="true" android:maxLength="100" android:layout_below="@id/remark_product" />
+    <ImageView android:id="@id/edit_del" android:padding="7.0dip" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/new_ic_edit_clear" android:layout_alignTop="@id/remark_text" android:layout_alignRight="@id/remark_text" />
+</RelativeLayout>

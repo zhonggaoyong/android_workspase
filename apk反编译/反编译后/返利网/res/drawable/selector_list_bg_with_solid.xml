@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/list_bg_middle_pressed_with_solid" />
+    <item android:state_pressed="true" android:drawable="@drawable/list_bg_middle_pressed_with_solid" />
+    <item android:drawable="@drawable/list_bg_middle_normal_with_solid" />
+</selector>

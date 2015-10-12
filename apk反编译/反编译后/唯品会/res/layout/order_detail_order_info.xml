@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.achievo.vipshop.view.order_detail.OrderInfoView android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/default_layout" android:visibility="gone" layout="@layout/order_info_default_ayout" />
+    <include android:id="@id/refund_layout" android:visibility="gone" layout="@layout/order_flow_layout" />
+    <include android:id="@id/prereceive_layout" android:visibility="gone" layout="@layout/order_prereceive_layout" />
+    <TextView android:textSize="@dimen/order_text_main" android:textColor="#ffe47600" android:gravity="center_vertical" android:id="@id/pay_info_title" android:paddingTop="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <TextView android:textSize="@dimen/app_textsize_small" android:textColor="#ffe47600" android:gravity="center_vertical" android:id="@id/order_info_tips" android:paddingTop="10.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <View android:id="@id/order_info_tips_lines" android:background="@color/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</com.achievo.vipshop.view.order_detail.OrderInfoView>

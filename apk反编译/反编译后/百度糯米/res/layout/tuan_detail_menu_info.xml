@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/menuItemParentNew" android:background="@drawable/tuan_detail_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff111111" android:gravity="center_vertical" android:id="@id/menuTitleNew" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/tuan_detial_menu_title" android:singleLine="true" android:includeFontPadding="false" />
+    <View android:id="@id/imageView1" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/menuTitleNew" />
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageView1">
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/menuTitleViewNew" android:paddingLeft="12.0dip" android:paddingTop="15.0dip" android:paddingRight="12.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tuan_detial_default_value" android:includeFontPadding="false" android:lineSpacingExtra="3.0dip" />
+        <WebView android:id="@id/menuWebTitleViewNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" />
+        <FrameLayout android:id="@id/menuConstructTitleViewNew" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <View android:id="@id/imageView2" android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_below="@id/content" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffff4978" android:gravity="center_vertical" android:id="@id/textPicInfoTitleNew" android:background="@drawable/selector_list_row" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="@string/tuan_detial_text_pic_info" android:includeFontPadding="false" android:drawableRight="@drawable/icon_arrows_gray_right" android:layout_below="@id/imageView2" />
+</RelativeLayout>

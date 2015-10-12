@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/payment_bg_selector" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/pay_item_layout" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentLeft="true">
+            <ImageView android:layout_gravity="center" android:id="@id/radio_image" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/payment_margin_new" android:src="@drawable/icon_checkbox_selector" />
+            <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_margin_new">
+                <TextView android:textSize="@dimen/payment_middle_text" android:textStyle="normal" android:textColor="@color/app_text_black_new_ui" android:id="@id/pay_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_wallet" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_black_new_ui" android:ellipsize="end" android:id="@id/pay_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/payment_margin_new" android:singleLine="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

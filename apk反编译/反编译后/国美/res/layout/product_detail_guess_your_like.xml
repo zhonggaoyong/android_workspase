@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/new_product_show_guess_you_like_ll" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="1.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="也许您还喜欢" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/guess_you_like_list_ll" android:layout_width="wrap_content" android:layout_height="@dimen/guess_you_like_height" android:layout_marginTop="14.0dip">
+            <com.gome.ecmall.custom.HorizontialListView android:id="@id/guess_you_like_listview" android:background="@color/transparent" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

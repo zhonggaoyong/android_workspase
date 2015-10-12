@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center" android:background="@color/white" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="74.0dip">
+                    <ImageView android:layout_width="49.0dip" android:layout_height="49.0dip" android:src="@drawable/icon_success_green" />
+                    <TextView android:textSize="@dimen/app_textsize_title" android:textColor="#ff000000" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="退货申请已提交" />
+                </LinearLayout>
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5px" />
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5px" />
+                    <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:text="退货须知" />
+                    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                    <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/black" android:id="@id/return_notice_tips1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/return_notice_content1" android:lineSpacingExtra="2.0dip" />
+                    <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:id="@id/return_notice_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.5dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/return_notice_content2" android:lineSpacingExtra="2.0dip" />
+                </LinearLayout>
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5px" />
+            </LinearLayout>
+            <include layout="@layout/return_info_address" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <Button android:textSize="@dimen/app_textsize_main" android:id="@id/go_home_btn" android:layout_width="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/back_home_page" android:layout_weight="1.0" style="@style/submit_red_big_button_style" />
+                <Button android:textSize="@dimen/app_textsize_main" android:textColor="@color/order_black_text" android:id="@id/return_info_des" android:background="@drawable/btn_violet_white_bg" android:layout_width="fill_parent" android:layout_height="@dimen/submit_red_big_button_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="@string/return_info_flow_des" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

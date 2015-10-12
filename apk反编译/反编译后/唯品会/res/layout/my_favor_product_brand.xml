@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/my_favor_list" android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/today_favor_header" layout="@layout/my_favor_header" />
+    <com.achievo.vipshop.view.FavorViewPager android:id="@id/viewpager" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/today_favor_header" />
+</RelativeLayout>

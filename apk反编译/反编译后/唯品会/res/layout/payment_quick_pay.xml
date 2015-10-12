@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/pay_head" layout="@layout/vipnew_list_payment_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@color/app_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="10.0dip" android:text="已开通快捷支付" />
+            </LinearLayout>
+            <com.achievo.vipshop.view.widget.NoScrollListView android:id="@id/bandBrnkListView" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+            <RelativeLayout android:id="@id/addBrankCard" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="15.0dip">
+                <ImageView android:id="@id/icon" android:background="@drawable/add_brank_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0dip" android:textColor="@color/app_text_black_new_ui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="添加银行卡" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+                <ImageView android:background="@drawable/icon_forward_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/payment_safe_view_normal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

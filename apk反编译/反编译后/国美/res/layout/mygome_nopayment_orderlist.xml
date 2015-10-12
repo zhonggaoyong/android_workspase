@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mydef="http://schemas.android.com/apk/res/com.gome.eshopnew">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/titlebar" layout="@layout/vw_titlebar" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mygome_fav_tab" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/title_layout">
+            <com.gome.ecmall.home.mygome.custom.TabStyle android:id="@id/tab_material" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" mydef:selected="true" mydef:fullLength="false" mydef:text="实物订单" />
+            <com.gome.ecmall.home.mygome.custom.TabStyle android:id="@id/tab_virtual" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" mydef:selected="false" mydef:fullLength="false" mydef:text="其他订单" />
+        </LinearLayout>
+        <View android:id="@id/fav_line1" android:background="@color/mygome_fav_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/mygome_fav_tab" />
+        <android.support.v4.view.ViewPager android:id="@id/vp_mypager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pst_tabs" />
+    </LinearLayout>
+</LinearLayout>

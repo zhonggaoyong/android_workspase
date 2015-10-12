@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pull_to_refresh_header" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/head_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" />
+        <ImageView android:id="@id/head_arrowImageView" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/icon_xiaoma_hdpi" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip">
+            <TextView android:textSize="12.0sp" android:id="@id/head_tipsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="下拉马上刷新" style="@style/home_pull_refresh_text_style" />
+            <TextView android:textSize="10.0sp" android:id="@id/head_lastUpdatedTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="10.0dip" android:text="最近更新：" style="@style/home_pull_refresh_text_style" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/shopping_cart_count_price_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:layout_alignParentBottom="true" layout="@layout/gift_shopping_cart_price_layout" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/shopping_cart_count_price_layout">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/common_title" android:layout_width="fill_parent" android:layout_height="49.5dip" android:layout_alignParentTop="true" layout="@layout/title" />
+            <include android:id="@id/cart_product_item" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/common_title" layout="@layout/gift_shopping_sub_layout" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_tab" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/common_title" />
+            <include android:id="@id/loading_error_tips_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ll_tab" android:layout_centerInParent="true" layout="@layout/loading_error_tips" />
+        </RelativeLayout>
+        <View android:id="@id/gift_wrap_cover" android:background="#88000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.jingdong.app.mall.shoppinggift.view.GiftWrapRelativeLayout android:id="@id/gift_wrap_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v4.view.ViewPager android:id="@id/gift_cart_wrap_viewpager" android:background="@color/color_f3f5f7" android:paddingTop="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="360.0dip" android:layout_alignParentBottom="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cart_horizontal_cursor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="17.0dip" android:textColor="@color/address_content_color" android:gravity="center" android:id="@id/change_wrap_tv" android:background="@color/color_f3f5f7" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="更换包装" android:layout_above="@id/gift_cart_wrap_viewpager" />
+            <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/gift_cart_wrap_viewpager" />
+        </com.jingdong.app.mall.shoppinggift.view.GiftWrapRelativeLayout>
+        <LinearLayout android:gravity="center" android:id="@id/big_image_view" android:background="#88000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.jingdong.app.mall.shoppinggift.view.GiftWrapRelativeLayout android:id="@id/big_image_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/big_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+                <TextView android:id="@id/big_image_close" android:background="@drawable/gift_shopping_img_del_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </com.jingdong.app.mall.shoppinggift.view.GiftWrapRelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

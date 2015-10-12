@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notice_icon" android:layout_centerInParent="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/me_new_msg_num" android:background="@drawable/me_bg_bubble_small" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

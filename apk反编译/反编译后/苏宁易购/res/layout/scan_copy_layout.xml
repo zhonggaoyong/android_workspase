@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/pub_color_one" android:id="@id/scan_copy_bt" android:background="@drawable/menu_popwindow_bg_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_barcode_history_copy" />
+</LinearLayout>

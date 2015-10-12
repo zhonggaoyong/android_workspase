@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.common.bing.LeftMessageView android:paddingRight="25.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bing_chat_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/bing_mult_product_name_font" android:ellipsize="end" android:id="@id/bing_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="看看下面这些商品：" android:lines="1" />
+    <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/mult_product_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/product1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/p1_icon" android:layout_width="85.0dip" android:layout_height="75.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="@dimen/bing_product_img_margin" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/bing_product_name_font" android:textColor="@color/bing_chat_product_name" android:id="@id/p1_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="苹果配备 Retina" android:lines="1" />
+            <TextView android:textSize="@dimen/bing_product_price_font" android:textColor="#ffff0000" android:gravity="left|center" android:id="@id/p1_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="￥1888.0" android:singleLine="true" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/product2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/p2_icon" android:layout_width="85.0dip" android:layout_height="75.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="@dimen/bing_product_img_margin" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/bing_product_name_font" android:textColor="@color/bing_chat_product_name" android:id="@id/p2_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="苹果配备 Retina" android:lines="1" />
+            <TextView android:textSize="@dimen/bing_product_price_font" android:textColor="#ffff0000" android:gravity="left|center" android:id="@id/p2_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="￥1888.0" android:singleLine="true" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/product3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_weight="1.0">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/p3_icon" android:layout_width="85.0dip" android:layout_height="75.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="@dimen/bing_product_img_margin" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/bing_product_name_font" android:textColor="@color/bing_chat_product_name" android:id="@id/p3_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="苹果配备 Retina" android:lines="1" />
+            <TextView android:textSize="@dimen/bing_product_price_font" android:textColor="#ffff0000" android:gravity="left|center" android:id="@id/p3_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="￥1888.0" android:singleLine="true" />
+        </FrameLayout>
+    </LinearLayout>
+</com.jingdong.common.bing.LeftMessageView>

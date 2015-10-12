@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/public_item_product_img_more_layout3" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/public_item_product_img_more" android:background="@drawable/goods_bg" android:layout_width="@dimen/pub_margin_or_padding_space_sixty" android:layout_height="@dimen/pub_margin_or_padding_space_sixty" android:layout_marginRight="10.0dip" android:src="@drawable/default_background_small" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/android_public_textsize_14pt" android:textColor="@color/pub_color_one" android:gravity="center" android:layout_gravity="bottom|right|center" android:id="@id/product_item_more" android:background="@drawable/product_nums" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+</FrameLayout>

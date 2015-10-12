@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/update_backgroud_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/update_title_color" android:gravity="center" android:id="@id/net_tip_title" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/check_wifi_show_photo_tip" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/net_tip_desc" android:paddingLeft="40.0dip" android:paddingTop="30.0dip" android:paddingRight="40.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/check_wifi_show_photo_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/net_tip_normal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <Button android:textSize="16.0sp" android:textColor="@color/update_title_color" android:id="@id/net_tip_cancel" android:background="@drawable/update_btn_selector" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/check_wifi_show_photo_cancel" android:layout_weight="1.0" />
+            <View android:background="#ffcccccc" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <Button android:textSize="16.0sp" android:textColor="@color/update_title_color" android:id="@id/net_tip_ok" android:background="@drawable/update_btn_selector" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/check_wifi_show_photo_ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

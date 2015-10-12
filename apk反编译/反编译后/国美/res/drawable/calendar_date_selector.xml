@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_selected="true" android:color="@color/flight_text_white" />
+    <item android:color="@color/flight_text_black" app:state_current_month="true" />
+    <item android:color="@color/flight_text_white" />
+</selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/hyaline" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center_vertical" android:id="@id/left_add" android:background="@drawable/title_btn_bg" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="左+" />
+    <Button android:layout_gravity="center_vertical" android:id="@id/left_sub" android:background="@drawable/title_btn_bg" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="左-" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/copy_prompt" android:background="@drawable/title_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="复制" />
+    <Button android:layout_gravity="center_vertical" android:id="@id/right_add" android:background="@drawable/title_btn_bg" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="右+" />
+    <Button android:layout_gravity="center_vertical" android:id="@id/right_sub" android:background="@drawable/title_btn_bg" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="右-" />
+</LinearLayout>

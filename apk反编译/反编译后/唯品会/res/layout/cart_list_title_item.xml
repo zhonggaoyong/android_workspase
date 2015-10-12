@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/cart_nativie_padding" android:paddingRight="@dimen/cart_nativie_padding" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/native_cart_title_icon" android:background="@drawable/lable_icon_bg_fillviolet" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="16.0dip" android:layout_marginRight="6.0dip" android:text="@string/native_cart_global_shop" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/app_textsize_price" android:textColor="@color/app_text_black_new_ui" android:id="@id/native_cart_title_text" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_toRightOf="@id/native_cart_title_icon" android:layout_centerVertical="true" />
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

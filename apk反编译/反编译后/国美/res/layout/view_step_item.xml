@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_step_font" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/od_font_12" android:textColor="@color/color_step_select" android:id="@id/step_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单已提交" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/step_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/step_title" android:layout_centerHorizontal="true">
+        <View android:id="@id/step_line" android:background="@color/color_step_select" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/od_font_13" android:textColor="@color/color_step_font" android:gravity="center" android:id="@id/step_num" android:background="@drawable/icon_circle_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

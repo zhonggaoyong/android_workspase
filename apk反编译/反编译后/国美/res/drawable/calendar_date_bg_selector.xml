@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:drawable="@drawable/bg_calendar_circle_today" app:state_today="true" />
+    <item android:state_selected="true" android:drawable="@drawable/bg_calendar_circle_selected" />
+</selector>

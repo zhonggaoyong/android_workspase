@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView android:id="@id/main_scrollView" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" ptr:ptrAnimationStyle="jingdong" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="@dimen/lottery_banner_height">
+                <com.jd.lottery.lib.ui.lotteryhall.main.PhoneChargeFigureView android:id="@id/lotteryBanner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/lotteryBannerDefault" android:background="@drawable/lottery_main_banner" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <TextView android:id="@id/banner_sperator" android:background="#a0000000" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_alignParentBottom="true" />
+                <TextView android:id="@id/awardBoard" android:text="@string/announced_winning_lottery" android:layout_above="@id/banner_sperator" android:layout_alignParentRight="true" style="@style/home_tips_style" />
+                <TextView android:id="@id/myLottery" android:text="@string/lottery_activity_title_my_orders" android:layout_toLeftOf="@id/awardBoard" android:layout_above="@id/banner_sperator" style="@style/home_tips_style" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.jd.lottery.lib.ui.common.widget.FullSizeGridView android:gravity="center" android:id="@id/grid" android:background="#ffdcdcdc" android:padding="0.0dip" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/lottery_list_selector" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:numColumns="2" />
+                <include android:id="@id/lotteryEmptyView" android:visibility="gone" layout="@layout/lottery_empty_view" />
+                <include android:id="@id/lotteryLoadingView" android:visibility="visible" layout="@layout/lottery_loading_view" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</RelativeLayout>

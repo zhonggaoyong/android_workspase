@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/grey_l11" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/classify_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/pink_99" android:id="@id/num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:drawableRight="@drawable/circle_info_arrow" android:drawablePadding="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.meilishuo.app.post.home.view.CircleClassifyView android:id="@id/circle_classify_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

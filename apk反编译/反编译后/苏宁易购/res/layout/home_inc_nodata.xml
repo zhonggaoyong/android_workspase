@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_nodata" android:background="@color/pub_color_twelev" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="4.0" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_logo_nodata" android:scaleType="fitCenter" />
+    <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您来晚咯，活动已过期~" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="6.0" />
+</LinearLayout>

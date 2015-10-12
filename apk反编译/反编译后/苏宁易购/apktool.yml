@@ -1,0 +1,31 @@
+version: 2.0.0-RC3
+apkFileName: 苏宁易购.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '14'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '90'
+  versionName: 3.3.6
+compressionType: false
+unknownFiles:
+  dsn.mf: '8'
+  javamail.charset.map: '8'
+  javamail.default.address.map: '8'
+  javamail.default.providers: '8'
+  javamail.imap.provider: '8'
+  javamail.pop3.provider: '8'
+  javamail.smtp.address.map: '8'
+  javamail.smtp.provider: '8'
+  mailcap: '8'
+  mailcap.default: '8'
+  mimetypes.default: '8'
+  com/sina/weibo/sdk/net/cacert_cn.cer: '8'
+  com/sina/weibo/sdk/net/cacert_com.cer: '8'
+  com/sun/mail/dsn/mailcap: '8'
+  org/apache/harmony/awt/internal/nls/messages.properties: '8'

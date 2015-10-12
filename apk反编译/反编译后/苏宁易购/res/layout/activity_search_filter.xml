@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/search_filter_title" />
+    <com.suning.mobile.ebuy.search.view.SearchScrollView android:id="@id/search_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/search_filter_head" />
+        </LinearLayout>
+    </com.suning.mobile.ebuy.search.view.SearchScrollView>
+</LinearLayout>

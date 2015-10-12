@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ebuy_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.suning.mobile.ebuy.view.component.LoadingView android:id="@id/loading_ind" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ScrollView android:id="@id/notice_content" android:background="@drawable/input_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-5.0dip">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/public_text_color" android:id="@id/head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/notice_txt" android:id="@id/publishTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/noticeImg" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/default_background_small" android:scaleType="fitXY" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/notice_txt" android:ellipsize="end" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <TextView android:textColor="@color/blue_ball" android:id="@id/infoSource" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

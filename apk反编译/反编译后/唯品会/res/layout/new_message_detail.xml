@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/main_title" android:layout_width="fill_parent" android:layout_alignParentTop="true" style="@style/title_bar_bg_style">
+        <ImageView android:id="@id/btn_back" android:layout_centerVertical="true" style="@style/app_title_left_button_style" />
+        <TextView android:textSize="@dimen/app_title_size" android:textColor="@color/app_title_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="留言详情" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.achievo.vipshop.view.XListView android:id="@id/lst_message_detail" android:layoutAnimation="@anim/layout_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:listSelector="@color/transparency" android:drawSelectorOnTop="true" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="10.0dip" android:choiceMode="none" android:fastScrollEnabled="true" />
+</LinearLayout>

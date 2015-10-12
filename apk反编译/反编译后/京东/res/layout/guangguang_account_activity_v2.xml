@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/guangguang_account_root" android:background="#fff3f5f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView android:id="@id/guangguang_account_scroll_view" android:background="@color/gg_account_divider" android:scrollbars="none" android:persistentDrawingCache="none" android:alwaysDrawnWithCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:layout_below="@id/common_title" app:ptrMode="disabled">
+        <LinearLayout android:orientation="vertical" android:id="@id/scroll_view_root_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/guangguang_account_baseinfo_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/account_fl_head" layout="@layout/guangguang_account_baseinfo_header" />
+            <GridView android:id="@id/guangguang_account_tab_grid" android:background="@color/widget_button_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="0.0dip" android:numColumns="auto_fit" android:choiceMode="singleChoice" />
+            <com.jingdong.app.mall.guangguang.account.GuangguangViewPager android:layout_gravity="center" android:id="@id/guangguang_account_viewpager" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    <com.jingdong.app.mall.guangguang.widget.ErrorLayout android:id="@id/guangguang_errorLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_title" app:error_layout="@layout/guangguang_common_error_layout" />
+</RelativeLayout>

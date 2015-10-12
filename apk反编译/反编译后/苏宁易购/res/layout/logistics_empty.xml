@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="40.0dip" android:layout_weight="1.0">
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/imgLogisticEmpty" android:background="@drawable/logistic_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/logistics_data_is_null" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_weight="1.0">
+        <Button android:textColor="@color/pub_color_three" android:gravity="center" android:id="@id/logistics_bt01" android:background="@color/pub_color_one" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/pub_margin_or_padding_space_forty" android:text="@string/shoppingcart_goto_favorite" android:layout_weight="0.5" />
+        <Button android:textColor="@color/pub_color_one" android:gravity="center" android:id="@id/logistics_bt02" android:background="@color/pub_color_four" android:paddingBottom="2.0dip" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/pub_margin_or_padding_space_forty" android:layout_marginLeft="30.0dip" android:text="@string/pay_go_around_aftersuccess_prompt" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

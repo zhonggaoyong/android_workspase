@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5px" />
+    <LinearLayout android:gravity="left|center" android:id="@id/return_logistics_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="填写退货物流信息" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/order_gray_text" android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="可缩短退货时间" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_forward_grey" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/return_logistics_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:text="退货物流信息" />
+        </LinearLayout>
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="物流公司 " android:lineSpacingExtra="5.0dip" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:id="@id/return_info_logistics_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:lineSpacingExtra="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="物流单号 " android:lineSpacingExtra="5.0dip" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:id="@id/return_info_logistics_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:lineSpacingExtra="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_gray_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="备注 " android:lineSpacingExtra="5.0dip" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/order_black_text" android:id="@id/return_info_remark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="38.0dip" android:layout_marginRight="10.0dip" android:lineSpacingExtra="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

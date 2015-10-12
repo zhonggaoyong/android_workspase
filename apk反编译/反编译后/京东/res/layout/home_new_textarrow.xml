@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="#ff686868" android:gravity="center_vertical" android:id="@id/home_new_textarrow_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableRight="@drawable/personel_arrow_right" android:drawablePadding="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

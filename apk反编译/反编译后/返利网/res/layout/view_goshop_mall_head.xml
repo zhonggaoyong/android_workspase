@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:id="@id/tips1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goshop_mall_head_title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff43b047" android:id="@id/tv_fanli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/goshop_fanli" android:layout_below="@id/tips1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

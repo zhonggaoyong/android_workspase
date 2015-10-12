@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bgs" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/like_message_view1" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:id="@id/like_message_middle" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_below="@id/like_message_view1">
+        <FrameLayout android:id="@id/iconpanel" android:paddingLeft="15.0dip" android:layout_width="70.0dip" android:layout_height="45.0dip" android:layout_centerVertical="true">
+            <com.meilishuo.app.views.RoundImageView android:id="@id/head_icon" android:layout_width="45.0dip" android:layout_height="45.0dip" android:scaleType="fitCenter" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="top|right|center" android:id="@id/tip_num" android:background="@drawable/im_notifity" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="bottom|right|center" android:id="@id/status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/im_offline" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconpanel" android:layout_centerVertical="true">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d1" android:gravity="top" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120.0dip" android:singleLine="true" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/labelicon" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginLeft="4.0dip" android:scaleType="fitXY" android:layout_toRightOf="@id/username" android:layout_alignParentTop="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:gravity="top" android:id="@id/datatime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="15.0dip" android:layout_alignTop="@id/username" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/arrow" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/me_btn_arrow_pink" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d3" android:gravity="bottom" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" android:layout_below="@id/username" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/like_message_view2" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/like_message_middle" />
+    <View android:id="@id/line" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/like_message_view2" style="@style/message_cutline" />
+    <View android:id="@id/line22" android:visibility="gone" android:layout_below="@id/line" style="@style/borderline" />
+</RelativeLayout>

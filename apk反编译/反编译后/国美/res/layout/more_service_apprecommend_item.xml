@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="14.0dip" android:paddingTop="14.0dip" android:paddingRight="2.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/app_recommend_icon_iv" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@color/app_recommend_icon_bg_color" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/app_recommend_text_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toLeftOf="@id/app_down_ll" android:layout_toRightOf="@id/app_recommend_icon_iv" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/app_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <com.gome.ecmall.custom.LineTextView android:textSize="13.0sp" android:textColor="@color/hint_text_color" android:ellipsize="end" android:id="@id/app_desc_tv" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" pl:plTextColor="@color/hint_text_color"
+          xmlns:pl="http://schemas.android.com/apk/res/com.gome.eshopnew" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/app_down_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="66.0dip" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/app_down_btn" android:background="@drawable/app_recommend_download_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/hint_text_color" android:gravity="center" android:id="@id/app_down_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:minWidth="56.0dip" android:text="下载" />
+    </LinearLayout>
+</RelativeLayout>

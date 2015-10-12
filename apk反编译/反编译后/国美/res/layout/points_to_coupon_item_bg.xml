@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/points_to_coupon_item_bg" android:layout_width="fill_parent" android:layout_height="168.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/line_layout" android:background="@drawable/line_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/layout1" android:background="@color/points_to_blue_blue" android:layout_width="fill_parent" android:layout_height="112.0dip" android:layout_above="@id/line_layout">
+            <TextView android:enabled="true" android:id="@id/bg_text" android:background="@drawable/point_to_blue_layout_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="-2.0dip" />
+            <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:id="@id/points_layout" android:background="@drawable/point_to_blue_textview_bg_selector" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip">
+                <TextView android:enabled="true" android:textSize="28.0sp" android:textStyle="italic" android:textColor="@color/price_text_color" android:gravity="bottom" android:id="@id/points_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="-3.0dip" android:singleLine="true" android:lineSpacingExtra="0.0dip" />
+                <TextView android:textSize="14.0sp" android:textStyle="italic" android:textColor="@color/price_text_color" android:gravity="bottom" android:id="@id/points_des_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/point_to_blue_coupon_can_exchange" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textColor="@color/main_default_white_text_color" android:id="@id/money_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_default_white_text_color" android:gravity="right" android:id="@id/coupon_describe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="11.0sp" android:textColor="@color/weak_text_color" android:id="@id/points_to_coupon_exchange_num_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/point_to_blue_coupon_exchanged" android:layout_centerVertical="true" />
+            <Button android:enabled="true" android:textSize="14.0sp" android:textColor="@color/main_default_white_text_color" android:id="@id/points_to_coupon_exchange_btn" android:background="@drawable/point_to_blue_button_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/point_to_blue_coupon_exchange" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

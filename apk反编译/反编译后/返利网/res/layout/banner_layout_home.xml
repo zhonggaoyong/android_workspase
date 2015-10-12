@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/banner_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/banner_header" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/home_banner_height4_0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/lly_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:id="@id/bannerForground" android:background="#ff467e30" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

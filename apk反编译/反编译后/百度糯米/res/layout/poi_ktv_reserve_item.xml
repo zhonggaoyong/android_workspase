@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="28.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/poi_ktv_reserve_item_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/poi_ktv_tuan" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/poi_sale_color" android:id="@id/poi_ktv_reserve_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="20.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/poi_ktv_reserve_item_dollor" android:layout_toRightOf="@id/poi_ktv_reserve_item_icon" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/poi_ktv_pink" android:id="@id/poi_ktv_reserve_item_dollor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:text="￥" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/poi_ktv_reserve_item_money" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/poi_ktv_pink" android:id="@id/poi_ktv_reserve_item_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

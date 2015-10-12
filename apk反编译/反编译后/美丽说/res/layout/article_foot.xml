@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/article_reply_more" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loadmore" android:background="@drawable/btn_grey_bg" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <com.meilishuo.app.views.CustomPageLoading android:layout_gravity="center" android:id="@id/progress_foot" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff998f95" android:gravity="center" android:id="@id/text_foot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/danbao_text_more_reply" />
+            <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_sort_by_desc" />
+        </LinearLayout>
+        <View android:layout_marginTop="10.0dip" style="@style/FirstDividerViewStyle" />
+    </LinearLayout>
+</LinearLayout>

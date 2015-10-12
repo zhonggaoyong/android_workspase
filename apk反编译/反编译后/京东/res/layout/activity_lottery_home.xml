@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mDrawerLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.common.widget.TempTitle android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" stuan:drawableLeft="@drawable/common_title_back_selector" stuan:textTitle="@string/jd_lottery" xmlns:stuan="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout android:id="@id/contents" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/lottery_shape_rectangle_onlytop_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.jd.lottery.lib.ui.lotteryhall.mainwrapper.TabItem android:id="@id/hall" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" tabitem:theTitle="@string/newhome_tabitem_title_hall" tabitem:selectedIcon="@drawable/lottery_maintab_hall_selected" tabitem:unselectedIcon="@drawable/lottery_maintab_hall_normal" xmlns:tabitem="http://schemas.android.com/apk/res-auto" />
+        <com.jd.lottery.lib.ui.lotteryhall.mainwrapper.TabItem android:id="@id/kaijiang" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" tabitem:theTitle="@string/newhome_tabitem_title_kaijiang" tabitem:selectedIcon="@drawable/lottery_maintab_kaijiang_selected" tabitem:unselectedIcon="@drawable/lottery_maintab_kaijiang_normal" xmlns:tabitem="http://schemas.android.com/apk/res-auto" />
+        <com.jd.lottery.lib.ui.lotteryhall.mainwrapper.TabItem android:id="@id/mylottery" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" tabitem:theTitle="@string/newhome_tabitem_title_mylottery" tabitem:selectedIcon="@drawable/lottery_maintab_personalcenter_selected" tabitem:unselectedIcon="@drawable/lottery_maintab_personalcenter_normal" xmlns:tabitem="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</LinearLayout>

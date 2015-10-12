@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="@color/grey_d3" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/text_goodsshow_tips_color" />
+    <com.meilishuo.app.post.home.view.AutoLineFeedLayout android:id="@id/tag_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:paddingTop="0.0dip" />
+</LinearLayout>

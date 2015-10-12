@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/pub_textsize_twenty" android:textColor="@color/pub_color_three" android:gravity="center" android:id="@id/tv_upgrade_title" android:background="@color/normal" android:paddingTop="@dimen/pub_margin_or_padding_space_ten" android:paddingBottom="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/act_update_increase_update" />
+    <View android:background="@drawable/divider_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/pub_textsize_twenty" android:textColor="@color/pub_color_three" android:id="@id/tv_upgrade_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_ten" android:layout_marginTop="@dimen/pub_margin_or_padding_space_ten" android:layout_marginRight="@dimen/pub_margin_or_padding_space_ten" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_ten" android:text="@string/act_update_increase_update_desc" />
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="54.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/pub_margin_or_padding_space_twelev" android:paddingTop="@dimen/pub_margin_or_padding_space_twelev" android:paddingRight="@dimen/pub_margin_or_padding_space_twelev" android:paddingBottom="@dimen/pub_margin_or_padding_space_twelev" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/layout_cancel" android:paddingLeft="@dimen/pub_margin_or_padding_space_six" android:paddingRight="@dimen/pub_margin_or_padding_space_six" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:textSize="@dimen/pub_textsize_twenty" android:textColor="@color/pub_color_nine" android:id="@id/btn_cancel" android:background="@drawable/public_bg_btn_white" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_90px" android:text="@string/pub_cancel" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/layout_confirm" android:paddingLeft="@dimen/pub_margin_or_padding_space_six" android:paddingRight="@dimen/pub_margin_or_padding_space_six" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:textSize="@dimen/pub_textsize_twenty" android:textColor="@color/pub_color_one" android:id="@id/btn_confirm" android:background="@drawable/public_bg_btn_orange" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_90px" android:text="@string/pub_confirm" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

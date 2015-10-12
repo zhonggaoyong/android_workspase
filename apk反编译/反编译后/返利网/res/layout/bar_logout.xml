@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/actionbar_compat_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="5.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_large" android:textColor="@android:color/white" android:gravity="left|center" android:paddingRight="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/login_title" android:layout_weight="4.0" />
+    <ImageView android:id="@id/btn_reg" android:background="@drawable/button_switch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

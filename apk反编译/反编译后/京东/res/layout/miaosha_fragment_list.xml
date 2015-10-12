@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_app_limit_buy" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jingdong.app.mall.miaosha.MiaoShaListTabGroup android:id="@id/ll_miaosha_tabview" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/miaosha_fragment_lv" android:fadingEdge="none" android:persistentDrawingCache="none" android:alwaysDrawnWithCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_below="@id/ll_miaosha_tabview" />
+    <RelativeLayout android:gravity="center" android:id="@id/app_limit_buy_list_none" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/app_limit_buy_list_none_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_limit_buy_face" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff54515a" android:gravity="center" android:id="@id/app_limit_buy_list_none_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limit_buy_list_tips" android:layout_below="@id/app_limit_buy_list_none_icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/app_limit_buy_list_none_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limit_buy_list_content" android:layout_below="@id/app_limit_buy_list_none_tips" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include android:id="@id/loading_error_tips_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ll_miaosha_tabview" android:layout_centerInParent="true" layout="@layout/loading_error_tips" />
+</RelativeLayout>

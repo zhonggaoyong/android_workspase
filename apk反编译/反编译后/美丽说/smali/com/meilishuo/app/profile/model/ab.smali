@@ -1,0 +1,536 @@
+.class public Lcom/meilishuo/app/profile/model/ab;
+.super Ljava/lang/Object;
+.source "UserStats.java"
+
+
+# static fields
+.field private static final synthetic t:Lc/b/a/a$a;
+
+
+# instance fields
+.field public a:Ljava/lang/String;
+
+.field public b:Ljava/lang/String;
+
+.field public c:Ljava/lang/String;
+
+.field public d:Ljava/lang/String;
+
+.field public e:Ljava/lang/String;
+
+.field public f:I
+
+.field public g:I
+
+.field public h:I
+
+.field public i:I
+
+.field public j:I
+
+.field public k:I
+
+.field public l:I
+
+.field public m:I
+
+.field public n:I
+
+.field public o:Ljava/lang/String;
+
+.field public p:Ljava/lang/String;
+
+.field public q:Ljava/lang/String;
+
+.field public r:I
+
+.field public s:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-static {}, Lcom/meilishuo/app/profile/model/ab;->a()V
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    const/4 v0, 0x0
+
+    .line 39
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 17
+    iput-object v1, p0, Lcom/meilishuo/app/profile/model/ab;->a:Ljava/lang/String;
+
+    .line 18
+    iput-object v1, p0, Lcom/meilishuo/app/profile/model/ab;->b:Ljava/lang/String;
+
+    .line 19
+    iput-object v1, p0, Lcom/meilishuo/app/profile/model/ab;->c:Ljava/lang/String;
+
+    .line 20
+    iput-object v1, p0, Lcom/meilishuo/app/profile/model/ab;->d:Ljava/lang/String;
+
+    .line 21
+    iput-object v1, p0, Lcom/meilishuo/app/profile/model/ab;->e:Ljava/lang/String;
+
+    .line 22
+    iput v0, p0, Lcom/meilishuo/app/profile/model/ab;->f:I
+
+    .line 23
+    iput v0, p0, Lcom/meilishuo/app/profile/model/ab;->g:I
+
+    .line 24
+    iput v0, p0, Lcom/meilishuo/app/profile/model/ab;->h:I
+
+    .line 25
+    iput v0, p0, Lcom/meilishuo/app/profile/model/ab;->i:I
+
+    .line 26
+    iput v0, p0, Lcom/meilishuo/app/profile/model/ab;->j:I
+
+    .line 27
+    iput v0, p0, Lcom/meilishuo/app/profile/model/ab;->k:I
+
+    .line 28
+    iput v0, p0, Lcom/meilishuo/app/profile/model/ab;->l:I
+
+    .line 29
+    iput v0, p0, Lcom/meilishuo/app/profile/model/ab;->m:I
+
+    .line 30
+    iput v0, p0, Lcom/meilishuo/app/profile/model/ab;->n:I
+
+    .line 36
+    iput v0, p0, Lcom/meilishuo/app/profile/model/ab;->s:I
+
+    .line 41
+    return-void
+.end method
+
+.method public static a(Lc/c/a/c;)Lcom/meilishuo/app/profile/model/ab;
+    .locals 6
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 1
+    sget-object v0, Lcom/meilishuo/app/profile/model/ab;->t:Lc/b/a/a$a;
+
+    invoke-static {v0, v3, v3, p0}, Lc/b/b/b/b;->a(Lc/b/a/a$a;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lc/b/a/a;
+
+    move-result-object v1
+
+    invoke-static {}, Lcom/meilishuo/app/g/b;->a()Lcom/meilishuo/app/g/b;
+
+    move-result-object v2
+
+    sget-object v4, Lcom/meilishuo/app/profile/model/ab;->t:Lc/b/a/a$a;
+
+    move-object v0, p0
+
+    move-object v5, v1
+
+    invoke-static/range {v0 .. v5}, Lcom/meilishuo/app/profile/model/ab;->a(Lc/c/a/c;Lc/b/a/a;Lcom/meilishuo/app/g/b;Lc/b/b/a/a;Lc/b/a/a$a;Lc/b/a/a;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/meilishuo/app/profile/model/ab;
+
+    return-object v0
+.end method
+
+.method private static final synthetic a(Lc/c/a/c;Lc/b/a/a;)Lcom/meilishuo/app/profile/model/ab;
+    .locals 2
+
+    .prologue
+    .line 44
+    if-nez p0, :cond_0
+
+    .line 45
+    const/4 v0, 0x0
+
+    .line 66
+    :goto_0
+    return-object v0
+
+    .line 48
+    :cond_0
+    new-instance v0, Lcom/meilishuo/app/profile/model/ab;
+
+    invoke-direct {v0}, Lcom/meilishuo/app/profile/model/ab;-><init>()V
+
+    .line 50
+    const-string v1, "user_id"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->a(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/meilishuo/app/profile/model/ab;->a:Ljava/lang/String;
+
+    .line 52
+    const-string v1, "following_num"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->b(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/meilishuo/app/profile/model/ab;->f:I
+
+    .line 53
+    const-string v1, "follower_num"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->b(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/meilishuo/app/profile/model/ab;->g:I
+
+    .line 54
+    const-string v1, "heart_num"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->b(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/meilishuo/app/profile/model/ab;->l:I
+
+    .line 55
+    const-string v1, "groups_num"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->b(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/meilishuo/app/profile/model/ab;->m:I
+
+    .line 56
+    const-string v1, "joined_groups_num"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->b(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/meilishuo/app/profile/model/ab;->s:I
+
+    .line 57
+    const-string v1, "like_num"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->b(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/meilishuo/app/profile/model/ab;->h:I
+
+    .line 58
+    const-string v1, "twitter_num"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->b(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/meilishuo/app/profile/model/ab;->i:I
+
+    .line 59
+    const-string v1, "is_daren"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->b(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/meilishuo/app/profile/model/ab;->n:I
+
+    .line 60
+    const-string v1, "point_num"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->b(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/meilishuo/app/profile/model/ab;->r:I
+
+    .line 61
+    const-string v1, "picture_num"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->b(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/meilishuo/app/profile/model/ab;->j:I
+
+    .line 62
+    const-string v1, "message_num"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->b(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/meilishuo/app/profile/model/ab;->k:I
+
+    .line 63
+    const-string v1, "identity_img"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->a(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/meilishuo/app/profile/model/ab;->o:Ljava/lang/String;
+
+    .line 64
+    const-string v1, "shop_id"
+
+    invoke-static {p0, v1}, Lcom/meilishuo/app/utils/t;->a(Lc/c/a/c;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/meilishuo/app/profile/model/ab;->p:Ljava/lang/String;
+
+    goto/16 :goto_0
+.end method
+
+.method private static final synthetic a(Lc/c/a/c;Lc/b/a/a;Lcom/meilishuo/app/g/b;Lc/b/b/a/a;Lc/b/a/a$a;Lc/b/a/a;)Ljava/lang/Object;
+    .locals 6
+
+    .prologue
+    .line 20
+    :try_start_0
+    invoke-interface {p5}, Lc/b/a/a;->a()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 21
+    invoke-static {v1}, Lcom/meilishuo/app/g/d;->a(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 22
+    invoke-interface {p5}, Lc/b/a/a;->b()Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 23
+    invoke-interface {p5}, Lc/b/a/a;->c()[Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 25
+    invoke-interface {p4}, Lc/b/a/a$a;->a()Lc/b/a/d;
+
+    move-result-object v0
+
+    .line 24
+    check-cast v0, Lc/b/a/a/a;
+
+    .line 25
+    invoke-interface {v0}, Lc/b/a/a/a;->a()[Ljava/lang/Class;
+
+    move-result-object v4
+
+    .line 26
+    invoke-static {v1}, Lcom/meilishuo/app/g/d;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 27
+    const-string v5, "before"
+
+    invoke-virtual {v5, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    .line 28
+    invoke-static {v2, v1, v3, v4}, Lcom/meilishuo/app/g/d;->a(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 30
+    invoke-static {p0, p1}, Lcom/meilishuo/app/profile/model/ab;->a(Lc/c/a/c;Lc/b/a/a;)Lcom/meilishuo/app/profile/model/ab;
+
+    move-result-object v0
+
+    .line 48
+    :goto_0
+    return-object v0
+
+    .line 31
+    :cond_0
+    const-string v5, "replace"
+
+    invoke-virtual {v5, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    .line 32
+    invoke-static {v2, v1, v3, v4}, Lcom/meilishuo/app/g/d;->a(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 34
+    :cond_1
+    const-string v5, "after"
+
+    invoke-virtual {v5, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 36
+    :try_start_1
+    invoke-static {p0, p1}, Lcom/meilishuo/app/profile/model/ab;->a(Lc/c/a/c;Lc/b/a/a;)Lcom/meilishuo/app/profile/model/ab;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    move-result-object v0
+
+    .line 38
+    :try_start_2
+    invoke-static {v2, v1, v3, v4}, Lcom/meilishuo/app/g/d;->a(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/Class;)Ljava/lang/Object;
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
+    goto :goto_0
+
+    .line 45
+    :catch_0
+    move-exception v0
+
+    .line 46
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    .line 48
+    :cond_2
+    invoke-static {p0, p1}, Lcom/meilishuo/app/profile/model/ab;->a(Lc/c/a/c;Lc/b/a/a;)Lcom/meilishuo/app/profile/model/ab;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 37
+    :catchall_0
+    move-exception v0
+
+    .line 38
+    :try_start_3
+    invoke-static {v2, v1, v3, v4}, Lcom/meilishuo/app/g/d;->a(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 40
+    throw v0
+
+    .line 42
+    :cond_3
+    invoke-static {p0, p1}, Lcom/meilishuo/app/profile/model/ab;->a(Lc/c/a/c;Lc/b/a/a;)Lcom/meilishuo/app/profile/model/ab;
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
+
+    move-result-object v0
+
+    goto :goto_0
+.end method
+
+.method private static synthetic a()V
+    .locals 9
+
+    .prologue
+    .line 1
+    new-instance v0, Lc/b/b/b/b;
+
+    const-string v1, "UserStats.java"
+
+    const-class v2, Lcom/meilishuo/app/profile/model/ab;
+
+    invoke-direct {v0, v1, v2}, Lc/b/b/b/b;-><init>(Ljava/lang/String;Ljava/lang/Class;)V
+
+    const-string v8, "method-execution"
+
+    const-string v1, "9"
+
+    const-string v2, "builder"
+
+    const-string v3, "com.meilishuo.app.profile.model.ab"
+
+    const-string v4, "c.c.a.c"
+
+    const-string v5, "object"
+
+    const-string v6, ""
+
+    const-string v7, "com.meilishuo.app.profile.model.ab"
+
+    invoke-virtual/range {v0 .. v7}, Lc/b/b/b/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lc/b/a/a/c;
+
+    move-result-object v1
+
+    const/16 v2, 0x2c
+
+    invoke-virtual {v0, v8, v1, v2}, Lc/b/b/b/b;->a(Ljava/lang/String;Lc/b/a/d;I)Lc/b/a/a$a;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/meilishuo/app/profile/model/ab;->t:Lc/b/a/a$a;
+
+    return-void
+.end method

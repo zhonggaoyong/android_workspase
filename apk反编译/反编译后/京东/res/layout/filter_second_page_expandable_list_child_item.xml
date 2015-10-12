@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/category_child_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/category_child_name_text" android:layout_marginLeft="@dimen/filter_page_space_25" android:layout_centerVertical="true" style="@style/filter_group_item_text_style" />
+    <RadioButton android:id="@id/category_radio_check" android:layout_marginRight="@dimen/filter_page_space_15" style="@style/filter_check_style" />
+</RelativeLayout>

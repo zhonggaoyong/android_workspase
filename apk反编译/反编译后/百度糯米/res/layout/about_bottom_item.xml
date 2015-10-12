@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/about_bg_list_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip" android:minHeight="43.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/about_bottom_item_icon" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_launcher" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/about_item_title" android:id="@id/about_bottom_item_name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_refund" android:layout_toRightOf="@id/about_bottom_item_icon" android:layout_centerVertical="true" />
+    <ImageView android:duplicateParentState="true" android:layout_width="6.0dip" android:layout_height="12.0dip" android:src="@drawable/daren_middle_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

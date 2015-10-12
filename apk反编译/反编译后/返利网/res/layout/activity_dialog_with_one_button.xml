@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/superfan_activity_dialog" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+        <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="@color/superfan_main_text" android:id="@id/tv_dialog_title" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" />
+        <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/superfan_main_text" android:gravity="center" android:id="@id/tv_superfan_presell_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="圣诞节发给个梵蒂冈覆盖度" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:id="@id/line_myfanli" android:background="@drawable/brand_tap_bar_select_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <RelativeLayout android:id="@id/rl_bottom_button" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.fanli.android.view.TangFontTextView android:textSize="15.0sp" android:textColor="@color/superfan_main_text" android:id="@id/tv_bottom_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

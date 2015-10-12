@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.KeepScaleImageView android:id="@id/pic_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.meilishuo.app.views.CustomTextView android:gravity="center" android:id="@id/info" android:layout_marginTop="8.0dip" android:maxLines="1" android:layout_below="@id/pic_img" style="@style/PhotoWallCommentTextStyle" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/price_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/info">
+        <ImageView android:id="@id/pic_iv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/goods_ico_like" />
+        <TextView android:id="@id/pic_like" style="@style/PhotoWallLiKeTextStyle" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_below="@id/price_lay" />
+</RelativeLayout>

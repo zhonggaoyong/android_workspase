@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/withdraw_banklist_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" />
+        <com.meilishuo.app.views.CustomTextView android:textColor="#ff80737b" android:id="@id/bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <com.meilishuo.app.views.CustomTextView android:id="@id/Credit_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="信用卡" />
+            <com.meilishuo.app.views.CustomTextView android:textColor="#ff80737b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+            <com.meilishuo.app.views.CustomTextView android:id="@id/Savings_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="储蓄卡" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/line" android:background="#ffd9d6d7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

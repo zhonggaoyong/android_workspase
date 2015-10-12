@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/my_personal_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/my_divide_line_3" android:layout_marginTop="8.0dip" style="@style/line5" />
+    <RelativeLayout android:id="@id/menu_host_setup" android:visibility="gone" android:clickable="true" style="@style/more_native_setting_layout_style">
+        <com.facebook.drawee.view.SimpleDraweeView android:textColor="@color/black" android:id="@id/more_jd_host_setting_icon" android:background="@drawable/more_setup_icon" android:padding="5.0dip" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+        <TextView android:id="@id/more_jd_host_setting_title" android:text="@string/more_jd_set_host" android:layout_toRightOf="@id/more_jd_host_setting_icon" style="@style/more_native_setting_title_style" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/more_jd_host_setting_arrow" style="@style/more_native_setting_arrow_style" />
+    </RelativeLayout>
+    <View android:id="@id/more_divide_line_2" style="@style/line5" />
+    <RelativeLayout android:id="@id/menu_app_recommond" android:clickable="true" style="@style/more_native_setting_layout_style">
+        <com.facebook.drawee.view.SimpleDraweeView android:textColor="@color/black" android:id="@id/more_jd_app_recommond_icon" android:background="@drawable/more_app_recommend_icon" android:padding="5.0dip" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+        <TextView android:id="@id/more_jd_app_recommond_title" android:text="@string/more_jd_app_recommend" style="@style/more_native_setting_title_style" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/more_jd_app_recommond_arrow" style="@style/more_native_setting_arrow_style" />
+    </RelativeLayout>
+    <View android:id="@id/more_divide_line_4" style="@style/line5" />
+    <RelativeLayout android:id="@id/menu_paper" android:visibility="gone" android:clickable="true" style="@style/more_native_setting_layout_style">
+        <com.facebook.drawee.view.SimpleDraweeView android:textColor="@color/black" android:id="@id/more_jd_paper_icon" android:background="@drawable/more_jdnews_icon" android:padding="5.0dip" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+        <TextView android:id="@id/more_jd_paper_title" android:text="@string/more_jd_paper" style="@style/more_native_setting_title_style" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/more_jd_paper_arrow" style="@style/more_native_setting_arrow_style" />
+    </RelativeLayout>
+    <View android:id="@id/more_divide_line_5" android:visibility="gone" style="@style/line5" />
+    <RelativeLayout android:id="@id/menu_dilivery_promotion" android:visibility="gone" android:clickable="true" style="@style/more_native_setting_layout_style">
+        <com.facebook.drawee.view.SimpleDraweeView android:textColor="@color/black" android:id="@id/more_dilivery_promotion_icon" android:background="@drawable/android_personel_quickly_order" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/more_dilivery_promotion_title" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_jd_app_dilivery_promotion" android:layout_toRightOf="@id/more_dilivery_promotion_icon" android:layout_centerVertical="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/more_dilivery_promotion_arrow" style="@style/more_native_setting_arrow_style" />
+    </RelativeLayout>
+    <View android:id="@id/more_divide_line_7" android:visibility="gone" style="@style/line5" />
+    <RelativeLayout android:id="@id/menu_feedback" android:visibility="gone" android:clickable="true" style="@style/more_native_setting_layout_style">
+        <com.facebook.drawee.view.SimpleDraweeView android:textColor="@color/black" android:id="@id/more_jd_feedback_icon" android:background="@drawable/more_feedback_icon" android:padding="5.0dip" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+        <TextView android:id="@id/more_jd_feedback_title" android:text="@string/more_jd_feedback" style="@style/more_native_setting_title_style" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/more_jd_feedback_arrow" style="@style/more_native_setting_arrow_style" />
+    </RelativeLayout>
+    <View android:id="@id/more_divide_line_9" android:visibility="gone" style="@style/line5" />
+    <RelativeLayout android:id="@id/more_define_new_function" android:background="@drawable/personel_list_item_bg_selector" android:paddingLeft="23.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" style="@style/my_personal_list_height">
+        <com.facebook.drawee.view.SimpleDraweeView android:textColor="@color/black" android:id="@id/more_define_new_function_icon" android:background="@drawable/more_define_function_icon" android:padding="5.0dip" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+        <TextView android:id="@id/more_define_new_function_title" android:text="@string/more_jd_app_define_new_function" style="@style/more_native_setting_title_style" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/more_define_new_function_arrow" style="@style/more_native_setting_arrow_style" />
+    </RelativeLayout>
+    <View android:id="@id/more_divide_line_10" android:visibility="gone" style="@style/line5" />
+    <RelativeLayout android:id="@id/menu_version" android:background="@drawable/personel_list_item_bg_selector" android:paddingLeft="23.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" style="@style/my_personal_list_height">
+        <com.facebook.drawee.view.SimpleDraweeView android:textColor="@color/black" android:id="@id/more_jd_version_icon" android:background="@drawable/more_update_icon" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/more_jd_version_title" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_jd_version" android:layout_toRightOf="@id/more_jd_version_icon" android:layout_centerVertical="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/more_jd_version_arrow" style="@style/more_native_setting_arrow_style" />
+    </RelativeLayout>
+    <View android:id="@id/more_divide_line_11" android:visibility="gone" style="@style/line5" />
+    <RelativeLayout android:id="@id/menu_about" android:clickable="true" style="@style/more_native_setting_layout_style">
+        <com.facebook.drawee.view.SimpleDraweeView android:textColor="@color/black" android:id="@id/more_jd_about_icon" android:background="@drawable/more_about_icon" android:padding="5.0dip" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/none" />
+        <TextView android:id="@id/more_jd_about_title" android:text="@string/more_jd_about" style="@style/more_native_setting_title_style" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/more_jd_about_arrow" style="@style/more_native_setting_arrow_style" />
+    </RelativeLayout>
+    <View android:id="@id/more_divide_line_12" style="@style/line5" />
+</LinearLayout>

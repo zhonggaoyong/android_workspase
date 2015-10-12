@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/rootView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/pd_card_bg_1" android:padding="@dimen/pd_space_width_15" android:clickable="true" android:layout_width="135.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pd_space_width_12">
+                <View android:background="@drawable/pd_deliver_h" android:layout_width="0.0dip" android:layout_height="1.0px" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/pd_txt_size_small" android:textColor="#ffb2b2b2" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pd_browse_history" />
+                <View android:background="@drawable/pd_deliver_h" android:layout_width="0.0dip" android:layout_height="1.0px" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ListView android:id="@id/listView_1" android:divider="@color/transparent" android:dividerHeight="0.0dip" style="@style/listView" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

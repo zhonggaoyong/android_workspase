@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/splite_view" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="13.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:gravity="center" android:id="@id/item_tv" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="上海虹桥" android:layout_alignParentLeft="true" android:layout_alignParentTop="false" />
+        <TextView android:background="@drawable/flight_filter_circle_selector" android:paddingLeft="10.0dip" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View style="@style/travel_view_splite_h" />
+</LinearLayout>

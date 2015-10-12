@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/firstlinearlayout" android:background="@drawable/more_item_first_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="15.0sp" android:textColor="@color/hint_text_color" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="劵号：" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/tv_virtual_group_tickets_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="2.0dip" android:singleLine="true" android:layout_toLeftOf="@id/groupbuy_order_item_btn" android:layout_toRightOf="@id/textView2" android:layout_alignBaseline="@id/textView2" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/hint_text_color" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="状态：" android:singleLine="true" android:layout_below="@id/textView2" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/price_text_color" android:id="@id/tv_virtual_group_tickets_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:singleLine="true" android:layout_toRightOf="@id/textView1" android:layout_alignBaseline="@id/textView1" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <Button android:textSize="@dimen/default_text_size" android:textColor="@color/groupbuy_sms_btn_text_color_selector" android:id="@id/bt_virtual_group_tickets_sms" android:background="@drawable/group_tickets_item_bt_bg_selector" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="35.0dip" android:text="发短信" />
+                <Button android:textSize="@dimen/default_text_size" android:textColor="@color/main_default_black_text_color" android:id="@id/bt_virtual_group_tickets_refund" android:background="@drawable/group_tickets_item_bt_bg_selector" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:text="退款" />
+                <Button android:textSize="@dimen/default_text_size" android:textColor="@color/main_default_black_text_color" android:id="@id/bt_virtual_group_tickets_buy" android:background="@drawable/group_tickets_item_bt_bg_selector" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="35.0dip" android:text="再次购买" android:layout_centerVertical="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/lastlinearlayout" android:background="@drawable/more_item_last_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="80.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/img_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/mygome_myorder_list_item_right_imageView1">
+            <ImageView android:id="@id/group_buy_item_img" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/phone_recharge_item_bg" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:id="@id/group_buy_order_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/img_layout">
+            <TextView android:textSize="15.0sp" android:textColor="@color/hint_text_color" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购买日期：" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/hint_text_color" android:id="@id/tv_virtual_group_tickets_buy_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/textView5" android:layout_alignParentTop="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/hint_text_color" android:id="@id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="到期日期：" android:layout_below="@id/textView5" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/hint_text_color" android:id="@id/tv_virtual_group_tickets_expire_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/textView7" android:layout_below="@id/textView5" android:layout_alignTop="@id/textView7" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

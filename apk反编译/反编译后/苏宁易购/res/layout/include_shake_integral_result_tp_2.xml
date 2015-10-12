@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/result_page_width" android:layout_height="@dimen/result_page_height">
+        <View android:id="@id/v_shake_base" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/result_page_textSize" android:textColor="@color/shake_white" android:gravity="center" android:id="@id/tv_shake_result_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/result_tp_2_1_marginLeft" android:layout_marginRight="@dimen/result_tp_2_1_marginRight" android:layout_marginBottom="@dimen/result_tp_2_1_marginBottom" android:layout_above="@id/v_shake_base" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/result_page_textSize" android:textColor="@color/shake_sky_blue" android:gravity="center" android:id="@id/tv_shake_result_4" android:background="@drawable/shake_integral_button_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/result_tp_2_2_marginLeft" android:layout_marginRight="@dimen/result_tp_2_2_marginRight" android:layout_marginBottom="@dimen/result_tp_2_2_marginBottom" android:layout_below="@id/v_shake_base" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

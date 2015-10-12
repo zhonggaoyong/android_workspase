@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/od_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/common_title_layout" />
+    <ScrollView android:id="@id/od_sv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_top_layout">
+        <LinearLayout android:orientation="vertical" android:id="@id/od_body" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <RelativeLayout android:id="@id/order_detail_footer" android:background="@drawable/phonerechare_submit_bottom_bg" android:paddingLeft="@dimen/od_frame_padding" android:paddingRight="@dimen/od_frame_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/od_font_13" android:textColor="@color/main_default_black_text_color" android:id="@id/od_order_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应付金额：" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="@dimen/od_font_13" android:id="@id/yb_buttons" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="90.0dip" android:layout_height="wrap_content" android:text="立即支付" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Gome.Button.StrokeRed.Style" />
+    </RelativeLayout>
+</RelativeLayout>

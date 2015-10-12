@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/category_name_text" android:layout_marginLeft="@dimen/filter_page_space_15" style="@style/filter_group_item_text_style" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/category_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/filter_page_space_15" android:src="@drawable/filter_down" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

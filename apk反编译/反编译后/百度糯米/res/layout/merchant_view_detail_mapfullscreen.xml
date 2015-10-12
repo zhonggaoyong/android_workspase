@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/merchant_detail_topview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.mapapi.map.MapView android:id="@id/merchant_detail_mapview" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/merchant_detail_basicinfoview" />
+    <RelativeLayout android:id="@id/merchant_detail_basicinfoview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/merchant_name" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="全聚德(西二旗店)" android:layout_toLeftOf="@id/merchant_distance" />
+        <TextView android:id="@id/merchant_distance" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.4km" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:id="@id/merchant_address" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="北京市还定去西三旗桥东新都东路1号" android:layout_below="@id/merchant_name" />
+        <TextView android:id="@id/merchant_metro_distance" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="距离地铁13号线西二旗站773m" android:layout_below="@id/merchant_address" />
+        <View android:id="@id/merchant_detail_mode2_line1" android:background="@drawable/list_row_normal" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/merchant_metro_distance" />
+        <LinearLayout android:gravity="center" android:id="@id/merchant_navigation_mode2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/merchant_detail_mode2_line2" android:layout_below="@id/merchant_detail_mode2_line1">
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看路线" android:drawableLeft="@drawable/ic_launcher" />
+        </LinearLayout>
+        <View android:id="@id/merchant_detail_mode2_line2" android:background="@drawable/list_row_normal" android:layout_width="1.0px" android:layout_height="50.0dip" android:layout_below="@id/merchant_detail_mode2_line1" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:id="@id/merchant_telephone_mode2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/merchant_detail_mode2_line2" android:layout_below="@id/merchant_detail_mode2_line1">
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="86749597" android:drawableLeft="@drawable/ic_launcher" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

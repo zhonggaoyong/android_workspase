@@ -1,0 +1,20 @@
+version: 2.0.0-RC3
+apkFileName: baidunuomi.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '8'
+  targetSdkVersion: '18'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '144'
+  versionName: '@string/version_name'
+compressionType: false
+unknownFiles:
+  com/baidu/cloudsdk/assets/social/core/config.json: '8'
+  com/baidu/cloudsdk/assets/social/share/config.json: '8'
+  com/sina/weibo/sdk/net/cacert.cer: '8'
+  com/tencent/mm/sdk/platformtools/rep5402863540997075488.tmp: '0'

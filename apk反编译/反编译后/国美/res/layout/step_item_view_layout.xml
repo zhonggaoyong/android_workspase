@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="68.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ffd2d2d2" android:gravity="center" android:id="@id/step_item_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/main_default_white_text_color" android:gravity="center" android:id="@id/step_item_view_number" android:background="@drawable/icon_yuan_ritht_hui" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_centerHorizontal="true" />
+        <View android:id="@id/step_item_view_left_line" android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_toLeftOf="@id/step_item_view_number" android:layout_centerVertical="true" />
+        <View android:id="@id/step_item_view_right_line" android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_toRightOf="@id/step_item_view_number" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

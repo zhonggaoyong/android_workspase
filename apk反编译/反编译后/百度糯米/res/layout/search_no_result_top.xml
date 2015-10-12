@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/search_no_result" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/search_no_result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="search_no_result_title" android:singleLine="true" />
+        <TextView android:gravity="center" android:layout_gravity="center_vertical" android:background="@color/poi_divide" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:text="sdfsfsfsfs" />
+    </LinearLayout>
+    <View android:background="@color/poi_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</merge>

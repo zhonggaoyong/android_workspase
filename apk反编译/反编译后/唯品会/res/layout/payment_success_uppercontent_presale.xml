@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/first_step_layout" android:layout_width="@dimen/payment_success_btn_green" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:layout_marginBottom="-6.0dip" android:layout_above="@id/second_step_layout" android:layout_alignTop="@id/first_step_text">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/payment_success_btn_green" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/first_step_image_green" android:visibility="gone" android:layout_width="@dimen/payment_success_btn_green" android:layout_height="@dimen/payment_success_btn_green" android:src="@drawable/icon_presale_step_success" />
+                <ImageView android:id="@id/first_step_image_gray" android:visibility="gone" android:layout_width="@dimen/payment_success_btn_gray" android:layout_height="@dimen/payment_success_btn_gray" android:layout_marginTop="6.0dip" android:src="@drawable/pay_icon_graycircle" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/first_step_line" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/step1_line" android:background="@color/divider" android:layout_width="2.0dip" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/second_step_layout" android:layout_width="@dimen/payment_success_btn_green" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:layout_marginBottom="-6.0dip" android:layout_above="@id/third_step_layout" android:layout_alignTop="@id/second_step_text">
+            <LinearLayout android:gravity="top|center" android:orientation="vertical" android:layout_width="@dimen/payment_success_btn_green" android:layout_height="wrap_content">
+                <ImageView android:id="@id/second_step_image_green" android:visibility="gone" android:layout_width="@dimen/payment_success_btn_green" android:layout_height="@dimen/payment_success_btn_green" android:src="@drawable/icon_presale_step_success" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/second_step_image_gray" android:visibility="gone" android:layout_width="@dimen/payment_success_btn_gray" android:layout_height="@dimen/payment_success_btn_gray" android:layout_marginTop="6.0dip" android:src="@drawable/pay_icon_graycircle" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/second_step_line" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                <View android:id="@id/step2_line" android:background="@color/divider" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="top|center" android:orientation="vertical" android:id="@id/third_step_layout" android:layout_width="@dimen/payment_success_btn_green" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:layout_alignTop="@id/third_step_text">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/third_step_image_green" android:visibility="gone" android:layout_width="@dimen/payment_success_btn_green" android:layout_height="@dimen/payment_success_btn_green" android:src="@drawable/icon_presale_step_success" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/third_step_image_gray" android:visibility="gone" android:layout_width="@dimen/payment_success_btn_gray" android:layout_height="@dimen/payment_success_btn_gray" android:layout_marginTop="6.0dip" android:src="@drawable/pay_icon_graycircle" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/app_text_new_black" android:id="@id/first_step_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="30.0dip" android:text="" android:layout_toRightOf="@id/first_step_layout" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/app_text_black" android:id="@id/first_step_des" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="" android:layout_below="@id/first_step_text" android:layout_alignLeft="@id/first_step_text" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/app_text_black" android:id="@id/second_step_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:text="" android:layout_toRightOf="@id/second_step_layout" android:layout_below="@id/first_step_des" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/app_text_black" android:id="@id/second_step_des" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="" android:layout_below="@id/second_step_text" android:layout_alignLeft="@id/second_step_text" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/app_text_black" android:id="@id/third_step_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:text="" android:layout_toRightOf="@id/third_step_layout" android:layout_below="@id/second_step_des" />
+    </RelativeLayout>
+</RelativeLayout>

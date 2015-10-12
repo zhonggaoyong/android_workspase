@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/faxian_no_wifi" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jd_tip_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/base_ui_jd_tip_page_text1_size" android:textColor="@color/c_BFBFBF" android:gravity="center" android:id="@id/jd_tip_tv1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/base_ui_jd_tip_page_text2_size" android:textColor="@color/c_BFBFBF" android:gravity="center" android:id="@id/jd_tip_tv2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_ui_jd_tip_page_text_margin_top" android:singleLine="true" />
+        <Button android:textSize="@dimen/base_ui_jd_tip_page_button_text_size" android:textColor="@color/c_686868" android:id="@id/jd_tip_button" android:background="@drawable/faxian_error_btn_selector" android:paddingLeft="@dimen/base_ui_jd_tip_page_button_paddingLeft" android:paddingTop="@dimen/base_ui_jd_tip_page_button_paddingTop" android:paddingRight="@dimen/base_ui_jd_tip_page_button_paddingRight" android:paddingBottom="@dimen/base_ui_jd_tip_page_button_paddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_ui_jd_tip_page_button_margin_top" />
+    </LinearLayout>
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/faxian_entry_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_title">
+        <View android:id="@id/faxian_top_devider" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <ListView android:id="@id/faxian_service_list" android:background="@drawable/none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#ffe5e5e5" android:dividerHeight="0.5dip" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+        <View android:id="@id/faxian_footer_devider" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+</RelativeLayout>

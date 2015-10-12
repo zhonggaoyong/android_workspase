@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/similar_recommendation_content" android:background="@drawable/product_list_item_selector" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cart_single_product_image_item" android:background="@drawable/shopping_cart_product_icon_bg" android:padding="1.0px" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        <RelativeLayout android:id="@id/cart_single_product_detail_layout_item" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.jingdong.common.ui.CustomTextViewNoEnter android:textSize="@dimen/combine_order_product_name_textsize" android:textColor="@color/cart_color_252525" android:ellipsize="end" android:id="@id/cart_single_product_name_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/combine_order_product_price_textsize" android:textColor="@color/category_new_red_font" android:ellipsize="end" android:id="@id/cart_single_product_price_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.5dip" android:singleLine="true" android:layout_below="@id/cart_single_product_name_item" android:layout_alignParentLeft="true" />
+            <RelativeLayout android:id="@id/btn_shop_cart_layout" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <ImageButton android:id="@id/btn_shop_cart" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_cart" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_gravity="center_horizontal" android:id="@id/shopping_cart_edit_devider" android:background="@color/similar_recommendation_divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="8.0dip" />
+    <View android:id="@id/blank_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+</LinearLayout>

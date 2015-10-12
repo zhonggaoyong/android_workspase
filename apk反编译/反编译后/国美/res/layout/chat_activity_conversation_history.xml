@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <include android:id="@id/rl_error_item" android:visibility="gone" layout="@layout/chat_neterror_item" />
+    <FrameLayout android:id="@id/flt_root_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

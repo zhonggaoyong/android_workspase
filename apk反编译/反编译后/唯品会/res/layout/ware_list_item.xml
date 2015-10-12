@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/warehouse_header_text" android:gravity="center_vertical" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="52.0dip" />
+    <View android:id="@id/diver" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

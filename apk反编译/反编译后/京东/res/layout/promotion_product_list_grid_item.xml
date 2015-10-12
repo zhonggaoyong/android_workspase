@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/promotion_product_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:image="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.app.mall.utils.ui.JDImageView android:id="@id/promotion_product_list_gridview_item_image" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" image:ratio="1.0" />
+    <RelativeLayout android:background="@drawable/promotion_product_list_gridview_item_bitmap_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/promotion_product_list_gridview_item_image">
+        <TextView android:textColor="@android:color/white" android:id="@id/promotion_product_list_gridview_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip" android:singleLine="true" />
+        <TextView android:textColor="#fff2c225" android:id="@id/promotion_product_list_gridview_item_jd_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_below="@id/promotion_product_list_gridview_item_name" />
+    </RelativeLayout>
+</RelativeLayout>

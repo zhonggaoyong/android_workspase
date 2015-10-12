@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@color/select_team_bg" />
+    <item android:state_enabled="false" android:drawable="@color/select_team_disable_bg" />
+    <item android:state_enabled="true" android:state_checked="false" android:drawable="@color/select_team_enable_bg" />
+</selector>

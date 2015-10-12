@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/jshop_m_text" style="@style/JshopALLTemplate"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/jshop_m_text_lay" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jshop_m_text_marginl" android:layout_marginTop="@dimen/jshop_m_text_margint" android:layout_marginRight="@dimen/jshop_m_text_marginr" android:layout_marginBottom="@dimen/jshop_m_text_marginb">
+        <TextView android:textSize="14.0dip" android:textColor="@color/jshop_m_text_color" android:ellipsize="end" android:layout_gravity="center" android:id="@id/jshop_promo_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:layout_weight="1.0" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/jshop_m_promotext_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jshop_m_text_padding_icon" android:src="@drawable/jshop_list_back" android:layout_weight="6.0" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/JshopALLProductSpliteLine" />
+</LinearLayout>

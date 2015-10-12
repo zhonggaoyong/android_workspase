@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/guess_you_like_top_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <LinearLayout android:background="#ffd2d2d2" android:padding="1.0px" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/guess_you_like_top_image" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="#ffd8d8d8" android:scaleType="centerCrop" />
+            </LinearLayout>
+            <com.gome.ecmall.custom.LineTextView android:textSize="12.0sp" android:textColor="#ff2d3238" android:id="@id/guess_you_like_top_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:maxWidth="80.0dip" android:maxLines="2" android:minLines="2"
+              xmlns:pl="http://schemas.android.com/apk/res/com.gome.eshopnew" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/product_price_red_color" android:layout_gravity="center_horizontal" android:id="@id/guess_you_like_top_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

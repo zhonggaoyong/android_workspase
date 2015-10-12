@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="banner_dot_selected_color">#ffffffff</color>
+    <color name="banner_dot_unselected_color">#7fffffff</color>
+    <color name="home_category_dot_selected_color">#ffff4683</color>
+    <color name="home_category_dot_unselected_color">#ff88888d</color>
+</resources>

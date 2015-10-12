@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/share_pengyouq" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/post_ico_pengyouq" android:layout_weight="1.0" />
+    <ImageView android:id="@id/share_weixin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/post_ico_weixin" android:layout_weight="1.0" />
+    <ImageView android:id="@id/share_ins" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/post_ico_ins" android:layout_weight="1.0" />
+    <ImageView android:id="@id/share_sina" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/post_ico_sina" android:layout_weight="1.0" />
+    <ImageView android:id="@id/share_album" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/post_ico_save" android:layout_weight="1.0" />
+</LinearLayout>

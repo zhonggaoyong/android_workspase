@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/shopping_cart_layout_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_shopping_cart_header" android:background="@drawable/common_title_background" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="left|center" android:id="@id/title_back" android:paddingLeft="15.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_title_back_selector" />
+        <TextView android:layout_gravity="center" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_cart_header" android:singleLine="true" style="@style/common_layout_title" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right|center" android:orientation="horizontal" android:id="@id/shopping_cart_delete_right" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:layout_gravity="left|center" android:id="@id/shopping_cart_edit_devider" android:background="#ffc93641" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip" />
+            <TextView android:textSize="@dimen/common_title_right_text_size" android:textColor="@color/common_title_right_textview_color" android:layout_gravity="center_vertical" android:id="@id/shopping_cart_text" android:paddingLeft="15.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/shopping_cart_product_edit" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/cart_loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_shopping_cart_header">
+        <com.jingdong.app.mall.utils.ui.LastSectionExpandListView android:id="@id/shopping_cart_list" android:background="@color/cart_group_top_bg" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/cart_new_bg" android:cacheColorHint="@color/cart_new_bg" />
+        <include android:id="@id/cart_empty_main_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/cart_test_vertical" />
+        <include android:id="@id/shopping_cart_count_price_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:layout_alignParentBottom="true" layout="@layout/shopping_cart_price_layout" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cart_scroll_to_top" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="65.0dip" android:src="@drawable/cart_scroll_top_selector" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

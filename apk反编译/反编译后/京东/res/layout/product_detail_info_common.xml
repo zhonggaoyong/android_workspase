@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/pd_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/detail_common_top_divider" style="@style/pd_divider_style" />
+    <TextView android:id="@id/detail_common_title" android:layout_marginLeft="@dimen/pd_space_width_10" android:layout_marginTop="@dimen/pd_space_width_15" style="@style/pd_title_text_style" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/detail_common_arrow" android:paddingBottom="@dimen/pd_space_width_15" android:layout_marginLeft="@dimen/pd_space_width_5" android:layout_marginTop="@dimen/pd_space_width_16" android:layout_marginRight="@dimen/pd_space_width_10" android:layout_alignParentRight="true" style="@style/pd_arrow_img_style" />
+    <TextView android:textSize="@dimen/pd_txt_size_middle" android:textColor="@color/pd_gray" android:ellipsize="end" android:id="@id/detail_common_content" android:paddingBottom="@dimen/pd_space_width_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pd_space_width_15" android:layout_marginRight="@dimen/pd_space_width_5" android:singleLine="true" android:layout_toLeftOf="@id/detail_common_arrow" android:layout_toRightOf="@id/detail_common_title" style="@style/pd_content_text_style" />
+    <View android:id="@id/detail_common_bottom_divider" android:layout_alignParentBottom="true" style="@style/pd_divider_style" />
+</RelativeLayout>

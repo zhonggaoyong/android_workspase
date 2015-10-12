@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/shopping_yanbao_dialog_main" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/shopping_yanbao_main" android:background="@color/cart_new_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="@color/pd_black_25" android:layout_gravity="center_horizontal" android:id="@id/raise_up_header_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="11.0dip" android:text="延保服务" />
+        <View android:background="@drawable/shopping_cart_raise_up_horizontal_line" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ScrollView android:id="@id/yan_bao_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/yan_bao_content_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </ScrollView>
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/yan_bao_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="160.0dip" android:text="@string/no_data" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/raise_up_footer" android:background="@color/cart_bottom_show_view_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/raise_up_footer_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/raise_up_footer_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已选0种延保服务" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/raise_up_dialog_close" android:background="#fff15353" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/cart_settle_accounts_but" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_head" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+            <com.meilishuo.app.views.CustomTextView android:id="@id/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="10.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/icon" android:background="@drawable/evaluation_success_ico" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="#ff595056" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="感谢您的评价！" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/shaidan_layout" android:background="#ffffffff" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#30000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ff595056" android:id="@id/alert_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/show_shaidan" android:background="@drawable/btn_done_bg" android:paddingLeft="20.0dip" android:paddingTop="3.0dip" android:paddingRight="20.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="9.0dip">
+                <ImageView android:background="@drawable/me_ico_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="#ff595056" android:id="@id/btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="我要晒单" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

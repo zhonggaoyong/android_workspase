@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/coupon_list_title" layout="@layout/jshop_title" />
+    <com.jingdong.common.coupons.OuterScrollView android:id="@id/coupon_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/coupon_list_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.jingdong.common.coupons.CouponFigureView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="88.0dip" />
+            <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/coupon_sub_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:id="@id/coupon_sub_title_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="每日抢券" />
+                <View android:layout_width="0.0dip" android:layout_height="5.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="13.0dip" android:textColor="#ff686868" android:id="@id/coupon_sub_title_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="每日更新5张精品券，手慢无哟！" />
+            </LinearLayout>
+            <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.jingdong.common.ui.JDListView android:id="@id/coupon_list" android:background="@color/c_F3F5F7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/none" android:dividerHeight="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/coupon_filter" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/coupon_filter1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0dip" android:textColor="#ff252525" android:id="@id/coupon_filter1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠金额" />
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/coupon_double_arrow" android:background="@drawable/coupon_double_arrow_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+                    </LinearLayout>
+                    <View android:background="#ffe0e0e0" android:layout_width="1.0px" android:layout_height="14.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/coupon_filter2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0dip" android:textColor="#ff252525" android:id="@id/coupon_filter2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="满额金额" />
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/coupon_filter2_iv" android:background="@drawable/coupon_arrow_down_big_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+                    </LinearLayout>
+                    <View android:background="#ffe0e0e0" android:layout_width="1.0px" android:layout_height="14.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/coupon_filter3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0dip" android:textColor="#ff252525" android:id="@id/coupon_filter3_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="筛选" />
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/coupon_filter3_iv" android:background="@drawable/coupon_arrow_down_big_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="1.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/coupon_bottom_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/coupon_empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.jingdong.common.coupons.InnerListView android:id="@id/coupon_grid" android:background="@color/c_F3F5F7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:listSelector="@drawable/none" android:numColumns="2" android:divider="@drawable/none" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.jingdong.common.coupons.OuterScrollView>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/snap_to_top" android:paddingRight="12.0dip" android:paddingBottom="18.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_to_top_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

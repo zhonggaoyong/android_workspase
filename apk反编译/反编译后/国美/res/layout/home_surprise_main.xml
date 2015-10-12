@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_default_white_text_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gome.ecmall.custom.PagerSlidingTabStrip android:layout_gravity="center_horizontal" android:id="@id/scrollableTabView" android:layout_width="wrap_content" android:layout_height="50.0dip" app:pstsSelectTextColor="#ffef3030" app:pstsNormalTextColor="#ff494d55" app:pstsIndicatorColor="@color/cf_text_red" app:pstsUnderlineColor="@color/setting_activity_line_color" app:pstsDividerColor="#00000000" app:pstsIndicatorHeight="0.0dip" app:pstsUnderlineHeight="0.0dip" app:pstsTabPaddingLeftRight="20.0dip" app:pstsShouldExpand="true" />
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <android.support.v4.view.ViewPager android:id="@id/vp_surprise" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

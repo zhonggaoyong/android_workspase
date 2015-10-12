@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list apk:oneshot="false"
+  xmlns:apk="http://schemas.android.com/apk/res/android">
+    <item apk:duration="150" apk:drawable="@drawable/icon_xiaoma_gif01_hdpi" />
+    <item apk:duration="150" apk:drawable="@drawable/icon_xiaoma_gif02_hdpi" />
+    <item apk:duration="150" apk:drawable="@drawable/icon_xiaoma_gif03_hdpi" />
+    <item apk:duration="150" apk:drawable="@drawable/icon_xiaoma_gif04_hdpi" />
+    <item apk:duration="150" apk:drawable="@drawable/icon_xiaoma_gif05_hdpi" />
+</animation-list>

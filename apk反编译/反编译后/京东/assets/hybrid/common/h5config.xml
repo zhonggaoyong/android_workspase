@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modules versionName="1.0">
+    <module moduleCode="shopDynamic2" versionCode="1.0" />
+    <module moduleCode="flightDetail" versionCode="1.0" />
+</modules>

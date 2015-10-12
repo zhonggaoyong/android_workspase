@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.suning.mobile.ebuy.view.component.MyScrollView android:id="@id/wholeScrollView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="200.0dip">
+                <EditText android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/black" android:textColorHint="@color/evaluate_hint_color" android:gravity="top" android:id="@id/evaGoodsEdit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxHeight="96.0dip" android:hint="@string/evalute_use_len_tips" android:maxLength="500" android:inputType="textMultiLine" android:imeOptions="actionSend|flagNoEnterAction" />
+            </LinearLayout>
+            <TextView android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="@dimen/storeline_height" />
+            <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <RelativeLayout android:id="@id/productSatisLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/ios_public_textsize_26pt" android:textColor="@color/pub_color_three" android:id="@id/productSatisTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/product_satisfaction" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <RatingBar android:id="@id/productSatisRating" android:clickable="true" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="20.0dip" android:numStars="5" android:rating="5.0" android:stepSize="1.0" android:layout_toRightOf="@id/productSatisTv" android:layout_centerVertical="true" style="@style/order_evaluate_rating_bar" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/logisticsSatisLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_20px">
+                    <TextView android:textSize="@dimen/ios_public_textsize_26pt" android:textColor="@color/pub_color_three" android:id="@id/logisticsSatisTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="物流满意度" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <RatingBar android:id="@id/logisticsSatisRating" android:clickable="true" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="20.0dip" android:numStars="5" android:rating="5.0" android:stepSize="1.0" android:layout_toRightOf="@id/logisticsSatisTv" android:layout_centerVertical="true" style="@style/order_evaluate_rating_bar" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/salesclerkSatisLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_20px">
+                    <TextView android:textSize="@dimen/ios_public_textsize_26pt" android:textColor="@color/pub_color_three" android:id="@id/salesclerkSatisTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="服务满意度" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <RatingBar android:id="@id/salesclerkSatisRating" android:clickable="true" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="20.0dip" android:numStars="5" android:rating="5.0" android:stepSize="1.0" android:layout_toRightOf="@id/salesclerkSatisTv" android:layout_centerVertical="true" style="@style/order_evaluate_rating_bar" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/noNameLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/android_public_space_40px" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                <CheckBox android:id="@id/evaNonameCheck" android:background="@drawable/evaluate_order_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="28.0dip" android:layout_height="28.0dip" android:checked="false" android:button="@null" />
+                <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_three" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/anonymous_evaluation" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.suning.mobile.ebuy.view.component.MyScrollView>
+</LinearLayout>

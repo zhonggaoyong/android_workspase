@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/user_course_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    <com.gome.ecmall.custom.PageIndicator android:id="@id/user_course_page_indictor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="37.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" indicatorColor:normalColor="@drawable/home_focus_indicator_nomal_circle_shape" indicatorColor:selectColor="@drawable/home_focus_indicator_select_circle_shape" indicatorColor:indicatorSize="6.0dip" indicatorColor:indicatorSpacing="4.0dip"
+      xmlns:indicatorColor="http://schemas.android.com/apk/res/com.gome.eshopnew" />
+</RelativeLayout>

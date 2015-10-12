@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/payonstore_llayout" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/shopping_goods_order_payonstore_tradeName" style="@style/shopping_cart_order_success_bottommsg" />
+        <TextView android:id="@id/shopping_goods_order_payonstore_tradeName_tv" android:layout_marginLeft="7.0dip" style="@style/shopping_cart_order_success_bottommsg" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+        <TextView android:text="@string/shopping_goods_order_payonstore_address" style="@style/shopping_cart_order_success_bottommsg" />
+        <TextView android:id="@id/shopping_goods_order_payonstore_address_tv" android:layout_marginLeft="7.0dip" style="@style/shopping_cart_order_success_bottommsg" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+        <TextView android:text="@string/shopping_goods_order_payonstore_phoneNumber" style="@style/shopping_cart_order_success_bottommsg" />
+        <TextView android:id="@id/shopping_goods_order_payonstore_phoneNumber_tv" android:layout_marginLeft="7.0dip" style="@style/shopping_cart_order_success_bottommsg" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" layout="@layout/shopping_cart_order_success_checkstand_skiplayout" />
+</LinearLayout>

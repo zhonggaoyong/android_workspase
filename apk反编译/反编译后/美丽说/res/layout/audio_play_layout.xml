@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/index_voice_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/audioplay_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <com.meilishuo.app.views.CustomPageLoading android:layout_gravity="center_vertical" android:id="@id/audioplay_loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/circle_sendprogress" style="?android:attr/progressBarStyleSmall" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/audioplay_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#ffff7a9a" android:id="@id/audioplay_duration" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

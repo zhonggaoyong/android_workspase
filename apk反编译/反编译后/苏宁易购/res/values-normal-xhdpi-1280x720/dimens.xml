@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_filter_margin_left">80.0dip</dimen>
+    <dimen name="shake_rule_textSize">19.0sp</dimen>
+    <dimen name="shake_middle_marginTop">75.0dip</dimen>
+    <dimen name="shake_foot_marginTop">-48.0dip</dimen>
+    <dimen name="shake_foot_marginBottom">25.0dip</dimen>
+</resources>

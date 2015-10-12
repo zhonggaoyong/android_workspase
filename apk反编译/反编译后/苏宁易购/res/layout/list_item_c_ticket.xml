@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.suning.mobile.ebuy.utils.subpage.FlipTicketView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_ft_front" android:background="@drawable/item_bg_my_tickets" android:paddingLeft="30.0dip" android:paddingTop="17.0dip" android:paddingRight="30.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/ticket_serialNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123456789" />
+            <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_marginTop="5.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_seven" android:id="@id/tv_value_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/global_yuan" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/pub_color_seven" android:id="@id/ticket_strParValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" android:layout_toRightOf="@id/tv_value_unit" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/pub_color_nine" android:gravity="center" android:id="@id/ticket_endDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="2011/22/11-2012/11/11" android:drawableRight="@drawable/icon_ticket_more" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_marginTop="5.0dip" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:ellipsize="end" android:id="@id/ticket_use_rule" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="全额抵用" android:singleLine="true" android:layout_toLeftOf="@id/tv_ticket_use" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_ticket_use" android:background="@drawable/btn_act_myebuy_ticket_use" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即使用" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/ticket_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="全额抵用" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_ft_back" android:background="@drawable/item_bg_my_tickets" android:paddingLeft="30.0dip" android:paddingTop="17.0dip" android:paddingRight="30.0dip" android:paddingBottom="20.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/ticket_serialNumber2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123456789" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/pub_color_nine" android:gravity="center" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有效期：" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/pub_color_nine" android:gravity="center" android:layout_gravity="right" android:id="@id/ticket_endDate2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2011/22/11-2012/11/11" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="5.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/ticket_rule_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="" android:drawableRight="@drawable/icon_ticket_more" />
+    </LinearLayout>
+</com.suning.mobile.ebuy.utils.subpage.FlipTicketView>

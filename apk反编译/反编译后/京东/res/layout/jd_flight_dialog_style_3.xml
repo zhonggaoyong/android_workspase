@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/base_ui_jd_dialog_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/jd_dialog_message" android:paddingTop="@dimen/fill_order_layout_20dp" android:paddingBottom="@dimen/fill_order_layout_20dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="请拨打客服电话" />
+    <View android:background="@drawable/jd_dialog_common_divider" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="-1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="#fff15353" android:gravity="center" android:id="@id/jd_dialog_message2" android:paddingTop="@dimen/fill_order_layout_20dp" android:paddingBottom="@dimen/fill_order_layout_20dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="400-611-5718" />
+</LinearLayout>

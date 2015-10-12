@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/homescrollview" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/home_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/fl_home_floor_divider" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/home_floor_bottom" android:visibility="gone" layout="@layout/home_floor_bottom_layout" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_guesslike_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.suning.mobile.ebuy.home.homefloor.ui.GuessLikeListView android:id="@id/guesslike_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/fl_home_floor_footer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/include_guesslike_bottom" android:visibility="gone" layout="@layout/guess_like_bottom_layout" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/home_searchbar" android:background="@drawable/home_searchbar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_fifty_five" android:layout_marginTop="@dimen/home_searchbar_margintop">
+        <include layout="@layout/view_home_searchbar" />
+    </RelativeLayout>
+    <View android:background="@drawable/search_top_bg" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_96px" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="@dimen/shopping_cart_coupon_width" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content" android:background="@drawable/coupon_bg" android:layout_width="100.0dip" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:id="@id/title_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <com.meilishuo.app.views.BaselineCustomTextView android:textSize="16.0sp" android:textColor="@color/yellow_d2" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="￥" />
+                <com.meilishuo.app.views.BaselineCustomTextView android:textSize="26.0sp" android:textColor="@color/yellow_d2" android:id="@id/first_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" />
+            </LinearLayout>
+            <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textStyle="normal" android:textColor="@color/yellow_d2" android:ellipsize="end" android:id="@id/second_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="1.0dip" android:text="满300元减sdafjadlkfjlksadjflksadjflkjsdalkfjslkdfjsdkl" android:singleLine="true" android:layout_below="@id/title_lay" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

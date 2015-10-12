@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_nine_dot_nine_search_bar" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_nine_dot_nine_search_box" android:background="@drawable/nine_dot_nine_search_box" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="7.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_nine_dot_nine_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/nine_dot_nine_search" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.fanli.android.view.TangFontTextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_nine_dot_nine_search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/home_search_shop_hint_new" android:singleLine="true" android:layout_toRightOf="@id/iv_nine_dot_nine_search" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vipnew_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+                <RelativeLayout android:id="@id/withdraw_bank_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/table_row_new_height" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中国工商银行" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/card_Id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(尾号1234)" />
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="right" android:background="@drawable/icon_forward_right_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/wallet_text_tip" android:textColor="@color/app_text_black" android:id="@id/wallet_input_money" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:text="@string/wallet_input_money" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/table_row_new_height">
+                        <TextView android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金额（元）" />
+                        <EditText android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:textColorHint="@color/app_text_edittext_gray" android:gravity="left|center" android:id="@id/txt_withdraw_amount" android:background="@null" android:paddingLeft="15.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/wallet_withdraw_title" android:singleLine="true" android:digits="0123456789." android:layout_weight="1.0" android:imeOptions="actionNext" />
+                        <ImageView android:layout_gravity="right|center" android:id="@id/del_withdraw_amount" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/new_ic_edit_clear" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textSize="@dimen/app_textsize_button" android:layout_gravity="center_horizontal" android:id="@id/btn_submit_amount" android:layout_width="fill_parent" android:layout_height="@dimen/submit_pink_big_button_height" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:text="确认提现" style="@style/btn_violet_style" />
+            <TextView android:textSize="@dimen/wallet_text_tip" android:textColor="@color/bule_tips" android:layout_gravity="right" android:id="@id/txt_withdraw_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="提现说明" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/app_textsize_secondary" android:textColor="@color/error_tips_color" android:gravity="left|center" android:id="@id/error_tips" android:background="@color/error_tips_bg_color" android:paddingLeft="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="22.0dip" android:text="@string/wallet_money_over_limit" android:drawableLeft="@drawable/icon_failure_least" android:drawablePadding="5.0dip" android:alpha="0.8" />
+    </RelativeLayout>
+</LinearLayout>

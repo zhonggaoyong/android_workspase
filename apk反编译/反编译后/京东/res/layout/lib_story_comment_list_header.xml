@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header_content" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.jd.lib.story.ui.MoreView android:id="@id/moreView" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+    </RelativeLayout>
+</LinearLayout>

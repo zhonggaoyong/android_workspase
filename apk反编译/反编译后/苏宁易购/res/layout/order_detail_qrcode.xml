@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/order_qrcode_all_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/order_qrcode_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/order_qrcode_image_bg" android:background="@drawable/tanchukuang_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/order_qrcode_image" android:paddingBottom="@dimen/ios_public_space_16px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/ios_public_textsize_26pt" android:textColor="@color/pub_color_eight" android:layout_gravity="center_horizontal" android:id="@id/qrcode_text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_29px" android:layout_marginBottom="@dimen/ios_public_space_29px" android:text="扫一扫上面的二维码图标，直接取货" />
+    </LinearLayout>
+</LinearLayout>

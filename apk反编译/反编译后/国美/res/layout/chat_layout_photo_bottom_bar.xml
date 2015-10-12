@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_toolbar_ar" android:background="@color/layout_backgroud" android:layout_width="fill_parent" android:layout_height="@dimen/collection_photo_toolbar_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/title_bottom_line_2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+    <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@drawable/chat_photo_preview_font_selector" android:id="@id/tv_preview_ar" android:padding="10.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预览" android:layout_centerVertical="true" />
+    <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@drawable/chat_photo_send_font_selector" android:id="@id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="(0)" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

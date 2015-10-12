@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:stuan="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.widget.TempTitle android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" stuan:drawableLeft="@drawable/common_title_back_selector" stuan:textTitle="@string/lottery_activity_order_details_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/confirm_order_submit_layout" android:background="@color/bg_white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:id="@id/lottBuyMore" android:text="@string/lottery_continue_buy" style="@style/lottery_order_detail_action_btn_blue_style" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/lottDrawAward" android:text="@string/lottery_order_next_action_draw_gains" android:layout_centerInParent="true" style="@style/lottery_order_detail_action_btn_red_style" />
+                <TextView android:id="@id/lottPayment" android:text="@string/lottery_order_next_action_wait_pay" android:layout_centerInParent="true" style="@style/lottery_order_detail_action_btn_red_style" />
+            </RelativeLayout>
+            <TextView android:id="@id/lottBuyThisAgain" android:text="@string/lottery_order_next_action_bet_again" style="@style/lottery_order_detail_action_btn_red_style" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/confirm_order_submit_layout_head_line" android:layout_above="@id/confirm_order_submit_layout" style="@style/line_horizontal_style" />
+        <ScrollView android:id="@id/lottScrollView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/confirm_order_submit_layout_head_line">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@color/bg_white" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/lottLogo" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/lottery_icon_shuangseqiu" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/text_gray_light" android:gravity="center" android:id="@id/lotteryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:minWidth="70.0dip" android:text="双色球" android:layout_below="@id/lottLogo" android:layout_alignLeft="@id/lottLogo" />
+                    <TextView android:id="@id/issueName" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:text="第2013083期" android:layout_toRightOf="@id/lottLogo" android:layout_alignTop="@id/lottLogo" style="@style/lottery_order_detail_bet_info" />
+                    <TextView android:id="@id/orderFee" android:layout_marginTop="4.0dip" android:text="订单金额:2元" android:singleLine="false" android:layout_below="@id/issueName" android:layout_alignLeft="@id/issueName" android:lineSpacingExtra="4.0dip" style="@style/lottery_order_detail_bet_info" />
+                    <TextView android:id="@id/winAwardFee" android:text="中奖金额" android:layout_below="@id/orderFee" android:layout_alignLeft="@id/orderFee" style="@style/lottery_order_detail_bet_info" />
+                    <TextView android:id="@id/lotteryOrderType" android:layout_marginRight="19.0dip" android:text="@string/lottery_order_type_normal" android:layout_alignTop="@id/issueName" android:layout_alignParentRight="true" style="@style/lottery_order_detail_bet_info" />
+                    <TextView android:textSize="@dimen/text_size_order_detail_bet_info" android:textColor="@color/text_gray_light" android:id="@id/winStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19.0dip" android:text="中奖 派奖完成" android:layout_alignTop="@id/orderFee" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/bg_white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TableLayout android:background="@color/bg_white" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+                        <TableRow android:id="@id/numStakeGroup" android:padding="6.0dip">
+                            <TextView android:text="@string/order_detail_bet_stake_nums_title" style="@style/lottery_order_detail_bet_info_title" />
+                            <TextView android:id="@id/numStake" style="@style/lottery_order_detail_bet_info" />
+                        </TableRow>
+                        <TableRow android:id="@id/numMultiGroup" android:padding="6.0dip">
+                            <TextView android:text="@string/order_detail_bet_multi_nums_title" style="@style/lottery_order_detail_bet_info_title" />
+                            <TextView android:id="@id/numMulti" style="@style/lottery_order_detail_bet_info" />
+                        </TableRow>
+                        <TableRow android:id="@id/luckyNumbersGroup" android:padding="6.0dip">
+                            <TextView android:text="@string/order_detail_bet_lucky_number" style="@style/lottery_order_detail_bet_info_title" />
+                            <TextView android:id="@id/luckyNumbers" style="@style/lottery_order_detail_bet_info" />
+                        </TableRow>
+                    </TableLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/orderDetailBetMessage" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/lottZhuiqiConfig" android:visibility="gone" android:layout_marginBottom="12.0dip" style="@style/lottery_order_detail_bet_info_title" />
+                        <TextView android:id="@id/lottZhuiqiIssueInfo" android:visibility="gone" android:layout_marginBottom="12.0dip" style="@style/lottery_order_detail_bet_info_title" />
+                        <TextView android:id="@id/lottZhuiqiAwardFee" android:visibility="gone" android:layout_marginBottom="12.0dip" style="@style/lottery_order_detail_bet_info_title" />
+                    </LinearLayout>
+                    <FrameLayout android:id="@id/betContent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TableLayout android:background="@color/bg_white" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TableRow android:padding="6.0dip">
+                        <TextView android:text="@string/lottery_label_order_number" style="@style/lottery_order_detail_bet_info_title" />
+                        <TextView android:id="@id/erpOrderId" style="@style/lottery_order_detail_bet_info" />
+                    </TableRow>
+                    <TableRow android:padding="6.0dip">
+                        <TextView android:text="@string/lottery_label_order_status" style="@style/lottery_order_detail_bet_info_title" />
+                        <TextView android:id="@id/orderStatus" style="@style/lottery_order_detail_bet_info" />
+                    </TableRow>
+                    <TableRow android:padding="6.0dip">
+                        <TextView android:text="@string/order_pay_type" style="@style/lottery_order_detail_bet_info_title" />
+                        <TextView android:id="@id/payType" style="@style/lottery_order_detail_bet_info" />
+                    </TableRow>
+                    <TableRow android:padding="6.0dip">
+                        <TextView android:text="@string/lottery_label_order_placed_time" style="@style/lottery_order_detail_bet_info_title" />
+                        <TextView android:id="@id/placedTime" style="@style/lottery_order_detail_bet_info" />
+                    </TableRow>
+                </TableLayout>
+                <TableLayout android:background="@color/bg_white" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip">
+                    <TableRow android:padding="6.0dip">
+                        <TextView android:text="@string/order_detail_bet_name" style="@style/lottery_order_detail_bet_info_title" />
+                        <TextView android:id="@id/userName" style="@style/lottery_order_detail_bet_info" />
+                    </TableRow>
+                    <TableRow android:padding="6.0dip">
+                        <TextView android:text="@string/order_detail_bet_idcard" style="@style/lottery_order_detail_bet_info_title" />
+                        <TextView android:id="@id/userIdCard" style="@style/lottery_order_detail_bet_info" />
+                    </TableRow>
+                    <TableRow android:padding="6.0dip">
+                        <TextView android:text="@string/order_detail_bet_mobile" style="@style/lottery_order_detail_bet_info_title" />
+                        <TextView android:id="@id/userMobile" style="@style/lottery_order_detail_bet_info" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include android:id="@id/lotteryEmptyView" android:visibility="gone" layout="@layout/lottery_empty_view_retry" />
+        <include android:id="@id/lotteryLoadingView" android:visibility="gone" layout="@layout/lottery_loading_view" />
+    </RelativeLayout>
+</LinearLayout>

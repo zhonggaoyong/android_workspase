@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header_layout" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/preSaleOrderLayout" android:background="@color/white" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/list_divider_height" android:background="@color/app_body_bg" android:layout_width="wrap_content" android:layout_height="@dimen/account_order_list_divider_height" />
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/app_textsize_large" android:textColor="@color/black" android:id="@id/order_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_title_icon_margin_left_and_right" android:text="@string/pre_sell_order" />
+                    <ImageView android:layout_gravity="top" android:id="@id/red_point_view" android:background="@drawable/bg_redpoint_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/order_label" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/app_title_icon_margin_left_and_right" android:layout_alignParentRight="true">
+                        <TextView android:textSize="@dimen/app_textsize_large" android:textColor="@color/app_text_new_gray" android:id="@id/pre_sale_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pre_sell_order_count" />
+                        <ImageView android:id="@id/pre_order_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_forward_grey" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+            <com.achievo.vipshop.view.XListView android:scrollbarStyle="outsideOverlay" android:id="@id/listView" android:fadingEdge="vertical" android:layoutAnimation="@anim/layout_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@null" android:divider="@color/transparency" android:choiceMode="none" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/faush_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_record_empty" android:scaleType="fitEnd" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/app_text_black" android:gravity="center_horizontal" android:id="@id/nodata_tips" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="3.0" />
+        </LinearLayout>
+        <include android:id="@id/loadFailView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/new_load_fail" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/umeng_socialize_window_shadow_pad" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/umeng_socialize_post_comment_titlebar" layout="@layout/umeng_socialize_titile_bar" />
+        <RelativeLayout android:background="#ffd8dde4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/umeng_socialize_post_comment_bottom_area" android:background="@drawable/umeng_socialize_light_bar_bg_pad" android:focusable="false" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+                <ImageButton android:id="@id/umeng_socialize_post_comment_fetch_img" android:background="@drawable/umeng_socialize_divider_line" android:padding="8.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/umeng_socialize_pv" android:scaleType="fitXY" />
+                <ImageButton android:id="@id/umeng_socialize_post_comment_location" android:background="@drawable/umeng_socialize_divider_line" android:padding="8.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="0.5dip" android:layout_marginTop="8.0dip" android:src="@drawable/umeng_socialize_fetch_location_disabled" android:scaleType="fitXY" android:layout_toRightOf="@id/umeng_socialize_post_comment_fetch_img" />
+                <ImageView android:id="@id/umeng_socialize_post_comment_previewImg" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginBottom="30.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip">
+                    <ImageButton android:id="@id/umeng_socialize_location_ic" android:background="@null" android:paddingLeft="7.5dip" android:paddingTop="10.0dip" android:paddingRight="7.5dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="40.0dip" android:src="@drawable/umeng_socialize_location_off" android:scaleType="fitXY" />
+                    <ProgressBar android:id="@id/umeng_socialize_location_progressbar" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/umeng_socialize_post_ws_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/umeng_socialize_post_comment_bottom_area">
+                <EditText android:gravity="top" android:id="@id/umeng_socialize_post_comment_edittext" android:background="#ffffffff" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:bufferType="spannable" android:hint="说点什么吧。。。" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

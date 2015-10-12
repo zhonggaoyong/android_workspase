@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/travel_all_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/flight_list_item_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/flight_splitline_h" android:paddingLeft="48.0dip" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/detail_add_boarder" android:background="@drawable/flight_list_item_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+            <TextView android:textSize="@dimen/linkman_text_size" android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="登机人" android:layout_weight="5.0" />
+            <TextView android:gravity="left|center" android:id="@id/detail_add_persion" android:background="@drawable/flight_butn_add_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/board_info" android:background="@drawable/flight_tips_yellow_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="@color/travel_deli_text_gray" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="该舱位仅剩" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/black" android:gravity="left|center" android:id="@id/add_boarder_lnum" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/travel_deli_text_gray" android:gravity="left|center" android:id="@id/add_boarder_information" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/contacts_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.jingdong.common.jdtravel.ui.NoScrollListView android:id="@id/contacts_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" />
+    </LinearLayout>
+    <View style="@style/travel_view_splite_h" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/flight_list_item_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <View style="@style/travel_view_splite_h" />
+        <RelativeLayout android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/linkman_text_size" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="@dimen/add_boarder_textview_height" android:text="联系人" />
+            <ImageButton android:id="@id/jdtravel_contact_icon" android:background="@drawable/flight_icon_contacts_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/jdtravel_contact_icon">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系人姓名" />
+                <EditText android:textSize="16.0sp" android:textColor="#ff252525" android:id="@id/detail_check_name" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <View style="@style/travel_view_splite_h" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="境内手机号码" android:textIsSelectable="false" />
+                <EditText android:textSize="16.0sp" android:textColor="#ff252525" android:id="@id/detail_phonenumber_et" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="number" />
+            </LinearLayout>
+            <View style="@style/travel_view_splite_h" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮箱" android:textIsSelectable="false" />
+                <EditText android:textSize="16.0sp" android:textColor="#ff252525" android:id="@id/detail_email_et" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="textEmailAddress" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/travel_view_splite_h" />
+    <RelativeLayout android:layout_gravity="center" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="92.0dip" android:layout_marginTop="15.0dip">
+        <View android:layout_alignParentTop="true" style="@style/travel_view_splite_h" />
+        <CheckBox android:id="@id/jdtravel_check_cb" android:layout_marginRight="10.0dip" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/JdTravelCheckBox" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/jdtravel_check_cb" android:layout_centerInParent="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jdtravel_detail_need_bx" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/jdtravel_detail_bx_info" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/travel_view_splite_h" />
+    <LinearLayout android:orientation="vertical" android:id="@id/jdtravel_delivery_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/jdtravel_delivery_itinerary" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+            <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/jdtravel_district_itinerary_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="行程单" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jdtravel_district_itinerary_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/flight_back_arrow_common" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff252525" android:gravity="right" android:id="@id/jdtravel_district_itinerary_body" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机场自取" android:layout_toLeftOf="@id/jdtravel_district_itinerary_iv" android:layout_toRightOf="@id/jdtravel_district_itinerary_head" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View style="@style/travel_view_splite_h" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/jdtravel_delivery_counter_address" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="120.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/jdtravel_district_counter_address_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="柜台地址:" android:layout_toLeftOf="@id/jdtravel_district_counter_address_iv" android:layout_alignParentLeft="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jdtravel_district_counter_address_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/flight_back_arrow_common" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="left" android:id="@id/jdtravel_district_counter_address_airport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首都机场" android:layout_toLeftOf="@id/jdtravel_district_counter_address_iv" android:layout_below="@id/jdtravel_district_counter_address_head" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:ellipsize="end" android:gravity="left" android:id="@id/jdtravel_district_counter_address_airport_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="T3航站楼4楼出发大厅（安检通道旁边哈根达斯对面的航空保险圆岛柜台）信天游机场服务" android:maxLines="2" android:layout_toLeftOf="@id/jdtravel_district_counter_address_iv" android:layout_below="@id/jdtravel_district_counter_address_airport" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="left" android:id="@id/jdtravel_district_counter_address_airport_service_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务时间:" android:layout_below="@id/jdtravel_district_counter_address_airport_detail" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="left" android:id="@id/jdtravel_district_counter_address_airport_service_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="06:00-19:00" android:layout_toLeftOf="@id/jdtravel_district_counter_address_iv" android:layout_toRightOf="@id/jdtravel_district_counter_address_airport_service_head" android:layout_below="@id/jdtravel_district_counter_address_airport_detail" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View style="@style/travel_view_splite_h" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/jdtravel_delivery_pick_up_time" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/jdtravel_district_pick_up_time_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自取时间:" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jdtravel_district_pick_up_time_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/flight_back_arrow_common" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff252525" android:gravity="left" android:id="@id/jdtravel_district_pick_up_time_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="2014-11-18" android:layout_toLeftOf="@id/jdtravel_district_pick_up_time_iv" android:layout_toRightOf="@id/jdtravel_district_pick_up_time_head" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View style="@style/travel_view_splite_h" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/jdtravel_delivery_insurance" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/jdtravel_district_insurance_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保险发票" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jdtravel_district_insurance_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/flight_back_arrow_common" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff252525" android:gravity="right" android:id="@id/jdtravel_district_insurance_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="不需要" android:layout_toLeftOf="@id/jdtravel_district_insurance_iv" android:layout_toRightOf="@id/jdtravel_district_insurance_head" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View style="@style/travel_view_splite_h" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/jdtravel_delivery_method" android:background="@color/white" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+            <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:id="@id/jdtravel_district_head1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="配送方式:" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jdtravel_district_iv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/flight_back_arrow_common" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff252525" android:gravity="right" android:id="@id/jdtravel_district_body1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免费邮寄（7-14个工作日）" android:layout_toLeftOf="@id/jdtravel_district_iv1" android:layout_toRightOf="@id/jdtravel_district_head1" android:layout_centerVertical="true" android:textIsSelectable="false" />
+        </RelativeLayout>
+        <View style="@style/travel_view_splite_h" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/jdtravel_delivery" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/add_boarder_textview_height">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jdtravel_district_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/flight_back_arrow_common" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/jdtravel_district_icon" android:layout_alignParentLeft="true" android:layout_centerInParent="true">
+                <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:id="@id/jdtravel_district_address1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="配送地址" />
+                <LinearLayout android:orientation="vertical" android:id="@id/jdtravel_addr_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/jdtravel_district_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="姓名：王重样" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/jdtravel_district_addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地址：北京市海淀区相向恭恭敬敬西路59号" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/jdtravel_district_zip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮编：王重样" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/jdtravel_district_tel" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="电话：13912652488" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/jdtravel_counter" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/add_boarder_textview_height">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jdtravel_district_icon2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/flight_back_arrow_common" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/jdtravel_district_icon2" android:layout_alignParentLeft="true" android:layout_centerInParent="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/jdtravel_counter_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="柜台地址:" />
+                <LinearLayout android:orientation="vertical" android:id="@id/jdtravel_counter_addr_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/jdtravel_airport_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="上海虹桥机场" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/jdtravel_counter_addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="T2,上海虹桥机场T2航站楼出发厅3号门301柜台或6号门329柜台" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务时间：" />
+                        <TextView android:textSize="14.0sp" android:textColor="#fff15353" android:id="@id/jdtravel_counter_open_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="06:00-19:00" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/jdtravel_counter_time" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+            <View style="@style/travel_view_splite_h" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/jdtravel_counter_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自取时间：" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jdtravel_counter_time_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flight_back_arrow_common" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0dip" android:textColor="#fff15353" android:gravity="left" android:id="@id/jdtravel_counter_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014-11-18" android:layout_toLeftOf="@id/jdtravel_counter_time_iv" android:layout_toRightOf="@id/jdtravel_counter_time_text" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View style="@style/travel_view_splite_h" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="50.0dip">
+        <View style="@style/travel_view_splite_h" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jdtravel_coupon_layout" android:background="@drawable/flight_list_item_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height">
+            <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/jdtravel_coupon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠券" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/flight_text_normal_gray_color" android:id="@id/jdtravel_coupon_count" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="添加乘机人后显示可用优惠券" android:layout_toRightOf="@id/jdtravel_coupon_title" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff252525" android:id="@id/jdtravel_coupon_used" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="已抵扣" android:layout_toLeftOf="@id/jdtravel_coupon_val" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#fff15353" android:id="@id/jdtravel_coupon_val" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="0.00元" android:layout_toLeftOf="@id/jdtravel_coupon_arrow" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/jdtravel_coupon_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/flight_back_arrow_common" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View style="@style/travel_view_splite_h" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height2">
+                <TextView android:textSize="18.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机票价格" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#fff15353" android:id="@id/jdtravel_detail_down_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height2">
+                <TextView android:textSize="18.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机建 + 燃油" />
+                <TextView android:textSize="16.0sp" android:textColor="#fff15353" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" android:layout_toLeftOf="@id/jdtravel_detail_down_tax" />
+                <TextView android:textSize="15.0sp" android:textColor="#fff15353" android:gravity="right" android:id="@id/jdtravel_detail_down_tax" android:layout_width="48.0dip" android:layout_height="wrap_content" android:text="￥0" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height2">
+                <TextView android:textSize="18.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保险" />
+                <TextView android:textSize="16.0sp" android:textColor="#fff15353" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" android:layout_toLeftOf="@id/jdtravel_detail_down_insure" />
+                <TextView android:textSize="15.0sp" android:textColor="#fff15353" android:gravity="right" android:id="@id/jdtravel_detail_down_insure" android:layout_width="48.0dip" android:layout_height="wrap_content" android:text="￥0" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jdtravel_detail_coupon_rl" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/add_boarder_textview_height2">
+                <TextView android:textSize="18.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠券" />
+                <TextView android:textSize="18.0sp" android:textColor="#fff15353" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:layout_toLeftOf="@id/jdtravel_detail_down_coupon" />
+                <TextView android:textSize="15.0sp" android:textColor="#fff15353" android:gravity="right" android:id="@id/jdtravel_detail_down_coupon" android:layout_width="48.0dip" android:layout_height="wrap_content" android:text="￥0" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/travel_view_splite_h" />
+    </LinearLayout>
+</LinearLayout>

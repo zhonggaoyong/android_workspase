@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/vw_titlebar" />
+    <RelativeLayout android:id="@id/rl_parent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_container" android:background="#fffff7d2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/titlebar">
+            <TextView android:textSize="12.0sp" android:textColor="#ffff8000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提示:如果需要对订单进行操作,请先还原订单!" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.gome.ecmall.core.widget.listview.MyListView android:id="@id/lv_list" android:background="#ffe8e8e8" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:dividerHeight="12.0dip" android:layout_below="@id/rl_container" style="@style/common_listview_listSelector_no_style" />
+    </RelativeLayout>
+    <include android:id="@id/orderlist_waitting_empty" android:visibility="gone" layout="@layout/orderlist_no_good_waiting" />
+</LinearLayout>

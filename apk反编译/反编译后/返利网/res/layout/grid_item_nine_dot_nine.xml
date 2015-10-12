@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content1" android:background="@color/background1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/thumb1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/new1" android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <com.fanli.android.view.TangFontTextView android:ellipsize="end" android:id="@id/title1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_below="@id/thumb1" style="@style/TextListBody" />
+    <com.fanli.android.view.TangFontTextView android:ellipsize="end" android:id="@id/price1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="-5.0dip" android:text="price1" android:singleLine="true" android:layout_below="@id/title1" style="@style/THSListPriceLittle" />
+    <com.fanli.android.view.TangFontTextView android:textColor="@color/text_color_grey" android:ellipsize="end" android:id="@id/oldprice1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="oldprice1" android:singleLine="true" android:layout_toRightOf="@id/price1" android:layout_alignBaseline="@id/price1" android:layout_alignBottom="@id/price1" />
+    <ImageView android:id="@id/baoyou" android:layout_width="40.0dip" android:layout_height="28.0dip" android:layout_marginLeft="6.0dip" android:scaleType="fitCenter" android:layout_toRightOf="@id/oldprice1" android:layout_alignBottom="@id/oldprice1" />
+</RelativeLayout>

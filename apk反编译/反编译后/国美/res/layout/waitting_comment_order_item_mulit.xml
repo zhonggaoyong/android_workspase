@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffffff" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/tv_order_type" android:background="#fff56a4f" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抢" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/order_nubmer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="订单编号:" android:layout_toRightOf="@id/tv_order_type" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/tv_order_nubmer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12345678" android:layout_toRightOf="@id/order_nubmer_text" />
+        </RelativeLayout>
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#fffff7d2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ffff8000" android:background="@drawable/rectborder" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/package_message" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="66.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip">
+            <com.gome.ecmall.custom.DisScrollListView android:id="@id/shipproducts" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/hint_text_color" android:dividerHeight="1.0px" style="@style/more_section_listview_style" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

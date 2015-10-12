@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:background="#dd000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="720.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/save_shop_pwd_bg" android:paddingLeft="25.0dip" android:paddingTop="30.0dip" android:paddingRight="25.0dip" android:paddingBottom="20.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="600.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/save_shop_pwd_key" />
+            <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="#ff111111" android:layout_gravity="center" android:id="@id/tv_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:lineSpacingExtra="4.0dip" />
+        </LinearLayout>
+        <View android:background="@drawable/save_shop_pwd_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="20.0dip" />
+        <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_remember" android:background="@drawable/save_shop_pwd_button1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/remember2" />
+        <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_not_save_temp" android:background="@drawable/save_shop_pwd_button2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/not_save_temp" />
+        <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_never" android:background="@drawable/save_shop_pwd_button2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/never2" />
+    </LinearLayout>
+</LinearLayout>

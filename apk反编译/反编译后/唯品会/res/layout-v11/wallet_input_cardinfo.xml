@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vipnew_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="22.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_input_cardholder" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                            <TextView android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="65.0dip" android:text="持卡人" />
+                            <EditText android:textSize="15.0sp" android:textColor="@color/black" android:textColorHint="@color/app_text_cart_gray" android:gravity="left|center" android:id="@id/et_input_cardholder" android:background="@null" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="输入持卡人姓名" android:singleLine="true" android:maxLength="35" android:layout_weight="1.0" />
+                            <TextView android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:textColorHint="@color/app_text_edittext_gray" android:gravity="left|center" android:id="@id/txt_input_cardholder" android:background="@null" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="输入持卡人姓名" android:singleLine="true" android:maxLength="35" android:layout_weight="1.0" />
+                            <ImageView android:layout_gravity="right|center" android:id="@id/tips_cardholder" android:visibility="visible" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/icon_explain_large" />
+                        </LinearLayout>
+                        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_deposit_bank" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                            <TextView android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="65.0dip" android:text="银行" />
+                            <TextView android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:gravity="left|center" android:id="@id/txt_deposit_bank" android:background="@null" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:maxLength="35" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/card_layout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                            <TextView android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="65.0dip" android:text="卡号" />
+                            <EditText android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:textColorHint="@color/app_text_edittext_gray" android:gravity="left|center" android:id="@id/txt_input_card" android:background="@null" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="储蓄卡卡号" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" />
+                            <ImageView android:layout_gravity="right|center" android:id="@id/del_card" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/new_ic_edit_clear" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_city" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                            <TextView android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="65.0dip" android:text="所属省市" />
+                            <TextView android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:gravity="left|center" android:id="@id/txt_city" android:background="@null" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:maxLength="35" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                            <TextView android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="65.0dip" android:text="分行" />
+                            <EditText android:textSize="@dimen/wallet_text_main" android:textColor="@color/black" android:textColorHint="@color/app_text_edittext_gray" android:gravity="left|center" android:id="@id/txt_branch_address" android:background="@null" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="例 ： 海淀支行" android:singleLine="true" android:maxLength="35" android:layout_weight="1.0" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/ll_branch_address" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                                <ImageView android:layout_gravity="right|center" android:visibility="visible" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/bank_branch_selector" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/wallet_text_tip" android:textColor="@color/app_text_black" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:text="请填写持卡人本人的储蓄卡号，提现成功后将退款到该储蓄卡 " />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                    <Button android:enabled="false" android:textSize="@dimen/app_textsize_button" android:layout_gravity="center_horizontal" android:id="@id/btn_submit_amount" android:layout_width="fill_parent" android:layout_height="@dimen/submit_pink_big_button_height" android:layout_marginTop="30.0dip" android:text="@string/wallet_next_text" style="@style/btn_violet_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:textSize="@dimen/app_textsize_secondary" android:textColor="@color/error_tips_color" android:gravity="left|center" android:id="@id/error_tips" android:background="@color/error_tips_bg_color" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="22.0dip" android:singleLine="true" android:drawableLeft="@drawable/icon_failure_least" android:drawablePadding="5.0dip" android:alpha="0.8" />
+    </RelativeLayout>
+</LinearLayout>

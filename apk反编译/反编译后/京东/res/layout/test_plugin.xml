@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/hybrid_title" layout="@layout/title" />
+    <com.jingdong.common.ui.JDProgressBar android:layout_gravity="center" android:id="@id/hybridLoadingView" android:visibility="gone" android:layout_centerInParent="true" style="@style/progress_loading" />
+    <WebView android:id="@id/hybridWebView" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/hybrid_title" />
+    <RelativeLayout android:id="@id/hybrid_fail_view" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/hybrid_title" android:layout_centerInParent="true">
+        <ImageView android:id="@id/fail_fuck_dog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="140.0dip" android:src="@drawable/y_04" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0dip" android:textColor="#ffbfbfbf" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="网络请求失败" android:layout_below="@id/fail_fuck_dog" />
+    </RelativeLayout>
+</RelativeLayout>

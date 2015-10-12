@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.widget.VerticalViewPager android:id="@id/vertical_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/toolbar" />
+    <include layout="@layout/commodity_header" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/commodity_anim_layout" />
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true" layout="@layout/danbao_toolbar" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/goods_out_of_stock_lab" android:background="#b380737b" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/danbao_goods_out_of_stock" android:layout_above="@id/toolbar" />
+    <FrameLayout android:id="@id/extra_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/toolbar" android:layout_below="@id/header" />
+    <ImageView android:id="@id/btn_to_top" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="70.0dip" android:src="@drawable/to_top_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

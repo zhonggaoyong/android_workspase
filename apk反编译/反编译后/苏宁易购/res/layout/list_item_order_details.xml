@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/intercept_line" android:background="@drawable/line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/storeline_height" />
+    <RelativeLayout android:id="@id/detail_relayout" android:layout_width="fill_parent" android:layout_height="135.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <FrameLayout android:id="@id/product_img_frame" android:background="@drawable/goods_bg" android:padding="@dimen/pub_margin_or_padding_space_two" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true">
+            <ImageView android:layout_gravity="center" android:id="@id/detail_goods_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_small" android:scaleType="centerInside" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/product_img_frame" android:layout_centerVertical="true">
+            <com.suning.mobile.ebuy.view.AutoLineTextView android:id="@id/detail_goods_desc" android:layout_width="fill_parent" android:layout_height="55.0dip" android:lines="2" suning:textColor="@color/pub_color_three" suning:marginRight="120" suning:textSize="15"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:suning="http://www.suningEbuy.com/" />
+            <TextView android:textColor="@color/pub_color_nine" android:id="@id/supplier_name_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/service_text_color" android:gravity="center" android:id="@id/btn_publish" android:background="@drawable/bg_btn_search" android:layout_width="100.0dip" android:layout_height="40.0dip" android:text="@string/sun_order" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/service_text_color" android:gravity="center" android:id="@id/btn_evaluate" android:background="@drawable/bg_btn_search" android:layout_width="100.0dip" android:layout_height="40.0dip" android:text="@string/sort_by_grade" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

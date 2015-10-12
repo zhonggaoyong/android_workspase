@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">Google Play pakalpojumu kļūda</string>
+    <string name="d3r">Lai lietojumprogramma darbotos, jāinstalē Google Play pakalpojumi.</string>
+    <string name="d3s">Lai lietojumprogramma darbotos, jāatjaunina Google Play pakalpojumi.</string>
+    <string name="d3t">Lai lietojumprogramma darbotos, jāiespējo Google Play pakalpojumi.</string>
+    <string name="d3u">Pieprasījums no lietotnes %1$s</string>
+    <string name="d3v">Google Play pakalpojumu iegūšana</string>
+    <string name="d3w">Lai šī lietotne darbotos, tālrunī ir jāinstalē Google Play pakalpojumi.</string>
+    <string name="d3x">Lai šī lietotne darbotos, planšetdatorā ir jāinstalē Google Play pakalpojumi.</string>
+    <string name="d3y">Iegūt Google Play pakalpojumus</string>
+    <string name="d3z">Google Play pakalpojumu iespējošana</string>
+    <string name="d40">Lai šī lietotne darbotos, iespējojiet Google Play pakalpojumus.</string>
+    <string name="d41">Iespējot Google Play pakalpojumus</string>
+    <string name="d42">Google Play pakalpojumu atjaunināšana</string>
+    <string name="d43">Lai šī lietotne darbotos, atjauniniet Google Play pakalpojumus.</string>
+    <string name="d44">Tīkla kļūda</string>
+    <string name="d45">Lai izveidotu savienojumu ar Google Play pakalpojumiem, ir nepieciešams datu savienojums.</string>
+    <string name="d46">Nederīgs konts</string>
+    <string name="d47">Norādītais konts šajā ierīcē nepastāv. Lūdzu, izvēlieties citu kontu.</string>
+    <string name="d48">Nezināma problēma ar Google Play pakalpojumiem.</string>
+    <string name="d49">Google Play pakalpojumi</string>
+    <string name="d4_">Jūsu ierīce neatbalsta Google Play pakalpojumus, kuri nepieciešami dažu jūsu lietojumprogrammu darbībai. Lūdzu, sazinieties ar ražotāju, lai saņemtu palīdzību.</string>
+    <string name="d4a">Šķiet, ka ierīcē ir iestatīts nepareizs datums. Lūdzu, pārbaudiet ierīces datumu.</string>
+    <string name="d4b">Atjaunināt</string>
+    <string name="d4c">Pierakst.</string>
+    <string name="d4d">Pierakstīties Google</string>
+</resources>

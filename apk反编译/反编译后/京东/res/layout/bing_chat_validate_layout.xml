@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/bing_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bing_validate_title" layout="@layout/bing_chat_title_layout" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/bing_validate_edit_h" android:layout_marginTop="30.0dip" style="@style/bing_validate_item_layout">
+        <EditText android:id="@id/bing_et_mobile" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/bing_input_mobile" android:maxLength="11" android:numeric="integer" android:phoneNumber="true" style="@style/bing_validate_edit_layout" />
+        <com.facebook.drawee.view.SimpleDraweeView android:src="@drawable/bing_chat_username" style="@style/bing_validate_img_layout" />
+        <View style="@style/bing_valisate_spilt_view" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/bing_validate_edit_h" android:layout_marginTop="20.0dip" style="@style/bing_validate_item_layout">
+        <EditText android:id="@id/bing_et_vc" android:layout_width="@dimen/bing_vc_edit_w" android:layout_height="fill_parent" android:hint="@string/bing_input_vc" android:maxLength="8" style="@style/bing_validate_edit_layout" />
+        <com.facebook.drawee.view.SimpleDraweeView android:src="@drawable/bing_chat_password" style="@style/bing_validate_img_layout" />
+        <View style="@style/bing_valisate_spilt_view" />
+        <Button android:textSize="15.0dip" android:textColor="@color/bing_chat_getvc_textcolor" android:layout_gravity="right" android:id="@id/get_vc_bt" android:background="@drawable/bing_getvc_selector" android:layout_width="110.0dip" android:layout_height="fill_parent" android:text="@string/bing_get_vc" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_weight="1.0">
+        <Button android:enabled="true" android:id="@id/go_with_me_bt" style="@style/bing_go_with_button" />
+    </LinearLayout>
+</LinearLayout>

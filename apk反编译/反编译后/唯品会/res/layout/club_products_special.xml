@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/linearVipbrand" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.achievo.vipshop">
+    <include android:id="@id/vipnew_header" android:layout_alignParentTop="true" layout="@layout/vipnew_list_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/products_title_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/vipnew_header">
+        <include android:id="@id/products_title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/club__products_title" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/product_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/products_title_layout">
+        <com.achievo.vipshop.view.XListView android:id="@id/goods_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparency" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" android:choiceMode="none" />
+        <include android:id="@id/go_top" android:visibility="gone" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="11.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/normal_go_top" />
+        <LinearLayout android:id="@id/chooseViewContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <include android:id="@id/preheat_load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/goods_feature_layout" android:layout_below="@id/product_layout" android:layout_centerInParent="true" layout="@layout/new_preheat_load_fail" />
+    <LinearLayout android:orientation="vertical" android:id="@id/goods_feature_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.achievo.vipshop.view.CollectView android:id="@id/goods_feature_collectbutton" android:background="@drawable/collect_btn_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:button_collect_status="true" app:button_showtips="false" />
+    </LinearLayout>
+    <include android:id="@id/load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/product_layout" android:layout_centerInParent="true" layout="@layout/new_load_fail" />
+</RelativeLayout>

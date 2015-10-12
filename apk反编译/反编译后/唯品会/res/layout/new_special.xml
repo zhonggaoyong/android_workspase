@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffe8e8e8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/web_topic" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/subject_web_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.5dip" />
+        <com.achievo.vipshop.view.pulltorefresh.PullToRefreshWebView android:id="@id/subject_web" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/subject_web_header" />
+        <ProgressBar android:id="@id/web_progress" android:layout_width="fill_parent" android:layout_height="@dimen/progressbar_height" android:max="100" android:progress="0" android:progressDrawable="@drawable/progressbar_drawable" android:layout_alignTop="@id/subject_web" style="?android:attr/progressBarStyleHorizontal" />
+        <include android:id="@id/load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/new_load_fail" />
+    </RelativeLayout>
+</RelativeLayout>

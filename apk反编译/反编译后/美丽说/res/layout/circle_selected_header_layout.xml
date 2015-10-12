@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.BannerAdView android:id="@id/banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.meilishuo.app.views.MyGridView android:id="@id/gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:horizontalSpacing="3.0dip" android:verticalSpacing="3.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+    <View android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

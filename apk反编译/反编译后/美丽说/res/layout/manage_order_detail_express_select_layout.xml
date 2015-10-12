@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_express_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View style="@style/FirstDividerViewStyle" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发货方式" android:drawablePadding="5.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/express_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.meilishuo.app.views.CustomCheckBox android:id="@id/express_check_box" android:background="@drawable/shopping_cart_radio_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="快递发货" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:layout_marginTop="10.0dip" style="@style/FirstDividerViewStyle" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/no_express_layout" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.meilishuo.app.views.CustomCheckBox android:id="@id/no_express_check_box" android:background="@drawable/shopping_cart_radio_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="无需物流" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/express_company_layout" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:ellipsize="end" android:id="@id/express_company_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快递公司:" android:singleLine="true" android:layout_centerVertical="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d5" android:ellipsize="end" android:id="@id/express_company_name" android:background="@null" android:paddingLeft="0.0dip" android:paddingTop="4.0dip" android:paddingRight="40.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/express_company_title" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/circle_info_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View style="@style/FirstDividerViewStyle" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:ellipsize="end" android:id="@id/express_order_id_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快递单号:" android:singleLine="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/scan_order_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/manage_order_code_ico" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.meilishuo.app.views.CustomEditText android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:textColorHint="@color/grey_d5" android:ellipsize="end" android:id="@id/express_order_id" android:background="@color/transparent" android:paddingTop="4.0dip" android:paddingRight="5.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="请输入单号或扫描条形码" android:singleLine="true" android:layout_toLeftOf="@id/scan_order_id" android:layout_toRightOf="@id/express_order_id_title" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_unlock_fanli_title" android:background="@color/screen_lock_green" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_unlock_fanli_title_return" android:paddingRight="17.0dip" android:layout_width="30.0dip" android:layout_height="43.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/screen_lock_return" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.fanli.android.view.TangFontTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/tv_unlock_fanli_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lock_screen_to_earn_money" android:layout_centerInParent="true" />
+</RelativeLayout>

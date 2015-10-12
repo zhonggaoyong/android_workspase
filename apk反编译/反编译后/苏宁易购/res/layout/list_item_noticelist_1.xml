@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/noticeItem1" android:background="@drawable/input_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff444445" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/notice_txt" android:id="@id/publishTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="" />
+            <ImageView android:id="@id/noticeImg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/default_background_big" android:scaleType="fitXY" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/notice_txt" android:ellipsize="end" android:id="@id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLength="100" />
+        </LinearLayout>
+        <View android:background="@drawable/divide_line_input" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/public_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/check_all" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/noticeItem2" android:background="@drawable/input_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="10.0dip">
+            <ImageView android:id="@id/noticeImg1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/default_background_small" android:scaleType="fitXY" />
+            <LinearLayout android:background="@drawable/notice_title_bg" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignParentBottom="true">
+                <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/title1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="标题标题" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@drawable/iv_list_split" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/notice_multi_title" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="标题标题提示 题提示12题标题提示 题提示12题标题提示 题提示12" android:layout_toLeftOf="@id/noticeImg2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/noticeImg2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/default_background_band_edge_small" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/iv_list_split" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/notice_multi_title" android:id="@id/title3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="标题标题提示 题提示12题标题提示 题提示12题标题提示 题提示12" android:layout_toLeftOf="@id/noticeImg3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/noticeImg3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/default_background_band_edge_small" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/iv_list_split" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/notice_multi_title" android:id="@id/title4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="标题标题提示 题提示12题标题提示 题提示12题标题提示 题提示12" android:layout_toLeftOf="@id/noticeImg4" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/noticeImg4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/default_background_band_edge_small" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

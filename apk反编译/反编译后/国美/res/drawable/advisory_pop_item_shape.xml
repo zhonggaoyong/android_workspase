@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="0.6dip" android:color="@color/product_show_book_line" />
+    <solid android:color="#ffffffff" />
+</shape>

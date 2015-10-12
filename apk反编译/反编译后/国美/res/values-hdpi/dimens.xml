@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="limitbuy_header_default_height">165.0dip</dimen>
+    <dimen name="limitbuy_header_refresh_height">60.0dip</dimen>
+    <dimen name="limitbuy_image_padding">10.0dip</dimen>
+    <dimen name="limitbuy_info_padding_left">7.0dip</dimen>
+    <dimen name="limitbuy_info_padding_right">7.0dip</dimen>
+    <dimen name="limitbuy_progress_bar_width">77.0dip</dimen>
+    <dimen name="ebpay_dialog_img_height">150.0dip</dimen>
+    <dimen name="ebpay_dialog_img_width">260.0dip</dimen>
+    <dimen name="ebpay_dialog_width">300.0dip</dimen>
+    <dimen name="ebpay_order_padding_bottom">23.0dip</dimen>
+    <dimen name="ebpay_order_padding_top">27.0dip</dimen>
+    <dimen name="ebpay_order_text_pitch">25.0dip</dimen>
+    <dimen name="server_item_tv_bottom_padding">5.0dip</dimen>
+    <dimen name="app_special_price_margin">10.0dip</dimen>
+    <dimen name="common_no_net_height">350.0dip</dimen>
+    <dimen name="guess_you_like_height">336.0dip</dimen>
+    <dimen name="bd_wallet_contact_name_width">120.0dip</dimen>
+    <dimen name="mygome_myaccount_pink_height">140.0dip</dimen>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/appspecial_item_main" android:background="@drawable/hot_promotion_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/appspecial_top_relativelayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/appspecial_floor_item_icon" android:paddingLeft="@dimen/limitbuy_image_padding" android:paddingTop="@dimen/limitbuy_image_padding" android:paddingRight="@dimen/limitbuy_image_padding" android:paddingBottom="@dimen/limitbuy_image_padding" android:layout_width="144.0dip" android:layout_height="144.0dip" android:src="@drawable/product_list_grid_item_icon_bg" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_default_white_text_color" android:id="@id/appspecial_price_discount_tv" android:background="#ffe0282e" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:alpha="0.8" />
+            <com.gome.ecmall.custom.LineTextView android:textSize="14.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/appspecial_floor_item_skushortdesc" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="描述" android:lines="2" android:layout_below="@id/appspecial_floor_item_icon" pl:plLine="2"
+              xmlns:pl="http://schemas.android.com/apk/res/com.gome.eshopnew" />
+            <ImageView android:id="@id/appspecial_iv_line" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/line_2" android:layout_below="@id/appspecial_floor_item_skushortdesc" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="5.0dip">
+            <ImageView android:id="@id/appspecial_iv_floor_vs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:src="@drawable/appspecial_floor_vs" android:scaleType="centerInside" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/appspecial_iv_floor_vs" android:layout_centerVertical="true">
+                <TextView android:textSize="12.0sp" android:textColor="#ffc70000" android:layout_gravity="center_horizontal" android:id="@id/appspecial_floor_specialprice_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专享价" />
+                <TextView android:textColor="#ffc70000" android:layout_gravity="center_horizontal" android:id="@id/appspecial_floor_specialprice" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/appspecial_iv_floor_vs" android:layout_centerVertical="true">
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:id="@id/appspecial_floor_pcprice_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网站价" />
+                <TextView android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:id="@id/appspecial_floor_pcprice" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

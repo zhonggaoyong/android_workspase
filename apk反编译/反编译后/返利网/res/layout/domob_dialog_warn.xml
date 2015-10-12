@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fanli.android.view.TangFontTextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="center_horizontal" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="任务须知" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="5.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/taobao_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_appdown" />
+            <com.fanli.android.view.TangFontTextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="任务须知" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="-24.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_apparrer" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/sina_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_appfb" />
+            <com.fanli.android.view.TangFontTextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="完成任务" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="-24.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_apparrer" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/qq_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_apptask" />
+            <com.fanli.android.view.TangFontTextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="赚取F币" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.fanli.android.view.TangFontTextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.请确保任务中出现的应用从未下载过。" />
+        <com.fanli.android.view.TangFontTextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="2.每个任务完成的步骤不同，请按照步骤说明逐一完成。" />
+        <com.fanli.android.view.TangFontTextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:text="3.完成任务后10分钟内发放到你的返利账户，请在我的F币查看。" />
+    </LinearLayout>
+</LinearLayout>

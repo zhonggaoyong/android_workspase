@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="about_text_size">16.0sp</dimen>
+    <dimen name="category_first_class_item_height">130.0dip</dimen>
+    <dimen name="homepage_entries_height">417.0dip</dimen>
+    <dimen name="hot_promotion_item_height">450.0dip</dimen>
+    <dimen name="hot_promotion_item_img_height">275.0dip</dimen>
+    <dimen name="limitbuy_header_default_height">165.0dip</dimen>
+    <dimen name="limitbuy_header_refresh_height">60.0dip</dimen>
+    <dimen name="limitbuy_image_padding">10.0dip</dimen>
+    <dimen name="limitbuy_info_padding_left">7.0dip</dimen>
+    <dimen name="limitbuy_info_padding_right">7.0dip</dimen>
+    <dimen name="limitbuy_progress_bar_width">77.0dip</dimen>
+    <dimen name="tab_padding_left_right">60.0dip</dimen>
+</resources>

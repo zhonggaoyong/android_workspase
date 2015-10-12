@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:background="@color/my_coupon_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/my_coupon_all_overview_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="49.0dip" android:weightSum="3.0" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center" android:id="@id/my_coupon_all_overview_use_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:id="@id/my_coupon_all_use_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="13.0sp" android:textColor="@color/my_coupon_overview_text_red" android:id="@id/my_coupon_all_use_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon_waiting_for_fetching" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/my_coupon_overview_text_red" android:id="@id/my_coupon_all_use_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="(0)" />
+            </LinearLayout>
+            <View android:id="@id/my_coupon_all_use_line" android:background="@color/my_coupon_overview_text_red" android:layout_width="73.0dip" android:layout_height="2.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <View android:background="#ffdddddd" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/my_coupon_all_overview_expired_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:id="@id/my_coupon_all_expired_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="13.0sp" android:textColor="@color/pd_black_25" android:id="@id/my_coupon_all_expired_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon_has_expired" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/pd_black_25" android:id="@id/my_coupon_all_expired_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="(0)" />
+            </LinearLayout>
+            <View android:id="@id/my_coupon_all_expired_line" android:background="@color/my_coupon_overview_text_red" android:visibility="gone" android:layout_width="73.0dip" android:layout_height="2.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <View android:background="#ffdddddd" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/my_coupon_all_overview_has_used_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:id="@id/my_coupon_all_has_used_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="13.0sp" android:textColor="@color/pd_black_25" android:id="@id/my_coupon_all_has_used_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon_has_used" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/pd_black_25" android:id="@id/my_coupon_all_has_used_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="(0)" />
+            </LinearLayout>
+            <View android:id="@id/my_coupon_all_has_used_line" android:background="@color/my_coupon_overview_text_red" android:visibility="gone" android:layout_width="73.0dip" android:layout_height="2.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <View android:background="#ffdddddd" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/my_coupon_fetch_num_layout" android:background="@color/my_coupon_fetch_num" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/my_coupon_all_overview_layout">
+        <RelativeLayout android:id="@id/my_coupon_fetch_num_layout_detail" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <RelativeLayout android:id="@id/my_coupon_fetch_num_layout_close" android:layout_width="34.0dip" android:layout_height="fill_parent">
+                <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/my_coupon_fetch_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="13.0dip" android:textColor="@color/my_coupon_name_text" android:id="@id/my_coupon_have_fetch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon_have_fetch_coupon" android:layout_toRightOf="@id/my_coupon_fetch_num_layout_close" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/color_f15353" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/my_coupon_look" android:layout_toLeftOf="@id/my_coupon_fetch_jump_icon" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/my_coupon_fetch_jump_icon" android:background="@drawable/my_coupon_fetch_jump" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/my_coupon_have_fetch_divide_line" android:background="@color/my_coupon_fetch_divide_line" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/my_coupon_fetch_num_layout_detail" />
+    </RelativeLayout>
+    <ListView android:id="@id/my_coupon_all_waiting_for_using_list" android:background="@color/my_coupon_background" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/my_coupon_background" android:layout_below="@id/my_coupon_fetch_num_layout" android:overScrollFooter="@color/my_coupon_background" />
+    <include android:id="@id/my_coupon_all_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/my_coupon_fetch_num_layout" layout="@layout/jd_common_state_page_05" />
+    <include android:id="@id/my_coupon_loading_error_tips_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/my_coupon_fetch_num_layout" layout="@layout/jd_common_state_page_01" />
+    <include android:id="@id/new_tip_layout" android:visibility="gone" layout="@layout/my_coupon_tips" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/widget_fragment_dialog_title_area" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_dialog_title" android:textColor="#ff565656" android:id="@id/fragment_number_picker_red_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <net.simonvt.numberpicker.NumberPicker android:id="@id/fragment_number_picker_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="36.0dip" android:layout_marginBottom="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_dialog_title" android:textColor="#ff565656" android:id="@id/fragment_number_picker_blue_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <net.simonvt.numberpicker.NumberPicker android:id="@id/fragment_number_picker_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="36.0dip" android:layout_marginBottom="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/widget_fragment_dialog_option_area" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="130.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/nine_search_info" android:contentDescription="@string/contentDescription" />
+        <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ff40494d" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/nine_empty_warn_pre" android:singleLine="true" />
+        <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ff40494d" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/txt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="#ff40494d" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/nine_empty_warn_suff" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="26.0dip" android:layout_alignParentBottom="true">
+        <View android:background="#ffd2d2d2" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+        <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="#ff5c5c64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nine_empty_eye" android:drawableLeft="@drawable/nine_search_browse" android:drawablePadding="2.0dip" />
+        <View android:background="#ffd2d2d2" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

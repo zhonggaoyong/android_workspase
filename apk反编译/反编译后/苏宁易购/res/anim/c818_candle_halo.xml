@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="150" android:drawable="@drawable/c818_candle_halo1" />
+    <item android:duration="150" android:drawable="@drawable/c818_candle_halo2" />
+    <item android:duration="150" android:drawable="@drawable/c818_candle_halo3" />
+</animation-list>

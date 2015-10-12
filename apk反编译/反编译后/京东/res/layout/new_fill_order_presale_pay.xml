@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/fill_order_list_item_bg" android:paddingBottom="@dimen/fill_order_text_top_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/fill_order_item_split_line" android:layout_width="fill_parent" android:layout_height="@dimen/fill_order_line_height" />
+    <TextView android:textSize="@dimen/fill_order_delivery_text_size_big" android:textColor="@color/fill_order_content_virtual2" android:id="@id/presale_pay_way_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fill_order_marginleft" android:layout_marginTop="@dimen/fill_order_text_top_margin" android:text="@string/pg_post_paytype_selectpayment_dialog" />
+    <View android:id="@id/textview_invoice_title_line" android:visibility="visible" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/fill_order_text_top_margin" android:layout_marginRight="10.0dip" style="@style/fill_order_devide_line" />
+    <LinearLayout android:orientation="vertical" android:id="@id/presale_pay_way_layout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/textview_invoice_title_line1" android:visibility="visible" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" style="@style/fill_order_devide_line" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/presale_ship_way_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fill_order_text_top_margin">
+        <TextView android:textSize="@dimen/fill_order_delivery_text_size_big" android:textColor="@color/fill_order_delivery_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fill_order_marginleft" android:text="@string/content_persong_type" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/fill_order_delivery_text_size_big" android:textColor="@color/fill_order_delivery_dark" android:id="@id/presale_ship_way_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/horizonView" android:background="@drawable/lib_story_shape_border" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jd.lib.story.ui.HorizontalListView android:id="@id/selectedListView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/lib_story_margin_vertical_10" android:layout_weight="1.0" />
+    <Button android:textSize="@dimen/lib_story_t_middle_size" android:textColor="@color/lib_story_bonus_color_red" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_ok" android:background="@drawable/button_g_01" android:layout_width="85.0dip" android:layout_height="34.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="@dimen/lib_story_margin_vertical_10" android:text="@string/lib_story_img_button_ok" />
+</LinearLayout>

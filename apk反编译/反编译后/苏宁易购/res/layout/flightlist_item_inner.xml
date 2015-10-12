@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/virtual_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/ios_public_textsize_30pt" android:textColor="@color/pub_color_seven" android:gravity="left" android:id="@id/price_inner" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥ 467" />
+            <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_nine" android:id="@id/price_discount" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(4.5折)" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_four" android:gravity="center" android:id="@id/ebuy_offer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="易购已降20000" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/red" android:id="@id/backticket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_two" android:text="返券返券30" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_nine" android:id="@id/companyroom_inner" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="经济舱" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/arrow_next" />
+    </LinearLayout>
+    <View android:id="@id/flightlist_item_inner_down" android:background="@drawable/category_listview_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

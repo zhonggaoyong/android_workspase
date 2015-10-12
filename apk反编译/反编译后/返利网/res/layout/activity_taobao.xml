@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_container" android:background="@drawable/backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:padding="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/search_bar_area_mark" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_page_padding">
+            <LinearLayout android:orientation="horizontal" android:id="@id/search_bar_area" android:background="@drawable/edit_corner_bg" android:layout_width="fill_parent" android:layout_height="@dimen/height_bar_filter" android:layout_alignParentTop="true">
+                <EditText android:textSize="@dimen/text_size_small2" android:layout_gravity="center_vertical" android:id="@id/et_input" android:background="@null" android:padding="@dimen/global_padding_tiny" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_padding" android:hint="@string/home_search_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" />
+            </LinearLayout>
+            <ListView android:id="@android:id/list" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/selector_list_item_bg" android:transcriptMode="disabled" android:cacheColorHint="#ffffffff" android:divider="#ffdddddd" android:dividerHeight="1.0px" android:layout_below="@id/search_bar_area" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_bar_area_mark">
+            <LinearLayout android:orientation="horizontal" android:id="@id/shopping_cart" android:background="@drawable/selector_list_item_bg_middle" android:paddingLeft="@dimen/global_page_padding" android:paddingRight="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="@dimen/height_list_item_low" android:layout_marginTop="@dimen/global_page_padding_20">
+                <ImageView android:layout_gravity="left|center" android:layout_width="@dimen/height_list_item_icon" android:layout_height="@dimen/height_list_item_icon" android:src="@drawable/ico_cart" android:scaleType="centerInside" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium2" android:textColor="@color/text_color_grey_dark" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" android:text="@string/taobao_shop_cart_title" android:singleLine="true" />
+                    <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_grey" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" android:text="@string/taobao_shop_cart_msg" android:singleLine="true" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/global_page_padding_20" android:src="@drawable/icon_arrow_right" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/shopping_fav" android:background="@drawable/selector_list_item_bg_middle" android:paddingLeft="@dimen/global_page_padding" android:paddingRight="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="@dimen/height_list_item_low" android:layout_marginTop="@dimen/global_page_padding">
+                <ImageView android:layout_gravity="left|center" android:layout_width="@dimen/height_list_item_icon" android:layout_height="@dimen/height_list_item_icon" android:src="@drawable/ico_fav" android:scaleType="centerInside" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium2" android:textColor="@color/text_color_grey_dark" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" android:text="@string/taobao_shop_fav_title" android:singleLine="true" />
+                    <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_grey" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_page_padding" android:text="@string/taobao_shop_fav_msg" android:singleLine="true" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/global_page_padding_20" android:src="@drawable/icon_arrow_right" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/shopping_logistic" android:background="@drawable/selector_list_item_bg_middle" android:paddingLeft="@dimen/global_page_padding" android:paddingRight="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="@dimen/height_list_item_low" android:layout_marginTop="@dimen/global_page_padding">
+                <ImageView android:layout_gravity="left|center" android:layout_width="@dimen/height_list_item_icon" android:layout_height="@dimen/height_list_item_icon" android:src="@drawable/ico_tranfer" android:scaleType="centerInside" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.fanli.android.view.TangFontTextView android:textSize="@dimen/text_size_medium2" android:textColor="@color/text_color_grey_dark" android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/global_page_padding" android:text="@string/taobao_shop_transfer" android:singleLine="true" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/global_page_padding_20" android:src="@drawable/icon_arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+        <ListView android:id="@id/select_list" android:background="#fff8f8f8" android:visibility="gone" android:layout_width="@dimen/list_item_width" android:layout_height="wrap_content" android:listSelector="#00000000" android:divider="@color/text_color_grey_high_light" android:dividerHeight="1.0dip" android:layout_below="@id/search_bar_area_mark" />
+    </RelativeLayout>
+</RelativeLayout>

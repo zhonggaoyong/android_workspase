@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@android:id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/ic_pulldown_arrow" />
+    <com.jingdong.common.ui.JDProgressBar android:layout_gravity="center_vertical" android:id="@android:id/progress" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="20.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@android:style/TextAppearance.Small" android:layout_gravity="center" android:id="@id/pull_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_pull_down" />
+        <TextView android:textAppearance="@android:style/TextAppearance.Small" android:layout_gravity="center" android:id="@id/refresh_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

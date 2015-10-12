@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/epp_recharge_title_layout" android:background="@drawable/bg_title_new" android:layout_width="fill_parent" android:layout_height="@dimen/ios_public_space_96px" android:layout_alignParentTop="true">
+        <Button android:gravity="center" android:id="@id/epp_pay_title_back_img" android:background="@drawable/btn_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="22.0sp" android:textColor="@color/pub_color_eight" android:gravity="center" android:layout_gravity="center" android:id="@id/epp_pay_title_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+        <ImageView android:id="@id/navi_yi" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/androidy" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.suning.mobile.ebuy.host.webview.BusyWebView android:id="@id/epp_recharge_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

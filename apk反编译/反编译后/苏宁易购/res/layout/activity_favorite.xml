@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/good_shop_list_action" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/goodTv" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="37.0dip" android:text="商品" />
+            <View android:id="@id/goodCursor" android:background="@color/ticket_tab_bg" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/shopTv" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="37.0dip" android:text="店铺" />
+            <View android:id="@id/shopCursor" android:background="@color/ticket_tab_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/good_shop_list_action">
+        <com.suning.mobile.ebuy.utils.subpage.PullRefreshLoadListView android:id="@id/favorite" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/txt_date" android:background="@drawable/timeline_normal" android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/emptyLinearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/good_shop_list_action">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_180px" android:src="@drawable/wait_shop_eva_empty" />
+        <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:layout_gravity="center_horizontal" android:id="@id/goAroundTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_40px" android:text="您还没有收藏的商品哦" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_60px">
+            <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/elec_card_text_light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="偶遇总有无限惊喜，一起" />
+            <Button android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_one" android:layout_gravity="center_horizontal" android:id="@id/goAroundBtn" android:background="@drawable/empty_cart_logon" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:text="去逛逛" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

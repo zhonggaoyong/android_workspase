@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/category_title_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+        <ImageView android:id="@id/category_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:contentDescription="@string/contentDescription" />
+        <com.fanli.android.view.TangFontTextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff40494d" android:id="@id/category_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:src="@drawable/super_arrow_right" android:contentDescription="@string/contentDescription" />
+    </LinearLayout>
+    <com.fanli.android.view.NoScrollGridView android:id="@id/grid_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="11.0dip" android:listSelector="@android:color/transparent" android:verticalSpacing="21.0dip" android:numColumns="3" />
+</LinearLayout>

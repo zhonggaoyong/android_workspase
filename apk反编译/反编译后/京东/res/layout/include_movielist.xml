@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="113.0dip">
+        <android.support.v4.view.ViewPager android:id="@id/vp_banners" android:background="#ff686868" android:layout_width="fill_parent" android:layout_height="113.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/dot1" android:background="@drawable/icon_highlight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/dot2" android:background="@drawable/icon_dark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            <ImageView android:id="@id/dot3" android:background="@drawable/icon_dark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            <ImageView android:id="@id/dot4" android:background="@drawable/icon_dark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            <ImageView android:id="@id/dot5" android:background="@drawable/icon_dark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.jingdong.common.ui.JDListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/main_tab_group" android:layout_below="@id/banner" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_cinema_ticket" android:background="@color/white" android:paddingLeft="@dimen/main_pd_left" android:paddingTop="@dimen/main_pd_top" android:paddingRight="@dimen/main_pd_right" android:paddingBottom="@dimen/main_pd_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/banner">
+        <TextView android:textSize="16.0sp" android:textColor="@color/font_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电子券" />
+        <TextView android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/cinema_ticket" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.jingdong.common.movie.widget.LoadingView android:layout_gravity="center_horizontal" android:id="@id/cinema_loading_ticket" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="20.0dip" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@id/tv_no_ticket" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="暂无影片信息\n可直接购买电子兑换券" android:layout_below="@id/ll_cinema_ticket" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/total_summary_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gome.ecmall.custom.TabSwitcher android:id="@id/product_summary_tabswitcher" android:layout_width="fill_parent" android:layout_height="40.0dip" Segments="@array/product_desc_list" />
+        <RelativeLayout android:id="@id/productsum_relative" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:id="@id/product_summary_introduce" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+            <WebView android:id="@id/product_summary_specification" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+            <WebView android:id="@id/product_summary_packing_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+            <WebView android:id="@id/product_summary_aftersale" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

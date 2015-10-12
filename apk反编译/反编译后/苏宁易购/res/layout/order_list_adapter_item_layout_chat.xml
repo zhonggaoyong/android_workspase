@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_order_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_11px" android:layout_marginRight="@dimen/android_public_space_20px">
+        <CheckBox android:id="@id/select_order_check_box" android:background="@null" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_13px" android:button="@null" android:drawableLeft="@drawable/shopping_cart_checkbox" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/order_layout_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/select_order_check_box">
+            <RelativeLayout android:id="@id/order_number_time_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/public_text_color" android:id="@id/order_item_number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/public_text_color" android:id="@id/order_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/order_price_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/order_number_time_layout">
+                <TextView android:textSize="15.0sp" android:textColor="@color/public_text_color" android:id="@id/order_item_price_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/public_text_color" android:gravity="center" android:id="@id/order_item_pay_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/public_text_color" android:id="@id/bgorder_pay_hint_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_11px" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/android_public_space_20px" android:layout_below="@id/top_order_layout" />
+    <TextView android:id="@id/order_item_under_line" android:background="@drawable/category_listview_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_marginTop="3.0dip" android:layout_below="@id/bgorder_pay_hint_view" />
+    <LinearLayout android:orientation="vertical" android:id="@id/order_product_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_13px" android:layout_below="@id/order_item_under_line" />
+</RelativeLayout>

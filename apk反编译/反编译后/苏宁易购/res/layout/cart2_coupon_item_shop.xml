@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/pub_line_above_white_bg" android:padding="@dimen/ios_public_space_30px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/android_public_textsize_22pt" android:textColor="@color/pub_color_eight" android:id="@id/tv_shopName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="5.0" />
+    <TextView android:textSize="@dimen/android_public_textsize_22pt" android:textColor="@color/pub_color_eight" android:gravity="right" android:id="@id/tv_couponSize" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+</LinearLayout>

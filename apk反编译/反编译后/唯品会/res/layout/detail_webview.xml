@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/product_header_layout" layout="@layout/product_detail_header" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/pro_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="8.0dip" android:max="100" android:progress="0" android:layout_centerInParent="true" style="?android:attr/progressBarStyleHorizontal" />
+    <WebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

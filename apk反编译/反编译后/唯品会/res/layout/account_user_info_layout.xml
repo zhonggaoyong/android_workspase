@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_account_account" android:layout_width="wrap_content" android:layout_height="@dimen/account_top_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/tb_account_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/account_name_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/account_password_tip" android:background="@drawable/new_account_password_tip_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="你忘了设置密码哦" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="22.0dip" android:textColor="@color/app_text_black_new_ui" android:layout_gravity="center_horizontal" android:id="@id/tv_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:text="" android:lines="2" android:singleLine="true" android:shadowColor="@color/shadow_color" />
+                <TextView android:textSize="13.0dip" android:textColor="#ffe43494" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_grade" android:background="@drawable/bg_grade_details" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginLeft="15.0dip" android:text="会员 " android:singleLine="true" />
+                <Button android:textSize="@dimen/app_textsize_main_new" android:textColor="@color/white" android:gravity="center" android:id="@id/account_password_button" android:background="@drawable/bg_grade_details" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="21.0dip" android:layout_marginLeft="6.0dip" android:text="@string/setting_password_account_button" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/account_name_grade" android:layout_alignLeft="@id/account_name_grade">
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/app_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_points" android:singleLine="true" />
+            <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/app_text_black_new_ui" android:id="@id/tv_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/anonymous_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="17.5sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="让每一颗不平凡的心邂逅惊艳之美" android:shadowColor="@color/shadow_color" android:shadowDx="0.5" android:shadowDy="0.8" android:shadowRadius="1.0" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+            <TextView android:textSize="@dimen/account_type_item_text_size" android:textColor="#ffe43494" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/account_register" android:background="@drawable/btn_line_violet_bg" android:layout_width="82.0dip" android:layout_height="28.0dip" android:layout_marginLeft="14.0dip" android:text="@string/start_string2" />
+            <TextView android:textSize="@dimen/account_type_item_text_size" android:textColor="#ffe43494" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/account_login" android:background="@drawable/btn_line_violet_bg" android:layout_width="82.0dip" android:layout_height="28.0dip" android:layout_marginLeft="71.0dip" android:layout_marginRight="14.0dip" android:text="@string/start_string1" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

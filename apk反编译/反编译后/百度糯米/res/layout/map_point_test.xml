@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:drawable/alert_light_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="输入城市名称和地址查看地图" />
+        <EditText android:id="@id/map_city_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="上海市" android:hint="请输入城市名称" android:ems="10" />
+        <EditText android:id="@id/map_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="浦东新区碧波路690号" android:hint="请输入地址" android:ems="10" />
+        <Button android:id="@id/map_btn_by_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="显示地图" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:drawable/alert_light_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="输入经纬度查看地图" />
+        <EditText android:id="@id/map_lng" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="121.5883" android:hint="经度" android:ems="10" android:inputType="numberDecimal">
+            <requestFocus />
+        </EditText>
+        <EditText android:id="@id/map_lat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="31.2054" android:hint="纬度" android:ems="10" android:inputType="numberDecimal" />
+        <Button android:id="@id/map_btn_by_gps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="显示地图" />
+    </LinearLayout>
+</LinearLayout>

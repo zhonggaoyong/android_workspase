@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/cash_confirm_tip_text" android:lineSpacingExtra="3.0dip" />
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:shrinkColumns="1">
+        <TableRow android:id="@id/tr_cash_item_1" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/hint_text_color" android:ellipsize="end" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cash_bank_card_tip" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:ellipsize="end" android:gravity="left" android:id="@id/tv_cash_item_1_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+        </TableRow>
+        <TableRow android:id="@id/tr_cash_item_2" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/hint_text_color" android:ellipsize="end" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cash_amount_tip" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/price_text_color" android:gravity="left" android:id="@id/tv_cash_item_2_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+        </TableRow>
+        <TableRow android:id="@id/tr_cash_item_3">
+            <TextView android:textSize="14.0sp" android:textColor="@color/hint_text_color" android:ellipsize="end" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cash_receive_time_tip" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/weak_text_color" android:gravity="left" android:id="@id/tv_cash_item_3_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

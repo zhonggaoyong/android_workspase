@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/lottery_shape_rectangle_bg" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:src="@drawable/lottery_cup_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:textColor="#ff313131" android:layout_gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fasdfasdf" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffa6a6a6" android:layout_gravity="center" android:id="@id/rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dfasdeefasd" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:src="@drawable/lottery_selector_cancle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/story_favorite" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.jd.lib.story.ui.FaceContainer android:orientation="horizontal" android:id="@id/story_favorite_container" android:paddingLeft="@dimen/lib_story_activity_horizontal_margin" android:paddingRight="@dimen/lib_story_activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="@dimen/lib_story_height_favorite_user_face" android:layout_marginBottom="10.0dip" app:itemWidth="@dimen/lib_story_height_favorite_user_face" app:itemHeight="@dimen/lib_story_height_favorite_user_face" app:itemPaddingRight="@dimen/lib_story_marginright_favorite_user_face" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="@dimen/lib_story_height_line" android:src="@color/lib_story_line_e0e0e0" android:layout_below="@id/story_favorite_container" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/lib_story_height_line" android:layout_below="@id/story_favorite_container">
+            <LinearLayout android:id="@id/story_favorite_button" android:clickable="true" android:layout_marginLeft="@dimen/lib_story_margin_vertical_10" android:layout_centerVertical="true" style="@style/lib_story_btn_favorite">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/story_favorite_heart" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_story_icon_favorite_no" />
+                <TextView android:textSize="@dimen/lib_story_t_small_size" android:textColor="@color/lib_story_font_comment_btn" android:layout_gravity="left|center" android:id="@id/story_favorite_count" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/story_comment_button" android:clickable="true" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/story_favorite_button" android:layout_centerVertical="true" style="@style/lib_story_btn_favorite">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/story_comment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_story_icon_comment" />
+                <TextView android:textSize="@dimen/lib_story_t_small_size" android:textColor="@color/lib_story_font_comment_btn" android:layout_gravity="left|center" android:id="@id/story_comment_count" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/story_share_button" android:clickable="true" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/story_comment_button" android:layout_centerVertical="true" style="@style/lib_story_btn_favorite">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_story_more_share" />
+                <TextView android:textSize="@dimen/lib_story_t_small_size" android:textColor="@color/lib_story_font_comment_btn" android:layout_gravity="left|center" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_story_share" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/story_bonus_button" android:background="@drawable/button_bonus_backgroud_selector" android:visibility="gone" android:clickable="true" android:layout_width="72.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/lib_story_margin_vertical_10" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/story_bonus_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_story_bonus_icon_selector" />
+                <TextView android:textSize="@dimen/lib_story_t_small_size" android:textColor="@color/lib_story_bonus_text_indicator" android:layout_gravity="center_vertical" android:id="@id/story_bonus_button_text" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_story_bonus" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

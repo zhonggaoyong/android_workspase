@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/horizonView" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="@dimen/lib_story_img_select_photo">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/lib_story_t_high_size" android:textColor="#ff7e7e7e" android:gravity="center" android:id="@id/goPhoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_story_go_photo" android:drawableLeft="@drawable/lib_story_fragment_go_photo" android:drawablePadding="12.0dip" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:layout_width="@dimen/lib_story_line_h_w_px" android:layout_height="38.0dip" android:src="#ffcacaca" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/lib_story_t_high_size" android:textColor="#ff7e7e7e" android:gravity="center" android:id="@id/goCamare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_story_go_camera" android:drawableLeft="@drawable/lib_story_bonus_icon_selector" android:drawablePadding="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="fill_parent" android:layout_height="@dimen/lib_story_line_h_w_px" android:src="#ffe4e4e4" android:layout_below="@id/layout" />
+</RelativeLayout>

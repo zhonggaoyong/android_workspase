@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_top" style="@style/top_rl">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ll_btn_back" style="@style/top_iv_back" />
+        <TextView android:id="@id/tv_title" android:text="订单成功" style="@style/top_tv_title" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_l1" android:background="@color/white" android:paddingLeft="@dimen/main_pd_left" android:paddingTop="@dimen/main_pd_top" android:paddingRight="@dimen/main_pd_right" android:paddingBottom="@dimen/main_pd_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/rl_top">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/font_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="订单已提交成功" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/font_gray" android:id="@id/tv_orderid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/font_gray" android:id="@id/tv_paymoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/font_gray" android:id="@id/tv_paytype" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_l2" android:background="@color/white" android:paddingLeft="@dimen/main_pd_left" android:paddingTop="@dimen/main_pd_top" android:paddingRight="@dimen/main_pd_right" android:paddingBottom="@dimen/main_pd_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/ll_l1">
+        <TextView android:textSize="16.0sp" android:textColor="@color/font_red" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请在两小时内完成支付。。。" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_pay" android:background="@drawable/sel_paybtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="在线支付" android:layout_below="@id/ll_l2" android:layout_centerHorizontal="true" />
+</RelativeLayout>

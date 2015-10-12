@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/shape_voal_diameter" android:width="@dimen/shape_voal_diameter" />
+    <solid android:color="@color/li_tag_red" />
+</shape>

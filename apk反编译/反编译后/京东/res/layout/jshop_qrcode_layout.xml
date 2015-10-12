@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jshop="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.sample.jshop.ui.JshopTitle android:id="@id/qrcode_title" android:layout_width="fill_parent" android:layout_height="wrap_content" jshop:jshop_drawableLeft="@drawable/common_title_back_selector" jshop:jshop_textTitle="@string/jshop_shop_qrcode" />
+    <LinearLayout android:orientation="vertical" android:id="@id/jshop_qrcode_content" android:background="@drawable/jshop_share_crcode_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/qrcode_title">
+        <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center" android:id="@id/jshop_qrcode_title_text" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="4.0dip" android:singleLine="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:background="@drawable/jshop_splitline" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/jshop_qrcode_detail" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/jshop_qrcode_img" android:layout_width="240.0dip" android:layout_height="240.0dip" android:layout_marginTop="10.0dip" android:scaleType="fitCenter" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff575757" android:ellipsize="end" android:gravity="center" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/jshop_qrcode_share_text" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/jshop_qrcode_button" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/jshop_qrcode_bt_totop" android:layout_marginRight="20.0dip" android:layout_below="@id/jshop_qrcode_content">
+        <Button android:textSize="16.0dip" android:textColor="#ff231815" android:ellipsize="end" android:gravity="center" android:id="@id/jshop_qrcode_saveto" android:background="@drawable/jshop_qrcode_bt_selector" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/jshop_qrcode_saveto" android:singleLine="true" android:onClick="qrcodeShare" />
+    </LinearLayout>
+    <include android:id="@id/jshop_loading_error_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/qrcode_title" android:layout_centerInParent="true" layout="@layout/jshop_loading_error" />
+</RelativeLayout>

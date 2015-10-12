@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f4f6" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <TextView android:id="@id/barcode_history_header" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/barcode_scan_history_no" />
+    <View android:id="@id/barcode_history_header_nderline" android:visibility="gone" style="@style/line1" />
+    <ListView android:id="@id/barcode_history" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/gray" android:dividerHeight="1.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/barcode_no_history_layout" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/barcode_no_history_image" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="120.0dip" android:src="@drawable/history_icon_grey" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/barcode_scan_history_no" android:layout_below="@id/barcode_no_history_image" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

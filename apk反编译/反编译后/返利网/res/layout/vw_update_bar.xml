@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/pulldown_ad" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/updatebar_height">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/ninedocnine_pulldown" android:contentDescription="@string/contentDescription" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/update_bar_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/nine_loading_margin_top">
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/iv_content" android:layout_width="@dimen/pull_refresh_progress_size" android:layout_height="@dimen/pull_refresh_progress_size" android:layout_marginRight="@dimen/updatebar_icon_space">
+                <com.fanli.android.view.PullDownArrowRoundView android:id="@id/iv_arrow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/pb_loading" android:layout_width="@dimen/pull_refresh_progress_size" android:layout_height="@dimen/pull_refresh_progress_size" android:indeterminate="false" android:indeterminateDrawable="@drawable/pull_refresh_progress" android:indeterminateDuration="750" />
+            </FrameLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ly_title" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="#ff40494d" android:id="@id/tv_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.fanli.android.view.TangFontTextView android:textSize="12.0sp" android:textColor="#ff40494d" android:id="@id/tv_title2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

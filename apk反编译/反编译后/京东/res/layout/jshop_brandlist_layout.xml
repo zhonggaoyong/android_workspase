@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f1f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jshop="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.sample.jshop.ui.JshopTitle android:id="@id/brand_title" android:layout_width="fill_parent" android:layout_height="wrap_content" jshop:jshop_drawableLeft="@drawable/title_back_selector" jshop:jshop_textTitle="@string/jshop_brandlist" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/jshop_brand_list_screen" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/jshop_sign_entrance_img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_sign_img_height" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/brand_tab_container" android:background="@drawable/jshop_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tab_arrow_container" android:background="@drawable/jshop_white" android:layout_width="@dimen/jshop_brand_tab_height" android:layout_height="@dimen/jshop_brand_tab_height" android:layout_alignParentRight="true">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/tab_arrow" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_glide" />
+                </LinearLayout>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/tab_vertical_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guangguang_topline" android:layout_toLeftOf="@id/tab_arrow_container" android:layout_centerVertical="true" />
+                <com.jingdong.common.sample.jshop.ui.JshopHorizontalListView android:id="@id/brand_tab" android:background="@drawable/jshop_white" android:paddingLeft="@dimen/jshop_brand_tab_padding" android:paddingRight="@dimen/jshop_brand_tab_padding" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_brand_tab_height" android:layout_toLeftOf="@id/tab_vertical_line" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/jshop_brandlist_gray" android:gravity="center_vertical" android:id="@id/tab_describe" android:paddingLeft="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_brand_tab_height" android:text="" android:layout_toLeftOf="@id/tab_vertical_line" />
+            </RelativeLayout>
+            <View android:id="@id/jshop_brand_line" style="@style/jshop_split_line" />
+            <ListView android:id="@id/jshop_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#fff2f1f6" android:dividerHeight="10.0dip" android:overScrollMode="never" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/jshop_brand_coupon_list_layout" android:background="#88000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:id="@id/jshop_brand_coupon_list_layout_inner" android:background="#ffeaedf1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/jshop_brand_coupon1" android:layout_width="@dimen/jshop_takecoupon_width" android:layout_height="@dimen/jshop_takecoupon_height" android:layout_marginTop="@dimen/jshop_brand_coupon1_margin_top">
+                    <include android:id="@id/jshop_coupon1_view_43" layout="@layout/jshop_coupon_list_item" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/jshop_brand_coupon2" android:layout_width="@dimen/jshop_takecoupon_width" android:layout_height="@dimen/jshop_takecoupon_height" android:layout_marginTop="@dimen/jshop_brand_coupon2_margin_top">
+                    <include android:id="@id/jshop_coupon2_view_43" layout="@layout/jshop_coupon_list_item" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/jshop_brand_coupon3" android:layout_width="@dimen/jshop_takecoupon_width" android:layout_height="@dimen/jshop_takecoupon_height" android:layout_marginTop="@dimen/jshop_brand_coupon3_margin_top">
+                    <include android:id="@id/jshop_coupon3_view_43" layout="@layout/jshop_coupon_list_item" />
+                </LinearLayout>
+                <Button android:textSize="@dimen/jshop_login_btn_text_size" android:textColor="#ffe9321f" android:gravity="center" android:id="@id/jshop_brand_close_coupon_btn" android:background="@drawable/jshop_m_all_selector" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_brand_close_coupon_btn_height" android:layout_marginTop="@dimen/jshop_brand_coupon1_margin_top" android:text="关闭" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

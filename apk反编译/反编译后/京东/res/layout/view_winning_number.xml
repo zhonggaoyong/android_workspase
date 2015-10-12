@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/winning_number_rootstyle">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/winning_number_item_0_img" style="@style/winning_number_text_bg_style" />
+        <TextView android:id="@id/winning_number_item_0_text" style="@style/winning_number_text_style" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/winning_number_rootstyle">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/winning_number_item_1_img" style="@style/winning_number_text_bg_style" />
+        <TextView android:id="@id/winning_number_item_1_text" style="@style/winning_number_text_style" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/winning_number_rootstyle">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/winning_number_item_2_img" style="@style/winning_number_text_bg_style" />
+        <TextView android:id="@id/winning_number_item_2_text" style="@style/winning_number_text_style" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/winning_number_rootstyle">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/winning_number_item_3_img" style="@style/winning_number_text_bg_style" />
+        <TextView android:id="@id/winning_number_item_3_text" style="@style/winning_number_text_style" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/winning_number_rootstyle">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/winning_number_item_4_img" style="@style/winning_number_text_bg_style" />
+        <TextView android:id="@id/winning_number_item_4_text" style="@style/winning_number_text_style" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/winning_number_rootstyle">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/winning_number_item_5_img" style="@style/winning_number_text_bg_style" />
+        <TextView android:id="@id/winning_number_item_5_text" style="@style/winning_number_text_style" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/winning_number_rootstyle">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/winning_number_item_6_img" style="@style/winning_number_text_bg_style" />
+        <TextView android:id="@id/winning_number_item_6_text" style="@style/winning_number_text_style" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/winning_number_rootstyle">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/winning_number_item_7_img" style="@style/winning_number_text_bg_style" />
+        <TextView android:id="@id/winning_number_item_7_text" style="@style/winning_number_text_style" />
+    </RelativeLayout>
+</LinearLayout>

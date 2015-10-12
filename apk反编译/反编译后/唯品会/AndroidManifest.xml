@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="363" android:versionName="5.9.3" android:installLocation="internalOnly" package="com.achievo.vipshop" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <permission android:name="com.achievo.vipshop.permission.MIPUSH_RECEIVE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.achievo.vipshop.permission.MIPUSH_RECEIVE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/icon" android:name="com.achievo.vipshop.common.BaseApplication" android:persistent="true" android:allowBackup="true" android:hardwareAccelerated="true" android:largeHeap="true">
+        <activity android:theme="@style/LoadingTheme" android:name="com.achievo.vipshop.activity.LodingActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="vip" android:host="showHomePage" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1101072624" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.achievo.vipshop.activity.CartHTMLActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.MyCenterActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.AccountSubMenuActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.achievo.vipshop.activity.WareActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/Transparent" android:name="com.achievo.vipshop.newactivity.HandOverAnimActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.achievo.vipshop.newactivity.CouponGouActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.SkuAssistantActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.ReturnLogisticActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.TopActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.ProductACSActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.NewProductDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.DetailLargeImageActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.ReturnInstructionActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.ReceiveOnSiteActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.AlterReceiveOnSiteAddressActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.BrandStoryActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.UserInfoActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.SelectBrandActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.ReturnGoldActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.LoginAndRegisterActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.ThirdBindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.AboutRegisterActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.IntegrationWebActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.NewIntegralActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.BabyListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.BabyEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.achievo.vipshop.activity.WebViewActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.SimpleWebActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.ConsumerFinanceActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.AboutWalletActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.OnlineServiceActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.FindPasswordViewActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.DetailWebViewActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.ProductDetailImageActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.InsuranceActivtiy" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.activity.AddressActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.activity.AddressNewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.AddressAuRegActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.BadRouteActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.activity.PaymentHTMLActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.activity.NewGiftsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.activity.OrderPrePayListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.activity.OrderPreReceiveListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.OrderAllListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.NewOrderMergeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.achievo.vipshop.newactivity.MergeFailReasonActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.activity.OrderOverViewActivity2" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.NewReturnActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.LeaveMessageActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.MessageDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.VipShopPaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.achievo.vipshop.activity.WalletActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.WalletSummaryListActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.WalletLoginPassword" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.WalletBindActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.WalletWithdrawalProgressActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.WalletBankCardBranchListActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.WalletPassWordActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.WalletInputActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.WalletWithdrawActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.achievo.vipshop.newactivity.BindMobileActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.achievo.vipshop.newactivity.SetShortPayPasswordActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.NumberPayPasswordActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.newactivity.CheckPayPasswordActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.RealNameAuthActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.achievo.vipshop.activity.VerifySmsCodeActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.achievo.vipshop.activity.BindedBankCardListActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.WalletWithdrawDescActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.WalletInputBankCardInfoActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.sa.isecurity.plugin.SAKbdActivity" android:launchMode="singleTask" android:configChanges="orientation" />
+        <activity android:name="com.achievo.vipshop.activity.WalletBindCardActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.WalletWithdrawalListActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.WalletBankCardInfoActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.WalletWithdrawalInfoActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleAndFrameDialog" android:name="com.achievo.vipshop.newactivity.WalletDialogActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.NotificationActionActivity" android:exported="true" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.NotificationActionActivityForMipush" android:exported="true" android:launchMode="singleInstance" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.achievo.vipshop.activity.ItemNotFoundActivity" />
+        <activity android:theme="@style/StyledIndicators" android:name="com.achievo.vipshop.newactivity.NewVipProductsActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.SettingActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.PreViewActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:theme="@style/StyledIndicators" android:name="com.achievo.vipshop.newactivity.BeautyActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.NewWebViewActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:theme="@style/StyledIndicators" android:name="com.achievo.vipshop.newactivity.HomeViewsActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.achievo.vipshop.wxapi.WXPayEntryActivity" android:exported="true" android:launchMode="singleTop" />
+        <activity android:name="com.achievo.vipshop.activity.WalletEditBindingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.achievo.vipshop.activity.ActivityLoadingActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.NewBrandListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.MyFavorBrandManagerActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.MyFavorActivtiy" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.NewProductListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.achievo.vipshop.newactivity.NewSpecialActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.MenuChannelActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.StoryActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.NewProductSpecialActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.GiftSwitchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.achievo.vipshop.newactivity.ClassifyActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.FliterActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.FliterProductActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.FliterBrandActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.FliterProductListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.ClassifyBrandActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" android:name="com.achievo.vipshop.wxapi.WXEntryActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name=".wxapi.WXEntryActivityAction" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.achievo.vipshop.util.share.SinaShareActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" android:exported="false" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/NoTitleAndFrameDialog" android:name="com.achievo.vipshop.activity.CartNotificationActivity" android:launchMode="singleInstance" />
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.achievo.vipshop.newactivity.WareTipsActivity" android:excludeFromRecents="true" />
+        <activity android:name="com.achievo.vipshop.newactivity.ProblemDetailActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:theme="@style/TransparentInner" android:name="com.achievo.vipshop.activity.AnimationActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.CustomServiceActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.NewBankListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleAndFrameDialog" android:name="com.achievo.vipshop.newactivity.HomeAdvPopActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.achievo.vipshop.newactivity.NewSettingPasswordActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.NewPreBrandViewActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:theme="@style/StyledIndicators" android:name="com.achievo.vipshop.newactivity.MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.SelfServiceOrderListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.SelfServiceDeliveryActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.SelfServiceRefundActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.SelfServiceInvoiceActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.ReturnInfoActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.ACSProblemListActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.PaymentQuickPayActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.CartBonusActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.QrActionActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="vipshop" android:host="goHome" />
+                <data android:scheme="vipshop" android:host="showBrandProducts" />
+                <data android:scheme="vipshop" android:host="showGoodsDetail" />
+                <data android:scheme="vip" android:host="showGoodsDetail" />
+                <data android:scheme="vip" android:host="showListPage" />
+                <data android:scheme="vip" android:host="showTopic" />
+                <data android:scheme="vipshop" android:host="showSpecial" />
+                <data android:scheme="vipshop" android:host="showCart" />
+                <data android:scheme="vipshop" android:host="showActivity" />
+                <data android:scheme="vipshop" android:host="showChannel" />
+                <data android:scheme="vipshop" android:host="showCoupon" />
+                <data android:scheme="vipshop" android:host="showCollect" />
+                <data android:scheme="vipshop" android:host="showOrderList" />
+                <data android:scheme="vipshop" android:host="showOrder" />
+                <data android:scheme="vipshop" android:host="showLogistics" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alipay.sdk.app.H5PayActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.alipay.sdk.auth.AuthActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.CaptureActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.CustomGalleryActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.MyQRCodeWebActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.QuickPayBankFormActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.QuickPayCreditFormActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.QuickPaySmsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.QuickPayNoticeActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.QuickPayMobileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.QuickPayPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.QuickPayPasswordSmsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.achievo.vipshop.activity.NewCartGiftsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.achievo.vipshop.activity.ActivateGiftActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.SetPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.ReturnFlowActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.RegisterActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.NewRegisterActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.activity.ReSetPasswordActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.achievo.vipshop.activity.GuideActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.AddTransportActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.achievo.vipshop.newactivity.SplashAlarmActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" />
+        <activity android:name="com.achievo.vipshop.newactivity.SearchActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.achievo.vipshop.newactivity.PaymentCouponActivity" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <service android:name="com.achievo.vipshop.manage.service.SplashAlarmService" android:persistent="true" android:enabled="true" android:exported="false" android:process=":splashAlarmService" />
+        <activity android:name="com.achievo.vipshop.activity.BrowsingHistoryActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.achievo.vipshop.activity.SearchProductlistActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.achievo.vipshop.newactivity.FliterSearchActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.achievo.vipshop.newactivity.SelectBrandSearchActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.achievo.vipshop.activity.SplashInfoActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.NewPaymentResponseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.achievo.vipshop.newactivity.QQPayResultActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="tencentcom.achievo.vipshop" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.achievo.vipshop.newactivity.OrderDetailActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.achievo.vipshop.newactivity.OrderPreSaleListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.ModifyPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.achievo.vipshop.activity.BankCardActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.AccountSecurityActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.glasses.Activity.GlassesTryActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.glasses.Activity.GlassesPictureListActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.glasses.Activity.GlassesPictureDetailsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.activity.FindPasswordNewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.activity.FindPasswordByPhoneActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.activity.FindPasswordByEmailActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.activity.FindPasswordChooseTypeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.XinGouSmsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MyNoTitleBar" android:name="com.achievo.vipshop.newactivity.RecommendCouponActivity" android:screenOrientation="portrait" />
+        <service android:label="MqttService" android:name="com.vipshop.sdk.push.MqttService" android:process="com.achievo.vipshop.MqttService" />
+        <service android:name="com.achievo.vipshop.manage.service.CartService" android:enabled="true" />
+        <service android:name="com.achievo.vipshop.manage.service.CartBgService" android:enabled="true" android:process="com.achievo.vipshop.CartBgService" />
+        <service android:name="com.vipshop.sdk.viplog.mechanism.LogService" />
+        <service android:name="com.vipshop.sdk.viplog.batch.VipLogService" />
+        <receiver android:name="com.vipshop.sdk.viplog.batch.VipLogReceiver" android:exported="false" />
+        <service android:name="com.achievo.vipshop.manage.notification.NotifyService" />
+        <service android:label="Vipshop safe push service" android:name="com.vipshop.sdk.push.VipsHttpPushService" android:enabled="true" android:process=":vipsPushService" />
+        <receiver android:label="Vipshop safe push service" android:name="com.vipshop.sdk.push.VipsPushReceiver" android:enabled="true" android:process="com.achievo.vipshop.MqttService">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="com.vipshop.pushClient.ON_ALARM" />
+                <action android:name="com.vipshop.pushClient.ON_RECV_PUSH" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.achievo.vipshop.manage.notification.NotifyService$NotifyNetReceiver" />
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote" />
+        <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" android:process=":pushservice" />
+        <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true" />
+        <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true" />
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.vipshop.sdk.push.MiPushMessageReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="UMENG_APPKEY" android:value="4fa0d67552701579db000015" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="vipshop" />
+        <meta-data android:name="CPS_ID" android:value="MobileAds:cbadb924:5d214a8b" />
+        <meta-data android:name="TD_CHANNEL_ID" android:value="vipshop" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="a7b5bcfbb93d1ca56d2ed31ebd74ee80ea09ecf0" />
+    </application>
+</manifest>

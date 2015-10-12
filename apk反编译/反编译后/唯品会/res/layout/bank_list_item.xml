@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@drawable/item_press_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:id="@id/bank_logo" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/app_textsize_large" android:textColor="@color/app_text_black_new_ui" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="中国银行" android:singleLine="true" android:layout_toRightOf="@id/bank_logo" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/vip_red" android:ellipsize="end" android:id="@id/txt_paytips" android:background="@drawable/btn_line_violet_normal" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/txt_title" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/app_margin_new" />
+</LinearLayout>

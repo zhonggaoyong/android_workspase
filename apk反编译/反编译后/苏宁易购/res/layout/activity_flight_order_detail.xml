@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/order_fill_linearlayout" android:background="@drawable/bg_title_new" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_40px">
+            <RelativeLayout android:id="@id/singleDetailRelativeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/flight_order_detail_go_rela" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/flight_order_detail_go_rela1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginRight="@dimen/ios_public_space_40px">
+                        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/flight_order_detail_go_voyage" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="北京-上海【单程】" android:layout_alignParentLeft="true" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/address_manager_address" android:id="@id/flight_order_time_go_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_20px" android:text="2014/03/11" android:layout_toRightOf="@id/flight_order_detail_go_voyage" android:layout_centerVertical="true" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/address_manager_address" android:id="@id/flight_order_detail_arrive_go_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2小时" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/flight_order_detail_go_rela2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginRight="@dimen/ios_public_space_40px" android:layout_below="@id/flight_order_detail_go_rela1">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/address_manager_address" android:id="@id/flight_order_detail_go_airlinecomname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="东方航空" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/flight_order_detail_go_rela3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginRight="@dimen/ios_public_space_40px" android:layout_marginBottom="@dimen/ios_public_space_20px" android:layout_below="@id/flight_order_detail_go_rela2">
+                        <RelativeLayout android:id="@id/flight_order_detail_start_go_rela1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                            <RelativeLayout android:id="@id/flight_order_detail_start_go_layout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textColor="@color/black" android:id="@id/single_startFlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="起飞：" />
+                                <TextView android:textColor="@color/red" android:id="@id/single_startFlightTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="--" android:layout_toRightOf="@id/single_startFlight" />
+                                <TextView android:textColor="@color/black" android:id="@id/single_startFlightName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="--" android:layout_toRightOf="@id/single_startFlightTime" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/flight_order_detail_start_go_layout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/flight_order_detail_start_go_layout1">
+                                <TextView android:textColor="@color/black" android:id="@id/single_landingFlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="降落：" />
+                                <TextView android:textColor="@color/red" android:id="@id/single_landingFlightTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="--" android:layout_toRightOf="@id/single_landingFlight" />
+                                <TextView android:textColor="@color/black" android:id="@id/single_landingFlightName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="--" android:layout_toRightOf="@id/single_landingFlightTime" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/flight_order_detail_start_go_rela2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_toRightOf="@id/flight_order_detail_start_go_rela1" android:layout_alignParentRight="true">
+                            <Button android:textColor="@color/black" android:id="@id/single_back_change" android:background="@drawable/title_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="改签规则" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/flight_order_detail_go_rela3" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_40px" android:layout_below="@id/flight_order_detail_go_rela">
+                    <com.suning.mobile.ebuy.view.MyHeightListView android:id="@id/flight_order_detail_go_customer_detailInfo_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#00ffffff" android:dividerHeight="@dimen/ios_public_space_20px" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_40px">
+                <RelativeLayout android:id="@id/flight_order_detail_back_rela" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/flight_order_detail_back_rela1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginRight="@dimen/ios_public_space_40px">
+                        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/flight_order_detail_back_voyage" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="北京-上海【单程】" android:layout_alignParentLeft="true" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/address_manager_address" android:id="@id/flight_order_time_back_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_20px" android:text="2014/03/11" android:layout_toRightOf="@id/flight_order_detail_back_voyage" android:layout_centerVertical="true" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/address_manager_address" android:id="@id/flight_order_detail_arrive_back_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2小时" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/flight_order_detail_back_rela2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginRight="@dimen/ios_public_space_40px" android:layout_below="@id/flight_order_detail_back_rela1">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/address_manager_address" android:id="@id/flight_order_detail_back_airlinecomname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="东方航空" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/flight_order_detail_back_rela3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginRight="@dimen/ios_public_space_40px" android:layout_marginBottom="@dimen/ios_public_space_20px" android:layout_below="@id/flight_order_detail_back_rela2">
+                        <RelativeLayout android:id="@id/flight_order_detail_start_back_rela1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                            <RelativeLayout android:id="@id/flight_order_detail_start_back_layout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textColor="@color/black" android:id="@id/startFlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="起飞：" />
+                                <TextView android:textColor="@color/red" android:id="@id/startFlightTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="--" android:layout_toRightOf="@id/startFlight" />
+                                <TextView android:textColor="@color/black" android:id="@id/startFlightName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_toRightOf="@id/startFlightTime" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/flight_order_detail_start_back_layout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/flight_order_detail_start_back_layout1">
+                                <TextView android:textColor="@color/black" android:id="@id/landingFlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="降落：" />
+                                <TextView android:textColor="@color/red" android:id="@id/landingFlightTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="--" android:layout_toRightOf="@id/landingFlight" />
+                                <TextView android:textColor="@color/black" android:id="@id/landingFlightName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="--" android:layout_toRightOf="@id/landingFlightTime" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/flight_order_detail_start_back_rela2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_toRightOf="@id/flight_order_detail_start_back_rela1" android:layout_alignParentRight="true">
+                            <Button android:textColor="@color/black" android:id="@id/back_change" android:background="@drawable/title_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="改签规则" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/flight_order_detail_back_rela3" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_40px" android:layout_below="@id/flight_order_detail_back_rela">
+                    <com.suning.mobile.ebuy.view.MyHeightListView android:id="@id/flight_order_detail_back_customer_detailInfo_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:cacheColorHint="#00000000" android:divider="#00ffffff" android:dividerHeight="@dimen/ios_public_space_20px" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/flight_order_detail_contact_rela" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_40px">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/flight_order_detail_contact_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:text="预订人" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/address_manager_address" android:id="@id/flight_order_detail_contactName" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ios_public_space_40px" android:text="王辉(15250982206)" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/flight_order_detail_singleTrip_rela" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_40px">
+                <RelativeLayout android:id="@id/flight_order_detail_singleTrip_relalayout1" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ios_public_space_40px" android:text="航程单配送" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/address_manager_address" android:id="@id/sendType" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ios_public_space_40px" android:text="苏宁配送" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/send_info" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/flight_order_detail_singleTrip_relalayout1">
+                    <RelativeLayout android:id="@id/flight_order_detail_singleTrip_relalayout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginRight="@dimen/ios_public_space_40px">
+                        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/send_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_alignParentLeft="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/flight_order_detail_singleTrip_relalayout4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginRight="@dimen/ios_public_space_40px" android:layout_marginBottom="@dimen/ios_public_space_20px" android:layout_below="@id/flight_order_detail_singleTrip_relalayout3">
+                        <RelativeLayout android:id="@id/send_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                            <RelativeLayout android:id="@id/flight_order_detail_singleTrip_relalayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_20px">
+                                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/send_customer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="王辉" android:layout_alignParentLeft="true" />
+                                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/send_customer_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15250982206" android:layout_alignParentRight="true" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/flight_order_detail_singleTrip_relalayout4" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/flight_order_detail_payment_money_rela" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ios_public_space_40px">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/order_payment_money" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ios_public_space_40px" android:text="支付方式：" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/address_manager_address" android:id="@id/flight_payment" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ios_public_space_40px" android:text="--" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/flight_order_detail_info_rela" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_40px">
+                <RelativeLayout android:id="@id/flight_order_detail_info_relalayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginRight="@dimen/ios_public_space_40px">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/flight_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单号：" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/flight_order_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/flight_order_detail_info_relalayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginRight="@dimen/ios_public_space_40px" android:layout_below="@id/flight_order_detail_info_relalayout1">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/flight_order_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间：" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/flight_order_time_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/flight_order_detail_info_relalayout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_20px" android:layout_marginRight="@dimen/ios_public_space_40px" android:layout_marginBottom="@dimen/ios_public_space_40px" android:layout_below="@id/flight_order_detail_info_relalayout2">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/flight_order_detail_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单状态：" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/flight_order_detail_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/flight_order_detail_info_relalayout3" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:layout_marginTop="@dimen/ios_public_space_40px" android:layout_marginRight="@dimen/ios_public_space_40px">
+                <RelativeLayout android:id="@id/fliht_order_clean_rela" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ios_public_space_40px">
+                    <Button android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/address_manager_address" android:id="@id/flight_order_detail_clean_btn" android:background="@drawable/hotel_book_success_btn_style" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="取消订单" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/fliht_order_clean_rela" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/flight_order_detail_price_count_rela" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/flight_order_detail_price_count__btn_rela1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ios_public_space_40px" android:layout_centerInParent="true">
+                    <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/black" android:id="@id/flight_order_detail_price_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="合计:" />
+                    <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/red" android:id="@id/flight_order_detail_price_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$999.99" android:layout_toRightOf="@id/flight_order_detail_price_count_text" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_40px" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

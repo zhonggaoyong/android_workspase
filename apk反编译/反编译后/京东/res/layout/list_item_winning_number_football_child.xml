@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@color/bg_white" android:layout_width="fill_parent" android:layout_height="@dimen/winning_number_item_football_child_height" android:minHeight="@dimen/winning_number_item_football_child_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_persional_info" android:textColor="@color/text_gray_light" android:gravity="center" android:id="@id/matchName" android:background="@color/bg_gray_light" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="英超\n00 01:00" />
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+    <TextView android:id="@id/teamA" android:text="曼联" style="@style/winning_number_footabll_team_text_style" />
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+    <TextView android:textSize="@dimen/text_size_persional_info" android:textColor="@color/text_red" android:gravity="center" android:id="@id/matchResult" android:background="@color/lottery_footbal_victory_bg" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="胜\n2：0" />
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_vertical_style" />
+    <TextView android:id="@id/teamB" android:text="曼城" style="@style/winning_number_footabll_team_text_style" />
+</LinearLayout>

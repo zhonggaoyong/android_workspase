@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/filter_value_text_size" android:textStyle="bold" android:textColor="@color/filter_alphabet_color" android:gravity="left|center" android:id="@id/filter_alphabet_catalog" android:background="@color/filter_page_f3f5f7" android:paddingLeft="@dimen/filter_page_space_10" android:layout_width="fill_parent" android:layout_height="@dimen/filter_page_space_25" />
+    <View android:id="@id/filter_alphabet_line" android:visibility="gone" android:layout_below="@id/filter_alphabet_catalog" style="@style/filter_line" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/filter_brand_tab_height" android:layout_marginLeft="@dimen/filter_page_space_15" android:layout_below="@id/filter_alphabet_line">
+        <TextView android:textSize="@dimen/filter_key_text_size" android:textColor="@color/filter_alphabet_color" android:ellipsize="end" android:id="@id/filter_alphabet_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/filter_alphabet_check" style="@style/filter_check_style" />
+    </RelativeLayout>
+</RelativeLayout>

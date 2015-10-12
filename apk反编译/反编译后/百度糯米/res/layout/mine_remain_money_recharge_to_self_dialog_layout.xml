@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mine_dialog_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="266.0dip" android:minHeight="193.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/mine_black2" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="18.0dip">
+        <Button android:textColor="@color/selector_login_color" android:id="@id/cancel" android:background="@drawable/selector_login_button" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/mine_cancel" android:layout_weight="1.0" />
+        <View android:layout_width="10.0dip" android:layout_height="wrap_content" />
+        <Button android:textColor="@color/selector_delete_color" android:id="@id/ok" android:background="@drawable/selector_red_button" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/mine_ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

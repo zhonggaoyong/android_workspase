@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@drawable/backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/emptyView" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/item_list_empty" />
+    <com.fanli.android.activity.widget.PullToRefreshScrollView android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" ptr:ptrMode="pullFromStart" ptr:ptrAnimationStyle="flip" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.fanli.android.activity.widget.FanliGridView android:id="@id/my_list" android:paddingLeft="@dimen/global_padding_tiny" android:paddingRight="@dimen/global_padding_tiny" android:layout_width="fill_parent" android:layout_height="fill_parent" android:transcriptMode="disabled" android:cacheColorHint="#ffffffff" android:horizontalSpacing="@dimen/global_padding" android:verticalSpacing="@dimen/global_padding" android:stretchMode="columnWidth" />
+            <include android:id="@id/progressBar" layout="@layout/listview_footer" />
+        </LinearLayout>
+    </com.fanli.android.activity.widget.PullToRefreshScrollView>
+</RelativeLayout>

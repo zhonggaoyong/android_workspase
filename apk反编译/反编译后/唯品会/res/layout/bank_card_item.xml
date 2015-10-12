@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bankItemLayOut" android:background="@drawable/bg_default" android:layout_width="354.0dip" android:layout_height="96.0dip">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="16.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/first_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/bankCard_bg" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/icon_cmb" />
+                <ImageView android:id="@id/bankCard_Img" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/icon_cmb" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/app_text_black" android:layout_gravity="center_vertical" android:id="@id/bank_name" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="招商银行信用卡" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/first_layout">
+                <TextView android:textSize="28.0dip" android:textColor="@color/app_text_black" android:layout_gravity="center_vertical" android:id="@id/card_number_hide" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="****  ****  ****  " />
+                <TextView android:textSize="28.0dip" android:textColor="@color/app_text_black" android:id="@id/card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8785" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

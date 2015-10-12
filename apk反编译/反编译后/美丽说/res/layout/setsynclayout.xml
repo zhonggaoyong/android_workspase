@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerbar" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="@string/bind_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View style="@style/borderline" />
+    <LinearLayout android:orientation="vertical" android:id="@id/profile_setting_login_info" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/login_sina" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sync_bind_sina" android:drawableLeft="@drawable/binding_ico_weibo" android:drawablePadding="5.0dip" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/sync_sina_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/setsync_checkbox_style" />
+            <ImageView android:id="@id/sync_sina_check_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:layout_marginLeft="15.0dip" style="@style/cutline" />
+        <RelativeLayout android:id="@id/login_qq" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sync_bind_qzone" android:drawableLeft="@drawable/binding_ico_qqkongjian" android:drawablePadding="5.0dip" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/sync_qq_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/setsync_checkbox_style" />
+            <ImageView android:id="@id/sync_qq_check_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:layout_marginLeft="15.0dip" style="@style/cutline" />
+        <RelativeLayout android:id="@id/login_txweibo" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sync_bind_txweibo_1" android:drawableLeft="@drawable/binding_ico_tengxunweibo" android:drawablePadding="5.0dip" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/sync_txweibo_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/setsync_checkbox_style" />
+            <ImageView android:id="@id/sync_txweibo_check_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View style="@style/borderline" />
+    </LinearLayout>
+</LinearLayout>

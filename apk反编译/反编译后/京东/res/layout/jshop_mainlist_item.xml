@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jshop_main_bgcolor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/jshop_head_banner_layout" android:visibility="gone" layout="@layout/jshop_banner_layout" />
+    <include android:id="@id/jshop_head_coupons_layout" android:visibility="gone" layout="@layout/jshop_coupons_layout" />
+    <include android:id="@id/jshop_head_coupons_new_layout" android:visibility="gone" layout="@layout/jshop_coupons_new_layout" />
+    <include android:id="@id/jshop_custom_image_view_layout" android:visibility="gone" layout="@layout/jshop_custom_view_item" />
+    <include android:id="@id/jshop_head_banner_layout" android:visibility="gone" layout="@layout/jshop_banner_layout" />
+    <include android:id="@id/jshop_head_webview_layout" android:visibility="gone" layout="@layout/jshop_webview_layout" />
+    <include android:id="@id/jshop_all_button_layout" android:visibility="gone" android:clickable="true" layout="@layout/jshop_m_all_product" />
+    <include android:id="@id/jshop_text_layout" android:visibility="gone" layout="@layout/jshop_m_text_layout" />
+    <include android:id="@id/jshop_free_2_layout" android:visibility="gone" layout="@layout/jshop_m_free_layout2" />
+    <include android:id="@id/jshop_free_t2b1_layout" android:visibility="gone" layout="@layout/jshop_m_free_layout3" />
+    <include android:id="@id/jshop_free_l2r1_layout" android:visibility="gone" layout="@layout/jshop_m_free_layout4" />
+    <include android:id="@id/jshop_free_t1b3_layout" android:visibility="gone" layout="@layout/jshop_m_free_layout5" />
+    <include android:id="@id/jshop_product_list_layout" android:visibility="gone" layout="@layout/jshop_m_product_list" />
+    <include android:id="@id/jshop_big_promotio_1_layout" android:visibility="gone" layout="@layout/jshop_m_big_promotion1" />
+    <include android:id="@id/jshop_promotio_1_layout" android:visibility="gone" layout="@layout/jshop_m_promotion1" />
+    <include android:id="@id/jshop_promotio_2_layout" android:visibility="gone" layout="@layout/jshop_m_promotion2" />
+    <include android:id="@id/jshop_promotio_3_layout" android:visibility="gone" layout="@layout/jshop_m_promotion3" />
+    <include android:id="@id/jshop_promotio_4_layout" android:visibility="gone" layout="@layout/jshop_m_promotion4" />
+    <include android:id="@id/jshop_viewpager_layout" android:visibility="gone" layout="@layout/jshop_m_viewpager" />
+    <include android:id="@id/all_product_foot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="@dimen/jshop_m_promotion_marginb" layout="@layout/jshop_all_product_foot" />
+    <include android:id="@id/jshop_all_product_title" android:visibility="gone" layout="@layout/jshop_all_product_head_view" />
+    <include android:id="@id/jshop_all_product_two_layout" android:visibility="gone" layout="@layout/product_two_product_item" />
+    <View android:id="@id/my_bottom_line" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

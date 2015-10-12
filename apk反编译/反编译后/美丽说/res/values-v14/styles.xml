@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="noMultiTouchNoTitleBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+    </style>
+    <style name="Theme.NoAnimation" parent="@style/AppBaseTheme">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+</resources>

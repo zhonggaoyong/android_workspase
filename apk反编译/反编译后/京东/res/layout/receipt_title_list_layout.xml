@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/receipt_title_list_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/receipt_title_list_item_ref" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/receipt_title_list_item" />
+</LinearLayout>

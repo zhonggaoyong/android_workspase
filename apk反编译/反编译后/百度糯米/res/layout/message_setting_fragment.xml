@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/message_push_activity" android:background="@drawable/more_app_item_selector" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/message_push_activity_check" android:background="@drawable/more_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        <LinearLayout android:orientation="vertical" android:id="@id/message_push_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:layout_toLeftOf="@id/message_push_activity_check" android:layout_alignParentLeft="true">
+            <TextView android:textSize="15.0sp" android:textColor="#ff111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_push_activity_title" android:lineSpacingExtra="0.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/message_push_activity_content" android:lineSpacingExtra="0.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="8.0dip" />
+    <RelativeLayout android:id="@id/message_deal_tip" android:background="@drawable/more_app_item_selector" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/message_deal_tip_check" android:background="@drawable/more_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        <LinearLayout android:orientation="vertical" android:id="@id/message_deal_tip_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:layout_toLeftOf="@id/message_deal_tip_check" android:layout_alignParentLeft="true">
+            <TextView android:textSize="15.0sp" android:textColor="#ff111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_deal_tip_title" android:lineSpacingExtra="0.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/message_deal_tip_content" android:lineSpacingExtra="0.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="8.0dip" />
+    <RelativeLayout android:id="@id/message_groupon_recommend" android:background="@drawable/more_app_item_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/message_groupon_recommend_check" android:background="@drawable/more_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        <LinearLayout android:orientation="vertical" android:id="@id/message_groupon_recommend_layout" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:layout_toLeftOf="@id/message_groupon_recommend_check" android:layout_alignParentLeft="true">
+            <TextView android:textSize="15.0sp" android:textColor="#ff111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_groupon_recommend_title" android:lineSpacingExtra="0.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/message_groupon_recommend_content" android:lineSpacingExtra="0.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="8.0dip" />
+</LinearLayout>

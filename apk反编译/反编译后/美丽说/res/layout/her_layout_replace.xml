@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <View android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meilishuo.app.views.KeepScaleImageView android:id="@id/iv_personal_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <com.meilishuo.app.herprofile.view.HerProfileScrollToTopView android:id="@id/scroll_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.meilishuo.app.profile.view.KeepScaleViewGroup android:id="@id/replace_body" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/her_layout_head" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/tab_top_line" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" style="@style/FirstDividerViewStyle" />
+            <com.meilishuo.app.widget.HomeTabView android:id="@id/home_tab" android:background="@color/white" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/herprofile_tab_height" android:layout_below="@id/tab_top_line" app:defaultColor="#ff666666" app:selectColor="#ffff7a9a" app:lineColor="@color/transparent" app:animation="true" app:tabTextSize="14.0sp" app:customIndex="3" app:showMiddleLine="true" />
+            <View android:layout_alignBottom="@id/home_tab" style="@style/FirstDividerViewStyle" />
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.meilishuo.app.herprofile.view.HerProfileScrollToTopView>
+    <RelativeLayout android:background="@drawable/pic_shadow_top" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.meilishuo.app.views.CustomTextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/btn_back" android:layout_marginLeft="11.0dip" android:text="" android:drawableLeft="@drawable/ico_return_white" android:drawablePadding="0.0dip" style="@style/TopBackBtn" />
+            <com.meilishuo.app.views.SlidebarView android:id="@id/sidebar" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" app:optionImage="@drawable/index_gongju_icon_white" style="@style/SlideBarTtyle" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/invite_friends_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_user_invite" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/me_header_right_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/circle_share" />
+        </LinearLayout>
+        <com.meilishuo.app.profile.view.RefreshRing android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_refresh" android:layout_centerInParent="true" />
+        <com.meilishuo.app.views.GoShoppingcartView android:id="@id/to_shoppingcart_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:imageResouce="@drawable/toolbar_ico_shoppingcar_white" app:textBackground="@drawable/home_bg_shoppingcar_tips_trans" />
+        <com.meilishuo.app.views.NewMessageTipView android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/to_shoppingcart_btn" android:layout_centerVertical="true" app:src="@drawable/ico_msg_write" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/title_bar_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/title_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:singleLine="true" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/title_tag" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/networkerror_new_layout" />
+    <RelativeLayout android:layout_gravity="right|center" android:id="@id/layout_think_you_like" android:tag="" android:visibility="gone" android:layout_width="93.0dip" android:layout_height="32.0dip" android:layout_marginTop="100.0dip" android:src="@drawable/slide_star">
+        <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/pink" android:gravity="center" android:background="@color/pink_d4_t2" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="18.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip" android:text="@string/profile_your_like" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_like" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/icon_like_have_word" />
+        <LinearLayout android:gravity="center_horizontal" android:paddingLeft="1.0dip" android:layout_width="32.0dip" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_like_num" android:paddingBottom="2.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/tv_add" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="-1.0dip" android:layout_marginTop="6.0dip" android:text="+" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

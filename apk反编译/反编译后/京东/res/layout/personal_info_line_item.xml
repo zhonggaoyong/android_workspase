@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/personal_info_item" />
+    <View android:layout_marginLeft="10.0dip" style="@style/line6" />
+</merge>

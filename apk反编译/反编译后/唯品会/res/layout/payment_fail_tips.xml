@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#cce6e8f4" android:layout_width="fill_parent" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/payment_fail_tips_left_icon" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/icon_explain_blue_small" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/payment_fail_tips_right_icon" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_open_small_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/app_text_black" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quota_tip_text" android:singleLine="true" android:layout_toLeftOf="@id/payment_fail_tips_right_icon" android:layout_toRightOf="@id/payment_fail_tips_left_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

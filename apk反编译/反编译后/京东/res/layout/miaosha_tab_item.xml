@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/miaosha_tab_time" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginTop="2.0dip" android:lines="1" android:includeFontPadding="false" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/miaosha_tab_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:lines="1" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

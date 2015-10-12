@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/coupon_item_all" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/coupon_item_progress_none" android:layout_width="fill_parent" android:layout_height="18.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/coupon_item_progress_layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/c_252525" android:ellipsize="end" android:id="@id/coupon_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="100.0dip" android:text="特步飞一般的感觉" android:singleLine="true" android:layout_centerVertical="true" />
+        <ProgressBar android:id="@id/coupon_item_progressbar" android:layout_width="93.0dip" android:layout_height="16.0dip" android:layout_marginLeft="6.0dip" android:max="100" android:progress="30" android:indeterminate="false" android:progressDrawable="@drawable/coupon_progressbar" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/c_252525" android:gravity="center" android:id="@id/coupon_item_progresstext" android:layout_width="93.0dip" android:layout_height="38.0dip" android:text="已领取30%" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/coupon_item" android:layout_width="fill_parent" android:layout_height="138.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="11.0dip">
+        <include layout="@layout/coupon_item" />
+        <View android:id="@id/coupon_item_selected" android:background="@drawable/coupon_item_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/coupon_rp" android:background="@drawable/coupon_rp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="18.0dip" android:scaleType="fitXY" />
+</LinearLayout>

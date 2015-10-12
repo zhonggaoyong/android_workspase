@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/search_more_filter_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+            <View android:background="#ffdcdcdc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <GridView android:id="@id/search_filter_grid" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="270.0dip" android:listSelector="@color/transparent" android:cacheColorHint="#00000000" android:numColumns="2" />
+            <LinearLayout android:orientation="vertical" android:id="@id/search_more_confirm_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_twenty_one" android:gravity="center" android:id="@id/three_filter_confirm" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:text="确定" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/search_more_three_layout" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <View android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/search_filter_more" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <RelativeLayout android:id="@id/search_filter_one" android:background="@drawable/sku_search_notselect" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.5dip">
+                        <TextView android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:gravity="center" android:id="@id/tv_search_filter_one" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxEms="5" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/search_filter_two" android:background="@drawable/sku_search_notselect" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.5dip">
+                        <TextView android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:gravity="center" android:id="@id/tv_search_filter_two" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxEms="5" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/search_filter_three" android:background="@drawable/sku_search_notselect" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.5dip">
+                        <TextView android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:gravity="center" android:id="@id/tv_search_filter_three" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxEms="5" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_filter_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/more_filter_shadow" />
+                <TextView android:textColor="@color/pub_color_twenty_one" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="更多筛选" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_right_blue" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/more_filter_out_layout" android:background="#49000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

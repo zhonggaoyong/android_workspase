@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/hotel_list_item_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/product_icon_layout" android:background="@drawable/goods_bg" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/product_icon" android:background="@drawable/default_background_small" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </LinearLayout>
+    <ImageView android:id="@id/product_protection_icon" android:background="@drawable/sun_package" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="35.0dip" android:scaleType="fitXY" android:layout_toRightOf="@id/product_icon_layout" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_toRight" android:background="@drawable/arrow_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/middle_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_20px" android:layout_marginRight="@dimen/android_public_space_20px" android:layout_toLeftOf="@id/iv_toRight" android:layout_toRightOf="@id/product_protection_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/black" android:id="@id/product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_20px" android:text="酒店名称" android:singleLine="true" />
+        <RelativeLayout android:id="@id/flight_hotel_address_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_10px" android:layout_marginRight="@dimen/ios_public_space_20px" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/Silver11" android:id="@id/product_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_20px" android:text="酒店地址" android:maxLines="2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/Silver11" android:id="@id/product_address_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_20px" android:text="地址" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/product_price_status_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_10px">
+            <RelativeLayout android:id="@id/product_price_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_four" android:id="@id/product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <RatingBar android:id="@id/product_ratingbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_40px" android:numStars="5" android:rating="0.0" android:isIndicator="true" android:layout_toRightOf="@id/product_price" style="@style/hotel_rating_bar" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/product_number_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_30px" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/Silver11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数量:" />
+                <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/Silver11" android:id="@id/product_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数量" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/flight_hotel_list_item_orderstatus_rela" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_10px">
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/Silver11" android:id="@id/flight_hotel_item_order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/Silver11" android:id="@id/flight_hotel_item_order_status_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ios_public_space_30px" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

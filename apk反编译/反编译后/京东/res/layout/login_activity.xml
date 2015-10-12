@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.app.mall.utils.ui.JDResizeRelativeLayout android:orientation="vertical" android:id="@id/login_layout" android:background="@color/login_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <ScrollView android:id="@id/login_scroller" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_title">
+        <include android:id="@id/login_relative" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/login_activity_sub_content" />
+    </ScrollView>
+    <include android:id="@id/bottom_login_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/login_activity_sub_bottom" />
+    <com.jingdong.common.ui.JDProgressBar android:id="@id/login_progress_bar" android:visibility="gone" android:layout_width="34.0dip" android:layout_height="34.0dip" android:max="100" android:layout_centerInParent="true" />
+</com.jingdong.app.mall.utils.ui.JDResizeRelativeLayout>

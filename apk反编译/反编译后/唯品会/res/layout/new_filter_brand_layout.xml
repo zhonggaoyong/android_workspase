@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout" android:background="@drawable/new_normal_titlebg" android:layout_width="fill_parent" android:layout_height="@dimen/vipnew_header_height">
+        <TextView android:textSize="20.0dip" android:textColor="@color/app_text_black" android:gravity="center" android:layout_gravity="center" android:id="@id/classifyTitle" android:layout_width="64.0dip" android:layout_height="wrap_content" android:text="品牌" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/btn_back" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/new_normal_back_btn_press" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/new_classtify_brand_list" />
+    </LinearLayout>
+</LinearLayout>

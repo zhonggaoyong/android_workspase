@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="68.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/step_one_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <View android:id="@id/rl_empty" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/rl_empty">
+            <TextView android:textColor="@color/main_default_white_text_color" android:gravity="center" android:id="@id/step_one" android:background="@drawable/icon_yuan_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_centerHorizontal="true" />
+            <View android:id="@id/line" android:background="@drawable/line_cu" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/step_one" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/rl_empty">
+            <TextView android:textColor="@color/main_default_white_text_color" android:gravity="center" android:id="@id/step_two" android:background="@drawable/icon_yuan_ritht_hui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.0dip" android:text="2" android:layout_centerHorizontal="true" />
+            <View android:id="@id/line2" android:background="@drawable/line_cu" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/step_two" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textColor="#ff3aa11a" android:gravity="center" android:id="@id/step_one_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/validation_mobile" android:layout_toLeftOf="@id/empty" android:layout_below="@id/step_one_rl" />
+    <View android:id="@id/empty" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <TextView android:textColor="@color/hint_text_color" android:gravity="center" android:id="@id/step_two_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/setting_new_pay_password" android:layout_toRightOf="@id/empty" android:layout_below="@id/step_one_rl" />
+</RelativeLayout>

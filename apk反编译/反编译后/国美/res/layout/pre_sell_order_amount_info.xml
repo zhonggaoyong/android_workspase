@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/pre_sell_order_details_pay_mode_1" android:layout_marginLeft="0.0dip" android:text="@string/pre_sell_product_pre_price" android:singleLine="true" style="@style/mygome_order__text__style_1" />
+    <TextView android:id="@id/pre_sell_order_details_total_price_1" android:text="@string/pre_sell_product_order_earnest" android:layout_below="@id/pre_sell_order_details_pay_mode_1" android:layout_alignRight="@id/pre_sell_order_details_pay_mode_1" style="@style/mygome_order__text__style_1" />
+    <TextView android:id="@id/pre_sell_order_details_order_prem_1" android:text="@string/pre_sell_product_order_final" android:layout_below="@id/pre_sell_order_details_total_price_1" android:layout_alignRight="@id/pre_sell_order_details_pay_mode_1" style="@style/mygome_order__text__style_1" />
+    <TextView android:id="@id/pre_sell_order_details_feight_1" android:text="@string/pre_sell_product_order_feight" android:layout_below="@id/pre_sell_order_details_order_prem_1" android:layout_alignRight="@id/pre_sell_order_details_pay_mode_1" style="@style/mygome_order__text__style_1" />
+    <TextView android:id="@id/pre_sell_order_details_red_ticket_1" android:text="@string/pre_sell_product_order_use_acount" android:layout_below="@id/pre_sell_order_details_feight_1" android:layout_alignRight="@id/pre_sell_order_details_pay_mode_1" style="@style/mygome_order__text__style_1" />
+    <TextView android:id="@id/pre_sell_order_details_account_balance_1" android:text="@string/pre_sell_product_order_price" android:layout_below="@id/pre_sell_order_details_red_ticket_1" android:layout_alignRight="@id/pre_sell_order_details_pay_mode_1" style="@style/mygome_order__text__style_1" />
+</RelativeLayout>

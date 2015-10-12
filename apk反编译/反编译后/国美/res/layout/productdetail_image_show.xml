@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_top_img_main" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="270.0dip">
+        <android.support.v4.view.ViewPager android:id="@id/vp_product_imgs" android:layout_width="fill_parent" android:layout_height="270.0dip" android:layout_alignParentTop="true" />
+        <TextView android:background="@color/product_show_book_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_product_imgs_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="18.0sp" android:textColor="#ffc70000" android:id="@id/tv_product_imgs_num_element" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff999999" android:id="@id/tv_product_imgs_num_denominator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

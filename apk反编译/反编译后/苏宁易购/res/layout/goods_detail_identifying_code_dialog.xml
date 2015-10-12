@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_btn_white_round_corner" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/android_public_space_18px" android:paddingTop="@dimen/ios_public_space_80px" android:paddingRight="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/tv_gd_dcode_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/android_public_space_18px" android:text="@string/please_enter_verification_code" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_gd_dcode_layout" android:background="@drawable/goodsdetail_input_bt" android:padding="@dimen/android_public_space_4px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_44px">
+            <EditText android:textSize="@dimen/android_public_text_size_24px" android:id="@id/et_gd_check_code_input" android:paddingLeft="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="请输入右侧验证码" android:singleLine="true" android:maxLength="10" android:layout_weight="2.0" style="@style/edittext_logon_register_pub_style" />
+            <View android:id="@id/view_cdialog_btn_divider" android:background="@color/pub_color_six" android:layout_width="@dimen/storeline_height" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/img_gd_verified" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/load_error" android:scaleType="fitXY" android:layout_weight="5.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/pub_color_seveneen" android:id="@id/tv_gd_code_table" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_18px" android:layout_marginBottom="@dimen/android_public_space_18px" android:text="@string/please_enter_verification_code" />
+    </LinearLayout>
+    <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/storeline_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_70px">
+        <Button android:textSize="@dimen/android_public_space_26px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:id="@id/btn_gd_cdialog_left" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_dialog_cancel" android:layout_weight="1.0" />
+        <View android:id="@id/view_cdialog_btn_divider" android:background="@color/pub_color_six" android:layout_width="@dimen/storeline_height" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/android_public_space_26px" android:textColor="@color/pub_color_twenty_one" android:gravity="center" android:id="@id/btn_gd_cdialog_right" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_dialog_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

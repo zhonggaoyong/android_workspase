@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/vip_cart_bg" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/driver_view" android:background="@null" android:layout_width="5.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    <include android:id="@id/products_left_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/driver_view" layout="@layout/favor_product_item_half_old" />
+    <include android:id="@id/products_right_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/driver_view" android:layout_alignParentRight="true" layout="@layout/favor_product_item_half_old" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.BannerAdView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_lay" android:background="@color/white" android:paddingTop="@dimen/empty_page_margin_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shoppingcart_ico_shoppingcart" />
+        <com.meilishuo.app.views.CustomTextView android:text="@string/title_shopping_empty" style="@style/EmptyDataFirstTextStyle" />
+        <com.meilishuo.app.views.CustomTextView android:text="@string/title_shopping_prompt" style="@style/EmptyDataSecondTextStyle" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_to_shopping" android:visibility="gone" android:text="@string/btn_go_to_saunter" style="@style/EmptyDataButtonTextStyle" />
+    </LinearLayout>
+</LinearLayout>

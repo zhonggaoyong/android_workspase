@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+        <RelativeLayout android:gravity="center" android:id="@id/rl_groupbuy_big_item_pic" android:background="@color/main_default_white_text_color" android:layout_width="fill_parent" android:layout_height="300.0dip">
+            <ImageView android:id="@id/iv_groupbuy_big_item_pic" android:background="@drawable/product_list_grid_item_icon_bg" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/main_default_opacity_white_text_color" android:gravity="center" android:id="@id/tv_groupbuy_big_item_pic_shade" android:background="#4c000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="300.0dip" android:scaleType="fitXY" />
+        </RelativeLayout>
+        <View android:id="@id/v_groupbuy_line" android:background="@color/main_default_grey_text_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/rl_groupbuy_big_item_pic" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_title" android:background="@color/main_default_opacity_white_text_color" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_below="@id/v_groupbuy_line">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="1.5" android:layout_centerVertical="true">
+                <com.gome.ecmall.custom.PreLineTextView android:textSize="15.0sp" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:id="@id/tv_groupbuy_big_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:text="fdassssssssssssssss" android:maxLines="2" />
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:paddingLeft="2.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/tv_groupbuy_big_item_name">
+                    <RelativeLayout android:gravity="center_vertical" android:id="@id/ll_big_category_item_img" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_category_item_img" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新款" android:layout_alignBaseline="@id/tv_groupbuy_big_item_people" />
+                    </RelativeLayout>
+                    <TextView android:textColor="#ffff8605" android:id="@id/tv_groupbuy_big_item_people" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip" android:text="233" />
+                    <TextView android:textColor="@color/hint_text_color" android:id="@id/tv_groupbuy_big_item_people_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="人已参团" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_groupbuy_big_item_price" android:background="@drawable/groupbuy_now_price_bg" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textStyle="bold" android:id="@id/tv_groupbuy_big_item_now_price_full" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="￥222222.00" style="@style/groupbuy_bigtype_name_style" />
+                <TextView android:textStyle="bold" android:textColor="#ffd5d5d5" android:id="@id/tv_groupbuy_big_item_cost_price" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="￥2222.00" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_firstimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/new_groupbuy_first" />
+    <ImageView android:id="@id/iv_is_shop_bbc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_groupbuy_shop" android:layout_alignLeft="@id/relativeLayout1" android:layout_alignTop="@id/relativeLayout1" />
+</RelativeLayout>

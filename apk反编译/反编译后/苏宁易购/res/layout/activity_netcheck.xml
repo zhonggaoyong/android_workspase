@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/pub_color_fifteen" android:id="@id/txt_server_ip" android:background="@drawable/edit_text_border" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="cart.suning.com" android:drawableRight="@drawable/icon_put_down" />
+    <RelativeLayout android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <Button android:textColor="@color/pub_color_fifteen" android:id="@id/btn_go" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Go" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <Spinner android:id="@id/spn_operation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn_go" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <Button android:enabled="false" android:textColor="@color/pub_color_fifteen" android:id="@id/btn_send_report" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送至服务器" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <Button android:textColor="@color/pub_color_fifteen" android:id="@id/btn_mail_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送邮件" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ScrollView android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_above="@id/btn_mail_report" android:layout_below="@id/rl_top">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textColor="#ffffffff" android:id="@id/txt_reply" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

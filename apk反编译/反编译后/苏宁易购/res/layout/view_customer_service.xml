@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/horizontal_line" android:background="@drawable/line_imaginary" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_twelev" android:layout_marginRight="@dimen/pub_margin_or_padding_space_twelev" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/android_public_space_21px" android:paddingRight="@dimen/android_public_space_21px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/callservice_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_12px" android:layout_marginBottom="@dimen/android_public_space_12px" android:layout_weight="1.0">
+            <ImageView android:background="@drawable/iv_callservice" android:layout_width="@dimen/android_public_space_28px" android:layout_height="@dimen/android_public_space_28px" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/ios_public_textsize_22pt" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_7px" android:text="4008-365-365" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/into_shop_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_12px" android:layout_marginBottom="@dimen/android_public_space_12px" android:layout_weight="1.0">
+            <ImageView android:id="@id/into_shop_image" android:background="@drawable/into_store" android:layout_width="@dimen/android_public_space_28px" android:layout_height="@dimen/android_public_space_28px" />
+            <TextView android:textSize="@dimen/ios_public_textsize_22pt" android:textColor="@color/pub_color_nine" android:id="@id/into_shop_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_7px" android:text="@string/come_on_store" />
+        </LinearLayout>
+        <ImageView android:id="@id/callservice_onlineservice_line" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/android_public_space_10px" android:layout_marginBottom="@dimen/android_public_space_10px" android:src="@drawable/divider_horizontal" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/onlineservice_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_18px" android:layout_marginBottom="@dimen/android_public_space_18px" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/onlineservice_layout2" android:background="@drawable/grey_normal" android:padding="@dimen/android_public_space_13px" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/onlineservice_icon" android:layout_width="@dimen/android_public_space_28px" android:layout_height="@dimen/android_public_space_28px" android:src="@drawable/customer_service_image" android:scaleType="fitXY" />
+                <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:id="@id/onlineservice_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_13px" android:text="@string/chat_title" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

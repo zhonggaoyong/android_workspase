@@ -1,0 +1,237 @@
+.class final Lcom/jingdong/app/mall/utils/dq;
+.super Ljava/lang/Object;
+.source "WebViewConfigurationUtil.java"
+
+# interfaces
+.implements Lcom/jingdong/common/utils/ah;
+
+
+# instance fields
+.field final synthetic a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+
+# direct methods
+.method constructor <init>(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;)V
+    .locals 0
+
+    .prologue
+    .line 519
+    iput-object p1, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onComplete(Ljava/lang/String;)V
+    .locals 10
+
+    .prologue
+    .line 524
+    iget-object v0, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {v0}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->l(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;)Lcom/jingdong/common/BaseActivity;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/jingdong/app/mall/utils/dr;
+
+    invoke-direct {v1, p0, p1}, Lcom/jingdong/app/mall/utils/dr;-><init>(Lcom/jingdong/app/mall/utils/dq;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lcom/jingdong/common/BaseActivity;->post(Ljava/lang/Runnable;)V
+
+    .line 532
+    iget-object v0, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v2
+
+    invoke-static {v0, v2, v3}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->c(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;J)J
+
+    .line 533
+    iget-object v0, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->b(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;Z)Z
+
+    .line 535
+    iget-object v0, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {v0}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->a(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;)Landroid/content/Context;
+
+    move-result-object v0
+
+    const-class v1, Lcom/jingdong/app/mall/navigationbar/JDMFragment;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, ""
+
+    const-string v3, "gentoken"
+
+    iget-object v4, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {v4}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->g(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;)Ljava/lang/String;
+
+    move-result-object v4
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v6, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {v6}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->m(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;)J
+
+    move-result-wide v6
+
+    invoke-virtual {v5, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v7, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {v7}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->n(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;)J
+
+    move-result-wide v8
+
+    invoke-virtual {v6, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    const-string v7, "finish"
+
+    invoke-static/range {v0 .. v7}, Lcom/jingdong/common/utils/JDMtaUtils;->sendWebviewLoadData(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 536
+    return-void
+.end method
+
+.method public final onError(Lcom/jingdong/common/utils/HttpGroup$HttpError;)V
+    .locals 10
+
+    .prologue
+    .line 546
+    iget-object v0, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v2
+
+    invoke-static {v0, v2, v3}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->c(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;J)J
+
+    .line 547
+    iget-object v0, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->b(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;Z)Z
+
+    .line 549
+    iget-object v0, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {v0}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->a(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;)Landroid/content/Context;
+
+    move-result-object v0
+
+    const-class v1, Lcom/jingdong/app/mall/navigationbar/JDMFragment;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, ""
+
+    const-string v3, "gentoken"
+
+    iget-object v4, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {v4}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->g(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;)Ljava/lang/String;
+
+    move-result-object v4
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v6, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {v6}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->m(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;)J
+
+    move-result-wide v6
+
+    invoke-virtual {v5, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v7, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {v7}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->n(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;)J
+
+    move-result-wide v8
+
+    invoke-virtual {v6, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    const-string v7, "fail"
+
+    invoke-static/range {v0 .. v7}, Lcom/jingdong/common/utils/JDMtaUtils;->sendWebviewLoadData(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 551
+    return-void
+.end method
+
+.method public final onReady()V
+    .locals 4
+
+    .prologue
+    .line 540
+    iget-object v0, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v2
+
+    invoke-static {v0, v2, v3}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->d(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;J)J
+
+    .line 541
+    iget-object v0, p0, Lcom/jingdong/app/mall/utils/dq;->a:Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;->b(Lcom/jingdong/app/mall/utils/WebViewConfigurationUtil;Z)Z
+
+    .line 542
+    return-void
+.end method

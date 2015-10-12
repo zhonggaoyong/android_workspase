@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="403010005" android:versionName="4.3.1" package="com.fanli.android.apps"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" />
+    <application android:theme="@style/FanliTheme" android:label="@string/app_name" android:icon="@drawable/fanli" android:name="com.fanli.android.application.NormalFanliApplication" android:allowBackup="true" android:logo="@drawable/ic_title_home">
+        <uses-library android:name="com.google.android.maps" android:required="false" />
+        <meta-data android:name="UMENG_APPKEY" android:value="4fbde7725270157e17000002" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="baidu" />
+        <meta-data android:name="version_market_id" android:value="19" />
+        <meta-data android:name="APP_ID" android:value="7f2e6e4d2179cf6a36f21f4d80ed6d30" />
+        <meta-data android:name="APP_PID" android:value="baidu" />
+        <meta-data android:name="debug" android:value="false" />
+        <activity android:name="com.umeng.fb.ConversationActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:label="联系方式" android:name="com.umeng.fb.ContactActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.fanli.android.activity.ViewAgreement" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:name="com.fanli.android.activity.FilterActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.VendorCommentsActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:theme="@style/TabIndicator9" android:name="com.fanli.android.activity.THSActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:name="com.fanli.android.activity.HelpActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:name="com.fanli.android.activity.BrandMallActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fanli.android.activity.MallListActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="fanliandroid" android:host="shangchengfanli" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fanli.android.activity.HelpExpandableActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:name="com.fanli.android.activity.AboutActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:name="com.fanli.android.activity.ProductActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:name="com.fanli.android.activity.EmbededBrowser" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="adjustResize" android:logo="@drawable/ico_title_back" />
+        <activity android:name="com.fanli.android.activity.SimpleBrowserActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="adjustResize" android:logo="@drawable/ico_title_back" />
+        <activity android:name="com.fanli.android.activity.SuperFanliBrowserActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustResize" android:logo="@drawable/ico_title_back" />
+        <activity android:name="com.fanli.android.activity.BrowserThridActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.fanli.android.activity.OptionActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:name="com.fanli.android.activity.OrdersActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.fanli.android.activity.SplashActivity" android:screenOrientation="portrait" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fanli.android.activity.FeedbackActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity android:name="com.fanli.android.activity.LoginActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="fanliapp" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fanli.android.activity.RegActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.fanli.android.activity.BindActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity android:name="com.fanli.android.activity.FanliNotesActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:name="com.fanli.android.activity.SearchResultActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:name="com.fanli.android.activity.SuperfanSearchResultActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.fanli.android.activity.MerchantSearchResultActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:name="com.tencent.tauth.TAuthView" android:launchMode="singleTask" android:configChanges="keyboardHidden|navigation|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="auth" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent223558" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.fanli.android.activity.UserFanliActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.BindingPhoneStep1Activity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.BindingPhoneStep2Activity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.CashBankActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.FBHelpActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.PhoneLoginActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.PhoneRegPasswordActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.PhoneVerifyActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.RegisterSubmitVerifyCodeActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.RetrievePasswordActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.RetrievePasswordByMailActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.RetrievePasswordByPhoneActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.RetrievePasswordGoMailActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.RetrievePasswordNewActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.DrawActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.DrawConfirmActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.DrawSuccessActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.DrawRecordActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.SearchActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
+        <activity android:name="com.fanli.android.activity.SuperfanSearchActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.fanli.android.activity.UserGuideActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.ForceRegisterMainActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.ForceRegisterSubmitActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.MainTabActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name="com.fanli.android.activity.SearchShopActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
+        <activity android:name="com.fanli.android.activity.JumpRecordActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.TaobaoFanLiActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:label="@string/title_activity_msg_setting" android:name="com.fanli.android.activity.MsgSettingActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/title_activity_fanli_conversation" android:name="com.fanli.android.activity.FanliConversationActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.UMDialog" android:name="com.umeng.socialize.view.ShareActivity" android:launchMode="singleTask" android:configChanges="keyboard|orientation" android:windowSoftInputMode="stateVisible|adjustResize" android:noHistory="true" />
+        <activity android:name="com.fanli.android.activity.CameraActivity" android:screenOrientation="portrait" android:configChanges="keyboard|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.QRCodeCaptureActivity" android:screenOrientation="portrait" android:configChanges="keyboard|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.AlbumActivity" android:screenOrientation="portrait" android:configChanges="keyboard|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.AlbumSelectActivity" android:screenOrientation="portrait" android:configChanges="keyboard|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:theme="@style/FanliTranslucent" android:name="com.fanli.android.activity.CustomUrlBridgeActivity" android:screenOrientation="portrait" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="ifanli" android:host="m.fanli.com" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="ifanli" android:host="m.51fanli.com" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fanli.android.activity.NewContainerActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.fanli.android.activity.TaobaofanliActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.fanli.android.activity.PhoneFeeActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.fanli.android.activity.PopupWindowActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.fanli.android.activity.GoshopPopupWindowActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/app_name" android:name="com.fanli.android.activity.CartLayerActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.fanli.android.activity.ZhuanChangActivity" android:screenOrientation="portrait" android:configChanges="keyboard|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.SuperFanActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" android:logo="@drawable/ico_title_back" />
+        <activity android:name="com.fanli.android.activity.SuperfanBrandDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:logo="@drawable/ico_title_back" />
+        <activity android:theme="@style/dialogStyle_noanimation" android:name="com.fanli.android.activity.NoAnimationDialogActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/testStyle" android:name="com.fanli.android.activity.DialogActivityWithAnimation" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/testStyle" android:name="com.fanli.android.activity.PlayWithFanliActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.fanli.android.activity.AppIntroActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/windowNoTitle" android:name="com.fanli.android.activity.UnlockPageActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.fanli.android.activity.UnlockFanliSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.fanli.android.activity.ScreenLockUserGuideActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.fanli.android.activity.ActivitySuperfanCategory" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/FanliNavigation" android:name="com.fanli.android.activity.NavigationActivity" android:screenOrientation="portrait" android:configChanges="keyboard|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:theme="@style/dialogStyle_noanimation" android:name="com.fanli.android.activity.ActivityCustomToast" android:screenOrientation="portrait" />
+        <activity android:name="com.fanli.android.activity.MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.TbVisitHistoryActivity" android:screenOrientation="portrait" android:configChanges="keyboard|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.NineSearchActivity" android:screenOrientation="portrait" android:configChanges="keyboard|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.fanli.android.activity.NineSearchResultActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.fanli.android.activity.ActivityUnlockFanliDemo" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.fanli.android.activity.BindingPhoneActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.BindingCurrentAccountByPwdActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.BindingCurrentAccountByPhoneCodeActivity" android:screenOrientation="portrait" android:configChanges="orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.fanli.android.activity.TodayBrandsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <service android:name="com.fanli.android.service.PullService" />
+        <service android:name="com.fanli.android.service.BindService" />
+        <provider android:name="com.fanli.android.provider.FanliProvider" android:authorities="com.fanli.android.apps.51fanli" />
+        <receiver android:name="com.fanli.android.application.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.fanliwang.DevNativeActivity" android:configChanges="keyboardHidden|orientation" />
+        <service android:name="com.fanli.android.service.DianleService" />
+        <activity android:name="com.fanli.android.activity.DLNativeActivity" />
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.fanli.android.DMActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <service android:name="com.fanli.android.DMService" />
+        <activity android:theme="@style/FanliTranslucent" android:name="com.fanli.android.apps.wxapi.WXEntryActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" android:process=":pushservice" />
+        <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true" />
+        <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true" />
+        <receiver android:name="com.fanli.android.push.MiPushMessageReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.android.tpush.XGPushActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.tencent.android.tpush.XGPushReceiver" android:process=":xg_service_v2">
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.tencent.android.tpush.service.XGPushService" android:persistent="true" android:exported="true" android:process=":xg_service_v2" />
+        <service android:name="com.tencent.android.tpush.rpc.XGRemoteService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.qq.xgdemo.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="XG_V2_ACCESS_ID" android:value="2100051178" />
+        <meta-data android:name="XG_V2_ACCESS_KEY" android:value="AP9WB846SH4J" />
+        <receiver android:name="com.fanli.android.push.XGMessageReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="a8154eedca" />
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="baidu" />
+        <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="false" />
+        <meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START" />
+        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false" />
+        <meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="true" />
+        <meta-data android:name="BaiduMobAd_GPS_LOCATION" android:value="true" />
+        <meta-data android:name="BaiduMobAd_WIFI_LOCATION" android:value="true" />
+        <activity android:name="com.alibaba.sdk.android.webview.BaseWebViewActivity" />
+        <activity android:name="com.alibaba.sdk.android.trade.ui.TradeWebViewActivity">
+            <intent-filter>
+                <action android:name="COM_TAOBAO_TAE_SDK_TRADE_WEB_VIEW_ACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alipay.sdk.app.H5PayActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:name="com.alipay.sdk.auth.AuthActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation" />
+        <activity android:name="com.alibaba.sdk.android.login.ui.LoginWebViewActivity" />
+        <activity android:theme="@style/tae_sdk_login_qr_activity_style" android:name="com.alibaba.sdk.android.login.ui.QrLoginActivity" />
+    </application>
+</manifest>

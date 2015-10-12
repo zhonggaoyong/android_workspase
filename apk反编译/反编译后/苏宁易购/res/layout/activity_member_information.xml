@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/pub_color_twelev" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rl_member_info_header" android:paddingTop="@dimen/android_public_space_16px" android:paddingRight="@dimen/android_public_space_18px" android:paddingBottom="@dimen/android_public_space_16px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick">
+                <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:id="@id/tv_member_info_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_myebuy_member_header_image" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_member_header_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                <com.suning.mobile.ebuy.myebuy.entrance.util.HeaderImageView android:id="@id/hiv_member_info_header" android:layout_width="@dimen/android_public_space_60px" android:layout_height="@dimen/android_public_space_60px" android:layout_marginRight="@dimen/android_public_space_26px" android:src="@drawable/myebuy_head" android:layout_toLeftOf="@id/iv_member_header_arrow" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View style="@style/split_line_normal" />
+            <RelativeLayout android:id="@id/rl_member_info_nickname" android:paddingRight="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_44dp" android:onClick="onClick">
+                <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:gravity="center_vertical" android:id="@id/tv_member_nickname_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_myebuy_nickname" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/elec_card_text_light_gray" android:id="@id/tv_member_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="" android:layout_toLeftOf="@id/iv_member_nickname_arrow" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_member_nickname_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+            <View style="@style/split_line_normal" />
+            <RelativeLayout android:id="@id/rl_member_sex" android:paddingRight="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_44dp" android:onClick="onClick">
+                <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:gravity="center_vertical" android:id="@id/tv_member_sex_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_myebuy_sex" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/elec_card_text_light_gray" android:id="@id/tv_member_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="" android:layout_toLeftOf="@id/iv_member_sex_arrow" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_member_sex_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_20px" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rl_member_info_address" android:paddingRight="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_44dp" android:onClick="onClick">
+                <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:id="@id/tv_member_info_address_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/address_manage_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_20px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_member_info_appends" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_member_degree" android:paddingRight="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_44dp" android:onClick="onClick">
+                    <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:id="@id/tv_member_degree_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_myebuy_member_degree" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/iv_member_info_redpackage_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+                <View style="@style/split_line_normal" />
+                <RelativeLayout android:id="@id/rl_member_info_ecard" android:paddingRight="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_44dp" android:onClick="onClick">
+                    <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:id="@id/tv_member_info_ecard_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/elec_card" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+                <View style="@style/split_line_normal" />
+                <RelativeLayout android:id="@id/rl_bind_mobile" android:paddingRight="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_44dp" android:onClick="onClick">
+                    <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:id="@id/tv_bind_mobile_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_safe" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/elec_card_text_light_gray" android:id="@id/tv_bind_mobile_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/bindMobileTitle" android:layout_toLeftOf="@id/iv_bind_mobile_arrow" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/iv_bind_mobile_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

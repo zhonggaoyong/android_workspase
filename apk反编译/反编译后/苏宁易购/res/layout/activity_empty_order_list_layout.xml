@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/order_detail_layout" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/empty_image_view" android:background="@drawable/wait_shop_eva_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/pub_textsize_fourteen" android:textColor="@color/pub_color_nine" android:id="@id/empty_hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="您暂时没有订单哦" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/chat_order_select_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/chat_order_select_bottom_line" android:background="@drawable/category_listview_divider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/chat_order_select_bottom" android:background="#ddffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_eight" android:gravity="center" android:id="@id/btn_cancle_chat_order" android:background="@drawable/public_bg_btn_white" android:paddingLeft="45.0dip" android:paddingTop="10.0dip" android:paddingRight="45.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/ios_public_space_23px" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/ios_public_space_23px" android:text="@string/app_dialog_cancel" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_confirm_chat_order" android:background="@drawable/public_bg_btn_orange_red" android:paddingLeft="45.0dip" android:paddingTop="10.0dip" android:paddingRight="45.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/ios_public_space_23px" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/ios_public_space_23px" android:text="@string/app_dialog_confirm" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

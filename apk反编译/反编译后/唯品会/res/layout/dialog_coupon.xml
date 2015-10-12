@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="@dimen/dialog_upgrade_banner_width" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_upgrade_mim_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/banner" android:visibility="gone" android:layout_width="@dimen/dialog_upgrade_banner_width" android:layout_height="@dimen/dialog_upgrade_banner_height" android:src="@drawable/image_coupon_get_success" />
+    <RelativeLayout android:id="@id/layout_coupons_nodata" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <View android:background="@drawable/pic_loading_logo" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" />
+        <com.achievo.vipshop.view.RoundLoadingView android:id="@id/roundProgressBar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" android_custom:roundColor="#fff0f0f0" android_custom:roundProgressColor="#fff12b90" android_custom:roundWidth="2.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff585c64" android:gravity="center" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="正在领取..." android:singleLine="false" android:layout_below="@id/roundProgressBar" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_tab" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="22.0dip" android:textColor="#ffec5042" android:id="@id/title" android:visibility="visible" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="恭喜您" android:singleLine="false" android:lineSpacingExtra="@dimen/dialog_upgrade_content_linespacing" />
+        <TextView android:textSize="@dimen/dialog_upgrade_content_textsize" android:textColor="#ff585c64" android:id="@id/content" android:visibility="visible" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="恭喜您，红包领取成功" android:singleLine="false" android:lineSpacingExtra="@dimen/dialog_upgrade_content_linespacing" />
+    </LinearLayout>
+    <View android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="0.33000004dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_upgrade_bottom_height">
+        <Button android:textSize="15.0dip" android:textColor="@color/detail_dark" android:id="@id/left_button" android:background="@drawable/button_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:fanli="http://schemas.android.com/apk/res/com.fanli.android.apps">
+    <item android:state_enabled="false" android:drawable="@drawable/bg_sub_page_normal" />
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/bg_sub_page_highlight" />
+    <item android:state_focused="true" android:state_enabled="true" android:drawable="@drawable/bg_sub_page_highlight" />
+    <item android:state_enabled="true" android:drawable="@drawable/bg_sub_page_normal" />
+</selector>

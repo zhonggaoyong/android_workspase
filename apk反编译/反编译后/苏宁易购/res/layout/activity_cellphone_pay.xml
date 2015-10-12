@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:background="@drawable/input_bg" android:paddingLeft="@dimen/android_public_space_26px" android:paddingTop="@dimen/android_public_space_13px" android:paddingRight="@dimen/android_public_space_26px" android:paddingBottom="@dimen/android_public_space_13px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_20px">
+        <TableRow android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/android_public_space_13px">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/phone_bumber_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_number_string" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/phone_bumber" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </TableRow>
+        <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" android:layout_marginBottom="@dimen/android_public_space_13px" />
+        <TableRow android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/number_info_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_number_info" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/number_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </TableRow>
+        <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" android:layout_marginBottom="@dimen/android_public_space_13px" />
+        <TableRow android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/want_recharge_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/want_pay" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/want_recharge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </TableRow>
+        <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_one" android:layout_marginBottom="@dimen/android_public_space_13px" />
+        <TableRow android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/pay_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/should_pay" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/pay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+    <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/android_public_space_20px" android:text="@string/pay_current_payment_prompt" />
+    <RelativeLayout android:id="@id/rl_virtual_pay_sdk" android:background="@drawable/pub_line_above_white_bg" android:paddingLeft="@dimen/android_public_space_20px" android:paddingTop="@dimen/android_public_space_13px" android:paddingRight="@dimen/android_public_space_20px" android:paddingBottom="@dimen/android_public_space_13px" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_20px" android:layout_toLeftOf="@id/arrow_virtual_pay_sdk">
+            <TextView android:textColor="@color/pub_color_eight" android:layout_gravity="center_vertical" android:id="@id/tv_virtual_pay_sdk_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/epp_wap_pay_prompt" />
+            <TextView android:textColor="@color/pub_color_nine" android:ellipsize="end" android:id="@id/tv_virtual_pay_sdk_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_five" android:text="@string/epp_wap_pay_text_prompt" android:maxLines="3" />
+        </LinearLayout>
+        <ImageView android:id="@id/arrow_virtual_pay_sdk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_virtual_pay_union" android:background="@drawable/pub_line_above_white_bg" android:paddingLeft="@dimen/android_public_space_20px" android:paddingTop="@dimen/android_public_space_13px" android:paddingRight="@dimen/android_public_space_20px" android:paddingBottom="@dimen/android_public_space_13px" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_20px" android:layout_toLeftOf="@id/arrow_virtual_pay_union">
+            <TextView android:textColor="@color/pub_color_eight" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/union_pay" />
+            <TextView android:textColor="@color/pub_color_nine" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_five" android:text="@string/union_pay_detail" android:maxLines="3" />
+        </LinearLayout>
+        <ImageView android:id="@id/arrow_virtual_pay_union" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+</LinearLayout>

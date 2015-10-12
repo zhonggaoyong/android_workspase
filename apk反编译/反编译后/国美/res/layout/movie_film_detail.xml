@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/movie_ad_parent" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <RelativeLayout android:id="@id/rl_parent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/film_detail_sv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/film_detail_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/film_detail_film_ll" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="104.0dip" android:layout_height="154.0dip">
+                        <ImageView android:id="@id/film_photo_show" android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_movie_default_2" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+                        <ImageView android:id="@id/film_imax" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_imax_top" android:scaleType="centerCrop" android:layout_alignLeft="@id/film_photo_show" android:layout_alignTop="@id/film_photo_show" />
+                        <ImageView android:id="@id/film_photo_play" android:visibility="invisible" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_movie_play" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="30.0dip">
+                            <RatingBar android:id="@id/ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:isIndicator="true" android:layout_centerVertical="true" style="@style/movieRatingBar" />
+                            <TextView android:textSize="18.0sp" android:textColor="@color/price_text_color" android:id="@id/film_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/ratingbar" android:layout_centerVertical="true" />
+                            <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/price_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分" android:layout_toRightOf="@id/film_grade" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:id="@id/film_director_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="导演:" />
+                                <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/weak_text_color" android:gravity="center_vertical" android:id="@id/film_director" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/film_actor_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/film_director_ll">
+                                <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主演:" />
+                                <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/weak_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/film_actor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxLines="2" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/film_category_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/film_actor_ll">
+                                <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分类:" />
+                                <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/weak_text_color" android:gravity="center_vertical" android:id="@id/film_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/film_country_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/film_category_ll">
+                                <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地区:" />
+                                <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/weak_text_color" android:gravity="center_vertical" android:id="@id/film_country" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/film_duration_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/film_country_ll">
+                                <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/main_default_black_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时长:" />
+                                <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/weak_text_color" android:gravity="center_vertical" android:id="@id/film_duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:id="@id/line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/setting_activity_line_color" />
+                <ImageView android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/setting_activity_line_color" />
+                <RelativeLayout android:id="@id/film_detail_film_photo_rl" android:background="@drawable/common_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="true">
+                    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/movie_film_photo_ll" android:paddingLeft="7.0dip" android:paddingRight="45.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip" />
+                    <TextView android:gravity="center" android:id="@id/film_photo_count" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:minWidth="20.0dip" android:text="1" android:layout_toLeftOf="@id/film_photo_more" android:layout_centerVertical="true" style="@style/more_common_content_desc_style" />
+                    <ImageView android:id="@id/film_photo_more" android:clickable="false" android:layout_width="13.0dip" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_movie_right_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/line2" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/setting_activity_line_color" />
+                <TextView android:textSize="@dimen/shopping_cart_order_shop_goods" android:textColor="@color/main_default_black_text_color" android:id="@id/film_description_content" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="5.0dip" />
+                <TextView android:id="@id/extra" android:layout_width="fill_parent" android:layout_height="58.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:id="@id/rl_bt_movie_immediately_buy_main" android:background="@drawable/new_product_add_shopcar_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <Button android:textSize="18.0sp" android:id="@id/bt_movie_buy" android:paddingLeft="30.0dip" android:paddingTop="5.0dip" android:paddingRight="30.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" style="@style/Gome.Button.SolidRed.Style" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/bt_movie_fav" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_film_fav_add" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/tv_movie_fav" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0人想看" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

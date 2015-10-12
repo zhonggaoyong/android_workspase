@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_c1" style="@style/city_item" />
+    <TextView android:id="@id/tv_c2" style="@style/city_item" />
+    <TextView android:id="@id/tv_c3" style="@style/city_item" />
+</LinearLayout>

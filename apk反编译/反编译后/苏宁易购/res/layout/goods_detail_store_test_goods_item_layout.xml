@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/big_layout1" android:background="@color/pub_color_one" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/item_image1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_background_small" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/pub_textsize_fourteen" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:id="@id/item_title1" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_20px" android:text="苹果手机 iPhone4S (8GB) (白)" android:maxLines="2" android:lines="2" />
+        <TextView android:textSize="@dimen/pub_textsize_fourteen" android:textColor="@color/pub_color_seveneen" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/item_price1" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100.00" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/big_layout2" android:background="@color/pub_color_one" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/item_image2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_background_small" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/pub_textsize_fourteen" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:id="@id/item_title2" android:paddingLeft="10.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_20px" android:text="苹果手机 iPhone4S (8GB) (白)" android:maxLines="2" android:lines="2" />
+        <TextView android:textSize="@dimen/pub_textsize_fourteen" android:textColor="@color/pub_color_seveneen" android:gravity="center_vertical" android:id="@id/item_price2" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100.00" />
+    </LinearLayout>
+</LinearLayout>

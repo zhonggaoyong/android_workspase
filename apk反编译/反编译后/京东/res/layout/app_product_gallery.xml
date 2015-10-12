@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/app_product_body" android:background="@drawable/background_corners_bottom_corner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="105.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/product_gallery_left_arrow" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/android_list_idex_left" android:layout_alignParentLeft="true" />
+        <Gallery android:gravity="left" android:id="@id/product_gallery" android:background="#ffffffff" android:fadingEdge="horizontal" android:drawingCacheQuality="high" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:spacing="15.0dip" android:layout_toLeftOf="@id/product_gallery_right_arrow" android:layout_toRightOf="@id/product_gallery_left_arrow" android:unselectedAlpha="1.0" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/product_gallery_right_arrow" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/android_list_idex" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

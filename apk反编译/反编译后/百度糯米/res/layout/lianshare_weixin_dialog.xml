@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <Button android:textSize="16.0sp" android:textColor="#ff111111" android:id="@id/lianshare_select_somebody" android:background="@drawable/comment_dialog_photo_selector" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="@string/lianshare_select_somebody" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <Button android:textSize="16.0sp" android:textColor="#ff111111" android:id="@id/lianshare_select_friends" android:background="@drawable/comment_dialog_photo_selector" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="@string/lianshare_select_friends" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <Button android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/lianshare_select_cancel" android:background="@drawable/comment_dialog_cancel_selector" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip" android:text="@string/lianshare_select_cancel" />
+</LinearLayout>

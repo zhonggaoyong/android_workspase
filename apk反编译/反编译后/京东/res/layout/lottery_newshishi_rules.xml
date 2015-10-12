@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ffedab5d" android:gravity="center_vertical" android:id="@id/newshishi_yaoyiyao_icon" android:background="@drawable/lottery_icon_yaoyiyao" android:paddingLeft="66.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="摇一摇机选" />
+        <TextView android:textSize="@dimen/text_size_lottery_info" android:textColor="@color/text_gray_dark_h_4" android:gravity="center_vertical" android:id="@id/newshishi_play_rules" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignTop="@id/newshishi_yaoyiyao_icon" android:layout_alignBottom="@id/newshishi_yaoyiyao_icon" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/text_size_lottery_info" android:textColor="#ff848689" android:id="@id/newshishi_win_rules" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/newshishi_yaoyiyao_icon" />
+    </RelativeLayout>
+</merge>

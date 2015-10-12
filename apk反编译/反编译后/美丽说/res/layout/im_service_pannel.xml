@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="205.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d2" android:gravity="center" android:id="@id/tv_select_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="图片" android:drawableTop="@drawable/ic_cs_pic" android:drawablePadding="8.0dip" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d2" android:gravity="center" android:id="@id/tv_select_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="我的订单" android:drawableTop="@drawable/ic_cs_order" android:drawablePadding="8.0dip" />
+</LinearLayout>

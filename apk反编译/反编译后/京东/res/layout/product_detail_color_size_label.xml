@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/pd_txt_size_small" android:textColor="@color/pd_black_68" android:ellipsize="end" android:gravity="center" android:id="@id/txt_1" android:background="@drawable/pd_style_c_bg" android:paddingLeft="@dimen/pd_space_width_15" android:paddingRight="@dimen/pd_space_width_15" android:layout_width="wrap_content" android:layout_height="27.0dip" android:minWidth="64.0dip" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

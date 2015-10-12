@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/test" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/icon_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/top_line" android:background="@color/pub_color_six" android:visibility="gone" android:layout_width="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="left" android:id="@id/middle_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/deliverydetails_icon" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/bottom_line" android:background="@color/pub_color_six" android:layout_width="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_ten" android:layout_marginRight="@dimen/pub_margin_or_padding_space_fourteen" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/layShipping" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_ten" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_nine" android:gravity="top" android:autoLink="phone" android:id="@id/delivery_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/pub_color_nine" android:id="@id/delivery_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_twelev" />
+            <View android:layout_width="@dimen/pub_margin_or_padding_space_thirty_four" android:layout_height="@dimen/pub_margin_or_padding_space_thirty_four" />
+        </LinearLayout>
+        <com.suning.mobile.ebuy.myebuy.entrance.util.HeaderImageView android:layout_gravity="top" android:id="@id/view_delivery_header" android:visibility="visible" android:layout_width="@dimen/pub_margin_or_padding_space_sixty" android:layout_height="@dimen/pub_margin_or_padding_space_sixty" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_four" android:layout_marginTop="@dimen/pub_margin_or_padding_space_four" android:src="@drawable/courier_default_icon" />
+    </LinearLayout>
+</LinearLayout>

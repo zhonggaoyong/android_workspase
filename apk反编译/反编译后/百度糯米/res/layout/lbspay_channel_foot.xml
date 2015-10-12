@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/lbspay_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/lbspay_cashier_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:paysdk="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/lbspay_id_devider" android:background="@color/lbspay_color_c6c6c6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="@dimen/bd_wallet_text_size_small" android:textColor="@color/bd_wallet_text_gray_color" android:id="@id/lbspay_powerby_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+    <com.baidu.wallet.base.widget.NetImageView android:id="@id/lbspay_channel_logoview" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/lbspay_brand" android:layout_toLeftOf="@id/lbspay_powerby_tx" android:layout_centerVertical="true" />
+    <View android:layout_gravity="center_vertical" android:background="@color/bd_wallet_bg_color_gray2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/lbspay_powerby_tx" android:layout_centerVertical="true" />
+    <View android:background="@color/bd_wallet_bg_color_gray2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_toLeftOf="@id/lbspay_channel_logoview" android:layout_centerVertical="true" />
+</RelativeLayout>

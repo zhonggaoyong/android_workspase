@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/evaluate_center_root" android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/evaluate_center_tab" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_below="@id/common_title">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RadioButton android:textSize="13.0sp" android:textColor="@drawable/evaluate_center_tab_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/evaluate_center_tab_wait4eval" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" android:text="待评价(0)" android:maxLines="1" android:layout_centerInParent="true" />
+            <View android:id="@id/evaluate_center_line_wait4eval" android:background="@color/shopping_cart_subtotal_text" android:layout_width="66.0dip" android:layout_height="1.5dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:layout_gravity="center_vertical" android:background="#ffe0e0e0" android:layout_width="0.5dip" android:layout_height="15.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RadioButton android:textSize="13.0sp" android:textColor="@drawable/evaluate_center_tab_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/evaluate_center_tab_wait4pic" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" android:text="待追加晒单(0)" android:maxLines="1" android:layout_centerInParent="true" />
+            <View android:id="@id/evaluate_center_line_wait4pic" android:background="@color/shopping_cart_subtotal_text" android:visibility="invisible" android:layout_width="66.0dip" android:layout_height="1.5dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:layout_gravity="center_vertical" android:background="#ffe0e0e0" android:layout_width="0.5dip" android:layout_height="15.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RadioButton android:textSize="13.0sp" android:textColor="@drawable/evaluate_center_tab_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/evaluate_center_tab_done" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" android:text="已完成(0)" android:maxLines="1" android:layout_centerInParent="true" />
+            <View android:id="@id/evaluate_center_line_done" android:background="@color/shopping_cart_subtotal_text" android:visibility="invisible" android:layout_width="66.0dip" android:layout_height="1.5dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:id="@id/evaluate_center_devider_line" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/evaluate_center_tab" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/evaluate_center_listView_wait4eval" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:scrollingCache="false" android:divider="#ffe0e0e0" android:dividerHeight="1.0px" android:layout_below="@id/evaluate_center_devider_line" style="@style/listView" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/evaluate_center_listView_wait4pic" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:scrollingCache="false" android:divider="#ffe0e0e0" android:dividerHeight="1.0px" android:layout_below="@id/evaluate_center_devider_line" style="@style/listView" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/evaluate_center_listView_done" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:scrollingCache="false" android:divider="#ffe0e0e0" android:dividerHeight="1.0px" android:layout_below="@id/evaluate_center_devider_line" style="@style/listView" />
+</RelativeLayout>

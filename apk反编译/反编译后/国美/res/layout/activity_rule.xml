@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ad_layout" android:background="#fff2f6e9" android:paddingLeft="12.0dip" android:paddingBottom="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/tishiyu_color" android:ellipsize="end" android:id="@id/ad_textview_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/weak_text_color" android:id="@id/ad_textview_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="35.0dip" android:maxLines="2" android:layout_below="@id/ad_textview_title" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/weak_text_color" android:id="@id/ad_textview_content_inv" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="35.0dip" android:maxLines="2" android:layout_below="@id/ad_textview_title" />
+        <ImageView android:id="@id/arraw_image" android:layout_width="40.0dip" android:layout_height="wrap_content" android:src="@drawable/guize_down" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

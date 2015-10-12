@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/home_tab_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/tab_icon" android:layout_width="@dimen/home_tab_icon_width" android:layout_height="@dimen/home_tab_icon_height" android:layout_marginTop="@dimen/home_tab_icon_margin_top" android:src="@drawable/tab_home_selector" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/tab_red_point" android:visibility="gone" android:layout_width="@dimen/home_tab_red_point_width" android:layout_height="@dimen/home_tab_red_point_height" android:layout_marginRight="@dimen/home_tab_red_point_margin_right" android:src="@drawable/mine_red_point" android:layout_toRightOf="@id/tab_icon" android:layout_alignTop="@id/tab_icon" android:layout_centerVertical="true" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/home_tab_text_height" android:layout_below="@id/tab_icon">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/tab_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/default_text" style="@style/tabbar_homepage" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

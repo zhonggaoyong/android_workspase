@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chang_nickname_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/change_nickname_cancle" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:text="取消" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="20.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/change_nickname_me" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="昵称" android:layout_centerInParent="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="18.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/change_nickname_save" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:text="保存" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/borderline2" />
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View style="@style/borderline" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.meilishuo.app.views.CustomEditText android:textSize="16.0sp" android:textColor="@color/grey_d4" android:id="@id/change_nickname_edit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="50.0dip" android:textCursorDrawable="@null" />
+        <ImageView android:id="@id/change_nickname_delete" android:background="@drawable/nickname_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/borderline" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="@color/grey_d9" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昵称不能超过10个汉字或20个英文字符，支持中英文、数字、下划线" />
+</LinearLayout>

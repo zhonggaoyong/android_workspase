@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/common_hm_vw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/sdk2_simple_pwd_bg_" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <EditText android:textSize="16.0sp" android:textColor="@color/sdk_colorBlack" android:id="@id/sdk2_pwd_edit_dense" android:background="@null" android:paddingLeft="10.0dip" android:hint="@string/sdk2_pay_dense_hint" android:cursorVisible="true" android:inputType="textPassword" android:textCursorDrawable="@drawable/sdk_text_cursor" style="@style/common_hm_vm" />
+    </LinearLayout>
+</LinearLayout>

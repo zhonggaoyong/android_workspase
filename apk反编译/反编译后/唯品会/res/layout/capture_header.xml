@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" style="@style/title_bar_bg_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_back" android:layout_centerVertical="true" style="@style/app_title_left_button_style" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:focusable="true" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/app_title_size" android:textColor="@color/app_title_dark" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right|center" android:orientation="horizontal" android:id="@id/select_pic_top" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center_vertical" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="46.0dip" android:src="@drawable/sweep_photo_icon" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0dip" android:textColor="@color/app_text_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="15.0dip" android:text="相册" />
+    </LinearLayout>
+</LinearLayout>

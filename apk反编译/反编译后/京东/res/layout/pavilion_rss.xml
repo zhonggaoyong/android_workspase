@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.5dip">
+        <TextView android:textSize="@dimen/pavilion_text_size_33" android:textColor="#ff252525" android:id="@id/select_street_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pavilion_rss_select_title" />
+        <TextView android:textSize="@dimen/pavilion_text_size_24" android:textColor="#ff848689" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/pavilion_rss_delete_btn" android:layout_toRightOf="@id/select_street_title" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.5dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="16.5dip">
+        <TextView android:textSize="@dimen/pavilion_text_size_30" android:textColor="#ff848689" android:gravity="center" android:id="@id/street1" android:background="@drawable/pavilion_rss_select_normal" android:layout_width="0.0dip" android:layout_height="33.0dip" android:layout_marginRight="9.0dip" android:text="@string/pavilion_rss_select_empty" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/pavilion_text_size_30" android:textColor="#ff848689" android:gravity="center" android:id="@id/street2" android:background="@drawable/pavilion_rss_select_normal" android:layout_width="0.0dip" android:layout_height="33.0dip" android:text="@string/pavilion_rss_select_empty" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/pavilion_text_size_30" android:textColor="#ff848689" android:gravity="center" android:id="@id/street3" android:background="@drawable/pavilion_rss_select_normal" android:layout_width="0.0dip" android:layout_height="33.0dip" android:layout_marginLeft="9.0dip" android:text="@string/pavilion_rss_select_empty" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#fff3f5f7" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.5dip" android:layout_marginBottom="16.5dip">
+        <TextView android:textSize="@dimen/pavilion_text_size_33" android:textColor="#ff252525" android:id="@id/all_streets" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/pavilion_rss_all_streets" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/pavilion_text_size_24" android:textColor="#ff848689" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/pavilion_rss_select_btn" android:layout_toRightOf="@id/all_streets" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <GridView android:id="@id/candidate_streets_gridview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="8.0dip" android:columnWidth="128.0dip" android:numColumns="4" />
+</LinearLayout>

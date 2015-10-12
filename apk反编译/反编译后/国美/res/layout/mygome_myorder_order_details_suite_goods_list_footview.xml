@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/ump_line_h" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/goods_list">
+        <TextView android:textSize="15.0sp" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/count" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffcc0000" android:id="@id/mygome_myorder_order_details_suite_goods_count_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_toRightOf="@id/textView1" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffcc0000" android:id="@id/mygome_myorder_order_details_suite_goods_amount_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="TextView" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suite_price" android:layout_toLeftOf="@id/mygome_myorder_order_details_suite_goods_amount_textView" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

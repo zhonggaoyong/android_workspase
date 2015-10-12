@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/pub_color_nine" android:ellipsize="end" android:id="@id/consultation_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/consultation_name" android:singleLine="true" android:layout_toLeftOf="@id/consultation_date" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/pub_color_nine" android:id="@id/consultation_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/consultation_name" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:drawableLeft="@drawable/user_icon" />
+        <TextView android:textColor="@color/pub_color_three" android:id="@id/consultation_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/consultation_name" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:id="@id/icon_consultation_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:drawableLeft="@drawable/news_icon" />
+        <TextView android:textColor="@color/pub_color_three" android:id="@id/consultation_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/consultation_name" />
+    </LinearLayout>
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+        <TextView android:textColor="@color/pub_color_nine" android:id="@id/consultation_bad" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/consultation_bad" android:drawableLeft="@drawable/no_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/goog_bad_line" android:background="@drawable/category_second_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/consultation_bad" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/pub_color_nine" android:id="@id/consultation_good" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/consultation_good" android:drawableLeft="@drawable/good_icon" android:layout_toLeftOf="@id/goog_bad_line" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

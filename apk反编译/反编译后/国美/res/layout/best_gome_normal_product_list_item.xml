@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/common_bg" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/best_gome_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="7.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/iv_best_gome_normal_product" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/product_list_grid_item_icon_bg" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+                <Button android:textSize="@dimen/best_gome_cornel_title_size" android:textStyle="bold" android:textColor="@color/main_default_white_text_color" android:id="@id/best_gome_normal_corner_title_btn" android:background="@drawable/best_gome_corner_circle_title_shape" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:maxLines="2" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="6.0dip" android:paddingRight="11.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <com.gome.ecmall.custom.LineTextViewColor android:textSize="@dimen/best_gome_cornel_title_size" android:textColor="@color/main_default_black_text_color" android:ellipsize="none" android:id="@id/tv_best_gome_normal_product_title" android:background="@android:color/transparent" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:scrollHorizontally="false" />
+                <com.gome.ecmall.custom.LineTextView android:textSize="@dimen/best_gome_sub_title_size" android:textColor="@color/hint_text_color" android:ellipsize="end" android:id="@id/tv_best_gome_normal_product_desc" android:paddingBottom="3.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxHeight="60.0dip" android:minHeight="50.0dip" android:lines="3" android:layout_below="@id/tv_best_gome_normal_product_title" pl:plTextColor="@color/hint_text_color"
+                  xmlns:pl="http://schemas.android.com/apk/res/com.gome.eshopnew" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/image_selector_up" android:id="@id/tv_best_gome_normal_discount_price" android:background="@drawable/best_gome_groupbuy_discount_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/tv_best_gome_normal_product_desc" />
+                <RelativeLayout android:id="@id/best_gome_normal_price_left_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/tv_best_gome_normal_discount_price">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="17.0sp" android:textColor="@color/image_selector_up" android:id="@id/tv_normal_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/hint_text_color" android:id="@id/tv_normal_product_original_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_below="@id/tv_normal_product_price" />
+                    </RelativeLayout>
+                    <ImageView android:id="@id/iv_best_gome_normal_product_favorite" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/dashboard_post_control_like_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

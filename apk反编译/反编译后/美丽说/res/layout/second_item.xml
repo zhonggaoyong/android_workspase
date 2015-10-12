@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/gap" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <com.meilishuo.app.views.KeepScaleImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+</LinearLayout>

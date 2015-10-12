@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/noDataNormal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:src="@drawable/lib_story_img_no_data" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/lib_story_t_large_size" android:gravity="center_horizontal" android:id="@id/noDataSearch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/lib_story_search_no_data" />
+    <include layout="@layout/lib_story_search_history_no_data" />
+</RelativeLayout>

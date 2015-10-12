@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/home_shop_layout" android:background="@drawable/home_product_item_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="62.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/home_shop_logo" android:background="@color/new_home_divider" android:padding="1.0px" android:layout_width="93.0dip" android:layout_height="32.0dip" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="11.0dip" android:layout_toRightOf="@id/home_shop_logo">
+            <TextView android:textSize="15.0dip" android:textColor="@color/text_color_252525" android:ellipsize="end" android:id="@id/home_shop_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/home_shop_vender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/home_shop_vender" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="-1.0dip" android:layout_toRightOf="@id/home_shop_logo" android:layout_alignBottom="@id/home_shop_logo">
+            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/home_shop_tag_promotion" android:background="@drawable/home_shop_red_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/recommend_shopitem_promotion" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/home_shop_tag_new" android:background="@drawable/home_shop_yellow_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/recommend_shopitem_new" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/home_shop_tag_activity" android:background="@drawable/home_shop_green_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/recommend_shopitem_activity" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/home_shop_tag_coupon" android:background="@drawable/home_shop_blue_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/recommend_shopitem_coupon" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dip" android:textColor="@color/text_color_848689" android:id="@id/home_shop_follow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recommend_shopitem_follow" android:layout_alignBottom="@id/home_shop_logo" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/new_home_title" android:id="@id/home_shop_follow_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/home_shop_follow_text" android:layout_alignBottom="@id/home_shop_follow_text" />
+    </RelativeLayout>
+    <TextView android:background="@color/new_home_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/home_shop_image1" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/home_shop_image2" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/home_shop_image3" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+    </LinearLayout>
+</LinearLayout>

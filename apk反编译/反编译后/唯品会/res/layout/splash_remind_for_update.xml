@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/splash_repeat_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/splash_bg" android:layout_width="wrap_content" android:layout_height="@dimen/splash_remind_img_height" android:layout_marginTop="@dimen/splash_remind_phone_margintop" android:src="@drawable/splash_phone" android:layout_centerHorizontal="true" />
+    <Button android:textSize="@dimen/splash_remind_ok_text_size" android:textColor="#ffe4007f" android:id="@id/ok" android:background="@drawable/splash_bt_red" android:layout_width="@dimen/splash_remind_ok_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/splash_remind_ok_marginTop" android:text="确 定" android:layout_below="@id/splash_bg" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/splash_remind_ignore_alert_text_size" android:textColor="#ffaeaeae" android:id="@id/ignore_alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/splash_remind_ignore_marginTop" android:text="忽略提醒" android:layout_below="@id/ok" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

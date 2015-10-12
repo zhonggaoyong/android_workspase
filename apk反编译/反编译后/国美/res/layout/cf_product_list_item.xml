@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/product_pic" android:layout_width="fill_parent" android:layout_height="120.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/cf_bg_follow" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentRight="true">
+            <TextView android:textSize="11.0sp" android:textColor="@color/flight_text_grey" android:layout_gravity="right" android:id="@id/follow_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/flight_text_grey" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注" />
+        </LinearLayout>
+        <ImageView android:id="@id/pre_hot" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/cf_hot" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/flight_text_black" android:id="@id/product_name" android:background="#ffffffff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <View android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:background="#ffffffff" android:padding="10.0dip" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/flight_text_black" android:id="@id/finish_pro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/flight_text_black" android:id="@id/current_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/flight_text_black" android:id="@id/left_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/finish_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="众筹进度" android:layout_below="@id/finish_pro" android:layout_alignLeft="@id/finish_pro" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/money_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="已筹集" android:layout_below="@id/current_money" android:layout_alignLeft="@id/current_money" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/left_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="剩余时间" android:layout_below="@id/left_day" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

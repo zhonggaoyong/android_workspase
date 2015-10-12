@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/cart_guess_top_gap_line" android:background="@color/color_ffe0e0e0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/cart_guess_title_layout" android:background="@color/white" android:paddingLeft="11.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/cart_guess_top_gap_line">
+        <TextView android:textSize="17.0sp" android:textColor="@color/cart_color_252525" android:id="@id/cart_guess_you_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_recommend_titie" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:id="@id/cart_guess_expand_index_wrap" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <CheckBox android:id="@id/cart_guess_expand_index" android:background="@drawable/cart_recommond_up_selecttor" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="10.0dip" android:button="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/cart_guess_bottom_gap_line" android:background="@color/color_ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/cart_guess_title_layout" />
+    <RelativeLayout android:id="@id/cart_recomand_layout" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/cart_guess_bottom_gap_line">
+        <com.jingdong.common.ui.JDGallery android:gravity="left" android:id="@id/cart_recomand_gallery" android:paddingLeft="10.0dip" android:visibility="gone" android:drawingCacheQuality="high" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="@dimen/cart_recommend_gallsry_space" android:unselectedAlpha="1.0" />
+        <com.jingdong.app.mall.utils.ui.JDViewPager android:id="@id/cart_recommend_viewpager" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/cart_recommend_viewpager_height" android:minHeight="150.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cart_recommend_horizontal_cursor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cart_recommend_margin_top" android:layout_below="@id/cart_recommend_viewpager" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

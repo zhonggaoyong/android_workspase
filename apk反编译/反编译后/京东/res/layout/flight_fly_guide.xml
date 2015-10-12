@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#c0000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/flight_internation_joy" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:src="@drawable/flight_internation_joy" android:layout_above="@id/flight_internation_text" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/flight_internation_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flight_internation_text" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/flight_internation_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:src="@drawable/flight_internation_butn_selector" android:layout_below="@id/flight_internation_text" android:layout_centerHorizontal="true" />
+</RelativeLayout>

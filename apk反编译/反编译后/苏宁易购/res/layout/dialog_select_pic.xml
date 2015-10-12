@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="@dimen/android_public_textsize_18pt" android:textColor="@color/pub_color_eight" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/android_public_space_60px" android:text="添加照片方式" />
+        <Button android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/address_manager_address" android:gravity="center" android:id="@id/btn_picture_selectfrom_camera" android:background="@drawable/tab_base_bg" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:text="相机拍摄" />
+        <Button android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/address_manager_address" android:gravity="center" android:id="@id/btn_picture_selectfrom_storage" android:background="@drawable/tab_base_bg" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_60px" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="手机相册" />
+    </LinearLayout>
+</LinearLayout>

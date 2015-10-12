@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/setting_text_size_dialog_title" android:textColor="@color/setting_time_title" android:id="@id/setting_number_picker_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_text_size_dialog_title_left" android:layout_marginTop="@dimen/dialog_title_margin_top" android:layout_marginBottom="@dimen/dialog_title_margin_bottom" />
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_setting_dialog_title_style" />
+</merge>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/sell_panel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/sell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/talk_mai" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/circle_sell" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/photo_panel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/talk_photo" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:id="@id/second_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/circle_photo" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/notice_panel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/notice" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/talk_gonggao" android:onClick="onClick" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:id="@id/third_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/circle_notice" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

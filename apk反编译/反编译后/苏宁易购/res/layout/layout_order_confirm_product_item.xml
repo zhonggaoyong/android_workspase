@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_product_icon" android:paddingLeft="@dimen/android_public_space_18px" android:paddingRight="@dimen/android_public_space_18px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_twelev" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_twelev">
+        <ImageView android:id="@id/view_product_icon" android:background="@drawable/bg_gray_one_border" android:layout_width="@dimen/pub_margin_or_padding_space_sixty" android:layout_height="@dimen/pub_margin_or_padding_space_sixty" android:src="@drawable/default_backgroud" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_ten">
+            <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:id="@id/view_product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentTop="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_fifteen" android:id="@id/view_prodcut_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/order_detail_time_color" android:id="@id/view_prodcut_quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_marginLeft="@dimen/android_public_space_18px" />
+</LinearLayout>

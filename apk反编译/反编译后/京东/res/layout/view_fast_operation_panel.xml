@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/select_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fast_operation_select_all" android:layout_weight="1.0" />
+    <Button android:id="@id/select_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fast_operation_select_big" android:layout_weight="1.0" />
+    <Button android:id="@id/select_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fast_operation_select_small" android:layout_weight="1.0" />
+    <Button android:id="@id/select_odd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fast_operation_select_odd" android:layout_weight="1.0" />
+    <Button android:id="@id/select_even" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fast_operation_select_even" android:layout_weight="1.0" />
+</LinearLayout>

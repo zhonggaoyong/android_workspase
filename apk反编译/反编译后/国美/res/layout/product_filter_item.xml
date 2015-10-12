@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/more_item_color_bg_selector" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip">
+        <ImageView android:id="@id/iv_icon_first" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/appraise_ratingbar" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_icon_last" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/product_filter_angle_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_default_black_text_color" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="TextView" android:layout_toRightOf="@id/iv_icon_first" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/hint_text_color" android:id="@id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_toLeftOf="@id/iv_icon_last" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

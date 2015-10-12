@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/userinfo_discover_head_iv" android:layout_width="@dimen/android_public_space_60px" android:layout_height="@dimen/android_public_space_60px" android:src="@drawable/logisticsmap_delivery_man_default_head" />
+        <LinearLayout android:orientation="vertical" android:id="@id/userinfo_logining_ll" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/discover_margin" android:layout_marginRight="@dimen/discover_margin" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/color_gray_353d44" android:ellipsize="end" android:id="@id/userinfo_nick_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/color_gray_909090" android:ellipsize="end" android:id="@id/userinfo_signature_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/color_gray_353d44" android:id="@id/userinfo_loginout_tv" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/going_login" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" />
+    </LinearLayout>
+</LinearLayout>

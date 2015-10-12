@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/common_title_layout" />
+    <ScrollView android:id="@id/scrollView1" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/common_scrollbar_style">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textColor="@color/main_default_black_text_color" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/grade" />
+            <RatingBar android:id="@id/goods_appraise_ratingBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:numStars="5" android:stepSize="1.0" style="@style/roomRatingBar" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/main_default_black_text_color" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="商品评论" />
+            <EditText android:textSize="15.0dip" android:gravity="top|left|center" android:id="@id/goods_appraise_summary_editText" android:background="@drawable/more_item_single_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="80.0dip" android:hint="讨论一下此商品的使用感受，对哪些地方满意或不满意？(1-1000字）" android:ems="10" android:maxLength="1000" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/main_default_black_text_color" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/recommend" />
+            <com.gome.ecmall.custom.PredicateLayout android:id="@id/wcl_appraise" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/rl_custom_bt" android:background="@drawable/myappraise_custom_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <ImageView android:id="@id/iv_custom" android:background="@drawable/myappraise_custom_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="自定义输入" android:layout_toRightOf="@id/iv_custom" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_custom_et" android:layout_width="230.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <RelativeLayout android:orientation="horizontal" android:id="@id/rl_et" android:background="@drawable/mygome_myappraise_custom_bg" android:layout_width="fill_parent" android:layout_height="35.0dip">
+                    <EditText android:textSize="15.0sp" android:textColorHint="#ff999999" android:id="@id/et_custom" android:background="@color/transparent" android:layout_width="100.0dip" android:layout_height="35.0dip" android:hint="自定义输入" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <Button android:textSize="15.0sp" android:textColor="#ffededed" android:id="@id/bt_custom_submit" android:background="@drawable/mygome_myappraise_custom_submit_bg" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="提交" android:layout_alignTop="@id/rl_et" android:layout_alignParentRight="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#fffc7358" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="1-7个字，仅限汉字、字母和数字" android:layout_below="@id/rl_et" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

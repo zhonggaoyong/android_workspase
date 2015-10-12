@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <View style="@style/FirstDividerViewStyle" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="160.0dip">
+            <View android:id="@id/line" android:layout_alignParentLeft="true" style="@style/erectline" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/user_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/pic">
+                <com.meilishuo.app.views.RoundImageView android:id="@id/user_pic" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="@color/grey_d4" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/buyer_tips" android:layout_toRightOf="@id/user_pic" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="@color/grey_d4" android:id="@id/buy_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@id/pic" android:layout_below="@id/user_view" />
+            <View android:id="@id/line1" android:layout_alignParentRight="true" style="@style/erectline" />
+            <FrameLayout android:id="@id/pic" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_margin="20.0dip" android:layout_alignParentLeft="true">
+                <ImageView android:id="@id/goods_pic" android:background="@drawable/order_goods_bg" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|right|center" android:id="@id/goods_price" android:background="@drawable/price_backgroud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+            </FrameLayout>
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/goods_buy" android:background="@drawable/btn_red_bg" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="@string/text_goodsshow_buy" android:singleLine="true" android:layout_alignBottom="@id/pic" android:layout_alignParentRight="true" android:onClick="onClick" />
+        </RelativeLayout>
+        <View style="@style/FirstDividerViewStyle" />
+    </LinearLayout>
+</LinearLayout>

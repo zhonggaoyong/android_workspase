@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_shop" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout01" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:id="@id/item_image" android:layout_width="120.0dip" android:layout_height="80.0dip" android:scaleType="fitCenter" />
+                <View android:background="#ffdcdcdc" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ios_public_space_24px" android:layout_marginRight="@dimen/ios_public_space_28px" android:weightSum="3.0" android:layout_toRightOf="@id/layout01" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_eight" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_6px" android:singleLine="true" android:layout_weight="1.0" />
+                <RatingBar android:layout_gravity="center_vertical" android:id="@id/shopRatingBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_14px" android:numStars="5" android:rating="1.8" android:stepSize="0.5" style="@style/favorite_shop_rating_bar" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_14px">
+                    <ImageView android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nostar" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/ratingImageView" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fivestar" android:scaleType="matrix" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_14px" android:layout_marginBottom="@dimen/ios_public_space_6px" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/pub_color_ten" android:id="@id/vendor_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/android_public_text_size_22px" android:textColor="@color/white" android:id="@id/txt_shop_flag" android:background="@drawable/label_bg_myfav_acquire_ticket" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

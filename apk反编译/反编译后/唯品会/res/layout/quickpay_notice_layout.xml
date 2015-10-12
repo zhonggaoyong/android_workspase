@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vipnew_list_header" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/bar_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/notice_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="74.0dip" android:layout_marginRight="50.0dip" />
+        <TextView android:textSize="@dimen/quickpay_sms_size" android:textColor="@color/app_text_black" android:layout_gravity="center_horizontal" android:id="@id/notice_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="10.0dip" android:text="@string/qpay_form_cvv2_notice_des" android:lineSpacingExtra="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

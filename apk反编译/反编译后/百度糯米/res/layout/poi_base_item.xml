@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.bainuo.view.PoiGrouponListItemView android:id="@id/poi_item" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/poi_divide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

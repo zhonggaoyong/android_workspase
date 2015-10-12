@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/dimen_11" android:paddingRight="@dimen/dimen_11" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:image="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.app.mall.utils.ui.JDImageView android:id="@id/product_list_recommend_item_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_11" image:ratio="2.66" />
+</RelativeLayout>

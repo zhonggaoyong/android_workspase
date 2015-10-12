@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:longClickable="true" android:text="标准环境" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/TopOkBtn" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <AutoCompleteTextView android:textColor="@color/grey_d3" android:textColorHint="@color/grey_d9" android:id="@id/standard_env" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="输入环境名称(留空使用正式环境)" android:singleLine="true" android:completionThreshold="1" android:inputType="textCapCharacters" />
+            <com.meilishuo.app.views.CustomTextView android:textColor="@color/grey_d3" android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="当前环境:" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/mobapi_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="mobapi:" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/mobapi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="mobapi.meilishuo.com" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/doota_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="doota:" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/doota" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="doota.meilishuo.com" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/im_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="im:" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/im" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="im.meilishuo.com" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/account_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="account:" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="account.meilishuo.com" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/mpay_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="mpay:" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/mpay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="mpay.meilishuo.com" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/zhifu_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="zhifu:" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/zhifu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="mpay.meilishuo.com" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/captcha_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="captcha:" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/captcha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="captcha.meilishuo.com" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/huahuaapi_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="huahuaapi:" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/huahuaapi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="huahuaapi.meilishuo.com" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/pushuserapi_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="pushuserapi:" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="@color/grey_d3" android:id="@id/pushuserapi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="pushuserapi.meilishuo.com" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

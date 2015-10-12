@@ -1,0 +1,1 @@
+{"m.api.51fanli.com/app/item.htm": ["[\\?|&]{1}id=(\\d+)"]}

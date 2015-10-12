@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_1" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="@dimen/pd_space_width_8" android:scaleType="fitCenter" />
+    <TextView android:textSize="@dimen/pd_txt_size_middle" android:textColor="@color/pd_black_25" android:id="@id/txt_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pd_tip_not_support_7_day" />
+</LinearLayout>

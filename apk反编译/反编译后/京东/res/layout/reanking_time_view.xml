@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/remain_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:ellipsize="end" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="仅剩" android:singleLine="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip">
+            <ImageView android:background="@drawable/surplus_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_centerInParent="true" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/hour1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip">
+            <ImageView android:background="@drawable/surplus_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_centerInParent="true" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/hour2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:ellipsize="end" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="时" android:singleLine="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip">
+            <ImageView android:background="@drawable/surplus_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_centerInParent="true" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/min_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip">
+            <ImageView android:background="@drawable/surplus_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_centerInParent="true" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/min_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:ellipsize="end" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="分" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/activity_bg" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_dialog_title" android:textColor="@color/dilaog_title_text_color" android:id="@id/fragment_rules_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_margin_left" android:layout_marginTop="@dimen/dialog_title_margin_top" android:layout_marginBottom="@dimen/dialog_title_margin_bottom" android:text="@string/random" />
+    <com.facebook.drawee.view.SimpleDraweeView style="@style/line_dialog_title_style" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="360.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip">
+        <ListView android:layout_gravity="center_vertical" android:id="@id/fragment_rules_list" android:background="@color/bg_normal" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:cacheColorHint="@color/activity_bg" android:divider="@color/bg_normal" />
+    </LinearLayout>
+</LinearLayout>

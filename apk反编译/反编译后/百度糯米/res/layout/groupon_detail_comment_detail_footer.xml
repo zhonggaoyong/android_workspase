@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/comment_view_all_layout" android:background="@drawable/selector_list_row" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ffff4978" android:id="@id/comment_tuan_view_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_tuan_view_all" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrows_gray_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <View android:background="@color/tuan_detial_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

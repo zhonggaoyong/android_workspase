@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/newAddress" android:background="@drawable/payment_bg_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:enabled="false" android:textSize="@dimen/app_textsize_large" android:textColor="@color/app_text_black_new_ui" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_margin_new" android:text="添加收货地址" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:enabled="false" android:background="@drawable/icon_forward_grey" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="@dimen/app_margin_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

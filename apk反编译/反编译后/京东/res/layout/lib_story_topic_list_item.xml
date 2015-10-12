@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/lib_story_shape_border" android:layout_width="fill_parent" android:layout_height="190.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lib_story_topic_list_item_image" android:layout_width="fill_parent" android:layout_height="190.0dip" android:scaleType="centerCrop" />
+    <RelativeLayout android:background="@drawable/lib_story_topic_list_item_backgroud" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/lib_story_t_middle_size" android:textColor="@color/white" android:id="@id/lib_story_topic_list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lib_story_margin_vertical_10" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/lib_story_t_small_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/lib_story_topic_list_item_count" android:background="@drawable/button_backgroud_03" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginRight="@dimen/lib_story_margin_vertical_10" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.jd.lib.story.ui.view.DrawableCenterTextView android:textSize="12.0sp" android:textColor="@color/lib_story_white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/lib_story_topic_list_item_favorite" android:background="@drawable/button_backgroud_00" android:visibility="gone" android:layout_width="63.0dip" android:layout_height="18.0dip" android:singleLine="true" android:drawableLeft="@drawable/lib_story_icon_favorite_normal" android:drawablePadding="3.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

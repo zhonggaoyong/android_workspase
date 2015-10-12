@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.achievo.vipshop.qrcode.ViewfinderView android:id="@id/viewfinder_view" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/viewfinder_tips" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/qr_guide" android:padding="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qrcode_tips" />
+    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/app_text_red" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/select_pic" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/qrcode_local" />
+    <include android:id="@id/vipnew_header" layout="@layout/capture_header" />
+</FrameLayout>

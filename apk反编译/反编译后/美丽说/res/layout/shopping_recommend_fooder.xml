@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/shopping_cart_recommend_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/header_line" style="@style/FirstDividerViewStyle" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <ImageView android:id="@id/recommend_title_img" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:scaleType="fitCenter" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d2" android:id="@id/recommend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/recommend_title" />
+        </LinearLayout>
+        <com.meilishuo.app.views.HorizontalListView android:id="@id/recommend_listview" android:paddingLeft="5.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="211.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/image_pager_activity_rl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="37.299988dip" android:layout_marginRight="22.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/indicator_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextSwitcher android:id="@id/page_index" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/page_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/10" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageButton android:id="@id/imgbtn_save" android:background="@android:color/transparent" android:layout_width="36.69998dip" android:layout_height="36.69998dip" android:layout_marginRight="18.699982dip" android:layout_marginBottom="30.699982dip" android:src="@drawable/save" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageButton android:id="@id/finish" android:background="@android:color/transparent" android:layout_width="36.69998dip" android:layout_height="36.69998dip" android:layout_marginLeft="18.699982dip" android:layout_marginBottom="30.699982dip" android:src="@drawable/back" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

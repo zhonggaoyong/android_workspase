@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/bing_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bing_main_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/bing_extrance_title" layout="@layout/bing_chat_title_layout" />
+    <TextView android:id="@id/tvQueue" android:background="@color/bing_chat_picviewer_loading_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/bing_intro_loading_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/loading_error_tips" />
+    <WebView android:id="@id/bing_intro_webview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ScrollView android:id="@id/bing_intro_ui" android:paddingTop="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/im_ice_msg" android:visibility="gone" layout="@layout/bing_chat_extrance_item" />
+            <include android:id="@id/with_u_msg" android:visibility="gone" layout="@layout/bing_chat_extrance_item" />
+            <include android:id="@id/phone_msg" android:visibility="gone" layout="@layout/bing_chat_extrance_item" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <CheckBox android:id="@id/bing_clause_chb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/bing_clause_checkbox" />
+                    <Button android:id="@id/bing_clause_ms" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" style="@style/bing_clause_bt" />
+                </LinearLayout>
+                <Button android:enabled="false" android:id="@id/go_with_me_bt" android:visibility="gone" android:layout_marginTop="10.0dip" style="@style/bing_go_with_button" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="13.0dip" android:textColor="#ff686868" android:gravity="right" android:id="@id/other_mobile_number" android:background="#00000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="14.0dip" android:text="@string/bing_other_mobile" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

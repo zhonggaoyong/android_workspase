@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_cinema" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_below="@id/rl_top">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:id="@id/tv_cname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxLines="1" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_cname">
+                <TextView android:textSize="12.0dip" android:textColor="#ff848689" android:id="@id/tv_caddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/img_attention" android:background="@drawable/img_no_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.jingdong.common.movie.widget.MovieView android:orientation="vertical" android:id="@id/wgt_movie" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_gallery" android:background="#ff252525" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="129.0dip" android:layout_below="@id/ll_cinema">
+        <com.jingdong.common.movie.widget.UGallery android:gravity="bottom" android:id="@id/gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="17.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_gallery">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_movieplanmain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff252525" android:layout_gravity="center_vertical" android:id="@id/tv_movie_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <TextView android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <HorizontalScrollView android:id="@id/sl_date" android:background="@color/white" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_date" android:layout_width="wrap_content" android:layout_height="45.0dip" />
+            </HorizontalScrollView>
+            <TextView android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_movieplan" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.jingdong.common.movie.widget.LoadingView android:layout_gravity="center_horizontal" android:id="@id/wgt_loading_plan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <TextView android:id="@id/tv_line" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_ticketmain" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="40.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/electronic_coupon" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="电子券" />
+            </LinearLayout>
+            <TextView android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_ticket" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:background="#ffe0e0e0" android:layout_width="10.0dip" android:layout_height="0.5dip" android:layout_marginTop="-1.0dip" />
+            <com.jingdong.common.movie.widget.LoadingView android:layout_gravity="center_horizontal" android:id="@id/wgt_loading_ticket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

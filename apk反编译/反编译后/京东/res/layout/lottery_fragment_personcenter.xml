@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/line_dark_m" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/lottery_personalcenter_bg" android:layout_width="fill_parent" android:layout_height="155.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/head_logined" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="105.0dip">
+            <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/head_image" android:background="@drawable/lottery_personalcenter_touxiang_kuang" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_white" android:gravity="center_vertical" android:id="@id/nick_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="彩票小王子" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/head_unlogined" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="105.0dip">
+            <Button android:gravity="center" android:layout_gravity="center" android:id="@id/login_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/lottery_personalcenter_toumingtiao" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_white" android:gravity="center" android:id="@id/yuer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="￥15.00\n余额" android:layout_weight="1.0" />
+            <com.facebook.drawee.view.SimpleDraweeView android:background="#ffad8b81" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_white" android:gravity="center" android:id="@id/jingdou" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="4800\n京豆" android:layout_weight="1.0" />
+            <com.facebook.drawee.view.SimpleDraweeView android:background="#ffad8b81" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_white" android:gravity="center" android:id="@id/youhuiquan" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="6\n优惠券" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/person_info" android:background="@color/bg_white" android:paddingLeft="20.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_white" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="身份信息" android:layout_weight="1.0" />
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:background="@drawable/lottery_public_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="姓    名" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:gravity="center_vertical" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="周俊" android:layout_weight="3.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="电    话" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:gravity="center_vertical" android:id="@id/phone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="13688887777" android:layout_weight="3.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="身份证号" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:gravity="center_vertical" android:id="@id/userid" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="13011111112222222X" android:layout_weight="3.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/mylottery" android:background="@color/bg_white" android:paddingLeft="20.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="我的彩票" android:layout_weight="1.0" />
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:background="@drawable/lottery_public_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

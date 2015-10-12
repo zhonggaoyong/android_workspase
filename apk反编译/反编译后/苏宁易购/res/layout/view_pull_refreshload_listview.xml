@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_prl_header" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_40px">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_prl_lion_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lion_head" android:scaleType="matrix" android:contentDescription="@string/app_name" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_prl_lion_front" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lion_open" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_prl_refresh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_14px" android:layout_marginBottom="@dimen/android_public_space_14px">
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_eight" android:layout_gravity="center" android:id="@id/tv_prl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_8px" android:text="@string/pull_to_refresh_from_bottom_pull_label" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.suning.mobile.ebuy.utils.subpage.PullUpLoadListView android:id="@id/pul_prl" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

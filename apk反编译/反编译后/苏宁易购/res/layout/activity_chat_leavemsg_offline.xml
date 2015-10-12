@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/leavemsg_middle_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <RelativeLayout android:id="@id/leavemsg_middle_top" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/leavemsg_topic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/notice_txt" android:id="@id/leavemsg_topic_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/leavemsg_topic" />
+                </RelativeLayout>
+                <TextView android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/leavemsg_to_who" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/cluster_unselected_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:minHeight="100.0dip">
+                    <EditText android:textSize="18.0sp" android:textColor="@color/black" android:gravity="top" android:id="@id/leavemsg_content" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxHeight="150.0dip" android:hint="@string/consult_len_chat" android:maxLength="250" android:inputType="textMultiLine" android:imeOptions="actionSend|flagNoEnterAction" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/cluster_unselected_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+                    <EditText android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/leavemsg_phone_email" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/chat_msg_phone" android:singleLine="true" android:imeOptions="actionSend|flagNoEnterAction" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/leave_msg_done" android:background="@drawable/add_to_shop" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="@string/done" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_ten" android:id="@id/leavemsg_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="@string/warm_tips" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

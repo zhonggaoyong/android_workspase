@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/pd_space_width_10" android:paddingTop="@dimen/pd_space_width_15" android:paddingRight="@dimen/pd_space_width_10" android:paddingBottom="@dimen/pd_space_width_15" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l_layout_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip">
+        <RatingBar android:id="@id/product_item_score" android:layout_width="wrap_content" android:layout_height="@dimen/pd_rattingbar_height" android:progressDrawable="@drawable/pd_ratingbar_bg" android:numStars="5" android:stepSize="1.0" android:isIndicator="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/pd_gray" android:gravity="right|center" android:layout_gravity="right" android:id="@id/txt_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/l_layout_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/l_layout_1">
+        <TextView android:textSize="@dimen/pd_txt_size_middle" android:textColor="@color/pd_black_25" android:ellipsize="end" android:id="@id/txt_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingExtra="3.0dip" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pd_space_width_5" android:layout_marginTop="@dimen/pd_space_width_5" android:src="@drawable/pd_arrow_down" />
+    </LinearLayout>
+    <HorizontalScrollView android:id="@id/scrollView" android:visibility="gone" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pd_space_width_8" android:layout_below="@id/l_layout_3">
+        <LinearLayout android:orientation="horizontal" android:id="@id/l_layout_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</RelativeLayout>

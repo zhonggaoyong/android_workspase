@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@android:color/black" android:id="@id/tvName" android:background="@android:color/white" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Text" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivItem0" android:layout_width="126.0dip" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_below="@id/tvName" android:layout_alignParentLeft="true" />
+    <View android:id="@id/vVerticalDivider" android:background="#8cd7d7d7" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_toRightOf="@id/ivItem0" android:layout_below="@id/tvName" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llSecondColumn" android:layout_width="114.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/vVerticalDivider" android:layout_alignParentTop="true">
+        <TextView android:textSize="14.0dip" android:textColor="#ff686868" android:gravity="right|center" android:layout_gravity="right" android:id="@id/home_new_textarrow_text" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Text" android:drawableRight="@drawable/personel_arrow_right" android:drawablePadding="3.0dip" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivItem1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivItem2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivItem3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llThirdColumn" android:background="@android:color/white" android:layout_width="120.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/llSecondColumn">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivItem4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_weight="1.0" android:layout_toRightOf="@id/llSecondColumn" android:layout_alignParentTop="true" />
+        <View android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivItem5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_weight="1.0" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</RelativeLayout>

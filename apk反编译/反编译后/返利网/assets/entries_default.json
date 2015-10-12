@@ -1,0 +1,480 @@
+{
+    "data": {
+        "entry_main": {
+            "list": [
+                {
+                    "id": 100,
+                    "type": "url",
+                    "pic": "",
+                    "bg_color": "FF5151",
+                    "bg_pic": "http://static2.51fanli.net/webapp/images/app/android/bg_icon_super_4.png",
+                    "name": "超级返",
+                    "sub_title": "风尚周 2000免单疯抢中",
+                    "info_text": "",
+                    "info_url": "http://super.51fanli.com/api/brand/gettodaynew",
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.51fanli.com%2Fapp%2Fgosf%3Fapp_index_g%3Dc%26lc%3Dand_super&wb=2&nologin=1",
+                    "web_view_type": "2",
+                    "last_visit_time_type": "2",
+                    "font_size": {
+                        "title": 31,
+                        "sub_title": 13
+                    },
+                    "percent_of_height": "0.42",
+                    "pic_md5": "",
+                    "bg_pic_md5": "a4ae9bd3c368bf720735aa3c72b89ffc",
+                    "pic_default_path": "",
+                    "bg_pic_default_path": "bg_icon_super"
+                },
+                {
+                    "id": 101,
+                    "type": "url",
+                    "pic": "",
+                    "bg_color": "FF8C40",
+                    "bg_pic": "http://static2.51fanli.net/webapp/images/app/android/bg_icon_taobao.png",
+                    "name": "淘宝返利",
+                    "sub_title": "淘宝购物 轻松返利",
+                    "info_text": "",
+                    "info_url": "",
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.51fanli.com%2Fapp%2Ftaobao&nologin=0&wb=2",
+                    "web_view_type": "2",
+                    "last_visit_time_type": "2",
+                    "font_size": {
+                        "title": 31,
+                        "sub_title": 13
+                    },
+                    "percent_of_height": "0.41",
+                    "pic_md5": "",
+                    "bg_pic_md5": "f79cbe041475626618a79d327d5c5907",
+                    "pic_default_path": "",
+                    "bg_pic_default_path": "bg_icon_tb"
+                },
+                {
+                    "id": 111,
+                    "type": "url",
+                    "pic": "",
+                    "bg_color": "FFC526",
+                    "bg_pic": "http://static2.51fanli.net/webapp/images/app/android/bg_icon_invite.png",
+                    "name": "邀请好友",
+                    "sub_title": "",
+                    "info_text": "",
+                    "info_url": "",
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.51fanli.com%2Finvite%3Fref%3Dmapp&wb=2&nologin=0",
+                    "web_view_type": "2",
+                    "last_visit_time_type": "2",
+                    "font_size": {
+                        "title": 19,
+                        "sub_title": 13
+                    },
+                    "percent_of_height": "0.17",
+                    "pic_md5": "",
+                    "bg_pic_md5": "fbd6abd2a3e03aee5c6256ab2aad5b5a",
+                    "pic_default_path": "",
+                    "bg_pic_default_path": "bg_icon_invite"
+                },
+                {
+                    "id": 102,
+                    "type": "separator"
+                },
+                {
+                    "id": 103,
+                    "type": "url",
+                    "pic": "",
+                    "bg_color": "FF7661",
+                    "bg_pic": "http://static2.51fanli.net/webapp/images/app/android/bg_icon_99.png",
+                    "name": "9块9包邮",
+                    "sub_title": "每日更新 全网抄底",
+                    "info_text": "",
+                    "info_url": "",
+                    "url": "ifanli://m.51fanli.com/app/show/native?name=ths",
+                    "web_view_type": "2",
+                    "last_visit_time_type": "2",
+                    "font_size": {
+                        "title": 24,
+                        "sub_title": 13
+                    },
+                    "percent_of_height": "0.32",
+                    "pic_md5": "",
+                    "bg_pic_md5": "c1fd88bbdd56991a1282bd4dc3269f21",
+                    "pic_default_path": "",
+                    "bg_pic_default_path": "bg_icon_9"
+                },
+                {
+                    "id": 104,
+                    "type": "url",
+                    "pic": "",
+                    "bg_color": "FF5B89",
+                    "bg_pic": "http://static2.51fanli.net/webapp/images/app/android/bg_icon_adwall.png",
+                    "name": "任务返利",
+                    "sub_title": "",
+                    "info_text": "",
+                    "info_url": "",
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fhuodong.51fanli.com%2Ftaskfanli",
+                    "web_view_type": "2",
+                    "last_visit_time_type": "2",
+                    "font_size": {
+                        "title": 19,
+                        "sub_title": 13
+                    },
+                    "percent_of_height": "0.17",
+                    "pic_md5": "",
+                    "bg_pic_md5": "7d7995004ce71a5e940a04d39c26e3ef",
+                    "pic_default_path": "",
+                    "bg_pic_default_path": "bg_icon_adwall"
+                },
+                {
+                    "id": 105,
+                    "type": "url",
+                    "pic": "",
+                    "bg_color": "C047C8",
+                    "bg_pic": "http://static2.51fanli.net/webapp/images/app/android/bg_icon_tuan_mall.png",
+                    "name": "团购返利",
+                    "sub_title": "",
+                    "info_text": "",
+                    "info_url": "",
+                    "url": "ifanli://m.51fanli.com/app/show/native?name=tuanmall&nologin=1",
+                    "web_view_type": "2",
+                    "last_visit_time_type": "2",
+                    "font_size": {
+                        "title": 19,
+                        "sub_title": 13
+                    },
+                    "percent_of_height": "0.17",
+                    "pic_md5": "",
+                    "bg_pic_md5": "5157fb019a9eaa8b64231d45e597c591",
+                    "pic_default_path": "",
+                    "bg_pic_default_path": "bg_icon_amazon"
+                },
+                {
+                    "id": 106,
+                    "type": "url",
+                    "pic": "",
+                    "bg_color": "4E9AE0",
+                    "bg_pic": "http://static2.51fanli.net/webapp/images/app/android/bg_icon_hotel.png",
+                    "name": "旅行返利",
+                    "sub_title": "",
+                    "info_text": "",
+                    "info_url": "",
+                    "url": "ifanli://m.51fanli.com/app/show/native?name=travelmall&nologin=1",
+                    "web_view_type": "2",
+                    "last_visit_time_type": "2",
+                    "font_size": {
+                        "title": 19,
+                        "sub_title": 13
+                    },
+                    "percent_of_height": "0.17",
+                    "pic_md5": "",
+                    "bg_pic_md5": "0e387636c5090bc59f06b3a7da3706cf",
+                    "pic_default_path": "",
+                    "bg_pic_default_path": "bg_icon_jdjp"
+                },
+                {
+                    "id": 107,
+                    "type": "group",
+                    "percent_of_height": "0.2",
+                    "sub_entry_list": [
+                        {
+                            "id": 108,
+                            "type": "url",
+                            "pic": "",
+                            "bg_color": "88C700",
+                            "bg_pic": "http://static2.51fanli.net/webapp/images/app/android/bg_icon_mine.png",
+                            "name": "我的",
+                            "sub_title": "",
+                            "info_text": "",
+                            "info_url": "",
+                            "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.51fanli.com%2Fcenter%3Flc%3Dh5_list&wb=2&nologin=0&nn=account",
+                            "web_view_type": "2",
+                            "last_visit_time_type": "2",
+                            "font_size": {
+                                "title": 19,
+                                "sub_title": 13
+                            },
+                            "percent_of_height": "0.85",
+                            "pic_md5": "",
+                            "bg_pic_md5": "09d4ee33b02321378a0a156cc8dd4b44",
+                            "pic_default_path": ""
+                        },
+                        {
+                            "id": 109,
+                            "type": "separator"
+                        },
+                        {
+                            "id": 110,
+                            "type": "url",
+                            "pic": "",
+                            "bg_color": "00C2B2",
+                            "bg_pic": "http://static2.51fanli.net/webapp/images/app/android/bg_icon_more.png",
+                            "name": "更多",
+                            "sub_title": "",
+                            "info_text": "",
+                            "info_url": "",
+                            "url": "ifanli://m.51fanli.com/app/show/native?name=more",
+                            "web_view_type": "2",
+                            "last_visit_time_type": "2",
+                            "font_size": {
+                                "title": 19,
+                                "sub_title": 13
+                            },
+                            "percent_of_height": "0.85",
+                            "pic_md5": "",
+                            "bg_pic_md5": "32a8f8b8c8ffb617584f485c250e5d11",
+                            "pic_default_path": "",
+                            "bg_pic_default_path": "bg_icon_more"
+                        }
+                    ]
+                }
+            ],
+            "summary": {
+                "cols": 2,
+                "minimal_height": 300
+            },
+            "version": 2,
+            "update_time": 1427277615
+        },
+        "entry_user": {
+            "list": [
+                {
+                    "id": 101,
+                    "type": "menu",
+                    "name": "我的返利",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 17
+                    },
+                    "font_color": {
+                        "sub_title": "898989"
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.fanli.com%2Fcenter%2Ffanli&wb=2&nologin=0",
+                    "percent_of_height": "0.125",
+                    "pic": "",
+                    "pic_md5": "27277bcac293a862ae3e8c68ce541b8a"
+                },
+                {
+                    "id": 102,
+                    "type": "menu",
+                    "name": "我的订单",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 17
+                    },
+                    "font_color": {
+                        "sub_title": "898989"
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.fanli.com%2Fcenter%2Forder&wb=2&nologin=0",
+                    "percent_of_height": "0.125",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icons_order.png",
+                    "pic_md5": "9a784eaf11f7d6f39b143613ae43e980"
+                },
+                {
+                    "id": 103,
+                    "type": "menu",
+                    "name": "我的红包",
+                    "sub_title": "",
+                    "info_url": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 17
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.fanli.com%2Fcenter%2Fredenvelope&wb=2&nologin=0",
+                    "percent_of_height": "0.125",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icons_hongbao.png",
+                    "pic_md5": "27aba0fa3875f3b7ac18258875b78618"
+                },
+                {
+                    "id": 104,
+                    "type": "menu",
+                    "name": "站内信",
+                    "info_text": "",
+                    "info_url": "http://passport.fanli.com/client/message/getUserMsgCnt",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 17
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.fanli.com%2Fmessage&wb=2&nologin=0",
+                    "percent_of_height": "0.125",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icons_message.png",
+                    "pic_md5": "21081dcf6c69a53aa7655b44b28c5b6f"
+                },
+                {
+                    "id": 105,
+                    "type": "menu",
+                    "name": "邀请好友",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 17
+                    },
+                    "font_color": {
+                        "sub_title": "898989"
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.fanli.com%2Finvite%3Fref%3Dmapp&wb=2&nologin=0",
+                    "percent_of_height": "0.125",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icons_invite.png",
+                    "pic_md5": "44cb5442a2977e712a81aeda57eae506"
+                },
+                {
+                    "id": 106,
+                    "type": "menu",
+                    "name": "更多",
+                    "sub_title": "",
+                    "info_text": "",
+                    "info_url": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 17
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/native?name=more",
+                    "percent_of_height": "0.17",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icons_more.png",
+                    "pic_md5": "76ab7885a87946ad73bd629ae65b95cc"
+                }
+            ],
+            "summary": {
+                "cols": 2,
+                "width_ratio": 1.075
+            },
+            "flavor": 1,
+            "version": 4,
+            "update_time": 1423373473
+        },
+        "entry_all_buz": {
+            "list": [
+                {
+                    "id": 401,
+                    "type": "icon",
+                    "name": "超级返",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 11
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/native?name=sfmain",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icon_super.png",
+                    "pic_md5": "631cd5ab7cb3f4e8ab24ba9ba42fbf19",
+                    "info_text": "",
+                    "info_type": 0,
+                    "info_url": ""
+                },
+                {
+                    "id": 402,
+                    "type": "icon",
+                    "name": "9块9包邮",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 11
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/native?name=ths",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icon_9.9.png",
+                    "pic_md5": "b40996f1598deab30cf11b67f3656615",
+                    "info_text": "",
+                    "info_type": 0,
+                    "info_url": ""
+                },
+                {
+                    "id": 403,
+                    "type": "icon",
+                    "name": "淘宝返利",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 11
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.51fanli.com%2Fapp%2Ftaobao&nologin=0&wb=2",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icon_taobao.png",
+                    "pic_md5": "42f03c1e30482084cd1b6c3d15c0e5f7",
+                    "info_text": "",
+                    "info_type": 0,
+                    "info_url": ""
+                },
+                {
+                    "id": 405,
+                    "type": "icon",
+                    "name": "商城返利",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 11
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/native?name=hotmall",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icon_mall.png",
+                    "pic_md5": "6944bb373fda02b6f920803b1ae6b2a7",
+                    "info_text": "",
+                    "info_type": 0,
+                    "info_url": ""
+                },
+                {
+                    "id": 406,
+                    "type": "icon",
+                    "name": "团购返利",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 11
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/native?name=tuanmall&nologin=1",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icon_tuangou.png",
+                    "pic_md5": "42c3ba28ecf8b0965571cc6aa8aa9433",
+                    "info_text": "",
+                    "info_type": 0,
+                    "info_url": ""
+                },
+                {
+                    "id": 407,
+                    "type": "icon",
+                    "name": "旅行返利",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 11
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/native?name=travelmall&nomapping=1",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icon_ravel.png",
+                    "pic_md5": "6ee1f45ce5834a35656ac109e1d805de",
+                    "info_text": "",
+                    "info_type": 0,
+                    "info_url": ""
+                },
+                {
+                    "id": 408,
+                    "type": "icon",
+                    "name": "饭粒公社",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 11
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.51fanli.com%2Fxiaozu&wb=2&nologin=0",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icon_fanligongshe.png",
+                    "pic_md5": "84fdd9414446ae275f724915fca90c4b",
+                    "info_text": "",
+                    "info_type": 0,
+                    "info_url": ""
+                },
+                {
+                    "id": 409,
+                    "type": "icon",
+                    "name": "今日值得买",
+                    "sub_title": "",
+                    "font_size": {
+                        "title": 17,
+                        "sub_title": 11
+                    },
+                    "url": "ifanli://m.51fanli.com/app/show/web?url=http%3A%2F%2Fm.51fanli.com%2Fzhide%3Flc%3Dios_home_faxian&wb=2&nologin=1",
+                    "pic": "http://static2.51fanli.net/webapp/images/app/iphonev4/icon_zhidemai.png",
+                    "pic_md5": "77418d0f69afcb01d8e7f98e0461c423",
+                    "info_text": "",
+                    "info_type": 0,
+                    "info_url": "http://zhide.fanli.com/itemlist/getLastBaoliaoNum"
+                }
+            ],
+            "version": 3,
+            "update_time": 1423557033
+        }
+    },
+    "info": "success",
+    "status": 1
+}

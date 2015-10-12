@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="about_text_size">15.0sp</dimen>
+    <dimen name="bar_code_message_bottom">70.0sp</dimen>
+    <dimen name="category_first_class_item_height">104.0dip</dimen>
+    <dimen name="coupon_cost_marginRight">18.0dip</dimen>
+    <dimen name="dialog_checkbox_minheight">30.0dip</dimen>
+    <dimen name="dialog_checkbox_padding">20.0dip</dimen>
+    <dimen name="dialog_radiobutton_padding">25.0dip</dimen>
+    <dimen name="homepage_entries_height">335.0dip</dimen>
+    <dimen name="hot_promotion_item_height">345.0dip</dimen>
+    <dimen name="hot_promotion_item_img_height">170.0dip</dimen>
+    <dimen name="tab_padding_left_right">50.0dip</dimen>
+    <dimen name="new_category_font_size">14.0sp</dimen>
+</resources>

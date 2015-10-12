@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/store_home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_lion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_lion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/store_anim_lion" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:src="@drawable/store_anim_light" android:layout_below="@id/iv_lion" />
+    </LinearLayout>
+    <TextView android:textColor="#fff3b500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="正在搜寻最近的门店..." android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

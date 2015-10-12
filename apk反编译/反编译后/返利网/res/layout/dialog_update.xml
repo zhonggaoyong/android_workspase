@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fanli.android.view.TangFontTextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/dialog_title_msg" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:weightSum="2.0">
+        <Button android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/button_ok_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/close" android:layout_weight="1.0" />
+        <Button android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/button_cancel_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/close" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

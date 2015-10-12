@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bdmenu="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/t10_clock_normal" android:id="@id/clock_action" android:title="@string/t10_clock_name" android:titleCondensed="clock" bdmenu:showAsAction="always" />
+    <item android:icon="@drawable/daren_share_selector" android:id="@id/share_action" android:title="@string/topic_net_share" android:titleCondensed="share" bdmenu:showAsAction="always" />
+</menu>

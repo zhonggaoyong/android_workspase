@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/superfan_divider_height" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/superfan_limited_product_margin" android:layout_marginRight="@dimen/superfan_limited_product_margin">
+        <ImageView android:id="@id/iv_product_main_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <com.fanli.android.view.TangFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_prouct_hint" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/product_bottom_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/superfan_limited_product_margin" android:layout_marginRight="@dimen/superfan_limited_product_margin">
+        <RelativeLayout android:id="@id/rl_product_brief" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+            <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:id="@id/tv_product_discount_and_brief" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/line_myfanli" android:background="@drawable/line_details" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="14.0dip">
+            <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/superfan_main_text" android:id="@id/tv_product_price_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/superfan_main_text" android:id="@id/tv_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_product_price_prefix" android:layout_centerVertical="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/grey" android:id="@id/tv_product_original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/tv_product_price" android:layout_centerVertical="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/product_fanli_in_sell" android:id="@id/tv_fanli_in_sell_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/product_fanli_in_sell" android:gravity="center" android:id="@id/tv_fanli_in_sell_hint" android:background="@drawable/in_sell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tv_fanli_in_sell_value" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/product_list_item" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="left|center" android:id="@id/order_detail_product_item" android:background="@drawable/pd_item_enable_bg" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/product_item_image" android:background="@drawable/order_detail_product_icon_bg" android:padding="3.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="12.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/order_detail_product_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_toLeftOf="@id/product_item_price" android:layout_toRightOf="@id/product_item_image">
+            <TextView android:textSize="15.0sp" android:textColor="#ff252525" android:ellipsize="end" android:id="@id/product_item_Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:lineSpacingExtra="3.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff848689" android:id="@id/product_item_order_number" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/product_item_price" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="11.0dip" android:layout_alignParentRight="true" />
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/international_mark" android:layout_width="62.0dip" android:layout_height="18.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="11.0dip" android:layout_below="@id/product_item_price" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/order_detail_product_bottom_line" android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" />
+</LinearLayout>

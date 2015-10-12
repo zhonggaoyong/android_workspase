@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/od_store_main" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/od_model_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/od_store_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/od_frame_padding" android:layout_marginTop="@dimen/od_frame_title_padding" android:layout_marginRight="@dimen/od_frame_padding">
+        <TextView android:textSize="@dimen/od_font_15" android:textStyle="bold" android:textColor="@color/main_default_black_text_color" android:id="@id/od_store_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="门店信息" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/od_font_12" android:textColor="@color/yn_sub_title_color" android:id="@id/od_store_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/od_modify" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/od_store_body_layout" android:paddingTop="@dimen/od_frame_body_padding" android:paddingBottom="@dimen/od_frame_body_padding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/od_frame_padding" android:layout_marginRight="@dimen/od_frame_padding" android:layout_below="@id/od_store_title_layout">
+        <TextView android:textSize="@dimen/od_font_13" android:textColor="@color/main_default_black_text_color" android:id="@id/od_store_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <TextView android:textSize="@dimen/od_font_13" android:textColor="@color/main_default_black_text_color" android:id="@id/od_store_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/od_frame_line_padding" android:text="" android:layout_below="@id/od_store_name" />
+        <TextView android:textSize="@dimen/od_font_13" android:textColor="@color/main_default_black_text_color" android:id="@id/od_store_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/od_frame_line_padding" android:text="" android:layout_below="@id/od_store_phone" />
+    </RelativeLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/od_store_body_layout" />
+</RelativeLayout>

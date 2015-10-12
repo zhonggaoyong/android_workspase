@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/show_bg_middle" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="12.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/goods_pic" android:clickable="false" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginRight="5.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff595056" android:ellipsize="end" android:gravity="top" android:id="@id/goods_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lines="2" android:layout_toRightOf="@id/goods_pic" android:layout_alignParentTop="true" />
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/pink_l1" android:gravity="bottom" android:id="@id/goods_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/goods_pic" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.meilishuo.app.views.CustomTextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/goods_buy" android:background="@drawable/im_send" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/im_sendgoods" android:onClick="onClick" />
+</LinearLayout>

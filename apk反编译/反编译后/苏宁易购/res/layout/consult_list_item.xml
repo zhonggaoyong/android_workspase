@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/middle_line2" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_18px" android:scaleType="matrix" />
+    <RelativeLayout android:id="@id/user_lay" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_below="@id/middle_line2">
+        <TextView android:textSize="12.0sp" android:textColor="@color/pub_color_eighteen" android:id="@id/usernick_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="usernick_tv" android:singleLine="true" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/pub_color_eighteen" android:id="@id/consult_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="consult_time_tv" android:singleLine="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/pub_color_eighteen" android:id="@id/consult_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="consult_tv" android:layout_below="@id/consult_time_tv" />
+    </RelativeLayout>
+    <ImageView android:id="@id/sanJiao" android:background="@drawable/eva_smal_sanjiao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="6.0dip" android:layout_below="@id/user_lay" />
+    <RelativeLayout android:id="@id/consult_aly" android:background="@drawable/eva_add_back" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_below="@id/sanJiao">
+        <TextView android:textSize="12.0sp" android:textColor="@color/pub_color_nine" android:id="@id/shopName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="14.0dip" android:text="苏" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/pub_color_fifteen" android:id="@id/answer_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="14.0dip" android:text="哈哈哈哈" android:layout_below="@id/shopName" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/consult_aly">
+        <ImageView android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="matrix" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/satisfyLL" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/satisfyIv" android:background="@drawable/consult_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/pub_color_fifteen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="满意" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/pub_color_eighteen" android:id="@id/satisfyNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="（20）" />
+            </LinearLayout>
+            <TextView android:background="@drawable/divider_horizontal" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/unsatisfyLL" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/unsatisfyIv" android:background="@drawable/consult_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/pub_color_fifteen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="不满意" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/pub_color_eighteen" android:id="@id/unsatisfyNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="（20）" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

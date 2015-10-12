@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/favo_filter_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/jshop_title" />
+    <ScrollView android:id="@id/filter_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/filter_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/all_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="@dimen/favo_edge_margin">
+                <View android:background="@color/favo_notify_dividing_bg_color" android:layout_width="fill_parent" android:layout_height="1.0px" />"
+<TextView android:textSize="@dimen/favo_filter_label_text_size" android:textColor="@color/favo_notify_set_text_color" android:id="@id/all_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="全部" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/favo_filter_label_text_size" android:textColor="@color/favo_filter_value_text_color" android:id="@id/all_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="68.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/all_sel_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/choice_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <View android:background="@color/favo_notify_dividing_bg_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/xianhuo_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="@dimen/favo_edge_margin">
+                <View android:background="@color/favo_notify_dividing_bg_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+                <TextView android:textSize="@dimen/favo_filter_label_text_size" android:textColor="@color/favo_notify_set_text_color" android:gravity="center" android:id="@id/xianhuo" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:text="有货" />
+                <CheckBox android:gravity="center" android:id="@id/xianhuo_check" android:focusable="false" android:clickable="false" android:layout_marginRight="25.0dip" android:layout_alignParentRight="true" style="@style/more_native_setting_checkbox" />
+                <View android:background="@color/favo_notify_dividing_bg_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <View android:background="@color/favo_notify_dividing_bg_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/favo_edge_margin" />
+            <com.jingdong.common.ui.JDListView android:id="@id/product_classify_list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/favo_notify_dividing_bg_color" android:dividerHeight="1.0px" />
+            <View android:background="@color/favo_notify_dividing_bg_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <Button android:textSize="@dimen/favo_filter_label_text_size" android:textColor="@color/favo_notify_tip_text_color" android:layout_gravity="center_horizontal" android:id="@id/clean_btn" android:background="@drawable/button_c_01" android:layout_width="127.0dip" android:layout_height="28.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:text="清除选项" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_back" android:clickable="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:text="@string/text_comment_title" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+        <com.meilishuo.app.views.CustomTextView android:textColor="@color/grey_d4" android:id="@id/btn_ok" android:text="@string/sure" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/TopOkBtn" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/edit_bg" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="200.0dip">
+            <com.meilishuo.app.views.CustomEditText android:textSize="20.0sp" android:textColor="@color/grey_d3" android:textColorHint="#ff999999" android:gravity="top" android:id="@id/edittext_content_text" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/hint_comment_content" android:maxLength="140" android:layout_weight="1.0" android:imeOptions="actionDone" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="top|right|center" android:id="@id/imageview_addpic" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/show_ico_picture" android:onClick="onClick" />
+                <ImageView android:gravity="top" android:id="@id/imageview_content_pic" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content" android:scaleType="fitStart" android:onClick="onClick" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meilishuo.app.views.CustomTextView android:textColor="#ff999999" android:gravity="right" android:id="@id/textview_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

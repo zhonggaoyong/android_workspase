@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    <RelativeLayout android:background="@drawable/ranking_list_item_selector" android:layout_width="wrap_content" android:layout_height="160.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/left_lay" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip">
+            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="40.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="24.0dip" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/up_or_down_icon" android:layout_width="24.0dip" android:layout_height="28.0dip" android:src="@drawable/ranking_new" />
+                    <TextView android:textSize="10.0dip" android:textColor="#ffff0000" android:gravity="center" android:id="@id/up_or_down_num" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <com.jingdong.common.ranking.view.TopIndexTextView android:textSize="30.0dip" android:textColor="#ffd5e3ef" android:id="@id/index_num_tv" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="45" android:layout_alignParentBottom="true" />
+                <ImageView android:id="@id/index_top_icon" android:layout_width="12.0dip" android:layout_height="11.0dip" android:layout_marginBottom="2.5dip" android:src="@drawable/index_icon_1" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                <ImageView android:id="@id/index_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-5.0dip" android:src="@drawable/image_1" android:layout_below="@id/index_top_icon" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/empty" android:background="#ffff0000" android:layout_width="1.0px" android:layout_height="1.0px" android:layout_marginRight="34.0dip" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/left_lay">
+            <RelativeLayout android:orientation="vertical" android:id="@id/right_lay" android:layout_width="@dimen/ranking_product_img_width" android:layout_height="fill_parent">
+                <ImageView android:id="@id/product_image" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <TextView android:textSize="11.5dip" android:textColor="@color/white" android:gravity="center" android:id="@id/product_price" android:background="@drawable/reanking_shape_oval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignRight="@id/product_image" android:layout_alignBottom="@id/product_image" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ranking_right_paddingleft" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <include android:id="@id/hot_tag_view" layout="@layout/reanking_list_sub_view" />
+                <com.jingdong.common.ui.CustomTextViewNoEnter android:textSize="15.0dip" android:textColor="#ff666666" android:ellipsize="end" android:gravity="left" android:id="@id/content_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/remain_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="14.0dip" android:ellipsize="end" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="仅剩" android:singleLine="true" />
+                    <TextView android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/stock_num" android:background="@drawable/surplus_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="10" android:singleLine="true" />
+                    <TextView android:textSize="14.0dip" android:ellipsize="end" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="件" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="14.0dip" android:textColor="#ffff0000" android:ellipsize="end" android:gravity="left|center" android:id="@id/no_stock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="当前地区无货" android:singleLine="true" />
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/time_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.jingdong.common.ranking.view.RankTimeView android:id="@id/time_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:id="@id/bottom_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+</LinearLayout>

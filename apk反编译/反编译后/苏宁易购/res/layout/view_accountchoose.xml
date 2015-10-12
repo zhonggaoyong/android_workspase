@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lv_loginhistory" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@null" />
+    <TextView android:textSize="16.0sp" android:textColor="#fff29400" android:gravity="center" android:id="@id/history_clear" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="50.0dip" android:minHeight="?android:listPreferredItemHeight" android:text="@string/history_clear_history" />
+</LinearLayout>

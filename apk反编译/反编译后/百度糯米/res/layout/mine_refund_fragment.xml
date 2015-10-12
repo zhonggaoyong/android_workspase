@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/mine_yellow1" android:id="@id/refund_tips" android:background="@color/mine_yellow2" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mine_refund_tips_voucher" />
+            <View android:id="@id/refund_tips_divider_line" android:background="@color/mine_yellow3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:id="@id/refund_tips_margin" android:background="@color/mine_gray7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/consume_code_container" android:background="@color/mine_white1" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+            <RelativeLayout android:background="@color/mine_white1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/mine_black5" android:gravity="center_vertical" android:id="@id/mine_refund_content" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="12.0dip" android:text="@string/mine_refund_content" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/mine_pink1" android:gravity="center_vertical" android:id="@id/refund_total_price" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/mine_refund_content" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/mine_white1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mine_black3" android:gravity="center_vertical" android:id="@id/refund_price_title" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="42.0dip" android:text="@string/mine_refund_cash_title" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mine_pink1" android:gravity="center_vertical" android:id="@id/refund_price" android:paddingLeft="6.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_toRightOf="@id/refund_price_title" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mine_gray5" android:gravity="center_vertical" android:id="@id/refund_way" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="42.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/lucky_money_container" android:background="@color/mine_white1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/mine_gray7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mine_black3" android:gravity="center_vertical" android:id="@id/refund_lucky_money_title" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="12.0dip" android:text="@string/mine_refund_lucky_money_title" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mine_pink1" android:gravity="center_vertical" android:id="@id/refund_lucky_money" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/refund_lucky_money_title" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mine_gray5" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginRight="12.0dip" android:text="@string/mine_refund_way_lucky_money" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/balance_container" android:background="@color/mine_white1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/mine_gray7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mine_black3" android:gravity="center_vertical" android:id="@id/refund_balance_title" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="12.0dip" android:text="@string/mine_refund_balance_title" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mine_pink1" android:gravity="center_vertical" android:id="@id/refund_balance" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/refund_balance_title" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mine_gray5" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginRight="12.0dip" android:text="@string/mine_refund_way_balance" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/expired_money_container" android:background="@color/mine_white1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/mine_gray9" android:gravity="center_vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="@string/mine_refund_expired_money" />
+                <View android:id="@id/divide_line" android:background="@color/mine_gray7" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/expired_lucky_money_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/mine_black3" android:gravity="center_vertical" android:id="@id/refund_lucky_money_expired_title" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="12.0dip" android:text="@string/mine_refund_lucky_money_expired_title" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/mine_black3" android:gravity="center_vertical" android:id="@id/refund_lucky_money_expired" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/refund_lucky_money_expired_title" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/mine_gray5" android:gravity="center_vertical" android:id="@id/refund_way_expired" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginRight="12.0dip" android:text="@string/mine_refund_expired" android:layout_alignTop="@id/refund_lucky_money_expired" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/expired_voucher_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/expired_voucher_divide_line" android:background="@color/mine_gray7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/mine_black3" android:gravity="center_vertical" android:id="@id/refund_voucher_expired_title" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="12.0dip" android:text="@string/mine_refund_voucher_expired_title" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/mine_black3" android:gravity="center_vertical" android:id="@id/refund_voucher_expired" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/refund_voucher_expired_title" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/mine_gray5" android:gravity="center_vertical" android:id="@id/refund_way_voucher_expired" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginRight="12.0dip" android:text="@string/mine_refund_donot_support_refund" android:layout_alignTop="@id/refund_voucher_expired" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/mine_white1" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/mine_black2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_refund_reason" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/mine_gray5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/mine_refund_reason_option" />
+            </LinearLayout>
+            <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/reason_container" android:background="@color/mine_white1" android:paddingLeft="12.0sp" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:id="@id/reason_content_container" android:background="@color/mine_white1" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:enabled="false" android:textSize="14.0sp" android:textColorHint="@color/mine_gray5" android:gravity="top" android:id="@id/reason_content" android:background="@drawable/mine_refund_edittext_bg" android:paddingLeft="6.0dip" android:paddingTop="4.0dip" android:paddingRight="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="104.0dip" android:hint="@string/mine_reason_other_hint" android:minLines="5" android:maxLength="200" />
+            </RelativeLayout>
+            <View android:background="@color/mine_white1" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+            <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/mine_gray6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:background="@color/mine_white1" android:paddingLeft="12.0sp" android:paddingTop="6.0dip" android:paddingRight="12.0sp" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:textColor="@color/selector_delete_color" android:id="@id/submit_btn" android:background="@drawable/selector_red_button" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/mine_refund_submit" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerbar" android:layout_alignParentTop="true" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <ImageView android:id="@id/refresh" android:src="@drawable/btn_refresh_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/TitleBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="@string/newshare_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottombar" android:background="@drawable/detail_top_box" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/send" android:background="@drawable/round_red_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="发送" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.CustomEditText android:textSize="15.0sp" android:id="@id/edit" android:background="@drawable/private_message_edit" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/send" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:transcriptMode="alwaysScroll" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="5.0dip" android:layout_above="@id/bottombar" android:layout_below="@id/headerbar" android:fastScrollEnabled="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jd.lottery.lib.ui.common.widget.FullSizeGridView android:id="@id/selected_ball_panel_gridview" android:numColumns="5" style="@style/select_ball_gridview_style" />
+    <ViewStub android:id="@id/fast_operation_panel" android:layout="@layout/view_fast_operation_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+</LinearLayout>

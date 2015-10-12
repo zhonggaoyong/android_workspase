@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/paydone_success_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:paddingTop="16.0dip" android:paddingRight="12.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/paydone_sucess_icon" android:background="@drawable/paydone_success_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/paydone_sucess_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/paydone_success_font_color1" android:id="@id/paydone_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paydone_success_text" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/paydone_success_font_color2" android:id="@id/paydone_has_send" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/paydone_has_send_text" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/paydone_success_font_color2" android:id="@id/paydone_vip_get_point_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="2.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@id/paydone_status_divider" android:background="@color/paydone_success_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.baidu.bainuo.pay.PaiddoneOrderPrizeListView android:id="@id/paydone_coupon_code_layout" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/padone_view_more_code" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                <View android:background="@color/paydone_success_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/paydone_success_font_color3" android:gravity="center" android:id="@id/paydone_remain_code" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/paydone_view_more_code" android:drawableRight="@drawable/cinema_detail_coupon_arrow_down" android:drawablePadding="5.0dip" />
+            </LinearLayout>
+            <View android:id="@id/paydone_more_code_divider" android:background="@color/paydone_success_divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/paydone_consumer_code_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/paydone_logistics" android:paddingLeft="12.0dip" android:paddingTop="15.0dip" android:paddingRight="12.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/paydone_success_font_color3" android:id="@id/paydone_logistics_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/paydone_logistic" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/paydone_success_font_color3" android:id="@id/paydone_logistics_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:lineSpacingExtra="2.0dip" />
+            </LinearLayout>
+            <View android:background="@color/paydone_success_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/paydone_continue_and_query_btn_layout" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/paydone_order_continue" android:background="@drawable/bg_red_button_selector" android:layout_width="143.0dip" android:layout_height="40.0dip" android:layout_marginRight="@dimen/taocan_10_dp" android:text="@string/paydone_continue_shopping" />
+                <Button android:textSize="16.0sp" android:textColor="#ffff4978" android:gravity="center" android:id="@id/paydone_order_to_quan" android:background="@drawable/bg_white_button_selector" android:layout_width="143.0dip" android:layout_height="40.0dip" android:text="@string/paydone_query_quan" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/paydone_packet_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/paydone_success_divider_up_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <View android:background="@color/paydone_success_divider_background_color" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                <View android:background="@color/paydone_success_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <com.baidu.bainuo.pay.PaiddoneOrderPrizeListView android:id="@id/paydone_packet_prize" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/paydone_success_divider_up_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <View android:background="@color/paydone_success_divider_background_color" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                <View android:background="@color/paydone_success_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <include android:id="@id/paydone_recommen_list" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tuan_detail_recommen_list" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_gravity="bottom|right|center" android:id="@id/paydone_bnlian_share_small" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_marginBottom="18.0dip" android:src="@drawable/bnlian_share_small" android:contentDescription="@string/app_name" />
+</FrameLayout>

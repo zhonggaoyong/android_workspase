@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:id="@id/tablelayout_edit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.5dip" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_fourteen">
+                <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/act_address_manager_name" />
+                <EditText android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:textColorHint="@color/pub_color_ten" android:layout_gravity="center_vertical" android:id="@id/receiver_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_14dp" android:hint="@string/act_address_manager_name_hint" android:singleLine="true" android:layout_weight="1.0" />
+                <com.suning.mobile.ebuy.view.DelImgView android:layout_gravity="center_vertical" android:id="@id/img_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:src="@drawable/btn_del_img_bg" />
+                <View android:background="@color/pub_color_six" android:layout_width="1.0px" android:layout_height="30.0dip" />
+                <LinearLayout android:gravity="center" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/iv_userhead" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/recharge_people" android:scaleType="fitXY" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/split_line_normal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.5dip" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_fourteen" android:layout_marginRight="@dimen/pub_margin_or_padding_space_fourteen">
+                <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_address_manager_phone" />
+                <EditText android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:textColorHint="@color/pub_color_ten" android:layout_gravity="center_vertical" android:id="@id/receiver_phonenumber" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_14px" android:hint="@string/act_address_manager_phone_hint" android:singleLine="true" android:maxLength="11" android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/edit_deliver_address_detail_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/split_line_normal" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.5dip" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_fourteen" android:layout_marginRight="@dimen/pub_margin_or_padding_space_fourteen">
+                    <ImageView android:id="@id/iv_address_to_modify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/pub_margin_or_padding_space_ten" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:id="@id/selectDetailAddressTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/act_address_manager_address" android:singleLine="true" android:layout_toLeftOf="@id/iv_address_to_modify" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View style="@style/split_line_normal" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.5dip" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_fourteen" android:layout_marginRight="@dimen/pub_margin_or_padding_space_fourteen">
+                    <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_address_manager_address_detail" />
+                    <EditText android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:textColorHint="@color/pub_color_ten" android:layout_gravity="center_vertical" android:id="@id/address_edittext_id" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_14px" android:maxHeight="50.0dip" android:text="" android:hint="@string/act_address_manager_address_detail_hint" />
+                </LinearLayout>
+                <View style="@style/split_line_normal" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_address_postal_code" android:layout_width="fill_parent" android:layout_height="44.5dip" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_fourteen" android:layout_marginRight="@dimen/pub_margin_or_padding_space_fourteen">
+                    <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_address_manager_zipcode" />
+                    <EditText android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:textColorHint="@color/pub_color_ten" android:layout_gravity="center_vertical" android:id="@id/address_postal_code" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_14px" android:maxHeight="50.0dip" android:text="" android:hint="@string/act_address_manager_zipcode_hint" android:maxLength="6" android:numeric="integer" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/edit_store_address_detail_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_thirteen" android:layout_marginRight="@dimen/pub_margin_or_padding_space_thirteen">
+                <View style="@style/split_line_normal" />
+                <ImageView android:id="@id/store_address_change_arrow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/pub_margin_or_padding_space_ten" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:paddingTop="@dimen/pub_margin_or_padding_space_ten" android:paddingRight="@dimen/pub_margin_or_padding_space_twenty" android:paddingBottom="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/store_address_change_arrow_img" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/public_text_color" android:id="@id/store_address_detail_select_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shoppingcart_self_pickup_choose_prompt" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="@dimen/android_public_textsize_20pt" android:textColor="@color/public_text_color" android:id="@id/store_address_detail_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <View style="@style/split_line_normal" />
+        </TableLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/check_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="44.5dip" android:layout_below="@id/tablelayout_edit">
+            <CheckBox android:id="@id/check_default" android:background="@drawable/check_box_bg" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_thirteen" android:checked="false" android:button="@null" />
+            <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/pub_color_fifteen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="设置为默认地址" />
+        </LinearLayout>
+        <Button android:id="@id/address_manager_save" android:layout_marginTop="30.0dip" android:layout_marginBottom="5.0dip" android:text="保存" style="@style/btn_logon_register_pub_style" />
+    </LinearLayout>
+</ScrollView>

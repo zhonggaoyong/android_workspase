@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_line" style="@style/FirstDividerViewStyle" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="@dimen/order_text_standard_size_1" android:textColor="@color/grey_d3" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/pay_checkout_quick_item_title" android:singleLine="true" android:drawableLeft="@drawable/mlspay_quickpay_icon" android:drawablePadding="10.0dip" />
+    <View style="@style/FirstDividerViewStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/mlspay_quick_payway_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/bottom_line" style="@style/FirstDividerViewStyle" />
+</LinearLayout>

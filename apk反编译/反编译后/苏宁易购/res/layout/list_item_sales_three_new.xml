@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/product_item" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0" android:minHeight="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/layout01" android:background="@color/pub_color_twelev" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_six" android:layout_marginTop="@dimen/pub_margin_or_padding_space_six" android:layout_marginRight="@dimen/pub_margin_or_padding_space_three" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/item01" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/product_icon1" android:background="@drawable/default_backgroud" android:layout_width="fill_parent" android:layout_height="@dimen/product_list_three_image_height" android:adjustViewBounds="true" />
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_eight" android:ellipsize="end" android:id="@id/product_name1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_five" android:layout_marginTop="3.0dip" android:text="商品名称" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_five" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_five">
+                <TextView android:textSize="14.0dip" android:textColor="#ffff4800" android:id="@id/price_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/global_yuan" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/layout02" android:background="@color/pub_color_twelev" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_three" android:layout_marginTop="@dimen/pub_margin_or_padding_space_six" android:layout_marginRight="@dimen/pub_margin_or_padding_space_three" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/item02" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/product_icon2" android:background="@drawable/default_backgroud" android:layout_width="fill_parent" android:layout_height="@dimen/product_list_three_image_height" android:adjustViewBounds="true" />
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_eight" android:ellipsize="end" android:id="@id/product_name2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_five" android:layout_marginTop="3.0dip" android:text="商品名称" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_five" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_five">
+                <TextView android:textSize="14.0dip" android:textColor="#ffff4800" android:id="@id/price_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/global_yuan" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/layout03" android:background="@color/pub_color_twelev" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_three" android:layout_marginTop="@dimen/pub_margin_or_padding_space_six" android:layout_marginRight="@dimen/pub_margin_or_padding_space_six" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/item03" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/product_icon3" android:background="@drawable/default_backgroud" android:layout_width="fill_parent" android:layout_height="@dimen/product_list_three_image_height" android:adjustViewBounds="true" />
+            <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_eight" android:ellipsize="end" android:id="@id/product_name3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_five" android:layout_marginTop="3.0dip" android:text="商品名称" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_five" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_five">
+                <TextView android:textSize="14.0dip" android:textColor="#ffff4800" android:id="@id/price_tv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/global_yuan" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

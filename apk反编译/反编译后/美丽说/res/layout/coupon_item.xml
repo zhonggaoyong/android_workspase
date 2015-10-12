@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/background" android:background="@drawable/shop_coupon_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/coupon_money" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="5.0dip">
+            <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/ico_rmb_white" />
+            <TextView android:textSize="27.0sp" android:textColor="@color/white" android:gravity="bottom" android:id="@id/coupon_money_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="-3.0dip" android:text="20" android:includeFontPadding="false" />
+        </LinearLayout>
+        <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/coupon_explain" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="无门槛使用" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/coupon_money_symbol" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shop_coupon_line" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:gravity="bottom|center" android:layout_gravity="center_vertical" android:id="@id/coupon_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:text="点击\n领取" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/coupon_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/shop_arrow_s" />
+</LinearLayout>

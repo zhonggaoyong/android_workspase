@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btnmargintop">123.0dip</dimen>
+    <dimen name="favo_edge_margin">15.0dip</dimen>
+    <dimen name="gift_greeting_edit_line_margin">14.0dip</dimen>
+    <dimen name="iconmargintop">85.0dip</dimen>
+    <dimen name="jdtravel_banner">140.0px</dimen>
+</resources>

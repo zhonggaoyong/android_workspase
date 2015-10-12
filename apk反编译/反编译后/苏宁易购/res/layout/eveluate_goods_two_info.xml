@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_18px" android:layout_marginBottom="@dimen/android_public_space_13px">
+        <RatingBar android:id="@id/goods_evaluate_rating_bar" android:layout_width="wrap_content" android:layout_height="@dimen/android_public_space_16px" android:numStars="5" android:rating="3.5" android:stepSize="0.5" android:layout_centerVertical="true" style="@style/seller_list_rating_bar" />
+        <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_nine" android:gravity="center_vertical" android:id="@id/goods_evaluate_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="   " android:singleLine="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_nine" android:gravity="center_vertical" android:id="@id/goods_evaluate_username" android:paddingRight="@dimen/android_public_space_40px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/goods_evaluate_time" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/android_public_textsize_16pt" android:textColor="@color/pub_color_three" android:gravity="center_vertical" android:id="@id/goods_detial_evaluate_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ios_public_space_14px" android:text="ssssssssss" />
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_marginTop="@dimen/ios_public_space_14px" />
+</LinearLayout>

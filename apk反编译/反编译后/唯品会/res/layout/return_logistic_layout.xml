@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff585c64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="物流公司" />
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff222222" android:id="@id/return_logistics_carrier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff585c64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="备注" />
+                <TextView android:textSize="@dimen/order_text_main" android:textColor="#ff222222" android:id="@id/return_logistic_remark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="43.0dip" android:layout_marginRight="15.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/return_overview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

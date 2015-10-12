@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/tuanlist_filter_popup_advance_single_height" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/tuanlist_filter_popup_advance_single_one" android:layout_width="fill_parent" android:layout_height="@dimen/tuanlist_filter_popup_advance_single_height" android:layout_weight="1.0" layout="@layout/tuanlist_filter_popup_advance_single" />
+    <include android:id="@id/tuanlist_filter_popup_advance_single_two" android:layout_width="fill_parent" android:layout_height="@dimen/tuanlist_filter_popup_advance_single_height" android:layout_weight="1.0" layout="@layout/tuanlist_filter_popup_advance_single" />
+    <include android:id="@id/tuanlist_filter_popup_advance_single_three" android:layout_width="fill_parent" android:layout_height="@dimen/tuanlist_filter_popup_advance_single_height" android:layout_weight="1.0" layout="@layout/tuanlist_filter_popup_advance_single" />
+    <include android:id="@id/tuanlist_filter_popup_advance_single_four" android:layout_width="fill_parent" android:layout_height="@dimen/tuanlist_filter_popup_advance_single_height" android:layout_weight="1.0" layout="@layout/tuanlist_filter_popup_advance_single" />
+</LinearLayout>

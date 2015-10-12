@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/networkerror_default_layout" />
+    <com.meilishuo.app.widget.pulltorefresh.RefreshView android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="51.0dip" android:layout_marginBottom="50.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:overScrollMode="never" />
+    </com.meilishuo.app.widget.pulltorefresh.RefreshView>
+    <com.meilishuo.app.views.CustomPageLoading android:layout_gravity="center" android:id="@id/progressbar_pink" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.meilishuo.app.views.CustomTextView android:layout_gravity="bottom|right|center" android:id="@id/to_top" android:background="@drawable/to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" />
+</FrameLayout>

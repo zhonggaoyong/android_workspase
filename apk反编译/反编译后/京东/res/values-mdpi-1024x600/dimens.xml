@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cutting_count_down_view_margintop">18.0dip</dimen>
+    <dimen name="cutting_head_bottom_margin">-18.0dip</dimen>
+    <dimen name="cutting_jdprice_textsize">15.0dip</dimen>
+    <dimen name="cutting_tip_layout_margiontop">10.0dip</dimen>
+    <dimen name="cutting_top_align_lay_height">17.0dip</dimen>
+    <dimen name="cutting_trunk_bottom_margin">1.0dip</dimen>
+    <dimen name="cutting_wenxin_tips">14.0dip</dimen>
+</resources>

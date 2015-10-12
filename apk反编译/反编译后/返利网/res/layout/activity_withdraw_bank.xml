@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/backgroud" android:padding="@dimen/global_page_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/et_input" android:background="@drawable/list_bg_middle_default" android:padding="@dimen/global_padding_tiny" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/global_page_padding" android:hint="搜索" android:singleLine="true" android:drawableLeft="@drawable/ic_searchbar" android:inputType="text" />
+    <FrameLayout android:id="@id/root_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/global_page_padding" android:layout_weight="1.0">
+        <ListView android:id="@id/hot_bank_list" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#ffdddddd" android:dividerHeight="1.0dip" android:fastScrollEnabled="true" />
+        <ListView android:id="@id/suggest_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/selector_list_item_bg" android:transcriptMode="disabled" android:cacheColorHint="#ffffffff" android:divider="#ffdddddd" android:dividerHeight="1.0dip" />
+    </FrameLayout>
+</LinearLayout>

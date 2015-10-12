@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="#fff2f1f6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jshop="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/jshop_list_div_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/jshop_login_layout" android:background="#fff2f1f6" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/jshop_login_layout_height">
+        <Button android:textSize="@dimen/jshop_login_btn_text_size" android:textColor="#ff231815" android:id="@id/jshop_login_btn" android:background="@drawable/jshop_bottombar_imbt_selector" android:layout_width="@dimen/jshop_login_btn_width" android:layout_height="32.0dip" android:text="去登录" />
+        <TextView android:textSize="@dimen/jshop_login_btn_text_size" android:textColor="#ff9fa0a0" android:id="@id/jshop_login_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jshop_login_text_margin_left" android:text="获得更多你喜欢的店铺" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

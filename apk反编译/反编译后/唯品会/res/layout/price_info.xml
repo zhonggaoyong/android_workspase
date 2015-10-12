@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.achievo.vipshop.view.order_detail.OrderPriceView android:orientation="vertical" android:id="@id/order_price_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/submit_space_line2" android:background="@drawable/cart_dash_driver" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/order_money_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/order_money_layout" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        <View android:id="@id/must_lines" android:background="@color/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        <LinearLayout android:id="@id/must_money_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+            <TextView android:textSize="@dimen/order_submit_red_big_text" android:textColor="@color/app_text_black_new_ui" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="应付金额" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/order_submit_red_big_text" android:textStyle="bold" android:textColor="@color/vip_red" android:id="@id/must_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <include android:id="@id/pre_sale_price_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" layout="@layout/pre_sale_price_info" />
+    </LinearLayout>
+</com.achievo.vipshop.view.order_detail.OrderPriceView>

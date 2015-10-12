@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:textSize="15.0dip" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pub_margin_or_padding_space_thirteen">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/pub_margin_or_padding_space_thirteen" android:paddingTop="@dimen/pub_margin_or_padding_space_ten" android:paddingRight="@dimen/pub_margin_or_padding_space_thirteen" android:paddingBottom="@dimen/pub_margin_or_padding_space_ten" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/public_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/return_delivery_address" android:singleLine="true" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/public_text_color" android:id="@id/contact_address" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_marginTop="5.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/pub_margin_or_padding_space_thirteen" android:paddingTop="@dimen/pub_margin_or_padding_space_ten" android:paddingRight="@dimen/pub_margin_or_padding_space_thirteen" android:paddingBottom="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/public_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_way" android:singleLine="true" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/public_text_color" android:id="@id/contact_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+                <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" android:layout_marginTop="5.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/pub_margin_or_padding_space_thirteen" android:paddingTop="@dimen/pub_margin_or_padding_space_ten" android:paddingRight="@dimen/pub_margin_or_padding_space_thirteen" android:paddingBottom="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/public_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goods_receiver" android:singleLine="true" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/public_text_color" android:id="@id/contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:lineSpacingMultiplier="1.2" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="15.0dip" android:textColor="@color/notice_txt" android:id="@id/remark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/return_delivery_remark" />
+            <LinearLayout android:textSize="15.0dip" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/pub_color_one" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="horizontal" android:id="@id/delivery_name_select_rl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/public_text_color" android:gravity="center_vertical" android:id="@id/left" android:layout_width="wrap_content" android:layout_height="42.0dip" android:text="@string/return_delivery_name" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/delivery_name_select" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginRight="@dimen/pub_margin_or_padding_space_thirteen" android:layout_alignTop="@id/left" android:layout_alignParentRight="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/indicator_close" />
+                    </LinearLayout>
+                    <EditText android:textSize="15.0dip" android:textColor="@color/public_text_color" android:textColorHint="@color/group_font_3" android:gravity="center_vertical" android:id="@id/delivery_name" android:background="@null" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginRight="20.0dip" android:hint="@string/return_delivery_name_input" android:maxLength="20" android:layout_toLeftOf="@id/delivery_name_select" android:layout_toRightOf="@id/left" android:layout_alignTop="@id/left" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/public_text_color" android:gravity="center_vertical" android:id="@id/left_bottom" android:layout_width="wrap_content" android:layout_height="42.0dip" android:text="@string/return_delivery_id" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/delivery_id_qr_code" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_alignTop="@id/left_bottom" android:layout_alignParentRight="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/return_delivery_txm" />
+                    </LinearLayout>
+                    <EditText android:textSize="15.0dip" android:textColor="@color/public_text_color" android:textColorHint="@color/group_font_3" android:gravity="center_vertical" android:id="@id/delivery_no" android:background="@null" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginRight="20.0dip" android:hint="@string/return_delivery_id_input" android:singleLine="true" android:maxLength="40" android:layout_toLeftOf="@id/delivery_id_qr_code" android:layout_toRightOf="@id/left_bottom" android:layout_alignTop="@id/left_bottom" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/white" android:id="@id/btn_delivery_submit" android:background="@drawable/bg_btn_yellow_new_vi" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_twelev" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/pub_margin_or_padding_space_twelev" android:layout_marginBottom="20.0dip" android:text="@string/return_apply_submit" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:orientation="vertical" android:id="@id/return_reason_select_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_alignParentBottom="true">
+            <ListView android:layout_gravity="center_horizontal" android:id="@id/return_reason_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:cacheColorHint="#00000000" android:divider="@color/pub_color_twelev" android:dividerHeight="1.0dip" android:headerDividersEnabled="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

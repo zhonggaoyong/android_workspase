@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/find_main_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/shortmenu_main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gome.ecmall.home.surprise.layout.InnerViewPager android:id="@id/vp_find_shortcut_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.gome.ecmall.custom.PageIndicator android:id="@id/find_shortcut_menu_indictor" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" indicatorColor:normalColor="@drawable/home_indicator_nomal_circle_shape" indicatorColor:selectColor="@drawable/home_indicator_select_circle_shape" indicatorColor:indicatorSize="6.0dip" indicatorColor:indicatorSpacing="3.0dip"
+          xmlns:indicatorColor="http://schemas.android.com/apk/res/com.gome.eshopnew" />
+    </RelativeLayout>
+</LinearLayout>

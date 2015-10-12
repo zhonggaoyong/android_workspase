@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<res is_succ="" r_type="" r_msg="">
+    <sd>
+        <title>亚麻裙</title>
+        <pics>
+            <pic>http://imagefile.fanli.com/UploadPic/2011/9/3/20119322317214_700.jpg</pic>
+            <pic>http://imagefile.fanli.com/UploadPic/2011/9/3/20119322317214_700.jpg</pic>
+        </pics>
+        <likes like_qty="">
+            <like>
+                <u_id>fner</u_id>
+                <u_logo>http://i1.fanli.net/UploadPic/2011/4/26/201142611124249539_100.jpg</u_logo>
+            </like>
+            <like>
+                <u_id>任宝贝</u_id>
+                <u_logo>http://i3.fanli.net/images/biaoqing/biaoqing3.jpg</u_logo>
+            </like>
+        </likes>
+        <comms>
+            <comm>
+                <u_id>紫月0831</u_id>
+                <u_logo>http://i4.fanli.net/images/biaoqing/biaoqing4.jpg</u_logo>
+                <content>很合适，很漂亮</content>
+                <date>评论时间 </date>
+            </comm>
+            <comm>
+                <u_id>任宝贝</u_id>
+                <u_logo>http://i4.fanli.net/images/biaoqing/biaoqing5.jpg</u_logo>
+                <content>嘿嘿，刚看到真人秀，刚才没打开啊，楼主好漂亮</content>
+                <date>评论时间 </date>
+            </comm>
+        </comms>
+        <content>[淘宝网]姑娘首条亚麻裙清新飘逸，真人秀隆重登场</content>
+        <date>2011-10-11</date>
+    </sd>
+</res>

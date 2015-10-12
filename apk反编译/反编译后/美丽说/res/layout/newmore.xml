@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/newmore_title_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/newmore_btn_back" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:gravity="center" android:id="@id/newmore_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <com.meilishuo.app.views.ElasticScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/newmore_title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:layout_marginTop="10.0dip" style="@style/borderline" />
+            <RelativeLayout android:id="@id/newmore_im" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="客服消息设置" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/me_btn_arrow_pink" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+            <View android:id="@id/customer_line1" style="@style/borderline" />
+            <View android:id="@id/customer_line3" android:layout_marginTop="10.0dip" style="@style/borderline" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip">
+                    <RelativeLayout android:id="@id/newmore_weixin" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐给微信好友" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/me_btn_arrow_pink" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                    </RelativeLayout>
+                    <View style="@style/cutline" />
+                    <RelativeLayout android:id="@id/newmore_weibo" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注美丽说微博" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/me_btn_arrow_pink" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/borderline" />
+            <View android:layout_marginTop="10.0dip" style="@style/borderline" />
+            <RelativeLayout android:id="@id/newmore_update" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="版本更新" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/arrow_new_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/me_btn_arrow_pink" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                <ImageView android:id="@id/version_tipball" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/tipball" android:layout_toLeftOf="@id/arrow_new_more" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View style="@style/borderline" />
+            <View android:layout_marginTop="10.0dip" style="@style/borderline" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip">
+                    <RelativeLayout android:id="@id/newmore_clear_cache" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除本地缓存" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/me_btn_arrow_pink" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                    </RelativeLayout>
+                    <View style="@style/borderline" />
+                    <RelativeLayout android:id="@id/push_setting" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推送设置" android:layout_centerVertical="true" />
+                        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/pink" android:id="@id/push_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/borderline" />
+                    <RelativeLayout android:id="@id/lock_screen_setting" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="锁屏设置" android:layout_centerVertical="true" />
+                        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/pink" android:id="@id/lock_screen_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="已开启" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/borderline" />
+                    <RelativeLayout android:id="@id/save_data_setting" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="省流量设置" android:layout_centerVertical="true" />
+                        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/pink" android:id="@id/save_data_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="已开启" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_marginBottom="15.0dip" style="@style/SecondDividerViewStyle" />
+            <include layout="@layout/setting_debug_layout" />
+        </LinearLayout>
+    </com.meilishuo.app.views.ElasticScrollView>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/setting_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_top_layout" layout="@layout/common_title_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/common_scrollbar_style">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/more_settings_has_image_layout" android:background="@drawable/more_item_color_bg_selector" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:text="@string/no_image_version" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_settings_main_text_style" />
+                <CheckBox android:id="@id/more_settings_cb_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <ImageView android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+            <RelativeLayout android:id="@id/more_start_location_layout" android:background="@drawable/more_item_color_bg_selector" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:text="@string/start_location" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_settings_main_text_style" />
+                <com.gome.ecmall.custom.SlipButtonT android:id="@id/slipbutton_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <ImageView android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+            <RelativeLayout android:id="@id/more_start_notification_layout" android:background="@drawable/more_item_color_bg_selector" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:text="@string/start_notification" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_settings_main_text_style" />
+                <com.gome.ecmall.custom.SlipButtonT android:id="@id/slipbutton_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <ImageView android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+            <RelativeLayout android:id="@id/more_settings_clear_cache_layout" android:background="@drawable/more_item_color_bg_selector" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:text="@string/clear_cache" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_settings_main_text_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/common_right_arrow_bg_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <ImageView android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+            <RelativeLayout android:id="@id/more_settings_kefu" android:background="@drawable/more_item_color_bg_selector" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:text="服务中心" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_settings_main_text_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/common_right_arrow_bg_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/more_settings_update" android:background="@drawable/more_item_color_bg_selector" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:id="@id/tv_check_out_update" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:text="检查更新" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_settings_main_text_style" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/hint_text_color" android:id="@id/tv_check_out_update_value" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:text="当前版本" android:layout_toRightOf="@id/tv_check_out_update" android:layout_centerVertical="true" style="@style/common_settings_main_text_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/common_right_arrow_bg_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="@color/setting_activity_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/change_ip_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip">
+                <Spinner android:id="@id/change_ip_spinner" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" />
+                <TextView android:textColor="@color/common_orange_textcolor" android:id="@id/change_ip_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:text="42.0.1" style="@style/common_settings_main_text_style" />
+            </LinearLayout>
+            <Button android:id="@id/mygome_exit" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/login_out" android:singleLine="true" style="@style/Gome.Button.SolidRed.Style" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_order_seat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/order_seat" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff252525" android:id="@id/tv_order_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip" android:layout_toRightOf="@id/img_order_seat" />
+            <TextView android:textSize="14.0sp" android:textColor="#fff15353" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="101.0dip">
+            <RelativeLayout android:id="@id/rl_img_movie" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="17.0dip">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_movie" android:layout_width="46.0dip" android:layout_height="67.0dip" android:scaleType="fitCenter" />
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_coupon" android:layout_width="67.0dip" android:layout_height="67.0dip" android:scaleType="fitCenter" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="101.0dip" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/rl_img_movie">
+                <TextView android:textSize="16.0sp" android:textColor="#ff252525" android:id="@id/tv_movieName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:singleLine="true" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff686868" android:id="@id/tv_orderShowName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff686868" android:id="@id/tv_showTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff252525" android:id="@id/tv_totalAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="实付金额" android:layout_centerVertical="true" />
+            <Button android:textSize="14.0sp" android:textColor="#fff15353" android:id="@id/btn_pay" android:background="@drawable/button_g_01" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="28.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="11.0dip" android:text="去支付" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/img_order_finish" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginRight="35.0dip" android:src="@drawable/order_finish" android:layout_alignParentRight="true" />
+</RelativeLayout>

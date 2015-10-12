@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_actives" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:suning="http://schemas.android.com/apk/res/com.suning.mobile.ebuy">
+    <ImageView android:id="@id/iv_default_logo" android:layout_width="fill_parent" android:layout_height="218.0dip" android:src="@drawable/store_home_top_default" android:scaleType="fitXY" />
+    <com.suning.mobile.ebuy.home.homefloor.ui.GalleryFlow android:id="@id/gallery" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spacing="-2.0dip" suning:needTrans="true" suning:needZoom="false" />
+    <include android:id="@id/serviceheader" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/store_inc_home_header" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/home_offsetIndicatorLayout" android:layout_width="wrap_content" android:layout_height="@dimen/android_public_space_24px" android:layout_marginRight="@dimen/android_public_space_13px" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/gallery_ind_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_5px" android:src="@drawable/balianban_gray" />
+        <ImageView android:id="@id/gallery_ind_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_5px" android:src="@drawable/balianban_gray" />
+        <ImageView android:id="@id/gallery_ind_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_5px" android:src="@drawable/balianban_gray" />
+        <ImageView android:id="@id/gallery_ind_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_5px" android:src="@drawable/balianban_gray" />
+        <ImageView android:id="@id/gallery_ind_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_5px" android:src="@drawable/balianban_gray" />
+    </LinearLayout>
+</RelativeLayout>

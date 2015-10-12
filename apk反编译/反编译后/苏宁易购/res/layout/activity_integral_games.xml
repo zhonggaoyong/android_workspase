@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:android_custom="http://schemas.android.com/apk/res/com.suning.mobile.ebuy">
+    <ScrollView android:id="@id/sv_body" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/integral_info_bg" android:padding="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_200px">
+                <com.suning.mobile.ebuy.view.component.CircleImageView android:id="@id/iv_head" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_margin="20.0dip" android:src="@drawable/myebuy_head" android:scaleType="fitXY" android:layout_centerVertical="true" />
+                <com.suning.mobile.ebuy.memunit.memunion.view.LevelPointView android:id="@id/cpb_level_point" android:visibility="gone" android:layout_width="94.0dip" android:layout_height="94.0dip" android:layout_margin="8.0dip" android:layout_centerVertical="true" android_custom:roundColor="#fff28fa1" android_custom:roundProgressColor="@color/white" android_custom:roundWidth="4.0dip" android_custom:paddingWidth="8.0dip" />
+                <ImageView android:id="@id/img_vip_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/iv_head" android:layout_alignRight="@id/iv_head" android:contentDescription="@null" />
+                <View android:id="@id/v_head_center" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_toRightOf="@id/iv_head" android:layout_centerVertical="true" />
+                <View android:id="@id/v_head_divider" android:background="@drawable/integral_info_divider" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_marginBottom="@dimen/android_public_space_16px" android:layout_toRightOf="@id/iv_head" android:layout_above="@id/v_head_center" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/android_public_space_10px" android:text="Hi，欢迎来到会员世界" android:layout_toRightOf="@id/iv_head" android:layout_above="@id/v_head_divider" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/tv_integral" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_head" android:layout_below="@id/v_head_divider" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/tv_level" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/android_public_space_7px" android:layout_toRightOf="@id/iv_head" android:layout_below="@id/tv_integral" />
+            </RelativeLayout>
+            <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="0.5px" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_sign" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_100px" android:weightSum="10.0">
+                <RelativeLayout android:padding="@dimen/pub_margin_or_padding_space_ten" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="7.0">
+                    <ImageView android:id="@id/iv_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_ten" android:layout_marginRight="@dimen/pub_margin_or_padding_space_ten" android:src="@drawable/integral_sign_icon" android:scaleType="fitXY" android:layout_centerVertical="true" />
+                    <View android:id="@id/v_sign_divider" android:layout_width="wrap_content" android:layout_height="@dimen/pub_margin_or_padding_space_five" android:layout_toRightOf="@id/iv_sign" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_eight" android:id="@id/tv_to_sign" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="手机签到" android:layout_toRightOf="@id/iv_sign" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_eight" android:id="@id/tv_sign_day" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="手机签到" android:layout_toRightOf="@id/iv_sign" android:layout_above="@id/v_sign_divider" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_nine" android:id="@id/tv_sign_integral" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_sign" android:layout_below="@id/v_sign_divider" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/integral_btn_sign_ts" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_sign" android:background="@color/shake_light_orange" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="我要签到" android:layout_weight="3.0" />
+            </LinearLayout>
+            <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="0.5px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_actives1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_twenty" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_nine" android:padding="@dimen/pub_margin_or_padding_space_five" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pub_margin_or_padding_space_five" android:text="游戏玩不停" />
+                <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="0.5px" />
+                <GridView android:id="@id/gv_actives1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/android_public_space_150px" android:cacheColorHint="@color/transparent" android:numColumns="4" />
+                <View android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="0.5px" />
+            </LinearLayout>
+            <ListView android:id="@id/lv_actives2" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0px" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="0.0px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

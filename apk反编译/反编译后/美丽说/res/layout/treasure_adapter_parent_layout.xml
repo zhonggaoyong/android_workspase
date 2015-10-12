@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/category_info_title" android:paddingTop="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/grey_d1_t20" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="@color/grey_d3" android:layout_gravity="center_horizontal" android:id="@id/word_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d4_t80" android:layout_gravity="center_horizontal" android:id="@id/english_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.meilishuo.app.category.views.TreasureGridView android:id="@id/item_parent" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

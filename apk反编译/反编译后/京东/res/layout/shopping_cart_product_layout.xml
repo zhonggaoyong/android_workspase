@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/product_single_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/shopping_cart_single_product_item" />
+    <include android:id="@id/product_pack_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/shopping_cart_pack_product_item" />
+    <View android:id="@id/cart_item_devider_long" android:background="@color/cart_item_background_gap_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    <View android:id="@id/cart_item_devider_short" android:background="@color/cart_item_background_gap_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="44.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

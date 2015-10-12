@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/msg_time_stamp" android:background="@drawable/bing_time_stamp_bk" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:singleLine="true" />
+        <include android:id="@id/normal_msg" android:visibility="gone" layout="@layout/bing_chat_msg_item_left" />
+        <include android:id="@id/image_msg" android:visibility="gone" layout="@layout/bing_chat_msg_img_left" />
+        <include android:id="@id/single_product_msg" android:visibility="gone" layout="@layout/bing_chat_msg_single_product_left" />
+        <include android:id="@id/mult_product_msg" android:visibility="gone" layout="@layout/bing_chat_msg_mult_product_left" />
+        <include android:id="@id/promotion_msg" android:visibility="gone" layout="@layout/bing_chat_msg_promotion" />
+        <include android:id="@id/shop_msg" android:visibility="gone" layout="@layout/bing_chat_msg_shop" />
+        <include android:id="@id/send_msg" layout="@layout/bing_chat_msg_item_right" />
+        <include android:id="@id/coupon_msg" layout="@layout/bing_chat_msg_coupon_item" />
+    </LinearLayout>
+</FrameLayout>

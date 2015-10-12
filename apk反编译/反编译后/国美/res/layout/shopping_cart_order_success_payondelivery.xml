@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/shopping_cart_order_success_bottommsg" android:paddingLeft="16.0dip" android:text="您的订单已经在处理中，物流信息可以在订单详情中查看" style="@style/shopping_cart_order_success_bottommsg" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" layout="@layout/shopping_cart_order_success_checkstand_skiplayout" />
+</LinearLayout>

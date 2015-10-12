@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/evaluateCenter_noDatalayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/evaluate_center_net_error" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" layout="@layout/jd_common_state_page_03" />
+</RelativeLayout>

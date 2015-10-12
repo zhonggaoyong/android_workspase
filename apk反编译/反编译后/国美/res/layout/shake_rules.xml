@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff120132" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/common_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/common_title_btn_back" android:background="@drawable/shake_home_right_selector" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/shake_back" android:minWidth="44.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_top_btn_text_style_new" />
+    </RelativeLayout>
+    <TextView android:textSize="30.0sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="摇摇美规则" />
+    <ListView android:id="@id/lv_rules" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:divider="@android:color/transparent" />
+</LinearLayout>

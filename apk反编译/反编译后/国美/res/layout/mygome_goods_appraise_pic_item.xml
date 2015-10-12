@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pic" android:background="@drawable/mygome_appraise_pic_selector" android:padding="1.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/del" android:background="@drawable/shake_coupon_window_close" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

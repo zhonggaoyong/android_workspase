@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/miaosha_title" layout="@layout/title" />
+    <FrameLayout android:id="@id/miaosha_contents" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/miaosha_radiogroup" android:background="@drawable/miaosha_tab_bg" android:layout_width="fill_parent" android:layout_height="47.0dip">
+        <RadioButton android:textSize="13.0dip" android:textColor="@color/miaosha_text_selector" android:gravity="center" android:id="@id/miaosha_tab_product" android:background="@color/transparent" android:paddingTop="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/miaosha_tab_list" android:includeFontPadding="false" android:drawableTop="@drawable/miaosha_tab_list_selector" android:drawablePadding="0.0dip" android:layout_weight="1.0" />
+        <RadioButton android:textSize="13.0dip" android:textColor="@color/miaosha_text_selector" android:gravity="center" android:id="@id/miaosha_tab_brand" android:background="@color/transparent" android:paddingTop="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/miaosha_tab_brand" android:includeFontPadding="false" android:drawableTop="@drawable/miaosha_tab_brand_selector" android:drawablePadding="0.0dip" android:layout_weight="1.0" />
+        <RadioButton android:textSize="13.0dip" android:textColor="@color/miaosha_text_selector" android:gravity="center" android:id="@id/miaosha_tab_attent" android:background="@color/transparent" android:paddingTop="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/miaosha_tab_attent" android:includeFontPadding="false" android:drawableTop="@drawable/miaosha_tab_attent_selector" android:drawablePadding="0.0dip" android:layout_weight="1.0" />
+    </RadioGroup>
+</LinearLayout>

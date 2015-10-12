@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/wheel_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

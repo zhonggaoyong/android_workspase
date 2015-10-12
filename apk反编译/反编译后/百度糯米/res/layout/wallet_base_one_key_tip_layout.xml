@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/wallet_base_window_bg" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/ebpay_blue" android:id="@id/tip_type" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/wallet_base_click_text_color" android:gravity="right|center" android:id="@id/tip_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:drawablePadding="5.0dip" />
+</LinearLayout>

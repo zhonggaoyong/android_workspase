@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_base" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/paysdk_title" layout="@layout/sdk_activity_title" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/sdk_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/sdk_title_hight" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/layout_frament" android:background="@color/sdk_bg_whole_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="20.0dip">
+        <com.meilishuo.app.views.CustomTextView android:textColor="#ff666666" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="描述  4.9" />
+        <com.meilishuo.app.views.CustomTextView android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="比同行平均" />
+        <com.meilishuo.app.views.CustomTextView android:textColor="#ff75b475" android:id="@id/ratio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="低25.00%" />
+    </LinearLayout>
+</LinearLayout>

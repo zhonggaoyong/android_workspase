@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/singleRelativeLayout" android:background="@drawable/input_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_four" android:id="@id/singleFlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单程:" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/red" android:id="@id/singleFlightIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/singleFlight" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_four" android:id="@id/singleFlightName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中国国航" android:layout_toRightOf="@id/singleFlight" />
+                    <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/single_back_change" android:background="@drawable/add_to_shop" android:layout_width="80.0dip" android:layout_height="35.0dip" android:text="改签规则" android:layout_alignParentRight="true" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/singleFlight" android:layout_alignParentBottom="true">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_airline_date" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/single_flight_Date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="起飞： " />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/single_startFlightTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/single_startFlightName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="----" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="降落： " />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/single_landingFlightTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/single_landingFlightName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="--" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机票单价: " />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_seven" android:id="@id/single_flightPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="--" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机建费/燃油税: " />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_seven" android:id="@id/single_flightOilPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/relativeLayout1" android:background="@drawable/input_bg" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_four" android:id="@id/flight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单程:" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/red" android:id="@id/singleFlightIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/flight" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_four" android:id="@id/flightName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中国国航" android:layout_toRightOf="@id/flight" />
+                    <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/back_change" android:background="@drawable/add_to_shop" android:layout_width="80.0dip" android:layout_height="35.0dip" android:text="改签规则" android:layout_alignParentRight="true" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_alignParentBottom="true">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_airline_date" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/flightDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="起飞： " />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/startFlightTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/startFlightName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="----" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="降落： " />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/landingFlightTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/landingFlightName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="--" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机票单价: " />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_seven" android:id="@id/flightPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="--" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机建费/燃油税: " />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_seven" android:id="@id/flightOilPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/relativeLayout2" android:background="@drawable/input_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <RelativeLayout android:id="@id/customerRelativeLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_eight" android:id="@id/customerInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登机人信息" android:layout_centerVertical="true" />
+                    <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/customerManage" android:background="@drawable/add_to_shop" android:layout_width="90.0dip" android:layout_height="40.0dip" android:text="登机人管理" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <ListView android:id="@id/customer_info_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:cacheColorHint="#00000000" android:divider="#00ffffff" android:dividerHeight="10.0dip" android:layout_below="@id/customerRelativeLayout" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/relativeLayout3" android:background="@drawable/input_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_eight" android:id="@id/bookCustomerInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预定人信息" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/divide_line_input" android:scaleType="fitXY" android:layout_below="@id/bookCustomerInfo" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/bookCustomerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="姓名：" android:layout_below="@id/bookCustomerInfo" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/bookCustomer" android:background="@drawable/bg_input" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="25.0dip" android:text="--" android:hint="请输入姓名" android:singleLine="true" android:maxLength="6" android:layout_toRightOf="@id/bookCustomerName" android:layout_below="@id/bookCustomerInfo" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/bookCustomerCellNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="5.0dip" android:text="手机：" android:layout_below="@id/bookCustomer" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/bookCustomerCel" android:background="@drawable/bg_input" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="5.0dip" android:text="--" android:hint="请输入手机号" android:singleLine="true" android:maxLength="11" android:phoneNumber="true" android:layout_toRightOf="@id/bookCustomerCellNumber" android:layout_below="@id/bookCustomer" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/bookCustomerInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:text="行程单选择" />
+            <RelativeLayout android:background="@drawable/input_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <RelativeLayout android:id="@id/sendTypeRelativeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:id="@id/spinner" android:background="@drawable/bg_btn_search" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_alignParentRight="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/search_sort_down" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/sendTypePromption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/sendTypeRelativeLayout">
+                    <TextView android:textColor="@color/graycolor" android:id="@id/sendTypePrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="--" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/send_info" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/sendTypePromption">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RelativeLayout android:id="@id/sendInfoRelativeLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/sendInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="配送信息" android:layout_centerVertical="true" />
+                            <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/change_send_address" android:background="@drawable/add_to_shop" android:layout_width="110.0dip" android:layout_height="35.0dip" android:text="更改配送地址" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/send_customer_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="姓名：" android:layout_below="@id/sendInfoRelativeLayout" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/send_customer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="--" android:layout_toRightOf="@id/send_customer_name" android:layout_below="@id/sendInfoRelativeLayout" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/send_customer_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="地址：" android:layout_below="@id/send_customer_name" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/send_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="--" android:layout_toRightOf="@id/send_customer_address" android:layout_below="@id/send_customer" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/postal_code_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="5.0dip" android:text="手机：" android:layout_below="@id/send_address" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/postal_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="5.0dip" android:text="--" android:singleLine="true" android:maxLength="11" android:phoneNumber="true" android:layout_toRightOf="@id/postal_code_number" android:layout_below="@id/send_address" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:text="保险选择" />
+            <RelativeLayout android:id="@id/relativeLayout5" android:background="@drawable/input_bg" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="12.0dip">
+                <RelativeLayout android:id="@id/insuranceRelativeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:id="@id/insuranceManage" android:background="@drawable/bg_btn_search" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_alignParentRight="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/search_sort_down" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="12.0dip" android:src="@drawable/divide_line_input" android:scaleType="fitXY" android:layout_below="@id/insuranceRelativeLayout" />
+                <LinearLayout android:orientation="vertical" android:id="@id/insuranceLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/insuranceRelativeLayout">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/insuranceLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_eight" android:id="@id/insurance_unit_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 20 元/份" android:layout_centerVertical="true" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/pub_color_nine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  份数： " />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:gravity="center" android:id="@id/insurance_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  0  " />
+                            <RadioGroup android:orientation="horizontal" android:id="@id/insurance_radioGroup" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <RadioButton android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/insurance_radioBtn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/btn_radio_card" android:text=" N  " />
+                                <RadioButton android:textSize="14.0sp" android:textColor="@color/pub_color_eight" android:id="@id/insurance_radioBtn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:button="@drawable/btn_radio_card" android:text=" 2N(双险)  " />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="14.0sp" android:textColor="@color/pub_color_nine" android:id="@id/insurance_dec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/relativeLayout6" android:background="@drawable/input_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/pub_color_nine" android:id="@id/bookCustomerInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保险信息" />
+                <TextView android:textColor="@color/pub_color_nine" android:id="@id/assurance_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="阳光意外交通险      20元/份          苏宁赠送" android:layout_below="@id/bookCustomerInfo" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_eight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="合计:" android:layout_toLeftOf="@id/order_amount" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/pub_color_seven" android:id="@id/order_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥ 0.00" android:layout_centerInParent="true" />
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/submit" android:background="@drawable/add_to_shop" android:layout_width="90.0dip" android:layout_height="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="@string/order_commint" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

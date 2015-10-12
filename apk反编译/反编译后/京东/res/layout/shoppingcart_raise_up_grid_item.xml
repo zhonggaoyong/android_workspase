@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/r_layout_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/img_first_wrapper" android:layout_width="@dimen/pdn_raise_up_grid_item_width" android:layout_height="@dimen/pdn_raise_up_grid_item_width">
+            <com.jingdong.app.mall.utils.ui.JDImageView android:id="@id/img_1" android:background="@drawable/shopping_cart_product_icon_bg" android:padding="10.0dip" android:layout_width="@dimen/pdn_raise_up_grid_item_width" android:layout_height="@dimen/pdn_raise_up_grid_item_width" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            <CheckBox android:layout_gravity="right" android:id="@id/cart_pack_product_gift_cb" android:background="@drawable/shopping_cart_checkbox" android:focusable="false" android:clickable="false" android:layout_width="@dimen/pdn_raise_up_grid_item_checkbox_size" android:layout_height="@dimen/pdn_raise_up_grid_item_checkbox_size" android:layout_marginTop="@dimen/pdn_raise_up_grid_item_checkbox_margin" android:layout_marginRight="@dimen/pdn_raise_up_grid_item_checkbox_margin" android:button="@null" />
+            <View android:layout_gravity="right" android:id="@id/cart_pack_product_gift_cb_view" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+        </FrameLayout>
+        <com.jingdong.common.ui.CustomTextViewNoEnter android:textSize="@dimen/pdn_raise_up_grid_item_label_text_size" android:textColor="@color/pd_black_25" android:ellipsize="end" android:id="@id/txt_1" android:layout_width="@dimen/pdn_raise_up_grid_item_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pdn_raise_up_grid_item_vertical_margin" android:maxLines="2" android:lines="2" android:layout_below="@id/img_first_wrapper" />
+        <TextView android:textSize="@dimen/pdn_raise_up_grid_item_price_text_size" android:textColor="@color/pd_black_25" android:ellipsize="end" android:id="@id/txt_2" android:layout_width="@dimen/pdn_raise_up_grid_item_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pdn_raise_up_grid_item_price_margin_top" android:singleLine="true" android:layout_below="@id/txt_1" />
+    </RelativeLayout>
+</LinearLayout>

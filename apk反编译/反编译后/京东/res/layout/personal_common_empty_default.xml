@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingdong.app.mall.personel.view.PersonalEmptyView android:id="@id/emptyView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" empty:empty_icon="@drawable/bankcard_list_empty" empty:empty_message="@string/bank_card_no_data_msg" empty:empty_message_text_size="17.0sp" empty:empty_submessage="@string/bank_card_no_data_submsg" empty:empty_submessage_text_size="13.0sp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:empty="http://schemas.android.com/apk/res-auto" />

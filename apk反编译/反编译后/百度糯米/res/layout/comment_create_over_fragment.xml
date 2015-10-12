@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/over_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/retry_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="16.0sp" android:textColor="@drawable/comment_create_retry_upload_selector" android:gravity="center" android:id="@id/retry_upload" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="@string/comment_create_over_upload" />
+    </LinearLayout>
+</RelativeLayout>

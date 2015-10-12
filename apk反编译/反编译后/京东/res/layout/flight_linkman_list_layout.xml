@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/travel_all_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:jdtravel="http://schemas.android.com/apk/res-auto">
+    <com.jingdong.common.jdtravel.ui.TravelTitle android:id="@id/add_linkman_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" jdtravel:fdrawableLeft="@drawable/common_title_back_selector" jdtravel:ftextTitle="@string/jdtravel_add_linkman" />
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/from_contact_layout" android:background="@color/c_F8F8F8" android:padding="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="@dimen/flight_from_contact_text_size" android:textColor="@drawable/button_b_font_color" android:id="@id/from_contact_btn" android:background="@drawable/button_b" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/jdtravel_from_contact" />
+    </LinearLayout>
+    <ListView android:id="@id/linkman_list" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_above="@id/from_contact_layout" android:layout_below="@id/add_linkman_title" />
+    <LinearLayout android:gravity="top|center" android:orientation="vertical" android:id="@id/content_error" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/from_contact_layout" android:layout_below="@id/add_linkman_title">
+        <ImageView android:id="@id/empty_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="79.0dip" android:src="@drawable/y_04" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="暂无数据" />
+        <Button android:textSize="15.0dip" android:textColor="#ff666666" android:id="@id/flight_retry" android:background="@drawable/flight_filter_reset_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="重新加载" />
+    </LinearLayout>
+</RelativeLayout>

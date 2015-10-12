@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/coupon_take_success" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/y_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/c_848689" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="恭喜您, 领取成功！" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/c_BFBFBF" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="优惠券将于5-10分钟后\n发放到您的帐户" />
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+        <Button android:textSize="14.0sp" android:textColor="#ff686868" android:id="@id/coupon_success_touse" android:background="@drawable/button_c" android:layout_width="107.0dip" android:layout_height="37.0dip" android:text="去使用" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/coupon_take_bottom" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="12.0dip">
+        <View android:layout_weight="1.5" style="@style/line2" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/c_848689" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="该优惠券可购买以下商品" android:layout_weight="1.0" />
+        <View android:layout_weight="1.5" style="@style/line2" />
+    </LinearLayout>
+</LinearLayout>

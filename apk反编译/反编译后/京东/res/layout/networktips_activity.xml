@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/category_filter_devider_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <RelativeLayout android:id="@id/networktips_content" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/common_title">
+        <TextView android:textStyle="bold" android:textColor="@color/black" android:id="@id/networktips_heading1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/network_tips_heading1" />
+        <TextView android:textColor="@color/product_options_passive" android:id="@id/networktips_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/network_tips_part1" android:layout_below="@id/networktips_heading1" />
+        <TextView android:textColor="@color/product_options_passive" android:id="@id/networktips_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/network_tips_part2" android:layout_below="@id/networktips_text1" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/networktips_content2" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/networktips_content">
+        <TextView android:textStyle="bold" android:textColor="@color/black" android:id="@id/networktips_heading2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/network_tips_heading2" />
+        <TextView android:textColor="@color/product_options_passive" android:id="@id/networktips_text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/network_tips_part3" android:layout_below="@id/networktips_heading2" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/group" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_card_top_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="150.0dip">
+                        <TextView android:textSize="30.0dip" android:textStyle="bold" android:textColor="#ffffde00" android:id="@id/txt_tips" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="8.0dip" android:text="¥" android:layout_alignParentBottom="true" />
+                        <TextView android:textSize="58.0dip" android:textColor="#ffffde00" android:id="@id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" android:singleLine="true" android:includeFontPadding="false" android:layout_toRightOf="@id/txt_tips" android:layout_centerVertical="true" android:lineSpacingExtra="0.0dip" />
+                    </RelativeLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff053b47" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="礼品卡" />
+                        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="10.0dip" android:textColor="#ff053b47" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="编号  " android:layout_weight="0.2" />
+                            <TextView android:textSize="10.0dip" android:textColor="#ff053b47" android:id="@id/favourable_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="201210011234" android:layout_weight="0.8" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingRight="18.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="冻结金额：" android:layout_weight="0.2" />
+                    <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:id="@id/notpay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="审核中" android:layout_weight="0.8" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_card_bottom_normal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="10.0dip" android:textColor="#ff585c65" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="截止日期   " />
+                <TextView android:textSize="10.0dip" android:textColor="#ff585c65" android:gravity="center_vertical" android:id="@id/stop_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2013-10-11" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/checkbox" android:background="@drawable/cart_gifts_checkbox" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:button="@null" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/usable_bg" android:background="@drawable/account_pic_overtime_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

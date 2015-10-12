@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/about_title_bg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+            <ImageView android:id="@id/about_icon" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="17.0dip" android:src="@drawable/ic_launcher" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/about_title_version" android:id="@id/about_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/about_current_version" android:layout_below="@id/about_icon" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/about_check_update" android:background="@drawable/bg_white_button_selector" android:visibility="gone" android:layout_width="144.0dip" android:layout_height="28.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/about_version" android:layout_centerHorizontal="true">
+                <TextView android:textSize="13.0sp" android:textColor="@color/about_update_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_check_update" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:background="@color/city_deal_list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:id="@id/about_help" android:background="@drawable/about_bg_list_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/about_item_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_help" android:layout_centerVertical="true" />
+            <ImageView android:duplicateParentState="true" android:layout_width="6.0dip" android:layout_height="12.0dip" android:src="@drawable/daren_middle_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include layout="@layout/about_line_left_padding_12dp" />
+        <RelativeLayout android:id="@id/about_agreement" android:background="@drawable/about_bg_list_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/about_item_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_agreement" android:layout_centerVertical="true" />
+            <ImageView android:duplicateParentState="true" android:layout_width="6.0dip" android:layout_height="12.0dip" android:src="@drawable/daren_middle_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include layout="@layout/about_line_left_padding_12dp" />
+        <RelativeLayout android:id="@id/about_attention_bainuo" android:background="@drawable/about_bg_list_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/about_item_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_attention_bainuo" android:layout_centerVertical="true" />
+            <ImageView android:duplicateParentState="true" android:layout_width="6.0dip" android:layout_height="12.0dip" android:src="@drawable/daren_middle_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include layout="@layout/about_line_left_padding_12dp" />
+        <RelativeLayout android:id="@id/about_attention_bainuo_weixin" android:background="@drawable/about_bg_list_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/about_item_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_attention_bainuo_weixin" android:layout_centerVertical="true" />
+            <ImageView android:duplicateParentState="true" android:layout_width="6.0dip" android:layout_height="12.0dip" android:src="@drawable/daren_middle_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:background="@color/city_deal_list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/about_bottom_more" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:background="@color/city_deal_list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:background="@drawable/about_bg_list_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/about_item_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_promiss" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:background="@color/city_deal_list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/about_phone" android:background="@drawable/bg_white_button_selector" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/about_update_title" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_phone" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

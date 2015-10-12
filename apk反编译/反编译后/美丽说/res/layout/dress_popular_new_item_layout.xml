@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.meilishuo">
+    <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="bottom" android:id="@id/shadow" android:background="@drawable/pic_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.meilishuo.app.views.RoundImageView android:layout_gravity="bottom" android:id="@id/avatar" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" app:hasBorder="false" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/dapei" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:drawableLeft="@drawable/ico_collocation" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/heart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:drawableLeft="@drawable/ico_like_collocation" />
+    </LinearLayout>
+</FrameLayout>

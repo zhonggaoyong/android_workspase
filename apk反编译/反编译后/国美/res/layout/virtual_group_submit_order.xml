@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/home_gridview_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_title_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:background="@drawable/good_shop_name_top_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textColor="@color/main_default_black_text_color" android:id="@id/virtual_group_order_title_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="10.0dip" android:text="@string/about" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/more_item_middle_normal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:textColor="@color/main_default_black_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_price" />
+                <TextView android:textColor="@color/main_default_black_text_color" android:id="@id/shopping_cart_single_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="￥0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/more_item_middle_normal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="-1.0dip">
+                <TextView android:textColor="@color/main_default_black_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/main_default_black_text_color" android:id="@id/shopping_cart_edit_number_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/more_item_middle_normal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="-1.0dip">
+                <TextView android:textColor="@color/main_default_black_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/virtual_group_total_price" />
+                <TextView android:textColor="@color/price_text_color" android:id="@id/shopping_cart_subtotal_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="￥0" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/virtual_group_order_modify_mobile_rl" android:background="@drawable/more_item_last_normal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="-1.0dip">
+                <TextView android:textColor="@color/main_default_black_text_color" android:id="@id/virtual_group_order_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_mobel" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/main_default_black_text_color" android:id="@id/virtual_group_order_mobile_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/virtual_group_order_mobile" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textColor="@color/main_default_black_text_color" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/shopping_goods_pay_method_null" />
+            <RelativeLayout android:id="@id/shopping_yinlian_relative" android:background="@drawable/more_item_single_bg_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip">
+                <RadioButton android:id="@id/shopping_yilian_radiobutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-15.0dip" android:checked="true" android:drawableLeft="@drawable/radio_button_bg_selector" android:layout_centerVertical="true" style="@style/radiogroup_item_style" />
+                <TextView android:textColor="@color/main_default_black_text_color" android:id="@id/shopping_goods_order_success_payment_yinlian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_goods_order_payment_onlinepay" android:layout_toRightOf="@id/shopping_yilian_radiobutton" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/next_button" android:background="@drawable/group_now_buy_bt_selector" android:layout_width="250.0dip" android:layout_height="45.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" android:text="@string/limitbuy_confirm_rightbtn" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

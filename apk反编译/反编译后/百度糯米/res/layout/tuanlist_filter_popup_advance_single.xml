@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton android:textSize="12.0sp" android:textColor="@color/tuanlist_filter_check_color" android:gravity="center" android:id="@id/tuanlist_filter_popup_advance_single" android:background="@drawable/tuanlist_filter_advance_radiobutton" android:layout_width="fill_parent" android:layout_height="@dimen/tuanlist_filter_popup_advance_single_height" android:checked="true" android:button="@null" android:text="@string/default_text" android:maxLines="1" android:singleLine="true" android:drawablePadding="10.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/promtion_top_gome_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.gome.ecmall.core.widget.listview.MyListView android:id="@id/best_gome_product_list" android:background="#ffe8e8e8" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:layout_alignParentTop="true" style="@style/common_listview_listSelector_no_style" />
+        <Button android:id="@id/best_gome_back_btn" android:background="@drawable/limitbuy_fh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_alignParentTop="true" android:contentDescription="@null" />
+        <Button android:id="@id/best_gome_go_top_btn" android:background="@drawable/common_go_top_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignBottom="@id/best_gome_product_list" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    </RelativeLayout>
+</LinearLayout>

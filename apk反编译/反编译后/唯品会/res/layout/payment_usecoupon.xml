@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/payment_usecoupon" android:background="@drawable/payment_bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="@dimen/payment_middle_text" android:textColor="@color/app_text_black_new_ui" android:id="@id/payment_usecoupon_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_margin_new" android:layout_marginTop="@dimen/payment_margin_new" android:text="@string/payment_usecoupon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/payment_small_text" android:textColor="@color/app_text_black_new_ui" android:gravity="center" android:id="@id/payment_usecoupon_total" android:background="@drawable/label_icon_bggold" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_toLeftOf="@id/payment_usecoupon_arrow" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/payment_usecoupon_arrow" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/payment_margin_new" android:src="@drawable/icon_forward_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

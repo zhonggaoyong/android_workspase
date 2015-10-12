@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/order_detail_allView" android:background="@color/activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <com.jingdong.app.mall.utils.ui.LoadingView android:id="@id/ldv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_title">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/order_detail_bottom" android:background="#ffeaedf1" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:baselineAligned="false" android:layout_alignParentBottom="true">
+                <View android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:gravity="right|center" android:id="@id/order_detail_finish_layout" android:background="#ffeaedf1" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:baselineAligned="false" android:weightSum="4.0">
+                    <Button android:textSize="@dimen/order_detail_text_size_4btn" android:textColor="@color/fill_order_delivery_light" android:gravity="center" android:id="@id/order_detail_finish_del" android:background="@drawable/order_detail_cancel_selector" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/content_order_detail_delete_order" android:layout_weight="1.0" />
+                    <Button android:textSize="@dimen/order_detail_text_size_4btn" android:textColor="@color/fill_order_delivery_light" android:gravity="center" android:id="@id/order_detail_return_btn" android:background="@drawable/order_detail_cancel_selector" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginRight="12.0dip" android:text="@string/content_order_product_return" android:layout_weight="1.0" />
+                    <Button android:textSize="@dimen/order_detail_text_size_4btn" android:textColor="@color/fill_order_delivery_light" android:gravity="center" android:id="@id/btn_discuss_recomment" android:background="@drawable/order_detail_cancel_selector" android:focusable="false" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginRight="12.0dip" android:text="@string/order_detail_discuss_comment" android:layout_weight="1.0" style="@style/common_button" />
+                    <Button android:textSize="@dimen/order_detail_text_size_4btn" android:textColor="@color/order_detail_pay_btn_color" android:gravity="center" android:id="@id/order_detail_rebuy_btn" android:background="@drawable/order_detail_rebuy_selector" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginRight="12.0dip" android:text="@string/content_order_rebuy" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/order_detail_bottom_pay_layout" android:background="#ffeaedf1" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:baselineAligned="false" android:weightSum="4.0">
+                    <Button android:textSize="14.0dip" android:textColor="@color/fill_order_delivery_light" android:gravity="center" android:id="@id/order_detail_pay_layout_cancel_btn" android:background="@drawable/order_detail_cancel_selector" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginRight="12.0dip" android:maxWidth="100.0dip" android:text="@string/content_order_detail_cancel_order" android:layout_weight="1.0" />
+                    <Button android:textSize="14.0dip" android:textColor="@color/fill_order_delivery_light" android:gravity="center" android:id="@id/order_detail_modify_btn" android:background="@drawable/order_detail_cancel_selector" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginRight="12.0dip" android:text="@string/content_order_detail_modify_order" android:layout_weight="1.0" />
+                    <Button android:textSize="14.0dip" android:textColor="@color/order_detail_pay_btn_color" android:gravity="center" android:id="@id/order_handle_button" android:background="@drawable/order_detail_rebuy_selector" android:focusable="false" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginRight="12.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.handmark.pulltorefresh.library.PullToRefreshScrollView android:id="@id/order_detail_scrollView" android:background="#fff0f2f5" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/order_detail_bottom">
+                <LinearLayout android:orientation="vertical" android:id="@id/order_info_content" android:background="#fff0f2f5" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/order_status_layout" />
+                    <include layout="@layout/order_status_addr_layout" />
+                    <include layout="@layout/order_layout_giver_info" />
+                    <include layout="@layout/order_id_card_layout" />
+                    <include layout="@layout/order_detail_product_list" />
+                    <include layout="@layout/order_info_detail_pay_status" />
+                    <include layout="@layout/order_gift_card_layout" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/order_price_detail_info" android:background="@drawable/fill_order_list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+                        <View android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/order_detail_status_layout_details" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <include layout="@layout/order_money_layout" />
+                    </LinearLayout>
+                    <View android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                </LinearLayout>
+            </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+        </RelativeLayout>
+    </com.jingdong.app.mall.utils.ui.LoadingView>
+</RelativeLayout>

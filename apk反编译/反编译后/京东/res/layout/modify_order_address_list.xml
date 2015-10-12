@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/modify_order_address_list_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/modify_order_address_list_title" layout="@layout/title" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_modify_order_address_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/modify_order_address_list_title" android:layout_centerInParent="true">
+        <include layout="@layout/app_address_no_data" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/layout_modify_order_address_create" android:background="@color/c_F8F8F8" android:padding="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="@dimen/new_easy_buy_address_text_size" android:textColor="@drawable/button_b_font_color" android:id="@id/button_modify_order_address_create" android:background="@drawable/button_b" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/edit_order_address_text_new2" />
+    </LinearLayout>
+    <ListView android:id="@id/listview_modify_order_address_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/none" android:cacheColorHint="@color/transparent" android:layout_above="@id/layout_modify_order_address_create" android:layout_below="@id/modify_order_address_list_title" />
+</RelativeLayout>

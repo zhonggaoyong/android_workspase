@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/submit_space_line" android:background="@drawable/cart_dash_driver" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/new_text_black" android:gravity="center_vertical" android:id="@id/return_flow_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/return_flow_layouts" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/return_flow_des1_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+            <ImageView android:layout_gravity="top" android:id="@id/return_flow_dot1" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.5dip" android:layout_marginRight="6.0dip" android:src="@drawable/return_flow_info_dot" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/order_black_text" android:gravity="center_vertical" android:id="@id/return_flow_des1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/return_flow_des2_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="15.0dip">
+            <ImageView android:layout_gravity="top" android:id="@id/return_flow_dot2" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.5dip" android:layout_marginRight="6.0dip" android:src="@drawable/return_flow_info_dot" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/order_black_text" android:gravity="center_vertical" android:id="@id/return_flow_des2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/return_flow_des3_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="15.0dip">
+            <ImageView android:layout_gravity="top" android:id="@id/return_flow_dot3" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.5dip" android:layout_marginRight="6.0dip" android:src="@drawable/return_flow_info_dot" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/order_black_text" android:gravity="center_vertical" android:id="@id/return_flow_des3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/return_flow_des4_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="15.0dip">
+            <ImageView android:layout_gravity="top" android:id="@id/return_flow_dot4" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.5dip" android:layout_marginRight="6.0dip" android:src="@drawable/return_flow_info_dot" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/order_black_text" android:gravity="center_vertical" android:id="@id/return_flow_des4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

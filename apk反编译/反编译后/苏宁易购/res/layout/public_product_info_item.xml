@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/itemContainer" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/info_divider_one" android:background="@drawable/category_listview_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/public_item_product_info_layout" android:padding="@dimen/ios_public_space_26px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/public_item_product_img_layout" android:background="@drawable/goods_bg" android:padding="@dimen/pub_margin_or_padding_space_two" android:layout_width="@dimen/pub_margin_or_padding_space_sixty" android:layout_height="@dimen/pub_margin_or_padding_space_sixty">
+            <ImageView android:id="@id/public_item_product_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_background_small" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_sixty" android:layout_marginLeft="@dimen/ios_public_space_30px" android:layout_marginRight="@dimen/ios_public_space_30px" android:layout_toLeftOf="@id/product_more_next_img" android:layout_toRightOf="@id/public_item_product_img_layout">
+            <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/pub_color_fifteen" android:ellipsize="end" android:id="@id/public_item_product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/pub_color_seveneen" android:id="@id/public_item_product_price" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/android_public_text_size_26px" android:textColor="@color/add_cart_disabled_text_color" android:id="@id/public_item_product_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/add_cart_disabled_text_color" android:ellipsize="end" android:id="@id/public_item_product_return" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="jdjjjjjjjj" android:singleLine="true" android:drawableLeft="@drawable/public_product_item_return_icon" android:drawablePadding="@dimen/ios_public_space_16px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/product_more_next_img" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/indicator_open" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

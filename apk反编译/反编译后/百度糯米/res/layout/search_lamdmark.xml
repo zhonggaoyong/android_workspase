@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/search_poi_tuan_item_count_text_color" android:gravity="left|center" android:id="@id/search_poi_land_mark_view" android:paddingLeft="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="@string/search_poi_land_mark_tip" android:drawableLeft="@drawable/landmark" android:drawablePadding="8.0dip" />
+    <View android:id="@id/search_poi_top_divider_view" android:background="@color/search_poi_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

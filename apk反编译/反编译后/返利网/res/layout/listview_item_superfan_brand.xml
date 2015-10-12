@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="13.0dip">
+        <ImageView android:id="@id/iv_brand_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <ImageView android:id="@id/iv_brand_new" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/rl_brand_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/iv_brand_display">
+            <RelativeLayout android:id="@id/rl_brand_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/iv_brand_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.fanli.android.view.TangFontTextView android:textSize="15.0sp" android:textColor="@color/superfan_main_text" android:id="@id/tv_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tv_range_or_discount" android:layout_centerVertical="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/superfan_brand_red" android:id="@id/tv_range_or_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tv_suffix" android:layout_centerVertical="true" />
+            <com.fanli.android.view.TangFontTextView android:textSize="14.0sp" android:textColor="@color/superfan_brand_red" android:id="@id/tv_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/line_myfanli" android:background="@drawable/line_details" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/rl_brand_bottom" />
+    </RelativeLayout>
+</LinearLayout>

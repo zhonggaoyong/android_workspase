@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:indicator="http://schemas.android.com/apk/res/com.gome.eshopnew">
+    <include layout="@layout/vw_titlebar" />
+    <com.gome.ecmall.home.mygome.custom.StepIndicator android:id="@id/step_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" indicator:isstepone="true" indicator:steponetv="验证已绑定手机" indicator:steptwotv="验证新手机" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/tv_instruction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="16.0sp" android:layout_marginRight="14.0dip" android:text="验证手机号，你可以用手机号登录国美在线，还可以在第一时间内获得我们的短信通知，便于您及时获知订单状态。" />
+    <FrameLayout android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="100.0" />
+</LinearLayout>

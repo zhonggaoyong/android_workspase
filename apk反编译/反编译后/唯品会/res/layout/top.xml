@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/product_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/product_detail_header" />
+    <com.achievo.vipshop.view.XListView android:id="@id/top_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#ffdbdbdb" android:dividerHeight="0.70000005dip" android:layout_below="@id/product_header_layout" />
+    <include android:id="@id/load_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/new_load_fail" />
+    <include android:id="@id/default_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/no_products_layout" />
+</RelativeLayout>

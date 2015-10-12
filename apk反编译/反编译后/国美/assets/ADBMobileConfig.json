@@ -1,0 +1,26 @@
+{
+    "version" : "1.0",
+    "analytics" : {
+        "rsids" : "gome-gome4.x-prd",
+        "server" : "gome.122.2o7.net",
+        "charset" : "UTF-8",
+        "ssl" : false,
+        "offlineEnabled" : false,
+        "lifecycleTimeout" : 300,
+        "referrerTimeout" : 0,
+        "batchLimit" : 0,
+        "privacyDefault" : "optedin",
+        "poi" : []
+    },
+    "target" : {
+        "clientCode" : "",
+        "timeout" : 5
+    },
+    "audienceManager" : {
+		    "server" : ""
+    },
+    "acquisition" : {
+		    "server" : "",
+            "appid" : ""
+    }
+}

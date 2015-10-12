@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#88000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/shake_rl_all_content" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/shake_rl_all_content_square" android:background="@drawable/shake_coupon_bg" android:layout_width="252.0dip" android:layout_height="264.0dip" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/shake_coupon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0sp" android:text="摇奖机会+1" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/shake_coupon_small_horse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="70.0dip" android:layout_marginRight="60.0dip" android:src="@drawable/shake_coupon_horse" android:layout_centerHorizontal="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="50.0dip" android:src="@drawable/shake_coupon_one_more_chance" android:layout_below="@id/shake_coupon_small_horse" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <Button android:textSize="20.0sp" android:id="@id/shake_coupon_btn_close" android:background="@drawable/shake_coupon_window_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-22.0dip" android:minWidth="32.0dip" android:minHeight="32.0dip" android:layout_toRightOf="@id/shake_rl_all_content_square" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/my_create_circle_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/back_btn" android:background="@color/transparent" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/post_ico_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/hide_view" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:layout_below="@id/header">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hide_user_info_layout" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="45.0dip">
+                <com.meilishuo.app.views.RoundImageView android:id="@id/hide_head_icon" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/default_avatar_round" />
+                <ImageView android:gravity="center" android:layout_gravity="bottom|right|center" android:id="@id/hide_is_daren" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d1" android:id="@id/hide_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:id="@id/hide_user_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_below="@id/hide_username" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/hide_user_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" android:layout_below="@id/hide_user_info_layout" />
+        <RelativeLayout android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/hide_user_img">
+            <ImageView android:id="@id/hide_qr_image" android:layout_width="90.0dip" android:layout_height="90.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_toRightOf="@id/hide_qr_image">
+                <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d3" android:id="@id/hide_qr_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_normal_qr_tips" android:singleLine="true" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/post_from_meilishuo" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/user_info_layout" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="45.0dip">
+                <com.meilishuo.app.views.RoundImageView android:id="@id/head_icon" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/default_avatar_round" />
+                <ImageView android:gravity="center" android:layout_gravity="bottom|right|center" android:id="@id/is_daren" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d1" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/grey_d5" android:id="@id/user_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_below="@id/username" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/middle_qr_layout" android:background="#ffefefef" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/user_info_layout">
+            <ImageView android:id="@id/share_qr_img" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/user_share_tips" android:lineSpacingMultiplier="1.2" />
+        </LinearLayout>
+        <com.meilishuo.app.post.home.view.PostShareView android:id="@id/share_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/middle_qr_layout" />
+    </RelativeLayout>
+</RelativeLayout>

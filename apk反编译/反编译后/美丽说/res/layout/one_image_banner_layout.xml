@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d1" android:id="@id/popular_prompt" android:background="@color/white" android:paddingLeft="6.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="相关流行" />
+        <android.widget.HorizontalScrollView android:id="@id/rootScrollview" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:listSelector="@android:color/transparent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/root_linerlayout" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </android.widget.HorizontalScrollView>
+    </LinearLayout>
+    <View android:id="@id/gap" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <com.meilishuo.app.views.KeepScaleImageView android:id="@id/image_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <include layout="@layout/search_result_category_head" />
+    <include layout="@layout/search_not_result_header" />
+</LinearLayout>

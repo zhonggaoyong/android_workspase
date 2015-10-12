@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="orderstatus">
+        <item>全部</item>
+        <item>等待返利</item>
+        <item>已返利</item>
+        <item>无效订单</item>
+    </string-array>
+    <string-array name="searchb2csort">
+        <item>默认排序</item>
+        <item>价格升</item>
+        <item>价格降</item>
+    </string-array>
+    <string-array name="searchtaosort">
+        <item>默认排序</item>
+        <item>价格升</item>
+        <item>价格降</item>
+        <item>信用降</item>
+        <item>销量降</item>
+    </string-array>
+    <string-array name="sharefrom">
+        <item>相机</item>
+        <item>相册</item>
+    </string-array>
+    <string-array name="searchtype">
+        <item>宝贝</item>
+        <item>店铺</item>
+    </string-array>
+    <string-array name="shareVia">
+        <item>新浪微博</item>
+        <item>腾讯微博</item>
+        <item>短消息</item>
+    </string-array>
+    <string-array name="option0">
+        <item>检查更新</item>
+    </string-array>
+    <string-array name="option1">
+        <item>意见反馈</item>
+        <item>帮助中心</item>
+        <item>消息设置</item>
+    </string-array>
+    <string-array name="option2">
+        <item>清除缓存</item>
+        <item>关于</item>
+    </string-array>
+    <string-array name="msg_set">
+        <item>消息提醒</item>
+        <item>降价提醒</item>
+    </string-array>
+    <string-array name="priceOpt">
+        <item>所有</item>
+        <item>10元以下</item>
+        <item>10-50元</item>
+        <item>50-100元</item>
+        <item>100-200元</item>
+        <item>200元以上</item>
+    </string-array>
+    <string-array name="helpmain">
+        <item>新手引导</item>
+        <item>常见问题</item>
+        <item>返利相关问题</item>
+        <item>订单跟踪问题</item>
+        <item>兑换相关问题</item>
+    </string-array>
+    <string-array name="retrievePwd">
+        <item>用户名/邮箱</item>
+        <item>手机号</item>
+    </string-array>
+</resources>

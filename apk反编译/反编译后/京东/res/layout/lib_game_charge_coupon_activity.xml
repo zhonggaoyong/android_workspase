@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/fill_order_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/fill_order_title" android:background="@drawable/common_title_background" android:layout_width="fill_parent" android:layout_height="@dimen/lib_phone_charge_titleh" android:layout_alignParentTop="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/title_back" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/common_title_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/common_title_text_color" android:id="@id/titleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用优惠券" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/use_tip" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="使用说明" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/select_coupon_jdcard" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="51.0dip" android:weightSum="100.0" android:layout_below="@id/fill_order_title">
+        <RelativeLayout android:gravity="center" android:id="@id/select_coupon_canuse" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="50.0">
+            <TextView android:textSize="@dimen/lib_game_charge_name_text" android:textColor="@color/pd_gray_red" android:gravity="center" android:id="@id/select_coupon_canuse_btn" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/fill_order_select_jdcard_canuse" style="@style/text_color_black" />
+            <View android:id="@id/select_coupon_canuse_line" android:background="@drawable/fill_order_tab_item_line_bg" android:visibility="visible" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_alignLeft="@id/select_coupon_canuse_btn" android:layout_alignRight="@id/select_coupon_canuse_btn" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:background="#ffdddddd" android:layout_width="1.0px" android:layout_height="17.0dip" />
+        <RelativeLayout android:gravity="center" android:id="@id/select_coupon_no_canuse" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="50.0">
+            <TextView android:textSize="@dimen/lib_game_charge_name_text" android:textColor="@color/pd_gray_red" android:gravity="center" android:id="@id/select_coupon_no_canuse_btn" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/fill_order_select_jdcard_no_canuse" style="@style/text_color_black" />
+            <View android:id="@id/select_coupon_no_canuse_line" android:background="@drawable/fill_order_tab_item_line_bg" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_alignLeft="@id/select_coupon_no_canuse_btn" android:layout_alignRight="@id/select_coupon_no_canuse_btn" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/fill_order_coupon_bottombar" android:layout_below="@id/select_coupon_jdcard">
+        <ListView android:id="@id/coupon_list_canusel" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:footerDividersEnabled="false" style="@style/listView" />
+        <ListView android:id="@id/coupon_list_canuser" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:footerDividersEnabled="false" style="@style/listView" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/select_coupon_no_data_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-50.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/lib_phone_charge_noupon" />
+            <TextView android:textSize="19.0dip" android:textColor="#ff252525" android:id="@id/select_coupon_no_data_layout_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="很遗憾" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff848689" android:id="@id/select_coupon_no_data_layout_txt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="您暂无不可使用的优惠券" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/fill_order_coupon_bottombar" android:background="@color/fill_order_coupon_bottombar_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/lib_game_charge_name_text" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/comfirm_youhui" android:background="@drawable/receipt_red_btn_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_margin="10.0dip" android:text="@string/register_alert_ok_button_text" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/layout_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.jingdong.common.ui.JDProgressBar android:layout_centerInParent="true" style="@style/progress_loading" />
+    </RelativeLayout>
+</RelativeLayout>

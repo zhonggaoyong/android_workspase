@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vipnew_header" />
+    <com.achievo.vipshop.view.MyScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/adv_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.achievo.vipshop.view.ViewFlow android:layout_gravity="top" android:id="@id/adViewPager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RadioGroup android:gravity="center" android:layout_gravity="bottom|right|center" android:orientation="horizontal" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/adv_marginRight_size" android:layout_marginBottom="@dimen/adv_marginBottom_size" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/clearImageCache" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/setting_row_height">
+                    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/new_text_black" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/clear_cacheImage" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_forward_grey" />
+                </LinearLayout>
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/setting_row_height">
+                    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/new_text_black" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/network_show" />
+                    <com.achievo.vipshop.view.NotificationLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <com.achievo.vipshop.view.NotificationSwitchViewer android:layout_gravity="right|center" android:id="@id/networkChange" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="40.0dip" />
+                    </com.achievo.vipshop.view.NotificationLayout>
+                </LinearLayout>
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/setting_row_height">
+                    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/new_text_black" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/accept_notice" />
+                    <com.achievo.vipshop.view.NotificationLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <com.achievo.vipshop.view.NotificationSwitchViewer android:id="@id/acceptNotice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </com.achievo.vipshop.view.NotificationLayout>
+                </LinearLayout>
+                <View android:id="@id/remain_layout_divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/remain_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/setting_row_height">
+                    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/new_text_black" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:text="@string/sales_remind" />
+                    <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/white" android:gravity="center" android:layout_gravity="left|center" android:id="@id/remind_new" android:background="@drawable/ware_esure_bg" android:visibility="gone" android:layout_width="31.0dip" android:layout_height="18.0dip" android:layout_marginLeft="10.0dip" android:text="new" />
+                    <com.achievo.vipshop.view.NotificationLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <com.achievo.vipshop.view.NotificationSwitchViewer android:id="@id/remindSwitch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </com.achievo.vipshop.view.NotificationLayout>
+                </LinearLayout>
+                <View android:id="@id/viewRemind" android:background="@color/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+                <include android:id="@id/remindRow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" layout="@layout/sale_remind_select" />
+            </LinearLayout>
+            <View android:background="@color/acs_divider_color" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/update_version" android:layout_width="fill_parent" android:layout_height="@dimen/setting_row_height" android:layout_marginLeft="10.0dip">
+                    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/new_text_black" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/version_update" android:layout_weight="1.0" />
+                    <TextView android:textColor="@color/gray_dark2" android:layout_gravity="right|center" android:id="@id/version_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/version_info" />
+                    <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_forward_grey" />
+                </LinearLayout>
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/freshman_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/setting_row_height" android:layout_marginLeft="10.0dip">
+                    <TextView android:textSize="@dimen/app_textsize_main" android:textColor="@color/new_text_black" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/freshman_guide" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_forward_grey" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="35.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_titlefront_purple" />
+                <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/gray_dark" android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="9.0dip" android:text="@string/applications" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="102.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/ailishe_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/ailishe_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/new_ailise" />
+                    <TextView android:textSize="@dimen/app_textsize_secondary" android:textColor="@color/gray_dark" android:layout_gravity="center_horizontal" android:id="@id/ailishe_text" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="8.0dip" android:text="爱丽奢" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/weipintuan_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/weipintuan_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/set_app02" />
+                    <TextView android:textSize="@dimen/app_textsize_secondary" android:textColor="@color/gray_dark" android:layout_gravity="center_horizontal" android:id="@id/weipintuan_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="正点购" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lefeng_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/lefeng_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/set_app03" />
+                    <TextView android:textSize="@dimen/app_textsize_secondary" android:textColor="@color/gray_dark" android:layout_gravity="center_horizontal" android:id="@id/lefeng_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="乐蜂网" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="60.0dip">
+                <Button android:textSize="16.0dip" android:textColor="#ffff3b30" android:id="@id/bt_logout" android:background="@drawable/btn_violet_white_bg" android:layout_width="fill_parent" android:layout_height="@dimen/setting_row_height" android:text="@string/account_logout" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.achievo.vipshop.view.MyScrollView>
+</LinearLayout>

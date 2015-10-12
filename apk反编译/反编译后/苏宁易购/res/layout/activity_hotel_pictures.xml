@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.suning.mobile.ebuy.home.homefloor.ui.GalleryFlow android:id="@id/hotel_pictures_gallery" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="25.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/hotel_pictures_textView" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/hotel_pictures_appearance" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

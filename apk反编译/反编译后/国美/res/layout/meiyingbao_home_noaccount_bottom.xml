@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mytest="http://schemas.android.com/apk/res/com.gome.eshopnew">
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mingyingbao_home_benifit" android:layout_width="fill_parent" android:layout_height="60.0dip" mytest:titleText="收益率" mytest:icon="@drawable/meiyingbao_benefit_rate" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mingyingbao_home_mobile" android:layout_width="fill_parent" android:layout_height="60.0dip" mytest:titleText="手机号" mytest:icon="@drawable/meiyingbao_mobile" mytest:content="未绑定" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mingyingbao_home_identify" android:layout_width="fill_parent" android:layout_height="60.0dip" mytest:titleText="实名认证" mytest:icon="@drawable/meiyingbao_identify" mytest:content="立即认证" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_my_bankcard" android:layout_width="fill_parent" android:layout_height="60.0dip" mytest:titleText="银行卡" mytest:icon="@drawable/meiyingbao_bankcard" mytest:content="绑定银行卡" />
+    <com.gome.ecmall.home.mygome.meiyingbao.IconTextLabel android:orientation="horizontal" android:id="@id/mygome_home_my_traction" android:layout_width="fill_parent" android:layout_height="60.0dip" mytest:titleText="账户明细" mytest:icon="@drawable/meiyingbao_account" mytest:line="false" />
+    <View android:id="@id/line" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+</LinearLayout>

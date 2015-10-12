@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/shop_item_line2" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" style="@style/borderline" />
+    <RelativeLayout android:id="@id/image_gridview" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/shop_item_line2">
+        <LinearLayout android:orientation="horizontal" android:id="@id/pic_grid_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/profile_shop_img1" android:padding="1.0dip" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" android:scaleType="fitXY" />
+            <ImageView android:id="@id/profile_shop_img2" android:padding="1.0dip" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" />
+            <ImageView android:id="@id/profile_shop_img3" android:padding="1.0dip" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/name_text" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignLeft="@id/pic_grid_view" android:layout_alignRight="@id/pic_grid_view">
+            <RelativeLayout android:id="@id/focushop_relative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/pink" android:gravity="center" android:id="@id/shopfocus_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <RelativeLayout android:id="@id/new_number_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/shopfocus_date" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/new_number_image" android:layout_width="70.0dip" android:layout_height="wrap_content" android:src="@drawable/shoplist_out_num" android:scaleType="center" android:layout_centerInParent="true" />
+                    <com.meilishuo.app.views.CustomTextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/new_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <com.meilishuo.app.views.MyAttentionTextView android:id="@id/recommend_shop_attention" android:visibility="gone" android:layout_marginRight="0.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BtnAttentionStyle" />
+            </RelativeLayout>
+            <com.meilishuo.app.views.RoundImageView android:id="@id/shop_face_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d2" android:ellipsize="end" android:gravity="left|center" android:id="@id/profile_shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:maxLines="1" android:layout_toLeftOf="@id/focushop_relative" android:layout_toRightOf="@id/shop_face_image" android:layout_alignBottom="@id/shop_face_image" />
+            <com.meilishuo.app.views.CustomTextView android:textSize="16.0sp" android:textColor="@color/grey_d2" android:ellipsize="end" android:gravity="left|center" android:id="@id/profile_shop_name_nonew" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="70.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/shop_face_image" android:layout_alignBottom="@id/shop_face_image" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/shop_more_goods" android:background="@color/white" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_below="@id/image_gridview">
+        <com.meilishuo.app.views.CustomTextView android:textSize="14.0sp" android:textColor="@color/grey_d4" android:gravity="center" android:id="@id/shop_more_goods_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopfocus_goto_moregoods" android:drawableRight="@drawable/me_btn_arrow_pink" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:id="@id/shop_bottom_line" android:layout_alignParentBottom="true" style="@style/borderline" />
+</RelativeLayout>

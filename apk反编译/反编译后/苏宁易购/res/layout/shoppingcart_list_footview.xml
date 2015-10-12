@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:paddingTop="@dimen/pub_margin_or_padding_space_fifteen" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_three" android:id="@id/shoppingcart_promotions_prompt" android:paddingLeft="@dimen/pub_margin_or_padding_space_ten" android:paddingRight="@dimen/pub_margin_or_padding_space_ten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shoppingcart_promotion_prompt" />
+    <LinearLayout android:orientation="vertical" android:id="@id/shoppingcart_promotions_content_layout" android:padding="@dimen/ios_public_space_20px" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

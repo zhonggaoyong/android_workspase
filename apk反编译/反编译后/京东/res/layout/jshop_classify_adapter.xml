@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/favo_filter_label_text_size" android:textColor="#ff252525" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:text="全部" />
+    <TextView android:textSize="@dimen/favo_filter_label_text_size" android:textColor="#ffbfbfbf" android:gravity="center" android:id="@id/all_count" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginRight="68.0dip" android:text="78" android:layout_alignParentRight="true" />
+    <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:id="@id/sel_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginRight="25.0dip" android:src="@drawable/choice_icon" android:layout_alignParentRight="true" />
+</RelativeLayout>

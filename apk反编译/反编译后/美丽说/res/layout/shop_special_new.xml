@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_line" android:background="@color/grey_l1" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/text_new_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:text="上新专题" android:layout_below="@id/view_line" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/text_new_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="30款新品上市" android:layout_below="@id/view_line" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/img_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_below="@id/text_new_left" />
+</RelativeLayout>

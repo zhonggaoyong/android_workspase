@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/voucher_container" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/mine_gray1" android:id="@id/voucher_invalid_label" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mine_voucher_invalid" />
+    <LinearLayout android:id="@id/voucher_main_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/voucher_left_bg" android:background="@drawable/mine_voucher_picking_left_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="20.0sp" android:textColor="@color/mine_pink" android:gravity="center" android:id="@id/voucher_money" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="@string/mine_voucher_money" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/voucher_condition" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/voucher_money" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/mine_pink" android:id="@id/voucher_deadline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignLeft="@id/voucher_condition" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/voucher_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_voucher_picking" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/gome_finance_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/gome_finance_ad" android:layout_width="fill_parent" android:layout_height="152.0dip">
+            <android.support.v4.view.ViewPager android:id="@id/finance_home_viewpager" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_alignParentTop="true" />
+            <LinearLayout android:orientation="vertical" android:background="#ffc4c4c4" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/finance_home_viewpager">
+                <com.gome.ecmall.custom.PageIndicator android:gravity="center" android:id="@id/finance_home_page_indictor" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_cf" android:background="@drawable/bg_frame_grey" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+            <ImageView android:id="@id/iv_cf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_zhongchou" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff8c8c8c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="众筹" android:layout_toRightOf="@id/iv_cf" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="13.0dip" android:layout_height="15.0dip" android:src="@drawable/address_jiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_myb" android:background="@drawable/bg_frame_grey" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <ImageView android:id="@id/iv_myb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_meiyingbao" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff8c8c8c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="美盈宝" android:layout_toRightOf="@id/iv_myb" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="13.0dip" android:layout_height="15.0dip" android:src="@drawable/address_jiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include android:visibility="visible" layout="@layout/home_quickentry_two" />
+    </LinearLayout>
+</LinearLayout>

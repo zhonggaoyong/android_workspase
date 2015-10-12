@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/input_edit_bg_down" />
+    <item android:state_pressed="false" android:drawable="@drawable/input_edit_bg" />
+    <item android:drawable="@drawable/input_edit_bg" />
+</selector>

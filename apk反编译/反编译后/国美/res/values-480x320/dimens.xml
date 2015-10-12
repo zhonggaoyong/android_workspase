@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="about_text_size">15.0sp</dimen>
+    <dimen name="category_first_class_item_height">90.0dip</dimen>
+    <dimen name="coupon_cost_marginRight">24.0dip</dimen>
+    <dimen name="default_text_size">14.0sp</dimen>
+    <dimen name="header_title_text_size">18.0sp</dimen>
+    <dimen name="homepage_entries_height">267.0dip</dimen>
+    <dimen name="hot_promotion_item_height">290.0dip</dimen>
+    <dimen name="hot_promotion_item_img_height">125.0dip</dimen>
+    <dimen name="subtitle_text_size">16.0sp</dimen>
+    <dimen name="tab_padding_left_right">45.0dip</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/adv_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.achievo.vipshop.view.ViewFlow android:layout_gravity="top" android:id="@id/adViewPager" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+        <RadioGroup android:gravity="center" android:layout_gravity="bottom|right|center" android:orientation="horizontal" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/adv_marginRight_size" android:layout_marginBottom="@dimen/adv_marginBottom_size" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/cart_bonus_header" layout="@layout/vipnew_list_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/cart_use_bonus_layout" android:background="@drawable/bonus_password_background" android:layout_width="fill_parent" android:layout_height="392.0dip">
+                <EditText android:textSize="24.0dip" android:textColor="@color/new_text_black" android:textColorHint="@color/app_text_edittext_gray" android:gravity="center_horizontal" android:id="@id/cart_use_bonus_edittext" android:background="@drawable/bg_table_blackline_input" android:paddingBottom="9.0dip" android:layout_width="225.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:imeOptions="actionDone" />
+                <Button android:enabled="false" android:textSize="@dimen/app_textsize_button" android:id="@id/cart_use_bonus_bt" android:layout_width="253.0dip" android:layout_height="44.0dip" android:layout_marginTop="60.0dip" android:text="@string/cart_bonus_use_bt_text" android:layout_below="@id/cart_use_bonus_edittext" android:layout_centerHorizontal="true" style="@style/btn_violet_style" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="72.0dip" android:layout_above="@id/cart_use_bonus_edittext">
+                    <View android:background="#ffcecdce" android:layout_width="36.0dip" android:layout_height="0.5dip" />
+                    <TextView android:textSize="22.0dip" android:textColor="@color/app_text_black_new_ui" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bonus_text" />
+                    <View android:background="#ffcecdce" android:layout_width="36.0dip" android:layout_height="0.5dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/app_textsize_normal" android:textColor="@color/app_text_black" android:id="@id/cart_use_bonus_rule_title" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_bonus_use_rule" />
+            <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/app_text_cart_gray" android:id="@id/cart_use_bonus_rule_text" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:lineSpacingExtra="2.0dip" android:lineSpacingMultiplier="1.0" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

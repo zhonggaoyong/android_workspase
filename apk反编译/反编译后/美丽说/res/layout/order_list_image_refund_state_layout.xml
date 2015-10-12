@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/rl_pic" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_gap" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="60.0dip" android:layout_height="60.0dip">
+        <ImageView android:id="@id/order_list_goods_pic" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="centerCrop" />
+        <RelativeLayout android:gravity="center" android:id="@id/refund_pink_bg" android:background="@color/pink_l2_t90" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentBottom="true">
+            <com.meilishuo.app.views.CustomTextView android:textSize="8.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/refund_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

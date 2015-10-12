@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_home_quickentry_one" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_home_quickentry_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff569aff" android:gravity="center" android:id="@id/tv_home_quickentry_prom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/tv_home_quickentry_menu_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" android:maxLength="5" android:layout_below="@id/iv_home_quickentry_icon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

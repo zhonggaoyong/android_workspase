@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mydef="http://schemas.android.com/apk/res/com.gome.eshopnew">
+    <include layout="@layout/vw_titlebar" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mygome_mycoupon_select_ll" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_below="@id/common_top_layout">
+        <com.gome.ecmall.home.mygome.custom.TabStyle android:id="@id/tab_online_point_record" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" mydef:selected="true" mydef:fullLength="false" mydef:text="在线积分\n明细" />
+        <com.gome.ecmall.home.mygome.custom.TabStyle android:id="@id/tab_online_exchange_record" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" mydef:selected="false" mydef:fullLength="false" mydef:text="在线积分\n兑换记录" />
+        <com.gome.ecmall.home.mygome.custom.TabStyle android:id="@id/tab_store_exchange_record" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" mydef:selected="false" mydef:fullLength="false" mydef:text="门店积分\n兑换记录" />
+    </LinearLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <android.support.v4.view.ViewPager android:id="@id/mygome_myexchange_viewPager" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

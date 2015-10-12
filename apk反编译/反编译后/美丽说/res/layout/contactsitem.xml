@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/contacts_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:button="@drawable/yaoqing_radio_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.meilishuo.app.views.CustomTextView android:textSize="20.0sp" android:textColor="@color/grey_d3" android:ellipsize="end" android:id="@id/contact_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:maxLines="1" android:layout_toLeftOf="@id/contacts_check" android:layout_centerVertical="true" />
+</RelativeLayout>

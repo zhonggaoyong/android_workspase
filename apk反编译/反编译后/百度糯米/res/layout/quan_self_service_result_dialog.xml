@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="265.0dip" android:layout_height="210.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff111111" android:gravity="center" android:id="@id/quan_self_service_result_content_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:lineSpacingExtra="5.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff111111" android:gravity="center" android:id="@id/quan_self_service_result_content_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" />
+    <Button android:textColor="#ffffffff" android:id="@id/quan_self_ser_result_ok" android:background="@drawable/bg_red_button_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="18.0dip" android:text="@string/quan_self_result_ok" />
+</LinearLayout>

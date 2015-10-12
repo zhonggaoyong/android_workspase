@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sv_container" android:layout_width="50.0dip" android:layout_height="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_switch_cursor" android:background="@drawable/switch_button" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_switch" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="ou">r/z/ou.9.png</item>
+    <item type="drawable" name="ov">r/z/ov.9.png</item>
+    <item type="drawable" name="ow">r/z/ow.9.png</item>
+    <item type="drawable" name="ox">r/z/ox.9.png</item>
+    <item type="drawable" name="oy">r/z/oy.9.png</item>
+    <item type="drawable" name="aww">r/z/aww.9.png</item>
+    <item type="drawable" name="awx">r/z/awx.9.png</item>
+    <item type="drawable" name="awy">r/z/awy.png</item>
+    <item type="drawable" name="awz">r/z/awz.png</item>
+    <item type="drawable" name="ax0">r/z/ax0.png</item>
+    <item type="drawable" name="ax1">r/z/ax1.png</item>
+</resources>

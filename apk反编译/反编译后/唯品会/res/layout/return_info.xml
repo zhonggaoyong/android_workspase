@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/delivery_header" layout="@layout/header_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/return_info_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/return_progress_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/return_info_flow" />
+            <include android:id="@id/return_result_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/return_result_layout" />
+            <include android:id="@id/receive_onsite_address_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/receive_onsite_address_layout" />
+            <include android:id="@id/return_info_address_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/return_info_address" />
+            <include android:orientation="vertical" android:id="@id/coupon_money_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/return_apply_coupon_money" />
+            <include android:orientation="vertical" android:id="@id/new_refund_money_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/new_refund_money_layout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

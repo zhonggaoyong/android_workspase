@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/app_center_item_background_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cornerPic" android:visibility="invisible" android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@drawable/app_center_corner_new" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/none" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/appLogo" android:layout_width="39.0dip" android:layout_height="39.0dip" android:layout_centerHorizontal="true" android:contentDescription="@string/none" />
+    <TextView android:id="@id/appcenter_reddot" android:background="@drawable/app_faxian_item_red_dot" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="-2.0dip" android:layout_toRightOf="@id/appLogo" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff686868" android:ellipsize="end" android:id="@id/appName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:singleLine="true" android:layout_below="@id/appLogo" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/promoteMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/appName" android:layout_centerHorizontal="true" />
+</RelativeLayout>

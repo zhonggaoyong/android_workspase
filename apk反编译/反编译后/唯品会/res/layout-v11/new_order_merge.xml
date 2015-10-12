@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/header_layout" />
+    <FrameLayout android:id="@id/merge_list_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="vertical" android:id="@id/tips" android:background="@color/header_tips_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.8">
+                    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/icon_explain_blue_small" android:layout_alignTop="@id/text" />
+                    <TextView android:textSize="@dimen/app_textsize_small" android:textColor="@color/order_black_text" android:id="@id/text" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/order_merge_tips" android:layout_toRightOf="@id/icon" />
+                    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/new_text_black" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="主订单" />
+                    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <include android:id="@id/main_order" layout="@layout/order_merge_main" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip">
+                    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:textSize="@dimen/order_text_main" android:textColor="@color/new_text_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:text="@string/order_merge_item_title" />
+                        <Button android:textSize="@dimen/order_text_main" android:textColor="@color/app_text_blue" android:gravity="center" android:id="@id/btn_fail" android:background="@null" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginRight="15.0dip" android:text="合并失败？" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/btn_fail" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/merge_items" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ViewStub android:id="@id/cod_panel" android:layout="@layout/order_merge_cod_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+                <Button android:textSize="@dimen/app_textsize_button" android:id="@id/btn_merge" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="合并订单" style="@style/submit_red_big_button_style" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/no_merge" android:layout="@layout/no_merge_illustrate" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+</LinearLayout>

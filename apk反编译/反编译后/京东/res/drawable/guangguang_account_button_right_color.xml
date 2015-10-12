@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/guangguang_account_title_right_selected_bg" />
+    <item android:drawable="@drawable/guangguang_account_title_right_bg" />
+</selector>

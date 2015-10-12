@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/fill_order_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fill_order_title" layout="@layout/title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/my_giftcard_bind_layout" android:background="#fffcfcfc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/fill_order_title">
+        <View style="@style/line2" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/pd_black_68" android:id="@id/my_giftcard_bind_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="17.0dip" android:text="@string/fill_order_jdcard_bind_st" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/my_gift_card_bind_layout" android:background="#fffcfcfc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.5dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+            <EditText android:textSize="15.0sp" android:textColor="@color/pd_black_25" android:textColorHint="@color/pd_btn_gray" android:id="@id/my_giftcard_bind_edit" android:background="@drawable/app_d7d7d7_corners" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="25" android:inputType="textVisiblePassword" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@id/my_gift_card_capture_button" android:background="@drawable/jdcard_bind_scan_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/bg_alertdialog_btn_pressed" android:textColorLink="@color/bg_alertdialog_btn_pressed" android:autoLink="all" android:id="@id/my_gift_card_bind_fail_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="该卡尚未激活。自购卡日起3个工作内自动激活，也可拨打400100600申请激活" android:layout_below="@id/my_gift_card_bind_layout" />
+        <View android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    </LinearLayout>
+    <View android:background="@drawable/pd_deliver_h" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/my_giftcard_bind_layout" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/my_giftcard_bind_layout">
+        <Button android:textSize="19.0sp" android:textColor="@color/pd_black_68" android:id="@id/my_giftcard_ecard_query_balance_button" android:background="@drawable/fill_order_dialog_button_cancel_selector" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginRight="20.0dip" android:text="@string/my_giftcard_query_giftcard_ecard_balance" android:layout_weight="1.0" />
+        <Button android:textSize="19.0sp" android:textColor="@color/white" android:id="@id/my_giftcard_ecard_bind_button" android:background="@drawable/button_a" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="25.0dip" android:text="@string/my_giftcard_bind_giftcard_ecard" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

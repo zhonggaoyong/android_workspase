@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textView1" android:layout_width="91.0dip" android:layout_height="@dimen/zucai_shengpingfu_detail_height_2line" android:text="@string/jingcai_touzhubili" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/detail_text_info" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:layout_width="0.0dip" android:layout_height="@dimen/zucai_shengpingfu_detail_height" android:layout_toRightOf="@id/textView1" android:layout_alignTop="@id/textView1" android:layout_alignParentRight="true">
+        <TextView android:id="@id/content_1r1c" android:layout_width="31.0dip" android:layout_height="fill_parent" android:text="@string/lottery_nouse" style="@style/detail_text_info" />
+        <TextView android:id="@id/content_1r2c" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/lottery_nouse" android:layout_weight="1.0" style="@style/detail_text_info" />
+        <TextView android:id="@id/content_1r3c" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/lottery_nouse" android:layout_weight="1.0" style="@style/detail_text_info" />
+        <TextView android:id="@id/content_1r4c" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/lottery_nouse" android:layout_weight="1.0" style="@style/detail_text_info" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="0.0dip" android:layout_marginRight="@dimen/zucai_shengpingfu_detail_spliteline_margin" android:layout_below="@id/linearLayout1" android:layout_alignLeft="@id/linearLayout1" android:layout_alignRight="@id/linearLayout1" style="@style/line_horizontal_style" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="@dimen/zucai_shengpingfu_detail_height" android:layout_marginTop="1.0dip" android:layout_toRightOf="@id/textView1" android:layout_below="@id/linearLayout1" android:layout_alignParentRight="true">
+        <TextView android:id="@id/content_2r1c" android:layout_width="31.0dip" android:layout_height="fill_parent" android:text="@string/lottery_nouse" style="@style/detail_text_info" />
+        <TextView android:id="@id/content_2r2c" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/lottery_nouse" android:layout_weight="1.0" style="@style/detail_text_info" />
+        <TextView android:id="@id/content_2r3c" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/lottery_nouse" android:layout_weight="1.0" style="@style/detail_text_info" />
+        <TextView android:id="@id/content_2r4c" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/lottery_nouse" android:layout_weight="1.0" style="@style/detail_text_info" />
+    </LinearLayout>
+</RelativeLayout>

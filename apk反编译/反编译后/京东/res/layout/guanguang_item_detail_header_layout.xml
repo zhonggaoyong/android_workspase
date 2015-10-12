@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/item_header_image_view" android:layout_width="fill_parent" android:layout_height="@dimen/gg_detail_header_height" android:scaleType="fitXY" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/gg_pro_title_color" android:id="@id/item_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gg_layout_margin_left" android:layout_marginTop="@dimen/gg_layout_margin_left" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="@color/gg_pro_by_color" android:id="@id/item_text_by" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gg_layout_margin_left" android:layout_marginRight="5.0dip" android:text="By" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/gg_love_count" android:id="@id/item_detail_recomment" android:background="@drawable/gg_btn_border_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/item_text_by" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/gg_pro_by_color" android:id="@id/item_pub_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0px" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

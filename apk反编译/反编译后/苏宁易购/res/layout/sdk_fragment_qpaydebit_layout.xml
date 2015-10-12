@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/sdk_bg_whole_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@drawable/sdk_bg_dark_gray" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/sdk_bg_order_subject" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/bankcard_top_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/sdk_bank_default" android:contentDescription="@string/sdk_img_description" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:gravity="center_vertical" android:id="@id/bank_abbr_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" style="@style/sdk_text_little_black" />
+                        <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/bank_end_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" style="@style/sdk_text_little_gray" />
+                    </LinearLayout>
+                    <TextView android:gravity="center_vertical" android:id="@id/bank_payment_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:textIsSelectable="false" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/sdk_bg_item" android:layout_width="fill_parent" android:layout_height="@dimen/sdk_btn_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:weightSum="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/sdk_bankcard_hold_name" style="@style/sdk_text_little_black" />
+                <EditText android:id="@id/bankcard_hold_name_value" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="20.0dip" android:hint="@string/sdk_bankcard_hold_name_hint" android:maxLength="11" android:layout_weight="1.0" android:inputType="none" style="@style/sdk_edittext_style" />
+                <ImageView android:id="@id/bankcard_holdname_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/sdk_delete_ic" android:contentDescription="@string/sdk_img_description" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/sdk_bg_item" android:layout_width="fill_parent" android:layout_height="@dimen/sdk_btn_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:weightSum="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/sdk_ID" style="@style/sdk_text_little_black" />
+                <EditText android:id="@id/id_people_value" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="20.0dip" android:hint="@string/sdk_IDCard_num_hint" android:maxLength="18" android:digits="0123456789xX" android:layout_weight="1.0" style="@style/sdk_edittext_style" />
+                <ImageView android:id="@id/id_peoplevalue_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/sdk_delete_ic" android:contentDescription="@string/sdk_img_description" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/lv_cellphone" android:background="@drawable/sdk_bg_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sdk_btn_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:weightSum="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/sdk_bank_reserved_phone" style="@style/sdk_text_little_black" />
+                <EditText android:id="@id/bank_reservedphone_value" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="20.0dip" android:hint="@string/sdk_bank_reserved_phone_hint" android:maxLength="11" android:layout_weight="1.0" android:inputType="number" style="@style/sdk_edittext_style" />
+                <ImageView android:id="@id/bank_reservedphone_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/sdk_delete_ic" android:contentDescription="@string/sdk_img_description" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sdk_qpay_agreement" />
+                <TextView android:textColor="@color/sdk_color_blue" android:id="@id/qpay_protocol" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/sdk_qpay_protocol" />
+            </LinearLayout>
+            <Button android:gravity="center" android:id="@id/qpay_payment" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/sdk_confrim_and_payment" style="@style/sdk_base_btn_blue" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

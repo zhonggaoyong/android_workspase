@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/promotion_message_layout_listview_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/promotion_message_title" android:layout_alignParentTop="true" layout="@layout/title" />
+    <ListView android:id="@id/promotion_message_listview" android:background="@android:color/transparent" android:padding="7.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="12.0dip" android:layout_below="@id/promotion_message_title" />
+</RelativeLayout>

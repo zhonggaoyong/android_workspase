@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_recommand_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ios_public_space_28px">
+        <TextView android:id="@id/tv_recommand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_recommand" android:layout_centerInParent="true" />
+        <View android:background="@drawable/line" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_marginRight="@dimen/ios_public_space_50px" android:layout_toLeftOf="@id/tv_recommand" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <View android:background="@drawable/line" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_marginLeft="@dimen/ios_public_space_50px" android:layout_toRightOf="@id/tv_recommand" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <HorizontalScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_20px" android:layout_marginTop="@dimen/ios_public_space_10px" android:layout_marginRight="@dimen/ios_public_space_20px" android:overScrollMode="never">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_goodsdetiall_recommend1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</LinearLayout>

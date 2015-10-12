@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/similar_recommendation_tip" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="@dimen/similar_recommendation_tip_textsize" android:textColor="@color/shopping_cart_change_product" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/similar_recommendation_tip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/similar_recommendation_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@id/cart_single_product_image_item" android:background="@drawable/shopping_cart_product_icon_bg" android:padding="1.0px" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        <RelativeLayout android:id="@id/cart_single_product_detail_layout_item" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:layout_toRightOf="@id/cart_single_product_image_item">
+            <com.jingdong.common.ui.CustomTextViewNoEnter android:textSize="@dimen/similar_product_name_item_textsize" android:textColor="@color/cart_color_252525" android:ellipsize="end" android:id="@id/cart_single_product_name_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/similar_product_price_item_textsize" android:textColor="@color/category_new_red_font" android:ellipsize="end" android:id="@id/cart_single_product_price_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_gravity="center_horizontal" android:id="@id/shopping_cart_edit_devider" android:background="@color/similar_recommendation_divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="8.0dip" />
+</LinearLayout>

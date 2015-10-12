@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="350" android:drawable="@drawable/album_ico_voice_status_s1" />
+    <item android:duration="350" android:drawable="@drawable/album_ico_voice_status_s2" />
+    <item android:duration="350" android:drawable="@drawable/album_ico_voice_status_s3" />
+    <item android:duration="350" android:drawable="@drawable/album_ico_voice_status_s4" />
+</animation-list>

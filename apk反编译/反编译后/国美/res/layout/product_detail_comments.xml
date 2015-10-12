@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/tv_product_comments_layout" android:background="@drawable/product_detail_item_selector2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/tv_product_comments_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评价" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/tv_product_comments_count" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(0)" android:layout_toRightOf="@id/tv_product_comments_title" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好评率：" android:layout_toLeftOf="@id/iv_product_comments_percent" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/product_price_red_color" android:id="@id/iv_product_comments_percent" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="100%" android:layout_toLeftOf="@id/iv_product_comments_arrow" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_product_comments_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/address_jiantou" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/product_good_appraise_line" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginLeft="13.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/product_good_appraise_layout" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip">
+                    <ImageView android:id="@id/iv_product_good_appraise_user_head" android:background="@drawable/circle_bg_black" android:padding="0.6dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/product_detail_comments_head" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/tv_product_good_appraise_user_name" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_product_good_appraise_user_head" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/_product_good_appraise_user_grade" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mygome_rank_icon7" android:layout_toRightOf="@id/tv_product_good_appraise_user_name" android:layout_centerVertical="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/tv_product_good_appraise_sendtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <com.gome.ecmall.custom.LineTextView android:textSize="15.0sp" android:ellipsize="end" android:id="@id/tv_product_good_appraise_content" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="2" pl:plTextColor="#ff999999" pl:plLine="2"
+                  xmlns:pl="http://schemas.android.com/apk/res/com.gome.eshopnew" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/consult_showorder_layout" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <LinearLayout android:gravity="center" android:id="@id/tv_product_show_order_layout" android:background="@drawable/product_detail_item_selector" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:paddingRight="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/product_detail_btn_pic" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/tv_product_show_order_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品晒单" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/tv_product_consult_layout" android:background="@drawable/product_detail_item_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:paddingLeft="1.0dip" android:paddingRight="7.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/product_detail_btn_comment" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/tv_product_consult_count" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购买咨询" />
+                <ImageView android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/address_jiantou" />
+            </LinearLayout>
+            <View android:background="#ffe6e6e6" android:visibility="gone" android:layout_width="0.6dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerbar" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/finish" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/TopOkBtn" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/title" android:text="分享到新浪微博" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/item_message" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <ImageView android:id="@id/item_image" android:layout_width="90.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_alignParentLeft="true" />
+        <com.meilishuo.app.views.CustomEditText android:textSize="14.0sp" android:gravity="top" android:id="@id/edit_message" android:background="@null" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_toRightOf="@id/item_image" android:layout_alignTop="@id/item_image" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/new_magazine" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meilishuo.app.views.CustomTextView android:textSize="13.0sp" android:textColor="#ff000000" android:id="@id/atfriend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="\@给好友：" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/atsinaFriend" android:background="@drawable/ico_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/atsinaFriend" android:layout_toRightOf="@id/atfriend" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/imgiconLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/usericon_1" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="3.0dip" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/img_over_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_btn_selected" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/imgiconLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/usericon_2" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="3.0dip" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/img_over_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_btn_selected" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/imgiconLayout3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/usericon_3" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="3.0dip" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/img_over_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_btn_selected" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/imgiconLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/usericon_4" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="3.0dip" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/img_over_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_btn_selected" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/imgiconLayout5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/usericon_5" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="3.0dip" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/img_over_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_btn_selected" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/weiboFriendListView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="#00000000" android:divider="#ffeeeeee" android:dividerHeight="2.0px" android:layout_weight="1.0" android:footerDividersEnabled="false" />
+</LinearLayout>

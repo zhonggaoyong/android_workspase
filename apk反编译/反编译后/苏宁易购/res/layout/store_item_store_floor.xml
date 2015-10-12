@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pub_color_twelev" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.suning.mobile.ebuy">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip">
+            <View android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <View android:id="@id/v_floor_name_logo_upline" android:background="@color/pub_color_six" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <View android:background="@color/pub_color_six" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_floor_name_logo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/android_public_text_size_20px" android:textColor="@color/pub_color_one" android:gravity="center" android:id="@id/tv_floor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip">
+            <View android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <View android:background="@color/pub_color_six" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/pub_color_one" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.suning.mobile.ebuy.view.BlockView android:id="@id/bv_floor_info" android:tag="close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" app:horizontalSpacing="15.0dip" app:verticalSpacing="12.0dip" app:autoMatchBlockWidth="false" />
+            <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/pub_color_twenty_one" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_floor_info_expand" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/store_detail_floor_expand" android:drawablePadding="6.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

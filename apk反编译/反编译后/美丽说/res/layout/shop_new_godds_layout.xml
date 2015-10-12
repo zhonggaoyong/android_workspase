@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerbar" android:background="@color/white" style="@style/mainHeader">
+        <com.meilishuo.app.views.CustomTextView android:id="@id/btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/TopBackBtn" />
+        <com.meilishuo.app.views.GoShoppingcartView android:id="@id/to_shoppingcart_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.meilishuo.app.views.CustomTextView android:ellipsize="end" android:id="@id/title" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/shop_new_text" android:singleLine="true" android:layout_toLeftOf="@id/to_shoppingcart_btn" android:layout_toRightOf="@id/btn_back" android:layout_centerInParent="true" style="@style/headerTextStyle" />
+    </RelativeLayout>
+    <include layout="@layout/networkerror_default_layout" />
+    <com.meilishuo.app.widget.PinnedHeaderListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_below="@id/headerbar" />
+    <com.meilishuo.app.views.CustomPageLoading android:id="@id/progressbar_pink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.meilishuo.app.views.CustomTextView android:id="@id/to_top" android:background="@drawable/to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

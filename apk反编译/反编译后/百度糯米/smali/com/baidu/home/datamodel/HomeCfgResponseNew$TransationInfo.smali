@@ -1,0 +1,21 @@
+.class public Lcom/baidu/home/datamodel/HomeCfgResponseNew$TransationInfo;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/baidu/wallet/core/NoProguard;
+
+
+# instance fields
+.field public receivebale_count:Ljava/lang/String;
+
+.field public transation_count:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

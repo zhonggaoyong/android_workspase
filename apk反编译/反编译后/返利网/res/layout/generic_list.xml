@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/pull_refresh_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffffffff" android:divider="#ffe9e9e9" android:dividerHeight="1.0px" android:smoothScrollbar="true" />
+    <include android:id="@id/listLoadingBar" layout="@layout/progress_bar_line" />
+    <include android:id="@id/emptyView" layout="@layout/item_list_empty" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bainuo.view.RelativeLayoutWithTouchIntercept android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/category_list_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/tuanlist_filter_bar_height" android:layout_above="@id/category_list_topic_layout" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" />
+    <include android:id="@id/category_list_topic_layout" android:layout_width="fill_parent" android:layout_height="@dimen/tuanlist_topic_bar_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/tuanlist_topic_bar" />
+    <com.baidu.bainuo.tuanlist.filter.FilterChooser android:id="@id/category_list_filter_chooser" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</com.baidu.bainuo.view.RelativeLayoutWithTouchIntercept>

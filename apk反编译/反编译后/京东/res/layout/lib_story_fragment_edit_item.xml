@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/lib_story_activity_horizontal_margin" android:paddingTop="@dimen/lib_story_activity_horizontal_margin" android:paddingRight="@dimen/lib_story_activity_horizontal_margin" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/edit_selectedImg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <EditText android:textSize="13.0sp" android:textColor="@color/lib_story_edit_font_color" android:gravity="top" android:id="@id/selectedImgText" android:background="#fff9f9f9" android:padding="@dimen/lib_story_margin_vertical_10" android:layout_width="fill_parent" android:layout_height="63.0dip" android:hint="@string/lib_story_content_hint" android:maxLength="500" android:layout_below="@id/edit_selectedImg" android:layout_centerHorizontal="true" android:lineSpacingExtra="5.0dip" />
+    <TextView android:textSize="@dimen/lib_story_t_small_size" android:textColor="@color/lib_story_title_right_text_unclickable" android:id="@id/selectedImgCanInputNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginBottom="10.0dip" android:text="@string/lib_story_edit_input" android:layout_alignRight="@id/selectedImgText" android:layout_alignBottom="@id/selectedImgText" />
+</RelativeLayout>

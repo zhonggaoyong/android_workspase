@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/android_public_space_60dp" android:layout_height="@dimen/android_public_space_60dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/act_myebuy_image_bg" />
+    <ImageView android:id="@id/image_wp_order_item" android:layout_width="@dimen/android_public_space_59dp" android:layout_height="@dimen/android_public_space_59dp" android:src="@drawable/wp_order_default" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+</RelativeLayout>

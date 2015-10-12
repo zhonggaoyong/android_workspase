@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.suning.mobile.ebuy.myebuy.entrance.util.HeaderImageView android:id="@id/iv_myebuy_header" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/logisticsmap_delivery_man_default_head" />
+    <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/color_gray_353d44" android:gravity="center" android:id="@id/discover_hot_name_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="@dimen/discover_margin" android:layout_marginRight="5.0dip" android:singleLine="true" />
+</LinearLayout>

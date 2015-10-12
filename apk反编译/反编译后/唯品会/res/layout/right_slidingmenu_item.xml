@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/new_right_menu_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/app_textsize_title" android:textColor="#ffc7c5c5" android:gravity="center_vertical" android:id="@id/category_list_tx" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:text="菜单测试" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/category_list_down" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="12.0dip" android:layout_marginRight="18.0dip" android:src="@drawable/new_drawer_down" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/category_list_select" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/new_drawer_select" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

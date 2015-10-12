@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/jshop_custom_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <include android:id="@id/custom_item0" layout="@layout/jshop_custom_view_item" />
+        <include android:id="@id/custom_item1" layout="@layout/jshop_custom_view_item" />
+        <include android:id="@id/custom_item2" layout="@layout/jshop_custom_view_item" />
+        <include android:id="@id/custom_item3" layout="@layout/jshop_custom_view_item" />
+        <include android:id="@id/custom_item4" layout="@layout/jshop_custom_view_item" />
+        <include android:id="@id/custom_item5" layout="@layout/jshop_custom_view_item" />
+        <include android:id="@id/custom_item6" layout="@layout/jshop_custom_view_item" />
+        <include android:id="@id/custom_item7" layout="@layout/jshop_custom_view_item" />
+        <include android:id="@id/custom_item8" layout="@layout/jshop_custom_view_item" />
+        <include android:id="@id/custom_item9" layout="@layout/jshop_custom_view_item" />
+        <include android:id="@id/custom_item10" layout="@layout/jshop_custom_view_item" />
+        <include android:id="@id/custom_item11" layout="@layout/jshop_custom_view_item" />
+    </LinearLayout>
+</LinearLayout>

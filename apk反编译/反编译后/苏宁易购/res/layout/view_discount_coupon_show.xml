@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/coupon_line" android:background="@color/pub_color_six" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_half_of_one" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_30px" android:layout_marginTop="@dimen/pub_margin_or_padding_space_eight" android:layout_marginBottom="@dimen/pub_margin_or_padding_space_eight">
+        <TextView android:textColor="@color/pub_color_seven" android:id="@id/coupon_card_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/pub_color_nine" android:id="@id/coupon_card_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ios_public_space_20px" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

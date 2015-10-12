@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_title">
+        <TextView android:textColor="@color/category_text_color" android:id="@id/price_report_success_view" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/price_report_submit_suceess_des" />
+        <Button android:textColor="@color/category_text_color" android:id="@id/price_report_back_product" android:padding="10.0dip" android:layout_width="wrap_content" android:text="@string/price_report_back_product" style="@style/common_button" />
+    </LinearLayout>
+</RelativeLayout>

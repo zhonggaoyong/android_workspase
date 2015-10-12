@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/comment_take_photo" android:background="@drawable/comment_create_add_pic_selector" android:layout_width="68.0dip" android:layout_height="68.0dip" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/comment_show_image" android:visibility="gone" android:layout_width="68.0dip" android:layout_height="68.0dip" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <com.baidu.bainuo.comment.CircularProgressBar android:id="@id/comment_circular" android:background="#88999999" android:visibility="gone" android:layout_width="68.0dip" android:layout_height="68.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/comment_failure" android:background="#88999999" android:visibility="gone" android:layout_width="68.0dip" android:layout_height="68.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_create_upload_fail" android:drawableTop="@drawable/comment_create_upload_fail" />
+    </LinearLayout>
+</FrameLayout>

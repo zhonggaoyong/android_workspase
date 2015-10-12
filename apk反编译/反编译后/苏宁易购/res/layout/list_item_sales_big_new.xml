@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <LinearLayout android:gravity="center" android:id="@id/product_item" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/product_icon" android:layout_width="340.0dip" android:layout_height="340.0dip" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/energy_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sales_big" android:scaleType="centerInside" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="@dimen/android_public_text_size_30px" android:textColor="@color/total_bg" android:gravity="left" android:id="@id/product_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="商品的名称" android:maxLines="2" />
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="@dimen/android_public_text_size_28px" android:textColor="@color/order_item_pay_bg" android:id="@id/promotion_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/global_yuan" />
+            <TextView android:textSize="@dimen/android_public_text_size_24px" android:textColor="@color/pub_color_fifteen" android:id="@id/price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/global_yuan" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_twelev" />
+</LinearLayout>

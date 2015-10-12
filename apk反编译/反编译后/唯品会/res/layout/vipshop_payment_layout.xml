@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/BGlinear" android:background="@color/app_body_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/pay_head" layout="@layout/vipnew_list_header" />
+    <com.achievo.vipshop.view.ObservableScrollView android:gravity="center" android:id="@id/pay_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/pay_foot_layout" android:layout_below="@id/pay_head">
+        <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                    <include android:id="@id/foreignbuytips_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/payment_foreignbuytips" />
+                    <include android:id="@id/address_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/payment_addresslist" />
+                    <include android:id="@id/foreignbuy_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/payment_foreignbuy" />
+                    <include android:id="@id/remark_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" layout="@layout/payment_remark" />
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/payment_paydetail" />
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/payment_presaledetail" />
+                    <include android:id="@id/payment_usecoupon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/payment_usecoupon" />
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/payment_paylist" />
+                    <include android:id="@id/readysale_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/payment_readysalemoney" />
+                    <include android:id="@id/payinvoice_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/payment_payinvoice" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.achievo.vipshop.view.ObservableScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/pay_foot_layout" android:background="#ddffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pay_ment_submit" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" style="@style/btn_violet_style">
+                <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:id="@id/sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提交订单" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

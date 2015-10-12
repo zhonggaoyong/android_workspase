@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="#90000000" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pop_layout" android:background="@drawable/gome_popwindow_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="20.0sp" android:textColor="@color/weak_text_color" android:gravity="center" android:id="@id/share_title" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="选择地区" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/share_line" android:background="@color/price_text_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/share_title" />
+        <ListView android:id="@id/shareList" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@null" android:divider="#ffd9d9d9" android:dividerHeight="0.5dip" android:layout_below="@id/share_line" />
+    </RelativeLayout>
+</RelativeLayout>

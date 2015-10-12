@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meilishuo.app.views.PhotoScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/no_data_layout" android:background="#fff8f8f8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/empty_page_margin_top" android:src="@drawable/icon_my_like_no_data" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/prompt_tips" style="@style/EmptyDataFirstTextStyle" />
+        <com.meilishuo.app.views.CustomTextView android:id="@id/second_tips" android:visibility="gone" android:text="@string/no_like_goods_second" style="@style/EmptyDataSecondTextStyle" />
+    </LinearLayout>
+    <com.meilishuo.app.views.CustomTextView android:id="@id/to_top" android:background="@drawable/to_top_icon" android:visibility="invisible" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

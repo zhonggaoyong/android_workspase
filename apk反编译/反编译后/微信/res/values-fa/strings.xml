@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="d3q">‏خطا در خدمات Google Play</string>
+    <string name="d3r">‏برنامه‌ای نیاز به نصب خدمات Google Play دارد.</string>
+    <string name="d3s">‏‫برنامه‌ای نیاز به یک به‌روزرسانی برای خدمات Google Play دارد.</string>
+    <string name="d3t">‏برنامه‌ای نیاز به فعال شدن خدمات Google Play دارد.</string>
+    <string name="d3u">درخواست توسط %1$s</string>
+    <string name="d3v">‏دریافت خدمات Google Play</string>
+    <string name="d3w">‏این برنامه بدون خدمات Google Play اجرا نمی‌شود، این خدمات در تلفن شما وجود ندارد.</string>
+    <string name="d3x">‏این برنامه بدون خدمات Google Play اجرا نمی‌شود، این خدمات در رایانهٔ لوحی شما وجود ندارد.</string>
+    <string name="d3y">‏دریافت خدمات Google Play</string>
+    <string name="d3z">‏فعال کردن خدمات Google Play</string>
+    <string name="d40">‏تا زمانی‌که خدمات Google Play را فعال نکنید این برنامه کار نمی‌کند.</string>
+    <string name="d41">‏فعال کردن خدمات Google Play</string>
+    <string name="d42">‏به‌روزرسانی خدمات Google Play</string>
+    <string name="d43">‏تا زمانی‌که خدمات Google Play را به‌روز نکنید این برنامه کار نمی‌کند.</string>
+    <string name="d44">خطای شبکه</string>
+    <string name="d45">‏برای اتصال به خدمات Google Play اتصال داده لازم است.</string>
+    <string name="d46">حساب نامعتبر</string>
+    <string name="d47">حسابی که تعیین کردید در این دستگاه وجود ندارد. لطفاً حساب دیگری را انتخاب کنید.</string>
+    <string name="d48">‏مشکل نامشخص در خدمات Google Play.</string>
+    <string name="d49">‏خدمات Google Play</string>
+    <string name="d4_">‏خدمات Google Play، که برخی از برنامه‌های شما به آن وابسته است، توسط دستگاه شما پشتیبانی نمی‌شود. لطفاً برای دریافت کمک با سازنده تماس بگیرید.</string>
+    <string name="d4a">تاریخ روی دستگاه ظاهراً اشتباه است. لطفاً تاریخ روی دستگاه را بررسی کنید.</string>
+    <string name="d4b">به‌روزرسانی</string>
+    <string name="d4c">ورود به سیستم</string>
+    <string name="d4d">‏ورود به سیستم با Google‎</string>
+</resources>

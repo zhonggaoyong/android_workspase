@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/shoppingcart_item_longclick_layout" android:background="@drawable/translucent_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="84.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shoppingcart_item_longclick_favorite" android:paddingRight="@dimen/ios_public_space_80px" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="84.0dip" android:layout_toLeftOf="@id/shoppingcart_item_longclick_delete" android:layout_centerVertical="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cart_farvor_white" />
+        <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/shoppingcart_move_to_favorite" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shoppingcart_item_longclick_delete" android:paddingRight="@dimen/ios_public_space_60px" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="84.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cart_delete" />
+        <TextView android:textSize="@dimen/ios_public_textsize_24pt" android:textColor="@color/pub_color_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/shoppingcart_product_delete" />
+    </LinearLayout>
+</RelativeLayout>

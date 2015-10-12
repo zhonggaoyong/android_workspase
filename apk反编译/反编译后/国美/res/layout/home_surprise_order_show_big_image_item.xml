@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gome.ecmall.custom.photoview.PhotoView android:id="@id/home_surprise_order_show_big_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/home_surprise_order_show_small_image" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/home_surprise_order_show_image_progress" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

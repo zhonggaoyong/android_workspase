@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/compListEmptyView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/compListEmptyViewPaddingTop" android:layout_width="wrap_content" android:layout_height="0.0dip" />
+    <RelativeLayout android:gravity="center" android:id="@id/loading_ind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/compListEmptyViewPaddingTop">
+        <ProgressBar android:id="@id/compListEmptyViewProgressBar" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+        <TextView android:textColor="#ff000000" android:id="@id/compListEmptyViewLoadingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/comp_list_loading_text_margin_left" android:text="@string/loading" android:layout_toRightOf="@id/compListEmptyViewProgressBar" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.suning.mobile.ebuy.view.component.CompButton android:textColor="@color/title_text_color" android:id="@id/compListEmptyRetryButton" android:visibility="gone" android:layout_width="@dimen/global_button_width" android:layout_height="@dimen/global_button_height" android:text="@string/comp_list_retry_text" android:layout_below="@id/compListEmptyViewPaddingTop" android:layout_centerVertical="true" />
+</RelativeLayout>

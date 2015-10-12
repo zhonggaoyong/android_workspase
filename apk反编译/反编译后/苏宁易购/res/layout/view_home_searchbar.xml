@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_head_view" android:layout_width="fill_parent" android:layout_height="@dimen/pub_margin_or_padding_space_fifty_five" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/message_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_13px">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_mes_default" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/home_btn_search_layout" android:background="@drawable/search_box" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/android_public_space_13px" android:layout_marginRight="@dimen/android_public_space_13px" android:layout_weight="1.0">
+        <ImageView android:id="@id/home_search_title_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_search_home" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/add_cart_disabled_text_color" android:textColorHint="@color/add_cart_disabled_text_color" android:id="@id/text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:hint="@string/search_hint" android:singleLine="true" android:layout_toRightOf="@id/home_search_title_logo" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/voice_icon_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/voice_icon_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/home_title_btn_barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/android_public_space_13px">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_scan_code_default" />
+    </LinearLayout>
+</LinearLayout>

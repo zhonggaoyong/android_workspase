@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ffeeeeee" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bainuo="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.baidu.bainuo.more.CommonItemLayout android:id="@id/more_push_setting" android:background="@drawable/more_app_item_selector" android:layout_width="fill_parent" android:layout_height="43.0dip" bainuo:text="@string/more_push_setting" />
+            <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" />
+            <FrameLayout android:id="@id/more_wifi_display" android:background="@drawable/more_app_item_selector" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                <TextView android:text="@string/more_only_wifi_display" style="@style/MoreItemTextStyle" />
+                <ImageView android:layout_gravity="right|center" android:id="@id/more_wifi_display_remind" android:background="@drawable/more_uncheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:contentDescription="@string/app_name" />
+            </FrameLayout>
+            <View android:background="@color/more_divide_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" />
+            <com.baidu.bainuo.more.CommonItemLayout android:id="@id/more_share_setting" android:background="@drawable/more_app_item_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="43.0dip" bainuo:text="@string/more_share_setting" />
+        </LinearLayout>
+        <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.baidu.bainuo.more.CommonItemLayout android:id="@id/more_invite" android:background="@drawable/more_app_item_selector" android:layout_width="fill_parent" android:layout_height="43.0dip" bainuo:text="@string/more_invite" />
+            <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+            <com.baidu.bainuo.more.CommonItemLayout android:id="@id/more_ratepop" android:background="@drawable/more_app_item_selector" android:layout_width="fill_parent" android:layout_height="43.0dip" bainuo:text="@string/more_ratepop" />
+            <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+            <com.baidu.bainuo.more.CommonItemLayout android:id="@id/more_advise" android:background="@drawable/more_app_item_selector" android:layout_width="fill_parent" android:layout_height="43.0dip" bainuo:text="@string/more_feedback" />
+        </LinearLayout>
+        <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.baidu.bainuo.more.CommonItemLayout android:id="@id/more_about" android:background="@drawable/more_app_item_selector" android:layout_width="fill_parent" android:layout_height="43.0dip" bainuo:text="@string/more_about" />
+            <View android:id="@id/check_update_up_line" android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/more_check_update" android:background="@drawable/more_app_item_selector" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/about_check_update" android:layout_weight="1.0" style="@style/MoreItemTextStyle" />
+                <TextView android:textColor="#ff888888" android:id="@id/check_update_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" style="@style/MoreItemTextStyle" />
+                <ImageView android:id="@id/check_update_right_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/more_divide_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <View android:id="@id/more_other_app_above_line" android:background="@color/more_divide_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+        <com.baidu.bainuo.more.CommonItemLayout android:id="@id/more_more_app" android:background="@drawable/more_app_item_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="43.0dip" bainuo:text="@string/more_app" />
+        <View android:id="@id/more_other_app_bellow_line" android:background="@color/more_divide_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <Button android:textSize="16.0sp" android:textColor="#ffff4978" android:gravity="center" android:id="@id/more_clear_cache" android:background="@drawable/bg_white_button_selector" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="@string/more_clear_cache" />
+        <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    </LinearLayout>
+</ScrollView>

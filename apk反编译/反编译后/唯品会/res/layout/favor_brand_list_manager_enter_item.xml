@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="69.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/transparency" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <RelativeLayout android:id="@id/manager_enter_rl" android:background="@drawable/new_personal_tab_center_pressed" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="已收藏品牌" android:layout_centerVertical="true" />
+        <ImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_forward_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

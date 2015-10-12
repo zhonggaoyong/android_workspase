@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/flight_text_black" android:id="@id/product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/cf_text_red" android:id="@id/product_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:singleLine="true" />
+    <View android:background="#ffc8c7cc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="14.0dip" />
+    <RelativeLayout android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/company_pic" android:background="@drawable/bg_img_fang" android:padding="1.0px" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/flight_text_black" android:gravity="center" android:id="@id/company_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:singleLine="true" android:layout_toRightOf="@id/company_pic" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/sponsor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="发起 0" android:layout_toRightOf="@id/company_pic" android:layout_alignBottom="@id/company_pic" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/buy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="支持 0" android:layout_toRightOf="@id/sponsor" android:layout_alignBottom="@id/company_pic" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/flight_text_hint" android:id="@id/follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="关注 0" android:layout_toRightOf="@id/buy" android:layout_alignBottom="@id/company_pic" />
+    </RelativeLayout>
+</LinearLayout>

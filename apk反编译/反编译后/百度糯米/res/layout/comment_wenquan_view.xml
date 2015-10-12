@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/wenquan_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_create_wq_txt1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.baidu.bainuo.comment.SBRatingBar android:id="@id/wenquan_ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="62.0dip" android:layout_toLeftOf="@id/wenquan_specs" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffff9000" android:id="@id/wenquan_specs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

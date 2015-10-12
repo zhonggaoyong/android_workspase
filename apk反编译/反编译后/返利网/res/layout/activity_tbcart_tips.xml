@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/list_area" android:background="@drawable/tbcart_tips_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+        <com.fanli.android.view.LimitHeightListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:divider="@null" />
+    </LinearLayout>
+    <ImageView android:id="@id/hide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-25.0dip" android:src="@drawable/tbcart_show_btn" android:layout_alignTop="@id/list_area" android:layout_alignParentRight="true" />
+</RelativeLayout>

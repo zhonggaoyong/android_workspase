@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vw_titlebar" />
+    <RelativeLayout android:id="@id/search_list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/v_line">
+        <TextView android:textSize="15.0sp" android:textColor="@color/weak_text_color" android:gravity="center" android:id="@android:id/empty" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ListView android:id="@id/lv_groupbuy_product" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dividerHeight="0.0dip" style="@style/common_listview_style" />
+        <LinearLayout android:orientation="vertical" android:id="@id/search_body" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_history" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <fragment android:name="com.gome.ecmall.home.search.HistoryFragment" android:id="@id/frag_history" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
